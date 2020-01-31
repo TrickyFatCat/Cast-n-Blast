@@ -3,13 +3,13 @@
 switch global.CurrentInput
 {
 	case InputMethod.Gamepad:
-		keyMenuUp = GamepadButtonPressed(gp_axislv) < 0 || GamepadButtonPressed(gp_padu);
-		keyMenuDown = GamepadButtonPressed(gp_axislv) > 0 || GamepadButtonPressed(gp_padd);
-		keyMenuLeft = GamepadButtonPressed(gp_axislh) < 0 || GamepadButtonPressed(gp_padl);
-		keyMenuRight = GamepadButtonPressed(gp_axislh) > 0 || GamepadButtonPressed(gp_padr);
-		keyMenuAccept = GamepadButtonPressed(gp_face1);
-		keyMenuBack = GamepadButtonPressed(gp_face2);
-		keyPause = GamepadButtonPressed(gp_start);
+		keyMenuUp = CheckGamepadButtonPressed(gp_axislv) < 0 || CheckGamepadButtonPressed(gp_padu);
+		keyMenuDown = CheckGamepadButtonPressed(gp_axislv) > 0 || CheckGamepadButtonPressed(gp_padd);
+		keyMenuLeft = CheckGamepadButtonPressed(gp_axislh) < 0 || CheckGamepadButtonPressed(gp_padl);
+		keyMenuRight = CheckGamepadButtonPressed(gp_axislh) > 0 || CheckGamepadButtonPressed(gp_padr);
+		keyMenuAccept = CheckGamepadButtonPressed(gp_face1);
+		keyMenuBack = CheckGamepadButtonPressed(gp_face2);
+		keyPause = CheckGamepadButtonPressed(gp_start);
 	break;
 	
 	case InputMethod.KeyboardMouse:
@@ -18,7 +18,7 @@ switch global.CurrentInput
 		keyMenuLeft = keyboard_check_pressed(ord("A"));
 		keyMenuRight = keyboard_check_pressed(ord("D"));
 		keyMenuAccept = keyboard_check_pressed(vk_enter);
-		keyMenuBack = GamepadButtonPressed(vk_backspace);
+		keyMenuBack = CheckGamepadButtonPressed(vk_backspace);
 		keyPause = keyboard_check_pressed(vk_escape);
 	break;
 }

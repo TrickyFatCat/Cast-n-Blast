@@ -6,11 +6,11 @@ if (global.TimeFactor > 0)
 	
 	if (activeWeapon.isAuto == true)
 	{
-		_shootKey = sys_GameInitialisator.keyShootAuto;
+		_shootKey = sys_GameManager.keyShootAuto;
 	}
 	else
 	{
-		_shootKey = sys_GameInitialisator.keyShootSemiAuto;
+		_shootKey = sys_GameManager.keyShootSemiAuto;
 	}
 	
 	if (_shootKey) && (ammoCurrent != 0)

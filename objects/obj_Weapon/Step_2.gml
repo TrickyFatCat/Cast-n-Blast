@@ -13,7 +13,7 @@ bulletSpawnPointY = _y + _deltaY;
 
 switch (bulletObjectParent)
 {
-	case obj_HitScan:
+	case obj_Hitscan:
 		SetBulletTransform(hitscanObjects);
 	break;
 

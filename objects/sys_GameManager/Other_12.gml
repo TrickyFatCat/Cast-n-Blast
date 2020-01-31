@@ -5,7 +5,8 @@ keyMoveUp = false;
 keyMoveLeft = false;
 keyMoveDown = false;
 keyMoveRight = false;
-keyShoot = false;
+keyShootAuto = false;
+keyShootSemiAuto = false;
 
 // UI controls
 keyMenuUp = false;

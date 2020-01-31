@@ -1,8 +1,8 @@
 {
-    "id": "aaee7287-e585-4c66-920d-a403e91db5bd",
+    "id": "561a9fac-9542-44b4-8d3b-e8e054470ff3",
     "modelName": "GMScript",
     "mvc": "1.0",
-    "name": "GamepadButtonPressed",
+    "name": "CheckKeyboardOrd",
     "IsCompatibility": false,
     "IsDnD": false
 }

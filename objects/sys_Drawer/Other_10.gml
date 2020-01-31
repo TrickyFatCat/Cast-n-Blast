@@ -1,5 +1,5 @@
 /// @description DrawFloorObjectsController
-with (obj_floor)
+with (obj_Floor)
 {
 	DrawSprite;
 }

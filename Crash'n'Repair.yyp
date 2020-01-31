@@ -375,6 +375,14 @@
             }
         },
         {
+            "Key": "561a9fac-9542-44b4-8d3b-e8e054470ff3",
+            "Value": {
+                "id": "85c03e36-d2f0-4b99-9d9a-9a745cab2910",
+                "resourcePath": "scripts\\CheckKeyboardOrd\\CheckKeyboardOrd.yy",
+                "resourceType": "GMScript"
+            }
+        },
+        {
             "Key": "563b717a-7993-4030-acd1-52fff22f47c2",
             "Value": {
                 "id": "49a11e56-5980-4378-b4bd-71c8f0b8dccf",
@@ -655,6 +663,14 @@
             }
         },
         {
+            "Key": "9e518d6a-74f1-410a-ab5a-c29bed8d72c3",
+            "Value": {
+                "id": "ee39f044-f9cf-4767-9555-88df59505049",
+                "resourcePath": "scripts\\CheckGamepadButton\\CheckGamepadButton.yy",
+                "resourceType": "GMScript"
+            }
+        },
+        {
             "Key": "9eec3d17-d6f7-4579-9c72-c68c03c2537d",
             "Value": {
                 "id": "52492201-d2e9-4a3e-b6e3-41ba2a2d7eed",
@@ -738,7 +754,7 @@
             "Key": "aaee7287-e585-4c66-920d-a403e91db5bd",
             "Value": {
                 "id": "53df2039-687c-44ba-9768-d5f82decd585",
-                "resourcePath": "scripts\\GamepadButtonPressed\\GamepadButtonPressed.yy",
+                "resourcePath": "scripts\\CheckGamepadButtonPressed\\CheckGamepadButtonPressed.yy",
                 "resourceType": "GMScript"
             }
         },
@@ -1182,6 +1198,8 @@
         "49d8e80a-b553-4a27-b541-c7b1e854b618",
         "ad0c12c3-ecf6-4b86-ac1a-42679239a929",
         "aaee7287-e585-4c66-920d-a403e91db5bd",
+        "9e518d6a-74f1-410a-ab5a-c29bed8d72c3",
+        "561a9fac-9542-44b4-8d3b-e8e054470ff3",
         "9ef30917-7a71-41ba-b0e0-f268aaccd126",
         "f880aa16-ac9e-40d8-bcbb-c47218fde082",
         "b9f03d06-805d-4f20-8c40-3b427af39fc2",
