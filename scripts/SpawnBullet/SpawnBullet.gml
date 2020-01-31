@@ -1,0 +1,1 @@
+return instance_create_layer(bulletSpawnPointX, bulletSpawnPointY, layer, bulletObject);

@@ -1,6 +1,9 @@
 // Inherit the parent event
 event_inherited();
 
+#macro playerX global.Player.x
+#macro playerY global.Player.y
+
 //User events
 #macro RespondToControls	event_user(0)
 #macro MovePlayer			event_user(1)
@@ -13,7 +16,7 @@ event_inherited();
 
 //Set shadow
 var _shadowScale = 2;
-SetShadowParametrs(true, _shadowScale);
+SetShadowParameters(true, _shadowScale);
 
 //Movement parameters
 directionX = 0;
@@ -41,7 +44,7 @@ pickupList = ds_list_create();
 // Set player weapon
 var _lastIndex = array_length_1d(global.PlayerWeaponData) - 1;
 weaponID = irandom_range(0, _lastIndex);
-activeWeapon = instance_create_layer(x, y, layer, obj_weapon_player);
+activeWeapon = instance_create_layer(x, y, layer, obj_PlayerWeapon);
 SetPlayerWeapon(activeWeapon, weaponID);
 
 // Set player weapon ammo

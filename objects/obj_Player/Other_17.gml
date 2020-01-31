@@ -28,7 +28,7 @@ if (drawScaleX >= _targetScale)
 	
 	trancendenceTimer += global.TimeFactor;
 	
-	var _timeIsOver = check_timer(trancendenceTimer, _trancendenceTime);
+	var _timeIsOver = CheckTimer(trancendenceTimer, _trancendenceTime);
 	
 	if (_timeIsOver)
 	{

@@ -23,10 +23,6 @@ shadowAlpha = 1.0;
 flashPower = 0.0;
 flashColour = c_red;
 
-// Dissolve shader parameters
-dissolvePower = 0.0;
-SetDissolveSettings(spr_dissolve_00, image_index, c_blue, c_navy, 0.2);
-
 // Movement parameters
 velocityX = 0.0;
 velocityY = 0.0;
