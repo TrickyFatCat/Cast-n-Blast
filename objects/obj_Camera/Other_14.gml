@@ -1,0 +1,3 @@
+/// @description MoveToTarget
+		
+MoveCameraToPoint(cameraSpeed);
