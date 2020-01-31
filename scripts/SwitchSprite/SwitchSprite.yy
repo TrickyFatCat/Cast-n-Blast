@@ -1,8 +1,8 @@
 {
-    "id": "5b3ef04c-08b3-46f7-9c72-10b4d63ff5fd",
+    "id": "3c632e4a-1210-46bd-932a-baa1cbb6ce0e",
     "modelName": "GMScript",
     "mvc": "1.0",
-    "name": "set_time",
+    "name": "SwitchSprite",
     "IsCompatibility": false,
     "IsDnD": false
 }
