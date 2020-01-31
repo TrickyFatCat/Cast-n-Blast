@@ -95,6 +95,14 @@
             }
         },
         {
+            "Key": "12873e87-fef9-490d-82d7-f6d02e528ef7",
+            "Value": {
+                "id": "5befa9d0-e181-4140-ba20-95c55a0182d2",
+                "resourcePath": "views\\12873e87-fef9-490d-82d7-f6d02e528ef7.yy",
+                "resourceType": "GMFolder"
+            }
+        },
+        {
             "Key": "13c490dd-c727-43a6-9068-de506309476f",
             "Value": {
                 "id": "c9bd8e2b-bad3-4884-be56-ddfd9793311b",
@@ -223,6 +231,14 @@
             }
         },
         {
+            "Key": "37225428-7b50-45be-860f-8acb30c7aae3",
+            "Value": {
+                "id": "ef5abc1e-e2ef-425b-b99a-222783a8d7a2",
+                "resourcePath": "scripts\\SetGameState\\SetGameState.yy",
+                "resourceType": "GMScript"
+            }
+        },
+        {
             "Key": "3b9c9ee2-d582-43ae-a81e-c54919d8c51e",
             "Value": {
                 "id": "2823bf8a-4582-4719-9d40-4caeb52a122d",
@@ -236,6 +252,14 @@
                 "id": "3a7f90f3-df6a-416d-ba96-f912c6fedec5",
                 "resourcePath": "views\\3bcb3a60-a745-4498-a3ad-e36ee9d31ad2.yy",
                 "resourceType": "GMFolder"
+            }
+        },
+        {
+            "Key": "3bd80d9f-5483-445e-b01b-c4de0e4d40a2",
+            "Value": {
+                "id": "ae1a7392-e746-4656-8861-bf209ed161a8",
+                "resourcePath": "objects\\gui_Base\\gui_Base.yy",
+                "resourceType": "GMObject"
             }
         },
         {
@@ -303,6 +327,14 @@
             }
         },
         {
+            "Key": "47928193-1657-4c7d-b3f6-391ed6e2571b",
+            "Value": {
+                "id": "7306aa20-84b8-4611-9943-85bef8d21016",
+                "resourcePath": "scripts\\TweenWeighted\\TweenWeighted.yy",
+                "resourceType": "GMScript"
+            }
+        },
+        {
             "Key": "49d8e80a-b553-4a27-b541-c7b1e854b618",
             "Value": {
                 "id": "761f07ca-d7bf-4c1c-9338-ac47ff4a1fa8",
@@ -348,6 +380,14 @@
                 "id": "c10747e5-a8a8-488d-ac0d-e748bc715b15",
                 "resourcePath": "views\\50d8e77c-9a6f-4c9e-bced-800f0cb4cc66.yy",
                 "resourceType": "GMFolder"
+            }
+        },
+        {
+            "Key": "516d40dc-4006-475b-a83c-68fee0c39955",
+            "Value": {
+                "id": "f40487ef-cca3-4f37-8e56-1390cb9fa801",
+                "resourcePath": "objects\\gui_MainMenu\\gui_MainMenu.yy",
+                "resourceType": "GMObject"
             }
         },
         {
@@ -471,6 +511,14 @@
             }
         },
         {
+            "Key": "7230f7a6-e9e3-490b-9388-db85e06d4aee",
+            "Value": {
+                "id": "f5eeab36-7496-4861-b67f-06ba83716817",
+                "resourcePath": "scripts\\DrawTextOutline\\DrawTextOutline.yy",
+                "resourceType": "GMScript"
+            }
+        },
+        {
             "Key": "75ac291e-7061-4bcb-8e8a-3b3545332d41",
             "Value": {
                 "id": "42d24788-838f-4ee4-b721-223b55d61d51",
@@ -555,6 +603,14 @@
             "Value": {
                 "id": "70fadfd3-c343-411c-80e4-0fbedd3f97b3",
                 "resourcePath": "views\\83902639-cb92-49aa-86e1-86144a56dc04.yy",
+                "resourceType": "GMFolder"
+            }
+        },
+        {
+            "Key": "8515b5c7-1fa9-4ede-b355-daea4a1b00c7",
+            "Value": {
+                "id": "35705fe2-04c6-454a-85d6-5330fae171c5",
+                "resourcePath": "views\\8515b5c7-1fa9-4ede-b355-daea4a1b00c7.yy",
                 "resourceType": "GMFolder"
             }
         },
@@ -839,6 +895,14 @@
             }
         },
         {
+            "Key": "b83b25e8-8d75-4411-9f80-eb6ef171d50f",
+            "Value": {
+                "id": "5186e853-ab69-41cd-87a8-25fd890186c6",
+                "resourcePath": "rooms\\rm_start\\rm_start.yy",
+                "resourceType": "GMRoom"
+            }
+        },
+        {
             "Key": "b9f03d06-805d-4f20-8c40-3b427af39fc2",
             "Value": {
                 "id": "b2e6fdca-183c-4246-8761-5a0b1a1ae8b4",
@@ -972,6 +1036,14 @@
                 "id": "1444554f-bf4d-4520-bde7-5a29b3846a7f",
                 "resourcePath": "scripts\\SetAmmoParameters\\SetAmmoParameters.yy",
                 "resourceType": "GMScript"
+            }
+        },
+        {
+            "Key": "d2e763b5-c3e5-4ba6-9f39-8dcb1a2595dd",
+            "Value": {
+                "id": "78643bc0-e951-4a48-81ff-d08186c4eae7",
+                "resourcePath": "objects\\gui_Hud\\gui_Hud.yy",
+                "resourceType": "GMObject"
             }
         },
         {
@@ -1208,6 +1280,7 @@
         "aaee7287-e585-4c66-920d-a403e91db5bd",
         "9e518d6a-74f1-410a-ab5a-c29bed8d72c3",
         "561a9fac-9542-44b4-8d3b-e8e054470ff3",
+        "37225428-7b50-45be-860f-8acb30c7aae3",
         "9ef30917-7a71-41ba-b0e0-f268aaccd126",
         "f880aa16-ac9e-40d8-bcbb-c47218fde082",
         "b9f03d06-805d-4f20-8c40-3b427af39fc2",
@@ -1225,6 +1298,7 @@
         "da6fc09e-aa3e-4ee5-b2f0-df77f4097516",
         "8359eab6-ee11-4593-81e0-91920bafd45a",
         "2af5cc82-3d63-453c-ab2a-e6a02ff07618",
+        "47928193-1657-4c7d-b3f6-391ed6e2571b",
         "a204f53d-f013-43db-8a3f-e08285b2a4a7",
         "b4a223c1-c6ab-46e8-8758-e55cb39500cc",
         "563b717a-7993-4030-acd1-52fff22f47c2",
@@ -1253,7 +1327,8 @@
         "d296ca0d-d65a-40cb-8389-97382c178501",
         "1ffb78b6-2a52-4cf8-b21f-62719c8f4c09",
         "f3f6599b-8068-457b-97b7-05b26d83f475",
-        "da79c651-b444-442d-9028-1c08f38437e2"
+        "da79c651-b444-442d-9028-1c08f38437e2",
+        "7230f7a6-e9e3-490b-9388-db85e06d4aee"
     ],
     "tutorial": ""
 }

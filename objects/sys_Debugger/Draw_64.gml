@@ -91,34 +91,34 @@ with (sys_DisplayManager)
 //#endregion
 
 //#region //Game Data
-//if (instance_exists(obj_inputMethodManager))
-//{
-//	with (obj_inputMethodManager)
-//	{
-//		draw_set_color(c_lime);
-//		draw_set_halign(fa_left);
-//		draw_set_valign(fa_top);
-//		draw_text(5, 290, "GAME PARAMETERS");
-//		draw_text(5, 300, "------------------");
-//		draw_text(5, 320, "Timefactor: " + string(global.TimeFactor));
-//		var _state;
-//		switch global.GameState
-//		{
-//			case GameState.Transition:
-//				_state = "Transiton";
-//			break;
+if (instance_exists(sys_InputMethodManager))
+{
+	with (sys_InputMethodManager)
+	{
+		draw_set_color(c_lime);
+		draw_set_halign(fa_left);
+		draw_set_valign(fa_top);
+		draw_text(5, 290, "GAME PARAMETERS");
+		draw_text(5, 300, "------------------");
+		draw_text(5, 320, "Timefactor: " + string(global.TimeFactor));
+		var _state;
+		switch global.GameState
+		{
+			case GameState.Transition:
+				_state = "Transiton";
+			break;
 			
-//			case GameState.Active:
-//				_state = "Active";
-//			break;
+			case GameState.Active:
+				_state = "Active";
+			break;
 			
-//			case GameState.Paused:
-//				_state = "Paused";
-//			break;
-//		}
-//		draw_text(5, 340, "Current State: " + _state);
-//	}
-//}
+			case GameState.Paused:
+				_state = "Paused";
+			break;
+		}
+		draw_text(5, 340, "Current State: " + _state);
+	}
+}
 
 //if (instance_exists(obj_battleStateHandler))
 //{

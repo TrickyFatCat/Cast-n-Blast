@@ -15,7 +15,7 @@ event_inherited();
 #macro ExecutePlayerDeath	event_user(8)
 
 //Set shadow
-var _shadowScale = 2;
+var _shadowScale = 1;
 SetShadowParameters(true, _shadowScale);
 
 //Movement parameters
