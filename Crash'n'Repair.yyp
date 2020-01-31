@@ -503,6 +503,14 @@
             }
         },
         {
+            "Key": "e25f879f-1976-48b0-ba6d-9e4e13cbc019",
+            "Value": {
+                "id": "93e76b77-fa64-4121-a35c-c0faf94feaa6",
+                "resourcePath": "fonts\\fnt_debug\\fnt_debug.yy",
+                "resourceType": "GMFont"
+            }
+        },
+        {
             "Key": "e4c1bae7-b0c6-4675-a417-8667459194fd",
             "Value": {
                 "id": "2e7d0078-f30d-4c5a-8141-b02a72533a6e",
@@ -548,6 +556,14 @@
                 "id": "54e7f8c1-1394-4168-bf55-80691acfedb9",
                 "resourcePath": "views\\f6831895-0f2c-4cc1-b9cd-4fc29edb15d1.yy",
                 "resourceType": "GMFolder"
+            }
+        },
+        {
+            "Key": "f727025f-0c03-426b-917c-a38473bb6ddc",
+            "Value": {
+                "id": "495807cc-6de8-43f1-ae2a-6169ac5ec1da",
+                "resourcePath": "objects\\sys_Debugger\\sys_Debugger.yy",
+                "resourceType": "GMObject"
             }
         },
         {

@@ -13,6 +13,7 @@ _array[1] = sys_Drawer;
 _array[2] = sys_InputMethodManager;
 _array[3] = sys_GameManager;
 _array[4] = obj_Camera;
+_array[5] = sys_Debugger;
 //_array[3] = obj_battleStateHandler;
 //_array[6] = obj_gameDataHandler;
 //_array[7] = obj_gifRecorder;
