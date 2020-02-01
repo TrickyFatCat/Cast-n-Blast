@@ -100,3 +100,6 @@ ammoCurrent = energy;
 ammoCurrentMax = maxEnergy;
 ds_map_replace(global.PlayerAmmoData[activeWeapon.ammoID],"ammoCurrent",energy);
 ds_map_replace(global.PlayerAmmoData[activeWeapon.ammoID],"ammoCurrentMax",maxEnergy);
+
+// Shield
+shieldIsActive = false;

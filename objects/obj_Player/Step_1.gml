@@ -7,13 +7,22 @@ ChekPlayerHP;
 
 maxVelocity = defaultMaxVelocity * legsFactor;
 
-if (sys_GameManager.keyShootAuto || sys_GameManager.keyShootSemiAuto)
+shieldIsActive = sys_GameManager.keyShield && energy > 0;
+
+var _keyShoot = sys_GameManager.keyShootAuto || sys_GameManager.keyShootSemiAuto; 
+
+if (_keyShoot)
 {
 	energyRestoreFactor = 0;
 }
 else
 {
 	energyRestoreFactor = 1;
+}
+
+if (shieldIsActive && (!_keyShoot))
+{
+	energyRestoreFactor = 0.5 / caseFactor;
 }
 
 maxEnergy = defaultMaxEnergy * caseFactor;

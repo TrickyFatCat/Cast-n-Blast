@@ -8,6 +8,7 @@ keyMoveRight = false;
 keyShootAuto = false;
 keyShootSemiAuto = false;
 keyInteract = false;
+keyShield = false;
 
 // UI controls
 keyMenuUp = false;
