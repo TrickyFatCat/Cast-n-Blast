@@ -815,14 +815,6 @@
             }
         },
         {
-            "Key": "90abffe4-a3ef-411c-97e7-1f339dd599db",
-            "Value": {
-                "id": "93bb00f1-1e91-4c3c-bca3-ca7d10047926",
-                "resourcePath": "rooms\\rm_level4\\rm_level4.yy",
-                "resourceType": "GMRoom"
-            }
-        },
-        {
             "Key": "916f4e5a-0edf-4b7f-b162-1564db8a13f8",
             "Value": {
                 "id": "ab3a5c25-3b68-471b-945d-705e725645eb",
@@ -1066,7 +1058,7 @@
             "Key": "b83b25e8-8d75-4411-9f80-eb6ef171d50f",
             "Value": {
                 "id": "5186e853-ab69-41cd-87a8-25fd890186c6",
-                "resourcePath": "rooms\\rm_start\\rm_start.yy",
+                "resourcePath": "rooms\\rm_Arena\\rm_Arena.yy",
                 "resourceType": "GMRoom"
             }
         },
@@ -1084,14 +1076,6 @@
                 "id": "b2e6fdca-183c-4246-8761-5a0b1a1ae8b4",
                 "resourcePath": "scripts\\SetCameraZoom\\SetCameraZoom.yy",
                 "resourceType": "GMScript"
-            }
-        },
-        {
-            "Key": "bb47333e-7b61-499f-8edd-532a3613ef93",
-            "Value": {
-                "id": "30479c0a-ca89-4913-baae-75fe40e644eb",
-                "resourcePath": "rooms\\rm_level2\\rm_level2.yy",
-                "resourceType": "GMRoom"
             }
         },
         {
@@ -1167,14 +1151,6 @@
             }
         },
         {
-            "Key": "cd7387f1-8312-4a5a-a89e-6a7e5f454e38",
-            "Value": {
-                "id": "9078949a-daea-4fbc-9f69-a64a9c5fc3b9",
-                "resourcePath": "rooms\\rm_level1\\rm_level1.yy",
-                "resourceType": "GMRoom"
-            }
-        },
-        {
             "Key": "ce082db5-a282-4775-9f0f-5c05428b2cae",
             "Value": {
                 "id": "59c926ee-4d27-4cd2-b5a5-d68c8a6e855b",
@@ -1231,27 +1207,11 @@
             }
         },
         {
-            "Key": "d29eded3-be0a-465a-b99e-2b1007a62d9b",
-            "Value": {
-                "id": "77ffbf12-8c45-4697-a8d7-20e930cdc6b6",
-                "resourcePath": "objects\\obj_WarpPoint\\obj_WarpPoint.yy",
-                "resourceType": "GMObject"
-            }
-        },
-        {
             "Key": "d2e763b5-c3e5-4ba6-9f39-8dcb1a2595dd",
             "Value": {
                 "id": "78643bc0-e951-4a48-81ff-d08186c4eae7",
                 "resourcePath": "objects\\gui_Hud\\gui_Hud.yy",
                 "resourceType": "GMObject"
-            }
-        },
-        {
-            "Key": "d324443f-6a9a-4ae9-80cf-0cbbdee4673c",
-            "Value": {
-                "id": "8cc400e7-04fe-4819-9c37-6c36d965a0b1",
-                "resourcePath": "rooms\\rm_level3\\rm_level3.yy",
-                "resourceType": "GMRoom"
             }
         },
         {

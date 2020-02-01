@@ -43,7 +43,7 @@
             "mvc": "1.0",
             "objectId": "3bd80d9f-5483-445e-b01b-c4de0e4d40a2",
             "propertyId": "72726c66-367d-48d0-b9b8-b41d6a5cb484",
-            "value": "rm_start"
+            "value": "rm_Arena"
         }
     ],
     "parentObjectId": "3bd80d9f-5483-445e-b01b-c4de0e4d40a2",

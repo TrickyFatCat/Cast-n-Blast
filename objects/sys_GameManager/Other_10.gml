@@ -8,6 +8,7 @@ switch global.CurrentInput
 		keyShootSemiAuto = CheckGamepadButtonPressed(_gamepadButton);
 		keyInteract = CheckGamepadButtonPressed(gp_face1);
 		keyShield = CheckGamepadButton(gp_shoulderlb);
+		keyDash = CheckGamepadButton(gp_face1);
 	break;
 	
 	case InputMethod.KeyboardMouse:
@@ -21,5 +22,6 @@ switch global.CurrentInput
 		keyShootSemiAuto = mouse_check_button_pressed(_mouseButton);
 		keyInteract = CheckKeyboardOrd("E");
 		keyShield = mouse_check_button(mb_right);
+		keyDash = keyboard_check_pressed(vk_space);
 	break;
 }

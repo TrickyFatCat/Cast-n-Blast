@@ -33,3 +33,11 @@ else
 {
 	currentState = PlayerState.Idle;
 }
+
+if (sys_GameManager.keyDash && energy >= dashCost)
+{
+	previousState = currentState;
+	currentState = PlayerState.Dash;
+	velocity = dashVelocity;
+	DecreaseEnergy(dashCost);
+}

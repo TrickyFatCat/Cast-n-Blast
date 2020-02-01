@@ -1,6 +1,6 @@
 
 {
-    "name": "rm_start",
+    "name": "rm_Arena",
     "id": "b83b25e8-8d75-4411-9f80-eb6ef171d50f",
     "creationCodeFile": "",
     "inheritCode": false,
@@ -9,7 +9,6 @@
     "instanceCreationOrderIDs": [
         "75821fe4-bb63-4460-b976-f61b0bde76b6",
         "13ad48e9-3f34-4540-babe-15ae501287cf",
-        "348338d3-d21b-48d8-bdc0-54e58b2f0665",
         "c79e0ae0-2602-4bc6-8a0b-82b413b1e546"
     ],
     "IsDnD": false,
@@ -28,7 +27,7 @@
             "inheritSubLayers": false,
             "inheritVisibility": false,
             "instances": [
-{"name": "warpToLevel1","id": "348338d3-d21b-48d8-bdc0-54e58b2f0665","colour": { "Value": 4294967295 },"creationCodeFile": "","creationCodeType": "","ignore": false,"imageIndex": 0,"imageSpeed": 1,"inheritCode": false,"inheritItemSettings": false,"IsDnD": false,"m_originalParentID": "00000000-0000-0000-0000-000000000000","m_serialiseFrozen": false,"modelName": "GMRInstance","name_with_no_file_rename": "warpToLevel1","objId": "d29eded3-be0a-465a-b99e-2b1007a62d9b","properties": [{"id": "d8d59cf9-4947-4acc-8be5-58f799b1c3c0","modelName": "GMOverriddenProperty","objectId": "d29eded3-be0a-465a-b99e-2b1007a62d9b","propertyId": "10b421ba-0a75-47f2-b1d6-9dcc9aec0774","mvc": "1.0","value": "rm_level1"}],"rotation": 0,"scaleX": 64,"scaleY": 32,"mvc": "1.1","x": 448,"y": 256}
+
             ],
             "layers": [
 

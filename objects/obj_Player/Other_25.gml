@@ -1,4 +1,4 @@
 // Inherit the parent event
 event_inherited();
 
-draw_text(x,y,energyPenaltyTimer / 60);
+draw_text(x,y,velocity);

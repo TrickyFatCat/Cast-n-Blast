@@ -9,6 +9,7 @@ keyShootAuto = false;
 keyShootSemiAuto = false;
 keyInteract = false;
 keyShield = false;
+keyDash = false;
 
 // UI controls
 keyMenuUp = false;

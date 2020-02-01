@@ -35,6 +35,7 @@ enum PlayerState
 }
 
 currentState = PlayerState.Idle;
+previousState = currentState;
 sprite_index = spriteIdle;
 
 // PickUp magnet paramentrs
@@ -105,3 +106,8 @@ ds_map_replace(global.PlayerAmmoData[activeWeapon.ammoID],"ammoCurrentMax",maxEn
 
 // Shield
 shieldIsActive = false;
+
+// Dash
+deafaultDashVelocity = dashVelocity;
+dashCost = 25;
+defaultDashCost = dashCost;

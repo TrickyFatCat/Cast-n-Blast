@@ -6,6 +6,8 @@ event_inherited();
 ChekPlayerHP;
 
 maxVelocity = defaultMaxVelocity * legsFactor;
+dashVelocity = deafaultDashVelocity * legsFactor;
+dashCost = round(defaultDashCost - defaultDashCost * (1 - legsFactor));
 
 shieldIsActive = sys_GameManager.keyShield && energy > 0;
 

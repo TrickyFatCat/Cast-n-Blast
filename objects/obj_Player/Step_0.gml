@@ -27,6 +27,7 @@ switch (currentState)
 	break;
 	
 	case PlayerState.Dash:
+		MovePlayer;
 	break;
 	
 	case PlayerState.Transcendence:
@@ -39,23 +40,3 @@ switch (currentState)
 }
 
 CheckCollision(obj_Obstacle);
-
-var warpPoint = instance_place(x, y, obj_WarpPoint);
-if (warpPoint != noone && gui_Hud.currentState != InterfaceState.TransitionOut)
-{
-	if (sys_GameManager.keyInteract)
-	{
-		with (sys_GameManager)
-		{
-			nextRoom = warpPoint.targetRoom;
-			spawnX = warpPoint.targetX;
-			spawnY = warpPoint.targetY;
-		}
-	
-		with (gui_Hud)
-		{
-			nextRoom = warpPoint.targetRoom;
-			currentState = InterfaceState.TransitionOut;
-		}
-	}
-}
