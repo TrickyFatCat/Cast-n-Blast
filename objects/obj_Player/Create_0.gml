@@ -58,3 +58,45 @@ spawnY = 0;
 
 // Scrap
 global.Scrap = 0;
+
+// Legs
+var _initialLegs = PlayerPart.Legs0;
+legsLevel = GetPartLevel(_initialLegs);
+legsHitPoints = GetPartMaxHp(_initialLegs);
+legsMaxHitPoints = GetPartMaxHp(_initialLegs);
+legsRepairCost = GetPartRepairCost(_initialLegs);
+legsFactor = GetPartEffectivness(_initialLegs);
+
+// Case
+var _initialCase = PlayerPart.Case0;
+caseLevel = GetPartLevel(_initialCase);
+caseHitPoints = GetPartMaxHp(_initialCase);
+caseMaxHitPoints = GetPartMaxHp(_initialCase);
+caseRepairCost = GetPartRepairCost(_initialCase);
+caseFactor = GetPartEffectivness(_initialCase);
+
+// Case
+var _initialCase = PlayerPart.Weapon0;
+weaponLevel = GetPartLevel(_initialCase);
+weaponHitPoints = GetPartMaxHp(_initialCase);
+weaponMaxHitPoints = GetPartMaxHp(_initialCase);
+weaponRepairCost = GetPartRepairCost(_initialCase);
+weaponFactor = GetPartEffectivness(_initialCase);
+
+// Energy
+maxEnergy = 100;
+defaultMaxEnergy = maxEnergy;
+energy = 1;
+energyRestoreRate = 10;
+energyRestoreFactor = 2;
+energyDefaultRestoreRate = energyRestoreRate;
+energyRestoreTimer = 0;
+
+canRestore = true;
+energyPenaltyTime = SetTime(4);
+energyPenaltyTimer = 0;
+
+ammoCurrent = energy;
+ammoCurrentMax = maxEnergy;
+ds_map_replace(global.PlayerAmmoData[activeWeapon.ammoID],"ammoCurrent",energy);
+ds_map_replace(global.PlayerAmmoData[activeWeapon.ammoID],"ammoCurrentMax",maxEnergy);

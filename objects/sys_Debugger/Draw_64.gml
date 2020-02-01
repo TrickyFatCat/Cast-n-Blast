@@ -29,96 +29,98 @@ with (sys_DisplayManager)
 }
 #endregion
 
-//#region //Player Data
-//if (instance_exists(obj_player))
-//{
-//	with (obj_player)
-//	{
-//		draw_set_color(c_fuchsia);
-//		draw_set_halign(fa_left);
-//		draw_set_valign(fa_top);
-//		draw_text(5, 150, "PLAYER PARAMETERS");
-//		draw_text(5, 160, "------------------");
-//		var _state;
-//		switch currentState
-//		{
-//			case PlayerState.Spawn:
-//				_state = "Spawn";
-//			break;
-			
-//			case PlayerState.Idle:
-//				_state = "Idle";
-//			break;
-			
-//			case PlayerState.Run:
-//				_state = "Run";
-//			break;
-			
-//			case PlayerState.Jump:
-//				_state = "Jump";
-//			break;
-			
-//			case PlayerState.Dash:
-//				_state = "Dash";
-//			break;
-			
-//			case PlayerState.Transcendence:
-//				_state = "Transcendence";
-//			break;
-			
-//			case PlayerState.Death:
-//				_state = "Death";
-//			break;
-//		}
-//		draw_text(5, 180, "Current State: " + _state);
-//		draw_text(5, 200, "Health Points: " + string(healthPointsCurrent) + "/" + string(healthPointsMax));
-//		draw_text(5, 220, "Current Ammo: " + string(ammoCurrent) + "/" + string(ammoCurrentMax));
-//		//var _isShooting;
-//		//if (activeWeapon.isShooting)
-//		//{
-//		//	_isShooting = "True";
-//		//}
-//		//else
-//		//{
-//		//	_isShooting = "False";
-//		//}
-//		//draw_text(5, 240, "Is shooting: " + _isShooting);
-//		draw_text(5, 240, "WeaponROF: " + string(activeWeapon.rateOfFireCurrent));
-//		draw_text(5, 260, "WeaponID: " + string(weaponID) + " | AmmoID: " + string(ammoID));
-//		draw_set_color(c_white);
-//	}
-//}
-//#endregion
-
-//#region //Game Data
-if (instance_exists(sys_InputMethodManager))
+#region //Player Data
+if (instance_exists(obj_Player))
 {
-	with (sys_InputMethodManager)
+	with (obj_Player)
 	{
-		draw_set_color(c_lime);
+		draw_set_color(c_fuchsia);
 		draw_set_halign(fa_left);
 		draw_set_valign(fa_top);
-		draw_text(5, 290, "GAME PARAMETERS");
-		draw_text(5, 300, "------------------");
-		draw_text(5, 320, "Timefactor: " + string(global.TimeFactor));
-		var _state;
-		switch global.GameState
-		{
-			case GameState.Transition:
-				_state = "Transiton";
-			break;
+		draw_text(5, 150, "PLAYER PARAMETERS");
+		draw_text(5, 160, "------------------");
+		//var _state;
+		//switch currentState
+		//{
+		//	case PlayerState.Spawn:
+		//		_state = "Spawn";
+		//	break;
 			
-			case GameState.Active:
-				_state = "Active";
-			break;
+		//	case PlayerState.Idle:
+		//		_state = "Idle";
+		//	break;
 			
-			case GameState.Paused:
-				_state = "Paused";
-			break;
-		}
-		draw_text(5, 340, "Current State: " + _state);
+		//	case PlayerState.Run:
+		//		_state = "Run";
+		//	break;
+			
+		//	case PlayerState.Jump:
+		//		_state = "Jump";
+		//	break;
+			
+		//	case PlayerState.Dash:
+		//		_state = "Dash";
+		//	break;
+			
+		//	case PlayerState.Transcendence:
+		//		_state = "Transcendence";
+		//	break;
+			
+		//	case PlayerState.Death:
+		//		_state = "Death";
+		//	break;
+		//}
+		//draw_text(5, 180, "Current State: " + _state);
+		draw_text(5, 180, "Hit Points: " + string(hitPoints) + "/" + string(maxHitPoints));
+		draw_text(5, 200, "Energy: " + string(energy) + "/" + string(maxEnergy));
+		draw_text(5, 220, "Scrap: " + string(global.Scrap));
+		draw_text(5, 240, "Current Ammo: " + string(ammoCurrent) + "/" + string(ammoCurrentMax));
+		//var _isShooting;
+		//if (activeWeapon.isShooting)
+		//{
+		//	_isShooting = "True";
+		//}
+		//else
+		//{
+		//	_isShooting = "False";
+		//}
+		//draw_text(5, 240, "Is shooting: " + _isShooting);
+		//draw_text(5, 240, "WeaponROF: " + string(activeWeapon.rateOfFireCurrent));
+		//draw_text(5, 260, "WeaponID: " + string(weaponID) + " | AmmoID: " + string(ammoID));
+		//draw_set_color(c_white);
 	}
 }
+#endregion
+
+//#region //Game Data
+//if (instance_exists(sys_InputMethodManager))
+//{
+//	with (sys_InputMethodManager)
+//	{
+//		draw_set_color(c_lime);
+//		draw_set_halign(fa_left);
+//		draw_set_valign(fa_top);
+//		draw_text(5, 290, "GAME PARAMETERS");
+//		draw_text(5, 300, "------------------");
+//		draw_text(5, 320, "Timefactor: " + string(global.TimeFactor));
+//		var _state;
+//		switch global.GameState
+//		{
+//			case GameState.Transition:
+//				_state = "Transiton";
+//			break;
+			
+//			case GameState.Active:
+//				_state = "Active";
+//			break;
+			
+//			case GameState.Paused:
+//				_state = "Paused";
+//			break;
+//		}
+//		draw_text(5, 340, "Current State: " + _state);
+//	}
+//}
 
 //if (instance_exists(obj_battleStateHandler))
 //{

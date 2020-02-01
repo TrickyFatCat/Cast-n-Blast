@@ -1,10 +1,14 @@
 // Inherit the parent event
 event_inherited();
 
-with (sys_GameManager)
+if (global.Player == noone)
 {
-	spawnX = other.x;
-	spawnY = other.y;
+	with (sys_GameManager)
+	{
+		spawnX = other.x;
+		spawnY = other.y;
+	}
+
+	global.Player = instance_create_layer(x, y, "entities", obj_Player);
+	SetCameraMode(CameraMode.FollowPointPeek);
 }
-global.Player = instance_create_layer(x, y, "entities", obj_Player);
-SetCameraMode(CameraMode.FollowPointPeek);

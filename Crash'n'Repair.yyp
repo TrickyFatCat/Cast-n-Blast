@@ -39,6 +39,14 @@
             }
         },
         {
+            "Key": "04f2a6ea-7083-4b65-a64f-6d36a8a312b7",
+            "Value": {
+                "id": "5b2e5338-9259-4ede-aab7-7631ef3760d9",
+                "resourcePath": "scripts\\ClearPartsData\\ClearPartsData.yy",
+                "resourceType": "GMScript"
+            }
+        },
+        {
             "Key": "05f92ec3-120c-4570-a05d-ff81220fde81",
             "Value": {
                 "id": "c5e4abd5-959f-45d2-8dc5-35dd064acdbb",
@@ -67,6 +75,14 @@
             "Value": {
                 "id": "23f8f2ff-8473-474a-8102-028d00b42f73",
                 "resourcePath": "scripts\\SetJumpShadowAlpha\\SetJumpShadowAlpha.yy",
+                "resourceType": "GMScript"
+            }
+        },
+        {
+            "Key": "10c47987-e609-43f2-8074-96d977ac5217",
+            "Value": {
+                "id": "db014b4e-f202-44ed-a468-ee92258401e7",
+                "resourcePath": "scripts\\IncreaseEnergy\\IncreaseEnergy.yy",
                 "resourceType": "GMScript"
             }
         },
@@ -359,6 +375,14 @@
             }
         },
         {
+            "Key": "49d6b2b8-b640-4912-a714-6627da7b2c73",
+            "Value": {
+                "id": "c30f65ea-48c0-4e1e-b65e-d1dc4ee6dd77",
+                "resourcePath": "scripts\\DecreaseEnergy\\DecreaseEnergy.yy",
+                "resourceType": "GMScript"
+            }
+        },
+        {
             "Key": "49d8e80a-b553-4a27-b541-c7b1e854b618",
             "Value": {
                 "id": "761f07ca-d7bf-4c1c-9338-ac47ff4a1fa8",
@@ -380,6 +404,14 @@
                 "id": "6d019cb8-965c-4b5b-95e4-62a5a11070b0",
                 "resourcePath": "objects\\sys_GameManager\\sys_GameManager.yy",
                 "resourceType": "GMObject"
+            }
+        },
+        {
+            "Key": "4e94a9d6-f0b1-4c73-99d8-36b4a488c76d",
+            "Value": {
+                "id": "a7c0058b-c46b-4a0f-8332-d6d999883133",
+                "resourcePath": "scripts\\GetPartEffectivness\\GetPartEffectivness.yy",
+                "resourceType": "GMScript"
             }
         },
         {
@@ -679,6 +711,14 @@
             }
         },
         {
+            "Key": "83ccc7aa-c20e-4912-bc3c-8de5db671fb3",
+            "Value": {
+                "id": "320c04a2-f127-497d-aa0d-ebc04ac2d562",
+                "resourcePath": "views\\83ccc7aa-c20e-4912-bc3c-8de5db671fb3.yy",
+                "resourceType": "GMFolder"
+            }
+        },
+        {
             "Key": "8515b5c7-1fa9-4ede-b355-daea4a1b00c7",
             "Value": {
                 "id": "35705fe2-04c6-454a-85d6-5330fae171c5",
@@ -759,6 +799,14 @@
             }
         },
         {
+            "Key": "8ee865f9-eed1-4658-8399-1f0e5d9e142a",
+            "Value": {
+                "id": "81c3181e-1cd4-42a7-9593-b72757c83de1",
+                "resourcePath": "scripts\\GetPartLevel\\GetPartLevel.yy",
+                "resourceType": "GMScript"
+            }
+        },
+        {
             "Key": "9011710b-2336-4c27-9016-87d0065e81f0",
             "Value": {
                 "id": "7f35b638-5533-4181-98bb-265bc2d18a93",
@@ -788,6 +836,14 @@
                 "id": "c4c92756-fdba-4a32-8e19-d922b434f99f",
                 "resourcePath": "scripts\\CalculateConstantVelocity\\CalculateConstantVelocity.yy",
                 "resourceType": "GMScript"
+            }
+        },
+        {
+            "Key": "9b510372-019c-4c19-bd0f-b8181f91c229",
+            "Value": {
+                "id": "6f64e8ea-1011-4066-b93a-13a911f7cacd",
+                "resourcePath": "views\\9b510372-019c-4c19-bd0f-b8181f91c229.yy",
+                "resourceType": "GMFolder"
             }
         },
         {
@@ -868,6 +924,14 @@
                 "id": "ebfd3348-facd-4018-bb1e-68b1c34b556f",
                 "resourcePath": "views\\a5cf7597-3f57-4434-99e8-6faee05ddd79.yy",
                 "resourceType": "GMFolder"
+            }
+        },
+        {
+            "Key": "a63c70aa-8066-4814-aa08-055451bb260b",
+            "Value": {
+                "id": "6f231a3f-5127-47ae-a16c-8b4bf460c2c2",
+                "resourcePath": "scripts\\StorePartsData\\StorePartsData.yy",
+                "resourceType": "GMScript"
             }
         },
         {
@@ -996,6 +1060,14 @@
                 "id": "5186e853-ab69-41cd-87a8-25fd890186c6",
                 "resourcePath": "rooms\\rm_start\\rm_start.yy",
                 "resourceType": "GMRoom"
+            }
+        },
+        {
+            "Key": "b8bbd4b8-3f57-48a0-bceb-e0919157ff2e",
+            "Value": {
+                "id": "fe9dc56b-4a72-478f-8d10-7a18e90602b6",
+                "resourcePath": "scripts\\GetPartRepairCost\\GetPartRepairCost.yy",
+                "resourceType": "GMScript"
             }
         },
         {
@@ -1271,6 +1343,14 @@
             }
         },
         {
+            "Key": "e70dc3bb-8869-4663-b79b-b00add9539d6",
+            "Value": {
+                "id": "cef59f06-ed54-402e-8e13-32d3f72eb4d1",
+                "resourcePath": "scripts\\GetPartMaxHp\\GetPartMaxHp.yy",
+                "resourceType": "GMScript"
+            }
+        },
+        {
             "Key": "ea8c0d06-42e4-4458-9b7e-a4271f982a18",
             "Value": {
                 "id": "26cafb40-d54f-43d0-95cc-dddc783acdf5",
@@ -1467,7 +1547,15 @@
         "7230f7a6-e9e3-490b-9388-db85e06d4aee",
         "54ee8d9d-e5ba-443b-913c-12a1ea553ea0",
         "ae5cc228-1391-4d60-b019-fc13fd13165a",
-        "20cdd0bc-00cf-48f8-974a-7c3fc97a7bd2"
+        "20cdd0bc-00cf-48f8-974a-7c3fc97a7bd2",
+        "a63c70aa-8066-4814-aa08-055451bb260b",
+        "04f2a6ea-7083-4b65-a64f-6d36a8a312b7",
+        "8ee865f9-eed1-4658-8399-1f0e5d9e142a",
+        "e70dc3bb-8869-4663-b79b-b00add9539d6",
+        "4e94a9d6-f0b1-4c73-99d8-36b4a488c76d",
+        "b8bbd4b8-3f57-48a0-bceb-e0919157ff2e",
+        "10c47987-e609-43f2-8074-96d977ac5217",
+        "49d6b2b8-b640-4912-a714-6627da7b2c73"
     ],
     "tutorial": ""
 }
