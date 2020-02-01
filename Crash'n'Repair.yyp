@@ -95,6 +95,14 @@
             }
         },
         {
+            "Key": "114d1acc-9012-4923-b3af-0d823883ea3b",
+            "Value": {
+                "id": "4bf047c3-2a47-43b8-835a-cb9def620473",
+                "resourcePath": "views\\114d1acc-9012-4923-b3af-0d823883ea3b.yy",
+                "resourceType": "GMFolder"
+            }
+        },
+        {
             "Key": "117d62ef-0405-468e-87a5-48fde52426af",
             "Value": {
                 "id": "7910922f-593c-4b58-a602-2bbfa2e2170a",
@@ -236,6 +244,22 @@
                 "id": "511ba23b-4d11-41f9-90e2-a5d5041b439e",
                 "resourcePath": "sprites\\spr_player_walk\\spr_player_walk.yy",
                 "resourceType": "GMSprite"
+            }
+        },
+        {
+            "Key": "248fcf76-cbdc-402e-8121-3c8f464ca27e",
+            "Value": {
+                "id": "b2a25670-45bd-4a85-92d3-33d9c4c6e0e9",
+                "resourcePath": "objects\\obj_Wall\\obj_Wall.yy",
+                "resourceType": "GMObject"
+            }
+        },
+        {
+            "Key": "27c2757c-5acd-40f3-b659-521d4cbc5265",
+            "Value": {
+                "id": "d9dadcde-7989-4cd5-8053-d3f26146d0d5",
+                "resourcePath": "views\\27c2757c-5acd-40f3-b659-521d4cbc5265.yy",
+                "resourceType": "GMFolder"
             }
         },
         {
@@ -1131,6 +1155,14 @@
             "Value": {
                 "id": "efe44125-2531-4f74-a762-b1b7c80de012",
                 "resourcePath": "objects\\obj_Obstacle\\obj_Obstacle.yy",
+                "resourceType": "GMObject"
+            }
+        },
+        {
+            "Key": "b101780b-00af-4298-a569-cd51fd5618e5",
+            "Value": {
+                "id": "73a964c6-8208-4211-b5c3-837118bc61e7",
+                "resourcePath": "objects\\obj_WaveStarter\\obj_WaveStarter.yy",
                 "resourceType": "GMObject"
             }
         },

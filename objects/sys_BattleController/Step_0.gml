@@ -38,15 +38,27 @@ switch (global.BattleState)
 		
 		global.PlayTime += global.TimeFactor;
 		
-		if (array_length_1d(difficultyIncreaseTime) - 1 >= global.DifficultyLevel)
+		var _waveTimeIsOver = CheckTimer(global.PlayTime, SetTime(90))
+		
+		if (_waveTimeIsOver)
 		{
-			var _checkTimer = CheckTimer(global.PlayTime, difficultyIncreaseTime[global.DifficultyLevel])
-			
-			if (_checkTimer)
-			{
-				global.DifficultyLevel++;
-			}
+			global.PlayTime = 0;
+			instance_activate_object(global.WaveStarter);
+			global.BattleState = BattleState.Paused;
 		}
+		
+		//if (array_length_1d(difficultyIncreaseTime) - 1 >= global.DifficultyLevel)
+		//{
+		//	var _checkTimer = CheckTimer(global.PlayTime, difficultyIncreaseTime[global.DifficultyLevel])
+			
+		//	if (_checkTimer)
+		//	{
+		//		global.DifficultyLevel++;
+		//	}
+		//}
+	break;
+	
+	case BattleState.Paused:
 	break;
 			
 	case BattleState.End:
