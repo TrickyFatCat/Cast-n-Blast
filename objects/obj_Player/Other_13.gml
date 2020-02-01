@@ -16,10 +16,11 @@ if (collision_circle(x, y, pullDistance, obj_Pickup, true, true)) //Check if the
 			//Pull Pickup
 			with (_pickup)
 			{
-				if ((isPullable) && currentState < PickupState.Pull)
+				if (isPullable)
 				{
-					target = other.id;
-					currentState = PickupState.Pull;
+					MoveObject(false);
+					var _playerDirection = point_direction(x, y, playerX, playerY);
+					pullVelocityCurrent = CalculateAcceleratedVelocity(_playerDirection, pullVelocityCurrent, obj_Player.pullVelocityMax, obj_Player.pullAcceleration);
 				}
 			}
 		}

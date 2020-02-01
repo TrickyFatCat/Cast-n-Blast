@@ -38,7 +38,9 @@ currentState = PlayerState.Idle;
 sprite_index = spriteIdle;
 
 // PickUp magnet paramentrs
-pullDistance = 500;
+pullDistance = 64;
+pullVelocityMax = 8;
+pullAcceleration = 0.25;
 pickupList = ds_list_create();
 
 // Set player weapon
