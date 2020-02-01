@@ -1,72 +1,72 @@
 // Parameters
 enum PlayerWeapon
 {
-	Weapon
+	PlasmaGun
 }
 
-#macro TestWeapon global.PlayerWeaponData[PlayerWeapon.Weapon]
+#macro PlasmaGunData global.PlayerWeaponData[PlayerWeapon.PlasmaGun]
 
 // Weapons data
-global.PlayerWeaponData[PlayerWeapon.Weapon] = ds_map_create();
-ds_map_add(TestWeapon, "weaponSprite",					spr_playerWeapon);
-ds_map_add(TestWeapon, "offsetY",						6);
-ds_map_add(TestWeapon, "laserSightEnabled",				false);
-ds_map_add(TestWeapon, "isAuto",						true);
-ds_map_add(TestWeapon, "currentShootMode",				ShootMode.Normal);
+PlasmaGunData = ds_map_create();
+ds_map_add(PlasmaGunData, "weaponSprite",					spr_playerWeapon);
+ds_map_add(PlasmaGunData, "offsetY",						6);
+ds_map_add(PlasmaGunData, "laserSightEnabled",				false);
+ds_map_add(PlasmaGunData, "isAuto",						true);
+ds_map_add(PlasmaGunData, "currentShootMode",				ShootMode.Normal);
 //-----------------------------------------------------------------------------
-ds_map_add(TestWeapon, "bulletObject",					obj_PProjectile_Normal);
-ds_map_add(TestWeapon, "bulletNumber",					1);
-ds_map_add(TestWeapon, "bulletSpawnPointOffset",		19);
+ds_map_add(PlasmaGunData, "bulletObject",					obj_PProjectile_Normal);
+ds_map_add(PlasmaGunData, "bulletNumber",					1);
+ds_map_add(PlasmaGunData, "bulletSpawnPointOffset",		19);
 //-----------------------------------------------------------------------------
-ds_map_add(TestWeapon, "damage",						5);
-ds_map_add(TestWeapon, "heal",							0);
+ds_map_add(PlasmaGunData, "damage",						5);
+ds_map_add(PlasmaGunData, "heal",							0);
 //-----------------------------------------------------------------------------
-ds_map_add(TestWeapon, "rateOfFireAccelerated",			false);
-ds_map_add(TestWeapon, "rateOfFireIncrStep",			0);
-ds_map_add(TestWeapon, "rateOfFireDecrStep",			0);
-ds_map_add(TestWeapon, "rateOfFireMin",					8);
-ds_map_add(TestWeapon, "rateOfFireMax",					0);
+ds_map_add(PlasmaGunData, "rateOfFireAccelerated",			false);
+ds_map_add(PlasmaGunData, "rateOfFireIncrStep",			0);
+ds_map_add(PlasmaGunData, "rateOfFireDecrStep",			0);
+ds_map_add(PlasmaGunData, "rateOfFireMin",					8);
+ds_map_add(PlasmaGunData, "rateOfFireMax",					0);
 //-----------------------------------------------------------------------------
-ds_map_add(TestWeapon, "burstRate",						0);
-ds_map_add(TestWeapon, "burstShotsNumber",				0);
+ds_map_add(PlasmaGunData, "burstRate",						0);
+ds_map_add(PlasmaGunData, "burstShotsNumber",				0);
 //-----------------------------------------------------------------------------
-ds_map_add(TestWeapon, "castExecuteCount",				0);
-ds_map_add(TestWeapon, "castTime",						0);
+ds_map_add(PlasmaGunData, "castExecuteCount",				0);
+ds_map_add(PlasmaGunData, "castTime",						0);
 //-----------------------------------------------------------------------------
-ds_map_add(TestWeapon, "chargeExecuteCountMin",			1);
-ds_map_add(TestWeapon, "chargeExecuteCountMax",			0);
-ds_map_add(TestWeapon, "chargeTime",					1);
-ds_map_add(TestWeapon, "chargeWaitTime",				0);
-ds_map_add(TestWeapon, "chargeDamageFactorMax",			4);
-ds_map_add(TestWeapon, "chargeHealFactorMax",			0);
-ds_map_add(TestWeapon, "chargeRateFactorMax",			0);
-ds_map_add(TestWeapon, "chargeBulletNumberFactorMax",	0);
-ds_map_add(TestWeapon, "chargeVelocityFactorMax",		20);
-ds_map_add(TestWeapon, "chargeShakeFactorMax",			1.25);
+ds_map_add(PlasmaGunData, "chargeExecuteCountMin",			1);
+ds_map_add(PlasmaGunData, "chargeExecuteCountMax",			0);
+ds_map_add(PlasmaGunData, "chargeTime",					1);
+ds_map_add(PlasmaGunData, "chargeWaitTime",				0);
+ds_map_add(PlasmaGunData, "chargeDamageFactorMax",			4);
+ds_map_add(PlasmaGunData, "chargeHealFactorMax",			0);
+ds_map_add(PlasmaGunData, "chargeRateFactorMax",			0);
+ds_map_add(PlasmaGunData, "chargeBulletNumberFactorMax",	0);
+ds_map_add(PlasmaGunData, "chargeVelocityFactorMax",		20);
+ds_map_add(PlasmaGunData, "chargeShakeFactorMax",			1.25);
 //-----------------------------------------------------------------------------
-ds_map_add(TestWeapon, "spreadIsDynamic",				false);
-ds_map_add(TestWeapon, "spreadIsUniform",				false);
-ds_map_add(TestWeapon, "spreadAngleIncrFactor",			0.2);
-ds_map_add(TestWeapon, "spreadAngleDecrFactor",			0.0075);
-ds_map_add(TestWeapon, "spreadAngleMin",				0);
-ds_map_add(TestWeapon, "spreadAngleMax",				0);
+ds_map_add(PlasmaGunData, "spreadIsDynamic",				false);
+ds_map_add(PlasmaGunData, "spreadIsUniform",				false);
+ds_map_add(PlasmaGunData, "spreadAngleIncrFactor",			0.2);
+ds_map_add(PlasmaGunData, "spreadAngleDecrFactor",			0.0075);
+ds_map_add(PlasmaGunData, "spreadAngleMin",				0);
+ds_map_add(PlasmaGunData, "spreadAngleMax",				0);
 //-----------------------------------------------------------------------------
-ds_map_add(TestWeapon, "ammoID",						PlayerAmmo.Weapon);
-ds_map_add(TestWeapon, "shootAmmoCost",					1);
+ds_map_add(PlasmaGunData, "ammoID",						PlayerAmmo.Weapon);
+ds_map_add(PlasmaGunData, "shootAmmoCost",					1);
 //-----------------------------------------------------------------------------
-ds_map_add(TestWeapon, "recoilPower",					10);
-ds_map_add(TestWeapon, "recoilFactor",					0.3);
+ds_map_add(PlasmaGunData, "recoilPower",					10);
+ds_map_add(PlasmaGunData, "recoilFactor",					0.3);
 //-----------------------------------------------------------------------------
-ds_map_add(TestWeapon, "hitscanScaleY",					0);
-ds_map_add(TestWeapon, "projectileVelocityNoiseFactor",	0);
-ds_map_add(TestWeapon, "projectileVelocityCurrent",		20);
-ds_map_add(TestWeapon, "projectileVelocityMax",			0);
-ds_map_add(TestWeapon, "projectileAcceleration",		0);
-ds_map_add(TestWeapon, "projectileFriction",			0);
-ds_map_add(TestWeapon, "projectileBounceEnable",		false);
-ds_map_add(TestWeapon, "projectileBounceFriction",		2);
+ds_map_add(PlasmaGunData, "hitscanScaleY",					0);
+ds_map_add(PlasmaGunData, "projectileVelocityNoiseFactor",	0);
+ds_map_add(PlasmaGunData, "projectileVelocityCurrent",		20);
+ds_map_add(PlasmaGunData, "projectileVelocityMax",			0);
+ds_map_add(PlasmaGunData, "projectileAcceleration",		0);
+ds_map_add(PlasmaGunData, "projectileFriction",			0);
+ds_map_add(PlasmaGunData, "projectileBounceEnable",		false);
+ds_map_add(PlasmaGunData, "projectileBounceFriction",		2);
 //-----------------------------------------------------------------------------
-ds_map_add(TestWeapon, "isShackingCamera",				true);
-ds_map_add(TestWeapon, "angularShakeEnabled",			false);
-ds_map_add(TestWeapon, "shakeValue",					0.75);
-ds_map_add(TestWeapon, "shotShakeFactor",				0.05);
+ds_map_add(PlasmaGunData, "isShackingCamera",				true);
+ds_map_add(PlasmaGunData, "angularShakeEnabled",			false);
+ds_map_add(PlasmaGunData, "shakeValue",					0.75);
+ds_map_add(PlasmaGunData, "shotShakeFactor",				0.05);

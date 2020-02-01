@@ -1,10 +1,8 @@
-/// @param targetWeapon
 /// @param weaponID
 
-var _weapon = argument0;
-var _weaponID = argument1;
+var _weaponID = argument0;
 
-with (_weapon)
+with (activeWeapon)
 {
-	SetWeaponParameters(other.object_index, _weaponID, global.EnemyWeaponData);
+	SetWeaponParameters(other.id, _weaponID, global.EnemyWeaponData);
 }

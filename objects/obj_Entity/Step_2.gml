@@ -2,8 +2,11 @@
 event_inherited();
 
 // Place weapon
-with (activeWeapon)
+if (activeWeapon != noone)
 {
-	x = owner.x + rotationOffsetX;
-	y = owner.y + rotationOffsetY;
+	with (activeWeapon)
+	{
+		x = owner.x + rotationOffsetX;
+		y = owner.y + rotationOffsetY;
+	}
 }
