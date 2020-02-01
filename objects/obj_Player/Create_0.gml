@@ -53,3 +53,6 @@ SetAmmoParameters(activeWeapon.ammoID, global.PlayerAmmoData);
 // Wrap
 spawnX = 0;
 spawnY = 0;
+
+// Scrap
+global.Scrap = 0;
