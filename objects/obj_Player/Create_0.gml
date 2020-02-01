@@ -83,6 +83,8 @@ weaponMaxHitPoints = GetPartMaxHp(_initialCase);
 weaponRepairCost = GetPartRepairCost(_initialCase);
 weaponFactor = GetPartEffectivness(_initialCase);
 
+UpdateMaxHitPoints();
+
 // Energy
 maxEnergy = 100;
 defaultMaxEnergy = maxEnergy;

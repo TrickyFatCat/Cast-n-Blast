@@ -1,7 +1,4 @@
-/// @description Insert description here
-// You can write your code in this editor
-
 // Inherit the parent event
 event_inherited();
 
-draw_text(x,y,shieldIsActive);
+draw_text(x,y,energyPenaltyTimer / 60);
