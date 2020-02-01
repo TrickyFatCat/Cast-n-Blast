@@ -15,10 +15,6 @@ event_inherited();
 #macro ExecuteStateDeath		event_user(7)
 #macro StopMoving				event_user(8)
 
-// Test Timers
-testTimer = 0;
-testTime = SetTime(5);
-
 // Add path
 path = path_add();
 pathToTarget = noone;
@@ -32,7 +28,7 @@ activeWeapon = instance_create_layer(x, y, layer, obj_EnemyWeapon);
 activeWeapon.visible = false;
 
 // Base states
-enum EntityState
+enum EnemyState
 {
 	Spawn,
 	Idle,
@@ -44,7 +40,7 @@ enum EntityState
 	Inactive
 }
 
-currentState = EntityState.Spawn;
+currentState = EnemyState.Spawn;
 
 idleTime = SetTime(0.4);
 idleTimer = 0;

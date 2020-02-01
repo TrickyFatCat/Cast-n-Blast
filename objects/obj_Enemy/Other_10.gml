@@ -2,5 +2,5 @@
 
 if hitPoints <= 0
 {
-	currentState = EntityState.Trancendence;
+	currentState = EnemyState.Trancendence;
 }

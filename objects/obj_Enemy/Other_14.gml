@@ -8,7 +8,7 @@ if (_pathExists)
 }
 else
 {
-	currentState = EntityState.TargetSearch;
+	currentState = EnemyState.TargetSearch;
 }
 		
 if (path_get_length(path) > 0)
@@ -20,5 +20,5 @@ else
 {
 	pathSpeed = 0;
 	velocity = 0;
-	currentState = EntityState.Action;
+	currentState = EnemyState.Action;
 }

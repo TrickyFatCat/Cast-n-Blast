@@ -2,4 +2,4 @@
 
 pathSpeed = 0;
 velocityCurrent = 0;
-currentState = EntityState.Action;
+currentState = EnemyState.Action;

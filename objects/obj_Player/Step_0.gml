@@ -4,7 +4,7 @@
 event_inherited();
 
 switch (currentState)
-{
+{	
 	case PlayerState.Idle:
 		RespondToControls;
 		MovePlayer;
@@ -35,7 +35,7 @@ switch (currentState)
 	break;
 	
 	case PlayerState.Death:
-		//global.BattleState = BattleState.End;
+		global.BattleState = BattleState.End;
 	break;
 }
 

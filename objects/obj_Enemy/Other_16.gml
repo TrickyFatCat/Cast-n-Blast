@@ -13,5 +13,5 @@ if (drawScaleX < _targetScale)
 }
 else
 {
-	currentState = EntityState.Death;
+	currentState = EnemyState.Death;
 }

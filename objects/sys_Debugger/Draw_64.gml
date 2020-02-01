@@ -122,34 +122,34 @@ if (instance_exists(obj_Player))
 //	}
 //}
 
-//if (instance_exists(obj_battleStateHandler))
-//{
-//	with (obj_battleStateHandler)
-//	{
-//		var _state;
-//		switch global.BattleState
-//		{
-//			case BattleState.Inactive:
-//				_state = "Inactive";
-//			break;
+if (instance_exists(sys_BattleController))
+{
+	with (sys_BattleController)
+	{
+		var _state;
+		switch global.BattleState
+		{
+			case BattleState.Inactive:
+				_state = "Inactive";
+			break;
 			
-//			case BattleState.Start:
-//				_state = "Start";
-//			break;
+			case BattleState.Start:
+				_state = "Start";
+			break;
 			
-//			case BattleState.Active:
-//				_state = "Active";
-//			break;
+			case BattleState.Active:
+				_state = "Active";
+			break;
 			
-//			case BattleState.End:
-//				_state = "End";
-//			break;
-//		}
-//		draw_text(5, 360, "Battle State: " + _state);
-//		draw_text(5, 380, "Battle Time: " + string(global.PlayTime / 60));
-//		draw_text(5, 400, "Battle Start Time: " + string(battleStartTimer / 60));
-//	}
-//}
+			case BattleState.End:
+				_state = "End";
+			break;
+		}
+		draw_text(5, 360, "Battle State: " + _state);
+		draw_text(5, 380, "Battle Time: " + string(global.PlayTime / 60));
+		draw_text(5, 400, "Battle Start Time: " + string(battleStartTimer / 60));
+	}
+}
 //#endregion
 	
 //#region // Input data (need to update)

@@ -5,7 +5,7 @@ var _spawnTime = 1.5;
 
 switch (currentState)
 {
-	case EntityState.Spawn:
+	case EnemyState.Spawn:
 		isInvulnerable = true;
 		collisionEnable = false;
 
@@ -18,26 +18,27 @@ switch (currentState)
 	
 		//if (dissolvePower == 1)
 		//{
-		//	currentState = EntityState.Idle;
+		//	currentState = EnemyState.Idle;
 		//}
+		drawAlpha = 1;
 		
-		currentState = EntityState.Idle;
+		currentState = EnemyState.Idle;
 	break;
 	
-	case EntityState.Idle:
+	case EnemyState.Idle:
 		collisionEnable = true;
 		SwitchSprite(spriteIdle);
 		ExecuteStateIdle;
 		CheckEntityHP;
 	break;
 	
-	case EntityState.TargetSearch:
+	case EnemyState.TargetSearch:
 		SwitchSprite(spriteIdle);
 		ExecuteStateTargetSearch;
 		CheckEntityHP;
 	break;
 	
-	case EntityState.Move:
+	case EnemyState.Move:
 		SwitchSprite(spriteWalk);
 		ExecuteStateMove;
 		isShooting = false;
@@ -56,22 +57,22 @@ switch (currentState)
 		}
 	break;
 	
-	case EntityState.Action:
+	case EnemyState.Action:
 		SwitchSprite(spriteIdle);
 		ExecuteStateAction;
 		CheckEntityHP;
 	break;
 	
-	case EntityState.Trancendence:
+	case EnemyState.Trancendence:
 		SwitchSprite(spriteIdle);
 		ExecuteStateTrancendence;
 	break;
 	
-	case EntityState.Death:
+	case EnemyState.Death:
 		ExecuteStateDeath;
 	break;
 	
-	case EntityState.Inactive:
+	case EnemyState.Inactive:
 		CheckEntityHP;
 	break;
 }

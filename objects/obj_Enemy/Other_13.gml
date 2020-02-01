@@ -33,4 +33,4 @@ switch (currentTarget)
 targetX = (_pointX / _cellSize) * _cellSize + _cellSize / 2;
 targetY = (_pointY / _cellSize) * _cellSize + _cellSize / 2;
 		
-currentState = EntityState.Move;
+currentState = EnemyState.Move;

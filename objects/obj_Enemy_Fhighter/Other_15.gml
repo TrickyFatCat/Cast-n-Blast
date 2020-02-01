@@ -18,7 +18,7 @@ if (activeWeapon.shotCount == 2)
 	{
 		waitTimer = 0;
 		activeWeapon.shotCount = 0;
-		currentState = EntityState.TargetSearch;
+		currentState = EnemyState.TargetSearch;
 	}
 }
 else

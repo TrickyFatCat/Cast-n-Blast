@@ -8,5 +8,5 @@ var _timeIsOver = CheckTimer(idleTimer, idleTime);
 
 if (_timeIsOver)
 {
-	currentState = EntityState.TargetSearch;
+	currentState = EnemyState.TargetSearch;
 }
