@@ -53,7 +53,7 @@ if (energy < maxEnergy && canRestore)
 if (energy == 0 && canRestore)
 {
 	canRestore = false;
-	energyPenaltyTime = SetTime(3);
+	energyPenaltyTime = SetTime(2);
 }
 
 if (!canRestore && !_keyShoot)
