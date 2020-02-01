@@ -7,7 +7,7 @@ var _flashPower = 1;
 //Sequence
 if (!isInvulnerable) && (other.dealingDamage)
 {
-	DealDamage(other.damage);
+	DealDamageToParts(other.damage);
 	EnableFlash(_flashColour, _flashPower);
 	ChekPlayerHP;
 }

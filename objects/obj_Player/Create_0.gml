@@ -77,12 +77,12 @@ caseRepairCost = GetPartRepairCost(_initialCase);
 caseFactor = GetPartEffectivness(_initialCase);
 
 // Case
-var _initialCase = PlayerPart.Weapon0;
-weaponLevel = GetPartLevel(_initialCase);
-weaponHitPoints = GetPartMaxHp(_initialCase);
-weaponMaxHitPoints = GetPartMaxHp(_initialCase);
-weaponRepairCost = GetPartRepairCost(_initialCase);
-weaponFactor = GetPartEffectivness(_initialCase);
+var _initialWeapon = PlayerPart.Weapon0;
+weaponLevel = GetPartLevel(_initialWeapon);
+weaponHitPoints = GetPartMaxHp(_initialWeapon);
+weaponMaxHitPoints = GetPartMaxHp(_initialWeapon);
+weaponRepairCost = GetPartRepairCost(_initialWeapon);
+weaponFactor = GetPartEffectivness(_initialWeapon);
 
 UpdateMaxHitPoints();
 
@@ -94,6 +94,11 @@ energyRestoreRate = 10;
 energyRestoreFactor = 2;
 energyDefaultRestoreRate = energyRestoreRate;
 energyRestoreTimer = 0;
+
+allHitpoints = [];
+allHitpoints[0] = legsHitPoints;
+allHitpoints[1] = caseHitPoints;
+allHitpoints[2] = weaponHitPoints;
 
 canRestore = true;
 energyPenaltyTime = SetTime(4);

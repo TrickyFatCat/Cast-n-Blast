@@ -41,7 +41,7 @@
             "mvc": "1.0",
             "objectId": "c0b37de0-4e9d-4cb9-81f9-922df5f3bea7",
             "propertyId": "e991cfc4-f911-4ac0-a882-dc6126b5da6f",
-            "value": "spr_player_idle"
+            "value": "spr_fighter_idle"
         },
         {
             "id": "12efb05a-4008-4a39-9fa1-e7ac96d36371",
@@ -49,7 +49,7 @@
             "mvc": "1.0",
             "objectId": "c0b37de0-4e9d-4cb9-81f9-922df5f3bea7",
             "propertyId": "ba50de28-c2d6-4ef9-8e2e-9f6e82e05142",
-            "value": "spr_player_walk"
+            "value": "spr_fighter_walk"
         },
         {
             "id": "a883a06f-d39c-4c48-a01b-1ab6c69195cd",
@@ -57,7 +57,7 @@
             "mvc": "1.0",
             "objectId": "c0b37de0-4e9d-4cb9-81f9-922df5f3bea7",
             "propertyId": "61bc5419-ee0f-4313-a09d-2a3cea31bac2",
-            "value": "2"
+            "value": "1.5"
         },
         {
             "id": "1fa435f3-5732-4070-bf66-de24a97e6894",
@@ -124,6 +124,6 @@
     "physicsStartAwake": true,
     "properties": null,
     "solid": false,
-    "spriteId": "6a3f86b1-be04-483f-9c45-898db0bd65c3",
+    "spriteId": "a6e1cc32-b868-4247-bca3-8d245a32d733",
     "visible": true
 }

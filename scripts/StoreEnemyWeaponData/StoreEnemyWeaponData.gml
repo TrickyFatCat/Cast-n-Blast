@@ -8,13 +8,13 @@ enum EnemyWeapon
 
 // Weapons data
 global.EnemyWeaponData[EnemyWeapon.Pistol] = ds_map_create();
-ds_map_add(EnemyPistolData, "weaponSprite",					spr_playerWeapon);
+ds_map_add(EnemyPistolData, "weaponSprite",					noone);
 ds_map_add(EnemyPistolData, "offsetY",						6);
 ds_map_add(EnemyPistolData, "laserSightEnabled",			false);
 ds_map_add(EnemyPistolData, "isAuto",						true);
 ds_map_add(EnemyPistolData, "currentShootMode",				ShootMode.Normal);
 //-----------------------------------------------------------------------------
-ds_map_add(EnemyPistolData, "bulletObject",					obj_PProjectile_Normal);
+ds_map_add(EnemyPistolData, "bulletObject",					obj_FighterProjectile);
 ds_map_add(EnemyPistolData, "bulletNumber",					1);
 ds_map_add(EnemyPistolData, "bulletSpawnPointOffset",		19);
 //-----------------------------------------------------------------------------
@@ -51,15 +51,15 @@ ds_map_add(EnemyPistolData, "spreadAngleDecrFactor",		0.0075);
 ds_map_add(EnemyPistolData, "spreadAngleMin",				0);
 ds_map_add(EnemyPistolData, "spreadAngleMax",				0);
 //-----------------------------------------------------------------------------
-ds_map_add(EnemyPistolData, "ammoID",						PlayerAmmo.Weapon);
-ds_map_add(EnemyPistolData, "shootAmmoCost",				1);
+ds_map_add(EnemyPistolData, "ammoID",						noone);
+ds_map_add(EnemyPistolData, "shootAmmoCost",				0);
 //-----------------------------------------------------------------------------
-ds_map_add(EnemyPistolData, "recoilPower",					10);
-ds_map_add(EnemyPistolData, "recoilFactor",					0.3);
+ds_map_add(EnemyPistolData, "recoilPower",					0);
+ds_map_add(EnemyPistolData, "recoilFactor",					0);
 //-----------------------------------------------------------------------------
 ds_map_add(EnemyPistolData, "hitscanScaleY",				0);
 ds_map_add(EnemyPistolData, "projectileVelocityNoiseFactor",0);
-ds_map_add(EnemyPistolData, "projectileVelocityCurrent",	20);
+ds_map_add(EnemyPistolData, "projectileVelocityCurrent",	4);
 ds_map_add(EnemyPistolData, "projectileVelocityMax",		0);
 ds_map_add(EnemyPistolData, "projectileAcceleration",		0);
 ds_map_add(EnemyPistolData, "projectileFriction",			0);

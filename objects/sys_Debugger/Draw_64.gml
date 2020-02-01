@@ -72,9 +72,12 @@ if (instance_exists(obj_Player))
 		//}
 		//draw_text(5, 180, "Current State: " + _state);
 		draw_text(5, 180, "Hit Points: " + string(hitPoints) + "/" + string(maxHitPoints));
-		draw_text(5, 200, "Energy: " + string(energy) + "/" + string(maxEnergy));
-		draw_text(5, 220, "Scrap: " + string(global.Scrap));
-		draw_text(5, 240, "Current Ammo: " + string(ammoCurrent) + "/" + string(ammoCurrentMax));
+		draw_text(5, 200, "Legs: " + string(legsHitPoints) + "/" + string(legsMaxHitPoints));
+		draw_text(5, 220, "Case: " + string(caseHitPoints) + "/" + string(caseMaxHitPoints));
+		draw_text(5, 240, "Weapon: " + string(weaponHitPoints) + "/" + string(weaponMaxHitPoints));
+		draw_text(5, 260, "Energy: " + string(energy) + "/" + string(maxEnergy));
+		draw_text(5, 280, "Scrap: " + string(global.Scrap));
+		//draw_text(5, 240, "Current Ammo: " + string(ammoCurrent) + "/" + string(ammoCurrentMax));
 		//var _isShooting;
 		//if (activeWeapon.isShooting)
 		//{
@@ -97,11 +100,11 @@ if (instance_exists(obj_Player))
 //{
 //	with (sys_InputMethodManager)
 //	{
-//		draw_set_color(c_lime);
-//		draw_set_halign(fa_left);
-//		draw_set_valign(fa_top);
-//		draw_text(5, 290, "GAME PARAMETERS");
-//		draw_text(5, 300, "------------------");
+		draw_set_color(c_lime);
+		draw_set_halign(fa_left);
+		draw_set_valign(fa_top);
+		draw_text(5, 300, "GAME PARAMETERS");
+		draw_text(5, 310, "------------------");
 //		draw_text(5, 320, "Timefactor: " + string(global.TimeFactor));
 //		var _state;
 //		switch global.GameState
