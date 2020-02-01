@@ -39,3 +39,20 @@ switch (currentState)
 }
 
 CheckCollision(obj_Obstacle);
+
+var warpPoint = instance_place(x, y, obj_WarpPoint);
+if (warpPoint != noone && gui_Hud.currentState != InterfaceState.TransitionOut)
+{
+	with (sys_GameManager)
+	{
+		nextRoom = warpPoint.targetRoom;
+		spawnX = warpPoint.targetX;
+		spawnY = warpPoint.targetY;
+	}
+	
+	with (gui_Hud)
+	{
+		nextRoom = warpPoint.targetRoom;
+		currentState = InterfaceState.TransitionOut;
+	}
+}

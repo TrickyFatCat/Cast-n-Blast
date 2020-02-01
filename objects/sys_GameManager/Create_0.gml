@@ -18,5 +18,11 @@ enum GameState
 
 global.GameState = GameState.Transition;
 
+// Transition
+global.Player = noone;
+nextRoom = noone;
+spawnX = 0;
+spawnY = 0;
+
 // Set controls
 ResetControls;

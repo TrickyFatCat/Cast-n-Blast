@@ -6,6 +6,9 @@ var list = argument0;
 
 //drawer.alarm[10] = 3
 
+if (ds_list_size(list) > 0)
+{
+
 var sorted = true;
 var n = ds_list_size(list);
 var len = ds_list_size(list);
@@ -57,3 +60,4 @@ while sz < 2 * n {
 	sz *= 2
 }
 ds_list_destroy(res)
+}

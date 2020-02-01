@@ -49,3 +49,7 @@ SetPlayerWeapon(activeWeapon, weaponID);
 
 // Set player weapon ammo
 SetAmmoParameters(activeWeapon.ammoID, global.PlayerAmmoData);
+
+// Wrap
+spawnX = 0;
+spawnY = 0;
