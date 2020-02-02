@@ -359,6 +359,14 @@
             }
         },
         {
+            "Key": "32bb4744-cd58-4cd0-9bf2-cbd69988ee3b",
+            "Value": {
+                "id": "d281251b-4b6a-410d-9193-ab4f9bfddd79",
+                "resourcePath": "sprites\\spr_barrel\\spr_barrel.yy",
+                "resourceType": "GMSprite"
+            }
+        },
+        {
             "Key": "3518aeee-a8c3-4506-90a1-31f5b5c04b21",
             "Value": {
                 "id": "030ffa3b-bacc-4651-bb09-355594fabb47",
@@ -599,6 +607,14 @@
             }
         },
         {
+            "Key": "51064a55-cbd5-4a65-a8c7-87315b922bf7",
+            "Value": {
+                "id": "54e6cf09-82f3-41ad-b52c-9b3fc1310b74",
+                "resourcePath": "objects\\obj_BeamerLaser\\obj_BeamerLaser.yy",
+                "resourceType": "GMObject"
+            }
+        },
+        {
             "Key": "516d40dc-4006-475b-a83c-68fee0c39955",
             "Value": {
                 "id": "f40487ef-cca3-4f37-8e56-1390cb9fa801",
@@ -820,6 +836,14 @@
                 "id": "f5eeab36-7496-4861-b67f-06ba83716817",
                 "resourcePath": "scripts\\DrawTextOutline\\DrawTextOutline.yy",
                 "resourceType": "GMScript"
+            }
+        },
+        {
+            "Key": "73320f89-5487-4c82-b6fb-ba35af7900e9",
+            "Value": {
+                "id": "bc9ddd42-0223-4c6e-93ba-a1418a4f7a9f",
+                "resourcePath": "views\\73320f89-5487-4c82-b6fb-ba35af7900e9.yy",
+                "resourceType": "GMFolder"
             }
         },
         {
@@ -1503,6 +1527,14 @@
             }
         },
         {
+            "Key": "c58faaa1-3540-4c2d-9d74-15cd6108389c",
+            "Value": {
+                "id": "c481f72b-3437-4f36-ae8b-e387d0d91435",
+                "resourcePath": "sprites\\spr_1pixA\\spr_1pixA.yy",
+                "resourceType": "GMSprite"
+            }
+        },
+        {
             "Key": "c5cdd938-8b1c-4c84-8c6b-3636e4fbd936",
             "Value": {
                 "id": "d0b0edaa-d06c-4a23-b0e5-c69453bb0fd5",
@@ -1812,6 +1844,14 @@
                 "id": "bd93c2ea-2dfe-4c2d-a2d0-785d5e30f484",
                 "resourcePath": "scripts\\SetProjectileParameters\\SetProjectileParameters.yy",
                 "resourceType": "GMScript"
+            }
+        },
+        {
+            "Key": "ed5f7cfc-4867-41d9-89d0-93307862296a",
+            "Value": {
+                "id": "9c6c394b-0b1b-43b3-978c-8f1279a7dc13",
+                "resourcePath": "sprites\\spr_laser\\spr_laser.yy",
+                "resourceType": "GMSprite"
             }
         },
         {
