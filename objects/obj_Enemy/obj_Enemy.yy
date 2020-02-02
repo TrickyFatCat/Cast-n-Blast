@@ -264,6 +264,48 @@
             "value": "0",
             "varName": "scrapNumber",
             "varType": 0
+        },
+        {
+            "id": "aaee2d72-a993-4e05-97bf-6e547be41ad6",
+            "modelName": "GMObjectProperty",
+            "mvc": "1.0",
+            "listItems": null,
+            "multiselect": false,
+            "rangeEnabled": false,
+            "rangeMax": 10,
+            "rangeMin": 0,
+            "resourceFilter": 1023,
+            "value": "noone",
+            "varName": "explosionObject",
+            "varType": 5
+        },
+        {
+            "id": "982f53ab-40ab-4c3b-a705-fd5e3037f53f",
+            "modelName": "GMObjectProperty",
+            "mvc": "1.0",
+            "listItems": null,
+            "multiselect": false,
+            "rangeEnabled": false,
+            "rangeMax": 10,
+            "rangeMin": 0,
+            "resourceFilter": 1023,
+            "value": "0",
+            "varName": "explosionRadius",
+            "varType": 0
+        },
+        {
+            "id": "a7dcb912-71ec-402d-ab21-c5d2155ea8fe",
+            "modelName": "GMObjectProperty",
+            "mvc": "1.0",
+            "listItems": null,
+            "multiselect": false,
+            "rangeEnabled": false,
+            "rangeMax": 10,
+            "rangeMin": 0,
+            "resourceFilter": 1023,
+            "value": "0",
+            "varName": "explosionDamage",
+            "varType": 0
         }
     ],
     "solid": false,
