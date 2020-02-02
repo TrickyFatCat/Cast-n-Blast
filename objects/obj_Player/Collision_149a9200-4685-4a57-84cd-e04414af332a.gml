@@ -8,7 +8,14 @@ var _flashPower = 1;
 
 if (!isInvulnerable)
 {
-	DealDamageToParts(other.damage);
+	if (shieldIsActive)
+	{
+		DecreaseEnergy(other.damage)
+	}
+	else
+	{
+		DealDamageToParts(other.damage);
+	}
 	EnableFlash(_flashColour, _flashPower);
 	//PlaySound(sfx_impact);
 	ChekPlayerHP;
