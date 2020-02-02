@@ -1,10 +1,11 @@
 /// @description Trancendence
 
-var _trancendenceTime = 0.4;
+var _trancendenceTime = 1;
 var _scaleStepFactor = CalculateStep(_trancendenceTime);
 var _targetScale = 2;
 
 // Sequence
+
 if (drawScaleX < _targetScale)
 {
 	var _scaleStep = _targetScale * _scaleStepFactor;

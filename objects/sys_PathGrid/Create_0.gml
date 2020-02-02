@@ -1,7 +1,7 @@
 /// @description Gridcreation
 
 //Cells parameters
-var _cell = 32
+var _cell = 8
 global.PathCellWidth = _cell;
 global.PathCellHeight = _cell;
 

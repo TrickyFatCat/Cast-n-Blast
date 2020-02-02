@@ -15,6 +15,8 @@ event_inherited();
 #macro ExecuteStateDeath		event_user(7)
 #macro StopMoving				event_user(8)
 
+SetShadowParameters(true, 1);
+
 // Add path
 path = path_add();
 pathToTarget = noone;

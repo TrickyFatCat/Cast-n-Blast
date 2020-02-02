@@ -1271,6 +1271,14 @@
             }
         },
         {
+            "Key": "abb7c3e3-a65e-4a50-8ad2-58291be658e3",
+            "Value": {
+                "id": "a8f964e5-7693-420c-8e5d-6d4f209286f8",
+                "resourcePath": "objects\\obj_EnemyFakeExplosion\\obj_EnemyFakeExplosion.yy",
+                "resourceType": "GMObject"
+            }
+        },
+        {
             "Key": "abf62d29-8b2c-4a96-afbd-cb7809e887a2",
             "Value": {
                 "id": "2e720308-be64-4ae2-a182-f7d198473bcc",

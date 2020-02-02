@@ -12,10 +12,14 @@ enum PickupState
 	Destroy
 }
 
-currentState = PickupState.Idle;
+SetShadowParameters(true,0.5);
+
+currentState = PickupState.Drop;
 
 //Drop parameters
 dropSpeed = 0.01;
+isBounced = false;
+directionCurrent = random_range(0, 360);
 
 //Pulling parameters
 isPullable = true;

@@ -15,6 +15,14 @@ if (path_get_length(path) > 0)
 {
 	pathSpeed = global.TimeFactor * velocity + (0.5 * sqr(global.TimeFactor) * acceleration);
 	velocity = min(velocity + acceleration * global.TimeFactor, maxVelocity);
+	
+	if (distance_to_object(global.Player) < attackRadiusMax)
+	{
+		path_end();
+		pathSpeed = 0;
+		velocity = 0;
+		currentState = EnemyState.Action;
+	}
 }
 else
 {

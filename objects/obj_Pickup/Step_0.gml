@@ -1,5 +1,3 @@
-/// @description Insert description here
-
 // Inherit the parent event
 event_inherited();
 
@@ -7,6 +5,22 @@ event_inherited();
 switch currentState
 {
 	case PickupState.Drop:
+		MoveObject(false);
+
+		velocity = CalculateDeceleratedVelocity(directionCurrent, velocity, groundFriction);
+		
+		if (velocity <= 0)
+		{
+			currentState = PickupState.Idle;
+		}
+
+		CheckBouncingCollision(obj_Wall);
+
+		if (isBounced)
+		{
+			directionCurrent = point_direction(0, 0, velocityX, velocityY);
+			isBounced = !isBounced;
+		}
 	break;
 	
 	case PickupState.Idle:

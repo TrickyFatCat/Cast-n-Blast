@@ -79,6 +79,20 @@
             "value": "0",
             "varName": "explosionRadius",
             "varType": 0
+        },
+        {
+            "id": "40232622-2635-472a-8fec-5191eaddad78",
+            "modelName": "GMObjectProperty",
+            "mvc": "1.0",
+            "listItems": null,
+            "multiselect": false,
+            "rangeEnabled": false,
+            "rangeMax": 10,
+            "rangeMin": 0,
+            "resourceFilter": 1023,
+            "value": "True",
+            "varName": "dealingDamage",
+            "varType": 3
         }
     ],
     "solid": false,

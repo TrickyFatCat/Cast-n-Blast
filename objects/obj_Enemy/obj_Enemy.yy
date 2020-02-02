@@ -275,7 +275,7 @@
             "rangeMax": 10,
             "rangeMin": 0,
             "resourceFilter": 1023,
-            "value": "noone",
+            "value": "obj_EnemyFakeExplosion",
             "varName": "explosionObject",
             "varType": 5
         },

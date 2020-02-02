@@ -28,6 +28,15 @@ if (_distanceToPlayer > attackRadiusMax)
 }
 else
 {
+	path_end();
+	pathSpeed = 0;
+	velocity = 0;
+	currentState = EnemyState.Trancendence;
+}
+
+if (hitPoints <= 0)
+{
+	path_end();
 	pathSpeed = 0;
 	velocity = 0;
 	currentState = EnemyState.Trancendence;
