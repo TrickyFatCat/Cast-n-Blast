@@ -1,6 +1,10 @@
-/// @param partId
+/// @param partType
+/// @param partLevel
 
-var _partId = argument0;
-var _partData = global.PartsData[_partId];
+var _partType = argument0;
+var _partLevel = argument1;
+
+var _partTypeData = global.PartsData[_partType];
+var _partData = _partTypeData[_partLevel];
 
 return _partData[? "effectiveness"];

@@ -15,20 +15,20 @@ enum PlayerPart
 	Weapon3
 }
 
-#macro Legs0Data global.PartsData[PlayerPart.Legs0]
-#macro Legs1Data global.PartsData[PlayerPart.Legs1]
-#macro Legs2Data global.PartsData[PlayerPart.Legs2]
-#macro Legs3Data global.PartsData[PlayerPart.Legs3]
+#macro Legs0Data global.LegsData[0]
+#macro Legs1Data global.LegsData[1]
+#macro Legs2Data global.LegsData[2]
+#macro Legs3Data global.LegsData[3]
 
-#macro Case0Data global.PartsData[PlayerPart.Case0]
-#macro Case1Data global.PartsData[PlayerPart.Case1]
-#macro Case2Data global.PartsData[PlayerPart.Case2]
-#macro Case3Data global.PartsData[PlayerPart.Case3]
+#macro Case0Data global.CaseData[0]
+#macro Case1Data global.CaseData[1]
+#macro Case2Data global.CaseData[2]
+#macro Case3Data global.CaseData[3]
 
-#macro Weapon0Data global.PartsData[PlayerPart.Weapon0]
-#macro Weapon1Data global.PartsData[PlayerPart.Weapon1]
-#macro Weapon2Data global.PartsData[PlayerPart.Weapon2]
-#macro Weapon3Data global.PartsData[PlayerPart.Weapon3]
+#macro Weapon0Data global.WeaponData[0]
+#macro Weapon1Data global.WeaponData[1]
+#macro Weapon2Data global.WeaponData[2]
+#macro Weapon3Data global.WeaponData[3]
 
 #region //Legs
 
