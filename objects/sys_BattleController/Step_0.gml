@@ -40,14 +40,8 @@ switch (global.BattleState)
 		
 		var _waveTimeIsOver = CheckTimer(global.PlayTime, SetTime(90))
 		
-		if (_waveTimeIsOver && instance_number(obj_Enemy) == 0)
+		if (_waveTimeIsOver)
 		{
-			global.PlayTime = 0;
-			for (var i = 0; i < ds_list_size(global.InteractiveObjects); i++)
-			{
-				var _target = global.InteractiveObjects[| i];
-				instance_activate_object(_target);
-			}
 			global.BattleState = BattleState.Paused;
 		}
 		
@@ -63,6 +57,15 @@ switch (global.BattleState)
 	break;
 	
 	case BattleState.Paused:
+		if (instance_number(obj_Enemy) == 0)
+		{
+			global.PlayTime = 0;
+			for (var i = 0; i < ds_list_size(global.InteractiveObjects); i++)
+			{
+				var _target = global.InteractiveObjects[| i];
+				instance_activate_object(_target);
+			}
+		}
 	break;
 			
 	case BattleState.End:

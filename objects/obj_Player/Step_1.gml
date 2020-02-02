@@ -5,9 +5,8 @@ event_inherited();
 
 ChekPlayerHP;
 
-maxVelocity = defaultMaxVelocity * legsFactor;
-dashVelocity = deafaultDashVelocity * legsFactor;
-dashCost = round(defaultDashCost - defaultDashCost * (1 - legsFactor));
+LegsAffect();
+CaseAffect();
 
 shieldIsActive = sys_GameManager.keyShield && energy > 0;
 
@@ -16,24 +15,23 @@ var _keyShoot = sys_GameManager.keyShootAuto || sys_GameManager.keyShootSemiAuto
 if (_keyShoot && canRestore)
 {
 	energyRestoreFactor = 0;
-	if (canRestore && energy > 0)
-	{
-		canRestore = false;
-		energyPenaltyTime = SetTime(1.5);
-	}
 }
 else
 {
 	energyRestoreFactor = 1;
 }
 
-if (shieldIsActive && (!_keyShoot))
+if (sys_GameManager.actionStopShooting && canRestore && energy > 0)
 {
-	energyRestoreFactor = 0.5 / caseFactor;
+	canRestore = false;
+	energyPenaltyTime = SetTime(shootPenaltyTime);
 }
 
-maxEnergy = defaultMaxEnergy * caseFactor;
-energyRestoreRate = energyDefaultRestoreRate * energyRestoreFactor * caseFactor;
+if (shieldIsActive && (!_keyShoot))
+{
+	energyRestoreFactor = 0.5 * caseFactor;
+}
+
 var _energyRestoreDelay = SetTime(1 / energyRestoreRate);
 
 if (energy < maxEnergy && canRestore)
@@ -45,7 +43,6 @@ if (energy < maxEnergy && canRestore)
 	{
 		IncreaseEnergy(1);
 		ammoCurrent = energy;
-		ds_map_replace(global.PlayerAmmoData[activeWeapon.ammoID],"ammoCurrent",ammoCurrent);
 		energyRestoreTimer = 0;
 	}
 }
@@ -53,10 +50,10 @@ if (energy < maxEnergy && canRestore)
 if (energy == 0 && canRestore)
 {
 	canRestore = false;
-	energyPenaltyTime = SetTime(2);
+	energyPenaltyTime = SetTime(overheatPenaltyTime);
 }
 
-if (!canRestore && !_keyShoot)
+if (!canRestore)
 {
 	EnableFlash(c_orange, 1);
 		

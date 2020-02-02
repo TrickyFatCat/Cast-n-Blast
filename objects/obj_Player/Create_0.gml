@@ -52,7 +52,7 @@ activeWeapon = instance_create_layer(x, y, layer, obj_PlayerWeapon);
 SetPlayerWeapon(activeWeapon, weaponID);
 
 // Set player weapon ammo
-SetAmmoParameters(activeWeapon.ammoID, global.PlayerAmmoData);
+//SetAmmoParameters(activeWeapon.ammoID, global.PlayerAmmoData);
 
 // Wrap
 spawnX = 0;
@@ -88,29 +88,28 @@ UpdateMaxHitPoints();
 maxEnergy = 100;
 defaultMaxEnergy = maxEnergy;
 energy = 1;
-energyRestoreRate = 10;
-energyRestoreFactor = 2;
+energyRestoreRate = 15;
+energyRestoreFactor = 1;
 energyDefaultRestoreRate = energyRestoreRate;
 energyRestoreTimer = 0;
 
-allHitpoints = [];
-allHitpoints[0] = legsHitPoints;
-allHitpoints[1] = caseHitPoints;
-allHitpoints[2] = weaponHitPoints;
-
 canRestore = true;
-energyPenaltyTime = SetTime(4);
+energyPenaltyTime = 0;
 energyPenaltyTimer = 0;
+shootPenaltyTime = 2;
+defaultShootPenaltyTime = shootPenaltyTime;
+overheatPenaltyTime = 4;
+defaultOverheatPenaltyTime = overheatPenaltyTime;
 
 ammoCurrent = energy;
 ammoCurrentMax = maxEnergy;
-ds_map_replace(global.PlayerAmmoData[activeWeapon.ammoID],"ammoCurrent",energy);
-ds_map_replace(global.PlayerAmmoData[activeWeapon.ammoID],"ammoCurrentMax",maxEnergy);
 
 // Shield
 shieldIsActive = false;
+damageReductionFactor = 1;
+defaultDamageReductionFactor = damageReductionFactor;
 
 // Dash
 deafaultDashVelocity = dashVelocity;
-dashCost = 25;
+dashCost = 20;
 defaultDashCost = dashCost;

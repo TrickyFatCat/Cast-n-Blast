@@ -9,6 +9,7 @@ switch global.CurrentInput
 		keyInteract = CheckGamepadButtonPressed(gp_face1);
 		keyShield = CheckGamepadButton(gp_shoulderlb);
 		keyDash = CheckGamepadButton(gp_face1);
+		actionStopShooting = CheckGamepadButtonReleased(_gamepadButton);
 	break;
 	
 	case InputMethod.KeyboardMouse:
@@ -23,5 +24,6 @@ switch global.CurrentInput
 		keyInteract = keyboard_check_pressed(ord("E"));
 		keyShield = mouse_check_button(mb_right);
 		keyDash = keyboard_check_pressed(vk_space);
+		actionStopShooting = mouse_check_button_released(_mouseButton);
 	break;
 }

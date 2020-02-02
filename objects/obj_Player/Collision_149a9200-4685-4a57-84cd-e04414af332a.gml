@@ -10,7 +10,7 @@ if (!isInvulnerable)
 {
 	if (shieldIsActive)
 	{
-		DecreaseEnergy(other.damage)
+		DecreaseEnergy(round(other.damage * damageReductionFactor));
 	}
 	else
 	{

@@ -13,7 +13,7 @@ if (global.TimeFactor > 0)
 		_shootKey = sys_GameManager.keyShootSemiAuto;
 	}
 	
-	if (_shootKey) && (ammoCurrent != 0)
+	if (_shootKey) && (energy != 0)
 	{
 		activeWeapon.isShooting = true;
 	}

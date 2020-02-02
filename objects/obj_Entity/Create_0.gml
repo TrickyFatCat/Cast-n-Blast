@@ -21,3 +21,7 @@ ammoCurrentMax = 0;
 
 // Trancendence parameters
 trancendenceProgress = 0;
+
+// Collision
+
+collisionEnable = true;

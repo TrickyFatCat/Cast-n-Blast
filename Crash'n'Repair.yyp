@@ -599,6 +599,14 @@
             }
         },
         {
+            "Key": "548265cc-c5e3-4371-b4b4-f01c3d3be624",
+            "Value": {
+                "id": "bec37b85-e428-4129-94f2-a61495ae7899",
+                "resourcePath": "scripts\\CaseAffect\\CaseAffect.yy",
+                "resourceType": "GMScript"
+            }
+        },
+        {
             "Key": "54ee8d9d-e5ba-443b-913c-12a1ea553ea0",
             "Value": {
                 "id": "aaea3b90-1986-4f99-ae25-fc4db4bc2106",
@@ -1543,6 +1551,14 @@
             }
         },
         {
+            "Key": "d7d53509-e952-41b6-b176-84ce9237dde0",
+            "Value": {
+                "id": "728a980a-2899-48bd-aace-e9c448f1411f",
+                "resourcePath": "scripts\\LegsAffect\\LegsAffect.yy",
+                "resourceType": "GMScript"
+            }
+        },
+        {
             "Key": "d96fe937-2ef0-4653-b51b-2c2988f5a4e3",
             "Value": {
                 "id": "7dd78ef9-8d03-423c-9c81-e951fd13a669",
@@ -1799,6 +1815,14 @@
             }
         },
         {
+            "Key": "fc7489bf-ce1c-4074-a48a-99f42eb951f2",
+            "Value": {
+                "id": "eac4c9dc-5cdb-48fc-bb89-976b4c2e6595",
+                "resourcePath": "scripts\\CheckGamepadButtonReleased\\CheckGamepadButtonReleased.yy",
+                "resourceType": "GMScript"
+            }
+        },
+        {
             "Key": "ff38952b-ee1c-483c-972b-a9ef417e3747",
             "Value": {
                 "id": "68e924e2-26ac-44fb-a410-1081ffd1eee7",
@@ -1824,6 +1848,7 @@
         "aaee7287-e585-4c66-920d-a403e91db5bd",
         "9e518d6a-74f1-410a-ab5a-c29bed8d72c3",
         "561a9fac-9542-44b4-8d3b-e8e054470ff3",
+        "fc7489bf-ce1c-4074-a48a-99f42eb951f2",
         "37225428-7b50-45be-860f-8acb30c7aae3",
         "9ef30917-7a71-41ba-b0e0-f268aaccd126",
         "f880aa16-ac9e-40d8-bcbb-c47218fde082",
@@ -1885,6 +1910,8 @@
         "657739fe-0dbb-4300-89bf-eb74a7abb3f5",
         "0a5f7801-48b2-46d3-904a-f23610672f42",
         "3518aeee-a8c3-4506-90a1-31f5b5c04b21",
+        "d7d53509-e952-41b6-b176-84ce9237dde0",
+        "548265cc-c5e3-4371-b4b4-f01c3d3be624",
         "10c47987-e609-43f2-8074-96d977ac5217",
         "49d6b2b8-b640-4912-a714-6627da7b2c73",
         "99b709ac-a93b-4d40-acac-09026a7c8844",
