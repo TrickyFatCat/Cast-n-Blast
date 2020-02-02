@@ -61,6 +61,13 @@ spawnY = 0;
 // Scrap
 global.Scrap = 0;
 
+enum PartType
+{
+	Legs,
+	Case,
+	Weapon
+}
+
 // Legs
 var _initialLegs = PlayerPart.Legs0;
 legsLevel = GetPartLevel(_initialLegs);

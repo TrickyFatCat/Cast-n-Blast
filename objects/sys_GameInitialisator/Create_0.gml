@@ -3,6 +3,7 @@
 pcVersion = true;
 
 global.TimeFactor = 1;
+global.InteractiveObjects = noone;
 
 randomize();
 

@@ -18,7 +18,10 @@
         "d1dab032-52f6-4720-bd18-146ce4a585a3",
         "551e4027-05b9-4b44-b565-ef6f303a64e4",
         "434aec61-98a4-40c1-85fe-4007f401b5e4",
-        "6c26b0b1-ddb5-49c3-bba1-2d99a86f04f3"
+        "6c26b0b1-ddb5-49c3-bba1-2d99a86f04f3",
+        "004f6dae-905d-4edb-a2fa-bae32e761ea7",
+        "1e3e2234-4274-49b5-b6d6-ed8482b8c076",
+        "85177730-672b-44da-a8a7-d90c49d6349d"
     ],
     "IsDnD": false,
     "layers": [
@@ -146,7 +149,10 @@
             "inheritSubLayers": false,
             "inheritVisibility": false,
             "instances": [
-{"name": "inst_58B81CAF","id": "434aec61-98a4-40c1-85fe-4007f401b5e4","colour": { "Value": 4294967295 },"creationCodeFile": "","creationCodeType": "","ignore": false,"imageIndex": 0,"imageSpeed": 1,"inheritCode": false,"inheritItemSettings": false,"IsDnD": false,"m_originalParentID": "00000000-0000-0000-0000-000000000000","m_serialiseFrozen": false,"modelName": "GMRInstance","name_with_no_file_rename": "inst_58B81CAF","objId": "b101780b-00af-4298-a569-cd51fd5618e5","properties": null,"rotation": 0,"scaleX": 64,"scaleY": 64,"mvc": "1.1","x": 960,"y": 832}
+{"name": "inst_58B81CAF","id": "434aec61-98a4-40c1-85fe-4007f401b5e4","colour": { "Value": 4294967295 },"creationCodeFile": "","creationCodeType": "","ignore": false,"imageIndex": 0,"imageSpeed": 1,"inheritCode": false,"inheritItemSettings": false,"IsDnD": false,"m_originalParentID": "00000000-0000-0000-0000-000000000000","m_serialiseFrozen": false,"modelName": "GMRInstance","name_with_no_file_rename": "inst_58B81CAF","objId": "b101780b-00af-4298-a569-cd51fd5618e5","properties": null,"rotation": 0,"scaleX": 64,"scaleY": 64,"mvc": "1.1","x": 960,"y": 832},
+{"name": "inst_794B17C3","id": "004f6dae-905d-4edb-a2fa-bae32e761ea7","colour": { "Value": 4294967295 },"creationCodeFile": "","creationCodeType": "","ignore": false,"imageIndex": 0,"imageSpeed": 1,"inheritCode": false,"inheritItemSettings": false,"IsDnD": false,"m_originalParentID": "00000000-0000-0000-0000-000000000000","m_serialiseFrozen": false,"modelName": "GMRInstance","name_with_no_file_rename": "inst_794B17C3","objId": "7f11b22b-cc3d-448c-9d14-0bccb106211d","properties": [{"id": "628b3ccc-a66c-45d7-9bef-28456fba77af","modelName": "GMOverriddenProperty","objectId": "7f11b22b-cc3d-448c-9d14-0bccb106211d","propertyId": "1b4ade95-a812-49dc-af82-04a5282b5e6e","mvc": "1.0","value": "PartType.Legs"}],"rotation": 0,"scaleX": 32,"scaleY": 32,"mvc": "1.1","x": 896,"y": 928},
+{"name": "inst_622F5AEE","id": "1e3e2234-4274-49b5-b6d6-ed8482b8c076","colour": { "Value": 4294967295 },"creationCodeFile": "InstanceCreationCode_inst_622F5AEE.gml","creationCodeType": ".gml","ignore": false,"imageIndex": 0,"imageSpeed": 1,"inheritCode": false,"inheritItemSettings": false,"IsDnD": false,"m_originalParentID": "00000000-0000-0000-0000-000000000000","m_serialiseFrozen": false,"modelName": "GMRInstance","name_with_no_file_rename": "inst_622F5AEE","objId": "7f11b22b-cc3d-448c-9d14-0bccb106211d","properties": [{"id": "b387856e-d9fc-4288-923a-b4887fec4d49","modelName": "GMOverriddenProperty","objectId": "7f11b22b-cc3d-448c-9d14-0bccb106211d","propertyId": "1b4ade95-a812-49dc-af82-04a5282b5e6e","mvc": "1.0","value": "PartType.Case"}],"rotation": 0,"scaleX": 32,"scaleY": 32,"mvc": "1.1","x": 960,"y": 928},
+{"name": "inst_77A9BAAE","id": "85177730-672b-44da-a8a7-d90c49d6349d","colour": { "Value": 4294967295 },"creationCodeFile": "","creationCodeType": "","ignore": false,"imageIndex": 0,"imageSpeed": 1,"inheritCode": false,"inheritItemSettings": false,"IsDnD": false,"m_originalParentID": "00000000-0000-0000-0000-000000000000","m_serialiseFrozen": false,"modelName": "GMRInstance","name_with_no_file_rename": "inst_77A9BAAE","objId": "7f11b22b-cc3d-448c-9d14-0bccb106211d","properties": [{"id": "45887135-9336-490b-950e-58c1e079fed0","modelName": "GMOverriddenProperty","objectId": "7f11b22b-cc3d-448c-9d14-0bccb106211d","propertyId": "1b4ade95-a812-49dc-af82-04a5282b5e6e","mvc": "1.0","value": "PartType.Weapon"}],"rotation": 0,"scaleX": 32,"scaleY": 32,"mvc": "1.1","x": 1024,"y": 928}
             ],
             "layers": [
 
