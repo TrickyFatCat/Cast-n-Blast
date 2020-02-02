@@ -1,8 +1,9 @@
 // Inherit the parent event
 event_inherited();
-
 #macro playerX global.Player.x
 #macro playerY global.Player.y
+
+SetCameraMode(CameraMode.FollowPointPeek, obj_Player);
 
 //User events
 #macro RespondToControls	event_user(0)
@@ -12,7 +13,7 @@ event_inherited();
 #macro RotateWeapon			event_user(4)
 #macro ShootWeapon		    event_user(5)
 #macro ChekPlayerHP		    event_user(6)
-#macro ExecutePlayerDeath	event_user(8)
+#macro ExecutePlayerDeath	event_user(7)
 
 //Set shadow
 var _shadowScale = 1;

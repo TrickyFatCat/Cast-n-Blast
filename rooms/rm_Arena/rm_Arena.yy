@@ -2,12 +2,11 @@
 {
     "name": "rm_Arena",
     "id": "b83b25e8-8d75-4411-9f80-eb6ef171d50f",
-    "creationCodeFile": "",
+    "creationCodeFile": "RoomCreationCode.gml",
     "inheritCode": false,
     "inheritCreationOrder": false,
     "inheritLayers": false,
     "instanceCreationOrderIDs": [
-        "75821fe4-bb63-4460-b976-f61b0bde76b6",
         "13ad48e9-3f34-4540-babe-15ae501287cf",
         "af71ca1f-a643-472f-b4dc-f61908f121ed",
         "b0c90322-5b82-4e5d-a0c7-9d144728d150",
@@ -18,7 +17,8 @@
         "bb6ee604-8d40-4c63-8075-7ad7cb81a06f",
         "d1dab032-52f6-4720-bd18-146ce4a585a3",
         "551e4027-05b9-4b44-b565-ef6f303a64e4",
-        "434aec61-98a4-40c1-85fe-4007f401b5e4"
+        "434aec61-98a4-40c1-85fe-4007f401b5e4",
+        "6c26b0b1-ddb5-49c3-bba1-2d99a86f04f3"
     ],
     "IsDnD": false,
     "layers": [
@@ -172,7 +172,7 @@
             "inheritSubLayers": false,
             "inheritVisibility": false,
             "instances": [
-{"name": "inst_4C177274","id": "75821fe4-bb63-4460-b976-f61b0bde76b6","colour": { "Value": 4294967295 },"creationCodeFile": "","creationCodeType": "","ignore": false,"imageIndex": 0,"imageSpeed": 1,"inheritCode": false,"inheritItemSettings": false,"IsDnD": false,"m_originalParentID": "00000000-0000-0000-0000-000000000000","m_serialiseFrozen": false,"modelName": "GMRInstance","name_with_no_file_rename": "inst_4C177274","objId": "e5300efc-e3d0-4bbd-b45c-3dadfa4d1bb9","properties": null,"rotation": 0,"scaleX": 1,"scaleY": 1,"mvc": "1.1","x": 992,"y": 864}
+{"name": "inst_16B45C7","id": "6c26b0b1-ddb5-49c3-bba1-2d99a86f04f3","colour": { "Value": 4294967295 },"creationCodeFile": "","creationCodeType": "","ignore": false,"imageIndex": 0,"imageSpeed": 1,"inheritCode": false,"inheritItemSettings": false,"IsDnD": false,"m_originalParentID": "00000000-0000-0000-0000-000000000000","m_serialiseFrozen": false,"modelName": "GMRInstance","name_with_no_file_rename": "inst_16B45C7","objId": "e5300efc-e3d0-4bbd-b45c-3dadfa4d1bb9","properties": null,"rotation": 0,"scaleX": 1,"scaleY": 1,"mvc": "1.1","x": 992,"y": 864}
             ],
             "layers": [
 
@@ -289,7 +289,7 @@
             "id": "02b35dc6-a414-456a-bd7f-cedcf55a6140",
             "animationFPS": 15,
             "animationSpeedType": "0",
-            "colour": { "Value": 4278190080 },
+            "colour": { "Value": 4290404365 },
             "depth": 700,
             "grid_x": 32,
             "grid_y": 32,

@@ -44,7 +44,7 @@ cameraMode = CameraMode.MoveToTarget;
 clampToBorders = false;
 
 // Follow parameters
-cameraFollowTarget = obj_Player;
+cameraFollowTarget = noone;
 targetX = 0;
 targetY = 0;
 isSmooth = true;

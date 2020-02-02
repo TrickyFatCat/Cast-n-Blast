@@ -12,6 +12,7 @@ with (global.Camera)
 	{
 		case CameraMode.FollowObject:
 		case CameraMode.MoveToFollowObject:
+		case CameraMode.FollowPointPeek:
 			cameraFollowTarget = argument[1];
 		break;
 		

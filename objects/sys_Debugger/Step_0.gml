@@ -31,7 +31,7 @@ if (keyboard_check_pressed(vk_f2))
 
 if (keyboard_check_pressed(vk_f3))
 {
-	SetCameraMode(CameraMode.FollowPointPeek)
+	SetCameraMode(CameraMode.FollowPointPeek, obj_Player);
 }
 
 if (keyboard_check_pressed(vk_f4))

@@ -2,16 +2,22 @@
 
 // Parameters
 
-var _step = CalculateStep(0.25);
-var _targetScale = 1.2;
-
 if (activeWeapon.isShooting)
 {
 	activeWeapon.isShooting = false;
 }
 
+var _step = CalculateStep(0.25);
+
+//audio_stop_sound(global.Music);
+
+//if (!audio_is_playing(sfx_deathtimer))
+//{
+//	audio_play_sound(sfx_deathtimer, 1000, true);
+//}
+
 trancendenceProgress = ApproachTimeFactor(trancendenceProgress, 1, _step);
-drawScaleX = LerpTimeFactor(drawScaleX, _targetScale, trancendenceProgress);
+drawScaleX = LerpTimeFactor(drawScaleX, targetScale, trancendenceProgress);
 drawScaleY = abs(drawScaleX);
 		
 with (activeWeapon)
@@ -22,7 +28,7 @@ with (activeWeapon)
 
 EnableFlash(c_red, 0.75)
 		
-if (drawScaleX >= _targetScale)
+if (drawScaleX >= targetScale)
 {
 	var _trancendenceTime = SetTime(1);
 	
