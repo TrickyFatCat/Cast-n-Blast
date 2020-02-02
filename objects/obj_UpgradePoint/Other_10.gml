@@ -12,6 +12,7 @@ with (global.Player)
 					legsLevel += 1;
 					SetLegs(legsLevel);
 					DecreaseScrap(other.upgradeCost);
+					UpdateMaxHitPoints();
 				}
 			break;
 		
@@ -21,6 +22,7 @@ with (global.Player)
 					caseLevel += 1;
 					SetCase(caseLevel);
 					DecreaseScrap(other.upgradeCost);
+					UpdateMaxHitPoints();
 				}
 			break;
 		
@@ -30,10 +32,9 @@ with (global.Player)
 					weaponLevel += 1;
 					SetWeapon(weaponLevel);
 					DecreaseScrap(other.upgradeCost);
+					UpdateMaxHitPoints();
 				}
 			break;
 		}
-		
-		UpdateMaxHitPoints();
 	}
 }

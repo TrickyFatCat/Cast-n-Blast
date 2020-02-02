@@ -88,7 +88,7 @@ UpdateMaxHitPoints();
 maxEnergy = 100;
 defaultMaxEnergy = maxEnergy;
 energy = 1;
-energyRestoreRate = 15;
+energyRestoreRate = 12;
 energyRestoreFactor = 1;
 energyDefaultRestoreRate = energyRestoreRate;
 energyRestoreTimer = 0;
@@ -108,8 +108,14 @@ ammoCurrentMax = maxEnergy;
 shieldIsActive = false;
 damageReductionFactor = 1;
 defaultDamageReductionFactor = damageReductionFactor;
+shieldFactor = 0.5;
+defaultShieldFactor = shieldFactor;
 
 // Dash
 deafaultDashVelocity = dashVelocity;
 dashCost = 20;
 defaultDashCost = dashCost;
+
+// Weapon affects
+defaultSpreadAngle = activeWeapon.spreadAngleCurrent;
+defaultRateOfFire = activeWeapon.rateOfFireCurrent;

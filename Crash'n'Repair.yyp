@@ -335,6 +335,14 @@
             }
         },
         {
+            "Key": "30712e2e-c1b3-4611-87f5-dc3fada09536",
+            "Value": {
+                "id": "dd92de7d-d997-4b8c-a81c-4c454419ea5a",
+                "resourcePath": "scripts\\WeaponAffect\\WeaponAffect.yy",
+                "resourceType": "GMScript"
+            }
+        },
+        {
             "Key": "322d10c7-c95b-4f04-9e24-f70c6740e0b0",
             "Value": {
                 "id": "a2122b50-ae14-4ffb-a5c9-626c197765ce",
@@ -1912,6 +1920,7 @@
         "3518aeee-a8c3-4506-90a1-31f5b5c04b21",
         "d7d53509-e952-41b6-b176-84ce9237dde0",
         "548265cc-c5e3-4371-b4b4-f01c3d3be624",
+        "30712e2e-c1b3-4611-87f5-dc3fada09536",
         "10c47987-e609-43f2-8074-96d977ac5217",
         "49d6b2b8-b640-4912-a714-6627da7b2c73",
         "99b709ac-a93b-4d40-acac-09026a7c8844",

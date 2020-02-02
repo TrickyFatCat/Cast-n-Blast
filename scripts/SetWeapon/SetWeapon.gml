@@ -8,3 +8,4 @@ weaponMaxHitPoints = GetPartMaxHp(_partType, _level);
 weaponRepairCost = GetPartRepairCost(_partType, _level);
 weaponUpgradeCost = GetPartUpgradeCost(_partType, _level);
 weaponFactor = GetPartEffectivness(_partType, _level);
+defaultWeaponFactor = weaponFactor;

@@ -8,3 +8,4 @@ caseMaxHitPoints = GetPartMaxHp(_partType, _level);
 caseRepairCost = GetPartRepairCost(_partType, _level);
 caseUpgradeCost = GetPartUpgradeCost(_partType, _level);
 caseFactor = GetPartEffectivness(_partType, _level);
+defaultCaseFactor = caseFactor;

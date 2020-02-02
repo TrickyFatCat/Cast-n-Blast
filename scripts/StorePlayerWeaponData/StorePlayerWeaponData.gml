@@ -24,7 +24,7 @@ ds_map_add(PlasmaGunData, "heal",							0);
 ds_map_add(PlasmaGunData, "rateOfFireAccelerated",			false);
 ds_map_add(PlasmaGunData, "rateOfFireIncrStep",				0);
 ds_map_add(PlasmaGunData, "rateOfFireDecrStep",				0);
-ds_map_add(PlasmaGunData, "rateOfFireMin",					8);
+ds_map_add(PlasmaGunData, "rateOfFireMin",					5);
 ds_map_add(PlasmaGunData, "rateOfFireMax",					0);
 //-----------------------------------------------------------------------------
 ds_map_add(PlasmaGunData, "burstRate",						0);
@@ -48,7 +48,7 @@ ds_map_add(PlasmaGunData, "spreadIsDynamic",				false);
 ds_map_add(PlasmaGunData, "spreadIsUniform",				false);
 ds_map_add(PlasmaGunData, "spreadAngleIncrFactor",			0.2);
 ds_map_add(PlasmaGunData, "spreadAngleDecrFactor",			0.0075);
-ds_map_add(PlasmaGunData, "spreadAngleMin",					0);
+ds_map_add(PlasmaGunData, "spreadAngleMin",					8);
 ds_map_add(PlasmaGunData, "spreadAngleMax",					0);
 //-----------------------------------------------------------------------------
 ds_map_add(PlasmaGunData, "ammoID",							noone);
@@ -59,7 +59,7 @@ ds_map_add(PlasmaGunData, "recoilFactor",					0.3);
 //-----------------------------------------------------------------------------
 ds_map_add(PlasmaGunData, "hitscanScaleY",					0);
 ds_map_add(PlasmaGunData, "projectileVelocityNoiseFactor",	0);
-ds_map_add(PlasmaGunData, "projectileVelocityCurrent",		20);
+ds_map_add(PlasmaGunData, "projectileVelocityCurrent",		10);
 ds_map_add(PlasmaGunData, "projectileVelocityMax",			0);
 ds_map_add(PlasmaGunData, "projectileAcceleration",			0);
 ds_map_add(PlasmaGunData, "projectileFriction",				0);
@@ -68,5 +68,5 @@ ds_map_add(PlasmaGunData, "projectileBounceFriction",		2);
 //-----------------------------------------------------------------------------
 ds_map_add(PlasmaGunData, "isShackingCamera",				true);
 ds_map_add(PlasmaGunData, "angularShakeEnabled",			false);
-ds_map_add(PlasmaGunData, "shakeValue",						0.65);
+ds_map_add(PlasmaGunData, "shakeValue",						0.7);
 ds_map_add(PlasmaGunData, "shotShakeFactor",				0.05);

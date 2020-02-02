@@ -7,6 +7,7 @@ ChekPlayerHP;
 
 LegsAffect();
 CaseAffect();
+WeaponAffect();
 
 shieldIsActive = sys_GameManager.keyShield && energy > 0;
 
@@ -29,7 +30,7 @@ if (sys_GameManager.actionStopShooting && canRestore && energy > 0)
 
 if (shieldIsActive && (!_keyShoot))
 {
-	energyRestoreFactor = 0.5 * caseFactor;
+	energyRestoreFactor = shieldFactor;
 }
 
 var _energyRestoreDelay = SetTime(1 / energyRestoreRate);
