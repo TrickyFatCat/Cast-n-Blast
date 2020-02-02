@@ -7,7 +7,7 @@ spawnPauseTime = SetTime(5);
 spawnPauseTimer = 0;
 
 /// Enemies count limits
-enemyCountMax = 20;
+enemyCountMax = 6;
 
 /// Spawn list
 spawnList = ds_list_create();
@@ -26,3 +26,5 @@ currentWave = GetWave(currentWaveIndex);
 waveData = GetWaveData(currentWave);
 waveSwitchTime = SetTime(10);
 waveSwitchTimer = 0;
+
+spawnNumber = 1;

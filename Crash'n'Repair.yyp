@@ -551,6 +551,14 @@
             }
         },
         {
+            "Key": "4d2e50be-b1e4-41af-a99f-6aa1c6ad686a",
+            "Value": {
+                "id": "7cc3ea3c-6814-4b61-b5e8-0bdcd9d9f8a4",
+                "resourcePath": "sprites\\spr_playerProjectileImpact\\spr_playerProjectileImpact.yy",
+                "resourceType": "GMSprite"
+            }
+        },
+        {
             "Key": "4e94a9d6-f0b1-4c73-99d8-36b4a488c76d",
             "Value": {
                 "id": "a7c0058b-c46b-4a0f-8332-d6d999883133",
@@ -1068,6 +1076,14 @@
                 "id": "5caebaba-1ee6-40d1-ae64-a76644cd6c79",
                 "resourcePath": "views\\8d4f919c-a11c-4bbd-9469-d116251a5ed9.yy",
                 "resourceType": "GMFolder"
+            }
+        },
+        {
+            "Key": "8f7853ec-5b45-4d37-8e54-29012f2c2b32",
+            "Value": {
+                "id": "ffd65881-3e86-4ea5-b46b-f99ff7ea891e",
+                "resourcePath": "scripts\\SetWave\\SetWave.yy",
+                "resourceType": "GMScript"
             }
         },
         {
@@ -1671,6 +1687,14 @@
             }
         },
         {
+            "Key": "dd37ea42-7390-4b71-856c-a40e472708af",
+            "Value": {
+                "id": "0d6735b7-fe5f-4061-9da3-d4e7e1c8dac0",
+                "resourcePath": "objects\\obj_PlayerProjectileImpact\\obj_PlayerProjectileImpact.yy",
+                "resourceType": "GMObject"
+            }
+        },
+        {
             "Key": "de0937b1-bf93-45c3-9734-95fc070a05e3",
             "Value": {
                 "id": "410a79cf-506e-4f10-9bd2-c534fd8f6755",
@@ -2045,6 +2069,7 @@
         "d67cb006-c144-4593-9579-4457245617ef",
         "a14c0ac6-7b66-4987-8a52-b6ced13cda44",
         "322d10c7-c95b-4f04-9e24-f70c6740e0b0",
+        "8f7853ec-5b45-4d37-8e54-29012f2c2b32",
         "60c1984b-644f-4bae-9886-9b6b0427a288"
     ],
     "tutorial": ""

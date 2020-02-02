@@ -4,7 +4,16 @@
     "mvc": "1.0",
     "name": "obj_PProjectile_Normal",
     "eventList": [
-        
+        {
+            "id": "d0502425-82b2-4241-9e2c-b3adbca7bf5c",
+            "modelName": "GMEvent",
+            "mvc": "1.0",
+            "IsDnD": false,
+            "collisionObjectId": "00000000-0000-0000-0000-000000000000",
+            "enumb": 0,
+            "eventtype": 1,
+            "m_owner": "1da54990-d36b-4547-8a9f-43a9fa089155"
+        }
     ],
     "maskSpriteId": "00000000-0000-0000-0000-000000000000",
     "overriddenProperties": null,

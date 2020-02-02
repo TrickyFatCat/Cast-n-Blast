@@ -27,5 +27,6 @@ difficultyIncreaseTime[10] = SetTime(110);
 
 global.DifficultyLevel = 0;
 global.Score = 0;
+global.Round = 1;
 
 soundTimer = SetTime(1);
