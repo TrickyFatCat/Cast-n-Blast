@@ -1,63 +1,53 @@
 {
-    "id": "d46cdd21-54e4-4fe7-b9fc-99f81f6d6def",
+    "id": "7da6387c-4c9e-48ac-8047-3636ee1f3d7a",
     "modelName": "GMObject",
     "mvc": "1.0",
-    "name": "obj_BaseInteractive",
+    "name": "obj_UpgradePoint",
     "eventList": [
         {
-            "id": "b1791f4b-ca03-4fdf-aa1b-7d61a1bbc8f5",
-            "modelName": "GMEvent",
-            "mvc": "1.0",
-            "IsDnD": false,
-            "collisionObjectId": "00000000-0000-0000-0000-000000000000",
-            "enumb": 0,
-            "eventtype": 0,
-            "m_owner": "d46cdd21-54e4-4fe7-b9fc-99f81f6d6def"
-        },
-        {
-            "id": "1f7f1838-7719-4ecc-ae11-bf5d2c99e712",
+            "id": "37ed5e0a-b4c8-4155-a7cb-d59968cd6404",
             "modelName": "GMEvent",
             "mvc": "1.0",
             "IsDnD": false,
             "collisionObjectId": "00000000-0000-0000-0000-000000000000",
             "enumb": 10,
             "eventtype": 7,
-            "m_owner": "d46cdd21-54e4-4fe7-b9fc-99f81f6d6def"
+            "m_owner": "7da6387c-4c9e-48ac-8047-3636ee1f3d7a"
         },
         {
-            "id": "2b8fd326-b7c6-45fa-b5fc-a673f2bdc39f",
-            "modelName": "GMEvent",
-            "mvc": "1.0",
-            "IsDnD": false,
-            "collisionObjectId": "00000000-0000-0000-0000-000000000000",
-            "enumb": 0,
-            "eventtype": 12,
-            "m_owner": "d46cdd21-54e4-4fe7-b9fc-99f81f6d6def"
-        },
-        {
-            "id": "9ea742c7-caa3-4186-906a-a31d794f4582",
-            "modelName": "GMEvent",
-            "mvc": "1.0",
-            "IsDnD": false,
-            "collisionObjectId": "6de156bf-cdab-4d33-86d0-b18f7cac89c1",
-            "enumb": 0,
-            "eventtype": 4,
-            "m_owner": "d46cdd21-54e4-4fe7-b9fc-99f81f6d6def"
-        },
-        {
-            "id": "77934f6f-cc3f-407b-8460-bafbdd219be7",
+            "id": "8b23a041-244a-48ae-9271-efbc91608875",
             "modelName": "GMEvent",
             "mvc": "1.0",
             "IsDnD": false,
             "collisionObjectId": "00000000-0000-0000-0000-000000000000",
             "enumb": 0,
             "eventtype": 3,
-            "m_owner": "d46cdd21-54e4-4fe7-b9fc-99f81f6d6def"
+            "m_owner": "7da6387c-4c9e-48ac-8047-3636ee1f3d7a"
+        },
+        {
+            "id": "b58eb52f-f91a-4205-8136-c69b8578f79f",
+            "modelName": "GMEvent",
+            "mvc": "1.0",
+            "IsDnD": false,
+            "collisionObjectId": "00000000-0000-0000-0000-000000000000",
+            "enumb": 0,
+            "eventtype": 0,
+            "m_owner": "7da6387c-4c9e-48ac-8047-3636ee1f3d7a"
+        },
+        {
+            "id": "3c985678-cb61-4eaa-9307-54fd1531f0eb",
+            "modelName": "GMEvent",
+            "mvc": "1.0",
+            "IsDnD": false,
+            "collisionObjectId": "00000000-0000-0000-0000-000000000000",
+            "enumb": 25,
+            "eventtype": 7,
+            "m_owner": "7da6387c-4c9e-48ac-8047-3636ee1f3d7a"
         }
     ],
     "maskSpriteId": "00000000-0000-0000-0000-000000000000",
     "overriddenProperties": null,
-    "parentObjectId": "11876f57-a814-41cc-8ce2-4791a7622828",
+    "parentObjectId": "d46cdd21-54e4-4fe7-b9fc-99f81f6d6def",
     "persistent": false,
     "physicsAngularDamping": 0.1,
     "physicsDensity": 0.5,
@@ -71,8 +61,23 @@
     "physicsShape": 1,
     "physicsShapePoints": null,
     "physicsStartAwake": true,
-    "properties": null,
+    "properties": [
+        {
+            "id": "ae7b74ae-e96e-45e4-88a6-f5e3f984eb28",
+            "modelName": "GMObjectProperty",
+            "mvc": "1.0",
+            "listItems": null,
+            "multiselect": false,
+            "rangeEnabled": false,
+            "rangeMax": 10,
+            "rangeMin": 0,
+            "resourceFilter": 1023,
+            "value": "0",
+            "varName": "partToUpgrade",
+            "varType": 0
+        }
+    ],
     "solid": false,
-    "spriteId": "00000000-0000-0000-0000-000000000000",
+    "spriteId": "c7f2abd8-77fb-424d-b06d-d8a9cad99b4c",
     "visible": true
 }

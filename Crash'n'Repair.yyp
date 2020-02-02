@@ -47,6 +47,14 @@
             }
         },
         {
+            "Key": "04e50bc9-4743-4450-811a-a0367d8a2024",
+            "Value": {
+                "id": "660bf6c7-5404-425e-b3d8-7f03abc4a692",
+                "resourcePath": "scripts\\GetPartMaxLevel\\GetPartMaxLevel.yy",
+                "resourceType": "GMScript"
+            }
+        },
+        {
             "Key": "04f2a6ea-7083-4b65-a64f-6d36a8a312b7",
             "Value": {
                 "id": "5b2e5338-9259-4ede-aab7-7631ef3760d9",
@@ -60,6 +68,14 @@
                 "id": "c5e4abd5-959f-45d2-8dc5-35dd064acdbb",
                 "resourcePath": "objects\\obj_Projectile\\obj_Projectile.yy",
                 "resourceType": "GMObject"
+            }
+        },
+        {
+            "Key": "0a5f7801-48b2-46d3-904a-f23610672f42",
+            "Value": {
+                "id": "31d0e966-8929-482e-939f-c7f87cffcb8e",
+                "resourcePath": "scripts\\SetCase\\SetCase.yy",
+                "resourceType": "GMScript"
             }
         },
         {
@@ -323,6 +339,14 @@
             "Value": {
                 "id": "a2122b50-ae14-4ffb-a5c9-626c197765ce",
                 "resourcePath": "scripts\\ClearWaveData\\ClearWaveData.yy",
+                "resourceType": "GMScript"
+            }
+        },
+        {
+            "Key": "3518aeee-a8c3-4506-90a1-31f5b5c04b21",
+            "Value": {
+                "id": "030ffa3b-bacc-4651-bb09-355594fabb47",
+                "resourcePath": "scripts\\SetWeapon\\SetWeapon.yy",
                 "resourceType": "GMScript"
             }
         },
@@ -671,6 +695,14 @@
             }
         },
         {
+            "Key": "657739fe-0dbb-4300-89bf-eb74a7abb3f5",
+            "Value": {
+                "id": "0523db1c-859b-4bfb-aff8-0bcb33e76bd6",
+                "resourcePath": "scripts\\SetLegs\\SetLegs.yy",
+                "resourceType": "GMScript"
+            }
+        },
+        {
             "Key": "67111a0d-dec3-4266-995e-aad70bd51ba1",
             "Value": {
                 "id": "83a9a624-5a57-4e6c-b0d5-52adfac2011e",
@@ -788,6 +820,14 @@
                 "id": "577f8394-7d26-492f-803d-efb821206f60",
                 "resourcePath": "scripts\\CreateBulletObjects\\CreateBulletObjects.yy",
                 "resourceType": "GMScript"
+            }
+        },
+        {
+            "Key": "7da6387c-4c9e-48ac-8047-3636ee1f3d7a",
+            "Value": {
+                "id": "84d5ab4e-665d-47d3-9106-996a2ceca2aa",
+                "resourcePath": "objects\\obj_UpgradePoint\\obj_UpgradePoint.yy",
+                "resourceType": "GMObject"
             }
         },
         {
@@ -959,6 +999,14 @@
             }
         },
         {
+            "Key": "8c80251e-6677-42a0-89e5-32770530da87",
+            "Value": {
+                "id": "a5175a1a-0293-49fb-aa98-1e7c5ccc9a19",
+                "resourcePath": "scripts\\GetPartUpgradeCost\\GetPartUpgradeCost.yy",
+                "resourceType": "GMScript"
+            }
+        },
+        {
             "Key": "8cefa555-5c0c-4bf2-bfba-5667b66d9a2d",
             "Value": {
                 "id": "c1b54b4a-73d3-4bf4-a2fe-070fc857ebc6",
@@ -972,14 +1020,6 @@
                 "id": "5caebaba-1ee6-40d1-ae64-a76644cd6c79",
                 "resourcePath": "views\\8d4f919c-a11c-4bbd-9469-d116251a5ed9.yy",
                 "resourceType": "GMFolder"
-            }
-        },
-        {
-            "Key": "8ee865f9-eed1-4658-8399-1f0e5d9e142a",
-            "Value": {
-                "id": "81c3181e-1cd4-42a7-9593-b72757c83de1",
-                "resourcePath": "scripts\\GetPartLevel\\GetPartLevel.yy",
-                "resourceType": "GMScript"
             }
         },
         {
@@ -1837,10 +1877,14 @@
         "ae5cc228-1391-4d60-b019-fc13fd13165a",
         "a63c70aa-8066-4814-aa08-055451bb260b",
         "04f2a6ea-7083-4b65-a64f-6d36a8a312b7",
-        "8ee865f9-eed1-4658-8399-1f0e5d9e142a",
         "e70dc3bb-8869-4663-b79b-b00add9539d6",
         "4e94a9d6-f0b1-4c73-99d8-36b4a488c76d",
         "b8bbd4b8-3f57-48a0-bceb-e0919157ff2e",
+        "8c80251e-6677-42a0-89e5-32770530da87",
+        "04e50bc9-4743-4450-811a-a0367d8a2024",
+        "657739fe-0dbb-4300-89bf-eb74a7abb3f5",
+        "0a5f7801-48b2-46d3-904a-f23610672f42",
+        "3518aeee-a8c3-4506-90a1-31f5b5c04b21",
         "10c47987-e609-43f2-8074-96d977ac5217",
         "49d6b2b8-b640-4912-a714-6627da7b2c73",
         "99b709ac-a93b-4d40-acac-09026a7c8844",

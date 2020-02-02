@@ -20,7 +20,7 @@ switch global.CurrentInput
 		keyMoveRight = CheckKeyboardOrd("D");
 		keyShootAuto = mouse_check_button(_mouseButton);
 		keyShootSemiAuto = mouse_check_button_pressed(_mouseButton);
-		keyInteract = CheckKeyboardOrd("E");
+		keyInteract = keyboard_check_pressed(ord("E"));
 		keyShield = mouse_check_button(mb_right);
 		keyDash = keyboard_check_pressed(vk_space);
 	break;

@@ -72,9 +72,9 @@ if (instance_exists(obj_Player))
 		//}
 		//draw_text(5, 180, "Current State: " + _state);
 		draw_text(5, 180, "Hit Points: " + string(hitPoints) + "/" + string(maxHitPoints));
-		draw_text(5, 200, "Legs: " + string(legsHitPoints) + "/" + string(legsMaxHitPoints));
-		draw_text(5, 220, "Case: " + string(caseHitPoints) + "/" + string(caseMaxHitPoints));
-		draw_text(5, 240, "Weapon: " + string(weaponHitPoints) + "/" + string(weaponMaxHitPoints));
+		draw_text(5, 200, "Legs " + string(legsLevel) + "/" + string(legsMaxLevel) + ": " + string(legsHitPoints) + "/" + string(legsMaxHitPoints));
+		draw_text(5, 220, "Case " + string(caseLevel) + "/" + string(caseMaxLevel) + ": " + string(caseHitPoints) + "/" + string(caseMaxHitPoints));
+		draw_text(5, 240, "Weapon " + string(weaponLevel) + "/" + string(weaponMaxLevel) + ": " + string(weaponHitPoints) + "/" + string(weaponMaxHitPoints));
 		draw_text(5, 260, "Energy: " + string(energy) + "/" + string(maxEnergy));
 		draw_text(5, 280, "Scrap: " + string(global.Scrap));
 		//draw_text(5, 240, "Current Ammo: " + string(ammoCurrent) + "/" + string(ammoCurrentMax));

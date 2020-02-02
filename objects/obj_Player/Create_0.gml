@@ -69,34 +69,21 @@ enum PartType
 }
 
 // Legs
-var _partType = PartType.Legs;
-var _partLevel = 0;
-legsLevel = GetPartLevel(_partType, _partLevel);
-legsHitPoints = GetPartMaxHp(_partType, _partLevel);
-legsMaxHitPoints = GetPartMaxHp(_partType, _partLevel);
-legsRepairCost = GetPartRepairCost(_partType, _partLevel);
-legsFactor = GetPartEffectivness(_partType, _partLevel);
+legsLevel = 0;
+legsMaxLevel = GetPartMaxLevel(PartType.Legs);
+SetLegs(legsLevel);
 
 // Case
-var _partType = PartType.Case;
-var _partLevel = 0;
-caseLevel = GetPartLevel(_partType, _partLevel);
-caseHitPoints = GetPartMaxHp(_partType, _partLevel);
-caseMaxHitPoints = GetPartMaxHp(_partType, _partLevel);
-caseRepairCost = GetPartRepairCost(_partType, _partLevel);
-caseFactor = GetPartEffectivness(_partType, _partLevel);
+caseLevel = 0;
+caseMaxLevel = GetPartMaxLevel(PartType.Case);
+SetCase(caseLevel);
 
 // Case
-var _partType = PartType.Weapon;
-var _partLevel = 0;
-weaponLevel = GetPartLevel(_partType, _partLevel);
-weaponHitPoints = GetPartMaxHp(_partType, _partLevel);
-weaponMaxHitPoints = GetPartMaxHp(_partType, _partLevel);
-weaponRepairCost = GetPartRepairCost(_partType, _partLevel);
-weaponFactor = GetPartEffectivness(_partType, _partLevel);
+weaponLevel = 0;
+weaponMaxLevel = GetPartMaxLevel(PartType.Weapon);
+SetWeapon(weaponLevel);
 
 UpdateMaxHitPoints();
-
 // Energy
 maxEnergy = 100;
 defaultMaxEnergy = maxEnergy;

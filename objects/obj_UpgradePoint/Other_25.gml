@@ -1,23 +1,21 @@
-
-// Inherit the parent event
 event_inherited();
 
 var _partName;
 
-switch (partToRepair)
+switch (partToUpgrade)
 {
 	case PartType.Legs:
-		_partName = "Legs";
+		_partName = "Legs +1";
 	break;
 	
 	case PartType.Case:
-		_partName = "Case";
+		_partName = "Case +1";
 	break;
 	
 	case PartType.Weapon:
-		_partName = "Weapon";
+		_partName = "Weapon +1";
 	break;
 }
 
 draw_text(x, y, _partName);
-draw_text(x, y + 20, repairCost);
+draw_text(x, y + 20, upgradeCost);

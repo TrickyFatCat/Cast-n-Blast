@@ -4,7 +4,7 @@ with (global.Player)
 	{
 		case PartType.Legs:
 			var _hpPercent = legsHitPoints / legsMaxHitPoints;
-			other.repairCost = round((1 - _hpPercent) * legsRepairCost);
+			other.repairCost = round((1 - _hpPercent) * legsRepairCost);	
 		break;
 		
 		case PartType.Case:
