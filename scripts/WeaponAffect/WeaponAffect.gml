@@ -26,6 +26,4 @@ with (activeWeapon)
 	{
 		shootAmmoCost = 1;
 	}
-	
-	show_debug_message("damage= " + string(damage) + " | rof= " + string(rateOfFireCurrent) + " | spread=" + string(spreadAngleCurrent));
 }

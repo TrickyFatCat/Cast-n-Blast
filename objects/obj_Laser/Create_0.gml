@@ -19,7 +19,7 @@ enum LaserState
 currentState = LaserState.Idle;
 
 // Scale parameters
-collisionTargets = SetHitscanTargets(obj_obstacle, obj_enemy);
+collisionTargets = SetHitscanTargets(obj_Obstacle, obj_Enemy);
 drawScaleX = 0;
 drawScaleY = 0;
 drawScaleYMax = 0;

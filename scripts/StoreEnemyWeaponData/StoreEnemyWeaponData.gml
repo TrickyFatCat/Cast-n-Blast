@@ -2,11 +2,15 @@
 enum EnemyWeapon
 {
 	FighterGun,
-	TrooperGun
+	TrooperGun,
+	BeamerGun,
+	TurretGun,
+	MinerGun
 }
 
 #macro EnemyFighterGunData global.EnemyWeaponData[EnemyWeapon.FighterGun]
 #macro TrooperGunData global.EnemyWeaponData[EnemyWeapon.TrooperGun]
+#macro BeamerGunData global.EnemyWeaponData[EnemyWeapon.BeamerGun]
 
 #region FighterGun
 EnemyFighterGunData = ds_map_create();
@@ -73,7 +77,8 @@ ds_map_add(EnemyFighterGunData, "angularShakeEnabled",			false);
 ds_map_add(EnemyFighterGunData, "shakeValue",					0.75);
 ds_map_add(EnemyFighterGunData, "shotShakeFactor",				0.05);
 #endregion
-#region FighterGun
+
+#region TrooperGun
 TrooperGunData = ds_map_create();
 ds_map_add(TrooperGunData, "weaponSprite",					noone);
 ds_map_add(TrooperGunData, "offsetY",						6);
@@ -137,4 +142,70 @@ ds_map_add(TrooperGunData, "isShackingCamera",				false);
 ds_map_add(TrooperGunData, "angularShakeEnabled",			false);
 ds_map_add(TrooperGunData, "shakeValue",					0.75);
 ds_map_add(TrooperGunData, "shotShakeFactor",				0.05);
+#endregion
+
+#region BeamerGun
+BeamerGunData = ds_map_create();
+ds_map_add(BeamerGunData, "weaponSprite",					noone);
+ds_map_add(BeamerGunData, "offsetY",						6);
+ds_map_add(BeamerGunData, "laserSightEnabled",				false);
+ds_map_add(BeamerGunData, "isAuto",							true);
+ds_map_add(BeamerGunData, "currentShootMode",				ShootMode.Cast);
+//-----------------------------------------------------------------------------
+ds_map_add(BeamerGunData, "bulletObject",					obj_BeamerLaser);
+ds_map_add(BeamerGunData, "bulletNumber",					1);
+ds_map_add(BeamerGunData, "bulletSpawnPointOffset",			10);
+//-----------------------------------------------------------------------------
+ds_map_add(BeamerGunData, "damage",							1);
+ds_map_add(BeamerGunData, "heal",							0);
+//-----------------------------------------------------------------------------
+ds_map_add(BeamerGunData, "rateOfFireAccelerated",			false);
+ds_map_add(BeamerGunData, "rateOfFireIncrStep",				0);
+ds_map_add(BeamerGunData, "rateOfFireDecrStep",				0);
+ds_map_add(BeamerGunData, "rateOfFireMin",					20);
+ds_map_add(BeamerGunData, "rateOfFireMax",					0);
+//-----------------------------------------------------------------------------
+ds_map_add(BeamerGunData, "burstRate",						0);
+ds_map_add(BeamerGunData, "burstShotsNumber",				0);
+//-----------------------------------------------------------------------------
+ds_map_add(BeamerGunData, "castExecuteCount",				0);
+ds_map_add(BeamerGunData, "castTime",						1.5);
+//-----------------------------------------------------------------------------
+ds_map_add(BeamerGunData, "chargeExecuteCountMin",			1);
+ds_map_add(BeamerGunData, "chargeExecuteCountMax",			0);
+ds_map_add(BeamerGunData, "chargeTime",						1);
+ds_map_add(BeamerGunData, "chargeWaitTime",					0);
+ds_map_add(BeamerGunData, "chargeDamageFactorMax",			4);
+ds_map_add(BeamerGunData, "chargeHealFactorMax",			0);
+ds_map_add(BeamerGunData, "chargeRateFactorMax",			0);
+ds_map_add(BeamerGunData, "chargeBulletNumberFactorMax",	0);
+ds_map_add(BeamerGunData, "chargeVelocityFactorMax",		20);
+ds_map_add(BeamerGunData, "chargeShakeFactorMax",			1.25);
+//-----------------------------------------------------------------------------
+ds_map_add(BeamerGunData, "spreadIsDynamic",				false);
+ds_map_add(BeamerGunData, "spreadIsUniform",				false);
+ds_map_add(BeamerGunData, "spreadAngleIncrFactor",			0.2);
+ds_map_add(BeamerGunData, "spreadAngleDecrFactor",			0.0075);
+ds_map_add(BeamerGunData, "spreadAngleMin",					0);
+ds_map_add(BeamerGunData, "spreadAngleMax",					0);
+//-----------------------------------------------------------------------------
+ds_map_add(BeamerGunData, "ammoID",							noone);
+ds_map_add(BeamerGunData, "shootAmmoCost",					0);
+//-----------------------------------------------------------------------------
+ds_map_add(BeamerGunData, "recoilPower",					0);
+ds_map_add(BeamerGunData, "recoilFactor",					0);
+//-----------------------------------------------------------------------------
+ds_map_add(BeamerGunData, "hitscanScaleY",					5);
+ds_map_add(BeamerGunData, "projectileVelocityNoiseFactor",	0);
+ds_map_add(BeamerGunData, "projectileVelocityCurrent",		5);
+ds_map_add(BeamerGunData, "projectileVelocityMax",			0);
+ds_map_add(BeamerGunData, "projectileAcceleration",			0);
+ds_map_add(BeamerGunData, "projectileFriction",				0);
+ds_map_add(BeamerGunData, "projectileBounceEnable",			false);
+ds_map_add(BeamerGunData, "projectileBounceFriction",		2);
+//-----------------------------------------------------------------------------
+ds_map_add(BeamerGunData, "isShackingCamera",				false);
+ds_map_add(BeamerGunData, "angularShakeEnabled",			false);
+ds_map_add(BeamerGunData, "shakeValue",						0.75);
+ds_map_add(BeamerGunData, "shotShakeFactor",				0.05);
 #endregion

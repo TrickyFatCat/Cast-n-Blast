@@ -30,12 +30,14 @@ switch (currentState)
 		SwitchSprite(spriteIdle);
 		ExecuteStateIdle;
 		CheckEntityHP;
+		ControlSprite;
 	break;
 	
 	case EnemyState.TargetSearch:
 		SwitchSprite(spriteIdle);
 		ExecuteStateTargetSearch;
 		CheckEntityHP;
+		ControlSprite;
 	break;
 	
 	case EnemyState.Move:
@@ -43,6 +45,7 @@ switch (currentState)
 		ExecuteStateMove;
 		isShooting = false;
 		CheckEntityHP;
+		ControlSprite;
 		moveSoundTimer += global.TimeFactor;
 		
 		var _stepTime = SetTime(0.25);
@@ -61,6 +64,7 @@ switch (currentState)
 		SwitchSprite(spriteIdle);
 		ExecuteStateAction;
 		CheckEntityHP;
+		ControlSprite;
 	break;
 	
 	case EnemyState.Trancendence:

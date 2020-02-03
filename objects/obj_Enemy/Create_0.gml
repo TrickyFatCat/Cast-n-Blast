@@ -6,7 +6,6 @@ event_inherited();
 // User Events
 #macro CheckEntityHP			event_user(0)
 #macro PlaceEnemyWeapon			event_user(1)
-
 #macro ExecuteStateIdle			event_user(2)
 #macro ExecuteStateTargetSearch event_user(3)
 #macro ExecuteStateMove			event_user(4)
@@ -14,6 +13,8 @@ event_inherited();
 #macro ExecuteStateTrancendence event_user(6)
 #macro ExecuteStateDeath		event_user(7)
 #macro StopMoving				event_user(8)
+#macro ControlSprite			event_user(9)
+#macro ControlWeapon			event_user(10)
 
 SetShadowParameters(true, 1);
 

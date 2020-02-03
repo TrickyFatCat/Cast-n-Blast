@@ -1,4 +1,5 @@
-/// @description Insert description here
+/// @description Sprite controls
+
 var _directionToPlayer = point_direction(x, y, playerX, playerY);
 if (_directionToPlayer > 90)
 {

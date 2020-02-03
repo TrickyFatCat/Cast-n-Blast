@@ -7,7 +7,14 @@ var _flashPower = 1;
 //Sequence
 if (!isInvulnerable) && (other.dealingDamage)
 {
-	DealDamage(other.damage);
+	if (shieldIsActive)
+	{
+		DecreaseEnergy(round(other.damage * damageReductionFactor));
+	}
+	else
+	{
+		DealDamageToParts(other.damage);
+	}
 	EnableFlash(_flashColour, _flashPower);
 	ChekPlayerHP;
 }

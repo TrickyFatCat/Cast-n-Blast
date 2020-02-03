@@ -4,7 +4,16 @@
     "mvc": "1.0",
     "name": "obj_BeamerLaser",
     "eventList": [
-        
+        {
+            "id": "6c2149ad-2284-4e05-a0fa-7f90a7f5fca7",
+            "modelName": "GMEvent",
+            "mvc": "1.0",
+            "IsDnD": false,
+            "collisionObjectId": "00000000-0000-0000-0000-000000000000",
+            "enumb": 0,
+            "eventtype": 0,
+            "m_owner": "51064a55-cbd5-4a65-a8c7-87315b922bf7"
+        }
     ],
     "maskSpriteId": "00000000-0000-0000-0000-000000000000",
     "overriddenProperties": null,

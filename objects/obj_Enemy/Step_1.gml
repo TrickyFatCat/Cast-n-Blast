@@ -1,11 +1,7 @@
 // Inherit the parent event
 event_inherited();
 
-if (activeWeapon != noone)
-{
-	activeWeapon.directionCurrent = point_direction(x, y, playerX, playerY);
-	activeWeapon.isShooting = isShooting;
-}
+ControlWeapon;
 
 if global.Player = noone && currentState > EnemyState.Spawn && hitPoints > 0
 {

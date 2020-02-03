@@ -7,7 +7,7 @@ var _y = y - offsetY - z;
 if (laserSightEnabled) && (visible)
 {
 	var _scaleX = SortHitscanCollisions(directionCurrent, collisionTargets);
-	draw_sprite_ext(spr_1pix, image_index, bulletSpawnPointX, bulletSpawnPointY, _scaleX, 1, drawAngle, c_red, 1);
+	draw_sprite_ext(spr_1pix, image_index, bulletSpawnPointX, bulletSpawnPointY, _scaleX, 1, drawAngle, c_red, lasersightAlpha);
 }
 
 

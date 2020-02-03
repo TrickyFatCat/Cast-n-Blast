@@ -639,6 +639,14 @@
             }
         },
         {
+            "Key": "537fc1ce-56a7-4c14-85e0-62ce69335f1a",
+            "Value": {
+                "id": "0c13d41d-0280-4a3a-9de6-68d52f1974af",
+                "resourcePath": "objects\\obj_Enemy_Beamer\\obj_Enemy_Beamer.yy",
+                "resourceType": "GMObject"
+            }
+        },
+        {
             "Key": "545600fe-24bb-42cf-9f9a-a7dabaa99619",
             "Value": {
                 "id": "52d6c654-50a5-447a-96d5-11327f39eebb",
@@ -1255,6 +1263,14 @@
             }
         },
         {
+            "Key": "a26d8d01-7ce4-4a29-bc26-616cfbf5cdba",
+            "Value": {
+                "id": "6b4e16d0-0d59-4339-b949-206c704a6afc",
+                "resourcePath": "sprites\\spr_beamer_idle\\spr_beamer_idle.yy",
+                "resourceType": "GMSprite"
+            }
+        },
+        {
             "Key": "a2c41477-8789-4c57-a289-80958b95a050",
             "Value": {
                 "id": "f44618c8-4982-4057-a496-41afcad69fba",
@@ -1735,6 +1751,14 @@
             }
         },
         {
+            "Key": "dcf1fc98-e96f-4d2d-8662-87f0c375007d",
+            "Value": {
+                "id": "f5c1f9fd-46e1-4fff-8c77-9ef68f3991b7",
+                "resourcePath": "views\\dcf1fc98-e96f-4d2d-8662-87f0c375007d.yy",
+                "resourceType": "GMFolder"
+            }
+        },
+        {
             "Key": "dd37ea42-7390-4b71-856c-a40e472708af",
             "Value": {
                 "id": "0d6735b7-fe5f-4061-9da3-d4e7e1c8dac0",
@@ -1748,6 +1772,14 @@
                 "id": "410a79cf-506e-4f10-9bd2-c534fd8f6755",
                 "resourcePath": "objects\\sys_BattleController\\sys_BattleController.yy",
                 "resourceType": "GMObject"
+            }
+        },
+        {
+            "Key": "dea56968-f6c8-4d6a-adbf-a2678820017d",
+            "Value": {
+                "id": "e46d4052-b497-4416-8bf2-11c8de6a3fe3",
+                "resourcePath": "sprites\\spr_beamer_walk\\spr_beamer_walk.yy",
+                "resourceType": "GMSprite"
             }
         },
         {
@@ -1900,6 +1932,14 @@
                 "id": "f45caf49-a32c-49eb-9317-d3d944a9cd8c",
                 "resourcePath": "views\\f119195c-3a0c-4263-917a-29cf14e83f97.yy",
                 "resourceType": "GMFolder"
+            }
+        },
+        {
+            "Key": "f1a8afcb-6be5-4ac5-8d3f-386e226f47b5",
+            "Value": {
+                "id": "549ade4c-c0b0-4da7-8b5a-84a2b3a69175",
+                "resourcePath": "sprites\\spr_laserImpact\\spr_laserImpact.yy",
+                "resourceType": "GMSprite"
             }
         },
         {
