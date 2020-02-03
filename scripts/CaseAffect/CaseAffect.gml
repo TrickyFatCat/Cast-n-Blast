@@ -14,6 +14,10 @@ else
 var _rawFacor = caseFactor - 1;
 
 maxEnergy = round(defaultMaxEnergy * caseFactor);
+if (energy > maxEnergy)
+{
+	energy = maxEnergy;
+}
 energyRestoreRate = energyDefaultRestoreRate * energyRestoreFactor * caseFactor;
 shootPenaltyTime = defaultShootPenaltyTime - (defaultShootPenaltyTime * _rawFacor);
 overheatPenaltyTime = defaultOverheatPenaltyTime - (defaultOverheatPenaltyTime * _rawFacor);

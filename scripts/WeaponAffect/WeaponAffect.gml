@@ -2,7 +2,7 @@ var _hitPointsFactor = weaponHitPoints / weaponMaxHitPoints;
 
 if (weaponLevel = 0)
 {
-	weaponFactor = max(defaultWeaponFactor * _hitPointsFactor, 0.9);
+	weaponFactor = max(defaultWeaponFactor * _hitPointsFactor, 0.85);
 }
 else
 {

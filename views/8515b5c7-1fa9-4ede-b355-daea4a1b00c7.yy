@@ -6,7 +6,8 @@
     "children": [
         "7230f7a6-e9e3-490b-9388-db85e06d4aee",
         "31fb2d91-d553-48dd-a602-d1e300e1f311",
-        "4a3901ed-ddac-45bb-94fb-b76493d4883d"
+        "4a3901ed-ddac-45bb-94fb-b76493d4883d",
+        "ece9170c-ca52-4d11-a924-177ff3805f56"
     ],
     "filterType": "GMScript",
     "folderName": "UserInterface",
