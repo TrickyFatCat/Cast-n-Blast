@@ -10,6 +10,7 @@ for (var i = 0; i < scrapNumber; i++)
 if (explosionObject != noone)
 {
 	SpawnExplosion(explosionObject, explosionDamage, explosionRadius);
+	SpawnSplatterEffect(x, y, vfx_Splatter, 40, 5);
 }
 
 global.Score += scoreAdd;
