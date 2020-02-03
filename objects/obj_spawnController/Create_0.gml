@@ -4,7 +4,7 @@
 
 /// Spawn pause timer
 spawnPauseTime = SetTime(5);
-spawnPauseTimer = 0;
+spawnPauseTimer = spawnPauseTime;
 
 /// Enemies count limits
 enemyCountMax = 6;

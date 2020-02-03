@@ -5,6 +5,8 @@ global.PlayTime = 0;
 battlePauseTime = SetTime(30);
 battlePauseTimer = 0;
 
+roundTime = SetTime(10);
+
 enum BattleState
 {
 	Inactive,

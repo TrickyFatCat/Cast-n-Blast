@@ -1,15 +1,15 @@
-/// @description ResolutionDebugController
+///// @description ResolutionDebugController
 
-if (keyboard_check_pressed(ord("Z")) || gamepad_button_check_pressed(global.ActiveGamepad, gp_stickl))
-{
-	resolutionZoom++;
-	if (resolutionZoom > resolutionZoomMax)
-	{
-		resolutionZoom = 1;
-	}
+//if (keyboard_check_pressed(ord("Z")) || gamepad_button_check_pressed(global.ActiveGamepad, gp_stickl))
+//{
+//	resolutionZoom++;
+//	if (resolutionZoom > resolutionZoomMax)
+//	{
+//		resolutionZoom = 1;
+//	}
 	
-	UpdateResolution;
-}
+//	UpdateResolution;
+//}
 
 //if (keyboard_check_pressed(vk_enter))
 //{

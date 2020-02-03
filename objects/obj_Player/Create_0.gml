@@ -127,3 +127,5 @@ defaultDashCost = dashCost;
 // Weapon affects
 defaultSpreadAngle = activeWeapon.spreadAngleCurrent;
 defaultRateOfFire = activeWeapon.rateOfFireCurrent;
+
+isOverheated = false;

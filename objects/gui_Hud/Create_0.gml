@@ -3,6 +3,8 @@
 // Inherit the parent event
 event_inherited();
 
+#macro DrawHud event_user(7)
+
 // States
 enum HUDState
 {
@@ -35,3 +37,11 @@ menuItemsCount = array_length_1d(menuItem);
 
 menuActiveItem = 2;
 fullScreenItemIndex = PauseMenuItem.Fullscreen;
+
+hudAlpha = 1;
+
+showStartBattleText = false;
+startBattleTextTimer = 0;
+
+showFightText = false;
+showFightTextTimer = 0;

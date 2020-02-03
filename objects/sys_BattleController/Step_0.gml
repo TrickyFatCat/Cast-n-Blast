@@ -39,7 +39,7 @@ switch (global.BattleState)
 		
 		global.PlayTime += global.TimeFactor;
 		
-		var _waveTimeIsOver = CheckTimer(global.PlayTime, SetTime(90))
+		var _waveTimeIsOver = CheckTimer(global.PlayTime, roundTime);
 		
 		if (_waveTimeIsOver)
 		{

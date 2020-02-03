@@ -24,3 +24,5 @@ occupiedTimer = 0;
 
 owner = noone;
 enemyToSpawn = noone;
+drawAngle = 90;
+drawScaleY = 1.5;

@@ -9,14 +9,14 @@ enum PlayerWeapon
 // Weapons data
 PlasmaGunData = ds_map_create();
 ds_map_add(PlasmaGunData, "weaponSprite",					spr_playerWeapon);
-ds_map_add(PlasmaGunData, "offsetY",						6);
+ds_map_add(PlasmaGunData, "offsetY",						10);
 ds_map_add(PlasmaGunData, "laserSightEnabled",				false);
 ds_map_add(PlasmaGunData, "isAuto",							true);
 ds_map_add(PlasmaGunData, "currentShootMode",				ShootMode.Normal);
 //-----------------------------------------------------------------------------
 ds_map_add(PlasmaGunData, "bulletObject",					obj_PProjectile_Normal);
 ds_map_add(PlasmaGunData, "bulletNumber",					1);
-ds_map_add(PlasmaGunData, "bulletSpawnPointOffset",			19);
+ds_map_add(PlasmaGunData, "bulletSpawnPointOffset",			32);
 //-----------------------------------------------------------------------------
 ds_map_add(PlasmaGunData, "damage",							1);
 ds_map_add(PlasmaGunData, "heal",							0);

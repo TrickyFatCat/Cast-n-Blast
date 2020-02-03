@@ -52,11 +52,15 @@ if (energy == 0 && canRestore)
 {
 	canRestore = false;
 	energyPenaltyTime = SetTime(overheatPenaltyTime);
+	isOverheated = true;
 }
 
 if (!canRestore)
 {
-	EnableFlash(c_orange, 1);
+	if (isOverheated)
+	{
+		EnableFlash(c_orange, 1);
+	}
 		
 	var _timeIsOver = CheckTimer(energyPenaltyTimer, energyPenaltyTime);
 	
@@ -67,5 +71,9 @@ if (!canRestore)
 		canRestore = true;
 		energyPenaltyTimer = 0;
 		energyRestoreTimer = _energyRestoreDelay;
+		if (isOverheated)
+		{
+			isOverheated = false;
+		}
 	}
 }
