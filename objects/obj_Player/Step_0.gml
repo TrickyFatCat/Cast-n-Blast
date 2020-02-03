@@ -5,6 +5,17 @@ event_inherited();
 
 switch (currentState)
 {	
+	case PlayerState.Inactive:
+		if (global.GameState == GameState.Active)
+		{
+			currentState = PlayerState.Spawn;
+		}
+	break;
+	
+	case PlayerState.Spawn:
+		ProcessSpawn;
+	break;
+	
 	case PlayerState.Idle:
 		RespondToControls;
 		MovePlayer;
@@ -35,7 +46,6 @@ switch (currentState)
 	break;
 	
 	case PlayerState.Death:
-		global.BattleState = BattleState.End;
 	break;
 }
 

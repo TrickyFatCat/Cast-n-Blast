@@ -2,7 +2,8 @@
 
 hitPoints = legsHitPoints + caseHitPoints + weaponHitPoints;
 
-if hitPoints <= 0
+if hitPoints <= 0 && currentState < PlayerState.Transcendence
 {
-	currentState = PlayerState.Death;
+	currentState = PlayerState.Transcendence;
+	SwitchSprite(spriteIdle);
 }

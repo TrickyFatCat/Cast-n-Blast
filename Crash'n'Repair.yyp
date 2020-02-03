@@ -479,6 +479,14 @@
             }
         },
         {
+            "Key": "3da0c34b-a32b-475d-83ae-3350994878e4",
+            "Value": {
+                "id": "adc02a91-02f8-479a-85b3-62b4e82e257f",
+                "resourcePath": "sprites\\spr_PlayerExplosion\\spr_PlayerExplosion.yy",
+                "resourceType": "GMSprite"
+            }
+        },
+        {
             "Key": "3f291177-db8a-4eb4-8df3-c6fe56572196",
             "Value": {
                 "id": "e4551d2e-b4bd-4a4d-81b4-3fc678958cda",
@@ -559,6 +567,14 @@
             }
         },
         {
+            "Key": "49bf0704-d92b-4de3-abbc-ddd15a611398",
+            "Value": {
+                "id": "2179d01d-78bf-45d6-bcaa-ec0213ac161c",
+                "resourcePath": "scripts\\SpawnImpactEffect\\SpawnImpactEffect.yy",
+                "resourceType": "GMScript"
+            }
+        },
+        {
             "Key": "49d6b2b8-b640-4912-a714-6627da7b2c73",
             "Value": {
                 "id": "c30f65ea-48c0-4e1e-b65e-d1dc4ee6dd77",
@@ -628,6 +644,14 @@
                 "id": "0140487c-f313-4445-9759-1e73a068f9d6",
                 "resourcePath": "views\\4fa51ab4-0d47-42e6-8899-d2c0f1d90d48.yy",
                 "resourceType": "GMFolder"
+            }
+        },
+        {
+            "Key": "503b5848-c85d-43e0-be3d-ff55364cf4b1",
+            "Value": {
+                "id": "38168edc-a625-49e0-b456-33880481ec48",
+                "resourcePath": "objects\\vfx_EnemyImpact\\vfx_EnemyImpact.yy",
+                "resourceType": "GMObject"
             }
         },
         {
@@ -911,6 +935,14 @@
             }
         },
         {
+            "Key": "73a05411-8021-4872-9092-a5969c8a3508",
+            "Value": {
+                "id": "6e674d27-c4e1-471a-bf39-6b43395bbc5f",
+                "resourcePath": "objects\\vfx_PlayerImpact\\vfx_PlayerImpact.yy",
+                "resourceType": "GMObject"
+            }
+        },
+        {
             "Key": "7411e589-855e-445b-a33e-e424859f014c",
             "Value": {
                 "id": "f9918b91-d050-4663-86b9-1c8e2474ccbe",
@@ -1172,6 +1204,14 @@
                 "id": "c1b54b4a-73d3-4bf4-a2fe-070fc857ebc6",
                 "resourcePath": "objects\\sys_DisplayManager\\sys_DisplayManager.yy",
                 "resourceType": "GMObject"
+            }
+        },
+        {
+            "Key": "8d0beae8-26f8-424d-93ba-8dc2ba6bac35",
+            "Value": {
+                "id": "1c651b21-b5ab-4280-95dd-e6e053bb6a1a",
+                "resourcePath": "sprites\\spr_enemyProjectileImpact\\spr_enemyProjectileImpact.yy",
+                "resourceType": "GMSprite"
             }
         },
         {
@@ -1799,6 +1839,14 @@
             }
         },
         {
+            "Key": "d5d48b7b-7659-41a1-9a4d-eaa0838793e1",
+            "Value": {
+                "id": "d99ff2c8-c79f-4b1c-a68f-43630547ec87",
+                "resourcePath": "objects\\vfx_impact\\vfx_impact.yy",
+                "resourceType": "GMObject"
+            }
+        },
+        {
             "Key": "d67cb006-c144-4593-9579-4457245617ef",
             "Value": {
                 "id": "2ffe4a5f-0d15-483c-a2e7-9a5ec829a454",
@@ -1860,14 +1908,6 @@
                 "id": "f5c1f9fd-46e1-4fff-8c77-9ef68f3991b7",
                 "resourcePath": "views\\dcf1fc98-e96f-4d2d-8662-87f0c375007d.yy",
                 "resourceType": "GMFolder"
-            }
-        },
-        {
-            "Key": "dd37ea42-7390-4b71-856c-a40e472708af",
-            "Value": {
-                "id": "0d6735b7-fe5f-4061-9da3-d4e7e1c8dac0",
-                "resourcePath": "objects\\obj_PlayerProjectileImpact\\obj_PlayerProjectileImpact.yy",
-                "resourceType": "GMObject"
             }
         },
         {
@@ -2299,7 +2339,8 @@
         "e36a9443-29d0-4493-8899-6e6162a4a75a",
         "a46fde5d-6f74-4dcf-a9c9-68e9e9e0b9d1",
         "77192f17-439d-4514-8e3a-8745f8e0a42b",
-        "a425260a-f0d1-47b3-ac19-802e4214e6a1"
+        "a425260a-f0d1-47b3-ac19-802e4214e6a1",
+        "49bf0704-d92b-4de3-abbc-ddd15a611398"
     ],
     "tutorial": ""
 }

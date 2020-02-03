@@ -14,6 +14,8 @@ SetCameraMode(CameraMode.FollowPointPeek, obj_Player);
 #macro ShootWeapon		    event_user(5)
 #macro ChekPlayerHP		    event_user(6)
 #macro ExecutePlayerDeath	event_user(7)
+#macro ProcessSpawn			event_user(8)
+#macro ProcessDeath			event_user(9)
 
 //Set shadow
 var _shadowScale = 1;
@@ -26,6 +28,7 @@ directionY = 0;
 //Player states
 enum PlayerState
 {
+	Inactive,
 	Spawn,
 	Idle,
 	Run,
@@ -35,9 +38,13 @@ enum PlayerState
 	Death
 }
 
-currentState = PlayerState.Idle;
+currentState = PlayerState.Inactive;
+spawnTime = 0.5;
+spawnProgress = 0;
+drawAlpha = 0;
 previousState = currentState;
-sprite_index = spriteIdle;
+targetScale = 2;
+trancendenceTimer = 0;
 
 // PickUp magnet paramentrs
 pullDistance = 64;
@@ -50,6 +57,7 @@ var _lastIndex = array_length_1d(global.PlayerWeaponData) - 1;
 weaponID = irandom_range(0, _lastIndex);
 activeWeapon = instance_create_layer(x, y, layer, obj_PlayerWeapon);
 SetPlayerWeapon(activeWeapon, weaponID);
+activeWeapon.drawAlpha = 0;
 
 // Set player weapon ammo
 //SetAmmoParameters(activeWeapon.ammoID, global.PlayerAmmoData);

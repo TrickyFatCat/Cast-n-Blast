@@ -1,2 +1,2 @@
 interfaceZoom = 2;
-viewZoom = 0.65;
+viewZoom = 1;

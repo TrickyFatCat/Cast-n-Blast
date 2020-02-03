@@ -4,19 +4,19 @@
     "mvc": "1.0",
     "name": "obj_PProjectile_Normal",
     "eventList": [
-        {
-            "id": "d0502425-82b2-4241-9e2c-b3adbca7bf5c",
-            "modelName": "GMEvent",
-            "mvc": "1.0",
-            "IsDnD": false,
-            "collisionObjectId": "00000000-0000-0000-0000-000000000000",
-            "enumb": 0,
-            "eventtype": 1,
-            "m_owner": "1da54990-d36b-4547-8a9f-43a9fa089155"
-        }
+        
     ],
     "maskSpriteId": "00000000-0000-0000-0000-000000000000",
-    "overriddenProperties": null,
+    "overriddenProperties": [
+        {
+            "id": "f4bbd3b8-fbcf-4282-aacd-fe4cf9e97225",
+            "modelName": "GMOverriddenProperty",
+            "mvc": "1.0",
+            "objectId": "05f92ec3-120c-4570-a05d-ff81220fde81",
+            "propertyId": "3439b292-c5a0-42d6-93fb-66845621e9c6",
+            "value": "vfx_PlayerImpact"
+        }
+    ],
     "parentObjectId": "cad41c02-488e-4fc1-8592-10db5ff6d160",
     "persistent": false,
     "physicsAngularDamping": 0.1,

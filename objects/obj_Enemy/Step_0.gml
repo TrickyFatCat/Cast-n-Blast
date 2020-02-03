@@ -1,32 +1,30 @@
 // Inherit the parent event
 event_inherited();
 
-var _spawnTime = 1.5;
+var _spawnTime = 0.5;
 
 switch (currentState)
 {
 	case EnemyState.Spawn:
 		isInvulnerable = true;
 		collisionEnable = false;
-
-		//ExecuteDissolveIn(_spawnTime);
-	
-		//with (activeWeapon)
-		//{
-		//	ExecuteDissolveIn(_spawnTime);
-		//}
-	
-		//if (dissolvePower == 1)
-		//{
-		//	currentState = EnemyState.Idle;
-		//}
-		drawAlpha = 1;
+		var _spawnStep = CalculateStep(_spawnTime);
 		
-		currentState = EnemyState.Idle;
+		if (spawnProgress != 1)
+		{
+			spawnProgress = ApproachTimeFactor(spawnProgress, 1, _spawnStep);
+			
+			drawAlpha = LerpTimeFactor(0, 1, spawnProgress);
+		}
+		else
+		{
+			currentState = EnemyState.Action;
+			isInvulnerable = false;
+			collisionEnable = true;
+		}
 	break;
 	
 	case EnemyState.Idle:
-		collisionEnable = true;
 		SwitchSprite(spriteIdle);
 		ExecuteStateIdle;
 		CheckEntityHP;
@@ -64,7 +62,6 @@ switch (currentState)
 		SwitchSprite(spriteIdle);
 		ExecuteStateAction;
 		CheckEntityHP;
-		ControlSprite;
 	break;
 	
 	case EnemyState.Trancendence:

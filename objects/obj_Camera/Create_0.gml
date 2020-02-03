@@ -61,5 +61,5 @@ cameraShakeValue = 0;
 angularShakeEnabled = false; // Enables angular shaking
 
 // Zoom parameters
-cameraZoom = 0.65;
+cameraZoom = 1;
 cameraZoomMax = 4;

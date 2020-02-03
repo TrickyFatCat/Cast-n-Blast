@@ -1,4 +1,4 @@
-var _spawnTime = 0.5;
+var _spawnTime = 0.3;
 
 switch (currentState)
 {

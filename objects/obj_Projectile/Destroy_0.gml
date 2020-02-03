@@ -4,4 +4,7 @@
 // Inherit the parent event
 event_inherited();
 
-SpawnExplosion(obj_PlayerProjectileImpact, 0, 0);
+if (impactEffect != noone)
+{
+	SpawnImpactEffect(impactEffect);
+}

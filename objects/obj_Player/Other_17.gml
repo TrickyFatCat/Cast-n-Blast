@@ -7,6 +7,8 @@ if (activeWeapon.isShooting)
 	activeWeapon.isShooting = false;
 }
 
+velocity = CalculateDeceleratedVelocity(directionCurrent, velocity, groundFriction);
+
 var _step = CalculateStep(0.25);
 
 //audio_stop_sound(global.Music);
@@ -38,6 +40,7 @@ if (drawScaleX >= targetScale)
 	
 	if (_timeIsOver)
 	{
+		ProcessDeath;
 		currentState = PlayerState.Death;
 	}
 }

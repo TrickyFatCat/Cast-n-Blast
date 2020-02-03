@@ -45,6 +45,8 @@ enum EnemyState
 
 currentState = EnemyState.Spawn;
 
+spawnProgress = 0;
+
 idleTime = SetTime(0.4);
 idleTimer = 0;
 
