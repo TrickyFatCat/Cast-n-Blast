@@ -47,6 +47,14 @@
             }
         },
         {
+            "Key": "0203e6ac-f75a-4247-8f59-2a380e1549f3",
+            "Value": {
+                "id": "c0c6a9c2-37af-4511-9ade-0ab70ab1d11d",
+                "resourcePath": "objects\\obj_Enemy_Trooper\\obj_Enemy_Trooper.yy",
+                "resourceType": "GMObject"
+            }
+        },
+        {
             "Key": "04e50bc9-4743-4450-811a-a0367d8a2024",
             "Value": {
                 "id": "660bf6c7-5404-425e-b3d8-7f03abc4a692",
@@ -780,6 +788,14 @@
                 "id": "83a9a624-5a57-4e6c-b0d5-52adfac2011e",
                 "resourcePath": "views\\67111a0d-dec3-4266-995e-aad70bd51ba1.yy",
                 "resourceType": "GMFolder"
+            }
+        },
+        {
+            "Key": "691fe493-bf01-4d58-af42-d68f8d23f420",
+            "Value": {
+                "id": "ef6ac464-a557-4dd3-83cd-921c7c3f6da0",
+                "resourcePath": "sprites\\spr_trooper_walk\\spr_trooper_walk.yy",
+                "resourceType": "GMSprite"
             }
         },
         {
@@ -1851,6 +1867,14 @@
             "Value": {
                 "id": "9c6c394b-0b1b-43b3-978c-8f1279a7dc13",
                 "resourcePath": "sprites\\spr_laser\\spr_laser.yy",
+                "resourceType": "GMSprite"
+            }
+        },
+        {
+            "Key": "ef178e33-3c29-4a8f-baf7-2c51f2bf4041",
+            "Value": {
+                "id": "8a6c71f6-0d99-4e4d-9488-e5b3d15ae5dd",
+                "resourcePath": "sprites\\spr_trooper_idle\\spr_trooper_idle.yy",
                 "resourceType": "GMSprite"
             }
         },
