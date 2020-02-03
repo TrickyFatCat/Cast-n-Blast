@@ -155,6 +155,7 @@ if (instance_exists(sys_BattleController))
 		draw_text(5, 360, "Battle State: " + _state);
 		draw_text(5, 380, "Battle Time: " + string(global.PlayTime / 60));
 		draw_text(5, 400, "Battle Start Time: " + string(battleStartTimer / 60));
+		draw_text(5, 420, "Battle Pause Time: " + string(battlePauseTimer / 60));
 	}
 }
 //#endregion

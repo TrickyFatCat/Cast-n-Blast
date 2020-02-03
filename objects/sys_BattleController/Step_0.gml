@@ -8,6 +8,7 @@ switch (global.BattleState)
 	case BattleState.Start:
 		battleStartTimer += global.TimeFactor;
 		soundTimer += global.TimeFactor;
+		battlePauseTimer = 0;
 		
 		var _soundTime = SetTime(1);
 		var _checkStartTimer = CheckTimer(battleStartTimer, battleStartTime);
@@ -44,26 +45,22 @@ switch (global.BattleState)
 		{
 			global.BattleState = BattleState.Paused;
 		}
-		
-		//if (array_length_1d(difficultyIncreaseTime) - 1 >= global.DifficultyLevel)
-		//{
-		//	var _checkTimer = CheckTimer(global.PlayTime, difficultyIncreaseTime[global.DifficultyLevel])
-			
-		//	if (_checkTimer)
-		//	{
-		//		global.DifficultyLevel++;
-		//	}
-		//}
 	break;
 	
 	case BattleState.Paused:
 		if (instance_number(obj_Enemy) == 0)
 		{
 			global.PlayTime = 0;
-			for (var i = 0; i < ds_list_size(global.InteractiveObjects); i++)
+			ActivateInteractiveObjects();
+			battlePauseTimer += global.TimeFactor;
+			var _timeIsOver = CheckTimer(battlePauseTimer, battlePauseTime);
+			
+			if (_timeIsOver)
 			{
-				var _target = global.InteractiveObjects[| i];
-				instance_activate_object(_target);
+				global.BattleState = BattleState.Start;
+				DeactivateInteractiveObjects();
+				CalculateDifficulty();
+				ChangeSpawnSettings();
 			}
 		}
 	break;

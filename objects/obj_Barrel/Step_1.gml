@@ -36,6 +36,14 @@ switch (currentState)
 			velocity = CalculateDeceleratedVelocity(directionCurrent, velocity, groundFriction);
 	
 			var _timeIsOver = CheckTimer(explosionDelayTimer, explosionDelayTime);
+			
+			CheckBouncingCollision(obj_Wall);
+
+			if (isBounced)
+			{
+				directionCurrent = point_direction(0, 0, velocityX, velocityY);
+				isBounced = !isBounced;
+			}
 	
 			if (_timeIsOver)
 			{

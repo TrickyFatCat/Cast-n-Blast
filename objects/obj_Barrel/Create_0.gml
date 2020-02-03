@@ -18,3 +18,5 @@ currentState = EnemyState.Spawn;
 
 idleTime = SetTime(0.4);
 idleTimer = 0;
+
+isBounced = false;
