@@ -43,11 +43,11 @@ switch (global.BattleState)
 		
 		if (_waveTimeIsOver)
 		{
-			global.BattleState = BattleState.Paused;
+			global.BattleState = BattleState.Intermission;
 		}
 	break;
 	
-	case BattleState.Paused:
+	case BattleState.Intermission:
 		if (instance_number(obj_Enemy) == 0)
 		{
 			global.PlayTime = 0;

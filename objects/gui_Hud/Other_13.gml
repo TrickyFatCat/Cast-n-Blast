@@ -69,7 +69,7 @@ switch (global.BattleState)
 		#endregion
 	break;
 	
-	case BattleState.Paused:
+	case BattleState.Intermission:
 	break;
 }
 

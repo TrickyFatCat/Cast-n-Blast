@@ -21,15 +21,17 @@ DrawTextOutline(guiWidth * 0.35, 20, c_black, c_white, "SCORE");
 SetAlign(fa_center, fa_center);
 DrawTextOutline(guiWidth * 0.35, 40, c_black, c_white, string(global.Score));
 
-if (_timeLeft == 0)
+var _enemyNumber = instance_number(obj_Enemy);
+
+if (_timeLeft == 0 && _enemyNumber > 0)
 {
 	DrawTiltedText(fnt_medium, guiWidth / 2, 0, guiHeight * 0.25, 2, c_maroon, c_red, "Kill remaining monsters");
 }
 
-if (global.BattleState = BattleState.Paused && _timeLeft != 0)
+if (global.BattleState = BattleState.Intermission && _timeLeft != 0 && _enemyNumber == 0)
 {
 	var _timeLeft = round((sys_BattleController.battlePauseTime - sys_BattleController.battlePauseTimer) / 60);
-	DrawTiltedText(fnt_medium, guiWidth / 2, 0, guiHeight * 0.25, 2, c_maroon, c_red, "Pause ends in " + string(_timeLeft));
+	DrawTiltedText(fnt_medium, guiWidth / 2, 0, guiHeight * 0.25, 2, c_maroon, c_red, "Intermission ends in " + string(_timeLeft));
 }
 
 // Energy

@@ -1,0 +1,2 @@
+isRecording = false;
+gifImage = noone;

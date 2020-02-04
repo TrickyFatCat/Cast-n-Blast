@@ -847,6 +847,14 @@
             }
         },
         {
+            "Key": "5759ec56-3b38-4e8f-9078-3462f09df174",
+            "Value": {
+                "id": "d1f743d7-e66e-404f-aaa1-23a457f1da1a",
+                "resourcePath": "objects\\sys_GifRecorder\\sys_GifRecorder.yy",
+                "resourceType": "GMObject"
+            }
+        },
+        {
             "Key": "57acd6a0-b7ee-4517-8ebf-a760eed7ae9f",
             "Value": {
                 "id": "3472c1aa-c697-4761-aa5c-cf82d02799e3",

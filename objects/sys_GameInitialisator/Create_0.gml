@@ -18,7 +18,7 @@ _array[4] = sys_GameDataHandler;
 _array[5] = obj_Camera;
 _array[6] = sys_Debugger;
 _array[7] = sys_BattleController;
-//_array[7] = obj_gifRecorder;
+_array[8] = sys_GifRecorder;
 
 var _length = array_length_1d(_array);
 

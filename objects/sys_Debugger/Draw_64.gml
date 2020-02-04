@@ -144,7 +144,7 @@ if (instance_exists(sys_BattleController))
 				_state = "Active";
 			break;
 			
-			case BattleState.Paused:
+			case BattleState.Intermission:
 				_state = "Pause";
 			break;
 			

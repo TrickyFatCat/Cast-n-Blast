@@ -12,7 +12,7 @@ enum BattleState
 	Inactive,
 	Start,
 	Active,
-	Paused,
+	Intermission,
 	End
 }
 
