@@ -39,6 +39,7 @@ switch (currentState)
 	
 	case PlayerState.Dash:
 		MovePlayer;
+		PullPickups;
 	break;
 	
 	case PlayerState.Transcendence:

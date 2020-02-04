@@ -14,9 +14,9 @@ with (global.Player)
 				other.upgradeCost = GetPartUpgradeCost(PartType.Legs, _nextLevel);
 			}
 			
-			if (_nextLevel == legsMaxLevel && !isMaxed)
+			if (_nextLevel == legsMaxLevel && !other.isMaxed)
 			{
-				isMaxed = true;
+				other.isMaxed = true;
 			}
 		break;
 		
@@ -28,9 +28,9 @@ with (global.Player)
 				other.upgradeCost = GetPartUpgradeCost(PartType.Case, _nextLevel);
 			}
 			
-			if (_nextLevel == caseMaxLevel && !isMaxed)
+			if (_nextLevel == caseMaxLevel && !other.isMaxed)
 			{
-				isMaxed = true;
+				other.isMaxed = true;
 			}
 		break
 		break;
@@ -43,9 +43,9 @@ with (global.Player)
 				other.upgradeCost = GetPartUpgradeCost(PartType.Weapon, _nextLevel);
 			}
 			
-			if (_nextLevel == weaponMaxLevel && !isMaxed)
+			if (_nextLevel == weaponMaxLevel && !other.isMaxed)
 			{
-				isMaxed = true;
+				other.isMaxed = true;
 			}
 		break;
 	}

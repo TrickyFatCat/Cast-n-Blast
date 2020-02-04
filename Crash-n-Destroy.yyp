@@ -1615,6 +1615,14 @@
             }
         },
         {
+            "Key": "a34e2fc9-ebc9-425f-8e11-d698bb09ee5a",
+            "Value": {
+                "id": "20868bfe-8131-4f95-a60d-38178d9a4d59",
+                "resourcePath": "sprites\\spr_interfaceOverheatFill\\spr_interfaceOverheatFill.yy",
+                "resourceType": "GMSprite"
+            }
+        },
+        {
             "Key": "a3d8bc8a-331d-4985-a5b3-104978fa2f5e",
             "Value": {
                 "id": "8c1ba6bd-227c-4254-ba0a-d3f17e97b9d8",

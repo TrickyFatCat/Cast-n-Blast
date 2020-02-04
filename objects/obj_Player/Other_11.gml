@@ -29,10 +29,6 @@ switch currentState
 		{
 			directionCurrent = point_direction(0, 0, directionX, directionY);
 		}
-		else if (previousState == PlayerState.Idle)
-		{
-			directionCurrent = point_direction(x, y, mouse_x, mouse_y);
-		}
 		
 		velocity = CalculateDeceleratedVelocity(directionCurrent, velocity, groundFriction);
 		

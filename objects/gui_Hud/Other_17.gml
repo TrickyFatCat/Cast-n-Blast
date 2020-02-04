@@ -48,6 +48,12 @@ var _fillScale = _scaleX * _valueFactor;
 
 DrawSlicedSprite(spr_interfaceAlpha, 0, _x, _y, _scaleX, _scaleY, _borderColour, hudAlpha);
 draw_sprite_ext(spr_interfaceEnergyFill, 0, _x, _y, _fillScale, 1, 0, c_white, hudAlpha);
+if (global.Player.isOverheated)
+{
+	var _overheatProgress = 1 - global.Player.energyPenaltyTimer / global.Player.energyPenaltyTime;
+	
+	draw_sprite_ext(spr_interfaceOverheatFill, 0, _x, _y, _scaleX * _overheatProgress, 1, 0, c_white, hudAlpha);
+}
 DrawSlicedSprite(spr_interfaceBorder, 0, _x, _y, _scaleX, _scaleY, _borderColour, hudAlpha);
 
 draw_set_font(fnt_small);
