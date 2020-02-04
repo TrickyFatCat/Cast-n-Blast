@@ -1,3 +1,8 @@
+event_inherited();
+
+isEnoughScrap = global.Scrap >= upgradeCost;
+triggerColour = c_gray;
+
 with (global.Player)
 {
 	switch (other.partToUpgrade)
@@ -9,6 +14,11 @@ with (global.Player)
 			{
 				other.upgradeCost = GetPartUpgradeCost(PartType.Legs, _nextLevel);
 			}
+			
+			if (_nextLevel == legsMaxLevel && !isMaxed)
+			{
+				isMaxed = true;
+			}
 		break;
 		
 		case PartType.Case:
@@ -18,6 +28,12 @@ with (global.Player)
 			{
 				other.upgradeCost = GetPartUpgradeCost(PartType.Case, _nextLevel);
 			}
+			
+			if (_nextLevel == caseMaxLevel && !isMaxed)
+			{
+				isMaxed = true;
+			}
+		break
 		break;
 		
 		case PartType.Weapon:
@@ -26,6 +42,11 @@ with (global.Player)
 			if (_nextLevel <= weaponMaxLevel)
 			{
 				other.upgradeCost = GetPartUpgradeCost(PartType.Weapon, _nextLevel);
+			}
+			
+			if (_nextLevel == weaponMaxLevel && !isMaxed)
+			{
+				isMaxed = true;
 			}
 		break;
 	}

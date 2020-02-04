@@ -1,1 +1,2 @@
-/// @description Information Update
+showHint = false;
+playerIsIn = false;

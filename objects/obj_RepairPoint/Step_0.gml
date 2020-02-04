@@ -1,3 +1,5 @@
+event_inherited();
+
 with (global.Player)
 {
 	switch (other.partToRepair)

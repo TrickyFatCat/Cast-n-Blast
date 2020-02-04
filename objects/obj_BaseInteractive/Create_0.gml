@@ -9,3 +9,6 @@ if (!ds_exists(global.InteractiveObjects, ds_type_list))
 }
 ds_list_add(global.InteractiveObjects, id);
 instance_deactivate_object(id);
+
+showHint = false;
+playerIsIn = false;

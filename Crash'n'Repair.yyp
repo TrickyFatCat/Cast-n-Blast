@@ -903,6 +903,14 @@
             }
         },
         {
+            "Key": "5b7f9047-a0e9-4c80-beba-c887794a97d9",
+            "Value": {
+                "id": "947bd0dd-ead8-4d7b-b84c-0db5c0d532ba",
+                "resourcePath": "sprites\\spr_triggerFill\\spr_triggerFill.yy",
+                "resourceType": "GMSprite"
+            }
+        },
+        {
             "Key": "5bc220b6-3b7b-423e-821d-2ec9070a4208",
             "Value": {
                 "id": "149b8b0c-8fc8-4906-9765-06c14dff33fa",
@@ -1404,6 +1412,14 @@
                 "id": "ffd65881-3e86-4ea5-b46b-f99ff7ea891e",
                 "resourcePath": "scripts\\SetWave\\SetWave.yy",
                 "resourceType": "GMScript"
+            }
+        },
+        {
+            "Key": "8fa36014-21f4-4ce8-a1d6-81dc5667c073",
+            "Value": {
+                "id": "fa2e8123-4209-4f12-bc30-a6ac20aa118f",
+                "resourcePath": "views\\8fa36014-21f4-4ce8-a1d6-81dc5667c073.yy",
+                "resourceType": "GMFolder"
             }
         },
         {
@@ -2103,6 +2119,14 @@
             }
         },
         {
+            "Key": "da6f912d-7017-4c29-9256-fd3d1f0d045e",
+            "Value": {
+                "id": "cd21c41d-61b6-4f0a-a5e8-be81cf47eda5",
+                "resourcePath": "sprites\\spr_triggerBorder\\spr_triggerBorder.yy",
+                "resourceType": "GMSprite"
+            }
+        },
+        {
             "Key": "da6fc09e-aa3e-4ee5-b2f0-df77f4097516",
             "Value": {
                 "id": "5b1a23b5-c804-4898-9ffa-c08ee9bfd5cd",
@@ -2155,6 +2179,14 @@
             "Value": {
                 "id": "e46d4052-b497-4416-8bf2-11c8de6a3fe3",
                 "resourcePath": "sprites\\spr_beamer_walk\\spr_beamer_walk.yy",
+                "resourceType": "GMSprite"
+            }
+        },
+        {
+            "Key": "dec504ce-9fd2-4776-a112-87116bd7e283",
+            "Value": {
+                "id": "61440dfa-60c3-439f-b45d-403bff531fbf",
+                "resourcePath": "sprites\\spr_interactivePoint\\spr_interactivePoint.yy",
                 "resourceType": "GMSprite"
             }
         },
@@ -2343,6 +2375,14 @@
             }
         },
         {
+            "Key": "f0edd48e-c79a-4f8d-968f-f28bd9803dbc",
+            "Value": {
+                "id": "0b2e5155-72c6-405d-b427-87e3f3b71f51",
+                "resourcePath": "fonts\\fnt_verySmall\\fnt_verySmall.yy",
+                "resourceType": "GMFont"
+            }
+        },
+        {
             "Key": "f119195c-3a0c-4263-917a-29cf14e83f97",
             "Value": {
                 "id": "f45caf49-a32c-49eb-9317-d3d944a9cd8c",
@@ -2355,6 +2395,14 @@
             "Value": {
                 "id": "549ade4c-c0b0-4da7-8b5a-84a2b3a69175",
                 "resourcePath": "sprites\\spr_laserImpact\\spr_laserImpact.yy",
+                "resourceType": "GMSprite"
+            }
+        },
+        {
+            "Key": "f1e2286f-3c51-4a31-aa2d-0fca013bf2d0",
+            "Value": {
+                "id": "1162a05d-37d5-469a-acac-ae386be29c6b",
+                "resourcePath": "sprites\\spr_floorButton\\spr_floorButton.yy",
                 "resourceType": "GMSprite"
             }
         },

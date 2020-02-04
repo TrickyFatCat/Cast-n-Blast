@@ -1,8 +1,6 @@
-var _cost = upgradeCost;
-
 with (global.Player)
 {
-	if (global.Scrap >= other.upgradeCost)
+	if (other.isEnoughScrap)
 	{
 		switch (other.partToUpgrade)
 		{
