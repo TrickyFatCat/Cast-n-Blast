@@ -21,6 +21,7 @@ switch (activeWeapon.currentCastState)
 			{
 				activeWeapon.directionCurrent = point_direction(x, y, playerX, playerY);
 				isShooting = true;
+				rotationDirection = choose(-1, 1);
 			}
 		}
 		shootTimer = 0;
@@ -30,14 +31,16 @@ switch (activeWeapon.currentCastState)
 	case CastState.Process:
 		with (activeWeapon)
 		{
-			lasersightAlpha = LerpTimeFactor(lasersightAlpha, 1, castProgress);
+			lasersightAlpha = LerpTimeFactor(0, 1, castProgress);
 		}
 	break;
 	
 	case CastState.Execute:
+		activeWeapon.lasersightAlpha = 0;
 		shootTimer += global.TimeFactor;
+		activeWeapon.directionCurrent += rotationSpeed * rotationDirection;
+		
 		var _timeIsOver = CheckTimer(shootTimer, shootTime);
-	
 		if (_timeIsOver)
 		{
 			isShooting = false;

@@ -148,7 +148,7 @@ ds_map_add(TrooperGunData, "shotShakeFactor",				0.05);
 BeamerGunData = ds_map_create();
 ds_map_add(BeamerGunData, "weaponSprite",					noone);
 ds_map_add(BeamerGunData, "offsetY",						6);
-ds_map_add(BeamerGunData, "laserSightEnabled",				false);
+ds_map_add(BeamerGunData, "laserSightEnabled",				true);
 ds_map_add(BeamerGunData, "isAuto",							true);
 ds_map_add(BeamerGunData, "currentShootMode",				ShootMode.Cast);
 //-----------------------------------------------------------------------------

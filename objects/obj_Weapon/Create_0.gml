@@ -27,6 +27,7 @@ damage = 0;
 heal = 0;
 shootAmmoCost = 0;
 velocityNoiseFactor = 0;
+lasersightAlpha = 1;
 #endregion
 
 #region // Ammo parameters
