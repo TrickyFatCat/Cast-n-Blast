@@ -2,16 +2,15 @@
 
 var _trancendenceTime = 1;
 var _scaleStepFactor = CalculateStep(_trancendenceTime);
-var _targetScale = 2;
+var _targetScaleY = 2;
+
 
 // Sequence
-
-if (drawScaleX < _targetScale)
+if (drawScaleY < _targetScaleY)
 {
-	var _scaleStep = _targetScale * _scaleStepFactor;
-	drawScaleX = ApproachTimeFactor(drawScaleX, _targetScale, _scaleStep);
-	drawScaleY = drawScaleX;
-	EnableFlash(c_red, 1);
+	var _scaleStep = _targetScaleY * _scaleStepFactor;
+	drawScaleY = ApproachTimeFactor(drawScaleY, _targetScaleY, _scaleStep);
+	drawScaleX = drawScaleY * previousScaleX;
 }
 else
 {

@@ -65,3 +65,4 @@ waitTimer = 0;
 cooldownTimer = 0;
 
 moveSoundTimer = 0
+previousScaleX = 1;

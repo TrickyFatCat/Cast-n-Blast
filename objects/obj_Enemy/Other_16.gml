@@ -2,14 +2,14 @@
 
 var _trancendenceTime = 0.15;
 var _scaleStepFactor = CalculateStep(_trancendenceTime);
-var _targetScale = 1.5;
+var _targetScaleY = 1.5;
 
 // Sequence
-if (drawScaleX < _targetScale)
+if (drawScaleY < _targetScaleY)
 {
-	var _scaleStep = _targetScale * _scaleStepFactor;
-	drawScaleX = ApproachTimeFactor(drawScaleX, _targetScale, _scaleStep);
-	drawScaleY = drawScaleX;
+	var _scaleStep = _targetScaleY * _scaleStepFactor;
+	drawScaleY = ApproachTimeFactor(drawScaleY, _targetScaleY, _scaleStep);
+	drawScaleX = drawScaleY * previousScaleX;
 }
 else
 {
