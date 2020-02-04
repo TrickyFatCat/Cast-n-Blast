@@ -74,3 +74,10 @@ switch (global.BattleState)
 }
 
 DrawHud;
+
+draw_set_alpha(1);
+
+if (global.CurrentInput == InputMethod.KeyboardMouse)
+{
+	draw_sprite_ext(spr_crosshair, image_index, device_mouse_x_to_gui(0), device_mouse_y_to_gui(0), 2, 2, 0, image_blend, hudAlpha)
+}
