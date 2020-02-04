@@ -1,7 +1,6 @@
 event_inherited();
 
 isEnoughScrap = global.Scrap >= upgradeCost;
-triggerColour = c_gray;
 
 with (global.Player)
 {
@@ -51,3 +50,20 @@ with (global.Player)
 		break;
 	}
 }
+
+if (playerIsIn && !isEnoughScrap && !isMaxed)
+{
+	triggerColour = c_red;
+}
+else if (playerIsIn && isEnoughScrap && !isMaxed)
+{
+	triggerColour = c_green;
+}
+else if (!playerIsIn)
+{
+	triggerColour = c_gray;
+}
+
+triggerVisuliser.triggerColour = triggerColour;
+
+playerIsIn = false;

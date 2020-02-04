@@ -1,4 +1,6 @@
 // Inherit the parent event
 event_inherited();
 
-triggerColour = c_green;
+scaleX = 1;
+scaleY = 1;
+triggerColour = c_white;

@@ -1599,6 +1599,14 @@
             }
         },
         {
+            "Key": "a3d8bc8a-331d-4985-a5b3-104978fa2f5e",
+            "Value": {
+                "id": "8c1ba6bd-227c-4254-ba0a-d3f17e97b9d8",
+                "resourcePath": "objects\\obj_triggerVisualiser\\obj_triggerVisualiser.yy",
+                "resourceType": "GMObject"
+            }
+        },
+        {
             "Key": "a425260a-f0d1-47b3-ac19-802e4214e6a1",
             "Value": {
                 "id": "80a28167-47f0-42c7-ba0b-bd738639b076",

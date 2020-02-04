@@ -1,20 +1,4 @@
-var _scaleX = 64;
-var _scaleY = 64;
-var _x = x - (_scaleX / 2);
-var _y = y - (_scaleY / 2);
-
-if (playerIsIn && !isEnoughScrap && !isMaxed)
-{
-	triggerColour = c_red;
-}
-
-DrawSlicedSprite(spr_triggerBorder, 0, _x, _y, _scaleX, _scaleY, triggerColour, 1);
-DrawSlicedSprite(spr_triggerFill, 0, _x, _y, _scaleX, _scaleY, triggerColour, 1);
-
-if visible
-{
-	draw_sprite_ext(sprite_index, image_index, x, y - z, drawScaleX, drawScaleY, drawAngle, drawColour, drawAlpha);
-}
+event_inherited();
 
 var _partName;
 var _upgradeText;

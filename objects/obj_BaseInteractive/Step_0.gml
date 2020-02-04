@@ -1,2 +1,0 @@
-showHint = false;
-playerIsIn = false;
