@@ -19,6 +19,15 @@ WeaponAffect();
 
 shieldIsActive = sys_GameManager.keyShield && energy > 0;
 
+if (shieldIsActive)
+{
+	drawColour = c_aqua;
+}
+else
+{
+	drawColour = c_white;
+}
+
 var _keyShoot = sys_GameManager.keyShootAuto || sys_GameManager.keyShootSemiAuto; 
 
 if (_keyShoot && canRestore)

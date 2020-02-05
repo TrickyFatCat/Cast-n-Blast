@@ -67,7 +67,7 @@ spawnX = 0;
 spawnY = 0;
 
 // Scrap
-global.Scrap = 0;
+global.Scrap = 9000;
 
 enum PartType
 {

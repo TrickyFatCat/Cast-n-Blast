@@ -17,7 +17,7 @@ switch global.CurrentInput
 		keyMenuDown = keyboard_check_pressed(ord("S"));
 		keyMenuLeft = keyboard_check_pressed(ord("A"));
 		keyMenuRight = keyboard_check_pressed(ord("D"));
-		keyMenuAccept = keyboard_check_pressed(vk_enter);
+		keyMenuAccept = keyboard_check_pressed(vk_enter) || keyboard_check_pressed(vk_space);
 		keyMenuBack = CheckGamepadButtonPressed(vk_backspace);
 		keyPause = keyboard_check_pressed(vk_escape);
 	break;

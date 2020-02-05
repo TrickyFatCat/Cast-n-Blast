@@ -8,7 +8,14 @@ switch (global.GameState)
 	
 	case GameState.Active:
 		CheckPlayerControls;
-		CheckMenuControls;
+		if (object_exists(gui_MainMenu) || object_exists(gui_FinishMenu))
+		{
+			CheckMenuControls;
+		}
+		else
+		{
+			CheckKeyPause;
+		}
 	break;
 	
 	case GameState.Paused:

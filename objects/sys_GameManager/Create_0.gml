@@ -7,6 +7,7 @@ randomize();
 #macro CheckPlayerControls	event_user(0)
 #macro CheckMenuControls	event_user(1)
 #macro ResetControls		event_user(2)
+#macro CheckKeyPause		event_user(3)
 
 // Game states
 enum GameState

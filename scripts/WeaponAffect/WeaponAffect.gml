@@ -14,7 +14,7 @@ var _factor = weaponFactor;
 
 with (activeWeapon)
 {
-	damage = round(damage * _factor);
+	//damage = round(damage * _factor);
 	rateOfFireCurrent = other.defaultRateOfFire * _factor;
 	spreadAngleCurrent = other.defaultSpreadAngle - (other.defaultSpreadAngle * (_factor - 1));
 	
