@@ -162,7 +162,7 @@ ds_map_add(BeamerGunData, "heal",							0);
 ds_map_add(BeamerGunData, "rateOfFireAccelerated",			false);
 ds_map_add(BeamerGunData, "rateOfFireIncrStep",				0);
 ds_map_add(BeamerGunData, "rateOfFireDecrStep",				0);
-ds_map_add(BeamerGunData, "rateOfFireMin",					20);
+ds_map_add(BeamerGunData, "rateOfFireMin",					30);
 ds_map_add(BeamerGunData, "rateOfFireMax",					0);
 //-----------------------------------------------------------------------------
 ds_map_add(BeamerGunData, "burstRate",						0);

@@ -1,13 +1,14 @@
 
-if (dealingDamage)
+if (dealingDamage && array_length_1d(targets) > 0)
 {
 	if (collision_circle(x, y, explosionRadius, obj_Entity, true, true)) //Check if there any pickup
 	{
 		//Create and fill pickups
 		var _targetsList = ds_list_create();
-		collision_circle_list(x, y, explosionRadius, obj_Player, true, true, _targetsList, true);
-		collision_circle_list(x, y, explosionRadius, obj_Enemy, true, true, _targetsList, true);
-		collision_circle_list(x, y, explosionRadius, obj_Barrel, true, true, _targetsList, true);
+		for (var i = 0; i < array_length_1d(targets); i++)
+		{
+			collision_circle_list(x, y, explosionRadius, targets[i], true, true, _targetsList, true);
+		}
 	
 		if (!ds_list_empty(_targetsList))
 		{
@@ -44,11 +45,22 @@ if (dealingDamage)
 									directionCurrent = point_direction(x, y, other.x, other.y) - 180;
 								}
 							break;
+							
+							case obj_Mine:
+								instance_destroy();
+							break;
 						}
 						
-						if (object_get_parent(object_index) == obj_Enemy)
+						var _parent = object_get_parent(object_index);
+						
+						switch (_parent)
 						{
-							DealDamage(other.damage);
+							case obj_Enemy:
+								DealDamage(other.damage);
+							break;
+							case obj_Mine:
+								instance_destroy();
+							break;
 						}
 					}
 				}

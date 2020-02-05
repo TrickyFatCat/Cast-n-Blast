@@ -1,18 +1,18 @@
 {
-    "id": "f2632948-dc6d-4652-ad66-5a64ed2d3f11",
+    "id": "d1551585-4f38-4bd8-a47c-e70f04e1b658",
     "modelName": "GMObject",
     "mvc": "1.0",
-    "name": "obj_KamikazeExplosion",
+    "name": "obj_MineExplosion",
     "eventList": [
         {
-            "id": "832f3bd7-3e80-4cf3-874f-3b5f2f14fff1",
+            "id": "80c33b3a-ad55-4136-8ee7-24b68ba4dd53",
             "modelName": "GMEvent",
             "mvc": "1.0",
             "IsDnD": false,
             "collisionObjectId": "00000000-0000-0000-0000-000000000000",
             "enumb": 0,
             "eventtype": 0,
-            "m_owner": "f2632948-dc6d-4652-ad66-5a64ed2d3f11"
+            "m_owner": "d1551585-4f38-4bd8-a47c-e70f04e1b658"
         }
     ],
     "maskSpriteId": "00000000-0000-0000-0000-000000000000",

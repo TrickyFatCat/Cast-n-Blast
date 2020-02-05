@@ -8,3 +8,7 @@ event_inherited()
 //drawScaleY = 2;
 delayTimer = 0;
 startDelay = false;
+
+targets[0] = obj_Enemy;
+targets[1] = obj_Barrel;
+targets[2] = obj_Mine;

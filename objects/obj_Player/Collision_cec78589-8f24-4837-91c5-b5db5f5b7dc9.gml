@@ -8,7 +8,7 @@ if (!isInvulnerable) && (other.dealingDamage)
 {
 	if (shieldIsActive)
 	{
-		DecreaseEnergy(round(other.damage * damageReductionFactor));
+		DecreaseEnergy(ceil(other.damage * damageReductionFactor));
 		EnableFlash(c_blue, _flashPower);
 	}
 	else

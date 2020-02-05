@@ -37,3 +37,5 @@ jumpInitialState = noone;
 
 // Loot parameters
 objectToSpawn = noone;
+
+isInvulnerable = false;
