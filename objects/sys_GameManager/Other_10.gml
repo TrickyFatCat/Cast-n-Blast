@@ -3,27 +3,32 @@
 switch global.CurrentInput
 {
 	case InputMethod.Gamepad:
-		var _gamepadButton = gp_shoulderrb;
-		keyShootAuto = CheckGamepadButton(_gamepadButton);
-		keyShootSemiAuto = CheckGamepadButtonPressed(_gamepadButton);
+		var _primaryShoot = gp_shoulderrb;
+		var _secondaryShoot = gp_shoulderlb;
+		keyShootAuto = CheckGamepadButton(_primaryShoot);
+		keyShootSemiAuto = CheckGamepadButtonPressed(_primaryShoot);
+		keySecondaryShootAuto = CheckGamepadButton(_secondaryShoot);
+		keySecondaryShootSemiAuto = CheckGamepadButton(_secondaryShoot);
 		keyInteract = CheckGamepadButtonPressed(gp_face1);
-		keyShield = CheckGamepadButton(gp_shoulderlb);
+		keyShield = CheckGamepadButton(gp_shoulderl);
 		keyDash = CheckGamepadButton(gp_face1);
 		actionStopShooting = CheckGamepadButtonReleased(_gamepadButton);
 	break;
 	
 	case InputMethod.KeyboardMouse:
-		var _mouseButton = mb_left;
-		
+		var _primaryShoot = mb_left;
+		var _secondaryShoot = mb_right;
 		keyMoveUp = CheckKeyboardOrd("W");
 		keyMoveLeft = CheckKeyboardOrd("A");
 		keyMoveDown = CheckKeyboardOrd("S");
 		keyMoveRight = CheckKeyboardOrd("D");
-		keyShootAuto = mouse_check_button(_mouseButton);
-		keyShootSemiAuto = mouse_check_button_pressed(_mouseButton);
+		keyShootAuto = mouse_check_button(_primaryShoot);
+		keyShootSemiAuto = mouse_check_button_pressed(_primaryShoot);
+		keySecondaryShootAuto = mouse_check_button(_secondaryShoot);
+		keySecondaryShootSemiAuto = mouse_check_button(_secondaryShoot);
 		keyInteract = keyboard_check_pressed(ord("E"));
-		keyShield = mouse_check_button(mb_right);
+		keyShield = keyboard_check(vk_shift);
 		keyDash = keyboard_check_pressed(vk_space);
-		actionStopShooting = mouse_check_button_released(_mouseButton);
+		actionStopShooting = mouse_check_button_released(_primaryShoot) || mouse_check_button_released(_secondaryShoot);
 	break;
 }

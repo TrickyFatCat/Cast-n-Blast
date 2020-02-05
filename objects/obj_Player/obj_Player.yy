@@ -217,7 +217,7 @@
             "mvc": "1.0",
             "objectId": "c0b37de0-4e9d-4cb9-81f9-922df5f3bea7",
             "propertyId": "61bc5419-ee0f-4313-a09d-2a3cea31bac2",
-            "value": "2"
+            "value": "1.6"
         },
         {
             "id": "bcd64cd1-e6ec-49ea-b683-840ef1a8d286",
@@ -251,20 +251,6 @@
     "physicsShapePoints": null,
     "physicsStartAwake": true,
     "properties": [
-        {
-            "id": "035037ba-a370-4f76-8398-b93cb2ccfe00",
-            "modelName": "GMObjectProperty",
-            "mvc": "1.0",
-            "listItems": null,
-            "multiselect": false,
-            "rangeEnabled": false,
-            "rangeMax": 10,
-            "rangeMin": 0,
-            "resourceFilter": 1023,
-            "value": "2",
-            "varName": "defaultMaxVelocity",
-            "varType": 0
-        },
         {
             "id": "ebbbf9fd-e738-4e53-a143-b24f3c42f868",
             "modelName": "GMObjectProperty",

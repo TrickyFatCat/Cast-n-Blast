@@ -13,4 +13,3 @@ else
 
 maxVelocity = defaultMaxVelocity * legsFactor;
 dashVelocity = deafaultDashVelocity * legsFactor;
-dashCost = round(defaultDashCost + legsLevel);

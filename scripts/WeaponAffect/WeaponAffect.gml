@@ -16,14 +16,11 @@ with (activeWeapon)
 {
 	//damage = round(damage * _factor);
 	rateOfFireCurrent = other.defaultRateOfFire * _factor;
-	spreadAngleCurrent = other.defaultSpreadAngle - (other.defaultSpreadAngle * (_factor - 1));
-	
-	if (_factor == 0.75)
-	{
-		shootAmmoCost = 2;
-	}
-	else
-	{
-		shootAmmoCost = 1;
-	}
+}
+
+with (secondaryWeapon)
+{
+	//damage = round(damage * _factor);
+	rateOfFireCurrent = other.secondaryDefaultRateOfFire * _factor;
+	spreadAngleCurrent = other.secondaryDefaultSpreadAlgle - (other.secondaryDefaultSpreadAlgle * (_factor - 1));
 }

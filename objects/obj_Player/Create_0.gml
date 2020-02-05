@@ -54,9 +54,14 @@ pickupList = ds_list_create();
 
 // Set player weapon
 var _lastIndex = array_length_1d(global.PlayerWeaponData) - 1;
-weaponID = irandom_range(0, _lastIndex);
+weaponID = PlayerWeapon.PlasmaGun;
 activeWeapon = instance_create_layer(x, y, layer, obj_PlayerWeapon);
 SetPlayerWeapon(activeWeapon, weaponID);
+activeWeapon.drawAlpha = 0;
+
+secondaryWeaponID = PlayerWeapon.ShotGun;
+secondaryWeapon = instance_create_layer(x, y, layer, obj_PlayerWeapon);
+SetPlayerWeapon(secondaryWeapon, secondaryWeaponID);
 activeWeapon.drawAlpha = 0;
 
 // Set player weapon ammo
@@ -121,11 +126,15 @@ defaultShieldFactor = shieldFactor;
 
 // Dash
 deafaultDashVelocity = dashVelocity;
-dashCost = 20;
+dashCost = 25;
 defaultDashCost = dashCost;
 
 // Weapon affects
-defaultSpreadAngle = activeWeapon.spreadAngleCurrent;
 defaultRateOfFire = activeWeapon.rateOfFireCurrent;
+secondaryDefaultRateOfFire = secondaryWeapon.rateOfFireCurrent;
+secondaryDefaultSpreadAlgle = secondaryWeapon.spreadAngleCurrent;
+
 
 isOverheated = false;
+
+defaultMaxVelocity = maxVelocity;

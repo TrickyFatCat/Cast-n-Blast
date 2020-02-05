@@ -28,7 +28,7 @@ else
 	drawColour = c_white;
 }
 
-var _keyShoot = sys_GameManager.keyShootAuto || sys_GameManager.keyShootSemiAuto; 
+var _keyShoot = sys_GameManager.keyShootAuto || sys_GameManager.keyShootSemiAuto || sys_GameManager.keySecondaryShootAuto || sys_GameManager.keySecondaryShootSemiAuto; 
 
 if (_keyShoot && canRestore)
 {

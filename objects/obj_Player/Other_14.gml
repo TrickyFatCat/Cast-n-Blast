@@ -27,4 +27,6 @@ if (global.TimeFactor > 0)
 			break;
 		}
 	}
+	
+	secondaryWeapon.directionCurrent = activeWeapon.directionCurrent;
 }
