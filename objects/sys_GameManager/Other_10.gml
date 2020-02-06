@@ -12,7 +12,7 @@ switch global.CurrentInput
 		keyInteract = CheckGamepadButtonPressed(gp_face1);
 		keyShield = CheckGamepadButton(gp_shoulderl);
 		keyDash = CheckGamepadButton(gp_face1);
-		actionStopShooting = CheckGamepadButtonReleased(_gamepadButton);
+		actionStopShooting = CheckGamepadButtonReleased(_primaryShoot) || CheckGamepadButtonReleased(_secondaryShoot);
 	break;
 	
 	case InputMethod.KeyboardMouse:
