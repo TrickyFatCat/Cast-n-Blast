@@ -6,7 +6,7 @@ var _timeIsOver = CheckTimer(lifespanTimer, lifespanTime);
 		
 if (_timeIsOver)
 {
-	instance_destroy();
+	currentState = MineState.Destruction;
 }
 
 ProcessEffect;

@@ -6,7 +6,7 @@ velocity = CalculateDeceleratedVelocity(directionCurrent, velocity, groundFricti
 		
 if (velocity <= 0)
 {
-	currentState = DropableState.Activation;
+	currentState = MineState.Activation;
 }
 
 CheckBouncingCollision(obj_Wall);

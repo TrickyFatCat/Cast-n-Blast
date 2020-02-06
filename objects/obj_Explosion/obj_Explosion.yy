@@ -93,6 +93,34 @@
             "value": "True",
             "varName": "dealingDamage",
             "varType": 3
+        },
+        {
+            "id": "a22c5c23-f44b-4140-835e-5837ead80d0e",
+            "modelName": "GMObjectProperty",
+            "mvc": "1.0",
+            "listItems": null,
+            "multiselect": false,
+            "rangeEnabled": false,
+            "rangeMax": 10,
+            "rangeMin": 0,
+            "resourceFilter": 1023,
+            "value": "True",
+            "varName": "isDamagingPlayer",
+            "varType": 3
+        },
+        {
+            "id": "12e11709-dbec-4461-89a1-c662d2fe494a",
+            "modelName": "GMObjectProperty",
+            "mvc": "1.0",
+            "listItems": null,
+            "multiselect": false,
+            "rangeEnabled": false,
+            "rangeMax": 10,
+            "rangeMin": 0,
+            "resourceFilter": 1023,
+            "value": "True",
+            "varName": "isDamagingEnemies",
+            "varType": 3
         }
     ],
     "solid": false,

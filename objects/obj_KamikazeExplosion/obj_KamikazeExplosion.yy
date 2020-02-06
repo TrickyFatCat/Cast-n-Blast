@@ -4,16 +4,7 @@
     "mvc": "1.0",
     "name": "obj_KamikazeExplosion",
     "eventList": [
-        {
-            "id": "832f3bd7-3e80-4cf3-874f-3b5f2f14fff1",
-            "modelName": "GMEvent",
-            "mvc": "1.0",
-            "IsDnD": false,
-            "collisionObjectId": "00000000-0000-0000-0000-000000000000",
-            "enumb": 0,
-            "eventtype": 0,
-            "m_owner": "f2632948-dc6d-4652-ad66-5a64ed2d3f11"
-        }
+        
     ],
     "maskSpriteId": "00000000-0000-0000-0000-000000000000",
     "overriddenProperties": null,

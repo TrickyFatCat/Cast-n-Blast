@@ -83,6 +83,16 @@
             "enumb": 25,
             "eventtype": 7,
             "m_owner": "b23577ef-eb96-4307-9e45-6c3c4bce99a4"
+        },
+        {
+            "id": "d2736af7-70fa-44db-9bb4-dd2a47d5dd9f",
+            "modelName": "GMEvent",
+            "mvc": "1.0",
+            "IsDnD": false,
+            "collisionObjectId": "00000000-0000-0000-0000-000000000000",
+            "enumb": 14,
+            "eventtype": 7,
+            "m_owner": "b23577ef-eb96-4307-9e45-6c3c4bce99a4"
         }
     ],
     "maskSpriteId": "00000000-0000-0000-0000-000000000000",
@@ -128,6 +138,34 @@
             "resourceFilter": 1023,
             "value": "0",
             "varName": "effectRadius",
+            "varType": 0
+        },
+        {
+            "id": "33339857-2c10-4bdf-9429-dad99d07f5f3",
+            "modelName": "GMObjectProperty",
+            "mvc": "1.0",
+            "listItems": null,
+            "multiselect": false,
+            "rangeEnabled": false,
+            "rangeMax": 10,
+            "rangeMin": 0,
+            "resourceFilter": 1023,
+            "value": "0",
+            "varName": "velocity",
+            "varType": 0
+        },
+        {
+            "id": "2dacd5c7-d3e0-4eba-9d33-c8b53fae3700",
+            "modelName": "GMObjectProperty",
+            "mvc": "1.0",
+            "listItems": null,
+            "multiselect": false,
+            "rangeEnabled": false,
+            "rangeMax": 10,
+            "rangeMin": 0,
+            "resourceFilter": 1023,
+            "value": "0",
+            "varName": "groundFriction ",
             "varType": 0
         }
     ],

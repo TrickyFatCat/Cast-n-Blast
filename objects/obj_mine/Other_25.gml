@@ -1,13 +1,14 @@
 
 switch currentState
 {
-	case DropableState.Activation:
+	case MineState.Activation:
 		draw_set_color(c_gray);
 		var _timeFactor = (activationTimer / activationTime);
 		draw_circle(x, y, effectRadius * _timeFactor, true);
 	break;
 	
-	case DropableState.Idle:
+	case MineState.Idle:
+	case MineState.Destruction:
 		draw_set_color(c_red);
 		draw_circle(x, y, effectRadius, true);
 		draw_set_alpha(0.25);

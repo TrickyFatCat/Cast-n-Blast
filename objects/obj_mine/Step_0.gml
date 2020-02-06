@@ -4,15 +4,19 @@ event_inherited();
 //State machine
 switch currentState
 {
-	case DropableState.Drop:
+	case MineState.Drop:
 		ProcessDrop;
 	break;
 	
-	case DropableState.Activation:
+	case MineState.Activation:
 		ProcessActivation;
 	break;
 	
-	case DropableState.Idle:
+	case MineState.Idle:
 		ProcessIdle;
+	break;
+	
+	case MineState.Destruction:
+		ProcessDestruction;
 	break;
 }

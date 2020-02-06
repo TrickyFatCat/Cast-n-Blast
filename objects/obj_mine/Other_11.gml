@@ -5,5 +5,6 @@ var _timeIsOver = CheckTimer(activationTimer, activationTime);
 		
 if (_timeIsOver)
 {
-	currentState = DropableState.Idle;
+	isInvulnerable = false;
+	currentState = MineState.Idle;
 }

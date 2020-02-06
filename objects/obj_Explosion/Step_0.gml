@@ -1,23 +1,32 @@
 
-if (dealingDamage && array_length_1d(targets) > 0)
+if (dealingDamage)
 {
-	if (collision_circle(x, y, explosionRadius, obj_Entity, true, true)) //Check if there any pickup
+	if (collision_circle(x, y, explosionRadius, obj_Entity, true, true) || collision_circle(x, y, explosionRadius, obj_Mine, false, true))
 	{
 		//Create and fill pickups
 		var _targetsList = ds_list_create();
-		for (var i = 0; i < array_length_1d(targets); i++)
+		
+		if (isDamagingPlayer)
 		{
-			collision_circle_list(x, y, explosionRadius, targets[i], true, true, _targetsList, true);
+			collision_circle_list(x, y, explosionRadius, global.Player, true, true, _targetsList, true);
 		}
+		
+		if (isDamagingEnemies)
+		{
+			collision_circle_list(x, y, explosionRadius, obj_Enemy, true, true, _targetsList, true);
+		}
+		
+		collision_circle_list(x, y, explosionRadius, obj_Barrel, true, true, _targetsList, true);
+		collision_circle_list(x, y, explosionRadius, obj_Mine, true, true, _targetsList, true);
+		
+		show_debug_message(ds_list_size(_targetsList));
 	
 		if (!ds_list_empty(_targetsList))
 		{
-			#region //Pickup checking
+			#region //DealingDamage
 			for (var i = 0; i < ds_list_size(_targetsList); i++)
 			{
 				var _target = _targetsList[| i];
-			
-				//Pull Pickup
 				with (_target)
 				{
 					if (!isInvulnerable)
@@ -56,7 +65,7 @@ if (dealingDamage && array_length_1d(targets) > 0)
 							break;
 							
 							case obj_Mine:
-								instance_destroy();
+								DestroyMine(_target);
 							break;
 						}
 					}

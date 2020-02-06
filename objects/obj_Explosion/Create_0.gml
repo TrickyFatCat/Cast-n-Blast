@@ -1,5 +1,4 @@
-event_inherited()
-targets = [];
+event_inherited();
 
 
 //audio_falloff_set_model(audio_falloff_linear_distance);
