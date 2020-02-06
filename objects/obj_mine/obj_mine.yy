@@ -164,7 +164,7 @@
             "rangeMax": 10,
             "rangeMin": 0,
             "resourceFilter": 1023,
-            "value": "0",
+            "value": "0.2",
             "varName": "groundFriction ",
             "varType": 0
         }

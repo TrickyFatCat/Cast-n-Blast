@@ -12,12 +12,12 @@ var _waveWeight = 5;
 var _enemyNumber = 6;
 
 var _wave = CreateDataMap(_enemyNumber);
-SetObjectData(_wave[0], obj_Enemy_Kamikaze, 1,	5);
-SetObjectData(_wave[1], obj_Enemy_Fighter,	1,	5);
-SetObjectData(_wave[2], obj_Enemy_Beamer,	1,	5);
-SetObjectData(_wave[3], obj_Enemy_Trooper,	1,	5);
-SetObjectData(_wave[4], obj_Enemy_Ninja,	1,	5);
-SetObjectData(_wave[5], obj_Barrel,			1,	1);
+SetObjectData(_wave[0], obj_Enemy_Kamikaze, 1,	0);
+SetObjectData(_wave[1], obj_Enemy_Fighter,	1,	0);
+SetObjectData(_wave[2], obj_Enemy_Beamer,	1,	0);
+SetObjectData(_wave[3], obj_Enemy_Trooper,	1,	0);
+SetObjectData(_wave[4], obj_Enemy_Ninja,	1,	1);
+SetObjectData(_wave[5], obj_Barrel,			1,	0);
 SetWaveData(_waveIndex, _wave, _waveWeight);
 
 // Wave 01

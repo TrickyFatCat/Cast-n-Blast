@@ -2,4 +2,7 @@
 
 var _targetMine = argument0;
 
-_targetMine.currentState = MineState.Destruction;
+if (_targetMine.currentState != MineState.Destruction)
+{
+	_targetMine.currentState = MineState.Destruction;
+}
