@@ -66,3 +66,5 @@ cooldownTimer = 0;
 
 moveSoundTimer = 0
 previousScaleX = 1;
+
+isShooting = false;

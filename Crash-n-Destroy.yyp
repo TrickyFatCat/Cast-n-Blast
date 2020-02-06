@@ -642,7 +642,7 @@
             "Key": "49bf0704-d92b-4de3-abbc-ddd15a611398",
             "Value": {
                 "id": "2179d01d-78bf-45d6-bcaa-ec0213ac161c",
-                "resourcePath": "scripts\\SpawnImpactEffect\\SpawnImpactEffect.yy",
+                "resourcePath": "scripts\\SpawnGenericEffect\\SpawnGenericEffect.yy",
                 "resourceType": "GMScript"
             }
         },
@@ -1119,6 +1119,14 @@
             }
         },
         {
+            "Key": "7404c312-9bc7-44a3-9005-9e2759b76913",
+            "Value": {
+                "id": "190e241b-b06f-47c2-8169-bc40370231b1",
+                "resourcePath": "sprites\\spr_ninja\\spr_ninja.yy",
+                "resourceType": "GMSprite"
+            }
+        },
+        {
             "Key": "7411e589-855e-445b-a33e-e424859f014c",
             "Value": {
                 "id": "f9918b91-d050-4663-86b9-1c8e2474ccbe",
@@ -1218,7 +1226,7 @@
             "Key": "7e356656-75e6-445f-b0a2-74652e7c42f7",
             "Value": {
                 "id": "d43f4ba3-2479-4566-925f-3d933ccb7deb",
-                "resourcePath": "objects\\obj_Enemy_Fhighter\\obj_Enemy_Fhighter.yy",
+                "resourcePath": "objects\\obj_Enemy_Fighter\\obj_Enemy_Fighter.yy",
                 "resourceType": "GMObject"
             }
         },
@@ -1268,6 +1276,14 @@
                 "id": "f4348a07-5821-48cd-b220-116167fec655",
                 "resourcePath": "views\\81dbef39-ce24-4953-98d9-ffb0e9a8cdf2.yy",
                 "resourceType": "GMFolder"
+            }
+        },
+        {
+            "Key": "8200e58b-06d1-4b25-8ca9-037f0cc11151",
+            "Value": {
+                "id": "a7202b3c-91fa-48a4-b4f4-98a92eab14fc",
+                "resourcePath": "objects\\vfx_SmokeGrenade\\vfx_SmokeGrenade.yy",
+                "resourceType": "GMObject"
             }
         },
         {
@@ -1436,6 +1452,14 @@
                 "id": "5caebaba-1ee6-40d1-ae64-a76644cd6c79",
                 "resourcePath": "views\\8d4f919c-a11c-4bbd-9469-d116251a5ed9.yy",
                 "resourceType": "GMFolder"
+            }
+        },
+        {
+            "Key": "8e84cd73-f632-401d-af0b-a9efe2261a3c",
+            "Value": {
+                "id": "9dcdc781-12b8-4b3b-a1ea-394d1a5f4c88",
+                "resourcePath": "sprites\\spr_explosionSmoke\\spr_explosionSmoke.yy",
+                "resourceType": "GMSprite"
             }
         },
         {
@@ -2162,7 +2186,7 @@
             "Key": "d5d48b7b-7659-41a1-9a4d-eaa0838793e1",
             "Value": {
                 "id": "d99ff2c8-c79f-4b1c-a68f-43630547ec87",
-                "resourcePath": "objects\\vfx_impact\\vfx_impact.yy",
+                "resourcePath": "objects\\vfx_BaseEffect\\vfx_BaseEffect.yy",
                 "resourceType": "GMObject"
             }
         },
@@ -2420,6 +2444,14 @@
                 "id": "9c6c394b-0b1b-43b3-978c-8f1279a7dc13",
                 "resourcePath": "sprites\\spr_laser\\spr_laser.yy",
                 "resourceType": "GMSprite"
+            }
+        },
+        {
+            "Key": "eed2f489-25b5-40c4-a720-e7963d4e5c49",
+            "Value": {
+                "id": "e120219f-52ae-4820-9c2a-d9047a246873",
+                "resourcePath": "objects\\obj_Enemy_Ninja\\obj_Enemy_Ninja.yy",
+                "resourceType": "GMObject"
             }
         },
         {

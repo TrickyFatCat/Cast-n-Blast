@@ -4,13 +4,13 @@ enum EnemyWeapon
 	FighterGun,
 	TrooperGun,
 	BeamerGun,
-	TurretGun,
-	MinerGun
+	NinjaGun,
 }
 
 #macro EnemyFighterGunData global.EnemyWeaponData[EnemyWeapon.FighterGun]
 #macro TrooperGunData global.EnemyWeaponData[EnemyWeapon.TrooperGun]
 #macro BeamerGunData global.EnemyWeaponData[EnemyWeapon.BeamerGun]
+#macro NinjaGunData global.EnemyWeaponData[EnemyWeapon.NinjaGun]
 
 #region FighterGun
 EnemyFighterGunData = ds_map_create();
@@ -208,4 +208,70 @@ ds_map_add(BeamerGunData, "isShackingCamera",				false);
 ds_map_add(BeamerGunData, "angularShakeEnabled",			false);
 ds_map_add(BeamerGunData, "shakeValue",						0.75);
 ds_map_add(BeamerGunData, "shotShakeFactor",				0.05);
+#endregion
+
+#region NinjaGun
+NinjaGunData = ds_map_create();
+ds_map_add(NinjaGunData, "weaponSprite",					noone);
+ds_map_add(NinjaGunData, "offsetY",							6);
+ds_map_add(NinjaGunData, "laserSightEnabled",				false);
+ds_map_add(NinjaGunData, "isAuto",							true);
+ds_map_add(NinjaGunData, "currentShootMode",				ShootMode.Normal);
+//-----------------------------------------------------------------------------
+ds_map_add(NinjaGunData, "bulletObject",					obj_FighterProjectile);
+ds_map_add(NinjaGunData, "bulletNumber",					20);
+ds_map_add(NinjaGunData, "bulletSpawnPointOffset",			0);
+//-----------------------------------------------------------------------------
+ds_map_add(NinjaGunData, "damage",							1);
+ds_map_add(NinjaGunData, "heal",							0);
+//-----------------------------------------------------------------------------
+ds_map_add(NinjaGunData, "rateOfFireAccelerated",			false);
+ds_map_add(NinjaGunData, "rateOfFireIncrStep",				0);
+ds_map_add(NinjaGunData, "rateOfFireDecrStep",				0);
+ds_map_add(NinjaGunData, "rateOfFireMin",					1);
+ds_map_add(NinjaGunData, "rateOfFireMax",					0);
+//-----------------------------------------------------------------------------
+ds_map_add(NinjaGunData, "burstRate",						0);
+ds_map_add(NinjaGunData, "burstShotsNumber",				0);
+//-----------------------------------------------------------------------------
+ds_map_add(NinjaGunData, "castExecuteCount",				0);
+ds_map_add(NinjaGunData, "castTime",						0);
+//-----------------------------------------------------------------------------
+ds_map_add(NinjaGunData, "chargeExecuteCountMin",			1);
+ds_map_add(NinjaGunData, "chargeExecuteCountMax",			0);
+ds_map_add(NinjaGunData, "chargeTime",						1);
+ds_map_add(NinjaGunData, "chargeWaitTime",					0);
+ds_map_add(NinjaGunData, "chargeDamageFactorMax",			4);
+ds_map_add(NinjaGunData, "chargeHealFactorMax",				0);
+ds_map_add(NinjaGunData, "chargeRateFactorMax",				0);
+ds_map_add(NinjaGunData, "chargeBulletNumberFactorMax",		0);
+ds_map_add(NinjaGunData, "chargeVelocityFactorMax",			20);
+ds_map_add(NinjaGunData, "chargeShakeFactorMax",			1.25);
+//-----------------------------------------------------------------------------
+ds_map_add(NinjaGunData, "spreadIsDynamic",					false);
+ds_map_add(NinjaGunData, "spreadIsUniform",					true);
+ds_map_add(NinjaGunData, "spreadAngleIncrFactor",			0.2);
+ds_map_add(NinjaGunData, "spreadAngleDecrFactor",			0.0075);
+ds_map_add(NinjaGunData, "spreadAngleMin",					360);
+ds_map_add(NinjaGunData, "spreadAngleMax",					0);
+//-----------------------------------------------------------------------------
+ds_map_add(NinjaGunData, "ammoID",							noone);
+ds_map_add(NinjaGunData, "shootAmmoCost",					0);
+//-----------------------------------------------------------------------------
+ds_map_add(NinjaGunData, "recoilPower",						0);
+ds_map_add(NinjaGunData, "recoilFactor",					0);
+//-----------------------------------------------------------------------------
+ds_map_add(NinjaGunData, "hitscanScaleY",					0);
+ds_map_add(NinjaGunData, "projectileVelocityNoiseFactor",	0);
+ds_map_add(NinjaGunData, "projectileVelocityCurrent",		5);
+ds_map_add(NinjaGunData, "projectileVelocityMax",			0);
+ds_map_add(NinjaGunData, "projectileAcceleration",			0);
+ds_map_add(NinjaGunData, "projectileFriction",				0.2);
+ds_map_add(NinjaGunData, "projectileBounceEnable",			false);
+ds_map_add(NinjaGunData, "projectileBounceFriction",		2);
+//-----------------------------------------------------------------------------
+ds_map_add(NinjaGunData, "isShackingCamera",				false);
+ds_map_add(NinjaGunData, "angularShakeEnabled",				false);
+ds_map_add(NinjaGunData, "shakeValue",						0.75);
+ds_map_add(NinjaGunData, "shotShakeFactor",					0.05);
 #endregion

@@ -7,7 +7,7 @@ spawnPauseTime = SetTime(5);
 spawnPauseTimer = spawnPauseTime;
 
 /// Enemies count limits
-enemyCountMax = 6;
+enemyCountMax = 3;
 
 /// Spawn list
 spawnList = ds_list_create();

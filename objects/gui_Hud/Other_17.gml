@@ -91,7 +91,7 @@ DrawTextOutline(_x + _scaleX / 2, _y + _scaleY / 2, c_black, c_white, string(_va
 // Case
 var _scaleX = 96;
 var _scaleY = 32;
-var _x = guiWidth * 0.5 - 50;
+var _x = guiWidth * 0.5 - 48;
 var _y = guiHeight * 0.87;
 
 var _value = global.Player.caseHitPoints;
@@ -111,7 +111,7 @@ DrawTextOutline(_x + _scaleX / 2, _y + _scaleY / 2, c_black, c_white, string(_va
 // Weapon
 var _scaleX = 96;
 var _scaleY = 32;
-var _x = guiWidth * 0.5 + 50;
+var _x = guiWidth * 0.5 + 54;
 var _y = guiHeight * 0.87;
 
 var _value = global.Player.weaponHitPoints;

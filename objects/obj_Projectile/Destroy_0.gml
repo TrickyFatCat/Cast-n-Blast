@@ -6,5 +6,5 @@ event_inherited();
 
 if (impactEffect != noone)
 {
-	SpawnImpactEffect(impactEffect);
+	SpawnGenericEffect(impactEffect);
 }
