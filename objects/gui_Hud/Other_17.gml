@@ -85,7 +85,7 @@ DrawSlicedSprite(spr_interfaceBorder, 0, _x, _y, _scaleX, _scaleY, _borderColour
 
 draw_set_font(fnt_small);
 SetAlign(fa_center, fa_center);
-DrawTextOutline(_x + _scaleX / 2, guiHeight * 0.845, c_black, c_white, "Legs +" + string(global.Player.legsLevel));
+DrawTextOutline(_x + _scaleX / 2, guiHeight * 0.845, c_black, c_white, "Legs");
 DrawTextOutline(_x + _scaleX / 2, _y + _scaleY / 2, c_black, c_white, string(_value));
 
 // Case
@@ -105,7 +105,7 @@ DrawSlicedSprite(spr_interfaceBorder, 0, _x, _y, _scaleX, _scaleY, _borderColour
 
 draw_set_font(fnt_small);
 SetAlign(fa_center, fa_center);
-DrawTextOutline(_x + _scaleX / 2, guiHeight * 0.845, c_black, c_white, "Case +" + string(global.Player.caseLevel));
+DrawTextOutline(_x + _scaleX / 2, guiHeight * 0.845, c_black, c_white, "Case");
 DrawTextOutline(_x + _scaleX / 2, _y + _scaleY / 2, c_black, c_white, string(_value));
 
 // Weapon
@@ -125,5 +125,5 @@ DrawSlicedSprite(spr_interfaceBorder, 0, _x, _y, _scaleX, _scaleY, _borderColour
 
 draw_set_font(fnt_small);
 SetAlign(fa_center, fa_center);
-DrawTextOutline(_x + _scaleX / 2, guiHeight * 0.845, c_black, c_white, "Weapon +" + string(global.Player.weaponLevel));
+DrawTextOutline(_x + _scaleX / 2, guiHeight * 0.845, c_black, c_white, "Weapon");
 DrawTextOutline(_x + _scaleX / 2, _y + _scaleY / 2, c_black, c_white, string(_value));

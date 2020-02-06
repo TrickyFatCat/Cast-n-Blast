@@ -2,18 +2,44 @@ event_inherited();
 
 var _partName;
 var _upgradeText;
+var _nextLevel;
+var _maxedText = "Fully upgraded";
 switch (partToUpgrade)
 {
 	case PartType.Legs:
-		_partName = "Legs +1";
+		if (!isMaxed)
+		{
+			_nextLevel = string(global.Player.legsLevel + 1);
+			_partName = "Legs Mark " + _nextLevel;
+		}
+		else
+		{
+			_partName = _maxedText;
+		}
 	break;
 	
 	case PartType.Case:
-		_partName = "Case +1";
+		if (!isMaxed)
+		{
+			_nextLevel = string(global.Player.caseLevel + 1);
+			_partName = "Case Mark " + _nextLevel;
+		}
+		else
+		{
+			_partName = _maxedText;
+		}
 	break;
 	
 	case PartType.Weapon:
-		_partName = "Weapon +1";
+		if (!isMaxed)
+		{
+			_nextLevel = string(global.Player.caseLevel + 1);
+			_partName = "Weapon Mark " + _nextLevel;
+		}
+		else
+		{
+			_partName = _maxedText;
+		}
 	break;
 }
 
@@ -21,16 +47,15 @@ if (!isMaxed)
 {
 	_upgradeText = "Scrap: " + string(upgradeCost);
 }
-else
-{
-	_upgradeText = "Max level";
-}
 
 SetAlign(fa_center, fa_center);
 draw_set_font(fnt_verySmall);
 DrawTextOutline(x, y - 32, c_black,c_white, _partName);
-SetAlign(fa_center, fa_top);
-DrawTextOutline(x, y + 4, c_black,c_white, _upgradeText);
+if (!isMaxed)
+{
+	SetAlign(fa_center, fa_top);
+	DrawTextOutline(x, y + 4, c_black,c_white, _upgradeText);
+}
 
 if (showHint && !isMaxed)
 {

@@ -17,6 +17,7 @@ switch (currentState)
 	break;
 	
 	case PlayerState.Idle:
+		ChekPlayerHP;
 		RespondToControls;
 		MovePlayer;
 		ChangeSprite;
@@ -26,6 +27,7 @@ switch (currentState)
 	break;
 	
 	case PlayerState.Run:
+		ChekPlayerHP;
 		RespondToControls;
 		MovePlayer;
 		ChangeSprite;
@@ -38,6 +40,7 @@ switch (currentState)
 	break;
 	
 	case PlayerState.Dash:
+		ChekPlayerHP;
 		MovePlayer;
 		PullPickups;
 	break;

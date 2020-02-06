@@ -25,14 +25,12 @@ switch (currentActionState)
 			collisionEnable = false;
 			currentActionState = NinjaState.TeleportIn;
 			SpawnGenericEffect(vfx_SmokeGrenade);
-					x = targetX;
-		y = targetY;
+			x = targetX;
+			y = targetY;
 		}
 	break;
 	
 	case NinjaState.TeleportIn:
-		//x = targetX;
-		//y = targetY;
 		teleportInWaitTimer += global.TimeFactor;
 		var _timeIsOver = CheckTimer(teleportInWaitTimer, teleportInWaitTime);
 		

@@ -45,10 +45,6 @@ if (dealingDamage && array_length_1d(targets) > 0)
 									directionCurrent = point_direction(x, y, other.x, other.y) - 180;
 								}
 							break;
-							
-							case obj_Mine:
-								instance_destroy();
-							break;
 						}
 						
 						var _parent = object_get_parent(object_index);
@@ -58,6 +54,7 @@ if (dealingDamage && array_length_1d(targets) > 0)
 							case obj_Enemy:
 								DealDamage(other.damage);
 							break;
+							
 							case obj_Mine:
 								instance_destroy();
 							break;
