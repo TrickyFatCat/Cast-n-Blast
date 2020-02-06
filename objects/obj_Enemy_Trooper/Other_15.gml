@@ -4,9 +4,10 @@
 event_inherited();
 
 var _waitTime = SetTime(1);
+var _distanceToPlayer = point_distance(playerX, playerY, x, y);
 
 
-if (activeWeapon.shotCount == 2)
+if (activeWeapon.shotCount == 1)
 {
 	isShooting = false;
 	

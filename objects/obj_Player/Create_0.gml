@@ -138,3 +138,5 @@ secondaryDefaultSpreadAlgle = secondaryWeapon.spreadAngleCurrent;
 isOverheated = false;
 
 defaultMaxVelocity = maxVelocity;
+
+shadowAlpha = 0;

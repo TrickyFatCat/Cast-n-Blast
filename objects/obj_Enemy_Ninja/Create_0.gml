@@ -32,3 +32,6 @@ activeWeapon.visible = false;
 
 teleportScaleY = 2;
 teleportScaleX = 1;
+
+isInvulnerable = true;
+drawColour = c_fuchsia;

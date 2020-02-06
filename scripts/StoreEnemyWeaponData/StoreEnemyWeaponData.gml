@@ -30,7 +30,7 @@ ds_map_add(EnemyFighterGunData, "heal",							0);
 ds_map_add(EnemyFighterGunData, "rateOfFireAccelerated",		false);
 ds_map_add(EnemyFighterGunData, "rateOfFireIncrStep",			0);
 ds_map_add(EnemyFighterGunData, "rateOfFireDecrStep",			0);
-ds_map_add(EnemyFighterGunData, "rateOfFireMin",				4);
+ds_map_add(EnemyFighterGunData, "rateOfFireMin",				3);
 ds_map_add(EnemyFighterGunData, "rateOfFireMax",				0);
 //-----------------------------------------------------------------------------
 ds_map_add(EnemyFighterGunData, "burstRate",					0);
@@ -87,7 +87,7 @@ ds_map_add(TrooperGunData, "isAuto",						true);
 ds_map_add(TrooperGunData, "currentShootMode",				ShootMode.Normal);
 //-----------------------------------------------------------------------------
 ds_map_add(TrooperGunData, "bulletObject",					obj_FighterProjectile);
-ds_map_add(TrooperGunData, "bulletNumber",					7);
+ds_map_add(TrooperGunData, "bulletNumber",					5);
 ds_map_add(TrooperGunData, "bulletSpawnPointOffset",		19);
 //-----------------------------------------------------------------------------
 ds_map_add(TrooperGunData, "damage",						1);
@@ -266,7 +266,7 @@ ds_map_add(NinjaGunData, "projectileVelocityNoiseFactor",	0);
 ds_map_add(NinjaGunData, "projectileVelocityCurrent",		5);
 ds_map_add(NinjaGunData, "projectileVelocityMax",			0);
 ds_map_add(NinjaGunData, "projectileAcceleration",			0);
-ds_map_add(NinjaGunData, "projectileFriction",				0.2);
+ds_map_add(NinjaGunData, "projectileFriction",				0.125);
 ds_map_add(NinjaGunData, "projectileBounceEnable",			false);
 ds_map_add(NinjaGunData, "projectileBounceFriction",		2);
 //-----------------------------------------------------------------------------

@@ -21,15 +21,18 @@ switch (currentActionState)
 		else
 		{
 			drawAlpha = 0;
+			shadowAlpha = 0;
 			collisionEnable = false;
 			currentActionState = NinjaState.TeleportIn;
 			SpawnGenericEffect(vfx_SmokeGrenade);
+					x = targetX;
+		y = targetY;
 		}
 	break;
 	
 	case NinjaState.TeleportIn:
-		x = targetX;
-			y = targetY;
+		//x = targetX;
+		//y = targetY;
 		teleportInWaitTimer += global.TimeFactor;
 		var _timeIsOver = CheckTimer(teleportInWaitTimer, teleportInWaitTime);
 		
@@ -44,6 +47,7 @@ switch (currentActionState)
 				drawAlpha = ApproachTimeFactor(drawAlpha, 1, _alphaStep);
 				drawScaleY = ApproachTimeFactor(drawScaleY, 1, _scaleStep);
 				drawScaleX = drawScaleY * teleportScaleX;
+				shadowAlpha = drawAlpha;
 			}
 			else
 			{
@@ -75,14 +79,16 @@ switch (currentActionState)
 		}
 		else
 		{
+			isShooting = false;
 			activeWeapon.shotCount = 0;
-			currentActionState = NinjaState.Idle;
+			currentActionState = NinjaState.Deactivation;
 		}
 	break;
 	
 	case NinjaState.Deactivation:
 		deactivationTimer += global.TimeFactor;
 		var _timeIsOver = CheckTimer(deactivationTimer, deactivationTime);
+		EnableFlash(c_fuchsia, 1);
 		
 		if (_timeIsOver)
 		{
