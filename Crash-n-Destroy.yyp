@@ -234,7 +234,7 @@
             "Key": "1afe7523-71ef-48e7-aa4d-335caab2dc4f",
             "Value": {
                 "id": "74b4709c-38f9-49ef-ab9e-ae77d742c984",
-                "resourcePath": "sprites\\spr_ammo\\spr_ammo.yy",
+                "resourcePath": "sprites\\spr_ultEnergy\\spr_ultEnergy.yy",
                 "resourceType": "GMSprite"
             }
         },
@@ -1098,7 +1098,7 @@
             "Key": "6d0c6c0d-8fb4-4df7-bdf2-37d5aa200980",
             "Value": {
                 "id": "67776a5d-5fa1-4468-9b4e-cce3f197bce9",
-                "resourcePath": "objects\\obj_Pickup_Scrap\\obj_Pickup_Scrap.yy",
+                "resourcePath": "objects\\obj_UltimatePickup\\obj_UltimatePickup.yy",
                 "resourceType": "GMObject"
             }
         },
@@ -1444,6 +1444,14 @@
                 "id": "b8126193-4514-43f8-a36a-2c54c9f5377a",
                 "resourcePath": "scripts\\DrawUnsortable\\DrawUnsortable.yy",
                 "resourceType": "GMScript"
+            }
+        },
+        {
+            "Key": "8737430e-d2e2-4916-94c7-21ea3242e096",
+            "Value": {
+                "id": "fc337b7f-5b2c-43f3-bb8b-9b7bc129db0f",
+                "resourcePath": "views\\8737430e-d2e2-4916-94c7-21ea3242e096.yy",
+                "resourceType": "GMFolder"
             }
         },
         {
@@ -2108,6 +2116,14 @@
                 "id": "d443c69f-828b-495e-8567-dcf7c2f6128b",
                 "resourcePath": "sprites\\spr_interfaceHitPointsFill\\spr_interfaceHitPointsFill.yy",
                 "resourceType": "GMSprite"
+            }
+        },
+        {
+            "Key": "c697a9df-adc3-4c02-a7b2-ca6552b40584",
+            "Value": {
+                "id": "8ce50657-6990-4d19-8569-92c9c3155540",
+                "resourcePath": "scripts\\StorePerksData\\StorePerksData.yy",
+                "resourceType": "GMScript"
             }
         },
         {
@@ -2869,7 +2885,8 @@
         "77192f17-439d-4514-8e3a-8745f8e0a42b",
         "a425260a-f0d1-47b3-ac19-802e4214e6a1",
         "49bf0704-d92b-4de3-abbc-ddd15a611398",
-        "8b6c5121-4244-4f17-8831-ad31141c5049"
+        "8b6c5121-4244-4f17-8831-ad31141c5049",
+        "c697a9df-adc3-4c02-a7b2-ca6552b40584"
     ],
     "tutorial": ""
 }

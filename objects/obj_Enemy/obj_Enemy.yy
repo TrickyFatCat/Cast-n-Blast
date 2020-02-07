@@ -282,7 +282,7 @@
             "rangeMin": 0,
             "resourceFilter": 1023,
             "value": "0",
-            "varName": "scrapNumber",
+            "varName": "ultimatePercent",
             "varType": 0
         },
         {

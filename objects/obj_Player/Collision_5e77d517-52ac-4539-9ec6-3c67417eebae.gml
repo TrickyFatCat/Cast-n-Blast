@@ -7,6 +7,6 @@ var _flashPower = 2;
 //Sequence
 EnableFlash(_flashColour, _flashPower);
 
-IncreaseScrap(other.scrapNumber);
+IncreaseUltimateEnergy(other.ultimateNumber);
 
 instance_destroy(other);

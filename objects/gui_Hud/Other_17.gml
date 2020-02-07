@@ -66,9 +66,11 @@ else
 // Ultimate
 _y = _y - _scaleY + 4;
 _value = global.Player.ultimateEnergy;
+var _maxValue = global.Player.ultimateMaxEnergy;
+var _percent = round(100 * (_value / _maxValue));
 
-DrawProgressBar(_x, _y, _scaleX, _scaleY, hudAlpha, c_black, ultimateColour, _value, global.Player.maxEnergy, false);
-DrawTextOutline(_x + _scaleX / 2, _y + _scaleY / 2, c_black, c_white, string(_value));
+DrawProgressBar(_x, _y, _scaleX, _scaleY, hudAlpha, c_black, ultimateColour, _value, _maxValue, false);
+DrawTextOutline(_x + _scaleX / 2, _y + _scaleY / 2, c_black, c_white, string(_percent));
 
 // Legs
 _scaleX = 96;

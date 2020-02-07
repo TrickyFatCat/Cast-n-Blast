@@ -188,7 +188,7 @@ ds_map_add(UltimateGunData, "spreadAngleMin",					0);
 ds_map_add(UltimateGunData, "spreadAngleMax",					0);
 //-----------------------------------------------------------------------------
 ds_map_add(UltimateGunData, "ammoID",							noone);
-ds_map_add(UltimateGunData, "shootAmmoCost",					1);
+ds_map_add(UltimateGunData, "shootAmmoCost",					10);
 //-----------------------------------------------------------------------------
 ds_map_add(UltimateGunData, "recoilPower",						0);
 ds_map_add(UltimateGunData, "recoilFactor",						0);

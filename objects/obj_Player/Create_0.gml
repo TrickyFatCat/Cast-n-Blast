@@ -155,7 +155,7 @@ enum UltimateState
 }
 
 ultimateState = UltimateState.Idle;
-ultimateEnergy = 100;
-ultimateMaxEnergy = 100;
+ultimateEnergy = 1000;
+ultimateMaxEnergy = 1000;
 ultimateDeactivaitionTime = 0.75;
 ultimateDeactivationProgress = 0;

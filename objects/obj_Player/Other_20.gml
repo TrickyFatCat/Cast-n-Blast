@@ -38,15 +38,10 @@ switch (ultimateState)
 		}
 		else
 		{
-			
-		
 			drawColour = c_white;
-		//currentScaleX = 1;
-		//drawScaleX = scaleSign * currentScaleX;
-		//drawScaleY = currentScaleX;
-		isInvulnerable = false;
-		ultimateState = UltimateState.Idle;
-		ultimateDeactivationProgress = 0;
+			isInvulnerable = false;
+			ultimateState = UltimateState.Idle;
+			ultimateDeactivationProgress = 0;
 		}
 	break;
 }
