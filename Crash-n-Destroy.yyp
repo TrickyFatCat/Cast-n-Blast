@@ -1935,6 +1935,14 @@
             }
         },
         {
+            "Key": "bb1aed78-5fb7-4dab-b688-85f00cdb5816",
+            "Value": {
+                "id": "c00314fe-6c46-4260-b899-3df3a28db376",
+                "resourcePath": "sprites\\spr_backWall\\spr_backWall.yy",
+                "resourceType": "GMSprite"
+            }
+        },
+        {
             "Key": "bb78ae19-6513-4400-bf46-b1a547aa6991",
             "Value": {
                 "id": "ac53bf2f-6558-44c3-aea2-c51a0d02228d",

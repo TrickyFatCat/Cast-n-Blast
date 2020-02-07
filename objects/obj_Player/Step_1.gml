@@ -91,6 +91,7 @@ if (!canRestore)
 		if (isOverheated)
 		{
 			isOverheated = false;
+			energy = 25;
 		}
 	}
 }
