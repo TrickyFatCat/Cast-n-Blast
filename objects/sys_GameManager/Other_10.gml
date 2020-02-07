@@ -12,6 +12,7 @@ switch global.CurrentInput
 		keyInteract = CheckGamepadButtonPressed(gp_face1);
 		keyShield = CheckGamepadButton(gp_shoulderl);
 		keyDash = CheckGamepadButton(gp_face1);
+		keyUltimateActivation = CheckGamepadButtonPressed(gp_stickl);
 		actionStopShooting = CheckGamepadButtonReleased(_primaryShoot) || CheckGamepadButtonReleased(_secondaryShoot);
 	break;
 	
@@ -29,6 +30,7 @@ switch global.CurrentInput
 		keyInteract = keyboard_check_pressed(ord("E"));
 		keyShield = keyboard_check(vk_shift);
 		keyDash = keyboard_check_pressed(vk_space);
+		keyUltimateActivation = keyboard_check_pressed(ord("Q"));
 		actionStopShooting = mouse_check_button_released(_primaryShoot) || mouse_check_button_released(_secondaryShoot);
 	break;
 }

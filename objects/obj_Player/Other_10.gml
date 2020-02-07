@@ -25,7 +25,10 @@ switch global.CurrentInput
 	break;
 }
 
-if (directionX != 0 || directionY != 0)
+var _ultimateIsTransitioning = ultimateState == UltimateState.Activation || ultimateState == UltimateState.Deactivation;
+var _isMoving = directionX != 0 || directionY != 0;
+
+if (_isMoving && !_ultimateIsTransitioning)
 {
 	currentState = PlayerState.Run;
 }

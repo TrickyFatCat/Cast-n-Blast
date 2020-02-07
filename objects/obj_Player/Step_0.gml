@@ -23,6 +23,7 @@ switch (currentState)
 		RotateWeapon;
 		ShootWeapon;
 		PullPickups;
+		ProcessUltimate;
 	break;
 	
 	case PlayerState.Run:
@@ -32,11 +33,13 @@ switch (currentState)
 		RotateWeapon;
 		ShootWeapon;
 		PullPickups;
+		ProcessUltimate;
 	break;
 	
 	case PlayerState.Dash:
 		MovePlayer;
 		PullPickups;
+		ProcessUltimate;
 	break;
 	
 	case PlayerState.Ultimate:

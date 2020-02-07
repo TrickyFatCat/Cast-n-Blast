@@ -13,7 +13,7 @@ if (global.TimeFactor > 0)
 		_shootKey = sys_GameManager.keyShootSemiAuto;
 	}
 	
-	if (_shootKey) && (energy != 0)
+	if (_shootKey && energy >= activeWeapon.shootAmmoCost && ultimateState == UltimateState.Idle)
 	{
 		activeWeapon.isShooting = true;
 	}
@@ -22,23 +22,31 @@ if (global.TimeFactor > 0)
 		activeWeapon.isShooting = false;
 	}
 	
-	var _shootKey;
+	var _secondaryShootKey;
 	
 	if (secondaryWeapon.isAuto == true)
 	{
-		_shootKey = sys_GameManager.keySecondaryShootAuto;
+		_secondaryShootKey = sys_GameManager.keySecondaryShootAuto;
 	}
 	else
 	{
-		_shootKey = sys_GameManager.keySecondaryShootSemiAuto;
+		_secondaryShootKey = sys_GameManager.keySecondaryShootSemiAuto;
 	}
 	
-	if (_shootKey) && (energy != 0)
+	if (_secondaryShootKey && energy >= secondaryWeapon.shootAmmoCost && ultimateState == UltimateState.Idle)
 	{
 		secondaryWeapon.isShooting = true;
 	}
 	else
 	{
 		secondaryWeapon.isShooting = false;
+	}
+	
+	if (sys_GameManager.keyUltimateActivation && ultimateEnergy == ultimateMaxEnergy && ultimateState == UltimateState.Idle)
+	{
+		isInvulnerable = true;
+		SpawnExplosion(x, y + 1, obj_PlayerUltimateExplosion, 1000, 128);
+		ApplyShakeToCamera(true, 3);
+		ultimateState = UltimateState.Activation;
 	}
 }

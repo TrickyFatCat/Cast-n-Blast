@@ -23,12 +23,15 @@ switch (currentActionState)
 			drawAlpha = 0;
 			shadowAlpha = 0;
 			collisionEnable = false;
-			currentActionState = NinjaState.TeleportIn;
+			currentActionState = NinjaState.ChangePosition;
 			SpawnGenericEffect(vfx_SmokeGrenade);
-			x = targetX;
-			y = targetY;
 		}
 	break;
+	
+	case NinjaState.ChangePosition:
+		x = targetX;
+		y = targetY;
+		currentActionState = NinjaState.TeleportIn;	break;
 	
 	case NinjaState.TeleportIn:
 		teleportInWaitTimer += global.TimeFactor;

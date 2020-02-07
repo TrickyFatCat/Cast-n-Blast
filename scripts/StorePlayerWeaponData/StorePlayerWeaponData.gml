@@ -152,7 +152,7 @@ ds_map_add(UltimateGunData, "currentShootMode",					ShootMode.Normal);
 //-----------------------------------------------------------------------------
 ds_map_add(UltimateGunData, "bulletObject",						obj_UltimateLaser);
 ds_map_add(UltimateGunData, "bulletNumber",						1);
-ds_map_add(UltimateGunData, "bulletSpawnPointOffset",			16);
+ds_map_add(UltimateGunData, "bulletSpawnPointOffset",			24);
 //-----------------------------------------------------------------------------
 ds_map_add(UltimateGunData, "damage",							1);
 ds_map_add(UltimateGunData, "heal",								0);
@@ -160,7 +160,7 @@ ds_map_add(UltimateGunData, "heal",								0);
 ds_map_add(UltimateGunData, "rateOfFireAccelerated",			false);
 ds_map_add(UltimateGunData, "rateOfFireIncrStep",				0);
 ds_map_add(UltimateGunData, "rateOfFireDecrStep",				0);
-ds_map_add(UltimateGunData, "rateOfFireMin",					20);
+ds_map_add(UltimateGunData, "rateOfFireMin",					50);
 ds_map_add(UltimateGunData, "rateOfFireMax",					0);
 //-----------------------------------------------------------------------------
 ds_map_add(UltimateGunData, "burstRate",						0);
@@ -177,7 +177,7 @@ ds_map_add(UltimateGunData, "chargeDamageFactorMax",			4);
 ds_map_add(UltimateGunData, "chargeHealFactorMax",				0);
 ds_map_add(UltimateGunData, "chargeRateFactorMax",				0);
 ds_map_add(UltimateGunData, "chargeBulletNumberFactorMax",		0);
-ds_map_add(UltimateGunData, "chargeVelocityFactorMax",			20);
+ds_map_add(UltimateGunData, "chargeVelocityFactorMax",			30);
 ds_map_add(UltimateGunData, "chargeShakeFactorMax",				1.25);
 //-----------------------------------------------------------------------------
 ds_map_add(UltimateGunData, "spreadIsDynamic",					false);
@@ -203,7 +203,7 @@ ds_map_add(UltimateGunData, "projectileBounceEnable",			false);
 ds_map_add(UltimateGunData, "projectileBounceFriction",			2);
 //-----------------------------------------------------------------------------
 ds_map_add(UltimateGunData, "isShackingCamera",					true);
-ds_map_add(UltimateGunData, "angularShakeEnabled",				false);
-ds_map_add(UltimateGunData, "shakeValue",						1);
+ds_map_add(UltimateGunData, "angularShakeEnabled",				true);
+ds_map_add(UltimateGunData, "shakeValue",						0.75);
 ds_map_add(UltimateGunData, "shotShakeFactor",					0.1);
 #endregion

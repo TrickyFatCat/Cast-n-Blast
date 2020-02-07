@@ -7,6 +7,7 @@ enum NinjaState
 {
 	Idle,
 	TeleportOut,
+	ChangePosition,
 	TeleportIn,
 	Activation,
 	Attack,

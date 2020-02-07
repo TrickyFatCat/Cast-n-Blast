@@ -19,8 +19,8 @@ var _step = CalculateStep(0.25);
 //}
 
 trancendenceProgress = ApproachTimeFactor(trancendenceProgress, 1, _step);
-drawScaleX = LerpTimeFactor(drawScaleX, targetScale, trancendenceProgress);
-drawScaleY = abs(drawScaleX);
+drawScaleY = ApproachTimeFactor(drawScaleY, targetScale, trancendenceProgress);
+drawScaleX = drawScaleY * scaleSign;
 		
 with (activeWeapon)
 {
@@ -30,7 +30,7 @@ with (activeWeapon)
 
 EnableFlash(c_red, 0.75)
 		
-if (drawScaleX >= targetScale)
+if (abs(drawScaleX) >= targetScale)
 {
 	var _trancendenceTime = SetTime(1);
 	

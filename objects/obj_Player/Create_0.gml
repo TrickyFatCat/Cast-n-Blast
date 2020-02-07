@@ -25,6 +25,9 @@ SetShadowParameters(true, _shadowScale);
 //Movement parameters
 directionX = 0;
 directionY = 0;
+currentScaleX = 1;
+currentScaleY = currentScaleX;
+scaleSign = 0;
 
 //Player states
 enum PlayerState
@@ -143,6 +146,16 @@ defaultMaxVelocity = maxVelocity;
 shadowAlpha = 0;
 
 // Ultimate
+enum UltimateState
+{
+	Idle,
+	Activation,
+	Process,
+	Deactivation
+}
 
-ultimateEnergy = 0;
+ultimateState = UltimateState.Idle;
+ultimateEnergy = 100;
 ultimateMaxEnergy = 100;
+ultimateDeactivaitionTime = 0.75;
+ultimateDeactivationProgress = 0;

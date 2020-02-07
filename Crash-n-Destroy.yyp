@@ -247,6 +247,14 @@
             }
         },
         {
+            "Key": "1c29d1eb-4e84-4da5-9b48-7d4fb901008e",
+            "Value": {
+                "id": "857be31b-1cd5-4572-afb7-3e671603c437",
+                "resourcePath": "objects\\obj_PlayerUltimateExplosion\\obj_PlayerUltimateExplosion.yy",
+                "resourceType": "GMObject"
+            }
+        },
+        {
             "Key": "1c3af9be-e83c-4a78-bdad-b1a1ab903df5",
             "Value": {
                 "id": "9061197b-1dee-4c86-a293-38c873d98ef4",
@@ -268,6 +276,14 @@
                 "id": "54ae849a-e09f-4b23-a303-78ac34b8239a",
                 "resourcePath": "objects\\obj_Base\\obj_Base.yy",
                 "resourceType": "GMObject"
+            }
+        },
+        {
+            "Key": "1fa4c36d-1b34-4c92-95ae-7b1a1ac48323",
+            "Value": {
+                "id": "bd550cf7-1d0f-4415-8d06-199094d2c7ca",
+                "resourcePath": "sprites\\spr_ultimateExplosion\\spr_ultimateExplosion.yy",
+                "resourceType": "GMSprite"
             }
         },
         {
@@ -2383,6 +2399,14 @@
             }
         },
         {
+            "Key": "df0c6c2a-af0c-433d-a079-bf867f57cd0d",
+            "Value": {
+                "id": "3df0b990-8759-48c7-ab45-8d6c4b7e8c78",
+                "resourcePath": "objects\\obj_PlayerDeathExplosion\\obj_PlayerDeathExplosion.yy",
+                "resourceType": "GMObject"
+            }
+        },
+        {
             "Key": "e01668b2-e3c0-4511-bb8a-ed0a1ae29dba",
             "Value": {
                 "id": "a38160a3-957b-4bbb-9a78-eab7c1a4e025",
@@ -2691,6 +2715,14 @@
             "Value": {
                 "id": "f2360df4-d353-4213-998b-e7cdfbec15e7",
                 "resourcePath": "views\\f9e4c1fc-ab5e-48d4-849a-b4b5b487da0d.yy",
+                "resourceType": "GMFolder"
+            }
+        },
+        {
+            "Key": "fa7e4cde-8f65-4d2d-905c-fb9b4d7bbb7c",
+            "Value": {
+                "id": "9393465b-ae9b-41d1-9a7e-219588da74c1",
+                "resourcePath": "views\\fa7e4cde-8f65-4d2d-905c-fb9b4d7bbb7c.yy",
                 "resourceType": "GMFolder"
             }
         },

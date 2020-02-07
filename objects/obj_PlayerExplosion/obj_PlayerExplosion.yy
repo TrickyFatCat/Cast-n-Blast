@@ -4,36 +4,7 @@
     "mvc": "1.0",
     "name": "obj_PlayerExplosion",
     "eventList": [
-        {
-            "id": "6cc50352-6002-46dc-98bd-758d93b3280c",
-            "modelName": "GMEvent",
-            "mvc": "1.0",
-            "IsDnD": false,
-            "collisionObjectId": "00000000-0000-0000-0000-000000000000",
-            "enumb": 1,
-            "eventtype": 3,
-            "m_owner": "209f7b3f-0c0c-4e46-93ab-d0274d6a2976"
-        },
-        {
-            "id": "3ec4dcb7-e4c1-4dce-9f01-c463a4ad88b2",
-            "modelName": "GMEvent",
-            "mvc": "1.0",
-            "IsDnD": false,
-            "collisionObjectId": "00000000-0000-0000-0000-000000000000",
-            "enumb": 0,
-            "eventtype": 0,
-            "m_owner": "209f7b3f-0c0c-4e46-93ab-d0274d6a2976"
-        },
-        {
-            "id": "09a76e3b-0649-4b82-b530-3bbf6d013683",
-            "modelName": "GMEvent",
-            "mvc": "1.0",
-            "IsDnD": false,
-            "collisionObjectId": "00000000-0000-0000-0000-000000000000",
-            "enumb": 7,
-            "eventtype": 7,
-            "m_owner": "209f7b3f-0c0c-4e46-93ab-d0274d6a2976"
-        }
+        
     ],
     "maskSpriteId": "00000000-0000-0000-0000-000000000000",
     "overriddenProperties": [

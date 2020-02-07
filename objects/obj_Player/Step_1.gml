@@ -19,11 +19,11 @@ WeaponAffect();
 
 shieldIsActive = sys_GameManager.keyShield && energy > 0;
 
-if (shieldIsActive)
+if (shieldIsActive && ultimateState == UltimateState.Idle)
 {
 	drawColour = c_aqua;
 }
-else
+else if (ultimateState == UltimateState.Idle)
 {
 	drawColour = c_white;
 }
@@ -65,7 +65,7 @@ if (energy < maxEnergy && canRestore)
 	}
 }
 
-if (energy == 0 && canRestore)
+if (energy <= 0 && canRestore)
 {
 	canRestore = false;
 	energyPenaltyTime = SetTime(overheatPenaltyTime);
@@ -95,5 +95,3 @@ if (!canRestore)
 		}
 	}
 }
-
-ultimateWeapon.isShooting = keyboard_check_direct(vk_alt);

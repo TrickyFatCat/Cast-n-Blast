@@ -17,10 +17,10 @@ if (global.TimeFactor > 0)
 	//Flip sprite
 	if (directionX < 0)
 	{
-		drawScaleX = -1;
+		drawScaleX = -1 * currentScaleX;
 	}
 	else if (directionX > 0)
 	{
-		drawScaleX = 1;
+		drawScaleX = 1 * currentScaleX;
 	}
 }

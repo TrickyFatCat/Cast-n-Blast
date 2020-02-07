@@ -7,6 +7,7 @@ keyMoveDown = false;
 keyMoveRight = false;
 keyShootAuto = false;
 keyShootSemiAuto = false;
+keyUltimateActivation = false;
 keySecondaryShootAuto = false;
 keySecondaryShootSemiAuto = false;
 keyInteract = false;

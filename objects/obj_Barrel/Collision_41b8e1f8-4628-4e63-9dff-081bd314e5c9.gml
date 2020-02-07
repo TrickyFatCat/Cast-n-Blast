@@ -1,4 +1,4 @@
-if (collisionEnable)
+if (collisionEnable && other.dealingDamage)
 {
 	if (!timerIsTicking) && currentState == EnemyState.Action
 	{

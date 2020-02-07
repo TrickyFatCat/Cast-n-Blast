@@ -39,3 +39,4 @@ jumpInitialState = noone;
 objectToSpawn = noone;
 
 isInvulnerable = false;
+collisionEnable = true;
