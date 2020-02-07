@@ -2,8 +2,10 @@
 
 var _damage = argument0;
 
-var _randomPart;
-var _targetPart;
+var _randomPart = 0;
+var _targetPart = 0;
+
+UpdateHitPoints();
 
 if (hitPoints > 0)
 {

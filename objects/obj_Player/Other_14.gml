@@ -29,4 +29,5 @@ if (global.TimeFactor > 0)
 	}
 	
 	secondaryWeapon.directionCurrent = activeWeapon.directionCurrent;
+	ultimateWeapon.directionCurrent = activeWeapon.directionCurrent;
 }

@@ -30,17 +30,7 @@ if (dealingDamage)
 					switch (object_index)
 					{
 						case obj_Player:
-							if (shieldIsActive)
-							{
-								DecreaseEnergy(round(other.damage * damageReductionFactor));
-							}
-							else
-							{
-								DealDamageToParts(other.damage);
-							}
-							EnableFlash(c_red, 1);
-							ApplyShakeToCamera(true, 1.25);
-							//PlaySound(sfx_impact);
+							CalculateDamageToPlayer(other.damage);
 						break;
 							
 						case obj_Barrel:

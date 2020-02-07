@@ -35,26 +35,21 @@ if (global.BattleState = BattleState.Intermission && _timeLeft != 0 && _enemyNum
 }
 
 // Energy
-var _borderColour = make_color_rgb(54, 43, 31);
+var _borderColour = c_black;//make_color_rgb(54, 43, 31);
 var _scaleX = 300;
-var _scaleY = 32;
+var _scaleY = 28;
 var _x = (guiWidth * 0.5) - (_scaleX / 2);
-var _y = guiHeight * 0.93;
-
+var _y = guiHeight * 0.95;
 var _value = global.Player.energy;
-var _maxValue = global.Player.maxEnergy;
-var _valueFactor = _value / _maxValue;
-var _fillScale = _scaleX * _valueFactor;
 
-DrawSlicedSprite(spr_interfaceAlpha, 0, _x, _y, _scaleX, _scaleY, _borderColour, hudAlpha);
-draw_sprite_ext(spr_interfaceEnergyFill, 0, _x, _y, _fillScale, 1, 0, c_white, hudAlpha);
-if (global.Player.isOverheated)
+if (!global.Player.isOverheated)
 {
-	var _overheatProgress = 1 - global.Player.energyPenaltyTimer / global.Player.energyPenaltyTime;
-	
-	draw_sprite_ext(spr_interfaceOverheatFill, 0, _x, _y, _scaleX * _overheatProgress, 1, 0, c_white, hudAlpha);
+	DrawProgressBar(_x, _y, _scaleX, _scaleY, hudAlpha, c_black, energyColour, _value, global.Player.maxEnergy, false);
 }
-DrawSlicedSprite(spr_interfaceBorder, 0, _x, _y, _scaleX, _scaleY, _borderColour, hudAlpha);
+else
+{
+	DrawProgressBar(_x, _y, _scaleX, _scaleY, hudAlpha, c_black, overheatColour, global.Player.energyPenaltyTimer, global.Player.energyPenaltyTime, true);
+}
 
 draw_set_font(fnt_small);
 SetAlign(fa_center, fa_center);
@@ -68,20 +63,20 @@ else
 	DrawTextOutline(_x + _scaleX / 2, _y + _scaleY / 2, c_black, c_red, "OVERHEAT");
 }
 
+// Ultimate
+_y = _y - _scaleY + 4;
+_value = global.Player.ultimateEnergy;
+
+DrawProgressBar(_x, _y, _scaleX, _scaleY, hudAlpha, c_black, ultimateColour, _value, global.Player.maxEnergy, false);
+DrawTextOutline(_x + _scaleX / 2, _y + _scaleY / 2, c_black, c_white, string(_value));
+
 // Legs
-var _scaleX = 96;
-var _scaleY = 32;
-var _x = guiWidth * 0.5 - 150;
-var _y = guiHeight * 0.87;
+_scaleX = 96;
+_x = guiWidth * 0.5 - 150;
+_y = _y - _scaleY + 4;
+_value = global.Player.legsHitPoints;
 
-var _value = global.Player.legsHitPoints;
-var _maxValue = global.Player.legsMaxHitPoints;
-var _valueFactor = _value / _maxValue;
-var _fillScale = _scaleX * _valueFactor;
-
-DrawSlicedSprite(spr_interfaceAlpha, 0, _x, _y, _scaleX, _scaleY, _borderColour, hudAlpha);
-draw_sprite_ext(spr_interfaceHitPointsFill, 0, _x, _y, _fillScale, 1, 0, c_white, hudAlpha);
-DrawSlicedSprite(spr_interfaceBorder, 0, _x, _y, _scaleX, _scaleY, _borderColour, hudAlpha);
+DrawProgressBar(_x, _y, _scaleX, _scaleY, hudAlpha, c_black, hitPointsColour, _value, global.Player.legsMaxHitPoints, false);
 
 draw_set_font(fnt_small);
 SetAlign(fa_center, fa_center);
@@ -89,19 +84,10 @@ DrawTextOutline(_x + _scaleX / 2, guiHeight * 0.845, c_black, c_white, "Legs");
 DrawTextOutline(_x + _scaleX / 2, _y + _scaleY / 2, c_black, c_white, string(_value));
 
 // Case
-var _scaleX = 96;
-var _scaleY = 32;
-var _x = guiWidth * 0.5 - 48;
-var _y = guiHeight * 0.87;
+_x = guiWidth * 0.5 - 48;
+_value = global.Player.caseHitPoints
 
-var _value = global.Player.caseHitPoints;
-var _maxValue = global.Player.caseMaxHitPoints;
-var _valueFactor = _value / _maxValue;
-var _fillScale = _scaleX * _valueFactor;
-
-DrawSlicedSprite(spr_interfaceAlpha, 0, _x, _y, _scaleX, _scaleY, _borderColour, hudAlpha);
-draw_sprite_ext(spr_interfaceHitPointsFill, 0, _x, _y, _fillScale, 1, 0, c_white, hudAlpha);
-DrawSlicedSprite(spr_interfaceBorder, 0, _x, _y, _scaleX, _scaleY, _borderColour, hudAlpha);
+DrawProgressBar(_x, _y, _scaleX, _scaleY, hudAlpha, c_black, hitPointsColour, _value, global.Player.caseMaxHitPoints, false);
 
 draw_set_font(fnt_small);
 SetAlign(fa_center, fa_center);
@@ -109,19 +95,10 @@ DrawTextOutline(_x + _scaleX / 2, guiHeight * 0.845, c_black, c_white, "Case");
 DrawTextOutline(_x + _scaleX / 2, _y + _scaleY / 2, c_black, c_white, string(_value));
 
 // Weapon
-var _scaleX = 96;
-var _scaleY = 32;
-var _x = guiWidth * 0.5 + 54;
-var _y = guiHeight * 0.87;
+_x = guiWidth * 0.5 + 54;
+_value = global.Player.weaponHitPoints
 
-var _value = global.Player.weaponHitPoints;
-var _maxValue = global.Player.weaponMaxHitPoints;
-var _valueFactor = _value / _maxValue;
-var _fillScale = _scaleX * _valueFactor;
-
-DrawSlicedSprite(spr_interfaceAlpha, 0, _x, _y, _scaleX, _scaleY, _borderColour, hudAlpha);
-draw_sprite_ext(spr_interfaceHitPointsFill, 0, _x, _y, _fillScale, 1, 0, c_white, hudAlpha);
-DrawSlicedSprite(spr_interfaceBorder, 0, _x, _y, _scaleX, _scaleY, _borderColour, hudAlpha);
+DrawProgressBar(_x, _y, _scaleX, _scaleY, hudAlpha, c_black, hitPointsColour, _value, global.Player.weaponMaxHitPoints, false);
 
 draw_set_font(fnt_small);
 SetAlign(fa_center, fa_center);

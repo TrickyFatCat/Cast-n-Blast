@@ -11,7 +11,8 @@
         "c62138c4-41ca-4503-b768-9f09e528de3b",
         "a34e2fc9-ebc9-425f-8e11-d698bb09ee5a",
         "ca04b068-7a2b-4586-92a7-413fae95e7d7",
-        "8cb03f72-bb50-4429-b885-5b4bde907954"
+        "8cb03f72-bb50-4429-b885-5b4bde907954",
+        "d0c77698-2736-4057-a7dc-8e1abca6921a"
     ],
     "filterType": "GMSprite",
     "folderName": "UserInterface",

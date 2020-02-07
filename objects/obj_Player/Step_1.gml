@@ -95,3 +95,5 @@ if (!canRestore)
 		}
 	}
 }
+
+ultimateWeapon.isShooting = keyboard_check_direct(vk_alt);

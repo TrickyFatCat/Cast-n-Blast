@@ -16,6 +16,7 @@ SetCameraMode(CameraMode.FollowPointPeek, obj_Player);
 #macro ExecutePlayerDeath	event_user(7)
 #macro ProcessSpawn			event_user(8)
 #macro ProcessDeath			event_user(9)
+#macro ProcessUltimate		event_user(10)
 
 //Set shadow
 var _shadowScale = 1;
@@ -34,6 +35,7 @@ enum PlayerState
 	Run,
 	Jump,
 	Dash,
+	Ultimate,
 	Transcendence,
 	Death
 }
@@ -62,7 +64,12 @@ activeWeapon.drawAlpha = 0;
 secondaryWeaponID = PlayerWeapon.ShotGun;
 secondaryWeapon = instance_create_layer(x, y, layer, obj_PlayerWeapon);
 SetPlayerWeapon(secondaryWeapon, secondaryWeaponID);
-activeWeapon.drawAlpha = 0;
+
+ultimateWeaponID = PlayerWeapon.UltimateGun;
+ultimateWeapon = instance_create_layer(x, y, layer, obj_PlayerWeapon);
+SetPlayerWeapon(ultimateWeapon, ultimateWeaponID);
+ultimateWeapon.isConsumingEnergy = false;
+ultimateWeapon.isConsumingUltimate = true;
 
 // Set player weapon ammo
 //SetAmmoParameters(activeWeapon.ammoID, global.PlayerAmmoData);
@@ -105,7 +112,7 @@ energyRestoreRate = 12;
 energyRestoreFactor = 1;
 energyDefaultRestoreRate = energyRestoreRate;
 energyRestoreTimer = 0;
-
+isOverheated = false;
 canRestore = true;
 energyPenaltyTime = 0;
 energyPenaltyTimer = 0;
@@ -113,9 +120,6 @@ shootPenaltyTime = 2;
 defaultShootPenaltyTime = shootPenaltyTime;
 overheatPenaltyTime = 4;
 defaultOverheatPenaltyTime = overheatPenaltyTime;
-
-ammoCurrent = energy;
-ammoCurrentMax = maxEnergy;
 
 // Shield
 shieldIsActive = false;
@@ -134,9 +138,11 @@ defaultRateOfFire = activeWeapon.rateOfFireCurrent;
 secondaryDefaultRateOfFire = secondaryWeapon.rateOfFireCurrent;
 secondaryDefaultSpreadAlgle = secondaryWeapon.spreadAngleCurrent;
 
-
-isOverheated = false;
-
 defaultMaxVelocity = maxVelocity;
 
 shadowAlpha = 0;
+
+// Ultimate
+
+ultimateEnergy = 0;
+ultimateMaxEnergy = 100;

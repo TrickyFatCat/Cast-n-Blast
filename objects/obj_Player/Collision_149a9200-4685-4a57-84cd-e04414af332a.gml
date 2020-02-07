@@ -8,18 +8,7 @@ var _flashPower = 1;
 
 if (!isInvulnerable)
 {
-	if (shieldIsActive)
-	{
-		DecreaseEnergy(ceil(other.damage * damageReductionFactor));
-		EnableFlash(c_blue, _flashPower);
-	}
-	else
-	{
-		DealDamageToParts(other.damage);
-		ApplyShakeToCamera(false, 1);
-		EnableFlash(c_red, _flashPower);
-	}
-	//PlaySound(sfx_impact);
+	CalculateDamageToPlayer(other.damage);
 	ChekPlayerHP;
 }
 

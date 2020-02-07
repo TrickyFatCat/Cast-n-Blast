@@ -1,6 +1,6 @@
 /// @description PlayerHealthPointsReader
 
-hitPoints = legsHitPoints + caseHitPoints + weaponHitPoints;
+UpdateHitPoints();
 
 if (hitPoints <= 0)
 {

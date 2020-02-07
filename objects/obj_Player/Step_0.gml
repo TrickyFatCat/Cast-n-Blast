@@ -34,12 +34,13 @@ switch (currentState)
 		PullPickups;
 	break;
 	
-	case PlayerState.Jump:
-	break;
-	
 	case PlayerState.Dash:
 		MovePlayer;
 		PullPickups;
+	break;
+	
+	case PlayerState.Ultimate:
+		
 	break;
 	
 	case PlayerState.Transcendence:

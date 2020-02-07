@@ -399,6 +399,22 @@
             }
         },
         {
+            "Key": "2e8fff0d-8527-4d40-8d2a-60dac0d3c84f",
+            "Value": {
+                "id": "0aecbdca-4db6-4383-b16d-73fc8d88f71f",
+                "resourcePath": "scripts\\DecreaseUltimateEnergy\\DecreaseUltimateEnergy.yy",
+                "resourceType": "GMScript"
+            }
+        },
+        {
+            "Key": "2f5af4dd-8816-4625-a827-4916047b6d6f",
+            "Value": {
+                "id": "1d352ca5-945f-4236-b08a-fd0ef9e84f46",
+                "resourcePath": "scripts\\DrawProgressBar\\DrawProgressBar.yy",
+                "resourceType": "GMScript"
+            }
+        },
+        {
             "Key": "30712e2e-c1b3-4611-87f5-dc3fada09536",
             "Value": {
                 "id": "dd92de7d-d997-4b8c-a81c-4c454419ea5a",
@@ -548,6 +564,14 @@
                 "id": "adc02a91-02f8-479a-85b3-62b4e82e257f",
                 "resourcePath": "sprites\\spr_PlayerExplosion\\spr_PlayerExplosion.yy",
                 "resourceType": "GMSprite"
+            }
+        },
+        {
+            "Key": "3ed6989c-3758-4baa-a11b-d3cfa5ee3d24",
+            "Value": {
+                "id": "80b01300-a5a6-4ef8-a3b0-65714d5bb5c1",
+                "resourcePath": "scripts\\CalculateDamageToPlayer\\CalculateDamageToPlayer.yy",
+                "resourceType": "GMScript"
             }
         },
         {
@@ -1095,6 +1119,14 @@
             }
         },
         {
+            "Key": "7020ba52-84d4-41ab-9f7f-333adb2360b7",
+            "Value": {
+                "id": "cbb8bdfa-6a82-49cc-b64a-ce07a25d79ed",
+                "resourcePath": "objects\\obj_UltimateLaser\\obj_UltimateLaser.yy",
+                "resourceType": "GMObject"
+            }
+        },
+        {
             "Key": "7230f7a6-e9e3-490b-9388-db85e06d4aee",
             "Value": {
                 "id": "f5eeab36-7496-4861-b67f-06ba83716817",
@@ -1212,6 +1244,14 @@
                 "id": "444afe5a-6547-44d4-acc5-eb79c8c489a4",
                 "resourcePath": "shaders\\shd_Outline\\shd_Outline.yy",
                 "resourceType": "GMShader"
+            }
+        },
+        {
+            "Key": "7bbe45eb-c7dc-4633-9b71-5413733095ee",
+            "Value": {
+                "id": "f86fa09f-b53c-4ea1-ad10-a6a1008433eb",
+                "resourcePath": "views\\7bbe45eb-c7dc-4633-9b71-5413733095ee.yy",
+                "resourceType": "GMFolder"
             }
         },
         {
@@ -1855,6 +1895,14 @@
             }
         },
         {
+            "Key": "b28d0bc6-7760-4e6e-a988-51ea6c2b15ec",
+            "Value": {
+                "id": "57b512ed-85c1-41e7-a695-aaf671718abb",
+                "resourcePath": "scripts\\IncreaseUltimateEnergy\\IncreaseUltimateEnergy.yy",
+                "resourceType": "GMScript"
+            }
+        },
+        {
             "Key": "b2e44020-7ca8-470f-b1a4-0e59e6110502",
             "Value": {
                 "id": "e8795d59-30ad-430d-920a-37c09d590422",
@@ -2119,6 +2167,14 @@
             }
         },
         {
+            "Key": "d0c77698-2736-4057-a7dc-8e1abca6921a",
+            "Value": {
+                "id": "cbf00481-ede4-40b4-b769-fe1dfa0506e4",
+                "resourcePath": "sprites\\spr_interfaceFill\\spr_interfaceFill.yy",
+                "resourceType": "GMSprite"
+            }
+        },
+        {
             "Key": "d0cbdfde-0337-43a6-a448-4b4d1dd27b4d",
             "Value": {
                 "id": "cc68678f-31cf-4d7d-9c49-ffdaa8289fd9",
@@ -2196,6 +2252,14 @@
                 "id": "9b1b20e4-dbe7-4454-b63e-b0fa5b05283f",
                 "resourcePath": "objects\\obj_BaseInteractive\\obj_BaseInteractive.yy",
                 "resourceType": "GMObject"
+            }
+        },
+        {
+            "Key": "d4e31058-8054-483e-9ac6-da815f4c96f8",
+            "Value": {
+                "id": "f4307074-7d24-440e-91e0-2da4053753cd",
+                "resourcePath": "scripts\\UpdateHitPoints\\UpdateHitPoints.yy",
+                "resourceType": "GMScript"
             }
         },
         {
@@ -2725,6 +2789,7 @@
         "31fb2d91-d553-48dd-a602-d1e300e1f311",
         "4a3901ed-ddac-45bb-94fb-b76493d4883d",
         "ece9170c-ca52-4d11-a924-177ff3805f56",
+        "2f5af4dd-8816-4625-a827-4916047b6d6f",
         "54ee8d9d-e5ba-443b-913c-12a1ea553ea0",
         "ae5cc228-1391-4d60-b019-fc13fd13165a",
         "a63c70aa-8066-4814-aa08-055451bb260b",
@@ -2742,9 +2807,13 @@
         "30712e2e-c1b3-4611-87f5-dc3fada09536",
         "10c47987-e609-43f2-8074-96d977ac5217",
         "49d6b2b8-b640-4912-a714-6627da7b2c73",
+        "b28d0bc6-7760-4e6e-a988-51ea6c2b15ec",
+        "2e8fff0d-8527-4d40-8d2a-60dac0d3c84f",
         "99b709ac-a93b-4d40-acac-09026a7c8844",
         "20cdd0bc-00cf-48f8-974a-7c3fc97a7bd2",
         "fbb80ac4-5cc9-4ddc-9fb6-a23f3cbe5ff0",
+        "d4e31058-8054-483e-9ac6-da815f4c96f8",
+        "3ed6989c-3758-4baa-a11b-d3cfa5ee3d24",
         "afdc448b-1fc2-40be-a8c9-30bc518b0df6",
         "409e8975-f478-4087-934a-fe321860e0ff",
         "6a0f4970-678d-42e5-a626-e538aa3ca48f",

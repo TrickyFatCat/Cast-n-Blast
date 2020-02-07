@@ -1,7 +1,17 @@
 // Inherit the parent event
 event_inherited();
 
-with (owner)
+if (isConsumingEnergy)
 {
-	DecreaseEnergy(other.shootAmmoCost);
+	with (owner)
+	{
+		DecreaseEnergy(other.shootAmmoCost);
+	}
+}
+else if (isConsumingUltimate)
+{
+	with (owner)
+	{
+		DecreaseUltimateEnergy(other.shootAmmoCost);
+	}
 }
