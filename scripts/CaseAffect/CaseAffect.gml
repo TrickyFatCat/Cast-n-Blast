@@ -18,7 +18,7 @@ if (energy > maxEnergy)
 {
 	energy = maxEnergy;
 }
-energyRestoreRate = energyDefaultRestoreRate * energyRestoreFactor * caseFactor;
+energyRestoreRate = defaultEnergyRestoreRate * energyRestoreFactor * caseFactor;
 shootPenaltyTime = defaultShootPenaltyTime - (defaultShootPenaltyTime * _rawFacor);
 overheatPenaltyTime = defaultOverheatPenaltyTime - (defaultOverheatPenaltyTime * _rawFacor);
-damageReductionFactor = defaultDamageReductionFactor - (defaultDamageReductionFactor * _rawFacor);
+shieldFactor = defaultShieldFactor - (defaultShieldFactor * _rawFacor);

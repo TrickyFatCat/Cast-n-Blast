@@ -22,7 +22,7 @@ ds_map_add(PlasmaGunData, "bulletObject",					obj_PProjectile_Normal);
 ds_map_add(PlasmaGunData, "bulletNumber",					1);
 ds_map_add(PlasmaGunData, "bulletSpawnPointOffset",			32);
 //-----------------------------------------------------------------------------
-ds_map_add(PlasmaGunData, "damage",							1);
+ds_map_add(PlasmaGunData, "damage",							10);
 ds_map_add(PlasmaGunData, "heal",							0);
 //-----------------------------------------------------------------------------
 ds_map_add(PlasmaGunData, "rateOfFireAccelerated",			false);
@@ -52,7 +52,7 @@ ds_map_add(PlasmaGunData, "spreadIsDynamic",				false);
 ds_map_add(PlasmaGunData, "spreadIsUniform",				false);
 ds_map_add(PlasmaGunData, "spreadAngleIncrFactor",			0.2);
 ds_map_add(PlasmaGunData, "spreadAngleDecrFactor",			0.0075);
-ds_map_add(PlasmaGunData, "spreadAngleMin",					0);
+ds_map_add(PlasmaGunData, "spreadAngleMin",					15);
 ds_map_add(PlasmaGunData, "spreadAngleMax",					0);
 //-----------------------------------------------------------------------------
 ds_map_add(PlasmaGunData, "ammoID",							noone);
@@ -88,7 +88,7 @@ ds_map_add(ShotGunData, "bulletObject",						obj_PProjectile_Normal);
 ds_map_add(ShotGunData, "bulletNumber",						5);
 ds_map_add(ShotGunData, "bulletSpawnPointOffset",			32);
 //-----------------------------------------------------------------------------
-ds_map_add(ShotGunData, "damage",							1);
+ds_map_add(ShotGunData, "damage",							10);
 ds_map_add(ShotGunData, "heal",								0);
 //-----------------------------------------------------------------------------
 ds_map_add(ShotGunData, "rateOfFireAccelerated",			false);
@@ -118,7 +118,7 @@ ds_map_add(ShotGunData, "spreadIsDynamic",					false);
 ds_map_add(ShotGunData, "spreadIsUniform",					true);
 ds_map_add(ShotGunData, "spreadAngleIncrFactor",			0.2);
 ds_map_add(ShotGunData, "spreadAngleDecrFactor",			0.0075);
-ds_map_add(ShotGunData, "spreadAngleMin",					30);
+ds_map_add(ShotGunData, "spreadAngleMin",					35);
 ds_map_add(ShotGunData, "spreadAngleMax",					0);
 //-----------------------------------------------------------------------------
 ds_map_add(ShotGunData, "ammoID",							noone);
@@ -154,7 +154,7 @@ ds_map_add(UltimateGunData, "bulletObject",						obj_UltimateLaser);
 ds_map_add(UltimateGunData, "bulletNumber",						1);
 ds_map_add(UltimateGunData, "bulletSpawnPointOffset",			24);
 //-----------------------------------------------------------------------------
-ds_map_add(UltimateGunData, "damage",							1);
+ds_map_add(UltimateGunData, "damage",							10);
 ds_map_add(UltimateGunData, "heal",								0);
 //-----------------------------------------------------------------------------
 ds_map_add(UltimateGunData, "rateOfFireAccelerated",			false);

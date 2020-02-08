@@ -28,6 +28,8 @@ directionY = 0;
 currentScaleX = 1;
 currentScaleY = currentScaleX;
 scaleSign = 0;
+defaultMaxVelocity = maxVelocity;
+shadowAlpha = 0;
 
 //Player states
 enum PlayerState
@@ -50,6 +52,8 @@ drawAlpha = 0;
 previousState = currentState;
 targetScale = 2;
 trancendenceTimer = 0;
+hitPoints = maxHitPoints;
+defaultMaxHitPoints = maxHitPoints;
 
 // PickUp magnet paramentrs
 pullDistance = 64;
@@ -57,17 +61,27 @@ pullVelocityMax = 8;
 pullAcceleration = 0.25;
 pickupList = ds_list_create();
 
-// Set player weapon
+// MainWeapon
 var _lastIndex = array_length_1d(global.PlayerWeaponData) - 1;
 weaponID = PlayerWeapon.PlasmaGun;
 activeWeapon = instance_create_layer(x, y, layer, obj_PlayerWeapon);
 SetPlayerWeapon(activeWeapon, weaponID);
 activeWeapon.drawAlpha = 0;
 
+mainDefaultDamage = activeWeapon.damage;
+mainDefaultRof = activeWeapon.rateOfFireCurrent;
+mainDefaultSpread = activeWeapon.spreadAngleCurrent;
+
+// SecondaryWeapon
 secondaryWeaponID = PlayerWeapon.ShotGun;
 secondaryWeapon = instance_create_layer(x, y, layer, obj_PlayerWeapon);
 SetPlayerWeapon(secondaryWeapon, secondaryWeaponID);
 
+secondaryDefaultBullets = secondaryWeapon.bulletNumber;
+secondaryDefaultRof = secondaryWeapon.rateOfFireCurrent;
+secondaryDefaultSpread = secondaryWeapon.spreadAngleCurrent;
+
+// UltimateWeapon
 ultimateWeaponID = PlayerWeapon.UltimateGun;
 ultimateWeapon = instance_create_layer(x, y, layer, obj_PlayerWeapon);
 SetPlayerWeapon(ultimateWeapon, ultimateWeaponID);
@@ -77,9 +91,6 @@ ultimateWeapon.isConsumingUltimate = true;
 // Set player weapon ammo
 //SetAmmoParameters(activeWeapon.ammoID, global.PlayerAmmoData);
 
-// Wrap
-spawnX = 0;
-spawnY = 0;
 
 // Scrap
 global.Scrap = 9000;
@@ -91,29 +102,13 @@ enum PartType
 	Weapon
 }
 
-// Legs
-legsLevel = 0;
-legsMaxLevel = GetPartMaxLevel(PartType.Legs);
-SetLegs(legsLevel);
-
-// Case
-caseLevel = 0;
-caseMaxLevel = GetPartMaxLevel(PartType.Case);
-SetCase(caseLevel);
-
-// Case
-weaponLevel = 0;
-weaponMaxLevel = GetPartMaxLevel(PartType.Weapon);
-SetWeapon(weaponLevel);
-
-UpdateMaxHitPoints();
 // Energy
 maxEnergy = 100;
 defaultMaxEnergy = maxEnergy;
-energy = 1;
+energy = maxEnergy;
 energyRestoreRate = 12;
 energyRestoreFactor = 1;
-energyDefaultRestoreRate = energyRestoreRate;
+defaultEnergyRestoreRate = energyRestoreRate;
 energyRestoreTimer = 0;
 isOverheated = false;
 canRestore = true;
@@ -126,10 +121,9 @@ defaultOverheatPenaltyTime = overheatPenaltyTime;
 
 // Shield
 shieldIsActive = false;
-damageReductionFactor = 1;
-defaultDamageReductionFactor = damageReductionFactor;
-shieldFactor = 0.5;
+shieldFactor = 1;
 defaultShieldFactor = shieldFactor;
+shieldRestoreFactor = 0.5;
 
 // Dash
 deafaultDashVelocity = dashVelocity;
@@ -137,13 +131,8 @@ dashCost = 25;
 defaultDashCost = dashCost;
 
 // Weapon affects
-defaultRateOfFire = activeWeapon.rateOfFireCurrent;
 secondaryDefaultRateOfFire = secondaryWeapon.rateOfFireCurrent;
 secondaryDefaultSpreadAlgle = secondaryWeapon.spreadAngleCurrent;
-
-defaultMaxVelocity = maxVelocity;
-
-shadowAlpha = 0;
 
 // Ultimate
 enum UltimateState
@@ -157,5 +146,8 @@ enum UltimateState
 ultimateState = UltimateState.Idle;
 ultimateEnergy = 1000;
 ultimateMaxEnergy = 1000;
+defaultUltimateMaxEnergy = ultimateMaxEnergy;
 ultimateDeactivaitionTime = 0.75;
 ultimateDeactivationProgress = 0;
+ultimateGainFactor = 1;
+defaultUltimateGainFactor = ultimateGainFactor;

@@ -95,11 +95,27 @@
             }
         },
         {
+            "Key": "0c9b9ae6-dce9-4f8a-9174-63f8fc80cc90",
+            "Value": {
+                "id": "507e6dfe-8493-45b5-a543-fe80e02bed4a",
+                "resourcePath": "scripts\\CalculatePerkFactor\\CalculatePerkFactor.yy",
+                "resourceType": "GMScript"
+            }
+        },
+        {
             "Key": "0cacabb7-f26b-45f1-8967-b48c6cd4c95f",
             "Value": {
                 "id": "6b3bb717-b53e-49a3-8e16-cec208818427",
                 "resourcePath": "objects\\obj_Stackable\\obj_Stackable.yy",
                 "resourceType": "GMObject"
+            }
+        },
+        {
+            "Key": "0d2b8dbc-0be6-4ae8-b554-65cce50bdcd0",
+            "Value": {
+                "id": "bbd2eb4c-a300-4874-9940-9d56a8fae59d",
+                "resourcePath": "scripts\\GetPerkFactor\\GetPerkFactor.yy",
+                "resourceType": "GMScript"
             }
         },
         {
@@ -164,6 +180,14 @@
                 "id": "5befa9d0-e181-4140-ba20-95c55a0182d2",
                 "resourcePath": "views\\12873e87-fef9-490d-82d7-f6d02e528ef7.yy",
                 "resourceType": "GMFolder"
+            }
+        },
+        {
+            "Key": "137ae4e9-55cc-4005-9272-a3d276a1af46",
+            "Value": {
+                "id": "0a4a4afc-740e-437a-895d-0c5c6b0ebfd7",
+                "resourcePath": "scripts\\GetPerkLevel\\GetPerkLevel.yy",
+                "resourceType": "GMScript"
             }
         },
         {
@@ -463,6 +487,14 @@
             }
         },
         {
+            "Key": "32f5f6d1-2cc1-4de2-969b-748e213f69f5",
+            "Value": {
+                "id": "a3b3938e-2b1e-4976-8d1a-6c56e61813c7",
+                "resourcePath": "scripts\\DecreaseParameter\\DecreaseParameter.yy",
+                "resourceType": "GMScript"
+            }
+        },
+        {
             "Key": "32fede4a-29af-42fa-9d85-edb6b2a4f8ee",
             "Value": {
                 "id": "85227044-82c2-463c-8940-64625c0083bb",
@@ -586,7 +618,7 @@
             "Key": "3ed6989c-3758-4baa-a11b-d3cfa5ee3d24",
             "Value": {
                 "id": "80b01300-a5a6-4ef8-a3b0-65714d5bb5c1",
-                "resourcePath": "scripts\\CalculateDamageToPlayer\\CalculateDamageToPlayer.yy",
+                "resourcePath": "scripts\\DealDamageToPlayer\\DealDamageToPlayer.yy",
                 "resourceType": "GMScript"
             }
         },
@@ -1095,6 +1127,14 @@
             }
         },
         {
+            "Key": "6c7b9f3c-0cdc-4b43-a73b-e0d88cefd918",
+            "Value": {
+                "id": "c91929b2-1d1d-4c8a-b4c4-a3cfe46e7f9b",
+                "resourcePath": "scripts\\IncreasePerkLevel\\IncreasePerkLevel.yy",
+                "resourceType": "GMScript"
+            }
+        },
+        {
             "Key": "6d0c6c0d-8fb4-4df7-bdf2-37d5aa200980",
             "Value": {
                 "id": "67776a5d-5fa1-4468-9b4e-cce3f197bce9",
@@ -1156,6 +1196,14 @@
                 "id": "8730601b-5208-47f4-91fc-b14337a8c89c",
                 "resourcePath": "views\\72d46226-603d-49eb-b803-82a7f291277a.yy",
                 "resourceType": "GMFolder"
+            }
+        },
+        {
+            "Key": "72e03c66-584d-44e5-a1f6-6cefd37ad2f2",
+            "Value": {
+                "id": "c8ad106b-7c6b-476f-99ad-bf75a5fc2e39",
+                "resourcePath": "scripts\\ChooseRandomPerk\\ChooseRandomPerk.yy",
+                "resourceType": "GMScript"
             }
         },
         {
@@ -1316,6 +1364,14 @@
                 "id": "bb0a956d-f2d3-454b-beb5-68270c0a344b",
                 "resourcePath": "views\\7f920a97-2516-46f8-b1c5-75e3494b12b6.yy",
                 "resourceType": "GMFolder"
+            }
+        },
+        {
+            "Key": "7fb41e66-e583-4314-b55e-213dde6181b5",
+            "Value": {
+                "id": "ec740813-3440-4dd0-8528-4ee99523c836",
+                "resourcePath": "scripts\\IncreaseParameter\\IncreaseParameter.yy",
+                "resourceType": "GMScript"
             }
         },
         {
@@ -2279,6 +2335,14 @@
             }
         },
         {
+            "Key": "d4447017-70f0-4d81-b3a8-c4846c54553e",
+            "Value": {
+                "id": "e4229dfb-8cb4-40bd-958a-3aa0233cb1ba",
+                "resourcePath": "objects\\obj_PerkActivator\\obj_PerkActivator.yy",
+                "resourceType": "GMObject"
+            }
+        },
+        {
             "Key": "d46cdd21-54e4-4fe7-b9fc-99f81f6d6def",
             "Value": {
                 "id": "9b1b20e4-dbe7-4454-b63e-b0fa5b05283f",
@@ -2679,6 +2743,14 @@
             }
         },
         {
+            "Key": "f4eaf9c0-98af-4acd-93f5-0110fa5a03d6",
+            "Value": {
+                "id": "0d0ac878-8b83-4059-ae0d-9e24c9531463",
+                "resourcePath": "scripts\\GetPerkMaxLevel\\GetPerkMaxLevel.yy",
+                "resourceType": "GMScript"
+            }
+        },
+        {
             "Key": "f6831895-0f2c-4cc1-b9cd-4fc29edb15d1",
             "Value": {
                 "id": "54e7f8c1-1394-4168-bf55-80691acfedb9",
@@ -2886,7 +2958,15 @@
         "a425260a-f0d1-47b3-ac19-802e4214e6a1",
         "49bf0704-d92b-4de3-abbc-ddd15a611398",
         "8b6c5121-4244-4f17-8831-ad31141c5049",
-        "c697a9df-adc3-4c02-a7b2-ca6552b40584"
+        "c697a9df-adc3-4c02-a7b2-ca6552b40584",
+        "6c7b9f3c-0cdc-4b43-a73b-e0d88cefd918",
+        "137ae4e9-55cc-4005-9272-a3d276a1af46",
+        "f4eaf9c0-98af-4acd-93f5-0110fa5a03d6",
+        "0d2b8dbc-0be6-4ae8-b554-65cce50bdcd0",
+        "72e03c66-584d-44e5-a1f6-6cefd37ad2f2",
+        "0c9b9ae6-dce9-4f8a-9174-63f8fc80cc90",
+        "7fb41e66-e583-4314-b55e-213dde6181b5",
+        "32f5f6d1-2cc1-4de2-969b-748e213f69f5"
     ],
     "tutorial": ""
 }

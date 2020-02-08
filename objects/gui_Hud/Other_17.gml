@@ -72,37 +72,10 @@ var _percent = round(100 * (_value / _maxValue));
 DrawProgressBar(_x, _y, _scaleX, _scaleY, hudAlpha, c_black, ultimateColour, _value, _maxValue, false);
 DrawTextOutline(_x + _scaleX / 2, _y + _scaleY / 2, c_black, c_white, string(_percent));
 
-// Legs
-_scaleX = 96;
-_x = guiWidth * 0.5 - 150;
 _y = _y - _scaleY + 4;
-_value = global.Player.legsHitPoints;
+_value = global.Player.hitPoints;
+var _maxValue = global.Player.maxHitPoints;
+var _percent = round(100 * (_value / _maxValue));
 
-DrawProgressBar(_x, _y, _scaleX, _scaleY, hudAlpha, c_black, hitPointsColour, _value, global.Player.legsMaxHitPoints, false);
-
-draw_set_font(fnt_small);
-SetAlign(fa_center, fa_center);
-DrawTextOutline(_x + _scaleX / 2, guiHeight * 0.845, c_black, c_white, "Legs");
-DrawTextOutline(_x + _scaleX / 2, _y + _scaleY / 2, c_black, c_white, string(_value));
-
-// Case
-_x = guiWidth * 0.5 - 48;
-_value = global.Player.caseHitPoints
-
-DrawProgressBar(_x, _y, _scaleX, _scaleY, hudAlpha, c_black, hitPointsColour, _value, global.Player.caseMaxHitPoints, false);
-
-draw_set_font(fnt_small);
-SetAlign(fa_center, fa_center);
-DrawTextOutline(_x + _scaleX / 2, guiHeight * 0.845, c_black, c_white, "Case");
-DrawTextOutline(_x + _scaleX / 2, _y + _scaleY / 2, c_black, c_white, string(_value));
-
-// Weapon
-_x = guiWidth * 0.5 + 54;
-_value = global.Player.weaponHitPoints
-
-DrawProgressBar(_x, _y, _scaleX, _scaleY, hudAlpha, c_black, hitPointsColour, _value, global.Player.weaponMaxHitPoints, false);
-
-draw_set_font(fnt_small);
-SetAlign(fa_center, fa_center);
-DrawTextOutline(_x + _scaleX / 2, guiHeight * 0.845, c_black, c_white, "Weapon");
+DrawProgressBar(_x, _y, _scaleX, _scaleY, hudAlpha, c_black, hitPointsColour, _value, _maxValue, false);
 DrawTextOutline(_x + _scaleX / 2, _y + _scaleY / 2, c_black, c_white, string(_value));

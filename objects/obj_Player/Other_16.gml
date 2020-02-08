@@ -1,7 +1,5 @@
 /// @description PlayerHealthPointsReader
 
-UpdateHitPoints();
-
 if (hitPoints <= 0)
 {
 	switch (currentState)

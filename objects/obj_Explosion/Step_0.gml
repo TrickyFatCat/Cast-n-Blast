@@ -30,7 +30,7 @@ if (dealingDamage)
 					switch (object_index)
 					{
 						case obj_Player:
-							CalculateDamageToPlayer(other.damage);
+							DealDamageToPlayer(other.damage);
 						break;
 							
 						case obj_Barrel:

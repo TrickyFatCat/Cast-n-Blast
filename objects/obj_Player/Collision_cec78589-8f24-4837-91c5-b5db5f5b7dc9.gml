@@ -2,6 +2,6 @@
 
 if (!isInvulnerable) && (other.dealingDamage)
 {
-	CalculateDamageToPlayer(other.damage);
+	DealDamageToPlayer(other.damage);
 	ChekPlayerHP;
 }

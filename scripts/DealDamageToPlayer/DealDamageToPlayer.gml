@@ -4,13 +4,13 @@ var _damage = argument0;
 
 if (shieldIsActive)
 {
-	DecreaseEnergy(round(_damage * damageReductionFactor));
+	DecreaseEnergy(round(_damage * shieldFactor));
 	EnableFlash(c_blue, 1);
 	//PlaySound(sfx_impact);
 }
 else if (hitPoints > 0)
 {
-	DealDamageToParts(_damage);
+	DealDamage(_damage);
 	EnableFlash(c_red, 1);
 	ApplyShakeToCamera(true, 1.25);
 	//PlaySound(sfx_impact);

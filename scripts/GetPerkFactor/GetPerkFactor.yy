@@ -1,8 +1,8 @@
 {
-    "id": "3ed6989c-3758-4baa-a11b-d3cfa5ee3d24",
+    "id": "0d2b8dbc-0be6-4ae8-b554-65cce50bdcd0",
     "modelName": "GMScript",
     "mvc": "1.0",
-    "name": "CalculateDamageToPlayer",
+    "name": "GetPerkFactor",
     "IsCompatibility": false,
     "IsDnD": false
 }

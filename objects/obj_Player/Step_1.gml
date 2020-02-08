@@ -13,10 +13,6 @@ else
 	activeWeapon.laserSightEnabled = false;
 }
 
-LegsAffect();
-CaseAffect();
-WeaponAffect();
-
 shieldIsActive = sys_GameManager.keyShield && energy > 0;
 
 if (shieldIsActive && ultimateState == UltimateState.Idle)
@@ -47,10 +43,10 @@ if (sys_GameManager.actionStopShooting && canRestore && energy > 0)
 
 if (shieldIsActive && (!_keyShoot))
 {
-	energyRestoreFactor = shieldFactor;
+	energyRestoreFactor = shieldRestoreFactor;
 }
 
-var _energyRestoreDelay = SetTime(1 / energyRestoreRate);
+var _energyRestoreDelay = SetTime(1 / (energyRestoreRate * energyRestoreFactor));
 
 if (energy < maxEnergy && canRestore)
 {
@@ -60,7 +56,6 @@ if (energy < maxEnergy && canRestore)
 	if (_restoreIsReady)
 	{
 		IncreaseEnergy(1);
-		ammoCurrent = energy;
 		energyRestoreTimer = 0;
 	}
 }
