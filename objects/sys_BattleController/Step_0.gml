@@ -44,6 +44,7 @@ switch (global.BattleState)
 		if (_waveTimeIsOver)
 		{
 			global.BattleState = BattleState.Intermission;
+			SetActivePerks();
 			ActivateInteractiveObjects();
 		}
 	break;
@@ -66,7 +67,6 @@ switch (global.BattleState)
 				DeactivateInteractiveObjects();
 				CalculateDifficulty();
 				ChangeSpawnSettings();
-				SetActivePerks();
 			}
 		}
 	break;
