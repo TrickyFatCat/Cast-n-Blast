@@ -28,10 +28,29 @@ switch (global.BattleState)
 			//	audio_play_sound(snd_enter_battle, 1000, false);
 			//}
 		}
+		
+		if (sys_BattleController.randomPerk != noone)
+		{
+			showRandomPerkTimer += global.TimeFactor;
+	
+			var _timeIsOver = CheckTimer(showRandomPerkTimer, showRandomPerkTime);
+	
+			if (!_timeIsOver)
+			{
+				showRandomPerk = true;
+			}
+			else
+			{
+				showRandomPerk = false;
+			}
+		}
+			
 	break;
 	
 	case BattleState.Active:
 		#region Texts
+		showRandomPerkTimer = 0;
+		
 		if (showStartBattleText) 
 		{
 			var _textTime = SetTime(1.25);

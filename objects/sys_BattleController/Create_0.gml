@@ -2,16 +2,17 @@ battleStartTime = SetTime(5);
 battleStartTimer = 0;
 global.PlayTime = 0;
 
-battlePauseTime = SetTime(30);
+battlePauseTime = SetTime(20);
 battlePauseTimer = 0;
 
-roundTime = SetTime(5);
+roundTime = SetTime(30);
 
 enum BattleState
 {
 	Inactive,
 	Start,
 	Active,
+	RoundEnd,
 	Intermission,
 	End
 }
@@ -36,3 +37,5 @@ global.Round = 1;
 
 soundTimer = SetTime(1);
 intermissionHealTime = 2;
+healProgress = 0;
+randomPerk = noone;

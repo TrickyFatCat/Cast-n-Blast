@@ -671,6 +671,14 @@
             }
         },
         {
+            "Key": "46a429f6-6050-47af-ad2a-acb26d4f1251",
+            "Value": {
+                "id": "0bd00269-e5a7-4578-b837-947c06c84559",
+                "resourcePath": "scripts\\ActivatePerk\\ActivatePerk.yy",
+                "resourceType": "GMScript"
+            }
+        },
+        {
             "Key": "47021d44-812f-44b4-90fc-0633f8d548ea",
             "Value": {
                 "id": "1253985e-5417-4800-8672-3ddcb451a084",
@@ -844,6 +852,14 @@
                 "id": "f40487ef-cca3-4f37-8e56-1390cb9fa801",
                 "resourcePath": "objects\\gui_MainMenu\\gui_MainMenu.yy",
                 "resourceType": "GMObject"
+            }
+        },
+        {
+            "Key": "51cabd1b-b956-4ab8-a862-b86d5590cb8f",
+            "Value": {
+                "id": "3cc5d54f-d638-48ee-9d6a-893744d027f1",
+                "resourcePath": "scripts\\ActivateRandomPerk\\ActivateRandomPerk.yy",
+                "resourceType": "GMScript"
             }
         },
         {
@@ -2878,7 +2894,9 @@
         "6106d93f-e53e-418f-a1dc-f4e58688b923",
         "0a297138-c964-44a6-886c-47d88c2e286a",
         "a42c7ca3-c2b3-4703-a80c-0ce0bd05409b",
-        "40232b20-7920-47ae-b080-3413192b5353"
+        "40232b20-7920-47ae-b080-3413192b5353",
+        "46a429f6-6050-47af-ad2a-acb26d4f1251",
+        "51cabd1b-b956-4ab8-a862-b86d5590cb8f"
     ],
     "tutorial": ""
 }

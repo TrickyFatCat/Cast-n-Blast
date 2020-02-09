@@ -4,7 +4,7 @@ var _description;
 
 if (perkId != noone)
 {
-	_header = GenerateName(perkId);
+	_header = GenerateName(perkId, true);
 	_description = GetPerkDescription(perkId);
 }
 else

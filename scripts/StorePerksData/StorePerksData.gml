@@ -73,14 +73,14 @@ RepairCostPerk = ds_map_create();
 ds_map_add(RepairCostPerk, "currentLevel",	0);
 ds_map_add(RepairCostPerk, "maxLevel",		5);
 ds_map_add(RepairCostPerk, "perkFactor",	0.1);
-ds_map_add(RepairCostPerk, "name",			"Repair cost");
+ds_map_add(RepairCostPerk, "name",			"Repair cost (NYI)");
 ds_map_add(RepairCostPerk, "description",	GenerateDescription(Perk.RepairCost, false, true));
 
 RepairRatePerk = ds_map_create();
 ds_map_add(RepairRatePerk, "currentLevel",	0);
 ds_map_add(RepairRatePerk, "maxLevel",		5);
 ds_map_add(RepairRatePerk, "perkFactor",	0.1);
-ds_map_add(RepairRatePerk, "name",			"Repair rate");
+ds_map_add(RepairRatePerk, "name",			"Repair rate (NYI)");
 ds_map_add(RepairRatePerk, "description",	GenerateDescription(Perk.RepairRate, true, true));
 
 MaxEnergyPerk = ds_map_create();

@@ -55,7 +55,6 @@ if (_chosenPerksSize < _activePerksSize)
 		ds_list_add(global.ChosenPerks, _perkId);
 	}
 	
-	show_debug_message(_perkId);
 	return _perkId;
 }
 

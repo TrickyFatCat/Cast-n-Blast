@@ -24,6 +24,8 @@ switch (global.BattleState)
 		{
 			battleStartTimer = 0;
 			global.BattleState = BattleState.Active;
+			randomPerk = noone;
+			obj_spawnController.isActive = true;
 			//PlaySound(sfx_start);
 		}
 	break;
@@ -43,31 +45,39 @@ switch (global.BattleState)
 		
 		if (_waveTimeIsOver)
 		{
+			obj_spawnController.isActive = false;
+			global.BattleState = BattleState.RoundEnd;
+		}
+	break;
+	
+	case BattleState.RoundEnd:
+		if (instance_number(obj_Enemy) == 0)
+		{
 			global.BattleState = BattleState.Intermission;
 			SetActivePerks();
 			ActivateInteractiveObjects();
+			global.PlayTime = 0;
 		}
 	break;
 	
 	case BattleState.Intermission:
-		if (instance_number(obj_Enemy) == 0)
+		battlePauseTimer += global.TimeFactor;
+		var _timeIsOver = CheckTimer(battlePauseTimer, battlePauseTime);
+			
+		if (global.Player.hitPoints < global.Player.maxHitPoints)
 		{
-			global.PlayTime = 0;
-			battlePauseTimer += global.TimeFactor;
-			var _timeIsOver = CheckTimer(battlePauseTimer, battlePauseTime);
+			var _healStep = CalculateStep(intermissionHealTime);
+			healProgress = ApproachTimeFactor(0, 1, _healStep);
+			global.Player.hitPoints = LerpTimeFactor(global.Player.hitPoints, global.Player.maxHitPoints, healProgress);
+		}				
 			
-			if (global.Player.hitPoints < global.Player.maxHitPoints)
-			{
-				global.Player.hitPoints = ApproachTimeFactor(global.Player.hitPoints, global.Player.maxHitPoints, 1);
-			}				
-			
-			if (_timeIsOver)
-			{
-				global.BattleState = BattleState.Start;
-				DeactivateInteractiveObjects();
-				CalculateDifficulty();
-				ChangeSpawnSettings();
-			}
+		if (_timeIsOver)
+		{
+			global.BattleState = BattleState.Start;
+			randomPerk = ActivateRandomPerk();
+			DeactivateInteractiveObjects();
+			CalculateDifficulty();
+			ChangeSpawnSettings();
 		}
 	break;
 			

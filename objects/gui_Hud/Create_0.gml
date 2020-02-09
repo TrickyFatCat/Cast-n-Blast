@@ -46,6 +46,10 @@ startBattleTextTimer = 0;
 showFightText = false;
 showFightTextTimer = 0;
 
+showRandomPerkTime = SetTime(2);
+showRandomPerkTimer = 0;
+showRandomPerk = false;
+
 energyColour = make_color_rgb(26, 76, 102);
 hitPointsColour = make_color_rgb(130, 63, 63);
 overheatColour = make_color_rgb(207, 117, 43);

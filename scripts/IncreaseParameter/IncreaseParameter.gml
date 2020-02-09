@@ -1,7 +1,8 @@
+/// @param perkId
 /// @param defaultValue
 
-var _defaultValue = argument0;
+var _perkId = argument0;
+var _defaultValue = argument1;
 
-IncreasePerkLevel();
-var _perkFactor = CalculatePerkFactor();
+var _perkFactor = CalculatePerkFactor(_perkId);
 return _defaultValue * (1 + _perkFactor);

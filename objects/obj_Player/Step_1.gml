@@ -35,10 +35,11 @@ else
 	energyRestoreFactor = 1;
 }
 
-if (sys_GameManager.actionStopShooting && canRestore && energy > 0)
+if (sys_GameManager.actionStopShooting && canRestore && !isOverheated)
 {
 	canRestore = false;
 	energyPenaltyTime = SetTime(shootPenaltyTime);
+	energyPenaltyTimer = 0;
 }
 
 if (shieldIsActive && (!_keyShoot))
@@ -60,10 +61,11 @@ if (energy < maxEnergy && canRestore)
 	}
 }
 
-if (energy <= 0 && canRestore)
+if (energy <= 0 && !isOverheated)
 {
 	canRestore = false;
 	energyPenaltyTime = SetTime(overheatPenaltyTime);
+	energyPenaltyTimer = 0;
 	isOverheated = true;
 }
 

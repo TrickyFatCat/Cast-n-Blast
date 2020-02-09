@@ -2,6 +2,8 @@
 #macro SelectWave event_user(0)
 #macro SpawnEnemy event_user(1)
 
+isActive = false;
+
 /// Spawn pause timer
 spawnPauseTime = SetTime(5);
 spawnPauseTimer = spawnPauseTime;
