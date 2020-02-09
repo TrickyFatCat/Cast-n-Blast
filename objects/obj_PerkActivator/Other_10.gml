@@ -1,10 +1,7 @@
-//global.BattleState = BattleState.Start;
-//DeactivateInteractiveObjects();
-//CalculateDifficulty();
-//ChangeSpawnSettings();
-ds_list_clear(global.ChosenPerks);
 var _playerMainWeapon = global.Player.activeWeapon;
 var _playerSecondaryWeapon = global.Player.secondaryWeapon;
+
+ResetWave;
 
 switch (perkId)
 {
@@ -29,7 +26,7 @@ switch (perkId)
 		show_debug_message("Not yet implemented");
 	break;
 	
-	case Perk.RepairSpeed:
+	case Perk.RepairRate:
 		show_debug_message("Not yet implemented");
 	break;
 	
@@ -39,6 +36,10 @@ switch (perkId)
 	
 	case Perk.EnergyRestore:
 		global.Player.energyRestoreRate = IncreaseParameter(global.Player.defaultEnergyRestoreRate);
+	break;
+	
+	case Perk.OverheatTime:
+		show_debug_message("Not yet implemented");
 	break;
 	
 	case Perk.MaxUltimate:
@@ -57,10 +58,7 @@ switch (perkId)
 	case Perk.MainRof:
 		_playerMainWeapon.rateOfFireCurrent = IncreaseParameter(global.Player.mainDefaultRof);
 	break;
-	
-	case Perk.MainBounce:
-		show_debug_message("Not yet implemented");
-	break;
+
 	
 	case Perk.MainSpread:
 		_playerMainWeapon.spreadAngleCurrent = DecreaseParameter(global.Player.mainDefaultSpread);
@@ -73,10 +71,6 @@ switch (perkId)
 	
 	case Perk.SecondaryRof:
 		_playerSecondaryWeapon.rateOfFireCurrent = IncreaseParameter(global.Player.secondaryDefaultRof);
-	break;
-	
-	case Perk.SecondaryBounce:
-		show_debug_message("Not yet implemented");
 	break;
 	
 	case Perk.SecondarySpread:

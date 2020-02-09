@@ -11,7 +11,7 @@ drawListSortable = ds_list_create();
 drawListUnsortable = ds_list_create();
 
 // Create shadow surface
-surfaceShadows = surface_create(global.CurrentWidth, global.CurrentHeight);
+surfaceShadows = surface_create(room_width, room_height);
 
 // Create blood surface
 surfaceFloorEffects= surface_create(room_width, room_height);

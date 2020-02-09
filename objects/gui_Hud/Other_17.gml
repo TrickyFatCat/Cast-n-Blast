@@ -7,13 +7,6 @@ DrawTextOutline(guiWidth * 0.65, 20, c_black, c_white, "TIME LEFT");
 SetAlign(fa_center, fa_center);
 DrawTextOutline(guiWidth * 0.65, 40, c_black, c_white, string(_timeLeft));
 
-// Draw scrap
-draw_set_font(fnt_medium);
-SetAlign(fa_center, fa_center);
-DrawTextOutline(guiWidth * 0.5, 40, c_black, c_white, "SCRAP");
-SetAlign(fa_center, fa_center);
-DrawTextOutline(guiWidth * 0.5, 80, c_black, c_white, string(global.Scrap));
-
 // Draw score
 draw_set_font(fnt_small);
 SetAlign(fa_center, fa_center);

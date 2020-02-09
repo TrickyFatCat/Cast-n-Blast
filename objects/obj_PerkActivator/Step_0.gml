@@ -1,4 +1,4 @@
-if (playerIsIn)
+if (playerIsIn && perkId != noone)
 {
 	triggerColour = c_green;
 }
@@ -7,6 +7,5 @@ else
 	triggerColour = c_gray;
 }
 
-triggerVisuliser.triggerColour = triggerColour;
-
+triggerVisualiser.triggerColour = triggerColour;
 playerIsIn = false;

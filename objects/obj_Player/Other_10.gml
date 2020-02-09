@@ -25,7 +25,7 @@ switch global.CurrentInput
 	break;
 }
 
-var _ultimateIsTransitioning = ultimateState == UltimateState.Activation || ultimateState == UltimateState.Deactivation;
+var _ultimateIsTransitioning = ultimateState == UltimateState.Activation;
 var _isMoving = directionX != 0 || directionY != 0;
 
 if (_isMoving && !_ultimateIsTransitioning)

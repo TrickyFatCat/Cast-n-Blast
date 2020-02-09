@@ -44,6 +44,7 @@ switch (global.BattleState)
 		if (_waveTimeIsOver)
 		{
 			global.BattleState = BattleState.Intermission;
+			ActivateInteractiveObjects();
 		}
 	break;
 	
@@ -51,9 +52,13 @@ switch (global.BattleState)
 		if (instance_number(obj_Enemy) == 0)
 		{
 			global.PlayTime = 0;
-			ActivateInteractiveObjects();
 			battlePauseTimer += global.TimeFactor;
 			var _timeIsOver = CheckTimer(battlePauseTimer, battlePauseTime);
+			
+			if (global.Player.hitPoints < global.Player.maxHitPoints)
+			{
+				global.Player.hitPoints = ApproachTimeFactor(global.Player.hitPoints, global.Player.maxHitPoints, 1);
+			}				
 			
 			if (_timeIsOver)
 			{
@@ -61,6 +66,7 @@ switch (global.BattleState)
 				DeactivateInteractiveObjects();
 				CalculateDifficulty();
 				ChangeSpawnSettings();
+				SetActivePerks();
 			}
 		}
 	break;

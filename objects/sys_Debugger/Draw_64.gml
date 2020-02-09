@@ -76,7 +76,6 @@ if (instance_exists(obj_Player))
 		draw_text(5, 220, "Case " + string(caseLevel) + "/" + string(caseMaxLevel) + ": " + string(caseHitPoints) + "/" + string(caseMaxHitPoints));
 		draw_text(5, 240, "Weapon " + string(weaponLevel) + "/" + string(weaponMaxLevel) + ": " + string(weaponHitPoints) + "/" + string(weaponMaxHitPoints));
 		draw_text(5, 260, "Energy: " + string(energy) + "/" + string(maxEnergy));
-		draw_text(5, 280, "Scrap: " + string(global.Scrap));
 		//draw_text(5, 240, "Current Ammo: " + string(ammoCurrent) + "/" + string(ammoCurrentMax));
 		//var _isShooting;
 		//if (activeWeapon.isShooting)

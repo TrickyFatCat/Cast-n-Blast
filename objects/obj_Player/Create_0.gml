@@ -4,6 +4,7 @@ event_inherited();
 #macro playerY global.Player.y
 
 SetCameraMode(CameraMode.FollowPointPeek, obj_Player);
+SetActivePerks();
 
 //User events
 #macro RespondToControls	event_user(0)
@@ -90,17 +91,6 @@ ultimateWeapon.isConsumingUltimate = true;
 
 // Set player weapon ammo
 //SetAmmoParameters(activeWeapon.ammoID, global.PlayerAmmoData);
-
-
-// Scrap
-global.Scrap = 9000;
-
-enum PartType
-{
-	Legs,
-	Case,
-	Weapon
-}
 
 // Energy
 maxEnergy = 100;

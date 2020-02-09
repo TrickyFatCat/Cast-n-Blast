@@ -9,15 +9,15 @@ if (surface_exists(surfaceShadows)) {
 	{
 		if shadowEnabled
 		{
-			draw_sprite_ext(spr_circle, image_index, x - cameraPositionX, y - cameraPositionY, shadowScaleX, shadowScaleY, 0, c_black, shadowAlpha);
+			draw_sprite_ext(spr_circle, image_index, x, y, shadowScaleX, shadowScaleY, 0, c_black, shadowAlpha);
 		}
 	}
 	
 	surface_reset_target();
 	
-	draw_surface_ext(surfaceShadows, cameraPositionX, cameraPositionY, 1, 1, 0, c_white, 0.55);
+	draw_surface_ext(surfaceShadows, 0, 0, 1, 1, 0, c_white, 0.55);
 }
 else
 {
-	surfaceShadows = surface_create(global.CurrentWidth, global.CurrentHeight);
+	surfaceShadows = surface_create(room_width, room_height);
 }
