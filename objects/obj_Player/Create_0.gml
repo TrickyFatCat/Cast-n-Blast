@@ -88,6 +88,7 @@ ultimateWeapon = instance_create_layer(x, y, layer, obj_PlayerWeapon);
 SetPlayerWeapon(ultimateWeapon, ultimateWeaponID);
 ultimateWeapon.isConsumingEnergy = false;
 ultimateWeapon.isConsumingUltimate = true;
+defaultUltimateDamage = ultimateWeapon.damage;
 
 // Set player weapon ammo
 //SetAmmoParameters(activeWeapon.ammoID, global.PlayerAmmoData);

@@ -4,6 +4,7 @@ var _perkId = argument0;
 
 var _playerMainWeapon = global.Player.activeWeapon;
 var _playerSecondaryWeapon = global.Player.secondaryWeapon;
+var _playerUltimate = global.Player.ultimateWeapon;
 
 IncreasePerkLevel(_perkId);
 
@@ -26,14 +27,6 @@ switch (_perkId)
 		global.Player.shieldFactor = IncreaseParameter(_perkId, global.Player.defaultShieldFactor);
 	break;
 	
-	case Perk.RepairCost:
-		show_debug_message("Not yet implemented");
-	break;
-	
-	case Perk.RepairRate:
-		show_debug_message("Not yet implemented");
-	break;
-	
 	case Perk.MaxEnergy:
 		global.Player.maxEnergy = IncreaseParameter(_perkId, global.Player.defaultMaxEnergy);
 	break;
@@ -54,6 +47,10 @@ switch (_perkId)
 	
 	case Perk.UltimateGain:
 		global.Player.ultimateGainFactor = IncreaseParameter(_perkId, global.Player.defaultUltimateGainFactor);
+	break;
+	
+	case Perk.UltimateDamage:
+		global.Player.ulitmateDamage = IncreaseParameter(_perkId, global.Player.defaultUltimateDamage);
 	break;
 	
 	case Perk.MainDamage:

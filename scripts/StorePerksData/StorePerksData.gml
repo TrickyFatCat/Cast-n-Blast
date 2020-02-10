@@ -8,13 +8,12 @@ enum Perk
 	DashSpeed,
 	MaxHitpoints,
 	ShieldFactor,
-	RepairCost,
-	RepairRate,
 	MaxEnergy,
 	EnergyRestore,
 	OverheatTime,
 	MaxUltimate,
 	UltimateGain,
+	UltimateDamage,
 	MainDamage,
 	MainRof,
 	MainSpread,
@@ -27,13 +26,12 @@ enum Perk
 #macro DashPerk				global.PerksData[Perk.DashSpeed]
 #macro HitPointsPerk		global.PerksData[Perk.MaxHitpoints]
 #macro ShieldPerk			global.PerksData[Perk.ShieldFactor]
-#macro RepairCostPerk		global.PerksData[Perk.RepairCost]
-#macro RepairRatePerk		global.PerksData[Perk.RepairRate]
 #macro MaxEnergyPerk		global.PerksData[Perk.MaxEnergy]
 #macro EnergyRestorePerk	global.PerksData[Perk.EnergyRestore]
 #macro OverheatTimePerk		global.PerksData[Perk.OverheatTime]
 #macro MaxUltimatePerk		global.PerksData[Perk.MaxUltimate]
 #macro UltimateGainPerk		global.PerksData[Perk.UltimateGain]
+#macro UltimateDamagePerk	global.PerksData[Perk.UltimateDamage]
 #macro MainDamagePerk		global.PerksData[Perk.MainDamage]
 #macro MainRofPerk			global.PerksData[Perk.MainRof]
 #macro MainSpreadPerk		global.PerksData[Perk.MainSpread]
@@ -69,20 +67,6 @@ ds_map_add(ShieldPerk, "perkFactor",	0.1);
 ds_map_add(ShieldPerk, "name",			"Shield power");
 ds_map_add(ShieldPerk, "description",	GenerateDescription(Perk.ShieldFactor, true, true));
 
-RepairCostPerk = ds_map_create();
-ds_map_add(RepairCostPerk, "currentLevel",	0);
-ds_map_add(RepairCostPerk, "maxLevel",		5);
-ds_map_add(RepairCostPerk, "perkFactor",	0.1);
-ds_map_add(RepairCostPerk, "name",			"Repair cost (NYI)");
-ds_map_add(RepairCostPerk, "description",	GenerateDescription(Perk.RepairCost, false, true));
-
-RepairRatePerk = ds_map_create();
-ds_map_add(RepairRatePerk, "currentLevel",	0);
-ds_map_add(RepairRatePerk, "maxLevel",		5);
-ds_map_add(RepairRatePerk, "perkFactor",	0.1);
-ds_map_add(RepairRatePerk, "name",			"Repair rate (NYI)");
-ds_map_add(RepairRatePerk, "description",	GenerateDescription(Perk.RepairRate, true, true));
-
 MaxEnergyPerk = ds_map_create();
 ds_map_add(MaxEnergyPerk, "currentLevel",	0);
 ds_map_add(MaxEnergyPerk, "maxLevel",		5);
@@ -117,6 +101,13 @@ ds_map_add(UltimateGainPerk, "maxLevel",		5);
 ds_map_add(UltimateGainPerk, "perkFactor",		0.1);
 ds_map_add(UltimateGainPerk, "name",			"Ultimate income");
 ds_map_add(UltimateGainPerk, "description",		GenerateDescription(Perk.UltimateGain, true, true));
+
+UltimateDamagePerk = ds_map_create();
+ds_map_add(UltimateDamagePerk, "currentLevel",	0);
+ds_map_add(UltimateDamagePerk, "maxLevel",		5);
+ds_map_add(UltimateDamagePerk, "perkFactor",	0.1);
+ds_map_add(UltimateDamagePerk, "name",			"Ultimate damage");
+ds_map_add(UltimateDamagePerk, "description",	GenerateDescription(Perk.UltimateDamage, true, true));
 
 MainDamagePerk = ds_map_create();
 ds_map_add(MainDamagePerk, "currentLevel",	0);

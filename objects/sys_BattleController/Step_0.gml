@@ -47,6 +47,7 @@ switch (global.BattleState)
 		{
 			obj_spawnController.isActive = false;
 			global.BattleState = BattleState.RoundEnd;
+			global.PlayTime = 0;
 		}
 	break;
 	
@@ -56,7 +57,6 @@ switch (global.BattleState)
 			global.BattleState = BattleState.Intermission;
 			SetActivePerks();
 			ActivateInteractiveObjects();
-			global.PlayTime = 0;
 		}
 	break;
 	

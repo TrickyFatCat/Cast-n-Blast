@@ -18,13 +18,6 @@ if (_chosenPerksSize < _activePerksSize)
 	
 	var _wasChosen = ds_list_find_index(global.ChosenPerks, _perkId);
 	var _isMaxed = _perkLevel == _perkMaxLevel;
-	
-	//if (_chosenPerksSize == 0 && !_isMaxed)
-	//{
-	//		ds_list_add(global.ChosenPerks, _perkId);
-	//		show_debug_message(_perkId);
-	//		return _perkId;
-	//}
 		
 	if (_wasChosen != -1 || _isMaxed)
 	{
