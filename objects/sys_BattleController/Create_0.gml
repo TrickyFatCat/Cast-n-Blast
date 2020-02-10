@@ -36,6 +36,4 @@ global.Score = 0;
 global.Round = 1;
 
 soundTimer = SetTime(1);
-intermissionHealTime = 2;
-healProgress = 0;
 randomPerk = noone;

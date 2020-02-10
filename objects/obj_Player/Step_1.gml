@@ -14,6 +14,7 @@ else
 }
 
 shieldIsActive = sys_GameManager.keyShield && energy > 0;
+isBounceable = shieldIsActive;
 
 if (shieldIsActive && ultimateState == UltimateState.Idle)
 {

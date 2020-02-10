@@ -20,8 +20,8 @@ with (_target)
 	heal = _heal;
 	isBounceable = other.projectileBounceEnable;
 	velocityNoiseFactor = other.projectileVelocityNoiseFactor;
-	velocityCurrent = _velocity;
-	velocityMax = _velocityMax;
+	velocity = _velocity;
+	maxVelocity = _velocityMax;
 	acceleration = _acceleration;
 	groundFriction = other.projectileFriction;
 	bounceFriction = other.projectileBounceFriction;

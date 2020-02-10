@@ -11,3 +11,6 @@ damage = 0;
 isBounced = false;
 bounceFriction = 0;
 bouncedDirectionDelta = 20;
+
+// Parameters
+velocityNoiseFactor = 0;

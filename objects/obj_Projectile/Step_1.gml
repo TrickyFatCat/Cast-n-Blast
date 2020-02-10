@@ -7,19 +7,19 @@ MoveObject(_isConstant);
 #region // Calculate velocity
 if (acceleration > 0)
 {
-	velocityCurrent = CalculateAcceleratedVelocity(directionCurrent, velocityCurrent, pullVelocityMax, acceleration);
+	velocity = CalculateAcceleratedVelocity(directionCurrent, velocity, pullVelocityMax, acceleration);
 }
 else if (groundFriction > 0)
 {
-	velocityCurrent = CalculateDeceleratedVelocity(directionCurrent, velocityCurrent, groundFriction);
-	if (velocityCurrent == 0)
+	velocity = CalculateDeceleratedVelocity(directionCurrent, velocity, groundFriction);
+	if (velocity == 0)
 	{
 		instance_destroy(id);
 	}
 }
 else
 {
-	CalculateConstantVelocity(velocityCurrent, directionCurrent);
+	CalculateConstantVelocity(velocity, directionCurrent);
 }
 #endregion
 
@@ -32,7 +32,7 @@ if (isBounceable)
 		ChangeDirection;
 		if (acceleration == 0) //Apply bounce friction
 		{
-			velocityCurrent = max(velocityCurrent - bounceFriction * global.TimeFactor, 0);
+			velocity = max(velocity - bounceFriction * global.TimeFactor, 0);
 		}
 		isBounced = !isBounced;
 	}

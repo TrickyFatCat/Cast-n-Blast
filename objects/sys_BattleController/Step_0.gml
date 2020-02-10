@@ -66,9 +66,8 @@ switch (global.BattleState)
 			
 		if (global.Player.hitPoints < global.Player.maxHitPoints)
 		{
-			var _healStep = CalculateStep(intermissionHealTime);
-			healProgress = ApproachTimeFactor(0, 1, _healStep);
-			global.Player.hitPoints = LerpTimeFactor(global.Player.hitPoints, global.Player.maxHitPoints, healProgress);
+			var _healStep = global.Player.maxHitPoints * 0.2;
+			global.Player.hitPoints = LerpTimeFactor(global.Player.hitPoints, global.Player.maxHitPoints, _healStep);
 		}				
 			
 		if (_timeIsOver)

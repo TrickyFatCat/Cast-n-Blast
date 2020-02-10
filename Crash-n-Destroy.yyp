@@ -1303,6 +1303,14 @@
             }
         },
         {
+            "Key": "77bc5f25-18c1-4077-89af-7a49272d7fda",
+            "Value": {
+                "id": "4397dae1-f808-48d0-a329-23ce39c2b5ff",
+                "resourcePath": "sprites\\spr_3pixA\\spr_3pixA.yy",
+                "resourceType": "GMSprite"
+            }
+        },
+        {
             "Key": "7a6ed58e-766d-43dd-a168-7026705ea814",
             "Value": {
                 "id": "444afe5a-6547-44d4-acc5-eb79c8c489a4",
@@ -2119,6 +2127,14 @@
             }
         },
         {
+            "Key": "c745714b-d0b1-4ff1-b4fc-19ae2a99c671",
+            "Value": {
+                "id": "dbaf4e23-6296-4e6b-ab28-cb18de11b27c",
+                "resourcePath": "sprites\\spr_sawblade\\spr_sawblade.yy",
+                "resourceType": "GMSprite"
+            }
+        },
+        {
             "Key": "c7a2e5a9-8c71-4171-9122-d9e0f0325af9",
             "Value": {
                 "id": "e06883eb-41e9-459a-a519-c513b63654ff",
@@ -2764,6 +2780,14 @@
                 "id": "eac4c9dc-5cdb-48fc-bb89-976b4c2e6595",
                 "resourcePath": "scripts\\CheckGamepadButtonReleased\\CheckGamepadButtonReleased.yy",
                 "resourceType": "GMScript"
+            }
+        },
+        {
+            "Key": "fecbded1-2b5a-4ae6-b04b-ceafd52f643b",
+            "Value": {
+                "id": "53969e06-d54a-41c2-b957-62cb8ceeda18",
+                "resourcePath": "objects\\obj_ActiveTile\\obj_ActiveTile.yy",
+                "resourceType": "GMObject"
             }
         },
         {

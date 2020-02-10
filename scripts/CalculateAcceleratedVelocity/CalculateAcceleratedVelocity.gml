@@ -1,6 +1,6 @@
 /// @param direction
 /// @param velocity
-/// @param velocityMax
+/// @param maxVelocity
 /// @param acceleration
 
 var _targetDirection = argument0;
