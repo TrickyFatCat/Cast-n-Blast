@@ -30,6 +30,13 @@ if (isTemporary)
 	if (_timeIsOver)
 	{
 		activeStateTimer = 0;
-		currentState = ActiveTileState.Deactivation;
+		currentState = TileState.Deactivation;
+		
+		if (tilesList != noone)
+		{
+			var _position = ds_list_find_index(tilesList, id);
+			ds_list_delete(tilesList, _position);
+			tilesList = noone;
+		}
 	}
 }

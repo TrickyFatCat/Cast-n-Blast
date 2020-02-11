@@ -26,6 +26,8 @@ switch (global.BattleState)
 			global.BattleState = BattleState.Active;
 			randomPerk = noone;
 			obj_spawnController.isActive = true;
+			ActivatePermanentTiles();
+			ActivateTilesController();
 			//PlaySound(sfx_start);
 		}
 	break;
@@ -57,6 +59,9 @@ switch (global.BattleState)
 			global.BattleState = BattleState.Intermission;
 			SetActivePerks();
 			ActivateInteractiveObjects();
+			DeactivatePermanentTiles();
+			DeactivateTilesController();
+			DeactivateTemporaryTiles();
 		}
 	break;
 	

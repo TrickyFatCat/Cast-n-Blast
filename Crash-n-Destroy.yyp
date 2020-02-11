@@ -279,6 +279,14 @@
             }
         },
         {
+            "Key": "1e524765-6693-42b8-8da9-7a26140c56cf",
+            "Value": {
+                "id": "31d204ff-2bec-48f7-8333-a88097d17d83",
+                "resourcePath": "scripts\\ActivateTemporaryTiles\\ActivateTemporaryTiles.yy",
+                "resourceType": "GMScript"
+            }
+        },
+        {
             "Key": "1e80bb98-5aea-467b-b065-8a432456cd14",
             "Value": {
                 "id": "54ae849a-e09f-4b23-a303-78ac34b8239a",
@@ -423,6 +431,14 @@
             }
         },
         {
+            "Key": "2db62542-d884-408b-b99d-f9dfb69f5c9c",
+            "Value": {
+                "id": "840f6ba8-d978-4127-9049-6334540bcd28",
+                "resourcePath": "scripts\\DeactivateTemporaryTiles\\DeactivateTemporaryTiles.yy",
+                "resourceType": "GMScript"
+            }
+        },
+        {
             "Key": "2df8e710-8d58-4089-82c4-4c12f81323a8",
             "Value": {
                 "id": "3a9e347d-8287-4db8-a7f8-40372554cb2a",
@@ -444,6 +460,14 @@
                 "id": "1d352ca5-945f-4236-b08a-fd0ef9e84f46",
                 "resourcePath": "scripts\\DrawProgressBar\\DrawProgressBar.yy",
                 "resourceType": "GMScript"
+            }
+        },
+        {
+            "Key": "30c87266-9823-4859-95d9-f7d3a957671c",
+            "Value": {
+                "id": "9c043d8a-d932-4d33-b00b-1e0662ea3f40",
+                "resourcePath": "views\\30c87266-9823-4859-95d9-f7d3a957671c.yy",
+                "resourceType": "GMFolder"
             }
         },
         {
@@ -1127,6 +1151,14 @@
             }
         },
         {
+            "Key": "6bca1cb9-f8a3-4da3-850a-8b10a5f92c79",
+            "Value": {
+                "id": "489fee9b-1fe4-40d8-b7c6-eb70d4c9aaf0",
+                "resourcePath": "scripts\\ActivateTilesController\\ActivateTilesController.yy",
+                "resourceType": "GMScript"
+            }
+        },
+        {
             "Key": "6c7b9f3c-0cdc-4b43-a73b-e0d88cefd918",
             "Value": {
                 "id": "c91929b2-1d1d-4c8a-b4c4-a3cfe46e7f9b",
@@ -1351,6 +1383,14 @@
             }
         },
         {
+            "Key": "7efd5862-270f-47e3-b1d1-038cde0e555d",
+            "Value": {
+                "id": "42b8b442-b28b-4e92-8abf-1c6bb709bcf9",
+                "resourcePath": "views\\7efd5862-270f-47e3-b1d1-038cde0e555d.yy",
+                "resourceType": "GMFolder"
+            }
+        },
+        {
             "Key": "7f920a97-2516-46f8-b1c5-75e3494b12b6",
             "Value": {
                 "id": "bb0a956d-f2d3-454b-beb5-68270c0a344b",
@@ -1436,6 +1476,14 @@
                 "id": "70fadfd3-c343-411c-80e4-0fbedd3f97b3",
                 "resourcePath": "views\\83902639-cb92-49aa-86e1-86144a56dc04.yy",
                 "resourceType": "GMFolder"
+            }
+        },
+        {
+            "Key": "843cea9a-446b-44ef-a479-cd3dd0f63f80",
+            "Value": {
+                "id": "061ddabc-ee9c-4000-977e-f153e6a7be8b",
+                "resourcePath": "scripts\\ActivatePermanentTiles\\ActivatePermanentTiles.yy",
+                "resourceType": "GMScript"
             }
         },
         {
@@ -1823,6 +1871,14 @@
             }
         },
         {
+            "Key": "a6e421fa-8abb-4f64-83c2-27e1c150f24e",
+            "Value": {
+                "id": "b1a575b5-bc11-430d-b166-72f14584d114",
+                "resourcePath": "scripts\\ActivateRandomTiles\\ActivateRandomTiles.yy",
+                "resourceType": "GMScript"
+            }
+        },
+        {
             "Key": "a7d8d025-0ed2-4211-a9f6-99aec8788bcc",
             "Value": {
                 "id": "0485ae84-4d52-46b1-b237-aa53cc4ad543",
@@ -1999,6 +2055,14 @@
             }
         },
         {
+            "Key": "b9e1cdba-241d-456e-855f-db05cfb8f085",
+            "Value": {
+                "id": "13099f51-6470-43ed-b405-dfacf0d0892d",
+                "resourcePath": "scripts\\DeactivatePermanentTiles\\DeactivatePermanentTiles.yy",
+                "resourceType": "GMScript"
+            }
+        },
+        {
             "Key": "b9f03d06-805d-4f20-8c40-3b427af39fc2",
             "Value": {
                 "id": "b2e6fdca-183c-4246-8761-5a0b1a1ae8b4",
@@ -2027,6 +2091,14 @@
             "Value": {
                 "id": "19eb4095-836c-4e75-90b3-f64d73b6dfa0",
                 "resourcePath": "scripts\\GetWaveData\\GetWaveData.yy",
+                "resourceType": "GMScript"
+            }
+        },
+        {
+            "Key": "bde8771a-e188-4548-8d01-c29e360cb647",
+            "Value": {
+                "id": "4444e3ed-d575-4361-b694-18cac4ef24e4",
+                "resourcePath": "scripts\\DeactivateTilesController\\DeactivateTilesController.yy",
                 "resourceType": "GMScript"
             }
         },
@@ -2316,6 +2388,14 @@
                 "id": "ba21a400-d4d3-4083-9ce4-c9621de08412",
                 "resourcePath": "views\\d50d5960-dcc8-4143-bcad-3fc01c2aefe2.yy",
                 "resourceType": "GMFolder"
+            }
+        },
+        {
+            "Key": "d580cf40-110f-400f-b768-336b6f6480f9",
+            "Value": {
+                "id": "6f533da2-4090-40ef-bbc2-4b4774166de4",
+                "resourcePath": "objects\\obj_TilesController\\obj_TilesController.yy",
+                "resourceType": "GMObject"
             }
         },
         {
@@ -2920,7 +3000,14 @@
         "a42c7ca3-c2b3-4703-a80c-0ce0bd05409b",
         "40232b20-7920-47ae-b080-3413192b5353",
         "46a429f6-6050-47af-ad2a-acb26d4f1251",
-        "51cabd1b-b956-4ab8-a862-b86d5590cb8f"
+        "51cabd1b-b956-4ab8-a862-b86d5590cb8f",
+        "a6e421fa-8abb-4f64-83c2-27e1c150f24e",
+        "1e524765-6693-42b8-8da9-7a26140c56cf",
+        "2db62542-d884-408b-b99d-f9dfb69f5c9c",
+        "843cea9a-446b-44ef-a479-cd3dd0f63f80",
+        "b9e1cdba-241d-456e-855f-db05cfb8f085",
+        "bde8771a-e188-4548-8d01-c29e360cb647",
+        "6bca1cb9-f8a3-4da3-850a-8b10a5f92c79"
     ],
     "tutorial": ""
 }

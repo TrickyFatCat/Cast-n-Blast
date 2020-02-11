@@ -1,29 +1,21 @@
 switch (currentState)
 {
-	case ActiveTileState.Inactive:
-		activeStateTimer += global.TimeFactor;
-		var _timeIsOver = CheckTimer(activeStateTimer, activeStateTime);
-		
-		if (_timeIsOver)
-		{
-			activeStateTimer = 0;
-			currentState = ActiveTileState.Reveal;
-		}
+	case TileState.Inactive:
 	break;
 	
-	case ActiveTileState.Reveal:
+	case TileState.Reveal:
 		ProcessTileReveal;
 	break;
 	
-	case ActiveTileState.Activation:
+	case TileState.Activation:
 		ProcessTileActivation;
 	break;
 	
-	case ActiveTileState.Active:
+	case TileState.Active:
 		ProcessTileActiveState;
 	break;
 	
-	case ActiveTileState.Deactivation:
+	case TileState.Deactivation:
 		ProcessTileDeactivation;
 	break;
 }

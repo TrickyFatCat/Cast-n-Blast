@@ -9,6 +9,7 @@ scaleX = 64;
 scaleY = 64;
 drawAlpha = 0;
 drawColour = c_gray;
+tilesList = noone;
 
 fillScaleX = 0;
 
@@ -17,7 +18,7 @@ actionDelayTime = SetTime(1/actionRate);
 actionDelayTimer = actionDelayTime;
 isActive = false;
 
-enum ActiveTileState
+enum TileState
 {
 	Inactive,
 	Reveal,
@@ -26,7 +27,7 @@ enum ActiveTileState
 	Deactivation
 }
 
-currentState = ActiveTileState.Inactive;
+currentState = TileState.Inactive;
 
 stateSwitchTime = 0.75;
 stateSwitchProgress = 0;
@@ -34,10 +35,12 @@ stateSwitchProgress = 0;
 activeStateTime = SetTime(2);
 activeStateTimer = 0;
 
-enum ActiveTileType
+enum TileType
 {
 	DamageDealer,
 	SpeedDebuffer,
 	EnergyDebuffer,
 	CrowdController,
 }
+
+tileType = TileType.DamageDealer;

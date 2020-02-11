@@ -12,5 +12,5 @@ else
 	drawColour = c_gray;
 	fillScaleX = 0;
 	stateSwitchProgress = 0;
-	currentState = ActiveTileState.Inactive;
+	currentState = TileState.Inactive;
 }

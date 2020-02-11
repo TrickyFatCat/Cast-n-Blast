@@ -10,5 +10,5 @@ if (stateSwitchProgress != 1)
 else
 {
 	stateSwitchProgress = 0;
-	currentState = ActiveTileState.Activation;
+	currentState = TileState.Activation;
 }
