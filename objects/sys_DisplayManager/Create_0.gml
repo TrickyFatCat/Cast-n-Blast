@@ -4,17 +4,17 @@
 #macro UpdateResolution event_user(0);
 
 // Parameters
-global.IdealWidth = 480;
-global.IdealHeight = 0;
-resolutionZoom = 1;
-resolutionZoomMax = 1;
+global.IdealWidth = 0;
+global.IdealHeight = 270;
+resolutionZoom = 2;
+resolutionZoomMax = 2;
 interfaceZoom = 2;
 
 // Sequence
 aspectRatio = display_get_width() / display_get_height();
 
-//global.IdealWidth = round(global.IdealHeight * aspectRatio);
-global.IdealHeight =round(global.IdealWidth/aspectRatio);
+global.IdealWidth = round(global.IdealHeight * aspectRatio);
+//global.IdealHeight =round(global.IdealWidth/aspectRatio);
 global.IdealWidth = round(global.IdealWidth);
 global.IdealHeight = round(global.IdealHeight);
 
@@ -40,8 +40,8 @@ if (global.IdealHeight & 1)
 	global.IdealHeight++;
 }
 
-//resolutionZoomMax = floor(display_get_width() / global.IdealWidth);
-resolutionZoomMax = floor(display_get_height() / global.IdealHeight);
+resolutionZoomMax = floor(display_get_width() / global.IdealWidth);
+//resolutionZoomMax = floor(display_get_height() / global.IdealHeight);
 
 //Setup all the view ports so I don't have to.
 globalvar PlayerCamera;

@@ -38,7 +38,12 @@ switch (activeWeapon.currentCastState)
 	case CastState.Execute:
 		activeWeapon.lasersightAlpha = 0;
 		shootTimer += global.TimeFactor;
-		activeWeapon.directionCurrent += rotationSpeed * rotationDirection * global.TimeFactor;
+		
+		var _directionToPlayer = point_direction(x, y, playerX, playerY);
+		var _directionDifference = angle_difference(activeWeapon.directionCurrent, _directionToPlayer);
+		var _rotationOffset = min(rotationSpeed, abs(_directionDifference));
+		var _deltaDirection = sign(_directionDifference) * _rotationOffset * global.TimeFactor;
+		activeWeapon.directionCurrent -= _deltaDirection;
 		
 		var _timeIsOver = CheckTimer(shootTimer, shootTime);
 		if (_timeIsOver)

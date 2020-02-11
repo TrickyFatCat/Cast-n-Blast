@@ -1895,6 +1895,14 @@
             }
         },
         {
+            "Key": "a781ab7a-88ce-4870-85d4-e09c65e198f0",
+            "Value": {
+                "id": "abba9910-1728-46c7-bf2c-f5873a2268ce",
+                "resourcePath": "sprites\\transition_close_strip9\\transition_close_strip9.yy",
+                "resourceType": "GMSprite"
+            }
+        },
+        {
             "Key": "a7d8d025-0ed2-4211-a9f6-99aec8788bcc",
             "Value": {
                 "id": "0485ae84-4d52-46b1-b237-aa53cc4ad543",

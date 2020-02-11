@@ -12,6 +12,6 @@ else if (hitPoints > 0)
 {
 	DealDamage(_damage);
 	EnableFlash(c_red, 1);
-	ApplyShakeToCamera(true, 1.25);
+	ApplyShakeToCamera(true, 1);
 	//PlaySound(sfx_impact);
 }
