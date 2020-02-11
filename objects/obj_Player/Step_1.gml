@@ -1,7 +1,7 @@
 // Inherit the parent event
 event_inherited();
 
-ChekPlayerHP;
+CheckPlayerHP;
 
 if (global.CurrentInput == InputMethod.Gamepad)
 {
@@ -76,10 +76,10 @@ if (!canRestore)
 	{
 		EnableFlash(c_orange, 1);
 	}
-		
-	var _timeIsOver = CheckTimer(energyPenaltyTimer, energyPenaltyTime);
 	
 	energyPenaltyTimer += global.TimeFactor;
+	
+	var _timeIsOver = CheckTimer(energyPenaltyTimer, energyPenaltyTime);
 	
 	if (_timeIsOver)
 	{

@@ -26,7 +26,8 @@ switch (global.BattleState)
 			global.BattleState = BattleState.Active;
 			randomPerk = noone;
 			obj_spawnController.isActive = true;
-			ActivatePermanentTiles(TileType.SpeedDebuffer);
+			var _tileType = choose(TileType.EnergyDebuffer, TileType.SpeedDebuffer);
+			ActivatePermanentTiles(_tileType);
 			ActivateTilesController();
 			//PlaySound(sfx_start);
 		}

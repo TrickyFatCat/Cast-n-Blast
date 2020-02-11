@@ -12,7 +12,7 @@ tilesList = noone;
 
 fillScaleX = 0;
 
-actionRate = 5;
+actionRate = 20;
 actionDelayTime = SetTime(1/actionRate);
 actionDelayTimer = actionDelayTime;
 isActive = false;
@@ -42,6 +42,8 @@ enum TileType
 }
 
 tileType = TileType.DamageDealer;
+damage = 2;
+speedFactor = 0.75;
 
 inactiveColour = c_gray;
 activationColour = c_white;

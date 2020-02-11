@@ -3,7 +3,7 @@
 if (!isInvulnerable)
 {
 	DealDamageToPlayer(other.damage);
-	ChekPlayerHP;
+	CheckPlayerHP;
 }
 
 instance_destroy(other);
