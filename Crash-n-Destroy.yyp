@@ -423,6 +423,14 @@
             }
         },
         {
+            "Key": "2c7565ba-2ffe-46c7-b668-d0c21e324d64",
+            "Value": {
+                "id": "bacd53ee-f423-4bf7-b4bc-ac86b4946b0a",
+                "resourcePath": "scripts\\DrawTiledArea\\DrawTiledArea.yy",
+                "resourceType": "GMScript"
+            }
+        },
+        {
             "Key": "2d5ab3f9-5fb6-4cdc-94a7-ac336d45f662",
             "Value": {
                 "id": "bfced574-e3c0-402a-8457-5cdb5314a588",
@@ -1187,6 +1195,14 @@
             "Value": {
                 "id": "470a7a27-8812-4f1b-bf40-4da3be4f04c8",
                 "resourcePath": "objects\\obj_Player\\obj_Player.yy",
+                "resourceType": "GMObject"
+            }
+        },
+        {
+            "Key": "6f19deec-8451-464e-8dfa-55d2bcadbe2b",
+            "Value": {
+                "id": "66879f08-9ad1-499e-8a6b-da7d32611e2e",
+                "resourcePath": "objects\\obj_FloorTile\\obj_FloorTile.yy",
                 "resourceType": "GMObject"
             }
         },
@@ -2920,6 +2936,7 @@
         "b4a223c1-c6ab-46e8-8758-e55cb39500cc",
         "563b717a-7993-4030-acd1-52fff22f47c2",
         "3c632e4a-1210-46bd-932a-baa1cbb6ce0e",
+        "2c7565ba-2ffe-46c7-b668-d0c21e324d64",
         "ff38952b-ee1c-483c-972b-a9ef417e3747",
         "117d62ef-0405-468e-87a5-48fde52426af",
         "76040d57-5a1b-4128-9b1f-7bd8c2ba2eb9",
@@ -3006,8 +3023,8 @@
         "2db62542-d884-408b-b99d-f9dfb69f5c9c",
         "843cea9a-446b-44ef-a479-cd3dd0f63f80",
         "b9e1cdba-241d-456e-855f-db05cfb8f085",
-        "bde8771a-e188-4548-8d01-c29e360cb647",
-        "6bca1cb9-f8a3-4da3-850a-8b10a5f92c79"
+        "6bca1cb9-f8a3-4da3-850a-8b10a5f92c79",
+        "bde8771a-e188-4548-8d01-c29e360cb647"
     ],
     "tutorial": ""
 }

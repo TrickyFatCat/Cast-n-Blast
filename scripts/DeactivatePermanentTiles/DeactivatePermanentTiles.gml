@@ -5,7 +5,14 @@ with (obj_TilesController)
 	for (var i = 0; i < _listSize; i++)
 	{
 		var _tile = permanentTiles[| i];
-		_tile.currentState = TileState.Deactivation;
-		ds_list_delete(permanentTiles, i);
+		
+		with (_tile)
+		{
+			currentState = TileState.Deactivation;
+			EnableFlash(c_yellow, 1);
+			drawColour = c_gray;
+		}
 	}
+	
+	ds_list_clear(permanentTiles);
 }

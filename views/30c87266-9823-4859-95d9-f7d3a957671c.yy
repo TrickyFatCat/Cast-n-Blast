@@ -9,8 +9,8 @@
         "2db62542-d884-408b-b99d-f9dfb69f5c9c",
         "843cea9a-446b-44ef-a479-cd3dd0f63f80",
         "b9e1cdba-241d-456e-855f-db05cfb8f085",
-        "bde8771a-e188-4548-8d01-c29e360cb647",
-        "6bca1cb9-f8a3-4da3-850a-8b10a5f92c79"
+        "6bca1cb9-f8a3-4da3-850a-8b10a5f92c79",
+        "bde8771a-e188-4548-8d01-c29e360cb647"
     ],
     "filterType": "GMScript",
     "folderName": "ActiveTiles",

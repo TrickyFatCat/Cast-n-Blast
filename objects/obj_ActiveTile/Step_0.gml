@@ -1,3 +1,18 @@
+switch (tileType)
+{
+	case TileType.DamageDealer:
+		activeColour = c_red;
+	break;
+	
+	case TileType.SpeedDebuffer:
+		activeColour = c_navy;
+	break;
+	
+	case TileType.EnergyDebuffer:
+		activeColour = c_aqua;
+	break;
+}
+
 switch (currentState)
 {
 	case TileState.Inactive:

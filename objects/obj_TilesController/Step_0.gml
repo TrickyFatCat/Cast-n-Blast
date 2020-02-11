@@ -5,6 +5,6 @@ if (isActive)
 	
 	if (_timeIsOver)
 	{	
-		ActivateTemporaryTiles();
+		ActivateTemporaryTiles(temporaryTileType);
 	}
 }

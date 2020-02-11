@@ -1,4 +1,8 @@
+/// @param tileType
+
+var _tileType = argument0;
+
 with (obj_TilesController)
 {
-	ActivateRandomTiles(false);
+	ActivateRandomTiles(_tileType, false);
 }

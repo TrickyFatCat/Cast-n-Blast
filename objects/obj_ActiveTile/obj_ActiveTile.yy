@@ -73,11 +73,21 @@
             "enumb": 13,
             "eventtype": 7,
             "m_owner": "fecbded1-2b5a-4ae6-b04b-ceafd52f643b"
+        },
+        {
+            "id": "7b87932e-2b9c-4761-8623-8cb4cccce3f2",
+            "modelName": "GMEvent",
+            "mvc": "1.0",
+            "IsDnD": false,
+            "collisionObjectId": "00000000-0000-0000-0000-000000000000",
+            "enumb": 0,
+            "eventtype": 1,
+            "m_owner": "fecbded1-2b5a-4ae6-b04b-ceafd52f643b"
         }
     ],
     "maskSpriteId": "00000000-0000-0000-0000-000000000000",
     "overriddenProperties": null,
-    "parentObjectId": "c5418c1e-ed8e-430c-9ef6-02f638f2c06e",
+    "parentObjectId": "6f19deec-8451-464e-8dfa-55d2bcadbe2b",
     "persistent": false,
     "physicsAngularDamping": 0.1,
     "physicsDensity": 0.5,
@@ -104,20 +114,6 @@
             "resourceFilter": 1023,
             "value": "True",
             "varName": "isTemporary",
-            "varType": 3
-        },
-        {
-            "id": "09036385-1dbb-4e83-aa6d-1eff92c526ae",
-            "modelName": "GMObjectProperty",
-            "mvc": "1.0",
-            "listItems": null,
-            "multiselect": false,
-            "rangeEnabled": false,
-            "rangeMax": 10,
-            "rangeMin": 0,
-            "resourceFilter": 1023,
-            "value": "True",
-            "varName": "actionIsDelayed",
             "varType": 3
         }
     ],

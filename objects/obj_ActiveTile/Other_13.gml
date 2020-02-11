@@ -9,8 +9,9 @@ if (stateSwitchProgress != 0)
 }
 else
 {
-	drawColour = c_gray;
+	drawColour = inactiveColour;
 	fillScaleX = 0;
 	stateSwitchProgress = 0;
 	currentState = TileState.Inactive;
+	instance_deactivate_object(id);
 }

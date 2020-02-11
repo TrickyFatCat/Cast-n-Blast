@@ -8,7 +8,6 @@ event_inherited();
 scaleX = 64;
 scaleY = 64;
 drawAlpha = 0;
-drawColour = c_gray;
 tilesList = noone;
 
 fillScaleX = 0;
@@ -39,8 +38,20 @@ enum TileType
 {
 	DamageDealer,
 	SpeedDebuffer,
-	EnergyDebuffer,
-	CrowdController,
+	EnergyDebuffer
 }
 
 tileType = TileType.DamageDealer;
+
+inactiveColour = c_gray;
+activationColour = c_white;
+drawColour = inactiveColour;
+activeColour = c_teal;
+
+with (obj_TilesController)
+{
+	ds_list_add(activeTiles, other.id);
+	tilesListSize = ds_list_size(activeTiles);
+}
+
+instance_deactivate_object(id);

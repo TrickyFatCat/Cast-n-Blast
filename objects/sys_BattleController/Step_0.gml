@@ -26,7 +26,7 @@ switch (global.BattleState)
 			global.BattleState = BattleState.Active;
 			randomPerk = noone;
 			obj_spawnController.isActive = true;
-			ActivatePermanentTiles();
+			ActivatePermanentTiles(TileType.SpeedDebuffer);
 			ActivateTilesController();
 			//PlaySound(sfx_start);
 		}
@@ -59,8 +59,8 @@ switch (global.BattleState)
 			global.BattleState = BattleState.Intermission;
 			SetActivePerks();
 			ActivateInteractiveObjects();
-			DeactivatePermanentTiles();
 			DeactivateTilesController();
+			DeactivatePermanentTiles();
 			DeactivateTemporaryTiles();
 		}
 	break;
@@ -72,7 +72,7 @@ switch (global.BattleState)
 		if (global.Player.hitPoints < global.Player.maxHitPoints)
 		{
 			var _healStep = global.Player.maxHitPoints * 0.2;
-			global.Player.hitPoints = LerpTimeFactor(global.Player.hitPoints, global.Player.maxHitPoints, _healStep);
+			global.Player.hitPoints = ApproachTimeFactor(global.Player.hitPoints, global.Player.maxHitPoints, _healStep);
 		}				
 			
 		if (_timeIsOver)

@@ -7,9 +7,10 @@ if (stateSwitchProgress != 1)
 	stateSwitchProgress = ApproachTimeFactor(stateSwitchProgress, 1, _step);
 	fillScaleX = LerpTimeFactor(0, 64, stateSwitchProgress);
 	fillScaleY = fillScaleX;
-	drawColour = merge_color(c_gray, c_red, stateSwitchProgress);
+	drawColour = merge_color(inactiveColour, activeColour, stateSwitchProgress);
 }
 else
 {
+	EnableFlash(activationColour, 1);
 	currentState = TileState.Active;
 }
