@@ -13,7 +13,7 @@ var _laserSightY = y - z - offsetY + _deltaY;
 if (laserSightEnabled)
 {
 	var _scaleX = SortHitscanCollisions(directionCurrent, collisionTargets);
-	draw_sprite_ext(spr_1pix, image_index, _laserSightX, _laserSightY, _scaleX - _laserSightOffset, 1, drawAngle, c_red, lasersightAlpha);
+	draw_sprite_ext(spr_1pix, image_index, _laserSightX, _laserSightY, _scaleX - _laserSightOffset, 1, drawAngle, laserSightColour, lasersightAlpha);
 }
 
 

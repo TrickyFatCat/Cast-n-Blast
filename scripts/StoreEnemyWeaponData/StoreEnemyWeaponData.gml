@@ -169,7 +169,7 @@ ds_map_add(BeamerGunData, "burstRate",						0);
 ds_map_add(BeamerGunData, "burstShotsNumber",				0);
 //-----------------------------------------------------------------------------
 ds_map_add(BeamerGunData, "castExecuteCount",				0);
-ds_map_add(BeamerGunData, "castTime",						1.5);
+ds_map_add(BeamerGunData, "castTime",						1.25);
 //-----------------------------------------------------------------------------
 ds_map_add(BeamerGunData, "chargeExecuteCountMin",			1);
 ds_map_add(BeamerGunData, "chargeExecuteCountMax",			0);

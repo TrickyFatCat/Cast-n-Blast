@@ -55,6 +55,14 @@
             }
         },
         {
+            "Key": "02b61434-6cb4-40f3-aad8-ccaf8542aba8",
+            "Value": {
+                "id": "5999aa03-66be-4723-81b2-a52297d5146c",
+                "resourcePath": "scripts\\CalculateDeltaDirection\\CalculateDeltaDirection.yy",
+                "resourceType": "GMScript"
+            }
+        },
+        {
             "Key": "05f92ec3-120c-4570-a05d-ff81220fde81",
             "Value": {
                 "id": "c5e4abd5-959f-45d2-8dc5-35dd064acdbb",
@@ -1898,7 +1906,7 @@
             "Key": "a781ab7a-88ce-4870-85d4-e09c65e198f0",
             "Value": {
                 "id": "abba9910-1728-46c7-bf2c-f5873a2268ce",
-                "resourcePath": "sprites\\transition_close_strip9\\transition_close_strip9.yy",
+                "resourcePath": "sprites\\spr_tileFill\\spr_tileFill.yy",
                 "resourceType": "GMSprite"
             }
         },
@@ -2945,10 +2953,12 @@
         "563b717a-7993-4030-acd1-52fff22f47c2",
         "3c632e4a-1210-46bd-932a-baa1cbb6ce0e",
         "2c7565ba-2ffe-46c7-b668-d0c21e324d64",
+        "ece9170c-ca52-4d11-a924-177ff3805f56",
         "ff38952b-ee1c-483c-972b-a9ef417e3747",
         "117d62ef-0405-468e-87a5-48fde52426af",
         "76040d57-5a1b-4128-9b1f-7bd8c2ba2eb9",
         "975fcde3-e2df-427b-83b9-3f6a73854791",
+        "02b61434-6cb4-40f3-aad8-ccaf8542aba8",
         "4049e4fd-1d04-4e2f-81de-6da12f8b2655",
         "52e25e36-b2d5-45bc-9808-cf34f3a729b1",
         "3c884466-e1db-4224-b662-2086df475b8c",
@@ -2973,7 +2983,6 @@
         "7230f7a6-e9e3-490b-9388-db85e06d4aee",
         "31fb2d91-d553-48dd-a602-d1e300e1f311",
         "4a3901ed-ddac-45bb-94fb-b76493d4883d",
-        "ece9170c-ca52-4d11-a924-177ff3805f56",
         "2f5af4dd-8816-4625-a827-4916047b6d6f",
         "10c47987-e609-43f2-8074-96d977ac5217",
         "49d6b2b8-b640-4912-a714-6627da7b2c73",

@@ -149,3 +149,4 @@ rotationOffset = 1;
 rotationOffsetX = 0;
 rotationOffsetY = 0;
 offsetY = 0;
+laserSightColour = c_red;

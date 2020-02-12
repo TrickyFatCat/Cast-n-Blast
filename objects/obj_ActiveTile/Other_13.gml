@@ -12,6 +12,7 @@ else
 	drawColour = inactiveColour;
 	fillScaleX = 0;
 	stateSwitchProgress = 0;
+	image_index = 0;
 	currentState = TileState.Inactive;
 	instance_deactivate_object(id);
 }

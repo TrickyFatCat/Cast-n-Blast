@@ -21,11 +21,18 @@ switch (activeWeapon.currentCastState)
 			{
 				activeWeapon.directionCurrent = point_direction(x, y, playerX, playerY);
 				isShooting = true;
-				rotationDirection = choose(-1, 1);
 			}
 		}
-		shootTimer = 0;
-		activeWeapon.lasersightAlpha = 0;
+		
+		//targetingTimer += global.TimeFactor;
+		//var _timeIsOver = CheckTimer(targetingTimer, targetingTime);
+		
+		//if (_timeIsOver)
+		//{
+		//	targetingTimer = 0;
+		//	isShooting = true;
+		//}
+		//activeWeapon.lasersightAlpha = 0;
 	break;
 	
 	case CastState.Process:
@@ -38,16 +45,13 @@ switch (activeWeapon.currentCastState)
 	case CastState.Execute:
 		activeWeapon.lasersightAlpha = 0;
 		shootTimer += global.TimeFactor;
-		
-		var _directionToPlayer = point_direction(x, y, playerX, playerY);
-		var _directionDifference = angle_difference(activeWeapon.directionCurrent, _directionToPlayer);
-		var _rotationOffset = min(rotationSpeed, abs(_directionDifference));
-		var _deltaDirection = sign(_directionDifference) * _rotationOffset * global.TimeFactor;
+		var _deltaDirection = CalculateDeltaDirection(global.Player, activeWeapon.directionCurrent, rotationSpeed);
 		activeWeapon.directionCurrent -= _deltaDirection;
 		
 		var _timeIsOver = CheckTimer(shootTimer, shootTime);
 		if (_timeIsOver)
 		{
+			shootTimer = 0;
 			isShooting = false;
 			currentState = EnemyState.TargetSearch;
 		}
