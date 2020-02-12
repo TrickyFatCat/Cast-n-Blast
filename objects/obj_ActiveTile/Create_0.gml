@@ -49,6 +49,8 @@ inactiveColour = c_gray;
 activationColour = c_white;
 drawColour = inactiveColour;
 activeColour = c_teal;
+maxFillOffset = 10;
+fillOffset = 0;
 
 with (obj_TilesController)
 {

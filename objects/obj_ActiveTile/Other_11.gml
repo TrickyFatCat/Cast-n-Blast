@@ -5,8 +5,7 @@ var _step = CalculateStep(stateSwitchTime);
 if (stateSwitchProgress != 1)
 {
 	stateSwitchProgress = ApproachTimeFactor(stateSwitchProgress, 1, _step);
-	fillScaleX = LerpTimeFactor(0, 64, stateSwitchProgress);
-	fillScaleY = fillScaleX;
+	fillOffset = round(LerpTimeFactor(0, maxFillOffset, stateSwitchProgress));
 	drawColour = merge_color(inactiveColour, activeColour, stateSwitchProgress);
 }
 else

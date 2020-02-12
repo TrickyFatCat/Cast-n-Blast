@@ -5,6 +5,7 @@ var _step = CalculateStep(stateSwitchTime);
 if (stateSwitchProgress != 0)
 {
 	stateSwitchProgress = ApproachTimeFactor(stateSwitchProgress, 0, _step);
+	fillOffset = round(LerpTimeFactor(0, maxFillOffset, stateSwitchProgress));
 	drawAlpha = stateSwitchProgress;
 }
 else

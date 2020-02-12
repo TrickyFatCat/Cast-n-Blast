@@ -26,6 +26,7 @@ switch (activeWeapon.currentCastState)
 	break;
 	
 	case CastState.Process:
+		
 		with (activeWeapon)
 		{
 			lasersightAlpha = LerpTimeFactor(0, 1, castProgress);
@@ -33,17 +34,17 @@ switch (activeWeapon.currentCastState)
 	break;
 	
 	case CastState.Execute:
-		activeWeapon.lasersightAlpha = 0;
-		shootTimer += global.TimeFactor;
-		var _deltaDirection = CalculateDeltaDirection(global.Player, activeWeapon.directionCurrent, rotationSpeed);
-		activeWeapon.directionCurrent -= _deltaDirection;
+		activeWeapon.directionCurrent += rotationSpeed * rotationDirection * global.TimeFactor;
+		//shootTimer += global.TimeFactor;
+		//var _deltaDirection = CalculateDeltaDirection(global.Player, activeWeapon.directionCurrent, rotationSpeed);
+		//activeWeapon.directionCurrent -= _deltaDirection;
 		
-		var _timeIsOver = CheckTimer(shootTimer, shootTime);
-		if (_timeIsOver)
-		{
-			shootTimer = 0;
-			isShooting = false;
-			currentState = EnemyState.TargetSearch;
-		}
+		//var _timeIsOver = CheckTimer(shootTimer, shootTime);
+		//if (_timeIsOver)
+		//{
+		//	shootTimer = 0;
+		//	isShooting = false;
+		//	currentState = EnemyState.TargetSearch;
+		//}
 	break;
 }

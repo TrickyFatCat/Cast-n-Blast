@@ -5,7 +5,7 @@ switch (tileType)
 	break;
 	
 	case TileType.SpeedDebuffer:
-		activeColour = c_navy;
+		activeColour = c_blue;
 	break;
 	
 	case TileType.EnergyDebuffer:

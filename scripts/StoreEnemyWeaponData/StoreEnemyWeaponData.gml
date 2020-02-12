@@ -5,12 +5,14 @@ enum EnemyWeapon
 	TrooperGun,
 	BeamerGun,
 	NinjaGun,
+	TurretGun
 }
 
-#macro EnemyFighterGunData global.EnemyWeaponData[EnemyWeapon.FighterGun]
-#macro TrooperGunData global.EnemyWeaponData[EnemyWeapon.TrooperGun]
-#macro BeamerGunData global.EnemyWeaponData[EnemyWeapon.BeamerGun]
-#macro NinjaGunData global.EnemyWeaponData[EnemyWeapon.NinjaGun]
+#macro EnemyFighterGunData	global.EnemyWeaponData[EnemyWeapon.FighterGun]
+#macro TrooperGunData		global.EnemyWeaponData[EnemyWeapon.TrooperGun]
+#macro BeamerGunData		global.EnemyWeaponData[EnemyWeapon.BeamerGun]
+#macro NinjaGunData			global.EnemyWeaponData[EnemyWeapon.NinjaGun]
+#macro TurretGunData		global.EnemyWeaponData[EnemyWeapon.TurretGun]
 
 #region FighterGun
 EnemyFighterGunData = ds_map_create();
@@ -156,7 +158,7 @@ ds_map_add(BeamerGunData, "bulletObject",					obj_BeamerLaser);
 ds_map_add(BeamerGunData, "bulletNumber",					1);
 ds_map_add(BeamerGunData, "bulletSpawnPointOffset",			10);
 //-----------------------------------------------------------------------------
-ds_map_add(BeamerGunData, "damage",							1);
+ds_map_add(BeamerGunData, "damage",							2);
 ds_map_add(BeamerGunData, "heal",							0);
 //-----------------------------------------------------------------------------
 ds_map_add(BeamerGunData, "rateOfFireAccelerated",			false);
@@ -274,4 +276,70 @@ ds_map_add(NinjaGunData, "isShackingCamera",				false);
 ds_map_add(NinjaGunData, "angularShakeEnabled",				false);
 ds_map_add(NinjaGunData, "shakeValue",						0.75);
 ds_map_add(NinjaGunData, "shotShakeFactor",					0.05);
+#endregion
+
+#region TurretGun
+TurretGunData = ds_map_create();
+ds_map_add(TurretGunData, "weaponSprite",					noone);
+ds_map_add(TurretGunData, "offsetY",						16);
+ds_map_add(TurretGunData, "laserSightEnabled",				false);
+ds_map_add(TurretGunData, "isAuto",							true);
+ds_map_add(TurretGunData, "currentShootMode",				ShootMode.Cast);
+//-----------------------------------------------------------------------------
+ds_map_add(TurretGunData, "bulletObject",					obj_BeamerLaser);
+ds_map_add(TurretGunData, "bulletNumber",					4);
+ds_map_add(TurretGunData, "bulletSpawnPointOffset",			0);
+//-----------------------------------------------------------------------------
+ds_map_add(TurretGunData, "damage",							2);
+ds_map_add(TurretGunData, "heal",							0);
+//-----------------------------------------------------------------------------
+ds_map_add(TurretGunData, "rateOfFireAccelerated",			false);
+ds_map_add(TurretGunData, "rateOfFireIncrStep",				0);
+ds_map_add(TurretGunData, "rateOfFireDecrStep",				0);
+ds_map_add(TurretGunData, "rateOfFireMin",					30);
+ds_map_add(TurretGunData, "rateOfFireMax",					0);
+//-----------------------------------------------------------------------------
+ds_map_add(TurretGunData, "burstRate",						0);
+ds_map_add(TurretGunData, "burstShotsNumber",				0);
+//-----------------------------------------------------------------------------
+ds_map_add(TurretGunData, "castExecuteCount",				0);
+ds_map_add(TurretGunData, "castTime",						1.25);
+//-----------------------------------------------------------------------------
+ds_map_add(TurretGunData, "chargeExecuteCountMin",			1);
+ds_map_add(TurretGunData, "chargeExecuteCountMax",			0);
+ds_map_add(TurretGunData, "chargeTime",						1);
+ds_map_add(TurretGunData, "chargeWaitTime",					0);
+ds_map_add(TurretGunData, "chargeDamageFactorMax",			4);
+ds_map_add(TurretGunData, "chargeHealFactorMax",			0);
+ds_map_add(TurretGunData, "chargeRateFactorMax",			0);
+ds_map_add(TurretGunData, "chargeBulletNumberFactorMax",	0);
+ds_map_add(TurretGunData, "chargeVelocityFactorMax",		20);
+ds_map_add(TurretGunData, "chargeShakeFactorMax",			2);
+//-----------------------------------------------------------------------------
+ds_map_add(TurretGunData, "spreadIsDynamic",				false);
+ds_map_add(TurretGunData, "spreadIsUniform",				true);
+ds_map_add(TurretGunData, "spreadAngleIncrFactor",			0.2);
+ds_map_add(TurretGunData, "spreadAngleDecrFactor",			0.0075);
+ds_map_add(TurretGunData, "spreadAngleMin",					360);
+ds_map_add(TurretGunData, "spreadAngleMax",					0);
+//-----------------------------------------------------------------------------
+ds_map_add(TurretGunData, "ammoID",							noone);
+ds_map_add(TurretGunData, "shootAmmoCost",					0);
+//-----------------------------------------------------------------------------
+ds_map_add(TurretGunData, "recoilPower",					0);
+ds_map_add(TurretGunData, "recoilFactor",					0);
+//-----------------------------------------------------------------------------
+ds_map_add(TurretGunData, "hitscanScaleY",					5);
+ds_map_add(TurretGunData, "projectileVelocityNoiseFactor",	0);
+ds_map_add(TurretGunData, "projectileVelocityCurrent",		5);
+ds_map_add(TurretGunData, "projectileVelocityMax",			0);
+ds_map_add(TurretGunData, "projectileAcceleration",			0);
+ds_map_add(TurretGunData, "projectileFriction",				0);
+ds_map_add(TurretGunData, "projectileBounceEnable",			false);
+ds_map_add(TurretGunData, "projectileBounceFriction",		2);
+//-----------------------------------------------------------------------------
+ds_map_add(TurretGunData, "isShackingCamera",				false);
+ds_map_add(TurretGunData, "angularShakeEnabled",			false);
+ds_map_add(TurretGunData, "shakeValue",						0.75);
+ds_map_add(TurretGunData, "shotShakeFactor",				0.05);
 #endregion

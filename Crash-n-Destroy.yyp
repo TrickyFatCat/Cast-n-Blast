@@ -487,6 +487,14 @@
             }
         },
         {
+            "Key": "31cb8079-acb6-4388-873d-0a8bc8aed6d3",
+            "Value": {
+                "id": "1be13da5-9da6-4c7c-abe6-ec21785c0b0e",
+                "resourcePath": "objects\\obj_Enemy_Turret\\obj_Enemy_Turret.yy",
+                "resourceType": "GMObject"
+            }
+        },
+        {
             "Key": "31fb2d91-d553-48dd-a602-d1e300e1f311",
             "Value": {
                 "id": "4d1013d5-bf57-4fc0-91d1-9cbfb7eb8593",
@@ -2028,6 +2036,14 @@
                 "id": "e8795d59-30ad-430d-920a-37c09d590422",
                 "resourcePath": "objects\\obj_FloorEffect\\obj_FloorEffect.yy",
                 "resourceType": "GMObject"
+            }
+        },
+        {
+            "Key": "b4351582-c6e3-4f70-9ac4-2c8b234b87ba",
+            "Value": {
+                "id": "37f156b8-869e-4bce-b5c6-8726b6799a0b",
+                "resourcePath": "sprites\\spr_laserTurret_Idle\\spr_laserTurret_Idle.yy",
+                "resourceType": "GMSprite"
             }
         },
         {
