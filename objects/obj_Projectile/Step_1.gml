@@ -7,7 +7,7 @@ MoveObject(_isConstant);
 #region // Calculate velocity
 if (acceleration > 0)
 {
-	velocity = CalculateAcceleratedVelocity(directionCurrent, velocity, pullVelocityMax, acceleration);
+	velocity = CalculateAcceleratedVelocity(directionCurrent, velocity, maxVelocity, acceleration);
 }
 else if (groundFriction > 0)
 {
