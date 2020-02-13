@@ -103,6 +103,20 @@
             "value": "0",
             "varName": "jumpVelocity",
             "varType": 0
+        },
+        {
+            "id": "998d663c-2b00-4fcb-951f-4199a3694a45",
+            "modelName": "GMObjectProperty",
+            "mvc": "1.0",
+            "listItems": null,
+            "multiselect": false,
+            "rangeEnabled": false,
+            "rangeMax": 10,
+            "rangeMin": 0,
+            "resourceFilter": 1023,
+            "value": "False",
+            "varName": "drawOutline",
+            "varType": 3
         }
     ],
     "solid": false,

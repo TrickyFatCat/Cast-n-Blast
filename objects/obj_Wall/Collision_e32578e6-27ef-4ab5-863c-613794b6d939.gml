@@ -1,6 +1,6 @@
 with (other)
 {
-	if (!isBounceable)
+	if (!isBounceable && collisionEnable)
 	{
 		instance_destroy()
 	}

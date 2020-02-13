@@ -23,13 +23,4 @@ ammoCurrentMax = 0;
 trancendenceProgress = 0;
 
 // Collision
-
 collisionEnable = true;
-
-var _tex = sprite_get_texture(sprite_index, 0);
-texel_w = texture_get_texel_width(_tex);
-texel_h = texture_get_texel_height(_tex);
-
-shader = shd_Outline;
-
-u_texel_size = shader_get_uniform(shader, "u_texel_size");

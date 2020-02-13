@@ -15,3 +15,10 @@ surfaceShadows = surface_create(room_width, room_height);
 
 // Create blood surface
 surfaceFloorEffects= surface_create(room_width, room_height);
+
+enum SortingType
+{
+	Sortable,
+	UnsortableFloor,
+	UnsortableAir
+}

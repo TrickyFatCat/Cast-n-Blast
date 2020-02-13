@@ -1,10 +1,10 @@
-/// @description Insert description here
+
 
 // Inherit the parent event
 event_inherited();
 
 var _waitTime = SetTime(1);
-var _distanceToPlayer = point_distance(playerX, playerY, x, y);
+var _distanceToPlayer = CalculateDistanceToPlayer();
 
 
 if (activeWeapon.shotCount == 1)

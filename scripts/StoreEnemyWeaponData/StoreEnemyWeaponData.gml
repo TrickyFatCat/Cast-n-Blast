@@ -354,11 +354,11 @@ ds_map_add(RocketGunData, "laserSightEnabled",				false);
 ds_map_add(RocketGunData, "isAuto",							true);
 ds_map_add(RocketGunData, "currentShootMode",				ShootMode.Normal);
 //-----------------------------------------------------------------------------
-ds_map_add(RocketGunData, "bulletObject",					obj_Rocket);
+ds_map_add(RocketGunData, "bulletObject",					obj_EnemyRocket);
 ds_map_add(RocketGunData, "bulletNumber",					2);
 ds_map_add(RocketGunData, "bulletSpawnPointOffset",			19);
 //-----------------------------------------------------------------------------
-ds_map_add(RocketGunData, "damage",							1);
+ds_map_add(RocketGunData, "damage",							5);
 ds_map_add(RocketGunData, "heal",							0);
 //-----------------------------------------------------------------------------
 ds_map_add(RocketGunData, "rateOfFireAccelerated",			false);
@@ -388,7 +388,7 @@ ds_map_add(RocketGunData, "spreadIsDynamic",				false);
 ds_map_add(RocketGunData, "spreadIsUniform",				true);
 ds_map_add(RocketGunData, "spreadAngleIncrFactor",			0.2);
 ds_map_add(RocketGunData, "spreadAngleDecrFactor",			0.0075);
-ds_map_add(RocketGunData, "spreadAngleMin",					45);
+ds_map_add(RocketGunData, "spreadAngleMin",					90);
 ds_map_add(RocketGunData, "spreadAngleMax",					0);
 //-----------------------------------------------------------------------------
 ds_map_add(RocketGunData, "ammoID",							noone);

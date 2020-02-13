@@ -6,7 +6,7 @@ if (instance_exists(obj_Base))
 	
 	DrawFloorObjects;
 	
-	DrawUnsortable(DrawPosition.OnFloor);
+	DrawUnsortable(SortingType.UnsortableFloor);
 
 	DrawShadow;
 
@@ -14,5 +14,5 @@ if (instance_exists(obj_Base))
 	
 	DrawFlash;
 	
-	DrawUnsortable(DrawPosition.OnAll);
+	DrawUnsortable(SortingType.UnsortableAir);
 }

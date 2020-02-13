@@ -7,5 +7,15 @@ with(obj_FloorTile)
 
 with (obj_Floor)
 {
-	DrawSprite;
+	if (drawOutline)
+	{
+		shader_set(outlineShader);
+		shader_set_uniform_f(u_texel_size, texel_w, texel_h);
+		DrawSprite;
+		shader_reset()
+	}
+	else
+	{
+		DrawSprite;
+	}
 }

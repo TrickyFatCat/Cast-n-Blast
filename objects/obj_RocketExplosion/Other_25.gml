@@ -4,4 +4,8 @@
 // Inherit the parent event
 event_inherited();
 
-activeWeapon.directionCurrent = point_direction(x, y, playerX, playerY) - 180;
+if (isDisplayingRadius)
+{
+	draw_set_color(c_red);
+	draw_circle(x, y, explosionRadius, true);
+}

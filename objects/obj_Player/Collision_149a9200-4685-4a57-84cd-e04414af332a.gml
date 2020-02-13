@@ -1,6 +1,6 @@
 /// @description RespondOnProjectileCollision
 
-if (!isInvulnerable)
+if (!isInvulnerable && other.collisionEnable)
 {
 	DealDamageToPlayer(other.damage);
 	CheckPlayerHP;
