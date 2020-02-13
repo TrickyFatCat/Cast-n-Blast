@@ -19,5 +19,5 @@ currentState = RocketState.Start;
 
 targetX = 0;
 targetY = 0;
-explosionRadius = 28;
+explosionRadius = 32;
 explosion = SpawnExplosion(x, y, obj_RocketExplosion, damage, explosionRadius);

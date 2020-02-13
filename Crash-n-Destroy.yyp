@@ -2087,6 +2087,14 @@
             }
         },
         {
+            "Key": "b361da4e-aaf9-45a9-a968-52b50a19765a",
+            "Value": {
+                "id": "78665237-6697-4231-81b2-4915f3ac0aec",
+                "resourcePath": "objects\\obj_DstructionZone\\obj_DstructionZone.yy",
+                "resourceType": "GMObject"
+            }
+        },
+        {
             "Key": "b4351582-c6e3-4f70-9ac4-2c8b234b87ba",
             "Value": {
                 "id": "37f156b8-869e-4bce-b5c6-8726b6799a0b",

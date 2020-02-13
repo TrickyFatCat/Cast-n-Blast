@@ -15,7 +15,7 @@ switch (_perkId)
 	break;
 	
 	case Perk.DashSpeed:
-		global.Player.deafaultDashVelocity = IncreaseParameter(_perkId, global.Player.deafaultDashVelocity);
+		global.Player.dashVelocity = IncreaseParameter(_perkId, global.Player.deafaultDashVelocity);
 	break;
 	
 	case Perk.MaxHitpoints:
@@ -24,7 +24,7 @@ switch (_perkId)
 	break;
 	
 	case Perk.ShieldFactor:
-		global.Player.shieldFactor = IncreaseParameter(_perkId, global.Player.defaultShieldFactor);
+		global.Player.shieldFactor = DecreaseParameter(_perkId, global.Player.defaultShieldFactor);
 	break;
 	
 	case Perk.MaxEnergy:

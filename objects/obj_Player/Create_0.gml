@@ -13,7 +13,7 @@ SetActivePerks();
 #macro PullPickups			event_user(3)
 #macro RotateWeapon			event_user(4)
 #macro ShootWeapon		    event_user(5)
-#macro CheckPlayerHP		    event_user(6)
+#macro CheckPlayerHP		event_user(6)
 #macro ExecutePlayerDeath	event_user(7)
 #macro ProcessSpawn			event_user(8)
 #macro ProcessDeath			event_user(9)

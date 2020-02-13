@@ -203,6 +203,16 @@
             "enumb": 0,
             "eventtype": 4,
             "m_owner": "6de156bf-cdab-4d33-86d0-b18f7cac89c1"
+        },
+        {
+            "id": "110eefee-37df-4ca8-9bcb-a03c10d13d43",
+            "modelName": "GMEvent",
+            "mvc": "1.0",
+            "IsDnD": false,
+            "collisionObjectId": "b361da4e-aaf9-45a9-a968-52b50a19765a",
+            "enumb": 0,
+            "eventtype": 4,
+            "m_owner": "6de156bf-cdab-4d33-86d0-b18f7cac89c1"
         }
     ],
     "maskSpriteId": "6a3f86b1-be04-483f-9c45-898db0bd65c3",
@@ -237,7 +247,7 @@
             "mvc": "1.0",
             "objectId": "c0b37de0-4e9d-4cb9-81f9-922df5f3bea7",
             "propertyId": "61bc5419-ee0f-4313-a09d-2a3cea31bac2",
-            "value": "2"
+            "value": "2.25"
         },
         {
             "id": "bcd64cd1-e6ec-49ea-b683-840ef1a8d286",
@@ -245,7 +255,7 @@
             "mvc": "1.0",
             "objectId": "c0b37de0-4e9d-4cb9-81f9-922df5f3bea7",
             "propertyId": "4f6b055d-8205-430d-a240-5d11a1057185",
-            "value": "0.2"
+            "value": "0.225"
         },
         {
             "id": "1792bedb-4ef7-4de8-8fa3-1db59e6ed4ef",
@@ -281,7 +291,7 @@
             "rangeMax": 10,
             "rangeMin": 0,
             "resourceFilter": 1023,
-            "value": "6",
+            "value": "7",
             "varName": "dashVelocity",
             "varType": 0
         }

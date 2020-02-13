@@ -1,8 +1,8 @@
-var _enemyCountCurrent = instance_number(obj_Enemy);
+global.EnemiesNumber = instance_number(obj_Enemy);
 var _listSize = ds_list_size(spawnList);
 
 
-if (isActive && _enemyCountCurrent < enemyCountMax)
+if (isActive && global.EnemiesNumber < enemyCountMax)
 {
 	//SelectWave;
 	

@@ -37,3 +37,4 @@ global.Round = 1;
 
 soundTimer = SetTime(1);
 randomPerk = noone;
+destructionTile = noone;

@@ -51,18 +51,20 @@ switch (global.BattleState)
 			obj_spawnController.isActive = false;
 			global.BattleState = BattleState.RoundEnd;
 			global.PlayTime = 0;
+			DeactivateTilesController();
+			DeactivatePermanentTiles();
+			DeactivateTemporaryTiles();
+			instance_activate_object(destructionTile);
+			destructionTile.currentState = TileState.Activation;
 		}
 	break;
 	
 	case BattleState.RoundEnd:
-		if (instance_number(obj_Enemy) == 0)
+		if (global.EnemiesNumber == 0)
 		{
 			global.BattleState = BattleState.Intermission;
 			SetActivePerks();
 			ActivateInteractiveObjects();
-			DeactivateTilesController();
-			DeactivatePermanentTiles();
-			DeactivateTemporaryTiles();
 		}
 	break;
 	

@@ -18,7 +18,7 @@ SetObjectData(_wave[2], obj_Enemy_Beamer,		1,	5);
 SetObjectData(_wave[3], obj_Enemy_Trooper,		1,	5);
 SetObjectData(_wave[4], obj_Enemy_Ninja,		1,	5);
 SetObjectData(_wave[5], obj_Enemy_Turret,		1,	5);
-SetObjectData(_wave[6], obj_Enemy_RocketBot,	1,	5999);
+SetObjectData(_wave[6], obj_Enemy_RocketBot,	1,	5);
 SetObjectData(_wave[7], obj_Barrel,				1,	1);
 SetWaveData(_waveIndex, _wave, _waveWeight);
 

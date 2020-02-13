@@ -29,3 +29,5 @@ currentWave = GetWave(currentWaveIndex);
 waveData = GetWaveData(currentWave);
 waveSwitchTime = SetTime(10);
 waveSwitchTimer = 0;
+
+global.EnemiesNumber = 0;
