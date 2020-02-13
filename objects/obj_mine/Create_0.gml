@@ -35,3 +35,5 @@ destructionDelayTime = SetTime(0.1);
 destructionDelayTimer = 0;
 
 isInvulnerable = true;
+drawColour = c_gray;
+drawOutline = false;

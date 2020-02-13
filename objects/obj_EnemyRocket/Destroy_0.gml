@@ -6,4 +6,5 @@ with (explosion)
 	image_speed = defaultImageSpeed;
 	drawAlpha = 1;
 	currentState = RocketExplosionState.Active;
+	isDisplayingRadius = false;
 }

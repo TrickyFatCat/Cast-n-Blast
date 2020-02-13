@@ -21,5 +21,8 @@ draw_set_alpha(1);
 
 if visible
 {
+	shader_set(outlineShader);
+	shader_set_uniform_f(u_texel_size, texel_w, texel_h);
 	draw_sprite_ext(sprite_index, image_index, x, y - z, drawScaleX, drawScaleY, drawAngle, drawColour, drawAlpha);
+	shader_reset()
 }
