@@ -21,37 +21,37 @@ var _activeListSize = ds_list_size(_activeSpawnPoints);
 if (_activeListSize >= spawnNumber)
 {
 	var _enemyData;
-	var _enemy;
+	var _enemyId;
 	var _enemyNumber;
 	var _enemySpawned;
 		
 	for (var i = 0; i < spawnNumber; i++)
 	{
-		var _spawnID = irandom_range(0, _activeListSize - 1);
+		// Choose a random spawn point
+		
+		var _spawnID = irandom(_activeListSize - 1);
 		var _pointForSpawn = _activeSpawnPoints[| _spawnID];
 		
-		// Choose enemy for spawn//
+		// Choose a random enemy for spawn
 		_enemyData = ChooseRandomObject(waveData);
-		_enemy = GetObjectID(_enemyData);
+		_enemyId = GetObjectID(_enemyData);
 		_enemyNumber = GetObjectNumber(_enemyData);
-		_enemySpawned = GetEnemyCount(_enemy);
-		
-		show_debug_message(string(object_get_name(_enemy)) + " | max= " + string(_enemyNumber) + " | current= " + string(_enemySpawned));
+		_enemySpawned = GetEnemyCount(_enemyId);
 		
 		while (_enemySpawned >= _enemyNumber)
 		{
 			_enemyData = ChooseRandomObject(waveData);
-			_enemy = GetObjectID(_enemyData);
+			_enemyId = GetObjectID(_enemyData);
 			_enemyNumber = GetObjectNumber(_enemyData);
-			_enemySpawned = GetEnemyCount(_enemy);
+			_enemySpawned = GetEnemyCount(_enemyId);
 		}
-	
-		_pointForSpawn.enemyToSpawn = _enemy;
+		
+		// Spawn the enemy
+		_pointForSpawn.enemyToSpawn = _enemyId;
 		_pointForSpawn.currentState = SpawnPointState.Reveal;
 		_enemySpawned++;
-		SetEnemyCount(_enemy, _enemySpawned);
-		global.EnemiesTotal = Approach(global.EnemiesTotal, enemiesMaxNumber, 1);
- 
+		SetEnemyCount(_enemyId, _enemySpawned);
+		IncreaseEnemyTotal();
 		ds_map_destroy(_enemyData);
 	}
 }

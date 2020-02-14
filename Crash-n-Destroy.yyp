@@ -1095,6 +1095,14 @@
             }
         },
         {
+            "Key": "5f275b2b-9a54-4fdf-8b5d-fd68bb42217c",
+            "Value": {
+                "id": "96cc0c7d-8da1-4d55-bcc2-90ade483a7db",
+                "resourcePath": "scripts\\IncreaseEnemyTotal\\IncreaseEnemyTotal.yy",
+                "resourceType": "GMScript"
+            }
+        },
+        {
             "Key": "5f6078d8-15e9-42d4-a090-dce63e5649ce",
             "Value": {
                 "id": "afdc7d14-0c21-434a-889e-6a1c88e8ec70",
@@ -1276,6 +1284,14 @@
                 "id": "f86a31a2-df6b-4013-a136-9709196978ab",
                 "resourcePath": "views\\6f7e136f-2786-4a5b-b17e-43175855be82.yy",
                 "resourceType": "GMFolder"
+            }
+        },
+        {
+            "Key": "6f871991-7b40-45c7-87e7-0140d3d36f9e",
+            "Value": {
+                "id": "860fb440-d048-4b46-9059-167da595ff50",
+                "resourcePath": "scripts\\SetPerkData\\SetPerkData.yy",
+                "resourceType": "GMScript"
             }
         },
         {
@@ -3143,6 +3159,7 @@
         "b138a7c6-936c-488f-bf05-245c518d987e",
         "7c57d3af-5ade-4c22-bec4-9857a34327b1",
         "c77c319f-b1ee-4fd8-8318-d7c5e83a23f7",
+        "5f275b2b-9a54-4fdf-8b5d-fd68bb42217c",
         "60c1984b-644f-4bae-9886-9b6b0427a288",
         "c195d599-7ba5-41be-9f70-fee5daa9a780",
         "e36a9443-29d0-4493-8899-6e6162a4a75a",
@@ -3152,6 +3169,7 @@
         "49bf0704-d92b-4de3-abbc-ddd15a611398",
         "8b6c5121-4244-4f17-8831-ad31141c5049",
         "c697a9df-adc3-4c02-a7b2-ca6552b40584",
+        "6f871991-7b40-45c7-87e7-0140d3d36f9e",
         "6c7b9f3c-0cdc-4b43-a73b-e0d88cefd918",
         "137ae4e9-55cc-4005-9272-a3d276a1af46",
         "f4eaf9c0-98af-4acd-93f5-0110fa5a03d6",

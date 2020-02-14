@@ -6,7 +6,8 @@
     "children": [
         "b138a7c6-936c-488f-bf05-245c518d987e",
         "7c57d3af-5ade-4c22-bec4-9857a34327b1",
-        "c77c319f-b1ee-4fd8-8318-d7c5e83a23f7"
+        "c77c319f-b1ee-4fd8-8318-d7c5e83a23f7",
+        "5f275b2b-9a54-4fdf-8b5d-fd68bb42217c"
     ],
     "filterType": "GMScript",
     "folderName": "EnemyCounter",

@@ -13,7 +13,11 @@ with (activeWeapon)
 			var _index = round(bulletNumber / 2) - i;
 			CalculateBulletDirection(_index);
 			var _scaleX = SortHitscanCollisions(bulletSpawnDirection, collisionTargets);
+			var _impactX = bulletSpawnPointX + lengthdir_x(_scaleX, bulletSpawnDirection);
+			var _impactY = bulletSpawnPointY + lengthdir_y(_scaleX, bulletSpawnDirection);
+			var _impactRotation = random(360);
 			draw_sprite_ext(spr_laser, image_index, bulletSpawnPointX, bulletSpawnPointY, _scaleX, 5, bulletSpawnDirection, c_red, lasersightAlpha);
+			draw_sprite_ext(spr_laserImpact, image_index, _impactX, _impactY, 2, 2, _impactRotation, c_red, lasersightAlpha);
 		}
 	}
 }

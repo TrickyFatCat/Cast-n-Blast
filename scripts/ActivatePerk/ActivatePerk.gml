@@ -53,28 +53,28 @@ switch (_perkId)
 		global.Player.ulitmateDamage = IncreaseParameter(_perkId, global.Player.defaultUltimateDamage);
 	break;
 	
-	case Perk.MainDamage:
+	case Perk.PlasmaDamage:
 		_playerMainWeapon.damage = IncreaseParameter(_perkId, global.Player.mainDefaultDamage);
 	break;
 	
-	case Perk.MainRof:
+	case Perk.PlasmaRate:
 		_playerMainWeapon.rateOfFireCurrent = IncreaseParameter(_perkId, global.Player.mainDefaultRof);
 	break;
 
 	
-	case Perk.MainSpread:
+	case Perk.PlasmaSpread:
 		_playerMainWeapon.spreadAngleCurrent = DecreaseParameter(_perkId, global.Player.mainDefaultSpread);
 	break;
 	
-	case Perk.SecondaryBulletNumber:
+	case Perk.ShotgunBullets:
 		_playerSecondaryWeapon.bulletNumber += 1;
 	break;
 	
-	case Perk.SecondaryRof:
+	case Perk.ShotgunRate:
 		_playerSecondaryWeapon.rateOfFireCurrent = IncreaseParameter(_perkId, global.Player.secondaryDefaultRof);
 	break;
 	
-	case Perk.SecondarySpread:
+	case Perk.ShotgunSpread:
 		_playerSecondaryWeapon.spreadAngleCurrent = DecreaseParameter(_perkId, global.Player.secondaryDefaultSpread);
 	break;
 }
