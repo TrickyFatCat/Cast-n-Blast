@@ -5,29 +5,29 @@
 isActive = false;
 
 /// Spawn pause timer
-spawnPauseTime = SetTime(5);
+spawnPauseTime = SetTime(4);
 spawnPauseTimer = spawnPauseTime;
 
 /// Enemies spawn limits
-enemyCountMax = 20;
 spawnNumber = 1;
 
 /// Spawn list
 spawnList = ds_list_create();
-var _spawnPointsCount = instance_number(obj_enemySpawn);
+var _spawnPointsCount = instance_number(obj_EnemySpawn);
 
 for (var i = 0; i < _spawnPointsCount; i++)
 {
-	var _spawnPoint = instance_find(obj_enemySpawn, i);
+	var _spawnPoint = instance_find(obj_EnemySpawn, i);
 	
 	ds_list_add(spawnList, _spawnPoint); 
 }
 
 /// Wave data
 currentWaveIndex = WaveData.Test00;
-currentWave = GetWave(currentWaveIndex);
-waveData = GetWaveData(currentWave);
+waveData = GetWaveData(currentWaveIndex);
 waveSwitchTime = SetTime(10);
 waveSwitchTimer = 0;
 
-global.EnemiesNumber = 0;
+global.EnemiesTotal = 0;
+
+CalculateEnemiesMaxNumber();

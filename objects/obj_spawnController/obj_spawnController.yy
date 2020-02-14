@@ -2,7 +2,7 @@
     "id": "2b463946-37b5-4444-ba9f-8af2b1767b2b",
     "modelName": "GMObject",
     "mvc": "1.0",
-    "name": "obj_spawnController",
+    "name": "obj_SpawnController",
     "eventList": [
         {
             "id": "51654356-b360-48f0-8be7-abb660db8b87",

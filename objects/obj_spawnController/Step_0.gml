@@ -1,8 +1,4 @@
-global.EnemiesNumber = instance_number(obj_Enemy);
-var _listSize = ds_list_size(spawnList);
-
-
-if (isActive && global.EnemiesNumber < enemyCountMax)
+if (isActive && global.EnemiesTotal < enemiesMaxNumber)
 {
 	//SelectWave;
 	
@@ -15,5 +11,7 @@ if (isActive && global.EnemiesNumber < enemyCountMax)
 		spawnPauseTimer = 0;
 		
 		SpawnEnemy;
+		
+		show_debug_message(global.EnemiesTotal);
 	}
 }

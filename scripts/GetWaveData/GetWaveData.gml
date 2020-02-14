@@ -1,5 +1,7 @@
-/// @param wave
+/// @param waveIndex
 
-var _wave = argument0;
+var _waveIndex = argument0;
+
+var _wave = global.WaveData[_waveIndex];
 
 return _wave[? "data"];

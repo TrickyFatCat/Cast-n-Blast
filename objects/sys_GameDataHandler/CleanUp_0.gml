@@ -5,3 +5,4 @@ ClearWeaponData(global.PerksData);
 ds_list_destroy(global.ChosenPerks);
 ds_list_destroy(global.ActivePerks);
 ClearWaveData();
+ds_map_destroy(global.EnemyCountData);

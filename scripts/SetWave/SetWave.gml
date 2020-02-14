@@ -2,8 +2,9 @@
 
 var _waveIndex = argument0;
 
-with (obj_spawnController)
+with (obj_SpawnController)
 {
-	currentWave = GetWave(_waveIndex);
-	waveData = GetWaveData(currentWave);
+	currentWaveIndex = _waveIndex;
+	waveData = GetWaveData(currentWaveIndex);
+	CalculateEnemiesMaxNumber();
 }

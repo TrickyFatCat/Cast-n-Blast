@@ -25,7 +25,7 @@ switch (global.BattleState)
 			battleStartTimer = 0;
 			global.BattleState = BattleState.Active;
 			randomPerk = noone;
-			obj_spawnController.isActive = true;
+			obj_SpawnController.isActive = true;
 			var _tileType = choose(TileType.EnergyDebuffer, TileType.SpeedDebuffer);
 			ActivatePermanentTiles(_tileType);
 			ActivateTilesController();
@@ -48,7 +48,7 @@ switch (global.BattleState)
 		
 		if (_waveTimeIsOver)
 		{
-			obj_spawnController.isActive = false;
+			obj_SpawnController.isActive = false;
 			global.BattleState = BattleState.RoundEnd;
 			global.PlayTime = 0;
 			DeactivateTilesController();
@@ -60,7 +60,7 @@ switch (global.BattleState)
 	break;
 	
 	case BattleState.RoundEnd:
-		if (global.EnemiesNumber == 0)
+		if (global.EnemiesTotal == 0)
 		{
 			global.BattleState = BattleState.Intermission;
 			SetActivePerks();
