@@ -51,7 +51,7 @@ if (_activeListSize >= spawnNumber)
 		_pointForSpawn.currentState = SpawnPointState.Reveal;
 		_enemySpawned++;
 		SetEnemyCount(_enemyId, _enemySpawned);
-		IncreaseEnemyTotal();
+		IncreaseTotalEnemies();
 		ds_map_destroy(_enemyData);
 	}
 }

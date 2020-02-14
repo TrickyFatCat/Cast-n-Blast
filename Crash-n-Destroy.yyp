@@ -231,6 +231,14 @@
             }
         },
         {
+            "Key": "17c65153-af25-464f-b3de-96fc90780eb4",
+            "Value": {
+                "id": "03a76c48-e69c-4766-9ed7-a226213579bb",
+                "resourcePath": "scripts\\DecreaseTotalEnemies\\DecreaseTotalEnemies.yy",
+                "resourceType": "GMScript"
+            }
+        },
+        {
             "Key": "17c6f924-93d9-4f47-8e77-bac18c1adbcd",
             "Value": {
                 "id": "43707ac2-1ed2-42ed-ad6f-979f01042813",
@@ -1098,7 +1106,7 @@
             "Key": "5f275b2b-9a54-4fdf-8b5d-fd68bb42217c",
             "Value": {
                 "id": "96cc0c7d-8da1-4d55-bcc2-90ade483a7db",
-                "resourcePath": "scripts\\IncreaseEnemyTotal\\IncreaseEnemyTotal.yy",
+                "resourcePath": "scripts\\IncreaseTotalEnemies\\IncreaseTotalEnemies.yy",
                 "resourceType": "GMScript"
             }
         },
@@ -3160,6 +3168,7 @@
         "7c57d3af-5ade-4c22-bec4-9857a34327b1",
         "c77c319f-b1ee-4fd8-8318-d7c5e83a23f7",
         "5f275b2b-9a54-4fdf-8b5d-fd68bb42217c",
+        "17c65153-af25-464f-b3de-96fc90780eb4",
         "60c1984b-644f-4bae-9886-9b6b0427a288",
         "c195d599-7ba5-41be-9f70-fee5daa9a780",
         "e36a9443-29d0-4493-8899-6e6162a4a75a",

@@ -1,1 +1,0 @@
-global.EnemiesTotal = Approach(global.EnemiesTotal, enemiesMaxNumber, 1);

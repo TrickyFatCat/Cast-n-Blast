@@ -1,4 +1,4 @@
-if (isActive && global.EnemiesTotal < enemiesMaxNumber)
+if (isActive && global.TotalEnemies < enemiesMaxNumber)
 {
 	//SelectWave;
 	
@@ -12,6 +12,6 @@ if (isActive && global.EnemiesTotal < enemiesMaxNumber)
 		
 		SpawnEnemy;
 		
-		show_debug_message(global.EnemiesTotal);
+		show_debug_message(global.TotalEnemies);
 	}
 }

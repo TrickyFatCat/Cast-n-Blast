@@ -60,7 +60,7 @@ switch (global.BattleState)
 	break;
 	
 	case BattleState.RoundEnd:
-		if (global.EnemiesTotal == 0)
+		if (global.TotalEnemies == 0)
 		{
 			global.BattleState = BattleState.Intermission;
 			SetActivePerks();

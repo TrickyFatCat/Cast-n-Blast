@@ -28,6 +28,6 @@ waveData = GetWaveData(currentWaveIndex);
 waveSwitchTime = SetTime(10);
 waveSwitchTimer = 0;
 
-global.EnemiesTotal = 0;
+global.TotalEnemies = 0;
 
 CalculateEnemiesMaxNumber();

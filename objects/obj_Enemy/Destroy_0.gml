@@ -21,7 +21,7 @@ for (var i = 0; i < 3; i++)
 	instance_create_layer(x , y, layer, obj_MineStandard);
 }
 
-global.EnemiesTotal = Approach(global.EnemiesTotal, 0, 1);
+DecreaseTotalEnemies();
 var _currentCount = GetEnemyCount(object_index);
 _currentCount--;
 SetEnemyCount(object_index, _currentCount);

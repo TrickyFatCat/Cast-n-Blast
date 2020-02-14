@@ -44,7 +44,7 @@ switch (currentState)
 			image_xscale = drawScaleX;
 		}
 		
-		if (global.EnemiesTotal == 0)
+		if (global.TotalEnemies == 0)
 		{
 			currentState = TileState.Deactivation;
 			activeTimer = 0;
