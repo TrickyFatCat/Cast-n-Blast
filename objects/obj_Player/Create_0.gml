@@ -120,9 +120,10 @@ shieldRestoreFactor = 0.5;
 // Dash
 deafaultDashVelocity = dashVelocity;
 dashCharge = 2;
-maxDashCharge = 3;
+maxDashCharge = 2;
 dashCooldownTime = SetTime(3);
 dashCooldownTimer = 0;
+defaultDashCooldownTime = dashCooldownTime;
 
 // Weapon affects
 secondaryDefaultRateOfFire = secondaryWeapon.rateOfFireCurrent;

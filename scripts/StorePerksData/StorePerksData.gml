@@ -6,6 +6,8 @@ enum Perk
 {
 	RunSpeed,
 	DashSpeed,
+	DashCharge,
+	DashCoolDown,
 	MaxHitpoints,
 	ShieldFactor,
 	MaxEnergy,
@@ -23,7 +25,9 @@ enum Perk
 }
 
 SetPerkData(Perk.RunSpeed,			5, 0.1, true,	false,	"Run speed");
-SetPerkData(Perk.DashSpeed,			5, 0.1, true,	false,	"Dash distance");
+SetPerkData(Perk.DashSpeed,			2, 0.15, true,	false,	"Dash distance");
+SetPerkData(Perk.DashCharge,		1, 1.0, true,	true,	"Dash charge");
+SetPerkData(Perk.DashCoolDown,		2, 0.25, true,	false,	"Dash cooldown");
 SetPerkData(Perk.MaxHitpoints,		5, 0.1, true,	false,	"Max HP");
 SetPerkData(Perk.ShieldFactor,		5, 0.1, true,	false,	"ShieldPower");
 SetPerkData(Perk.MaxEnergy,			5, 0.1, true,	false,	"Max erergy");

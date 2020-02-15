@@ -18,6 +18,14 @@ switch (_perkId)
 		global.Player.dashVelocity = IncreaseParameter(_perkId, global.Player.deafaultDashVelocity);
 	break;
 	
+	case Perk.DashCharge:
+		global.Player.maxDashCharge += 1;
+	break;
+	
+	case Perk.DashCoolDown:
+		global.Player.dashCooldownTime = DecreaseParameter(_perkId, global.Player.defaultDashCooldownTime);
+	break;
+	
 	case Perk.MaxHitpoints:
 		global.Player.maxHitPoints = IncreaseParameter(_perkId, global.Player.defaultMaxHitPoints);
 		global.Player.hitPoints = global.Player.maxHitPoints;
