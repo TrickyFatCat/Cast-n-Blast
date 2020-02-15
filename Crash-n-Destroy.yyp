@@ -138,7 +138,7 @@
             "Key": "10c47987-e609-43f2-8074-96d977ac5217",
             "Value": {
                 "id": "db014b4e-f202-44ed-a468-ee92258401e7",
-                "resourcePath": "scripts\\IncreaseEnergy\\IncreaseEnergy.yy",
+                "resourcePath": "scripts\\IncreaseShieldPoints\\IncreaseShieldPoints.yy",
                 "resourceType": "GMScript"
             }
         },
@@ -498,7 +498,7 @@
             "Key": "2e8fff0d-8527-4d40-8d2a-60dac0d3c84f",
             "Value": {
                 "id": "0aecbdca-4db6-4383-b16d-73fc8d88f71f",
-                "resourcePath": "scripts\\DecreaseUltimateEnergy\\DecreaseUltimateEnergy.yy",
+                "resourcePath": "scripts\\DecreaseUltimatePoints\\DecreaseUltimatePoints.yy",
                 "resourceType": "GMScript"
             }
         },
@@ -818,7 +818,7 @@
             "Key": "49d6b2b8-b640-4912-a714-6627da7b2c73",
             "Value": {
                 "id": "c30f65ea-48c0-4e1e-b65e-d1dc4ee6dd77",
-                "resourcePath": "scripts\\DecreaseEnergy\\DecreaseEnergy.yy",
+                "resourcePath": "scripts\\DecreaseShieldPoints\\DecreaseShieldPoints.yy",
                 "resourceType": "GMScript"
             }
         },
@@ -2138,7 +2138,7 @@
             "Key": "b28d0bc6-7760-4e6e-a988-51ea6c2b15ec",
             "Value": {
                 "id": "57b512ed-85c1-41e7-a695-aaf671718abb",
-                "resourcePath": "scripts\\IncreaseUltimateEnergy\\IncreaseUltimateEnergy.yy",
+                "resourcePath": "scripts\\IncreaseUltimatePoints\\IncreaseUltimatePoints.yy",
                 "resourceType": "GMScript"
             }
         },

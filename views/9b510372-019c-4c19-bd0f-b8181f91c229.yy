@@ -10,7 +10,7 @@
         "2e8fff0d-8527-4d40-8d2a-60dac0d3c84f"
     ],
     "filterType": "GMScript",
-    "folderName": "Energy",
+    "folderName": "Shield",
     "isDefaultView": false,
     "localisedFolderName": ""
 }

@@ -42,7 +42,7 @@ if (global.TimeFactor > 0)
 		secondaryWeapon.isShooting = false;
 	}
 	
-	if (sys_GameManager.keyUltimateActivation && ultimateEnergy == ultimateMaxEnergy && ultimateState == UltimateState.Idle)
+	if (sys_GameManager.keyUltimateActivation && ultimatePoints == maxUltimatePoints && ultimateState == UltimateState.Idle)
 	{
 		isInvulnerable = true;
 		SpawnExplosion(x, y + 1, obj_PlayerUltimateExplosion, 1000, 128);

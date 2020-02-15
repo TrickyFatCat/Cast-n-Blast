@@ -93,18 +93,16 @@ defaultUltimateDamage = ultimateWeapon.damage;
 // Set player weapon ammo
 //SetAmmoParameters(activeWeapon.ammoID, global.PlayerAmmoData);
 
-// Energy
-maxEnergy = 100;
-defaultMaxEnergy = maxEnergy;
-energy = maxEnergy;
-energyRestoreRate = 12;
-defaultEnergyRestoreRate = energyRestoreRate;
-energyRestoreTimer = 0;
-canRestore = true;
-energyPenaltyTime = SetTime(2);
-energyPenaltyTimer = 0;
-
 // Shield
+maxShieldPoints = 100;
+defaultMaxShieldPoints = maxShieldPoints;
+shieldPoints = maxShieldPoints;
+shieldRestoreRate = 12;
+defaultShieldRestoreRate = shieldRestoreRate;
+shieldRestoreTimer = 0;
+shieldCanRestore = true;
+shieldRestorePenaltyTime = SetTime(2);
+shieldRestorePenaltyTimer = 0;
 shieldIsActive = false;
 shieldFactor = 1;
 defaultShieldFactor = shieldFactor;
@@ -131,9 +129,9 @@ enum UltimateState
 }
 
 ultimateState = UltimateState.Idle;
-ultimateEnergy = 1000;
-ultimateMaxEnergy = 1000;
-defaultUltimateMaxEnergy = ultimateMaxEnergy;
+ultimatePoints = 1000;
+maxUltimatePoints = 1000;
+defaultMaxUltimatePoints = maxUltimatePoints;
 ultimateDeactivaitionTime = 0.75;
 ultimateDeactivationProgress = 0;
 ultimateGainFactor = 1;

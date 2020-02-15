@@ -5,6 +5,6 @@ if (isConsumingUltimate)
 {
 	with (owner)
 	{
-		DecreaseUltimateEnergy(other.shootAmmoCost);
+		DecreaseUltimatePoints(other.shootAmmoCost);
 	}
 }

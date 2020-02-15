@@ -16,48 +16,48 @@ else
 ProcessDashRecovery;
 
 var _shieldKey = sys_GameManager.keyShield;
-shieldIsActive = _shieldKey && energy > 0;
+shieldIsActive = _shieldKey && shieldPoints > 0;
 
 if (shieldIsActive && ultimateState == UltimateState.Idle)
 {
 	drawColour = c_aqua;
-	canRestore = false;
+	shieldCanRestore = false;
 }
 else if (ultimateState == UltimateState.Idle)
 {
 	drawColour = c_white;
 }
 
-if (sys_GameManager.actionStopShieldieng && canRestore)
+if (sys_GameManager.actionStopShieldieng && shieldCanRestore)
 {
-	canRestore = false;
-	energyPenaltyTimer = 0;
+	shieldCanRestore = false;
+	shieldRestorePenaltyTimer = 0;
 }
 
-var _energyRestoreDelay = SetTime(1 / (energyRestoreRate));
+var _energyRestoreDelay = SetTime(1 / (shieldRestoreRate));
 
-if (energy < maxEnergy && canRestore)
+if (shieldPoints < maxShieldPoints && shieldCanRestore)
 {
-	energyRestoreTimer += global.TimeFactor;
-	var _restoreIsReady = CheckTimer(energyRestoreTimer, _energyRestoreDelay);
+	shieldRestoreTimer += global.TimeFactor;
+	var _restoreIsReady = CheckTimer(shieldRestoreTimer, _energyRestoreDelay);
 
 	if (_restoreIsReady)
 	{
-		IncreaseEnergy(1);
-		energyRestoreTimer = 0;
+		IncreaseShieldPoints(1);
+		shieldRestoreTimer = 0;
 	}
 }
 
-if (!canRestore && !_shieldKey)
+if (!shieldCanRestore && !_shieldKey)
 {
-	energyPenaltyTimer += global.TimeFactor;
+	shieldRestorePenaltyTimer += global.TimeFactor;
 	
-	var _timeIsOver = CheckTimer(energyPenaltyTimer, energyPenaltyTime);
+	var _timeIsOver = CheckTimer(shieldRestorePenaltyTimer, shieldRestorePenaltyTime);
 	
 	if (_timeIsOver)
 	{
-		canRestore = true;
-		energyPenaltyTimer = 0;
-		energyRestoreTimer = _energyRestoreDelay;
+		shieldCanRestore = true;
+		shieldRestorePenaltyTimer = 0;
+		shieldRestoreTimer = _energyRestoreDelay;
 	}
 }

@@ -1,8 +1,8 @@
 {
-    "id": "b28d0bc6-7760-4e6e-a988-51ea6c2b15ec",
+    "id": "2e8fff0d-8527-4d40-8d2a-60dac0d3c84f",
     "modelName": "GMScript",
     "mvc": "1.0",
-    "name": "IncreaseUltimateEnergy",
+    "name": "DecreaseUltimatePoints",
     "IsCompatibility": false,
     "IsDnD": false
 }

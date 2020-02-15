@@ -26,7 +26,7 @@ switch (_perkId)
 		global.Player.dashCooldownTime = DecreaseParameter(_perkId, global.Player.defaultDashCooldownTime);
 	break;
 	
-	case Perk.MaxHitpoints:
+	case Perk.MaxHitPoints:
 		global.Player.maxHitPoints = IncreaseParameter(_perkId, global.Player.defaultMaxHitPoints);
 		global.Player.hitPoints = global.Player.maxHitPoints;
 	break;
@@ -35,17 +35,17 @@ switch (_perkId)
 		global.Player.shieldFactor = DecreaseParameter(_perkId, global.Player.defaultShieldFactor);
 	break;
 	
-	case Perk.MaxEnergy:
-		global.Player.maxEnergy = IncreaseParameter(_perkId, global.Player.defaultMaxEnergy);
+	case Perk.MaxShieldPoints:
+		global.Player.maxShieldPoints = IncreaseParameter(_perkId, global.Player.defaultMaxShieldPoints);
 	break;
 	
-	case Perk.EnergyRestore:
-		global.Player.energyRestoreRate = IncreaseParameter(_perkId, global.Player.defaultEnergyRestoreRate);
+	case Perk.ShieldRestoreRate:
+		global.Player.shieldRestoreRate = IncreaseParameter(_perkId, global.Player.defaultShieldRestoreRate);
 	break;
 	
 	case Perk.MaxUltimate:
-		global.Player.ultimateMaxEnergy = IncreaseParameter(_perkId, global.Player.defaultUltimateMaxEnergy);
-		global.Player.ultimateEnergy = global.Player.ultimateMaxEnergy;
+		global.Player.maxUltimatePoints = IncreaseParameter(_perkId, global.Player.defaultMaxUltimatePoints);
+		global.Player.ultimatePoints = global.Player.maxUltimatePoints;
 	break;
 	
 	case Perk.UltimateGain:
@@ -64,7 +64,6 @@ switch (_perkId)
 		_playerMainWeapon.rateOfFireCurrent = IncreaseParameter(_perkId, global.Player.mainDefaultRof);
 	break;
 
-	
 	case Perk.PlasmaSpread:
 		_playerMainWeapon.spreadAngleCurrent = DecreaseParameter(_perkId, global.Player.mainDefaultSpread);
 	break;

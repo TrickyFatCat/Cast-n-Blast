@@ -5,7 +5,7 @@ instance_destroy(activeWeapon);
 for (var i = 0; i < 5; i++)
 {
 	var _pickup = instance_create_layer(x, y, layer, obj_UltimatePickup);
-	_pickup.ultimateNumber = round((global.Player.ultimateMaxEnergy * (ultimatePercent / 100)) / 5);
+	_pickup.ultimateNumber = round((global.Player.maxUltimatePoints * (ultimatePercent / 100)) / 5);
 }
 
 if (explosionObject != noone)

@@ -4,7 +4,7 @@ var _damage = argument0;
 
 if (shieldIsActive)
 {
-	DecreaseEnergy(round(_damage * shieldFactor));
+	DecreaseShieldPoints(round(_damage * shieldFactor));
 	EnableFlash(c_blue, 1);
 	//PlaySound(sfx_impact);
 }

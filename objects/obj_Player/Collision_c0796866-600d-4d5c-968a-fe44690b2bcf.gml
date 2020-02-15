@@ -18,7 +18,7 @@ if (other.currentState = TileState.Active)
 		break;
 	
 		case TileType.EnergyDebuffer:
-			canRestore = false;
+			shieldCanRestore = false;
 		break;
 	}
 }

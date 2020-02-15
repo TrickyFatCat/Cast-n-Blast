@@ -1,8 +1,8 @@
 {
-    "id": "49d6b2b8-b640-4912-a714-6627da7b2c73",
+    "id": "10c47987-e609-43f2-8074-96d977ac5217",
     "modelName": "GMScript",
     "mvc": "1.0",
-    "name": "DecreaseEnergy",
+    "name": "IncreaseShieldPoints",
     "IsCompatibility": false,
     "IsDnD": false
 }

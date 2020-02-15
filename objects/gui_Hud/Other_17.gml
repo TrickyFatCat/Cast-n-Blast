@@ -47,8 +47,8 @@ var _x = (guiWidth * 0.5) - (_scaleX / 2);
 var _y = guiHeight * 0.95;
 draw_set_font(fnt_small);
 SetAlign(fa_center, fa_center);
-var _value = global.Player.ultimateEnergy;
-var _maxValue = global.Player.ultimateMaxEnergy;
+var _value = global.Player.ultimatePoints;
+var _maxValue = global.Player.maxUltimatePoints;
 var _percent = round(100 * (_value / _maxValue));
 
 DrawProgressBar(_x, _y, _scaleX, _scaleY, hudAlpha, c_black, ultimateColour, _value, _maxValue, false);
@@ -66,9 +66,9 @@ DrawTextOutline(_x + _scaleX / 2, _y + _scaleY / 2, c_black, c_white, string(_va
 
 // Energy
 _x += _scaleX;
-_value = global.Player.energy;
+_value = global.Player.shieldPoints;
 
-DrawProgressBar(_x, _y, _scaleX, _scaleY, hudAlpha, c_black, energyColour, _value, global.Player.maxEnergy, false);
+DrawProgressBar(_x, _y, _scaleX, _scaleY, hudAlpha, c_black, energyColour, _value, global.Player.maxShieldPoints, false);
 DrawTextOutline(_x + _scaleX / 2, _y + _scaleY / 2, c_black, c_white, string(_value));
 
 // Dash

@@ -12,7 +12,7 @@ switch (ultimateState)
 	break;
 	
 	case UltimateState.Process:
-		if (ultimateEnergy > 0)
+		if (ultimatePoints > 0)
 		{
 			ultimateWeapon.isShooting = true;
 			EnableFlash(c_aqua, 1);

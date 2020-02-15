@@ -4,4 +4,4 @@
 // Inherit the parent event
 event_inherited();
 
-draw_text(x, y, string(canRestore) + " | " + string(energyRestoreTimer))
+draw_text(x, y, string(shieldCanRestore) + " | " + string(shieldRestoreTimer))
