@@ -77,10 +77,45 @@ var _percent = round(100 * (_value / _maxValue));
 DrawProgressBar(_x, _y, _scaleX, _scaleY, hudAlpha, c_black, ultimateColour, _value, _maxValue, false);
 DrawTextOutline(_x + _scaleX / 2, _y + _scaleY / 2, c_black, c_white, string(_percent));
 
+// HitPoints
 _y = _y - _scaleY + 4;
-_value = global.Player.hitPoints;
+_value = round(global.Player.hitPoints);
 var _maxValue = global.Player.maxHitPoints;
 var _percent = round(100 * (_value / _maxValue));
 
 DrawProgressBar(_x, _y, _scaleX, _scaleY, hudAlpha, c_black, hitPointsColour, _value, _maxValue, false);
 DrawTextOutline(_x + _scaleX / 2, _y + _scaleY / 2, c_black, c_white, string(_value));
+
+// Dash
+_y = _y - _scaleY + 4;
+var _dashCharge = global.Player.dashCharge;
+var _maxDashCharge = global.Player.maxDashCharge;
+_scaleX /= _maxDashCharge;
+_value = 1;
+var _maxValue = 1;
+
+for (var i = 0; i < _maxDashCharge; i++)
+{
+	if (i > 0)
+	{
+		_x += _scaleX;
+	}
+	
+	if (i < _dashCharge)
+	{
+		_value = 1;
+		_maxValue = 1;
+	}
+	else if (i > _dashCharge)
+	{
+		_value = 0;
+		_maxValue = 1;
+	}
+	else if (i == _dashCharge)
+	{
+		_value = global.Player.dashCooldownTimer;
+		_maxValue = global.Player.dashCooldownTime;
+	}
+	
+	DrawProgressBar(_x, _y, _scaleX, _scaleY, hudAlpha, c_black, c_teal, _value, _maxValue, false);
+}

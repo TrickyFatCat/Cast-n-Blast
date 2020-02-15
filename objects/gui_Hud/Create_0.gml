@@ -4,6 +4,7 @@
 event_inherited();
 
 #macro DrawHud event_user(7)
+#macro DrawDashHud event_user(8)
 
 // States
 enum HUDState

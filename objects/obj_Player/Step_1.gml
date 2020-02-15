@@ -13,6 +13,9 @@ else
 	activeWeapon.laserSightEnabled = false;
 }
 
+ProcessDashRecovery;
+
+
 shieldIsActive = sys_GameManager.keyShield && energy > 0;
 isBounceable = shieldIsActive;
 

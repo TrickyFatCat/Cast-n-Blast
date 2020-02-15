@@ -6,5 +6,3 @@ for (var i = 0; i < _arrayLength; i++)
 	var _enemyMaxNumber = GetObjectNumber(_enemy);
 	enemiesMaxNumber += _enemyMaxNumber;
 }
-
-show_debug_message(enemiesMaxNumber);

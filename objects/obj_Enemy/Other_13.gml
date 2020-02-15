@@ -4,7 +4,7 @@ var _cellSize = global.PathCellWidth;
 var _pointX;
 var _pointY;
 
-var _distanceToPlayer = point_distance(x, y, playerX, playerY);
+var _distanceToPlayer = point_distance(playerX, playerY, x, y);
 
 if (_distanceToPlayer > attackRadiusMax)
 {

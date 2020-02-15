@@ -11,7 +11,5 @@ if (isActive && global.TotalEnemies < enemiesMaxNumber)
 		spawnPauseTimer = 0;
 		
 		SpawnEnemy;
-		
-		show_debug_message(global.TotalEnemies);
 	}
 }

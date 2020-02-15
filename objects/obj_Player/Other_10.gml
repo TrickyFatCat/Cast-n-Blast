@@ -37,14 +37,4 @@ else
 	currentState = PlayerState.Idle;
 }
 
-if (sys_GameManager.keyDash && energy >= dashCost)
-{
-	previousState = currentState;
-	if (previousState == PlayerState.Idle)
-	{
-		directionCurrent = point_direction(x, y, mouse_x, mouse_y);
-	}
-	currentState = PlayerState.Dash;
-	velocity = dashVelocity;
-	DecreaseEnergy(dashCost);
-}
+ActivateDash();

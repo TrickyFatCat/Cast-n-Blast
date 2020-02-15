@@ -1351,6 +1351,14 @@
             }
         },
         {
+            "Key": "73577388-ca1c-4c1e-ac8c-347eb66cf226",
+            "Value": {
+                "id": "6e045cf1-1319-4cf3-9569-62b3932a1823",
+                "resourcePath": "scripts\\IncreaseDashCharge\\IncreaseDashCharge.yy",
+                "resourceType": "GMScript"
+            }
+        },
+        {
             "Key": "73a05411-8021-4872-9092-a5969c8a3508",
             "Value": {
                 "id": "6e674d27-c4e1-471a-bf39-6b43395bbc5f",
@@ -2255,6 +2263,14 @@
             }
         },
         {
+            "Key": "bc04a0ac-06f1-4794-8da6-142469f36eeb",
+            "Value": {
+                "id": "0d93d6c1-fd09-42e7-a1a1-fe195d46ee2e",
+                "resourcePath": "views\\bc04a0ac-06f1-4794-8da6-142469f36eeb.yy",
+                "resourceType": "GMFolder"
+            }
+        },
+        {
             "Key": "bde8771a-e188-4548-8d01-c29e360cb647",
             "Value": {
                 "id": "4444e3ed-d575-4361-b694-18cac4ef24e4",
@@ -2356,14 +2372,6 @@
                 "id": "8ce50657-6990-4d19-8569-92c9c3155540",
                 "resourcePath": "scripts\\StorePerksData\\StorePerksData.yy",
                 "resourceType": "GMScript"
-            }
-        },
-        {
-            "Key": "c745714b-d0b1-4ff1-b4fc-19ae2a99c671",
-            "Value": {
-                "id": "dbaf4e23-6296-4e6b-ab28-cb18de11b27c",
-                "resourcePath": "sprites\\spr_sawblade\\spr_sawblade.yy",
-                "resourceType": "GMSprite"
             }
         },
         {
@@ -2863,6 +2871,14 @@
             }
         },
         {
+            "Key": "ef7c7f9e-e0ea-4c5c-a776-8addb9316c92",
+            "Value": {
+                "id": "d2492a77-80a8-427c-81f2-8fb433bbe1bf",
+                "resourcePath": "scripts\\ActivateDash\\ActivateDash.yy",
+                "resourceType": "GMScript"
+            }
+        },
+        {
             "Key": "eff89f1c-8e1d-40cf-b41d-5478ca0db11b",
             "Value": {
                 "id": "43af04c8-d4c4-437e-8928-095f240ecbf1",
@@ -2892,6 +2908,14 @@
                 "id": "f45caf49-a32c-49eb-9317-d3d944a9cd8c",
                 "resourcePath": "views\\f119195c-3a0c-4263-917a-29cf14e83f97.yy",
                 "resourceType": "GMFolder"
+            }
+        },
+        {
+            "Key": "f1530b23-7da1-4daf-a54a-ad85f18a0ffc",
+            "Value": {
+                "id": "46b2c306-7204-424f-9ca3-14421d525bcd",
+                "resourcePath": "scripts\\DecreaseDashCharge\\DecreaseDashCharge.yy",
+                "resourceType": "GMScript"
             }
         },
         {
@@ -3113,6 +3137,9 @@
         "117d62ef-0405-468e-87a5-48fde52426af",
         "76040d57-5a1b-4128-9b1f-7bd8c2ba2eb9",
         "975fcde3-e2df-427b-83b9-3f6a73854791",
+        "ef7c7f9e-e0ea-4c5c-a776-8addb9316c92",
+        "73577388-ca1c-4c1e-ac8c-347eb66cf226",
+        "f1530b23-7da1-4daf-a54a-ad85f18a0ffc",
         "4049e4fd-1d04-4e2f-81de-6da12f8b2655",
         "52e25e36-b2d5-45bc-9808-cf34f3a729b1",
         "3c884466-e1db-4224-b662-2086df475b8c",

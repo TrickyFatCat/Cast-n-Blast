@@ -18,6 +18,7 @@ SetActivePerks();
 #macro ProcessSpawn			event_user(8)
 #macro ProcessDeath			event_user(9)
 #macro ProcessUltimate		event_user(10)
+#macro ProcessDashRecovery	event_user(11)
 
 //Set shadow
 var _shadowScale = 1;
@@ -118,8 +119,10 @@ shieldRestoreFactor = 0.5;
 
 // Dash
 deafaultDashVelocity = dashVelocity;
-dashCost = 25;
-defaultDashCost = dashCost;
+dashCharge = 2;
+maxDashCharge = 3;
+dashCooldownTime = SetTime(3);
+dashCooldownTimer = 0;
 
 // Weapon affects
 secondaryDefaultRateOfFire = secondaryWeapon.rateOfFireCurrent;
