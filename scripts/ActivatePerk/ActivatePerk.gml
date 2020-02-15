@@ -43,11 +43,6 @@ switch (_perkId)
 		global.Player.energyRestoreRate = IncreaseParameter(_perkId, global.Player.defaultEnergyRestoreRate);
 	break;
 	
-	case Perk.OverheatTime:
-		global.Player.overheatPenaltyTime = DecreaseParameter(_perkId, global.Player.defaultOverheatPenaltyTime);
-		global.Player.shootPenaltyTime = DecreaseParameter(_perkId, global.Player.defaultShootPenaltyTime);
-	break;
-	
 	case Perk.MaxUltimate:
 		global.Player.ultimateMaxEnergy = IncreaseParameter(_perkId, global.Player.defaultUltimateMaxEnergy);
 		global.Player.ultimateEnergy = global.Player.ultimateMaxEnergy;

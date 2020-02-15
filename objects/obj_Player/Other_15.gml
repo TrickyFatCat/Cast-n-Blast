@@ -13,7 +13,7 @@ if (global.TimeFactor > 0)
 		_shootKey = sys_GameManager.keyShootSemiAuto;
 	}
 	
-	if (_shootKey && energy >= activeWeapon.shootAmmoCost && ultimateState == UltimateState.Idle)
+	if (_shootKey && ultimateState == UltimateState.Idle)
 	{
 		activeWeapon.isShooting = true;
 	}
@@ -33,7 +33,7 @@ if (global.TimeFactor > 0)
 		_secondaryShootKey = sys_GameManager.keySecondaryShootSemiAuto;
 	}
 	
-	if (_secondaryShootKey && energy >= secondaryWeapon.shootAmmoCost && ultimateState == UltimateState.Idle)
+	if (_secondaryShootKey && ultimateState == UltimateState.Idle)
 	{
 		secondaryWeapon.isShooting = true;
 	}

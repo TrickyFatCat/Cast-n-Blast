@@ -13,7 +13,7 @@ keySecondaryShootSemiAuto = false;
 keyInteract = false;
 keyShield = false;
 keyDash = false;
-actionStopShooting = false;
+actionStopShieldieng = false;
 
 // UI controls
 keyMenuUp = false;

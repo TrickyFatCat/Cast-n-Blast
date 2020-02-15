@@ -4,4 +4,4 @@
 // Inherit the parent event
 event_inherited();
 
-draw_text(x, y, string(dashCharge) + string(dashCooldownTimer))
+draw_text(x, y, string(canRestore) + " | " + string(energyRestoreTimer))

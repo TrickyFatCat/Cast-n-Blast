@@ -87,7 +87,6 @@ secondaryDefaultSpread = secondaryWeapon.spreadAngleCurrent;
 ultimateWeaponID = PlayerWeapon.UltimateGun;
 ultimateWeapon = instance_create_layer(x, y, layer, obj_PlayerWeapon);
 SetPlayerWeapon(ultimateWeapon, ultimateWeaponID);
-ultimateWeapon.isConsumingEnergy = false;
 ultimateWeapon.isConsumingUltimate = true;
 defaultUltimateDamage = ultimateWeapon.damage;
 
@@ -99,23 +98,16 @@ maxEnergy = 100;
 defaultMaxEnergy = maxEnergy;
 energy = maxEnergy;
 energyRestoreRate = 12;
-energyRestoreFactor = 1;
 defaultEnergyRestoreRate = energyRestoreRate;
 energyRestoreTimer = 0;
-isOverheated = false;
 canRestore = true;
-energyPenaltyTime = 0;
+energyPenaltyTime = SetTime(2);
 energyPenaltyTimer = 0;
-shootPenaltyTime = 2;
-defaultShootPenaltyTime = shootPenaltyTime;
-overheatPenaltyTime = 4;
-defaultOverheatPenaltyTime = overheatPenaltyTime;
 
 // Shield
 shieldIsActive = false;
 shieldFactor = 1;
 defaultShieldFactor = shieldFactor;
-shieldRestoreFactor = 0.5;
 
 // Dash
 deafaultDashVelocity = dashVelocity;

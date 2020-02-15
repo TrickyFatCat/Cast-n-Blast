@@ -19,8 +19,6 @@ if (other.currentState = TileState.Active)
 	
 		case TileType.EnergyDebuffer:
 			canRestore = false;
-			energyRestoreFactor = 0;
-			energyPenaltyTime = SetTime(1);
 		break;
 	}
 }

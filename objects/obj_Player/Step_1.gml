@@ -15,43 +15,26 @@ else
 
 ProcessDashRecovery;
 
-
-shieldIsActive = sys_GameManager.keyShield && energy > 0;
-isBounceable = shieldIsActive;
+var _shieldKey = sys_GameManager.keyShield;
+shieldIsActive = _shieldKey && energy > 0;
 
 if (shieldIsActive && ultimateState == UltimateState.Idle)
 {
 	drawColour = c_aqua;
+	canRestore = false;
 }
 else if (ultimateState == UltimateState.Idle)
 {
 	drawColour = c_white;
 }
 
-var _keyShoot = sys_GameManager.keyShootAuto || sys_GameManager.keyShootSemiAuto || sys_GameManager.keySecondaryShootAuto || sys_GameManager.keySecondaryShootSemiAuto; 
-
-if (_keyShoot && canRestore)
-{
-	energyRestoreFactor = 0;
-}
-else
-{
-	energyRestoreFactor = 1;
-}
-
-if (sys_GameManager.actionStopShooting && canRestore && !isOverheated)
+if (sys_GameManager.actionStopShieldieng && canRestore)
 {
 	canRestore = false;
-	energyPenaltyTime = SetTime(shootPenaltyTime);
 	energyPenaltyTimer = 0;
 }
 
-if (shieldIsActive && (!_keyShoot))
-{
-	energyRestoreFactor = shieldRestoreFactor;
-}
-
-var _energyRestoreDelay = SetTime(1 / (energyRestoreRate * energyRestoreFactor));
+var _energyRestoreDelay = SetTime(1 / (energyRestoreRate));
 
 if (energy < maxEnergy && canRestore)
 {
@@ -65,21 +48,8 @@ if (energy < maxEnergy && canRestore)
 	}
 }
 
-if (energy <= 0 && !isOverheated)
+if (!canRestore && !_shieldKey)
 {
-	canRestore = false;
-	energyPenaltyTime = SetTime(overheatPenaltyTime);
-	energyPenaltyTimer = 0;
-	isOverheated = true;
-}
-
-if (!canRestore)
-{
-	if (isOverheated)
-	{
-		EnableFlash(c_orange, 1);
-	}
-	
 	energyPenaltyTimer += global.TimeFactor;
 	
 	var _timeIsOver = CheckTimer(energyPenaltyTimer, energyPenaltyTime);
@@ -89,10 +59,5 @@ if (!canRestore)
 		canRestore = true;
 		energyPenaltyTimer = 0;
 		energyRestoreTimer = _energyRestoreDelay;
-		if (isOverheated)
-		{
-			isOverheated = false;
-			energy = 25;
-		}
 	}
 }
