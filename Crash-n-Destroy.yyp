@@ -319,6 +319,14 @@
             }
         },
         {
+            "Key": "1d082d65-dec9-42e1-8c6f-3f7d2477ed95",
+            "Value": {
+                "id": "4494aa80-9d44-4fcc-bcf5-f3fbbb866958",
+                "resourcePath": "scripts\\IncreaseDamage\\IncreaseDamage.yy",
+                "resourceType": "GMScript"
+            }
+        },
+        {
             "Key": "1da54990-d36b-4547-8a9f-43a9fa089155",
             "Value": {
                 "id": "973f4492-ca30-4dbe-9d24-51ab6f98364b",
@@ -404,6 +412,14 @@
                 "id": "8324d08e-925d-45bf-867a-99e51a06ca20",
                 "resourcePath": "sprites\\spr_upgradeExplosion\\spr_upgradeExplosion.yy",
                 "resourceType": "GMSprite"
+            }
+        },
+        {
+            "Key": "236249b0-8a55-4f08-8459-1b5d25365ca3",
+            "Value": {
+                "id": "73172679-17f4-4943-8cd6-6172dc5353c2",
+                "resourcePath": "scripts\\ShotgunPerks\\ShotgunPerks.yy",
+                "resourceType": "GMScript"
             }
         },
         {
@@ -623,6 +639,14 @@
             }
         },
         {
+            "Key": "39233fe7-5420-4104-a4be-cb72e9221578",
+            "Value": {
+                "id": "11eebbfb-9e9c-4ca7-a89a-847b538a4805",
+                "resourcePath": "scripts\\UltimatePerks\\UltimatePerks.yy",
+                "resourceType": "GMScript"
+            }
+        },
+        {
             "Key": "392c07d2-86dd-4af7-a03f-cc5274cd867c",
             "Value": {
                 "id": "15ecf775-201f-4baf-9f71-e7fb79c5dc50",
@@ -699,6 +723,14 @@
             "Value": {
                 "id": "2b132b2e-05b6-4ba4-80f6-f7a693e5f118",
                 "resourcePath": "scripts\\StoreEnemyWeaponData\\StoreEnemyWeaponData.yy",
+                "resourceType": "GMScript"
+            }
+        },
+        {
+            "Key": "3ce3bf8f-3063-472b-b111-129c33e603de",
+            "Value": {
+                "id": "756c6811-6ef3-47cf-b835-e0c4aba84be4",
+                "resourcePath": "scripts\\DecreaseSpread\\DecreaseSpread.yy",
                 "resourceType": "GMScript"
             }
         },
@@ -791,6 +823,14 @@
             }
         },
         {
+            "Key": "40f62576-304a-4461-8e88-df2c4cf43dc2",
+            "Value": {
+                "id": "0f7d82d7-417d-4d03-9ff1-bf12e5aa4bf9",
+                "resourcePath": "views\\40f62576-304a-4461-8e88-df2c4cf43dc2.yy",
+                "resourceType": "GMFolder"
+            }
+        },
+        {
             "Key": "44a6d039-4112-46e3-9798-c50d872ae7dc",
             "Value": {
                 "id": "9099c3c8-c738-4c73-bbca-318c6e816758",
@@ -835,6 +875,14 @@
             "Value": {
                 "id": "1253985e-5417-4800-8672-3ddcb451a084",
                 "resourcePath": "views\\47021d44-812f-44b4-90fc-0633f8d548ea.yy",
+                "resourceType": "GMFolder"
+            }
+        },
+        {
+            "Key": "47417847-f4bd-4d0b-8b84-de10272aad70",
+            "Value": {
+                "id": "6346d012-9a1c-40dd-be2a-429da7b1c2a8",
+                "resourcePath": "views\\47417847-f4bd-4d0b-8b84-de10272aad70.yy",
                 "resourceType": "GMFolder"
             }
         },
@@ -924,6 +972,14 @@
                 "id": "7cc3ea3c-6814-4b61-b5e8-0bdcd9d9f8a4",
                 "resourcePath": "sprites\\spr_playerProjectileImpact\\spr_playerProjectileImpact.yy",
                 "resourceType": "GMSprite"
+            }
+        },
+        {
+            "Key": "4d3bb398-9ca5-40e6-b9b1-00f21f69c2af",
+            "Value": {
+                "id": "99c72b1d-8659-43a2-88cf-e7ac8e90dc39",
+                "resourcePath": "scripts\\IncreaseRateOfFire\\IncreaseRateOfFire.yy",
+                "resourceType": "GMScript"
             }
         },
         {
@@ -1783,6 +1839,14 @@
             }
         },
         {
+            "Key": "8811d9c6-2f06-4d56-8667-7f26e4d03975",
+            "Value": {
+                "id": "01e15ed2-383c-485b-9b90-6c3f89ef6aef",
+                "resourcePath": "scripts\\DecreaseReloadTime\\DecreaseReloadTime.yy",
+                "resourceType": "GMScript"
+            }
+        },
+        {
             "Key": "887eea3c-3d03-4f6d-aa7a-828cee1b1399",
             "Value": {
                 "id": "1c0e0c06-e121-40ab-aa77-f49080ddc4b1",
@@ -1900,6 +1964,14 @@
                 "id": "17d3ff4b-0277-4159-88f6-0fb69abe9db2",
                 "resourcePath": "views\\948d1c19-688b-4a66-bff0-06db6864944c.yy",
                 "resourceType": "GMFolder"
+            }
+        },
+        {
+            "Key": "965e7fe8-39de-4b24-bbe5-f64de85eb5be",
+            "Value": {
+                "id": "286f40ff-cfc0-4f60-8d95-1cf4c676f50c",
+                "resourcePath": "scripts\\IncreaseBullets\\IncreaseBullets.yy",
+                "resourceType": "GMScript"
             }
         },
         {
@@ -2215,6 +2287,14 @@
             }
         },
         {
+            "Key": "ad0e63ff-d036-4963-b815-1c2280a0c418",
+            "Value": {
+                "id": "b8944f25-1eb0-4399-8d1e-50a619253f0e",
+                "resourcePath": "scripts\\IncreaseMaxAmmo\\IncreaseMaxAmmo.yy",
+                "resourceType": "GMScript"
+            }
+        },
+        {
             "Key": "ada2a890-3018-48f5-b598-f4dfaeb40dab",
             "Value": {
                 "id": "828c9fef-564f-404a-9bcb-af785aad4b96",
@@ -2348,6 +2428,22 @@
                 "id": "427055e8-ff21-4a39-9caa-21d06bde2fa6",
                 "resourcePath": "scripts\\ApplyShakeToCamera\\ApplyShakeToCamera.yy",
                 "resourceType": "GMScript"
+            }
+        },
+        {
+            "Key": "b790f692-6569-47a8-8390-49c046d7e3bf",
+            "Value": {
+                "id": "b0c6b106-a9d3-4bef-9ba9-6273a586cdb2",
+                "resourcePath": "scripts\\PlasmaPerks\\PlasmaPerks.yy",
+                "resourceType": "GMScript"
+            }
+        },
+        {
+            "Key": "b7c2afd6-4561-414e-ae05-b58aaf22f41a",
+            "Value": {
+                "id": "d74f1727-528b-416b-ad4a-cb50208c1279",
+                "resourcePath": "views\\b7c2afd6-4561-414e-ae05-b58aaf22f41a.yy",
+                "resourceType": "GMFolder"
             }
         },
         {
@@ -2596,6 +2692,14 @@
                 "id": "8bd25081-19ae-4714-9088-ca0094ecd908",
                 "resourcePath": "rooms\\rm_mainMenu\\rm_mainMenu.yy",
                 "resourceType": "GMRoom"
+            }
+        },
+        {
+            "Key": "cff7cb59-a0aa-446d-a644-c3cb0ba7a714",
+            "Value": {
+                "id": "1c5b9cd1-6756-4bf9-a318-6ddb5130acf4",
+                "resourcePath": "scripts\\PlayerParametersPerks\\PlayerParametersPerks.yy",
+                "resourceType": "GMScript"
             }
         },
         {
@@ -3231,6 +3335,14 @@
             }
         },
         {
+            "Key": "fdbbb6af-7b5f-4c49-a99b-781e4dc015c6",
+            "Value": {
+                "id": "a0746920-d112-4828-a07c-cc1ead88737f",
+                "resourcePath": "scripts\\UpdateAmmoParameter\\UpdateAmmoParameter.yy",
+                "resourceType": "GMScript"
+            }
+        },
+        {
             "Key": "fecbded1-2b5a-4ae6-b04b-ceafd52f643b",
             "Value": {
                 "id": "53969e06-d54a-41c2-b957-62cb8ceeda18",
@@ -3391,6 +3503,17 @@
         "194be890-e962-42da-a92c-92b0a1ffa684",
         "2462dd5d-5960-40a3-bd2e-8b6d06731a02",
         "ada2a890-3018-48f5-b598-f4dfaeb40dab",
+        "fdbbb6af-7b5f-4c49-a99b-781e4dc015c6",
+        "b790f692-6569-47a8-8390-49c046d7e3bf",
+        "236249b0-8a55-4f08-8459-1b5d25365ca3",
+        "39233fe7-5420-4104-a4be-cb72e9221578",
+        "1d082d65-dec9-42e1-8c6f-3f7d2477ed95",
+        "4d3bb398-9ca5-40e6-b9b1-00f21f69c2af",
+        "3ce3bf8f-3063-472b-b111-129c33e603de",
+        "965e7fe8-39de-4b24-bbe5-f64de85eb5be",
+        "8811d9c6-2f06-4d56-8667-7f26e4d03975",
+        "ad0e63ff-d036-4963-b815-1c2280a0c418",
+        "cff7cb59-a0aa-446d-a644-c3cb0ba7a714",
         "a6e421fa-8abb-4f64-83c2-27e1c150f24e",
         "1e524765-6693-42b8-8da9-7a26140c56cf",
         "2db62542-d884-408b-b99d-f9dfb69f5c9c",

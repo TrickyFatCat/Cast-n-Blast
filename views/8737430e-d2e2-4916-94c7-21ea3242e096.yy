@@ -21,7 +21,9 @@
         "40232b20-7920-47ae-b080-3413192b5353",
         "46a429f6-6050-47af-ad2a-acb26d4f1251",
         "51cabd1b-b956-4ab8-a862-b86d5590cb8f",
-        "3841f7a9-eb3f-4c5f-925a-602d07d034fe"
+        "3841f7a9-eb3f-4c5f-925a-602d07d034fe",
+        "40f62576-304a-4461-8e88-df2c4cf43dc2",
+        "47417847-f4bd-4d0b-8b84-de10272aad70"
     ],
     "filterType": "GMScript",
     "folderName": "Perks",

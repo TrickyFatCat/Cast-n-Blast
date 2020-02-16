@@ -6,5 +6,5 @@ enum PlayerAmmo
 	Shotgun
 }
 
-SetAmmoData(PlayerAmmo.PlasmaGun, 200);
-SetAmmoData(PlayerAmmo.Shotgun, 100);
+SetAmmoData(PlayerAmmo.PlasmaGun, 50);
+SetAmmoData(PlayerAmmo.Shotgun, 20);

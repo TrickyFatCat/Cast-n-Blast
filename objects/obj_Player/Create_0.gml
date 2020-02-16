@@ -69,14 +69,17 @@ sessionWeaponData = [];
 var _arrayLength = array_length_1d(global.PlayerWeaponData);
 for (var i = 0; i < _arrayLength; i++)
 {
-	array_copy(sessionWeaponData, 0, global.PlayerWeaponData, 0, _arrayLength);
+	sessionWeaponData[i] = ds_map_create();
+	ds_map_copy(sessionWeaponData[i], global.PlayerWeaponData[i]);
 }
 
 sessionAmmoData = [];
 var _arrayLength = array_length_1d(global.PlayerAmmoData);
+
 for (var i = 0; i < _arrayLength; i++)
 {
-	array_copy(sessionAmmoData, 0, global.PlayerAmmoData, 0, _arrayLength);
+	sessionAmmoData[i] = ds_map_create();
+	ds_map_copy(sessionAmmoData[i], global.PlayerAmmoData[i]);
 }
 
 // MainWeapon
