@@ -42,10 +42,6 @@ switch (currentState)
 		ProcessUltimate;
 	break;
 	
-	case PlayerState.Ultimate:
-		
-	break;
-	
 	case PlayerState.Transcendence:
 		ExecutePlayerDeath;
 	break;

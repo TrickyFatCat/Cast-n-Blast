@@ -57,6 +57,7 @@ spreadAngleMax =				_weapon[? "spreadAngleMax"];
 //-----------------------------------------------------------------------------
 ammoID =						_weapon[? "ammoID"];
 shootAmmoCost =					_weapon[? "shootAmmoCost"];
+reloadTime =					_weapon[? "reloadTime"];
 //-----------------------------------------------------------------------------
 recoilPower =					_weapon[? "recoilPower"];
 recoilFactor =					_weapon[? "recoilFactor"];

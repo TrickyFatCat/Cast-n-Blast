@@ -19,6 +19,8 @@ SetActivePerks();
 #macro ProcessDeath			event_user(9)
 #macro ProcessUltimate		event_user(10)
 #macro ProcessDashRecovery	event_user(11)
+#macro ProcessWeaponChange	event_user(12)
+#macro ProcessWeaponReload	event_user(13)
 
 //Set shadow
 var _shadowScale = 1;
@@ -76,7 +78,15 @@ mainWeapon = instance_create_layer(x, y, layer, obj_PlayerWeapon);
 SetPlayerWeapon(mainWeapon, weaponID);
 mainWeapon.drawAlpha = 0;
 
-// SecondaryWeapon
+// Set player weapon ammo
+SetAmmoParameters(mainWeapon.ammoID, global.PlayerAmmoData);
+
+// Reload time
+isReloading = false;
+reloadTime = SetTime(mainWeapon.reloadTime);
+reloadTimer = 0;
+
+//// SecondaryWeapon
 secondaryWeaponID = PlayerWeapon.Shotgun;
 secondaryWeapon = instance_create_layer(x, y, layer, obj_PlayerWeapon);
 SetPlayerWeapon(secondaryWeapon, secondaryWeaponID);
@@ -86,9 +96,6 @@ ultimateWeaponID = PlayerWeapon.UltimateGun;
 ultimateWeapon = instance_create_layer(x, y, layer, obj_PlayerWeapon);
 SetPlayerWeapon(ultimateWeapon, ultimateWeaponID);
 ultimateWeapon.isConsumingUltimate = true;
-
-// Set player weapon ammo
-//SetAmmoParameters(mainWeapon.ammoID, global.PlayerAmmoData);
 
 // Shield
 maxShieldPoints = 50;

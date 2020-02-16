@@ -14,3 +14,8 @@ else
 }
 
 ProcessDashRecovery;
+
+if (currentState == PlayerState.Idle || currentState == PlayerState.Run || currentState == PlayerState.Dash)
+{
+	ProcessWeaponReload;
+}

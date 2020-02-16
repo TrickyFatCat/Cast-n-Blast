@@ -63,6 +63,7 @@ ds_map_add(EnemyFighterGunData, "spreadAngleMax",				0);
 //-----------------------------------------------------------------------------
 ds_map_add(EnemyFighterGunData, "ammoID",						noone);
 ds_map_add(EnemyFighterGunData, "shootAmmoCost",				0);
+ds_map_add(EnemyFighterGunData, "reloadTime",					0);
 //-----------------------------------------------------------------------------
 ds_map_add(EnemyFighterGunData, "recoilPower",					0);
 ds_map_add(EnemyFighterGunData, "recoilFactor",					0);
@@ -132,6 +133,7 @@ ds_map_add(TrooperGunData, "shootAmmoCost",					0);
 //-----------------------------------------------------------------------------
 ds_map_add(TrooperGunData, "recoilPower",					0);
 ds_map_add(TrooperGunData, "recoilFactor",					0);
+ds_map_add(TrooperGunData, "reloadTime",						0);
 //-----------------------------------------------------------------------------
 ds_map_add(TrooperGunData, "hitscanScaleY",					0);
 ds_map_add(TrooperGunData, "projectileVelocityNoiseFactor",	0);
@@ -195,6 +197,7 @@ ds_map_add(BeamerGunData, "spreadAngleMax",					0);
 //-----------------------------------------------------------------------------
 ds_map_add(BeamerGunData, "ammoID",							noone);
 ds_map_add(BeamerGunData, "shootAmmoCost",					0);
+ds_map_add(BeamerGunData, "reloadTime",						0);
 //-----------------------------------------------------------------------------
 ds_map_add(BeamerGunData, "recoilPower",					0);
 ds_map_add(BeamerGunData, "recoilFactor",					0);
@@ -261,6 +264,7 @@ ds_map_add(NinjaGunData, "spreadAngleMax",					0);
 //-----------------------------------------------------------------------------
 ds_map_add(NinjaGunData, "ammoID",							noone);
 ds_map_add(NinjaGunData, "shootAmmoCost",					0);
+ds_map_add(NinjaGunData, "reloadTime",						0);
 //-----------------------------------------------------------------------------
 ds_map_add(NinjaGunData, "recoilPower",						0);
 ds_map_add(NinjaGunData, "recoilFactor",					0);
@@ -327,6 +331,7 @@ ds_map_add(TurretGunData, "spreadAngleMax",					0);
 //-----------------------------------------------------------------------------
 ds_map_add(TurretGunData, "ammoID",							noone);
 ds_map_add(TurretGunData, "shootAmmoCost",					0);
+ds_map_add(TurretGunData, "reloadTime",						0);
 //-----------------------------------------------------------------------------
 ds_map_add(TurretGunData, "recoilPower",					0);
 ds_map_add(TurretGunData, "recoilFactor",					0);
@@ -393,6 +398,7 @@ ds_map_add(RocketGunData, "spreadAngleMax",					0);
 //-----------------------------------------------------------------------------
 ds_map_add(RocketGunData, "ammoID",							noone);
 ds_map_add(RocketGunData, "shootAmmoCost",					0);
+ds_map_add(RocketGunData, "reloadTime",						0);
 //-----------------------------------------------------------------------------
 ds_map_add(RocketGunData, "recoilPower",					0);
 ds_map_add(RocketGunData, "recoilFactor",					0);

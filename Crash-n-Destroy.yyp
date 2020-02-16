@@ -1455,6 +1455,14 @@
             }
         },
         {
+            "Key": "751e3ea9-81ab-4781-9f81-a22ad5d2cd2f",
+            "Value": {
+                "id": "76950300-1422-4ef7-b765-3dd381b5f5d1",
+                "resourcePath": "scripts\\IncreaseAmmo\\IncreaseAmmo.yy",
+                "resourceType": "GMScript"
+            }
+        },
+        {
             "Key": "75ac291e-7061-4bcb-8e8a-3b3545332d41",
             "Value": {
                 "id": "42d24788-838f-4ee4-b721-223b55d61d51",
@@ -1615,6 +1623,14 @@
             }
         },
         {
+            "Key": "81c10704-245f-4585-99d7-f89e0e242b36",
+            "Value": {
+                "id": "026ed4f2-6f8d-46af-81df-0a4358eda74a",
+                "resourcePath": "scripts\\SetAmmoData\\SetAmmoData.yy",
+                "resourceType": "GMScript"
+            }
+        },
+        {
             "Key": "81da0206-373c-43da-9519-d3a948060c2a",
             "Value": {
                 "id": "900a5998-750c-4cec-b2fd-1a39a4228d00",
@@ -1732,6 +1748,14 @@
                 "id": "fc337b7f-5b2c-43f3-bb8b-9b7bc129db0f",
                 "resourcePath": "views\\8737430e-d2e2-4916-94c7-21ea3242e096.yy",
                 "resourceType": "GMFolder"
+            }
+        },
+        {
+            "Key": "879d220b-05c5-456e-b9ab-cfbc7fdeac61",
+            "Value": {
+                "id": "5e58d72e-4df5-4ef3-9df1-5ec0cf4fcb38",
+                "resourcePath": "scripts\\WeaponParameters\\WeaponParameters.yy",
+                "resourceType": "GMScript"
             }
         },
         {
@@ -2671,6 +2695,14 @@
             }
         },
         {
+            "Key": "d89d3957-451c-44f5-980e-039424b44357",
+            "Value": {
+                "id": "86aa1f49-3ddc-431d-9759-3a2990c7e9d1",
+                "resourcePath": "views\\d89d3957-451c-44f5-980e-039424b44357.yy",
+                "resourceType": "GMFolder"
+            }
+        },
+        {
             "Key": "d96fe937-2ef0-4653-b51b-2c2988f5a4e3",
             "Value": {
                 "id": "7dd78ef9-8d03-423c-9c81-e951fd13a669",
@@ -2698,7 +2730,7 @@
             "Key": "da79c651-b444-442d-9028-1c08f38437e2",
             "Value": {
                 "id": "e870f486-cf2d-49d4-a605-bbc40d663070",
-                "resourcePath": "scripts\\RestorePlayerAmmo\\RestorePlayerAmmo.yy",
+                "resourcePath": "scripts\\IncreasePlayerAmmo\\IncreasePlayerAmmo.yy",
                 "resourceType": "GMScript"
             }
         },
@@ -2836,6 +2868,14 @@
                 "id": "182ee632-9187-4cef-8acd-3101efd2d7ce",
                 "resourcePath": "objects\\vfx_BaseSplatter\\vfx_BaseSplatter.yy",
                 "resourceType": "GMObject"
+            }
+        },
+        {
+            "Key": "e57dc67a-4422-45b9-8abc-bfdf4a09d2e0",
+            "Value": {
+                "id": "0653ef76-a57a-47ed-816d-e093a5408b01",
+                "resourcePath": "scripts\\DecreasePlayerAmmo\\DecreasePlayerAmmo.yy",
+                "resourceType": "GMScript"
             }
         },
         {
@@ -3119,6 +3159,14 @@
             }
         },
         {
+            "Key": "fc25fcea-a609-4b2c-82ab-8711ff8fc0d2",
+            "Value": {
+                "id": "c2393567-889a-472f-90cb-fa31f85feef1",
+                "resourcePath": "scripts\\DecreaseAmmo\\DecreaseAmmo.yy",
+                "resourceType": "GMScript"
+            }
+        },
+        {
             "Key": "fc7489bf-ce1c-4074-a48a-99f42eb951f2",
             "Value": {
                 "id": "eac4c9dc-5cdb-48fc-bb89-976b4c2e6595",
@@ -3170,6 +3218,7 @@
         "561a9fac-9542-44b4-8d3b-e8e054470ff3",
         "fc7489bf-ce1c-4074-a48a-99f42eb951f2",
         "37225428-7b50-45be-860f-8acb30c7aae3",
+        "ff97f038-12de-48e0-bba1-099865ea3d4a",
         "9ef30917-7a71-41ba-b0e0-f268aaccd126",
         "f880aa16-ac9e-40d8-bcbb-c47218fde082",
         "b9f03d06-805d-4f20-8c40-3b427af39fc2",
@@ -3202,9 +3251,14 @@
         "76040d57-5a1b-4128-9b1f-7bd8c2ba2eb9",
         "975fcde3-e2df-427b-83b9-3f6a73854791",
         "4049e4fd-1d04-4e2f-81de-6da12f8b2655",
-        "52e25e36-b2d5-45bc-9808-cf34f3a729b1",
         "3c884466-e1db-4224-b662-2086df475b8c",
-        "ff97f038-12de-48e0-bba1-099865ea3d4a",
+        "879d220b-05c5-456e-b9ab-cfbc7fdeac61",
+        "52e25e36-b2d5-45bc-9808-cf34f3a729b1",
+        "81c10704-245f-4585-99d7-f89e0e242b36",
+        "751e3ea9-81ab-4781-9f81-a22ad5d2cd2f",
+        "fc25fcea-a609-4b2c-82ab-8711ff8fc0d2",
+        "da79c651-b444-442d-9028-1c08f38437e2",
+        "e57dc67a-4422-45b9-8abc-bfdf4a09d2e0",
         "7710b5ef-dfe0-4802-920e-a963c50b6d98",
         "be1a499b-d1ee-486e-8bbd-bb9b836ef2f6",
         "eff89f1c-8e1d-40cf-b41d-5478ca0db11b",
@@ -3221,7 +3275,6 @@
         "d296ca0d-d65a-40cb-8389-97382c178501",
         "1ffb78b6-2a52-4cf8-b21f-62719c8f4c09",
         "f3f6599b-8068-457b-97b7-05b26d83f475",
-        "da79c651-b444-442d-9028-1c08f38437e2",
         "7230f7a6-e9e3-490b-9388-db85e06d4aee",
         "31fb2d91-d553-48dd-a602-d1e300e1f311",
         "4a3901ed-ddac-45bb-94fb-b76493d4883d",

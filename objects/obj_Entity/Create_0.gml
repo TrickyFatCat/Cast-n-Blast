@@ -16,8 +16,8 @@ isInvulnerable = false;
 weaponID = 0;
 mainWeapon = noone;
 ammoID = 0;
-ammoCurrent = 0;
-ammoCurrentMax = 0;
+ammo = 0;
+maxAmmo = 0;
 
 // Trancendence parameters
 trancendenceProgress = 0;

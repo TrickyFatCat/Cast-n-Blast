@@ -1,12 +1,10 @@
-// Parameters
+global.PlayerAmmoData = [];
+
 enum PlayerAmmo
 {
-	PlasmaGun
+	PlasmaGun,
+	Shotgun
 }
 
-#macro TestAmmo global.PlayerAmmoData[PlayerAmmo.PlasmaGun]
-
-// Ammo Data
-global.PlayerAmmoData[PlayerAmmo.PlasmaGun] = ds_map_create();
-ds_map_add(TestAmmo, "ammoCurrent",	200);
-ds_map_add(TestAmmo, "ammoCurrentMax",	200);
+SetAmmoData(PlayerAmmo.PlasmaGun, 200);
+SetAmmoData(PlayerAmmo.Shotgun, 100);

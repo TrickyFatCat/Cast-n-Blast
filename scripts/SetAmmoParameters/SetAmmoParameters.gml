@@ -8,11 +8,11 @@ if (_ammoID != noone)
 {
 	var _ammo = _ammoData[_ammoID];
 
-	ammoCurrent =			_ammo[? "ammoCurrent"];
-	ammoCurrentMax =		_ammo[? "ammoCurrentMax"];
+	ammo =			_ammo[? "ammo"];
+	maxAmmo =		_ammo[? "maxAmmo"];
 }
 else
 {
-	ammoCurrent = noone;
-	ammoCurrentMax = noone;
+	ammo = noone;
+	maxAmmo = noone;
 }

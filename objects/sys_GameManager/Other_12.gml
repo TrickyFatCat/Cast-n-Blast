@@ -12,6 +12,7 @@ keySecondaryShootAuto = false;
 keySecondaryShootSemiAuto = false;
 keyInteract = false;
 keyDash = false;
+keyReload = false;
 
 // UI controls
 keyMenuUp = false;

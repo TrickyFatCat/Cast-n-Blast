@@ -10,8 +10,9 @@ switch global.CurrentInput
 		keySecondaryShootAuto = CheckGamepadButton(_secondaryShoot);
 		keySecondaryShootSemiAuto = CheckGamepadButton(_secondaryShoot);
 		keyInteract = CheckGamepadButtonPressed(gp_face1);
-		keyDash = CheckGamepadButton(gp_face1);
-		keyUltimateActivation = CheckGamepadButtonPressed(gp_stickl);
+		keyDash = CheckGamepadButtonPressed(gp_face1);
+		keyUltimateActivation = CheckGamepadButtonPressed(gp_face2);
+		keyReload = CheckGamepadButtonPressed(gp_face3);
 	break;
 	
 	case InputMethod.KeyboardMouse:
@@ -28,5 +29,6 @@ switch global.CurrentInput
 		keyInteract = keyboard_check_pressed(ord("E"));
 		keyDash = keyboard_check_pressed(vk_space);
 		keyUltimateActivation = keyboard_check_pressed(ord("Q"));
+		keyReload = keyboard_check_pressed(ord("R"));
 	break;
 }

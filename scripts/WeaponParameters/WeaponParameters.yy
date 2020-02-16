@@ -1,8 +1,8 @@
 {
-    "id": "da79c651-b444-442d-9028-1c08f38437e2",
+    "id": "879d220b-05c5-456e-b9ab-cfbc7fdeac61",
     "modelName": "GMScript",
     "mvc": "1.0",
-    "name": "RestorePlayerAmmo",
+    "name": "WeaponParameters",
     "IsCompatibility": false,
     "IsDnD": false
 }

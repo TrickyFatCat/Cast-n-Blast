@@ -13,7 +13,7 @@ if (global.TimeFactor > 0)
 		_shootKey = sys_GameManager.keyShootSemiAuto;
 	}
 	
-	if (_shootKey && ultimateState == UltimateState.Idle)
+	if (_shootKey && ultimateState == UltimateState.Idle && !isReloading)
 	{
 		mainWeapon.isShooting = true;
 	}
@@ -33,14 +33,14 @@ if (global.TimeFactor > 0)
 		_secondaryShootKey = sys_GameManager.keySecondaryShootSemiAuto;
 	}
 	
-	if (_secondaryShootKey && ultimateState == UltimateState.Idle)
-	{
-		secondaryWeapon.isShooting = true;
-	}
-	else
-	{
-		secondaryWeapon.isShooting = false;
-	}
+	//if (_secondaryShootKey && ultimateState == UltimateState.Idle)
+	//{
+	//	secondaryWeapon.isShooting = true;
+	//}
+	//else
+	//{
+	//	secondaryWeapon.isShooting = false;
+	//}
 	
 	if (sys_GameManager.keyUltimateActivation && ultimatePoints == maxUltimatePoints && ultimateState == UltimateState.Idle)
 	{
