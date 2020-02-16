@@ -1,4 +1,4 @@
 if (!isInvulnerable) && (other.dealingDamage) && (collisionEnable)
 {
-	DealDamage(other.damage);
+	DecreaseHitPoints(other.damage);
 }

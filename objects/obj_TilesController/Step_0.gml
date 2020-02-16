@@ -4,7 +4,7 @@ if (isActive)
 	var _timeIsOver = CheckTimer(switchingTilesTimer, switchingTilesTime);
 	
 	if (_timeIsOver)
-	{	
+	{
 		ActivateTemporaryTiles(temporaryTileType);
 	}
 }

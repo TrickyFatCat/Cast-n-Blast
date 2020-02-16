@@ -1,4 +1,3 @@
-
 EnableFlash(c_green, 1);
-hitPoints = Approach(hitPoints, maxHitPoints, 1);
+IncreaseHitPoints(1);
 instance_destroy(other);

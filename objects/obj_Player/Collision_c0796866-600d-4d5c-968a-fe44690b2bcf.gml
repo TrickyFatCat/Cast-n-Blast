@@ -16,9 +16,5 @@ if (other.currentState = TileState.Active)
 				velocity *= other.speedFactor;
 			}
 		break;
-	
-		case TileType.EnergyDebuffer:
-			shieldCanRestore = false;
-		break;
 	}
 }

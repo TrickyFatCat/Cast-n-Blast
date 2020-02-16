@@ -1,8 +1,8 @@
 {
-    "id": "d4e31058-8054-483e-9ac6-da815f4c96f8",
+    "id": "9faac214-67a2-493d-9844-7f8ab2285fd0",
     "modelName": "GMScript",
     "mvc": "1.0",
-    "name": "UpdateHitPoints",
+    "name": "IncreaseHitPoints",
     "IsCompatibility": false,
     "IsDnD": false
 }

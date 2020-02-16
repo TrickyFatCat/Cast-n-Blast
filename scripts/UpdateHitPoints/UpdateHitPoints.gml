@@ -1,1 +1,0 @@
-hitPoints = legsHitPoints + caseHitPoints + weaponHitPoints;

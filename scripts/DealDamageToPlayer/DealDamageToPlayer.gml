@@ -18,9 +18,8 @@ if (hitPoints > 0)
 		}
 	}
 	
-	show_debug_message("Total damage = " + string(_damage) + " | Shield damage = " + string(_shieldDamage) + " | Rusulted damage = " + string(_hitpointsDamage))
 	DecreaseShieldPoints(_shieldDamage);
-	DealDamage(_hitpointsDamage);
+	DecreaseHitPoints(_hitpointsDamage);
 	EnableFlash(c_red, 1);
 	ApplyShakeToCamera(true, 1);
 	//PlaySound(sfx_impact);

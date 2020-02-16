@@ -4,7 +4,7 @@ if (collisionEnable)
 {
 	if (!isInvulnerable)
 	{
-		DealDamage(other.damage);
+		DecreaseHitPoints(other.damage);
 	}
 
 	instance_destroy(other);

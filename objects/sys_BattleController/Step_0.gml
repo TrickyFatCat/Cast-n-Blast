@@ -26,7 +26,7 @@ switch (global.BattleState)
 			global.BattleState = BattleState.Active;
 			randomPerk = noone;
 			obj_SpawnController.isActive = true;
-			var _tileType = choose(TileType.EnergyDebuffer, TileType.SpeedDebuffer);
+			var _tileType = choose(TileType.DamageDealer, TileType.SpeedDebuffer);
 			ActivatePermanentTiles(_tileType);
 			ActivateTilesController();
 			//PlaySound(sfx_start);
@@ -71,12 +71,12 @@ switch (global.BattleState)
 	case BattleState.Intermission:
 		battlePauseTimer += global.TimeFactor;
 		var _timeIsOver = CheckTimer(battlePauseTimer, battlePauseTime);
-			
-		if (global.Player.hitPoints < global.Player.maxHitPoints)
+		
+		with (global.Player)
 		{
-			var _healStep = global.Player.maxHitPoints * 0.2;
-			global.Player.hitPoints = ApproachTimeFactor(global.Player.hitPoints, global.Player.maxHitPoints, _healStep);
-		}				
+			IncreaseHitPoints(1);
+			IncreaseShieldPoints(1);
+		}
 			
 		if (_timeIsOver)
 		{

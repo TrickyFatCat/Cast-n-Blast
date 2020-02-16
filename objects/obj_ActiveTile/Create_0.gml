@@ -37,8 +37,7 @@ activeStateTimer = 0;
 enum TileType
 {
 	DamageDealer,
-	SpeedDebuffer,
-	EnergyDebuffer
+	SpeedDebuffer
 }
 
 tileType = TileType.DamageDealer;

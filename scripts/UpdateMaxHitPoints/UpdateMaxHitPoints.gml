@@ -1,1 +1,0 @@
-maxHitPoints = legsMaxHitPoints + caseMaxHitPoints + weaponMaxHitPoints;

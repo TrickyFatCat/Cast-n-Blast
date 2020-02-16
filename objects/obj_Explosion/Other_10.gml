@@ -37,7 +37,7 @@ if (dealingDamage)
 						case obj_Barrel:
 							if (!timerIsTicking) && currentState == EnemyState.Action
 							{
-								DealDamage(other.damage);
+								DecreaseHitPoints(other.damage);
 								directionCurrent = point_direction(x, y, other.x, other.y) - 180;
 							}
 						break;
@@ -48,7 +48,7 @@ if (dealingDamage)
 					switch (_parent)
 					{
 						case obj_Enemy:
-							DealDamage(other.damage);
+							DecreaseHitPoints(other.damage);
 						break;
 							
 						case obj_Mine:

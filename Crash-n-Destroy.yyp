@@ -378,7 +378,7 @@
             "Key": "20cdd0bc-00cf-48f8-974a-7c3fc97a7bd2",
             "Value": {
                 "id": "a7977869-a338-47c0-9a17-29a4fe946dab",
-                "resourcePath": "scripts\\DealDamage\\DealDamage.yy",
+                "resourcePath": "scripts\\DecreaseHitPoints\\DecreaseHitPoints.yy",
                 "resourceType": "GMScript"
             }
         },
@@ -1895,14 +1895,6 @@
             }
         },
         {
-            "Key": "99b709ac-a93b-4d40-acac-09026a7c8844",
-            "Value": {
-                "id": "ec09e641-aed2-4b47-97fd-6569c2246fad",
-                "resourcePath": "scripts\\UpdateMaxHitPoints\\UpdateMaxHitPoints.yy",
-                "resourceType": "GMScript"
-            }
-        },
-        {
             "Key": "9ae9c1f2-153c-4968-af37-090851973c5e",
             "Value": {
                 "id": "40ba5a31-0a77-4d6c-a798-94576248be22",
@@ -1963,6 +1955,14 @@
             "Value": {
                 "id": "a4d7cbfc-105e-42d6-8238-17e9edac620e",
                 "resourcePath": "scripts\\CalculateCameraDelayMovement\\CalculateCameraDelayMovement.yy",
+                "resourceType": "GMScript"
+            }
+        },
+        {
+            "Key": "9faac214-67a2-493d-9844-7f8ab2285fd0",
+            "Value": {
+                "id": "6af6cfb5-0871-4fb3-9bd4-0cf8774e6bfa",
+                "resourcePath": "scripts\\IncreaseHitPoints\\IncreaseHitPoints.yy",
                 "resourceType": "GMScript"
             }
         },
@@ -2639,14 +2639,6 @@
             }
         },
         {
-            "Key": "d4e31058-8054-483e-9ac6-da815f4c96f8",
-            "Value": {
-                "id": "f4307074-7d24-440e-91e0-2da4053753cd",
-                "resourcePath": "scripts\\UpdateHitPoints\\UpdateHitPoints.yy",
-                "resourceType": "GMScript"
-            }
-        },
-        {
             "Key": "d50d5960-dcc8-4143-bcad-3fc01c2aefe2",
             "Value": {
                 "id": "ba21a400-d4d3-4083-9ce4-c9621de08412",
@@ -3127,14 +3119,6 @@
             }
         },
         {
-            "Key": "fbb80ac4-5cc9-4ddc-9fb6-a23f3cbe5ff0",
-            "Value": {
-                "id": "a592adfc-4eae-4f55-981b-c98e3c4e30d4",
-                "resourcePath": "scripts\\DealDamageToParts\\DealDamageToParts.yy",
-                "resourceType": "GMScript"
-            }
-        },
-        {
             "Key": "fc7489bf-ce1c-4074-a48a-99f42eb951f2",
             "Value": {
                 "id": "eac4c9dc-5cdb-48fc-bb89-976b4c2e6595",
@@ -3242,10 +3226,8 @@
         "31fb2d91-d553-48dd-a602-d1e300e1f311",
         "4a3901ed-ddac-45bb-94fb-b76493d4883d",
         "2f5af4dd-8816-4625-a827-4916047b6d6f",
-        "99b709ac-a93b-4d40-acac-09026a7c8844",
         "20cdd0bc-00cf-48f8-974a-7c3fc97a7bd2",
-        "fbb80ac4-5cc9-4ddc-9fb6-a23f3cbe5ff0",
-        "d4e31058-8054-483e-9ac6-da815f4c96f8",
+        "9faac214-67a2-493d-9844-7f8ab2285fd0",
         "3ed6989c-3758-4baa-a11b-d3cfa5ee3d24",
         "afdc448b-1fc2-40be-a8c9-30bc518b0df6",
         "e751e608-1ec8-4a47-987c-08225a02f2ad",

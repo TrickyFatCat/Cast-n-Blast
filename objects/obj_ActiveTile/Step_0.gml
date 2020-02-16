@@ -7,10 +7,6 @@ switch (tileType)
 	case TileType.SpeedDebuffer:
 		activeColour = c_blue;
 	break;
-	
-	case TileType.EnergyDebuffer:
-		activeColour = c_aqua;
-	break;
 }
 
 switch (currentState)
