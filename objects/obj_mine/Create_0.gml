@@ -31,7 +31,7 @@ lifespanTimer = 0;
 activationTime = SetTime(0.75);
 activationTimer = 0;
 
-destructionDelayTime = SetTime(0.1);
+destructionDelayTime = SetTime(0.15);
 destructionDelayTimer = 0;
 
 isInvulnerable = true;

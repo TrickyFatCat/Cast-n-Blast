@@ -9,7 +9,7 @@ if (spawnProgress != 1)
 	spawnProgress = ApproachTimeFactor(spawnProgress, 1, _spawnStep);
 	drawAlpha = LerpTimeFactor(0, 1, spawnProgress);
 	shadowAlpha = drawAlpha;
-	activeWeapon.drawAlpha = LerpTimeFactor(0, 1, spawnProgress);
+	mainWeapon.drawAlpha = LerpTimeFactor(0, 1, spawnProgress);
 }
 else
 {

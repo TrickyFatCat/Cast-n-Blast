@@ -74,14 +74,14 @@ switch (currentActionState)
 	break;
 	
 	case NinjaState.Attack:
-		if (activeWeapon.shotCount != shotNumber)
+		if (mainWeapon.shotCount != shotNumber)
 		{
 			isShooting = true;
 		}
 		else
 		{
 			isShooting = false;
-			activeWeapon.shotCount = 0;
+			mainWeapon.shotCount = 0;
 			currentActionState = NinjaState.Deactivation;
 		}
 	break;

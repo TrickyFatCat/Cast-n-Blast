@@ -1,6 +1,6 @@
 event_inherited()
 
-instance_destroy(activeWeapon);
+instance_destroy(mainWeapon);
 
 for (var i = 0; i < 5; i++)
 {

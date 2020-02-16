@@ -14,7 +14,7 @@ isInvulnerable = false;
 
 // Weapon parameters
 weaponID = 0;
-activeWeapon = noone;
+mainWeapon = noone;
 ammoID = 0;
 ammoCurrent = 0;
 ammoCurrentMax = 0;

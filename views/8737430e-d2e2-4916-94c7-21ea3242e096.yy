@@ -14,15 +14,14 @@
         "e20fac3b-b32a-48f5-9505-776e22fcbb17",
         "72e03c66-584d-44e5-a1f6-6cefd37ad2f2",
         "0c9b9ae6-dce9-4f8a-9174-63f8fc80cc90",
-        "7fb41e66-e583-4314-b55e-213dde6181b5",
-        "32f5f6d1-2cc1-4de2-969b-748e213f69f5",
         "e5bb89f0-9f47-4664-a6ab-3e7949a1290f",
         "6106d93f-e53e-418f-a1dc-f4e58688b923",
         "0a297138-c964-44a6-886c-47d88c2e286a",
         "a42c7ca3-c2b3-4703-a80c-0ce0bd05409b",
         "40232b20-7920-47ae-b080-3413192b5353",
         "46a429f6-6050-47af-ad2a-acb26d4f1251",
-        "51cabd1b-b956-4ab8-a862-b86d5590cb8f"
+        "51cabd1b-b956-4ab8-a862-b86d5590cb8f",
+        "3841f7a9-eb3f-4c5f-925a-602d07d034fe"
     ],
     "filterType": "GMScript",
     "folderName": "Perks",

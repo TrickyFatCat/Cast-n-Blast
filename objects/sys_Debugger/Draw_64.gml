@@ -75,7 +75,7 @@ if (instance_exists(obj_Player))
 		draw_text(5, 260, "Energy: " + string(shieldPoints) + "/" + string(maxShieldPoints));
 		//draw_text(5, 240, "Current Ammo: " + string(ammoCurrent) + "/" + string(ammoCurrentMax));
 		//var _isShooting;
-		//if (activeWeapon.isShooting)
+		//if (mainWeapon.isShooting)
 		//{
 		//	_isShooting = "True";
 		//}
@@ -84,7 +84,7 @@ if (instance_exists(obj_Player))
 		//	_isShooting = "False";
 		//}
 		//draw_text(5, 240, "Is shooting: " + _isShooting);
-		//draw_text(5, 240, "WeaponROF: " + string(activeWeapon.rateOfFireCurrent));
+		//draw_text(5, 240, "WeaponROF: " + string(mainWeapon.rateOfFireCurrent));
 		//draw_text(5, 260, "WeaponID: " + string(weaponID) + " | AmmoID: " + string(ammoID));
 		//draw_set_color(c_white);
 	}

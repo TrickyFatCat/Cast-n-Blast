@@ -2,12 +2,12 @@
 enum PlayerWeapon
 {
 	PlasmaGun,
-	ShotGun,
+	Shotgun,
 	UltimateGun
 }
 
 #macro PlasmaGunData global.PlayerWeaponData[PlayerWeapon.PlasmaGun]
-#macro ShotGunData global.PlayerWeaponData[PlayerWeapon.ShotGun]
+#macro ShotGunData global.PlayerWeaponData[PlayerWeapon.Shotgun]
 #macro UltimateGunData global.PlayerWeaponData[PlayerWeapon.UltimateGun]
 
 #region // Plasma

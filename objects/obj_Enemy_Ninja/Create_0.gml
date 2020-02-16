@@ -29,7 +29,7 @@ deactivationTimer = 0;
 
 shotNumber = 4;
 
-activeWeapon.visible = false;
+mainWeapon.visible = false;
 
 teleportScaleY = 2;
 teleportScaleX = 1;

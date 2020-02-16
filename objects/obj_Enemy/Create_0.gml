@@ -27,8 +27,8 @@ targetX = 0.0;
 targetY = 0.0;
 
 // Add weapon
-activeWeapon = instance_create_layer(x, y, layer, obj_EnemyWeapon);
-activeWeapon.visible = false;
+mainWeapon = instance_create_layer(x, y, layer, obj_EnemyWeapon);
+mainWeapon.visible = false;
 
 // Base states
 enum EnemyState

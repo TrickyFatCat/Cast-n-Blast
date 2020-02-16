@@ -6,7 +6,7 @@ event_inherited();
 var _waitTime = SetTime(1);
 
 
-if (activeWeapon.shotCount == 6)
+if (mainWeapon.shotCount == 6)
 {
 	isShooting = false;
 	
@@ -17,7 +17,7 @@ if (activeWeapon.shotCount == 6)
 	if (_timeIsOver)
 	{
 		waitTimer = 0;
-		activeWeapon.shotCount = 0;
+		mainWeapon.shotCount = 0;
 		currentState = EnemyState.TargetSearch;
 	}
 }

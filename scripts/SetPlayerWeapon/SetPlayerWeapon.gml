@@ -6,5 +6,5 @@ var _weaponID = argument1;
 
 with (_weapon)
 {
-	SetWeaponParameters(other.object_index, _weaponID, global.PlayerWeaponData);
+	SetWeaponParameters(other.object_index, _weaponID, obj_Player.sessionWeaponData);
 }

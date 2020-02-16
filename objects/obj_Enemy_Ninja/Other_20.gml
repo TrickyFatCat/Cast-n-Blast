@@ -1,6 +1,6 @@
 /// @description ControlWeapon
 
-if (activeWeapon != noone)
+if (mainWeapon != noone)
 {
-	activeWeapon.isShooting = isShooting;
+	mainWeapon.isShooting = isShooting;
 }

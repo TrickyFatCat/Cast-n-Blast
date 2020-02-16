@@ -2,9 +2,9 @@
 
 // Parameters
 
-if (activeWeapon.isShooting)
+if (mainWeapon.isShooting)
 {
-	activeWeapon.isShooting = false;
+	mainWeapon.isShooting = false;
 }
 
 velocity = CalculateDeceleratedVelocity(directionCurrent, velocity, groundFriction);
@@ -22,7 +22,7 @@ trancendenceProgress = ApproachTimeFactor(trancendenceProgress, 1, _step);
 drawScaleY = ApproachTimeFactor(drawScaleY, targetScale, trancendenceProgress);
 drawScaleX = drawScaleY * scaleSign;
 		
-with (activeWeapon)
+with (mainWeapon)
 {
 	drawScaleX = other.drawScaleX;
 	drawScaleY = other.drawScaleY;

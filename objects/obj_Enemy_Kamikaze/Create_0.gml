@@ -3,4 +3,4 @@
 // Inherit the parent event
 event_inherited();
 
-activeWeapon = noone;
+mainWeapon = noone;

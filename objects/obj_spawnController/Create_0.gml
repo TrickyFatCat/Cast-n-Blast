@@ -5,7 +5,7 @@
 isActive = false;
 
 /// Spawn pause timer
-spawnPauseTime = SetTime(4);
+spawnPauseTime = SetTime(2);
 spawnPauseTimer = spawnPauseTime;
 
 /// Enemies spawn limits

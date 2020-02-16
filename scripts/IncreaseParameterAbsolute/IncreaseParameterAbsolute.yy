@@ -1,8 +1,8 @@
 {
-    "id": "7fb41e66-e583-4314-b55e-213dde6181b5",
+    "id": "194be890-e962-42da-a92c-92b0a1ffa684",
     "modelName": "GMScript",
     "mvc": "1.0",
-    "name": "IncreaseParameter",
+    "name": "IncreaseParameterAbsolute",
     "IsCompatibility": false,
     "IsDnD": false
 }

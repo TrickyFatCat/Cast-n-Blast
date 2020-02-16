@@ -2,81 +2,115 @@
 
 var _perkId = argument0;
 
-var _playerMainWeapon = global.Player.activeWeapon;
-var _playerSecondaryWeapon = global.Player.secondaryWeapon;
-var _playerUltimate = global.Player.ultimateWeapon;
+var _plasmaId = PlayerWeapon.PlasmaGun;
+var _shotgunId = PlayerWeapon.Shotgun;
+var _ultimateId = PlayerWeapon.UltimateGun;
 
 IncreasePerkLevel(_perkId);
 
 switch (_perkId)
 {
 	case Perk.RunSpeed:
-		global.Player.maxVelocity = IncreaseParameter(_perkId, global.Player.defaultMaxVelocity);
+		global.Player.maxVelocity = IncreaseParameterPercent(_perkId, global.Player.defaultMaxVelocity);
 	break;
 	
 	case Perk.DashSpeed:
-		global.Player.dashVelocity = IncreaseParameter(_perkId, global.Player.deafaultDashVelocity);
+		global.Player.dashVelocity = IncreaseParameterPercent(_perkId, global.Player.deafaultDashVelocity);
 	break;
 	
 	case Perk.DashCharge:
-		global.Player.maxDashCharge += 1;
+		global.Player.maxDashCharge = IncreaseParameterAbsolute(_perkId, global.Player.defaultMaxDashCharge);
 	break;
 	
 	case Perk.DashCoolDown:
-		global.Player.dashCooldownTime = DecreaseParameter(_perkId, global.Player.defaultDashCooldownTime);
+		global.Player.dashCooldownTime = DecreaseParameterPercent(_perkId, global.Player.defaultDashCooldownTime);
 	break;
 	
 	case Perk.MaxHitPoints:
-		global.Player.maxHitPoints = IncreaseParameter(_perkId, global.Player.defaultMaxHitPoints);
+		global.Player.maxHitPoints = IncreaseParameterPercent(_perkId, global.Player.defaultMaxHitPoints);
 		global.Player.hitPoints = global.Player.maxHitPoints;
 	break;
 	
 	case Perk.ShieldFactor:
-		global.Player.shieldFactor = DecreaseParameter(_perkId, global.Player.defaultShieldFactor);
+		global.Player.shieldFactor = DecreaseParameterPercent(_perkId, global.Player.defaultShieldFactor);
 	break;
 	
 	case Perk.MaxShieldPoints:
-		global.Player.maxShieldPoints = IncreaseParameter(_perkId, global.Player.defaultMaxShieldPoints);
+		global.Player.maxShieldPoints = IncreaseParameterPercent(_perkId, global.Player.defaultMaxShieldPoints);
 	break;
 	
 	case Perk.ShieldRestoreRate:
-		global.Player.shieldRestoreRate = IncreaseParameter(_perkId, global.Player.defaultShieldRestoreRate);
+		global.Player.shieldRestoreRate = IncreaseParameterPercent(_perkId, global.Player.defaultShieldRestoreRate);
 	break;
 	
 	case Perk.MaxUltimate:
-		global.Player.maxUltimatePoints = IncreaseParameter(_perkId, global.Player.defaultMaxUltimatePoints);
+		global.Player.maxUltimatePoints = IncreaseParameterPercent(_perkId, global.Player.defaultMaxUltimatePoints);
 		global.Player.ultimatePoints = global.Player.maxUltimatePoints;
 	break;
 	
 	case Perk.UltimateGain:
-		global.Player.ultimateGainFactor = IncreaseParameter(_perkId, global.Player.defaultUltimateGainFactor);
+		global.Player.ultimateGainFactor = IncreaseParameterPercent(_perkId, global.Player.defaultUltimateGainFactor);
 	break;
 	
 	case Perk.UltimateDamage:
-		global.Player.ulitmateDamage = IncreaseParameter(_perkId, global.Player.defaultUltimateDamage);
+		UpdateWeaponParameter(_perkId, _ultimateId, "damage", true, false);
+		
+		with (global.Player)
+		{
+			SetPlayerWeapon(ultimateWeapon, _ultimateId);
+		}
 	break;
 	
 	case Perk.PlasmaDamage:
-		_playerMainWeapon.damage = IncreaseParameter(_perkId, global.Player.mainDefaultDamage);
+		UpdateWeaponParameter(_perkId, _plasmaId, "damage", true, false);
+		
+		with (global.Player)
+		{
+			SetPlayerWeapon(mainWeapon, _plasmaId);
+		}
 	break;
 	
 	case Perk.PlasmaRate:
-		_playerMainWeapon.rateOfFireCurrent = IncreaseParameter(_perkId, global.Player.mainDefaultRof);
+		UpdateWeaponParameter(_perkId, _plasmaId, "rateOfFireMin", true, false);
+		
+		with (global.Player)
+		{
+			SetPlayerWeapon(mainWeapon, _plasmaId);
+		}
 	break;
 
 	case Perk.PlasmaSpread:
-		_playerMainWeapon.spreadAngleCurrent = DecreaseParameter(_perkId, global.Player.mainDefaultSpread);
+		UpdateWeaponParameter(_perkId, _plasmaId, "spreadAngleMin", false, false);
+		
+		with (global.Player)
+		{
+			SetPlayerWeapon(mainWeapon, _plasmaId);
+		}
 	break;
 	
 	case Perk.ShotgunBullets:
-		_playerSecondaryWeapon.bulletNumber += 1;
+		UpdateWeaponParameter(_perkId, _shotgunId, "bulletNumber", true, true);
+		
+		with (global.Player)
+		{
+			SetPlayerWeapon(secondaryWeapon, _shotgunId);
+		}
 	break;
 	
 	case Perk.ShotgunRate:
-		_playerSecondaryWeapon.rateOfFireCurrent = IncreaseParameter(_perkId, global.Player.secondaryDefaultRof);
+		UpdateWeaponParameter(_perkId, _shotgunId, "rateOfFireMin", true, false);
+		
+		with (global.Player)
+		{
+			SetPlayerWeapon(secondaryWeapon, _shotgunId);
+		}
 	break;
 	
 	case Perk.ShotgunSpread:
-		_playerSecondaryWeapon.spreadAngleCurrent = DecreaseParameter(_perkId, global.Player.secondaryDefaultSpread);
+		UpdateWeaponParameter(_perkId, _shotgunId, "spreadAngleMin", false, false);
+		with (global.Player)
+		{
+			SetPlayerWeapon(secondaryWeapon, _shotgunId);
+		}
 	break;
 }

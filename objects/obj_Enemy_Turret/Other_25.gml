@@ -4,7 +4,7 @@
 // Inherit the parent event
 event_inherited();
 
-with (activeWeapon)
+with (mainWeapon)
 {
 	if (currentCastState == CastState.Process)
 	{

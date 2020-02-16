@@ -7,7 +7,7 @@ var _waitTime = SetTime(1);
 var _distanceToPlayer = CalculateDistanceToPlayer();
 
 
-if (activeWeapon.shotCount == 1)
+if (mainWeapon.shotCount == 1)
 {
 	isShooting = false;
 	
@@ -18,7 +18,7 @@ if (activeWeapon.shotCount == 1)
 	if (_timeIsOver)
 	{
 		waitTimer = 0;
-		activeWeapon.shotCount = 0;
+		mainWeapon.shotCount = 0;
 		currentState = EnemyState.TargetSearch;
 	}
 }

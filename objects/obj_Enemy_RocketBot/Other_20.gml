@@ -1,8 +1,8 @@
-if (activeWeapon != noone)
+if (mainWeapon != noone)
 {
 	if (!isShooting)
 	{
-		activeWeapon.directionCurrent = CalculateDirectionToPlayer() - 180;
+		mainWeapon.directionCurrent = CalculateDirectionToPlayer() - 180;
 	}
-	activeWeapon.isShooting = isShooting;
+	mainWeapon.isShooting = isShooting;
 }

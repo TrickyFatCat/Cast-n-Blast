@@ -1,7 +1,7 @@
 /// @description ControlWeapon
 
-if (activeWeapon != noone)
+if (mainWeapon != noone)
 {
-	activeWeapon.directionCurrent = point_direction(x, y, playerX, playerY);
-	activeWeapon.isShooting = isShooting;
+	mainWeapon.directionCurrent = point_direction(x, y, playerX, playerY);
+	mainWeapon.isShooting = isShooting;
 }

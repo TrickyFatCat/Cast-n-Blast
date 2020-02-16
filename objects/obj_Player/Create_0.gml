@@ -19,6 +19,7 @@ SetActivePerks();
 #macro ProcessDeath			event_user(9)
 #macro ProcessUltimate		event_user(10)
 #macro ProcessDashRecovery	event_user(11)
+#macro ProcessShieldLogic	event_user(12)
 
 //Set shadow
 var _shadowScale = 1;
@@ -63,38 +64,35 @@ pullVelocityMax = 8;
 pullAcceleration = 0.25;
 pickupList = ds_list_create();
 
-// MainWeapon
-var _lastIndex = array_length_1d(global.PlayerWeaponData) - 1;
-weaponID = PlayerWeapon.PlasmaGun;
-activeWeapon = instance_create_layer(x, y, layer, obj_PlayerWeapon);
-SetPlayerWeapon(activeWeapon, weaponID);
-activeWeapon.drawAlpha = 0;
+sessionWeaponData = [];
+var _arrayLength = array_length_1d(global.PlayerWeaponData);
+for (var i = 0; i < _arrayLength; i++)
+{
+	array_copy(sessionWeaponData, 0, global.PlayerWeaponData, 0, _arrayLength);
+}
 
-mainDefaultDamage = activeWeapon.damage;
-mainDefaultRof = activeWeapon.rateOfFireCurrent;
-mainDefaultSpread = activeWeapon.spreadAngleCurrent;
+// MainWeapon
+weaponID = PlayerWeapon.PlasmaGun;
+mainWeapon = instance_create_layer(x, y, layer, obj_PlayerWeapon);
+SetPlayerWeapon(mainWeapon, weaponID);
+mainWeapon.drawAlpha = 0;
 
 // SecondaryWeapon
-secondaryWeaponID = PlayerWeapon.ShotGun;
+secondaryWeaponID = PlayerWeapon.Shotgun;
 secondaryWeapon = instance_create_layer(x, y, layer, obj_PlayerWeapon);
 SetPlayerWeapon(secondaryWeapon, secondaryWeaponID);
-
-secondaryDefaultBullets = secondaryWeapon.bulletNumber;
-secondaryDefaultRof = secondaryWeapon.rateOfFireCurrent;
-secondaryDefaultSpread = secondaryWeapon.spreadAngleCurrent;
 
 // UltimateWeapon
 ultimateWeaponID = PlayerWeapon.UltimateGun;
 ultimateWeapon = instance_create_layer(x, y, layer, obj_PlayerWeapon);
 SetPlayerWeapon(ultimateWeapon, ultimateWeaponID);
 ultimateWeapon.isConsumingUltimate = true;
-defaultUltimateDamage = ultimateWeapon.damage;
 
 // Set player weapon ammo
-//SetAmmoParameters(activeWeapon.ammoID, global.PlayerAmmoData);
+//SetAmmoParameters(mainWeapon.ammoID, global.PlayerAmmoData);
 
 // Shield
-maxShieldPoints = 100;
+maxShieldPoints = 50;
 defaultMaxShieldPoints = maxShieldPoints;
 shieldPoints = maxShieldPoints;
 shieldRestoreRate = 12;
@@ -109,15 +107,12 @@ defaultShieldFactor = shieldFactor;
 
 // Dash
 deafaultDashVelocity = dashVelocity;
-dashCharge = 2;
 maxDashCharge = 2;
+defaultMaxDashCharge = maxDashCharge;
+dashCharge = maxDashCharge;
 dashCooldownTime = SetTime(3);
 dashCooldownTimer = 0;
 defaultDashCooldownTime = dashCooldownTime;
-
-// Weapon affects
-secondaryDefaultRateOfFire = secondaryWeapon.rateOfFireCurrent;
-secondaryDefaultSpreadAlgle = secondaryWeapon.spreadAngleCurrent;
 
 // Ultimate
 enum UltimateState

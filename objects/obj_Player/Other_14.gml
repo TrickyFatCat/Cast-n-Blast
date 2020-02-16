@@ -2,7 +2,7 @@
 
 if (global.TimeFactor > 0)
 {
-	with (activeWeapon)
+	with (mainWeapon)
 	{
 		switch global.CurrentInput
 		{
@@ -28,6 +28,6 @@ if (global.TimeFactor > 0)
 		}
 	}
 	
-	secondaryWeapon.directionCurrent = activeWeapon.directionCurrent;
-	ultimateWeapon.directionCurrent = activeWeapon.directionCurrent;
+	secondaryWeapon.directionCurrent = mainWeapon.directionCurrent;
+	ultimateWeapon.directionCurrent = mainWeapon.directionCurrent;
 }

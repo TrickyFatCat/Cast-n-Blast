@@ -3,14 +3,14 @@
 // Inherit the parent event
 event_inherited();
 
-switch (activeWeapon.currentCastState)
+switch (mainWeapon.currentCastState)
 {
 	case CastState.Idle:
 		var _counter = 0;
-		var _listSize = ds_list_size(activeWeapon.laserObjects);
+		var _listSize = ds_list_size(mainWeapon.laserObjects);
 		for (var i = 0; i < _listSize; i++)
 		{
-			var _laser = activeWeapon.laserObjects[| i];
+			var _laser = mainWeapon.laserObjects[| i];
 				
 			if (_laser.currentState == LaserState.Idle)
 			{
@@ -19,24 +19,24 @@ switch (activeWeapon.currentCastState)
 				
 			if (_counter == _listSize)
 			{
-				activeWeapon.directionCurrent = point_direction(x, y, playerX, playerY);
+				mainWeapon.directionCurrent = point_direction(x, y, playerX, playerY);
 				isShooting = true;
 			}
 		}
 	break;
 	
 	case CastState.Process:
-		with (activeWeapon)
+		with (mainWeapon)
 		{
 			lasersightAlpha = LerpTimeFactor(0, 1, castProgress);
 		}
 	break;
 	
 	case CastState.Execute:
-		activeWeapon.lasersightAlpha = 0;
+		mainWeapon.lasersightAlpha = 0;
 		shootTimer += global.TimeFactor;
-		var _deltaDirection = CalculateDeltaDirection(global.Player, activeWeapon.directionCurrent, rotationSpeed);
-		activeWeapon.directionCurrent -= _deltaDirection;
+		var _deltaDirection = CalculateDeltaDirection(global.Player, mainWeapon.directionCurrent, rotationSpeed);
+		mainWeapon.directionCurrent -= _deltaDirection;
 		
 		var _timeIsOver = CheckTimer(shootTimer, shootTime);
 		if (_timeIsOver)

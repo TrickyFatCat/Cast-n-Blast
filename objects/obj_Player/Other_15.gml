@@ -4,7 +4,7 @@ if (global.TimeFactor > 0)
 {	
 	var _shootKey;
 	
-	if (activeWeapon.isAuto == true)
+	if (mainWeapon.isAuto == true)
 	{
 		_shootKey = sys_GameManager.keyShootAuto;
 	}
@@ -15,11 +15,11 @@ if (global.TimeFactor > 0)
 	
 	if (_shootKey && ultimateState == UltimateState.Idle)
 	{
-		activeWeapon.isShooting = true;
+		mainWeapon.isShooting = true;
 	}
 	else
 	{
-		activeWeapon.isShooting = false;
+		mainWeapon.isShooting = false;
 	}
 	
 	var _secondaryShootKey;

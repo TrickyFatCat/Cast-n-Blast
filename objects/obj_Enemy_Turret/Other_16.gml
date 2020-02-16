@@ -1,4 +1,4 @@
 event_inherited()
 
-activeWeapon.isShooting = true;
-activeWeapon.directionCurrent += rotationSpeed * rotationDirection * global.TimeFactor;
+mainWeapon.isShooting = true;
+mainWeapon.directionCurrent += rotationSpeed * rotationDirection * global.TimeFactor;
