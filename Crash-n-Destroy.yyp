@@ -55,6 +55,14 @@
             }
         },
         {
+            "Key": "02abf29e-a1d7-4b35-9e25-06bbed5be6dc",
+            "Value": {
+                "id": "ba41b491-3e59-4526-9abb-8198f6d1e5ce",
+                "resourcePath": "sprites\\spr_hitPointsPickup\\spr_hitPointsPickup.yy",
+                "resourceType": "GMSprite"
+            }
+        },
+        {
             "Key": "02b61434-6cb4-40f3-aad8-ccaf8542aba8",
             "Value": {
                 "id": "5999aa03-66be-4723-81b2-a52297d5146c",
@@ -282,7 +290,7 @@
             "Key": "1afe7523-71ef-48e7-aa4d-335caab2dc4f",
             "Value": {
                 "id": "74b4709c-38f9-49ef-ab9e-ae77d742c984",
-                "resourcePath": "sprites\\spr_ultEnergy\\spr_ultEnergy.yy",
+                "resourcePath": "sprites\\spr_ultimatePointsPickup\\spr_ultimatePointsPickup.yy",
                 "resourceType": "GMSprite"
             }
         },
@@ -1175,6 +1183,14 @@
             }
         },
         {
+            "Key": "61049623-7753-4339-834a-14c1fa4dede8",
+            "Value": {
+                "id": "f691dda2-4ff5-44c7-887f-6c8455ac7b5e",
+                "resourcePath": "objects\\obj_ShieldPointsPickup\\obj_ShieldPointsPickup.yy",
+                "resourceType": "GMObject"
+            }
+        },
+        {
             "Key": "6106d93f-e53e-418f-a1dc-f4e58688b923",
             "Value": {
                 "id": "e9c6cde4-73a6-4304-99ee-e516bddc8d05",
@@ -1591,6 +1607,14 @@
             }
         },
         {
+            "Key": "813d3e13-ed17-4e96-be59-fb68f87272f7",
+            "Value": {
+                "id": "5135f19f-561c-4bfd-97e0-245a1d516ba5",
+                "resourcePath": "sprites\\spr_shieldPointsPickup\\spr_shieldPointsPickup.yy",
+                "resourceType": "GMSprite"
+            }
+        },
+        {
             "Key": "81da0206-373c-43da-9519-d3a948060c2a",
             "Value": {
                 "id": "900a5998-750c-4cec-b2fd-1a39a4228d00",
@@ -1820,6 +1844,14 @@
                 "id": "ab3a5c25-3b68-471b-945d-705e725645eb",
                 "resourcePath": "views\\916f4e5a-0edf-4b7f-b162-1564db8a13f8.yy",
                 "resourceType": "GMFolder"
+            }
+        },
+        {
+            "Key": "938a3316-0884-4f25-95f2-ef0eaaf25501",
+            "Value": {
+                "id": "7df4d5cc-e732-4b3b-bb02-5fe0fdf54d80",
+                "resourcePath": "objects\\obj_HitPointsPickup\\obj_HitPointsPickup.yy",
+                "resourceType": "GMObject"
             }
         },
         {

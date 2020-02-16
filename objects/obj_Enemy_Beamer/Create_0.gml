@@ -13,7 +13,7 @@ shootTimer = 0;
 aimTime = SetTime(2);
 aimTimer = 0;
 
-rotationSpeed = 0.35;
+rotationSpeed = 0.275;
 
 targetingTime = SetTime(3);
 targetingTimer = 0;

@@ -166,14 +166,14 @@ ds_map_add(BeamerGunData, "heal",							0);
 ds_map_add(BeamerGunData, "rateOfFireAccelerated",			false);
 ds_map_add(BeamerGunData, "rateOfFireIncrStep",				0);
 ds_map_add(BeamerGunData, "rateOfFireDecrStep",				0);
-ds_map_add(BeamerGunData, "rateOfFireMin",					30);
+ds_map_add(BeamerGunData, "rateOfFireMin",					25);
 ds_map_add(BeamerGunData, "rateOfFireMax",					0);
 //-----------------------------------------------------------------------------
 ds_map_add(BeamerGunData, "burstRate",						0);
 ds_map_add(BeamerGunData, "burstShotsNumber",				0);
 //-----------------------------------------------------------------------------
 ds_map_add(BeamerGunData, "castExecuteCount",				0);
-ds_map_add(BeamerGunData, "castTime",						1.25);
+ds_map_add(BeamerGunData, "castTime",						1.5);
 //-----------------------------------------------------------------------------
 ds_map_add(BeamerGunData, "chargeExecuteCountMin",			1);
 ds_map_add(BeamerGunData, "chargeExecuteCountMax",			0);

@@ -11,9 +11,7 @@ keyUltimateActivation = false;
 keySecondaryShootAuto = false;
 keySecondaryShootSemiAuto = false;
 keyInteract = false;
-keyShield = false;
 keyDash = false;
-actionStopShieldieng = false;
 
 // UI controls
 keyMenuUp = false;

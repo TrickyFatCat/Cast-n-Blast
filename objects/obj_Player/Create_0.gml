@@ -19,7 +19,6 @@ SetActivePerks();
 #macro ProcessDeath			event_user(9)
 #macro ProcessUltimate		event_user(10)
 #macro ProcessDashRecovery	event_user(11)
-#macro ProcessShieldLogic	event_user(12)
 
 //Set shadow
 var _shadowScale = 1;
@@ -102,7 +101,7 @@ shieldCanRestore = true;
 shieldRestorePenaltyTime = SetTime(2);
 shieldRestorePenaltyTimer = 0;
 shieldIsActive = false;
-shieldFactor = 1;
+shieldFactor = 0.2;
 defaultShieldFactor = shieldFactor;
 
 // Dash

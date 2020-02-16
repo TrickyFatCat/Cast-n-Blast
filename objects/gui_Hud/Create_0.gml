@@ -51,6 +51,6 @@ showRandomPerkTime = SetTime(2);
 showRandomPerkTimer = 0;
 showRandomPerk = false;
 
-energyColour = make_color_rgb(26, 76, 102);
-hitPointsColour = make_color_rgb(130, 63, 63);
-ultimateColour = make_color_rgb(88, 40, 184);
+hitPointsColour = make_color_rgb(71, 111, 0);
+shieldPointsColour = make_color_rgb(2, 79, 97);
+ultimatePointsColour = make_color_rgb(156, 11, 0);

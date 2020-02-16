@@ -14,4 +14,3 @@ else
 }
 
 ProcessDashRecovery;
-ProcessShieldLogic;
