@@ -58,7 +58,7 @@
             "Key": "02abf29e-a1d7-4b35-9e25-06bbed5be6dc",
             "Value": {
                 "id": "ba41b491-3e59-4526-9abb-8198f6d1e5ce",
-                "resourcePath": "sprites\\spr_hitPointsPickup\\spr_hitPointsPickup.yy",
+                "resourcePath": "sprites\\spr_shieldPointsPickup\\spr_shieldPointsPickup.yy",
                 "resourceType": "GMSprite"
             }
         },
@@ -1322,7 +1322,7 @@
             "Key": "6d0c6c0d-8fb4-4df7-bdf2-37d5aa200980",
             "Value": {
                 "id": "67776a5d-5fa1-4468-9b4e-cce3f197bce9",
-                "resourcePath": "objects\\obj_UltimatePickup\\obj_UltimatePickup.yy",
+                "resourcePath": "objects\\obj_UltimatePointsPickup\\obj_UltimatePointsPickup.yy",
                 "resourceType": "GMObject"
             }
         },
@@ -1610,7 +1610,7 @@
             "Key": "813d3e13-ed17-4e96-be59-fb68f87272f7",
             "Value": {
                 "id": "5135f19f-561c-4bfd-97e0-245a1d516ba5",
-                "resourcePath": "sprites\\spr_shieldPointsPickup\\spr_shieldPointsPickup.yy",
+                "resourcePath": "sprites\\spr_hitPointsPickup\\spr_hitPointsPickup.yy",
                 "resourceType": "GMSprite"
             }
         },

@@ -94,14 +94,7 @@ ultimateWeapon.isConsumingUltimate = true;
 maxShieldPoints = 50;
 defaultMaxShieldPoints = maxShieldPoints;
 shieldPoints = maxShieldPoints;
-shieldRestoreRate = 12;
-defaultShieldRestoreRate = shieldRestoreRate;
-shieldRestoreTimer = 0;
-shieldCanRestore = true;
-shieldRestorePenaltyTime = SetTime(2);
-shieldRestorePenaltyTimer = 0;
-shieldIsActive = false;
-shieldFactor = 0.2;
+shieldFactor = 0.8;
 defaultShieldFactor = shieldFactor;
 
 // Dash

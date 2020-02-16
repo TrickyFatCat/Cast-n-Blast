@@ -35,8 +35,12 @@ switch (mainWeapon.currentCastState)
 	case CastState.Execute:
 		mainWeapon.lasersightAlpha = 0;
 		shootTimer += global.TimeFactor;
-		var _deltaDirection = CalculateDeltaDirection(global.Player, mainWeapon.directionCurrent, rotationSpeed);
-		mainWeapon.directionCurrent -= _deltaDirection;
+		
+		if (obj_Player.currentState != PlayerState.Dash)
+		{
+			var _deltaDirection = CalculateDeltaDirection(global.Player, mainWeapon.directionCurrent, rotationSpeed);
+			mainWeapon.directionCurrent -= _deltaDirection;
+		}
 		
 		var _timeIsOver = CheckTimer(shootTimer, shootTime);
 		if (_timeIsOver)

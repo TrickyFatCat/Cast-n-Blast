@@ -2,7 +2,7 @@
     "id": "6d0c6c0d-8fb4-4df7-bdf2-37d5aa200980",
     "modelName": "GMObject",
     "mvc": "1.0",
-    "name": "obj_UltimatePickup",
+    "name": "obj_UltimatePointsPickup",
     "eventList": [
         {
             "id": "730d71de-de30-47b9-9858-69c8767077b0",

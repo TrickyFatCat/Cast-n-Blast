@@ -37,10 +37,7 @@ switch (_perkId)
 	
 	case Perk.MaxShieldPoints:
 		global.Player.maxShieldPoints = IncreaseParameterPercent(_perkId, global.Player.defaultMaxShieldPoints);
-	break;
-	
-	case Perk.ShieldRestoreRate:
-		global.Player.shieldRestoreRate = IncreaseParameterPercent(_perkId, global.Player.defaultShieldRestoreRate);
+		global.Player.shieldPoints = global.Player.maxShieldPoints;
 	break;
 	
 	case Perk.MaxUltimate:

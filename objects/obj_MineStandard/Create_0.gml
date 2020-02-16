@@ -2,4 +2,4 @@
 event_inherited();
 
 //States
-explosionDamage = 30;
+explosionDamage = 15;

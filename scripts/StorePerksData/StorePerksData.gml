@@ -11,7 +11,6 @@ enum Perk
 	MaxHitPoints,
 	ShieldFactor,
 	MaxShieldPoints,
-	ShieldRestoreRate,
 	MaxUltimate,
 	UltimateGain,
 	UltimateDamage,
@@ -30,7 +29,6 @@ SetPerkData(Perk.DashCoolDown,		2,	0.25,	true,	false,	"Dash cooldown");
 SetPerkData(Perk.MaxHitPoints,		5,	0.2,	true,	false,	"Max HP");
 SetPerkData(Perk.ShieldFactor,		5,	0.1,	true,	false,	"Shield power");
 SetPerkData(Perk.MaxShieldPoints,	5,	10,		true,	true,	"Max shield points");
-SetPerkData(Perk.ShieldRestoreRate,	5,	0.1,	true,	false,	"Shield restore rate");
 SetPerkData(Perk.MaxUltimate,		5,	0.1,	true,	false,	"Ultimate duration");
 SetPerkData(Perk.UltimateGain,		5,	0.1,	true,	false,	"Ultimate income");
 SetPerkData(Perk.UltimateDamage,	5,	0.1,	true,	false,	"Ultimate damage");
