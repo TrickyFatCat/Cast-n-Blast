@@ -2,8 +2,6 @@
 
 var _perkId = argument0;
 
-var _plasmaId = PlayerWeapon.PlasmaGun;
-var _shotgunId = PlayerWeapon.Shotgun;
 var _ultimateId = PlayerWeapon.UltimateGun;
 
 IncreasePerkLevel(_perkId);
@@ -51,63 +49,29 @@ switch (_perkId)
 	
 	case Perk.UltimateDamage:
 		UpdateWeaponParameter(_perkId, _ultimateId, "damage", true, false);
-		
-		with (global.Player)
-		{
-			SetPlayerWeapon(ultimateWeapon, _ultimateId);
-		}
 	break;
 	
 	case Perk.PlasmaDamage:
 		UpdateWeaponParameter(_perkId, _plasmaId, "damage", true, false);
-		
-		with (global.Player)
-		{
-			SetPlayerWeapon(mainWeapon, _plasmaId);
-		}
 	break;
 	
 	case Perk.PlasmaRate:
 		UpdateWeaponParameter(_perkId, _plasmaId, "rateOfFireMin", true, false);
-		
-		with (global.Player)
-		{
-			SetPlayerWeapon(mainWeapon, _plasmaId);
-		}
 	break;
 
 	case Perk.PlasmaSpread:
 		UpdateWeaponParameter(_perkId, _plasmaId, "spreadAngleMin", false, false);
-		
-		with (global.Player)
-		{
-			SetPlayerWeapon(mainWeapon, _plasmaId);
-		}
 	break;
 	
 	case Perk.ShotgunBullets:
 		UpdateWeaponParameter(_perkId, _shotgunId, "bulletNumber", true, true);
-		
-		with (global.Player)
-		{
-			SetPlayerWeapon(secondaryWeapon, _shotgunId);
-		}
 	break;
 	
 	case Perk.ShotgunRate:
 		UpdateWeaponParameter(_perkId, _shotgunId, "rateOfFireMin", true, false);
-		
-		with (global.Player)
-		{
-			SetPlayerWeapon(secondaryWeapon, _shotgunId);
-		}
 	break;
 	
 	case Perk.ShotgunSpread:
 		UpdateWeaponParameter(_perkId, _shotgunId, "spreadAngleMin", false, false);
-		with (global.Player)
-		{
-			SetPlayerWeapon(secondaryWeapon, _shotgunId);
-		}
 	break;
 }

@@ -13,6 +13,8 @@ switch global.CurrentInput
 		keyDash = CheckGamepadButtonPressed(gp_face1);
 		keyUltimateActivation = CheckGamepadButtonPressed(gp_face2);
 		keyReload = CheckGamepadButtonPressed(gp_face3);
+		keyNextWeapon = CheckGamepadButtonPressed(gp_padr);
+		keyPreviousWeapon = CheckGamepadButtonPressed(gp_padl);
 	break;
 	
 	case InputMethod.KeyboardMouse:
@@ -30,5 +32,9 @@ switch global.CurrentInput
 		keyDash = keyboard_check_pressed(vk_space);
 		keyUltimateActivation = keyboard_check_pressed(ord("Q"));
 		keyReload = keyboard_check_pressed(ord("R"));
+		keyWeapon01 = keyboard_check_pressed(ord("1"));
+		keyWeapon02 = keyboard_check_pressed(ord("2"));
+		keyNextWeapon = mouse_wheel_up();
+		keyPreviousWeapon = mouse_wheel_down();
 	break;
 }

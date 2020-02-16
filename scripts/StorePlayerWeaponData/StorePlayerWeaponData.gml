@@ -6,6 +6,9 @@ enum PlayerWeapon
 	UltimateGun
 }
 
+global.FirstWeapon = PlayerWeapon.PlasmaGun;
+global.LastWeapon = PlayerWeapon.Shotgun;
+
 #macro PlasmaGunData global.PlayerWeaponData[PlayerWeapon.PlasmaGun]
 #macro ShotgunData global.PlayerWeaponData[PlayerWeapon.Shotgun]
 #macro UltimateGunData global.PlayerWeaponData[PlayerWeapon.UltimateGun]
@@ -81,7 +84,7 @@ ds_map_add(PlasmaGunData, "shotShakeFactor",				0.05);
 
 #region // Shotgun
 ShotgunData = ds_map_create();
-ds_map_add(ShotgunData, "weaponSprite",						noone);
+ds_map_add(ShotgunData, "weaponSprite",						spr_shotgun);
 ds_map_add(ShotgunData, "offsetY",							10);
 ds_map_add(ShotgunData, "laserSightEnabled",				false);
 ds_map_add(ShotgunData, "isAuto",							true);
@@ -125,8 +128,8 @@ ds_map_add(ShotgunData, "spreadAngleMin",					35);
 ds_map_add(ShotgunData, "spreadAngleMax",					0);
 //-----------------------------------------------------------------------------
 ds_map_add(ShotgunData, "ammoID",							PlayerAmmo.Shotgun);
-ds_map_add(ShotgunData, "shootAmmoCost",					5);
-ds_map_add(ShotgunData, "reloadTime",						4);
+ds_map_add(ShotgunData, "shootAmmoCost",					1);
+ds_map_add(ShotgunData, "reloadTime",						0);
 //-----------------------------------------------------------------------------
 ds_map_add(ShotgunData, "recoilPower",						0);
 ds_map_add(ShotgunData, "recoilFactor",						0);

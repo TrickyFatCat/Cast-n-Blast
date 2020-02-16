@@ -5,11 +5,6 @@ if (sys_GameManager.keyReload && !isReloading && ammo < maxAmmo)
 	isReloading = true;
 }
 
-if (ammo == 0)
-{
-	isReloading = true;
-}
-
 if (isReloading)
 {
 	reloadTimer += global.TimeFactor;

@@ -42,3 +42,4 @@ switch (_absolute)
 }
 
 ds_map_replace(_weaponData, _parameter, _newValue);
+UpdateMainWeapon();

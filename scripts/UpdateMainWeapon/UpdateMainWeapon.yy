@@ -1,8 +1,8 @@
 {
-    "id": "d296ca0d-d65a-40cb-8389-97382c178501",
+    "id": "ada2a890-3018-48f5-b598-f4dfaeb40dab",
     "modelName": "GMScript",
     "mvc": "1.0",
-    "name": "SetAmmoParameters",
+    "name": "UpdateMainWeapon",
     "IsCompatibility": false,
     "IsDnD": false
 }

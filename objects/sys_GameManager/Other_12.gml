@@ -13,6 +13,10 @@ keySecondaryShootSemiAuto = false;
 keyInteract = false;
 keyDash = false;
 keyReload = false;
+keyWeapon01 = false;
+keyWeapon02 = false;
+keyNextWeapon = false;
+keyPreviousWeapon = false;
 
 // UI controls
 keyMenuUp = false;

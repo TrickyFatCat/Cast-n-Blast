@@ -623,6 +623,14 @@
             }
         },
         {
+            "Key": "392c07d2-86dd-4af7-a03f-cc5274cd867c",
+            "Value": {
+                "id": "15ecf775-201f-4baf-9f71-e7fb79c5dc50",
+                "resourcePath": "scripts\\SwitchToNextWeapon\\SwitchToNextWeapon.yy",
+                "resourceType": "GMScript"
+            }
+        },
+        {
             "Key": "3938a813-b96f-4bec-8f3d-baf0008747fc",
             "Value": {
                 "id": "7c85349b-a2e9-459f-9f93-febd8d71e6eb",
@@ -1091,6 +1099,14 @@
             "Value": {
                 "id": "734808cf-c85e-4331-9568-ac9555278c7b",
                 "resourcePath": "sprites\\spr_kamikaze_walk\\spr_kamikaze_walk.yy",
+                "resourceType": "GMSprite"
+            }
+        },
+        {
+            "Key": "59fdd6c0-a54a-422d-9716-51c0f929fb9f",
+            "Value": {
+                "id": "37bff632-9b5e-4893-bd7c-325201ade3fb",
+                "resourcePath": "sprites\\spr_shotgun\\spr_shotgun.yy",
                 "resourceType": "GMSprite"
             }
         },
@@ -1879,6 +1895,14 @@
             }
         },
         {
+            "Key": "948d1c19-688b-4a66-bff0-06db6864944c",
+            "Value": {
+                "id": "17d3ff4b-0277-4159-88f6-0fb69abe9db2",
+                "resourcePath": "views\\948d1c19-688b-4a66-bff0-06db6864944c.yy",
+                "resourceType": "GMFolder"
+            }
+        },
+        {
             "Key": "96d21767-6fb3-4c32-b570-7bfc41aa1631",
             "Value": {
                 "id": "cf95deaa-02b1-49df-8a79-df98622dc65a",
@@ -1987,6 +2011,14 @@
             "Value": {
                 "id": "6af6cfb5-0871-4fb3-9bd4-0cf8774e6bfa",
                 "resourcePath": "scripts\\IncreaseHitPoints\\IncreaseHitPoints.yy",
+                "resourceType": "GMScript"
+            }
+        },
+        {
+            "Key": "9fd6ba92-e5a5-48e2-a9aa-e4a1a7ff84ff",
+            "Value": {
+                "id": "62050fb8-1882-4c98-aa17-e086bafc7a05",
+                "resourcePath": "scripts\\SwitchToPreviousWeapon\\SwitchToPreviousWeapon.yy",
                 "resourceType": "GMScript"
             }
         },
@@ -2179,6 +2211,14 @@
             "Value": {
                 "id": "99f892e7-fc5d-49fa-86ec-5ce0aedcab5d",
                 "resourcePath": "scripts\\CheckGamepadAxis\\CheckGamepadAxis.yy",
+                "resourceType": "GMScript"
+            }
+        },
+        {
+            "Key": "ada2a890-3018-48f5-b598-f4dfaeb40dab",
+            "Value": {
+                "id": "828c9fef-564f-404a-9bcb-af785aad4b96",
+                "resourcePath": "scripts\\UpdateMainWeapon\\UpdateMainWeapon.yy",
                 "resourceType": "GMScript"
             }
         },
@@ -2610,7 +2650,7 @@
             "Key": "d296ca0d-d65a-40cb-8389-97382c178501",
             "Value": {
                 "id": "1444554f-bf4d-4520-bde7-5a29b3846a7f",
-                "resourcePath": "scripts\\SetAmmoParameters\\SetAmmoParameters.yy",
+                "resourcePath": "scripts\\SetPlayerAmmo\\SetPlayerAmmo.yy",
                 "resourceType": "GMScript"
             }
         },
@@ -2731,6 +2771,14 @@
             "Value": {
                 "id": "e870f486-cf2d-49d4-a605-bbc40d663070",
                 "resourcePath": "scripts\\IncreasePlayerAmmo\\IncreasePlayerAmmo.yy",
+                "resourceType": "GMScript"
+            }
+        },
+        {
+            "Key": "db0ca8a0-82e7-4619-b5ff-1a1e8aa8eee6",
+            "Value": {
+                "id": "374e97b6-c7ae-48e7-b33c-ba401c76f470",
+                "resourcePath": "scripts\\InterruptReload\\InterruptReload.yy",
                 "resourceType": "GMScript"
             }
         },
@@ -2995,6 +3043,14 @@
             "Value": {
                 "id": "43af04c8-d4c4-437e-8928-095f240ecbf1",
                 "resourcePath": "scripts\\GetBulletRootParent\\GetBulletRootParent.yy",
+                "resourceType": "GMScript"
+            }
+        },
+        {
+            "Key": "f098eec1-dc67-4715-90d6-2f0d811d5e3c",
+            "Value": {
+                "id": "1f21f898-a543-4b28-95fb-0343a7fab262",
+                "resourcePath": "scripts\\SwitchWeaponTo\\SwitchWeaponTo.yy",
                 "resourceType": "GMScript"
             }
         },
@@ -3334,6 +3390,7 @@
         "32f5f6d1-2cc1-4de2-969b-748e213f69f5",
         "194be890-e962-42da-a92c-92b0a1ffa684",
         "2462dd5d-5960-40a3-bd2e-8b6d06731a02",
+        "ada2a890-3018-48f5-b598-f4dfaeb40dab",
         "a6e421fa-8abb-4f64-83c2-27e1c150f24e",
         "1e524765-6693-42b8-8da9-7a26140c56cf",
         "2db62542-d884-408b-b99d-f9dfb69f5c9c",
@@ -3347,7 +3404,11 @@
         "2e8fff0d-8527-4d40-8d2a-60dac0d3c84f",
         "ef7c7f9e-e0ea-4c5c-a776-8addb9316c92",
         "73577388-ca1c-4c1e-ac8c-347eb66cf226",
-        "f1530b23-7da1-4daf-a54a-ad85f18a0ffc"
+        "f1530b23-7da1-4daf-a54a-ad85f18a0ffc",
+        "db0ca8a0-82e7-4619-b5ff-1a1e8aa8eee6",
+        "f098eec1-dc67-4715-90d6-2f0d811d5e3c",
+        "392c07d2-86dd-4af7-a03f-cc5274cd867c",
+        "9fd6ba92-e5a5-48e2-a9aa-e4a1a7ff84ff"
     ],
     "tutorial": ""
 }

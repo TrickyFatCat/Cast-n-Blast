@@ -1,12 +1,10 @@
 /// @param ammoID
-/// @param ammoData
 
 var _ammoID = argument0;
-var _ammoData = argument1;
 
 if (_ammoID != noone)
 {
-	var _ammo = _ammoData[_ammoID];
+	var _ammo = sessionAmmoData[_ammoID];
 
 	ammo =			_ammo[? "ammo"];
 	maxAmmo =		_ammo[? "maxAmmo"];

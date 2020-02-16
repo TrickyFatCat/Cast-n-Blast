@@ -72,6 +72,13 @@ for (var i = 0; i < _arrayLength; i++)
 	array_copy(sessionWeaponData, 0, global.PlayerWeaponData, 0, _arrayLength);
 }
 
+sessionAmmoData = [];
+var _arrayLength = array_length_1d(global.PlayerAmmoData);
+for (var i = 0; i < _arrayLength; i++)
+{
+	array_copy(sessionAmmoData, 0, global.PlayerAmmoData, 0, _arrayLength);
+}
+
 // MainWeapon
 weaponID = PlayerWeapon.PlasmaGun;
 mainWeapon = instance_create_layer(x, y, layer, obj_PlayerWeapon);
@@ -79,17 +86,17 @@ SetPlayerWeapon(mainWeapon, weaponID);
 mainWeapon.drawAlpha = 0;
 
 // Set player weapon ammo
-SetAmmoParameters(mainWeapon.ammoID, global.PlayerAmmoData);
+SetPlayerAmmo(mainWeapon.ammoID);
 
 // Reload time
 isReloading = false;
 reloadTime = SetTime(mainWeapon.reloadTime);
 reloadTimer = 0;
 
-//// SecondaryWeapon
-secondaryWeaponID = PlayerWeapon.Shotgun;
-secondaryWeapon = instance_create_layer(x, y, layer, obj_PlayerWeapon);
-SetPlayerWeapon(secondaryWeapon, secondaryWeaponID);
+// SecondaryWeapon
+//secondaryWeaponID = PlayerWeapon.Shotgun;
+//secondaryWeapon = instance_create_layer(x, y, layer, obj_PlayerWeapon);
+//SetPlayerWeapon(secondaryWeapon, secondaryWeaponID);
 
 // UltimateWeapon
 ultimateWeaponID = PlayerWeapon.UltimateGun;
