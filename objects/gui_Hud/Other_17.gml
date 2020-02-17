@@ -39,12 +39,18 @@ if (showRandomPerk)
 	DrawTiltedText(fnt_medium, _x, 0, _y, 2, c_maroon, c_red, "Perk '" + _perkName + "' was chosen");
 }
 
-// Ultimate
+// HUD origin values
 var _borderColour = c_black;
-var _scaleX = 300;
-var _scaleY = 28;
-var _x = (guiWidth * 0.5) - (_scaleX / 2);
-var _y = guiHeight * 0.95;
+var _originScaleX = 300;
+var _originScaleY = 28;
+var _originX = (guiWidth * 0.5) - (_originScaleX / 2);
+var _originY = guiHeight * 0.95;
+
+// Ultimate
+var _x = _originX;
+var _y = _originY;
+var _scaleX = _originScaleX;
+var _scaleY = _originScaleY;
 draw_set_font(fnt_small);
 SetAlign(fa_center, fa_center);
 var _value = global.Player.ultimatePoints;
@@ -105,4 +111,43 @@ for (var i = 0; i < _maxDashCharge; i++)
 	}
 	
 	DrawProgressBar(_x, _y, _scaleX, _scaleY, hudAlpha, c_black, c_teal, _value, _maxValue, false);
+}
+
+// Weapon
+_x = _originX;
+_y = _y - _scaleY + 4;
+_scaleX = _originScaleX;
+
+switch (global.Player.weaponID)
+{
+	case PlayerWeapon.PlasmaGun:
+		var _name = "Plasma";
+	break;
+	
+	case PlayerWeapon.Shotgun:
+		var _name = "Shotgun";
+	break;
+}
+
+DrawTextOutline(_x + _scaleX / 4, _y + _scaleY / 2, c_black, c_white, _name);
+
+if (!global.Player.isReloading)
+{
+	if (global.Player.ammo != 0)
+	{
+		var _text = string(global.Player.ammo) + " / " + string(global.Player.maxAmmo);
+	}
+	else
+	{
+		var _text = "Press R to reload";
+	}
+	
+	DrawTextOutline(_x + (_scaleX / 4) * 3, _y + _scaleY / 2, c_black, c_white, _text);
+}
+else
+{
+	_value = global.Player.reloadTimer;
+	_maxValue = global.Player.reloadTime;
+	DrawProgressBar(_x + _scaleX / 2, _y, _scaleX / 2, _scaleY, hudAlpha, c_black, c_orange, _value, _maxValue, true);
+	DrawTextOutline(_x + (_scaleX / 4) * 3, _y + _scaleY / 2, c_black, c_white, "RELOADING");
 }

@@ -25,7 +25,7 @@ ds_map_add(PlasmaGunData, "bulletObject",					obj_PProjectile_Normal);
 ds_map_add(PlasmaGunData, "bulletNumber",					1);
 ds_map_add(PlasmaGunData, "bulletSpawnPointOffset",			32);
 //-----------------------------------------------------------------------------
-ds_map_add(PlasmaGunData, "damage",							10);
+ds_map_add(PlasmaGunData, "damage",							20);
 ds_map_add(PlasmaGunData, "heal",							0);
 //-----------------------------------------------------------------------------
 ds_map_add(PlasmaGunData, "rateOfFireAccelerated",			false);
@@ -60,7 +60,7 @@ ds_map_add(PlasmaGunData, "spreadAngleMax",					0);
 //-----------------------------------------------------------------------------
 ds_map_add(PlasmaGunData, "ammoID",							PlayerAmmo.PlasmaGun);
 ds_map_add(PlasmaGunData, "shootAmmoCost",					1);
-ds_map_add(PlasmaGunData, "reloadTime",						4);
+ds_map_add(PlasmaGunData, "reloadTime",						2);
 //-----------------------------------------------------------------------------
 ds_map_add(PlasmaGunData, "recoilPower",					10);
 ds_map_add(PlasmaGunData, "recoilFactor",					0.3);
@@ -129,7 +129,7 @@ ds_map_add(ShotgunData, "spreadAngleMax",					0);
 //-----------------------------------------------------------------------------
 ds_map_add(ShotgunData, "ammoID",							PlayerAmmo.Shotgun);
 ds_map_add(ShotgunData, "shootAmmoCost",					1);
-ds_map_add(ShotgunData, "reloadTime",						0);
+ds_map_add(ShotgunData, "reloadTime",						3);
 //-----------------------------------------------------------------------------
 ds_map_add(ShotgunData, "recoilPower",						0);
 ds_map_add(ShotgunData, "recoilFactor",						0);

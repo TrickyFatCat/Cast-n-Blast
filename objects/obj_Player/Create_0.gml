@@ -93,7 +93,6 @@ SetPlayerAmmo(mainWeapon.ammoID);
 
 // Reload time
 isReloading = false;
-reloadTime = SetTime(mainWeapon.reloadTime);
 reloadTimer = 0;
 
 // SecondaryWeapon

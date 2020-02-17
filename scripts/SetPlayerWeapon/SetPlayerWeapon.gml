@@ -8,3 +8,5 @@ with (_weapon)
 {
 	SetWeaponParameters(other.object_index, _weaponID, obj_Player.sessionWeaponData);
 }
+
+reloadTime = SetTime(mainWeapon.reloadTime);
