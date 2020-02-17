@@ -26,9 +26,7 @@ switch (global.BattleState)
 			global.BattleState = BattleState.Active;
 			randomPerk = noone;
 			obj_SpawnController.isActive = true;
-			var _tileType = choose(TileType.DamageDealer, TileType.SpeedDebuffer);
-			ActivatePermanentTiles(_tileType);
-			ActivateTilesController();
+			ActivateTiles;
 			//PlaySound(sfx_start);
 		}
 	break;
@@ -51,9 +49,7 @@ switch (global.BattleState)
 			obj_SpawnController.isActive = false;
 			global.BattleState = BattleState.RoundEnd;
 			global.PlayTime = 0;
-			DeactivateTilesController();
-			DeactivatePermanentTiles();
-			DeactivateTemporaryTiles();
+			DectivateActiveTiles;
 			instance_activate_object(destructionTile);
 			destructionTile.currentState = TileState.Activation;
 		}

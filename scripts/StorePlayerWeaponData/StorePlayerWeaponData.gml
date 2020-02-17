@@ -121,7 +121,7 @@ ds_map_add(ShotgunData, "chargeVelocityFactorMax",			20);
 ds_map_add(ShotgunData, "chargeShakeFactorMax",				1.25);
 //-----------------------------------------------------------------------------
 ds_map_add(ShotgunData, "spreadIsDynamic",					false);
-ds_map_add(ShotgunData, "spreadIsUniform",					true);
+ds_map_add(ShotgunData, "spreadIsUniform",					false);
 ds_map_add(ShotgunData, "spreadAngleIncrFactor",			0.2);
 ds_map_add(ShotgunData, "spreadAngleDecrFactor",			0.0075);
 ds_map_add(ShotgunData, "spreadAngleMin",					35);
@@ -135,13 +135,13 @@ ds_map_add(ShotgunData, "recoilPower",						0);
 ds_map_add(ShotgunData, "recoilFactor",						0);
 //-----------------------------------------------------------------------------
 ds_map_add(ShotgunData, "hitscanScaleY",					0);
-ds_map_add(ShotgunData, "projectileVelocityNoiseFactor",	0);
-ds_map_add(ShotgunData, "projectileVelocityCurrent",		8);
+ds_map_add(ShotgunData, "projectileVelocityNoiseFactor",	0.1);
+ds_map_add(ShotgunData, "projectileVelocityCurrent",		10);
 ds_map_add(ShotgunData, "projectileVelocityMax",			0);
 ds_map_add(ShotgunData, "projectileAcceleration",			0);
-ds_map_add(ShotgunData, "projectileFriction",				0.33);
-ds_map_add(ShotgunData, "projectileBounceEnable",			false);
-ds_map_add(ShotgunData, "projectileBounceFriction",			2);
+ds_map_add(ShotgunData, "projectileFriction",				0.25);
+ds_map_add(ShotgunData, "projectileBounceEnable",			true);
+ds_map_add(ShotgunData, "projectileBounceFriction",			1);
 //-----------------------------------------------------------------------------
 ds_map_add(ShotgunData, "isShackingCamera",					true);
 ds_map_add(ShotgunData, "angularShakeEnabled",				true);

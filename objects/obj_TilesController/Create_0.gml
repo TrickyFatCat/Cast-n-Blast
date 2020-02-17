@@ -9,7 +9,7 @@ switchingTilesTime = SetTime(10);
 switchingTilesTimer = switchingTilesTime;
 tileActiveTime = SetTime(10);
 
-permanentTilesNumber = 20;
-temporaryTilesNumber = 20;
+permanentTilesNumber = 10;
+temporaryTilesNumber = 10;
 
 temporaryTileType = TileType.DamageDealer;

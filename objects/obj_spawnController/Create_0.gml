@@ -23,7 +23,7 @@ for (var i = 0; i < _spawnPointsCount; i++)
 }
 
 /// Wave data
-currentWaveIndex = WaveData.Test00;
+currentWaveIndex = choose(WaveData.R01W01, WaveData.R01W02, WaveData.R01W03);
 waveData = GetWaveData(currentWaveIndex);
 waveSwitchTime = SetTime(10);
 waveSwitchTimer = 0;

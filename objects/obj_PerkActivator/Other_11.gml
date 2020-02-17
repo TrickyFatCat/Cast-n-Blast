@@ -2,5 +2,8 @@
 
 global.BattleState = BattleState.Start;
 DeactivateInteractiveObjects();
-CalculateDifficulty();
+with (sys_BattleController)
+{
+	CalculateDifficulty();
+}
 ChangeSpawnSettings();

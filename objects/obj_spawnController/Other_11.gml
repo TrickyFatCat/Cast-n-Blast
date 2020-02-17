@@ -24,8 +24,16 @@ if (_activeListSize >= spawnNumber)
 	var _enemyId;
 	var _enemyNumber;
 	var _enemySpawned;
+	
+	var _enemiesDifference = enemiesMaxNumber - global.TotalEnemies;
+	var _spawnNumber = spawnNumber;
+	
+	if (_spawnNumber > _enemiesDifference)
+	{
+		_spawnNumber = _enemiesDifference;
+	}
 		
-	for (var i = 0; i < spawnNumber; i++)
+	for (var i = 0; i < _spawnNumber; i++)
 	{
 		// Choose a random spawn point
 		

@@ -16,9 +16,10 @@ if (hitPoints > 0)
 		{
 			_hitpointsDamage = _damage - shieldPoints;
 		}
+		
+		DecreaseShieldPoints(_shieldDamage);
 	}
 	
-	DecreaseShieldPoints(_shieldDamage);
 	DecreaseHitPoints(_hitpointsDamage);
 	EnableFlash(c_red, 1);
 	ApplyShakeToCamera(true, 1);

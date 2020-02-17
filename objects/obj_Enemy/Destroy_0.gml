@@ -19,10 +19,10 @@ if (explosionObject != noone)
 
 global.Score += scoreAdd;
 
-for (var i = 0; i < 3; i++)
-{
-	instance_create_layer(x , y, layer, obj_MineStandard);
-}
+//for (var i = 0; i < 3; i++)
+//{
+//	instance_create_layer(x , y, layer, obj_MineStandard);
+//}
 
 DecreaseTotalEnemies();
 var _currentCount = GetEnemyCount(object_index);

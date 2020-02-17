@@ -1,3 +1,6 @@
+#macro ActivateTiles event_user(0)
+#macro DectivateActiveTiles event_user(1)
+
 battleStartTime = SetTime(5);
 battleStartTimer = 0;
 global.PlayTime = 0;
@@ -5,7 +8,7 @@ global.PlayTime = 0;
 battlePauseTime = SetTime(20);
 battlePauseTimer = 0;
 
-roundTime = SetTime(30);
+SetRoundTime(30);
 
 enum BattleState
 {
@@ -19,18 +22,6 @@ enum BattleState
 
 global.BattleState = BattleState.Inactive;
 
-difficultyIncreaseTime[0] = SetTime(10);
-difficultyIncreaseTime[1] = SetTime(20);
-difficultyIncreaseTime[2] = SetTime(30);
-difficultyIncreaseTime[3] = SetTime(40);
-difficultyIncreaseTime[4] = SetTime(50);
-difficultyIncreaseTime[5] = SetTime(60);
-difficultyIncreaseTime[6] = SetTime(70);
-difficultyIncreaseTime[7] = SetTime(80);
-difficultyIncreaseTime[8] = SetTime(90);
-difficultyIncreaseTime[9] = SetTime(100);
-difficultyIncreaseTime[10] = SetTime(110);
-
 global.DifficultyLevel = 0;
 global.Score = 0;
 global.Round = 1;
@@ -38,3 +29,7 @@ global.Round = 1;
 soundTimer = SetTime(1);
 randomPerk = noone;
 destructionTile = noone;
+permanentTilesEnabled = false;
+temporaryTilesEnabled = false;
+activeWaves = ds_list_create();
+SetActiveWaves(WaveData.R01W01, WaveData.R01W02, WaveData.R01W03);

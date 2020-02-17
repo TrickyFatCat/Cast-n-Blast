@@ -447,6 +447,14 @@
             }
         },
         {
+            "Key": "24a5b57b-f302-4969-a8f0-80896b6797aa",
+            "Value": {
+                "id": "b2ed199f-0c0c-4387-87b4-29bbf6730ec1",
+                "resourcePath": "scripts\\SetRoundTime\\SetRoundTime.yy",
+                "resourceType": "GMScript"
+            }
+        },
+        {
             "Key": "254f4429-8dd2-47aa-8115-61100be9837b",
             "Value": {
                 "id": "78ea728a-c11b-4485-87c1-4e1e06870e2b",
@@ -1127,6 +1135,14 @@
             }
         },
         {
+            "Key": "56359574-b2a2-42fd-8cce-5e80da9547c1",
+            "Value": {
+                "id": "3048d07d-7384-4edd-a555-bc4164a191a1",
+                "resourcePath": "scripts\\SetTilesNumber\\SetTilesNumber.yy",
+                "resourceType": "GMScript"
+            }
+        },
+        {
             "Key": "563b717a-7993-4030-acd1-52fff22f47c2",
             "Value": {
                 "id": "49a11e56-5980-4378-b4bd-71c8f0b8dccf",
@@ -1219,6 +1235,14 @@
             "Value": {
                 "id": "149b8b0c-8fc8-4906-9765-06c14dff33fa",
                 "resourcePath": "scripts\\SetMaxWeight\\SetMaxWeight.yy",
+                "resourceType": "GMScript"
+            }
+        },
+        {
+            "Key": "5d78bb0e-0c6c-4c66-9d58-3aa3f062e9fe",
+            "Value": {
+                "id": "915a428f-ed83-4b75-a64c-9109de17f85e",
+                "resourcePath": "scripts\\SetSpawnNumber\\SetSpawnNumber.yy",
                 "resourceType": "GMScript"
             }
         },
@@ -1859,6 +1883,14 @@
             "Value": {
                 "id": "22d9b21f-14fe-47d4-bf32-cf62fab8182f",
                 "resourcePath": "scripts\\CheckHitscanCollision\\CheckHitscanCollision.yy",
+                "resourceType": "GMScript"
+            }
+        },
+        {
+            "Key": "8aebc550-c537-48a2-93e9-53c39da2ac7d",
+            "Value": {
+                "id": "4b66a702-331f-4713-8d84-27cef9cf5047",
+                "resourcePath": "scripts\\SetSpawnPause\\SetSpawnPause.yy",
                 "resourceType": "GMScript"
             }
         },
@@ -2903,6 +2935,14 @@
             }
         },
         {
+            "Key": "dd515c0e-34db-4694-a5a0-e8041f239a7b",
+            "Value": {
+                "id": "7b4aee13-c35f-459b-b87e-6b5e4a3368cc",
+                "resourcePath": "scripts\\SetActiveWaves\\SetActiveWaves.yy",
+                "resourceType": "GMScript"
+            }
+        },
+        {
             "Key": "de0937b1-bf93-45c3-9734-95fc070a05e3",
             "Value": {
                 "id": "410a79cf-506e-4f10-9bd2-c534fd8f6755",
@@ -3477,6 +3517,11 @@
         "e36a9443-29d0-4493-8899-6e6162a4a75a",
         "a46fde5d-6f74-4dcf-a9c9-68e9e9e0b9d1",
         "77192f17-439d-4514-8e3a-8745f8e0a42b",
+        "24a5b57b-f302-4969-a8f0-80896b6797aa",
+        "8aebc550-c537-48a2-93e9-53c39da2ac7d",
+        "5d78bb0e-0c6c-4c66-9d58-3aa3f062e9fe",
+        "56359574-b2a2-42fd-8cce-5e80da9547c1",
+        "dd515c0e-34db-4694-a5a0-e8041f239a7b",
         "a425260a-f0d1-47b3-ac19-802e4214e6a1",
         "49bf0704-d92b-4de3-abbc-ddd15a611398",
         "8b6c5121-4244-4f17-8831-ad31141c5049",
