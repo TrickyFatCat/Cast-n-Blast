@@ -10,10 +10,10 @@ if (surface_exists(_surface))
 	var _appSurfaceHeight = surface_get_height(application_surface);
 	if (_surfaceWidth != _appSurfaceWidth && _surfaceHeight != _appSurfaceHeight)
 	{
-		surface_resize(_surface, global.CurrentWidth, global.CurrentHeight);
+		surface_resize(_surface, surfaceShadowsWidth, surfaceShadowsHeight);
 	}
 }
 else
 {
-	surfaceShadows = surface_create(global.CurrentWidth, global.CurrentHeight);
+	surfaceShadows = surface_create(surfaceShadowsWidth, surfaceShadowsHeight);
 }
