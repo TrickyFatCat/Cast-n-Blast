@@ -2687,6 +2687,14 @@
             }
         },
         {
+            "Key": "cc6b3936-bc5c-4a9e-8cb7-ea244a0830b7",
+            "Value": {
+                "id": "bc5b3bf1-c8c5-4e50-99a5-6c7ea2ef5c59",
+                "resourcePath": "scripts\\GetRandomWave\\GetRandomWave.yy",
+                "resourceType": "GMScript"
+            }
+        },
+        {
             "Key": "cc98d028-7bdd-4680-85f3-c87a7baa481e",
             "Value": {
                 "id": "51859182-19c2-4736-bc08-36bd6233a289",
@@ -3522,6 +3530,7 @@
         "5d78bb0e-0c6c-4c66-9d58-3aa3f062e9fe",
         "56359574-b2a2-42fd-8cce-5e80da9547c1",
         "dd515c0e-34db-4694-a5a0-e8041f239a7b",
+        "cc6b3936-bc5c-4a9e-8cb7-ea244a0830b7",
         "a425260a-f0d1-47b3-ac19-802e4214e6a1",
         "49bf0704-d92b-4de3-abbc-ddd15a611398",
         "8b6c5121-4244-4f17-8831-ad31141c5049",

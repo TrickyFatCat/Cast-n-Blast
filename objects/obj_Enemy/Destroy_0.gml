@@ -2,12 +2,22 @@ event_inherited()
 
 instance_destroy(mainWeapon);
 
-for (var i = 0; i < 5; i++)
+var _number = irandom_range(1, 5);
+for (var i = 0; i < _number; i++)
 {
 	var _pickup = instance_create_layer(x, y, layer, obj_UltimatePointsPickup);
-	_pickup.ultimateNumber = round((global.Player.maxUltimatePoints * (ultimatePercent / 100)) / 5);
-	
+	_pickup.ultimatePointsNumber = round((global.Player.maxUltimatePoints * ultimatePointsDropFactor) / _number);
+}
+
+var _number = irandom(5);
+for (var i = 0; i < _number; i++)
+{
 	instance_create_layer(x, y, layer, obj_ShieldPointsPickup);
+}
+
+var _number = irandom(5);
+for (var i = 0; i < _number; i++)
+{
 	instance_create_layer(x, y, layer, obj_HitPointsPickup);
 }
 

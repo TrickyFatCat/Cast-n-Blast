@@ -272,20 +272,6 @@
             "varType": 0
         },
         {
-            "id": "08ce2491-9137-4b33-8019-1ffc1a85747d",
-            "modelName": "GMObjectProperty",
-            "mvc": "1.0",
-            "listItems": null,
-            "multiselect": false,
-            "rangeEnabled": false,
-            "rangeMax": 10,
-            "rangeMin": 0,
-            "resourceFilter": 1023,
-            "value": "0",
-            "varName": "ultimatePercent",
-            "varType": 0
-        },
-        {
             "id": "aaee2d72-a993-4e05-97bf-6e547be41ad6",
             "modelName": "GMObjectProperty",
             "mvc": "1.0",
@@ -325,6 +311,20 @@
             "resourceFilter": 1023,
             "value": "0",
             "varName": "explosionDamage",
+            "varType": 0
+        },
+        {
+            "id": "08ce2491-9137-4b33-8019-1ffc1a85747d",
+            "modelName": "GMObjectProperty",
+            "mvc": "1.0",
+            "listItems": null,
+            "multiselect": false,
+            "rangeEnabled": false,
+            "rangeMax": 10,
+            "rangeMin": 0,
+            "resourceFilter": 1023,
+            "value": "0",
+            "varName": "ultimatePointsDropFactor",
             "varType": 0
         }
     ],

@@ -61,8 +61,8 @@ defaultMaxHitPoints = maxHitPoints;
 
 // PickUp magnet paramentrs
 pullDistance = 64;
-pullVelocityMax = 8;
-pullAcceleration = 0.25;
+pullVelocityMax = 10;
+pullAcceleration = 0.3;
 pickupList = ds_list_create();
 
 sessionWeaponData = [];
@@ -107,7 +107,7 @@ SetPlayerWeapon(ultimateWeapon, ultimateWeaponID);
 ultimateWeapon.isConsumingUltimate = true;
 
 // Shield
-maxShieldPoints = 50;
+maxShieldPoints = 25;
 defaultMaxShieldPoints = maxShieldPoints;
 shieldPoints = maxShieldPoints;
 shieldFactor = 0.8;
@@ -132,7 +132,7 @@ enum UltimateState
 }
 
 ultimateState = UltimateState.Idle;
-ultimatePoints = 1000;
+ultimatePoints = 0;
 maxUltimatePoints = 1000;
 defaultMaxUltimatePoints = maxUltimatePoints;
 ultimateDeactivaitionTime = 0.75;

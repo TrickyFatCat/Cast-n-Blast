@@ -54,6 +54,5 @@ switch (global.Round)
 	break;
 }
 
-var _randomWaveindex = irandom(ds_list_size(activeWaves) - 1);
-var _activeWave = activeWaves[| _randomWaveindex];
+var _activeWave = GetRandomWave();
 SetWave(_activeWave);

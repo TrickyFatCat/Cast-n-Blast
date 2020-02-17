@@ -17,3 +17,7 @@ rotationSpeed = 0.275;
 
 targetingTime = SetTime(3);
 targetingTimer = 0;
+
+aimIsLocked = false;
+aimLockTime = SetTime(0.4);
+aimLockTimer = 0;

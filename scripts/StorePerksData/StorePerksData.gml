@@ -41,7 +41,7 @@ SetPerkData(Perk.PlasmaRate,		2,	0.25,	true,	false,	"Plasma rate");
 SetPerkData(Perk.PlasmaSpread,		5,	0.2,	false,	false,	"Plasma spread");
 SetPerkData(Perk.PlasmaReload,		2,	0.25,	false,	false,	"Plasma reload time");
 SetPerkData(Perk.PlasmaMaxAmmo,		2,	25,		true,	true,	"Plasma ammo");
-SetPerkData(Perk.ShotgunBullets,	5,	1.0,	true,	true,	"Shotgun bullets");
+SetPerkData(Perk.ShotgunBullets,	2,	5.0,	true,	true,	"Shotgun bullets");
 SetPerkData(Perk.ShotgunRate,		2,	0.25,	true,	false,	"Shotgun rate");
 SetPerkData(Perk.ShotgunSpread,		2,	0.25,	false,	false,	"Shotgun spread");
 SetPerkData(Perk.ShotgunReload,		2,	0.25,	false,	false,	"Shotgun reload time");

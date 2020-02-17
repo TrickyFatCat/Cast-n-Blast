@@ -6,5 +6,5 @@ var _flashPower = 2;
 
 //Sequence
 EnableFlash(_flashColour, _flashPower);
-IncreaseUltimatePoints(other.ultimateNumber + ultimateGainFactor);
+IncreaseUltimatePoints(other.ultimatePointsNumber + ultimateGainFactor);
 instance_destroy(other);

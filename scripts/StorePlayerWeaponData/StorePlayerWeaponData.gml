@@ -91,10 +91,10 @@ ds_map_add(ShotgunData, "isAuto",							true);
 ds_map_add(ShotgunData, "currentShootMode",					ShootMode.Normal);
 //-----------------------------------------------------------------------------
 ds_map_add(ShotgunData, "bulletObject",						obj_PProjectile_Normal);
-ds_map_add(ShotgunData, "bulletNumber",						5);
+ds_map_add(ShotgunData, "bulletNumber",						10);
 ds_map_add(ShotgunData, "bulletSpawnPointOffset",			32);
 //-----------------------------------------------------------------------------
-ds_map_add(ShotgunData, "damage",							10);
+ds_map_add(ShotgunData, "damage",							5);
 ds_map_add(ShotgunData, "heal",								0);
 //-----------------------------------------------------------------------------
 ds_map_add(ShotgunData, "rateOfFireAccelerated",			false);
@@ -124,7 +124,7 @@ ds_map_add(ShotgunData, "spreadIsDynamic",					false);
 ds_map_add(ShotgunData, "spreadIsUniform",					false);
 ds_map_add(ShotgunData, "spreadAngleIncrFactor",			0.2);
 ds_map_add(ShotgunData, "spreadAngleDecrFactor",			0.0075);
-ds_map_add(ShotgunData, "spreadAngleMin",					35);
+ds_map_add(ShotgunData, "spreadAngleMin",					30);
 ds_map_add(ShotgunData, "spreadAngleMax",					0);
 //-----------------------------------------------------------------------------
 ds_map_add(ShotgunData, "ammoID",							PlayerAmmo.Shotgun);

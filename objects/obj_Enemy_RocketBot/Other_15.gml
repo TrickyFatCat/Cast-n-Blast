@@ -3,7 +3,7 @@
 // Inherit the parent event
 event_inherited();
 
-var _waitTime = SetTime(3);
+var _waitTime = SetTime(4);
 
 
 if (mainWeapon.shotCount == 1)

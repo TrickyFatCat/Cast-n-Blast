@@ -12,7 +12,8 @@
         "8aebc550-c537-48a2-93e9-53c39da2ac7d",
         "5d78bb0e-0c6c-4c66-9d58-3aa3f062e9fe",
         "56359574-b2a2-42fd-8cce-5e80da9547c1",
-        "dd515c0e-34db-4694-a5a0-e8041f239a7b"
+        "dd515c0e-34db-4694-a5a0-e8041f239a7b",
+        "cc6b3936-bc5c-4a9e-8cb7-ea244a0830b7"
     ],
     "filterType": "GMScript",
     "folderName": "DifficultyControl",

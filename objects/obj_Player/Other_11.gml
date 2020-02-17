@@ -35,6 +35,7 @@ switch currentState
 		if (velocity <= maxVelocity)
 		{
 			currentState = PlayerState.Idle;
+			isInvulnerable = false;
 		}
 	break;
 }
