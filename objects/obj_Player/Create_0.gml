@@ -23,8 +23,7 @@ SetActivePerks();
 #macro ProcessWeaponReload	event_user(13)
 
 //Set shadow
-var _shadowScale = 1;
-SetShadowParameters(true, _shadowScale);
+SetShadowParameters(true, 1.25);
 
 //Movement parameters
 directionX = 0;

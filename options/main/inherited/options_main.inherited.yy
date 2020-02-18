@@ -6,6 +6,33 @@
     "option_game_speed": 60,
     "option_lastchanged": "04 February 2020 17:34:19",
     "option_sci_usesci": true
+}←be5f1418-b31b-48af-a023-f04cdf6e5121|{
+    "textureGroups": {
+        "Additions": [
+            {
+                "Key": 1,
+                "Value": {
+                    "id": "b84d3b44-cc0a-43f9-abf1-ce03048ee777",
+                    "modelName": "GMTextureGroup",
+                    "mvc": "1.0",
+                    "groupName": "texturegroup",
+                    "targets": 461609314234257646,
+                    "autocrop": true,
+                    "border": 2,
+                    "groupParent": "00000000-0000-0000-0000-000000000000",
+                    "mipsToGenerate": 0,
+                    "scaled": true
+                }
+            }
+        ],
+        "Checksum": "ࢺ懜璙ᓆ锯翋꤯맫",
+        "Deletions": [
+            
+        ],
+        "Ordering": [
+            
+        ]
+    }
 }←1225f6b0-ac20-43bd-a82e-be73fa0b6f4f|{
     "targets": 461609314234257646,
     "autocrop": false

@@ -152,15 +152,15 @@ ds_map_add(TrooperGunData, "shotShakeFactor",				0.05);
 
 #region BeamerGun
 BeamerGunData = ds_map_create();
-ds_map_add(BeamerGunData, "weaponSprite",					noone);
-ds_map_add(BeamerGunData, "offsetY",						6);
+ds_map_add(BeamerGunData, "weaponSprite",					spr_darkMageWeapon);
+ds_map_add(BeamerGunData, "offsetY",						4);
 ds_map_add(BeamerGunData, "laserSightEnabled",				true);
 ds_map_add(BeamerGunData, "isAuto",							true);
 ds_map_add(BeamerGunData, "currentShootMode",				ShootMode.Cast);
 //-----------------------------------------------------------------------------
 ds_map_add(BeamerGunData, "bulletObject",					obj_BeamerLaser);
 ds_map_add(BeamerGunData, "bulletNumber",					1);
-ds_map_add(BeamerGunData, "bulletSpawnPointOffset",			10);
+ds_map_add(BeamerGunData, "bulletSpawnPointOffset",			24);
 //-----------------------------------------------------------------------------
 ds_map_add(BeamerGunData, "damage",							2);
 ds_map_add(BeamerGunData, "heal",							0);
@@ -225,7 +225,7 @@ ds_map_add(NinjaGunData, "laserSightEnabled",				false);
 ds_map_add(NinjaGunData, "isAuto",							true);
 ds_map_add(NinjaGunData, "currentShootMode",				ShootMode.Normal);
 //-----------------------------------------------------------------------------
-ds_map_add(NinjaGunData, "bulletObject",					obj_FighterProjectile);
+ds_map_add(NinjaGunData, "bulletObject",					obj_NinjasKnife);
 ds_map_add(NinjaGunData, "bulletNumber",					30);
 ds_map_add(NinjaGunData, "bulletSpawnPointOffset",			0);
 //-----------------------------------------------------------------------------
@@ -287,7 +287,7 @@ ds_map_add(NinjaGunData, "shotShakeFactor",					0.05);
 #region TurretGun
 TurretGunData = ds_map_create();
 ds_map_add(TurretGunData, "weaponSprite",					noone);
-ds_map_add(TurretGunData, "offsetY",						16);
+ds_map_add(TurretGunData, "offsetY",						18);
 ds_map_add(TurretGunData, "laserSightEnabled",				false);
 ds_map_add(TurretGunData, "isAuto",							true);
 ds_map_add(TurretGunData, "currentShootMode",				ShootMode.Cast);
@@ -336,7 +336,7 @@ ds_map_add(TurretGunData, "reloadTime",						0);
 ds_map_add(TurretGunData, "recoilPower",					0);
 ds_map_add(TurretGunData, "recoilFactor",					0);
 //-----------------------------------------------------------------------------
-ds_map_add(TurretGunData, "hitscanScaleY",					5);
+ds_map_add(TurretGunData, "hitscanScaleY",					4);
 ds_map_add(TurretGunData, "projectileVelocityNoiseFactor",	0);
 ds_map_add(TurretGunData, "projectileVelocityCurrent",		5);
 ds_map_add(TurretGunData, "projectileVelocityMax",			0);

@@ -5,16 +5,6 @@
     "name": "obj_Enemy_Kamikaze",
     "eventList": [
         {
-            "id": "718211e7-d418-4ae3-a5eb-5f56e73fab88",
-            "modelName": "GMEvent",
-            "mvc": "1.0",
-            "IsDnD": false,
-            "collisionObjectId": "00000000-0000-0000-0000-000000000000",
-            "enumb": 0,
-            "eventtype": 0,
-            "m_owner": "4b3fe9d3-aaa2-4dd3-a94b-1bbfc60ab619"
-        },
-        {
             "id": "ad5a9336-2814-4482-b8d8-c7ee046da731",
             "modelName": "GMEvent",
             "mvc": "1.0",

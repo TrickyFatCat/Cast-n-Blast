@@ -41,7 +41,7 @@ enum CameraMode
 }
 
 cameraMode = CameraMode.MoveToTarget;
-clampToBorders = false;
+clampToBorders = true;
 
 // Follow parameters
 cameraFollowTarget = noone;

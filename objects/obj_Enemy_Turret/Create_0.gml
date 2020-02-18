@@ -1,8 +1,5 @@
 // Inherit the parent event
 event_inherited();
-SetEnemyWeapon(EnemyWeapon.TurretGun);
-mainWeapon.visible = false;
-isShooting = false;
 mainWeapon.directionCurrent = point_direction(x, y, playerX, playerY);
 mainWeapon.lasersightAlpha = 0;
 //mainWeapon.shotSound = sfx_impshot;

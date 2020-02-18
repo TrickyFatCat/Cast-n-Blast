@@ -1,6 +1,14 @@
 event_inherited()
 
-instance_destroy(mainWeapon);
+var _currentCount = GetEnemyCount(object_index);
+_currentCount--;
+SetEnemyCount(object_index, _currentCount);
+DecreaseTotalEnemies();
+
+if (mainWeapon != noone)
+{
+	instance_destroy(mainWeapon);
+}
 
 var _number = irandom_range(1, 5);
 for (var i = 0; i < _number; i++)
@@ -33,8 +41,3 @@ global.Score += scoreAdd;
 //{
 //	instance_create_layer(x , y, layer, obj_MineStandard);
 //}
-
-DecreaseTotalEnemies();
-var _currentCount = GetEnemyCount(object_index);
-_currentCount--;
-SetEnemyCount(object_index, _currentCount);

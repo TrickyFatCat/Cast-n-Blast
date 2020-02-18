@@ -202,6 +202,20 @@
     "physicsStartAwake": true,
     "properties": [
         {
+            "id": "7d56f573-3466-48b3-8bfa-eff41ec6884e",
+            "modelName": "GMObjectProperty",
+            "mvc": "1.0",
+            "listItems": null,
+            "multiselect": false,
+            "rangeEnabled": false,
+            "rangeMax": 10,
+            "rangeMin": 0,
+            "resourceFilter": 1023,
+            "value": "noone",
+            "varName": "weaponId",
+            "varType": 4
+        },
+        {
             "id": "1ca7224f-7c34-4831-9429-9b546a05328a",
             "modelName": "GMObjectProperty",
             "mvc": "1.0",

@@ -16,7 +16,7 @@ global.LastWeapon = PlayerWeapon.Shotgun;
 #region // Plasma
 PlasmaGunData = ds_map_create();
 ds_map_add(PlasmaGunData, "weaponSprite",					spr_playerWeapon);
-ds_map_add(PlasmaGunData, "offsetY",						10);
+ds_map_add(PlasmaGunData, "offsetY",						4);
 ds_map_add(PlasmaGunData, "laserSightEnabled",				false);
 ds_map_add(PlasmaGunData, "isAuto",							true);
 ds_map_add(PlasmaGunData, "currentShootMode",				ShootMode.Normal);
@@ -31,7 +31,7 @@ ds_map_add(PlasmaGunData, "heal",							0);
 ds_map_add(PlasmaGunData, "rateOfFireAccelerated",			false);
 ds_map_add(PlasmaGunData, "rateOfFireIncrStep",				0);
 ds_map_add(PlasmaGunData, "rateOfFireDecrStep",				0);
-ds_map_add(PlasmaGunData, "rateOfFireMin",					7);
+ds_map_add(PlasmaGunData, "rateOfFireMin",					6);
 ds_map_add(PlasmaGunData, "rateOfFireMax",					0);
 //-----------------------------------------------------------------------------
 ds_map_add(PlasmaGunData, "burstRate",						0);
@@ -84,8 +84,8 @@ ds_map_add(PlasmaGunData, "shotShakeFactor",				0.05);
 
 #region // Shotgun
 ShotgunData = ds_map_create();
-ds_map_add(ShotgunData, "weaponSprite",						spr_shotgun);
-ds_map_add(ShotgunData, "offsetY",							10);
+ds_map_add(ShotgunData, "weaponSprite",						spr_playerWeapon);
+ds_map_add(ShotgunData, "offsetY",							4);
 ds_map_add(ShotgunData, "laserSightEnabled",				false);
 ds_map_add(ShotgunData, "isAuto",							true);
 ds_map_add(ShotgunData, "currentShootMode",					ShootMode.Normal);
@@ -152,7 +152,7 @@ ds_map_add(ShotgunData, "shotShakeFactor",					1);
 #region // Ultimate
 UltimateGunData = ds_map_create();
 ds_map_add(UltimateGunData, "weaponSprite",						noone);
-ds_map_add(UltimateGunData, "offsetY",							10);
+ds_map_add(UltimateGunData, "offsetY",							4);
 ds_map_add(UltimateGunData, "laserSightEnabled",				false);
 ds_map_add(UltimateGunData, "isAuto",							true);
 ds_map_add(UltimateGunData, "currentShootMode",					ShootMode.Normal);

@@ -104,6 +104,14 @@
             "objectId": "afff8e58-95bc-4515-9151-ed5722abe174",
             "propertyId": "1591e771-5a78-4b8c-8b12-11acf2ccefad",
             "value": "64"
+        },
+        {
+            "id": "20155151-f6af-4147-8732-efffcf96868e",
+            "modelName": "GMOverriddenProperty",
+            "mvc": "1.0",
+            "objectId": "afff8e58-95bc-4515-9151-ed5722abe174",
+            "propertyId": "7d56f573-3466-48b3-8bfa-eff41ec6884e",
+            "value": "EnemyWeapon.NinjaGun"
         }
     ],
     "parentObjectId": "afff8e58-95bc-4515-9151-ed5722abe174",

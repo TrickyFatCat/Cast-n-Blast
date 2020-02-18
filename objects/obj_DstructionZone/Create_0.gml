@@ -4,7 +4,7 @@ event_inherited();
 currentState = TileState.Deactivation;
 
 drawScaleX = 0;
-drawScaleY = 832;
+drawScaleY = 704;
 image_xscale = 0;
 image_yscale = drawScaleY
 drawAlpha = 0;

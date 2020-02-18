@@ -28,7 +28,16 @@ targetY = 0.0;
 
 // Add weapon
 mainWeapon = instance_create_layer(x, y, layer, obj_EnemyWeapon);
-mainWeapon.visible = false;
+if (weaponId == noone)
+{
+	instance_destroy(mainWeapon);
+	mainWeapon = noone;
+}
+else
+{
+	SetEnemyWeapon(weaponId);
+}
+//mainWeapon.visible = false;
 
 // Base states
 enum EnemyState

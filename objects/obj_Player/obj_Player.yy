@@ -289,7 +289,7 @@
             "mvc": "1.0",
             "objectId": "c0b37de0-4e9d-4cb9-81f9-922df5f3bea7",
             "propertyId": "ba50de28-c2d6-4ef9-8e2e-9f6e82e05142",
-            "value": "spr_player_walk"
+            "value": "spr_player_run"
         },
         {
             "id": "1c91af3d-65bf-4f24-9276-eaca505ff61a",

@@ -116,6 +116,14 @@
             "objectId": "afff8e58-95bc-4515-9151-ed5722abe174",
             "propertyId": "08ce2491-9137-4b33-8019-1ffc1a85747d",
             "value": "0.02"
+        },
+        {
+            "id": "3b4a0317-2f53-4d0c-899b-713fb50ffd98",
+            "modelName": "GMOverriddenProperty",
+            "mvc": "1.0",
+            "objectId": "afff8e58-95bc-4515-9151-ed5722abe174",
+            "propertyId": "7d56f573-3466-48b3-8bfa-eff41ec6884e",
+            "value": "EnemyWeapon.FighterGun"
         }
     ],
     "parentObjectId": "afff8e58-95bc-4515-9151-ed5722abe174",

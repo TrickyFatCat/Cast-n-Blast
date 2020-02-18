@@ -1,8 +1,8 @@
 if visible
 {
 	var _coreScale = drawScaleY * 0.45;
-	var _startScale = drawScaleY * 0.2;
-	var _startCoreScale = drawScaleY * 0.1;
+	var _startScale = drawScaleY * 0.14;
+	var _startCoreScale = drawScaleY * 0.05;
 	var _impactScale = drawScaleY * 0.3;
 	var _impactCoreScale = drawScaleY * 0.2;
 	var _impactAngle = random(360);

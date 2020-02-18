@@ -37,6 +37,7 @@ switch (currentState)
 	break;
 	
 	case PlayerState.Dash:
+		ActivateDash();
 		MovePlayer;
 		PullPickups;
 		ProcessUltimate;

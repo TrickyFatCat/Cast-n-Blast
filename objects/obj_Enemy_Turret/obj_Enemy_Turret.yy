@@ -98,6 +98,14 @@
             "objectId": "afff8e58-95bc-4515-9151-ed5722abe174",
             "propertyId": "08ce2491-9137-4b33-8019-1ffc1a85747d",
             "value": "0.01"
+        },
+        {
+            "id": "5c07b5f3-1fee-460e-87a4-576d404de180",
+            "modelName": "GMOverriddenProperty",
+            "mvc": "1.0",
+            "objectId": "afff8e58-95bc-4515-9151-ed5722abe174",
+            "propertyId": "7d56f573-3466-48b3-8bfa-eff41ec6884e",
+            "value": "EnemyWeapon.TurretGun"
         }
     ],
     "parentObjectId": "afff8e58-95bc-4515-9151-ed5722abe174",

@@ -1,8 +1,6 @@
 // Inherit the parent event
 event_inherited();
 
-SetEnemyWeapon(EnemyWeapon.NinjaGun);
-
 enum NinjaState
 {
 	Idle,
