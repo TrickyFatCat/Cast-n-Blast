@@ -1607,14 +1607,6 @@
             }
         },
         {
-            "Key": "77192f17-439d-4514-8e3a-8745f8e0a42b",
-            "Value": {
-                "id": "80a777e4-6751-4a20-bedd-9b7b24771143",
-                "resourcePath": "scripts\\ChangeSpawnSettings\\ChangeSpawnSettings.yy",
-                "resourceType": "GMScript"
-            }
-        },
-        {
             "Key": "77bc5f25-18c1-4077-89af-7a49272d7fda",
             "Value": {
                 "id": "4397dae1-f808-48d0-a329-23ce39c2b5ff",
@@ -3521,10 +3513,9 @@
         "5f275b2b-9a54-4fdf-8b5d-fd68bb42217c",
         "17c65153-af25-464f-b3de-96fc90780eb4",
         "60c1984b-644f-4bae-9886-9b6b0427a288",
+        "a46fde5d-6f74-4dcf-a9c9-68e9e9e0b9d1",
         "c195d599-7ba5-41be-9f70-fee5daa9a780",
         "e36a9443-29d0-4493-8899-6e6162a4a75a",
-        "a46fde5d-6f74-4dcf-a9c9-68e9e9e0b9d1",
-        "77192f17-439d-4514-8e3a-8745f8e0a42b",
         "24a5b57b-f302-4969-a8f0-80896b6797aa",
         "8aebc550-c537-48a2-93e9-53c39da2ac7d",
         "5d78bb0e-0c6c-4c66-9d58-3aa3f062e9fe",

@@ -31,7 +31,7 @@ ds_map_add(PlasmaGunData, "heal",							0);
 ds_map_add(PlasmaGunData, "rateOfFireAccelerated",			false);
 ds_map_add(PlasmaGunData, "rateOfFireIncrStep",				0);
 ds_map_add(PlasmaGunData, "rateOfFireDecrStep",				0);
-ds_map_add(PlasmaGunData, "rateOfFireMin",					5);
+ds_map_add(PlasmaGunData, "rateOfFireMin",					7);
 ds_map_add(PlasmaGunData, "rateOfFireMax",					0);
 //-----------------------------------------------------------------------------
 ds_map_add(PlasmaGunData, "burstRate",						0);
@@ -60,7 +60,7 @@ ds_map_add(PlasmaGunData, "spreadAngleMax",					0);
 //-----------------------------------------------------------------------------
 ds_map_add(PlasmaGunData, "ammoID",							PlayerAmmo.PlasmaGun);
 ds_map_add(PlasmaGunData, "shootAmmoCost",					1);
-ds_map_add(PlasmaGunData, "reloadTime",						2);
+ds_map_add(PlasmaGunData, "reloadTime",						1.5);
 //-----------------------------------------------------------------------------
 ds_map_add(PlasmaGunData, "recoilPower",					10);
 ds_map_add(PlasmaGunData, "recoilFactor",					0.3);
@@ -94,7 +94,7 @@ ds_map_add(ShotgunData, "bulletObject",						obj_PProjectile_Normal);
 ds_map_add(ShotgunData, "bulletNumber",						10);
 ds_map_add(ShotgunData, "bulletSpawnPointOffset",			32);
 //-----------------------------------------------------------------------------
-ds_map_add(ShotgunData, "damage",							5);
+ds_map_add(ShotgunData, "damage",							8);
 ds_map_add(ShotgunData, "heal",								0);
 //-----------------------------------------------------------------------------
 ds_map_add(ShotgunData, "rateOfFireAccelerated",			false);
@@ -129,10 +129,10 @@ ds_map_add(ShotgunData, "spreadAngleMax",					0);
 //-----------------------------------------------------------------------------
 ds_map_add(ShotgunData, "ammoID",							PlayerAmmo.Shotgun);
 ds_map_add(ShotgunData, "shootAmmoCost",					1);
-ds_map_add(ShotgunData, "reloadTime",						3);
+ds_map_add(ShotgunData, "reloadTime",						2.5);
 //-----------------------------------------------------------------------------
-ds_map_add(ShotgunData, "recoilPower",						0);
-ds_map_add(ShotgunData, "recoilFactor",						0);
+ds_map_add(ShotgunData, "recoilPower",						10);
+ds_map_add(ShotgunData, "recoilFactor",						0.3);
 //-----------------------------------------------------------------------------
 ds_map_add(ShotgunData, "hitscanScaleY",					0);
 ds_map_add(ShotgunData, "projectileVelocityNoiseFactor",	0.1);

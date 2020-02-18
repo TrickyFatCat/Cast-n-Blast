@@ -19,5 +19,5 @@ targetingTime = SetTime(3);
 targetingTimer = 0;
 
 aimIsLocked = false;
-aimLockTime = SetTime(0.4);
+aimLockTime = SetTime(0.5);
 aimLockTimer = 0;

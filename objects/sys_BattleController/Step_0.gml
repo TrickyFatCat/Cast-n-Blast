@@ -80,7 +80,6 @@ switch (global.BattleState)
 			randomPerk = ActivateRandomPerk();
 			DeactivateInteractiveObjects();
 			CalculateDifficulty();
-			ChangeSpawnSettings();
 		}
 	break;
 			
@@ -89,6 +88,9 @@ switch (global.BattleState)
 		//{
 		//	audio_play_sound(bgm_defeat, 0, false);
 		//}
+		global.Round = 1;
+		permanentTilesEnabled = false;
+		temporaryTilesEnabled = false;
 		gui_Base.currentState = InterfaceState.TransitionOut;
 		global.BattleState = BattleState.Inactive;
 	break;

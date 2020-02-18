@@ -70,7 +70,7 @@ ds_map_add(EnemyFighterGunData, "recoilFactor",					0);
 //-----------------------------------------------------------------------------
 ds_map_add(EnemyFighterGunData, "hitscanScaleY",				0);
 ds_map_add(EnemyFighterGunData, "projectileVelocityNoiseFactor",0);
-ds_map_add(EnemyFighterGunData, "projectileVelocityCurrent",	4);
+ds_map_add(EnemyFighterGunData, "projectileVelocityCurrent",	3.5);
 ds_map_add(EnemyFighterGunData, "projectileVelocityMax",		0);
 ds_map_add(EnemyFighterGunData, "projectileAcceleration",		0);
 ds_map_add(EnemyFighterGunData, "projectileFriction",			0);
@@ -137,7 +137,7 @@ ds_map_add(TrooperGunData, "reloadTime",						0);
 //-----------------------------------------------------------------------------
 ds_map_add(TrooperGunData, "hitscanScaleY",					0);
 ds_map_add(TrooperGunData, "projectileVelocityNoiseFactor",	0);
-ds_map_add(TrooperGunData, "projectileVelocityCurrent",		5);
+ds_map_add(TrooperGunData, "projectileVelocityCurrent",		3.5);
 ds_map_add(TrooperGunData, "projectileVelocityMax",			0);
 ds_map_add(TrooperGunData, "projectileAcceleration",		0);
 ds_map_add(TrooperGunData, "projectileFriction",			0);
@@ -408,7 +408,7 @@ ds_map_add(RocketGunData, "projectileVelocityNoiseFactor",	0);
 ds_map_add(RocketGunData, "projectileVelocityCurrent",		3);
 ds_map_add(RocketGunData, "projectileVelocityMax",			3);
 ds_map_add(RocketGunData, "projectileAcceleration",			0);
-ds_map_add(RocketGunData, "projectileFriction",				0.065);
+ds_map_add(RocketGunData, "projectileFriction",				0.05);
 ds_map_add(RocketGunData, "projectileBounceEnable",			false);
 ds_map_add(RocketGunData, "projectileBounceFriction",		2);
 //-----------------------------------------------------------------------------

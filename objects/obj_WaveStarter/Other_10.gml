@@ -4,4 +4,3 @@ with (sys_BattleController)
 {
 	CalculateDifficulty();
 }
-ChangeSpawnSettings();

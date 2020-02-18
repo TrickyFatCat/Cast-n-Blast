@@ -2,7 +2,7 @@
 event_inherited();
 
 rotationSpeed = 2.5;
-freeFlightTime = SetTime(0.4); 
+freeFlightTime = SetTime(0.75); 
 freeFlightTimer = 0;
 minDistance = 96;
 collisionEnable = false;

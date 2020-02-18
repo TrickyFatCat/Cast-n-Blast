@@ -21,8 +21,6 @@ enum BattleState
 }
 
 global.BattleState = BattleState.Inactive;
-
-global.DifficultyLevel = 0;
 global.Score = 0;
 global.Round = 1;
 

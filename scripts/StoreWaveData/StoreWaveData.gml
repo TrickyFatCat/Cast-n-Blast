@@ -50,9 +50,9 @@ var _waveWeight = 5;
 var _enemyNumber = 7;
 
 var _wave = CreateDataMap(_enemyNumber);
-SetObjectData(_wave[0], obj_Enemy_Kamikaze,		4,	5);
-SetObjectData(_wave[1], obj_Enemy_Fighter,		0,	0);
-SetObjectData(_wave[2], obj_Enemy_Beamer,		2,	5);
+SetObjectData(_wave[0], obj_Enemy_Kamikaze,		0,	0);
+SetObjectData(_wave[1], obj_Enemy_Fighter,		6,	5);
+SetObjectData(_wave[2], obj_Enemy_Beamer,		1,	5);
 SetObjectData(_wave[3], obj_Enemy_Trooper,		0,	0);
 SetObjectData(_wave[4], obj_Enemy_Ninja,		0,	0);
 SetObjectData(_wave[5], obj_Enemy_Turret,		0,	0);
@@ -82,10 +82,10 @@ var _waveWeight = 5;
 var _enemyNumber = 7;
 
 var _wave = CreateDataMap(_enemyNumber);
-SetObjectData(_wave[0], obj_Enemy_Kamikaze,		5,	5);
+SetObjectData(_wave[0], obj_Enemy_Kamikaze,		2,	1);
 SetObjectData(_wave[1], obj_Enemy_Fighter,		0,	0);
-SetObjectData(_wave[2], obj_Enemy_Beamer,		2,	5);
-SetObjectData(_wave[3], obj_Enemy_Trooper,		5,	5);
+SetObjectData(_wave[2], obj_Enemy_Beamer,		1,	1);
+SetObjectData(_wave[3], obj_Enemy_Trooper,		6,	5);
 SetObjectData(_wave[4], obj_Enemy_Ninja,		0,	0);
 SetObjectData(_wave[5], obj_Enemy_Turret,		0,	0);
 SetObjectData(_wave[6], obj_Enemy_RocketBot,	0,	0);
@@ -101,9 +101,9 @@ SetObjectData(_wave[0], obj_Enemy_Kamikaze,		0,	0);
 SetObjectData(_wave[1], obj_Enemy_Fighter,		6,	5);
 SetObjectData(_wave[2], obj_Enemy_Beamer,		0,	0);
 SetObjectData(_wave[3], obj_Enemy_Trooper,		0,	0);
-SetObjectData(_wave[4], obj_Enemy_Ninja,		4,	5);
+SetObjectData(_wave[4], obj_Enemy_Ninja,		3,	1);
 SetObjectData(_wave[5], obj_Enemy_Turret,		0,	0);
-SetObjectData(_wave[6], obj_Enemy_RocketBot,	2,	5);
+SetObjectData(_wave[6], obj_Enemy_RocketBot,	2,	2);
 SetWaveData(_waveIndex, _wave, _waveWeight);
 
 // Wave 03
@@ -112,10 +112,10 @@ var _waveWeight = 5;
 var _enemyNumber = 7;
 
 var _wave = CreateDataMap(_enemyNumber);
-SetObjectData(_wave[0], obj_Enemy_Kamikaze,		5,	5);
+SetObjectData(_wave[0], obj_Enemy_Kamikaze,		2,	1);
 SetObjectData(_wave[1], obj_Enemy_Fighter,		0,	0);
 SetObjectData(_wave[2], obj_Enemy_Beamer,		0,	0);
-SetObjectData(_wave[3], obj_Enemy_Trooper,		5,	5);
+SetObjectData(_wave[3], obj_Enemy_Trooper,		8,	5);
 SetObjectData(_wave[4], obj_Enemy_Ninja,		0,	0);
 SetObjectData(_wave[5], obj_Enemy_Turret,		3,	5);
 SetObjectData(_wave[6], obj_Enemy_RocketBot,	0,	0);
@@ -131,9 +131,9 @@ var _enemyNumber = 7;
 var _wave = CreateDataMap(_enemyNumber);
 SetObjectData(_wave[0], obj_Enemy_Kamikaze,		0,	0);
 SetObjectData(_wave[1], obj_Enemy_Fighter,		6,	5);
-SetObjectData(_wave[2], obj_Enemy_Beamer,		2,	5);
-SetObjectData(_wave[3], obj_Enemy_Trooper,		4,	5);
-SetObjectData(_wave[4], obj_Enemy_Ninja,		3,	5);
+SetObjectData(_wave[2], obj_Enemy_Beamer,		1,	1);
+SetObjectData(_wave[3], obj_Enemy_Trooper,		6,	5);
+SetObjectData(_wave[4], obj_Enemy_Ninja,		2,	3);
 SetObjectData(_wave[5], obj_Enemy_Turret,		0,	0);
 SetObjectData(_wave[6], obj_Enemy_RocketBot,	0,	0);
 SetWaveData(_waveIndex, _wave, _waveWeight);
@@ -144,13 +144,13 @@ var _waveWeight = 5;
 var _enemyNumber = 7;
 
 var _wave = CreateDataMap(_enemyNumber);
-SetObjectData(_wave[0], obj_Enemy_Kamikaze,		5,	5);
-SetObjectData(_wave[1], obj_Enemy_Fighter,		6,	5);
+SetObjectData(_wave[0], obj_Enemy_Kamikaze,		2,	1);
+SetObjectData(_wave[1], obj_Enemy_Fighter,		8,	5);
 SetObjectData(_wave[2], obj_Enemy_Beamer,		0,	0);
 SetObjectData(_wave[3], obj_Enemy_Trooper,		0,	0);
 SetObjectData(_wave[4], obj_Enemy_Ninja,		0,	0);
-SetObjectData(_wave[5], obj_Enemy_Turret,		4,	5);
-SetObjectData(_wave[6], obj_Enemy_RocketBot,	3,	5);
+SetObjectData(_wave[5], obj_Enemy_Turret,		4,	3);
+SetObjectData(_wave[6], obj_Enemy_RocketBot,	3,	3);
 SetWaveData(_waveIndex, _wave, _waveWeight);
 
 // Wave 03
@@ -159,13 +159,13 @@ var _waveWeight = 5;
 var _enemyNumber = 7;
 
 var _wave = CreateDataMap(_enemyNumber);
-SetObjectData(_wave[0], obj_Enemy_Kamikaze,		5,	5);
+SetObjectData(_wave[0], obj_Enemy_Kamikaze,		2,	1);
 SetObjectData(_wave[1], obj_Enemy_Fighter,		0,	0);
-SetObjectData(_wave[2], obj_Enemy_Beamer,		2,	5);
-SetObjectData(_wave[3], obj_Enemy_Trooper,		5,	5);
-SetObjectData(_wave[4], obj_Enemy_Ninja,		3,	5);
+SetObjectData(_wave[2], obj_Enemy_Beamer,		1,	1);
+SetObjectData(_wave[3], obj_Enemy_Trooper,		8,	5);
+SetObjectData(_wave[4], obj_Enemy_Ninja,		2,	3);
 SetObjectData(_wave[5], obj_Enemy_Turret,		0,	0);
-SetObjectData(_wave[6], obj_Enemy_RocketBot,	3,	5);
+SetObjectData(_wave[6], obj_Enemy_RocketBot,	3,	2);
 SetWaveData(_waveIndex, _wave, _waveWeight);
 #endregion
 
@@ -177,12 +177,12 @@ var _enemyNumber = 7;
 
 var _wave = CreateDataMap(_enemyNumber);
 SetObjectData(_wave[0], obj_Enemy_Kamikaze,		0,	0);
-SetObjectData(_wave[1], obj_Enemy_Fighter,		8,	5);
-SetObjectData(_wave[2], obj_Enemy_Beamer,		2,	5);
+SetObjectData(_wave[1], obj_Enemy_Fighter,		10,	5);
+SetObjectData(_wave[2], obj_Enemy_Beamer,		1,	1);
 SetObjectData(_wave[3], obj_Enemy_Trooper,		4,	5);
-SetObjectData(_wave[4], obj_Enemy_Ninja,		3,	5);
+SetObjectData(_wave[4], obj_Enemy_Ninja,		3,	3);
 SetObjectData(_wave[5], obj_Enemy_Turret,		0,	0);
-SetObjectData(_wave[6], obj_Enemy_RocketBot,	4,	5);
+SetObjectData(_wave[6], obj_Enemy_RocketBot,	3,	3);
 SetWaveData(_waveIndex, _wave, _waveWeight);
 
 // Wave 02
@@ -194,9 +194,9 @@ var _wave = CreateDataMap(_enemyNumber);
 SetObjectData(_wave[0], obj_Enemy_Kamikaze,		5,	5);
 SetObjectData(_wave[1], obj_Enemy_Fighter,		10,	5);
 SetObjectData(_wave[2], obj_Enemy_Beamer,		0,	0);
-SetObjectData(_wave[3], obj_Enemy_Trooper,		6,	5);
-SetObjectData(_wave[4], obj_Enemy_Ninja,		4,	5);
-SetObjectData(_wave[5], obj_Enemy_Turret,		3,	5);
+SetObjectData(_wave[3], obj_Enemy_Trooper,		10,	5);
+SetObjectData(_wave[4], obj_Enemy_Ninja,		4,	1);
+SetObjectData(_wave[5], obj_Enemy_Turret,		3,	1);
 SetObjectData(_wave[6], obj_Enemy_RocketBot,	0,	0);
 SetWaveData(_waveIndex, _wave, _waveWeight);
 
@@ -206,13 +206,13 @@ var _waveWeight = 5;
 var _enemyNumber = 7;
 
 var _wave = CreateDataMap(_enemyNumber);
-SetObjectData(_wave[0], obj_Enemy_Kamikaze,		5,	5);
+SetObjectData(_wave[0], obj_Enemy_Kamikaze,		2,	1);
 SetObjectData(_wave[1], obj_Enemy_Fighter,		12,	5);
-SetObjectData(_wave[2], obj_Enemy_Beamer,		3,	5);
-SetObjectData(_wave[3], obj_Enemy_Trooper,		5,	5);
+SetObjectData(_wave[2], obj_Enemy_Beamer,		1,	1);
+SetObjectData(_wave[3], obj_Enemy_Trooper,		8,	5);
 SetObjectData(_wave[4], obj_Enemy_Ninja,		0,	0);
 SetObjectData(_wave[5], obj_Enemy_Turret,		0,	0);
-SetObjectData(_wave[6], obj_Enemy_RocketBot,	3,	5);
+SetObjectData(_wave[6], obj_Enemy_RocketBot,	3,	3);
 SetWaveData(_waveIndex, _wave, _waveWeight);
 #endregion
 
@@ -240,7 +240,7 @@ var _enemyNumber = 7;
 var _wave = CreateDataMap(_enemyNumber);
 SetObjectData(_wave[0], obj_Enemy_Kamikaze,		7,	5);
 SetObjectData(_wave[1], obj_Enemy_Fighter,		10,	5);
-SetObjectData(_wave[2], obj_Enemy_Beamer,		3,	5);
+SetObjectData(_wave[2], obj_Enemy_Beamer,		1,	5);
 SetObjectData(_wave[3], obj_Enemy_Trooper,		5,	5);
 SetObjectData(_wave[4], obj_Enemy_Ninja,		0,	0);
 SetObjectData(_wave[5], obj_Enemy_Turret,		3,	5);
@@ -255,7 +255,7 @@ var _enemyNumber = 7;
 var _wave = CreateDataMap(_enemyNumber);
 SetObjectData(_wave[0], obj_Enemy_Kamikaze,		7,	5);
 SetObjectData(_wave[1], obj_Enemy_Fighter,		10,	5);
-SetObjectData(_wave[2], obj_Enemy_Beamer,		3,	5);
+SetObjectData(_wave[2], obj_Enemy_Beamer,		1,	5);
 SetObjectData(_wave[3], obj_Enemy_Trooper,		5,	5);
 SetObjectData(_wave[4], obj_Enemy_Ninja,		4,	5);
 SetObjectData(_wave[5], obj_Enemy_Turret,		0,	0);

@@ -35,8 +35,11 @@ if (_activeListSize >= spawnNumber)
 		
 	for (var i = 0; i < _spawnNumber; i++)
 	{
+		if (obj_Player.currentState == PlayerState.Transcendence)
+		{
+			break;
+		}
 		// Choose a random spawn point
-		
 		var _spawnID = irandom(_activeListSize - 1);
 		var _pointForSpawn = _activeSpawnPoints[| _spawnID];
 		
@@ -48,10 +51,19 @@ if (_activeListSize >= spawnNumber)
 		
 		while (_enemySpawned >= _enemyNumber)
 		{
+			if (obj_Player.currentState == PlayerState.Transcendence)
+			{
+				break;
+			}
 			_enemyData = ChooseRandomObject(waveData);
 			_enemyId = GetObjectID(_enemyData);
 			_enemyNumber = GetObjectNumber(_enemyData);
 			_enemySpawned = GetEnemyCount(_enemyId);
+		}
+		
+		if (obj_Player.currentState == PlayerState.Transcendence)
+		{
+			break;
 		}
 		
 		// Spawn the enemy
