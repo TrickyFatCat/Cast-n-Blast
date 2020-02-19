@@ -9,4 +9,5 @@ with (_weapon)
 	SetWeaponParameters(other.object_index, _weaponID, obj_Player.sessionWeaponData);
 }
 
+SetPlayerAmmo(mainWeapon.ammoID);
 reloadTime = SetTime(mainWeapon.reloadTime);

@@ -19,7 +19,7 @@ enum EnemyWeapon
 #region FighterGun
 EnemyFighterGunData = ds_map_create();
 ds_map_add(EnemyFighterGunData, "weaponSprite",					noone);
-ds_map_add(EnemyFighterGunData, "offsetY",						6);
+ds_map_add(EnemyFighterGunData, "offsetY",						8);
 ds_map_add(EnemyFighterGunData, "laserSightEnabled",			false);
 ds_map_add(EnemyFighterGunData, "isAuto",						true);
 ds_map_add(EnemyFighterGunData, "currentShootMode",				ShootMode.Cast);
@@ -40,8 +40,8 @@ ds_map_add(EnemyFighterGunData, "rateOfFireMax",				0);
 ds_map_add(EnemyFighterGunData, "burstRate",					0);
 ds_map_add(EnemyFighterGunData, "burstShotsNumber",				0);
 //-----------------------------------------------------------------------------
-ds_map_add(EnemyFighterGunData, "castExecuteCount",				3);
-ds_map_add(EnemyFighterGunData, "castTime",						1);
+ds_map_add(EnemyFighterGunData, "castExecuteCount",				1);
+ds_map_add(EnemyFighterGunData, "castTime",						0.75);
 //-----------------------------------------------------------------------------
 ds_map_add(EnemyFighterGunData, "chargeExecuteCountMin",		1);
 ds_map_add(EnemyFighterGunData, "chargeExecuteCountMax",		0);
@@ -108,7 +108,7 @@ ds_map_add(TrooperGunData, "burstRate",						0);
 ds_map_add(TrooperGunData, "burstShotsNumber",				0);
 //-----------------------------------------------------------------------------
 ds_map_add(TrooperGunData, "castExecuteCount",				1);
-ds_map_add(TrooperGunData, "castTime",						2);
+ds_map_add(TrooperGunData, "castTime",						1.5);
 //-----------------------------------------------------------------------------
 ds_map_add(TrooperGunData, "chargeExecuteCountMin",			1);
 ds_map_add(TrooperGunData, "chargeExecuteCountMax",			0);

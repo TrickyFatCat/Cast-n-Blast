@@ -87,9 +87,6 @@ mainWeapon = instance_create_layer(x, y, layer, obj_PlayerWeapon);
 SetPlayerWeapon(mainWeapon, weaponID);
 mainWeapon.drawAlpha = 0;
 
-// Set player weapon ammo
-SetPlayerAmmo(mainWeapon.ammoID);
-
 // Reload time
 isReloading = false;
 reloadTimer = 0;
