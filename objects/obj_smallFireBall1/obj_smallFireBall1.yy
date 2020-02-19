@@ -1,34 +1,34 @@
 {
-    "id": "254f4429-8dd2-47aa-8115-61100be9837b",
+    "id": "20e42512-2c4c-41c9-8034-8d6cb319ee9f",
     "modelName": "GMObject",
     "mvc": "1.0",
-    "name": "obj_FighterProjectile",
+    "name": "obj_smallFireBall1",
     "eventList": [
         {
-            "id": "aef09e66-8187-497c-80b9-50d4cfa34667",
+            "id": "fb562762-c76e-4944-9f6c-84dfc765e03e",
             "modelName": "GMEvent",
             "mvc": "1.0",
             "IsDnD": false,
             "collisionObjectId": "00000000-0000-0000-0000-000000000000",
             "enumb": 25,
             "eventtype": 7,
-            "m_owner": "254f4429-8dd2-47aa-8115-61100be9837b"
+            "m_owner": "20e42512-2c4c-41c9-8034-8d6cb319ee9f"
         },
         {
-            "id": "ded164b0-4602-415f-baff-50d85856275c",
+            "id": "196cb2c0-6f6e-4e6a-80e6-aa809be12bda",
             "modelName": "GMEvent",
             "mvc": "1.0",
             "IsDnD": false,
             "collisionObjectId": "00000000-0000-0000-0000-000000000000",
             "enumb": 0,
             "eventtype": 0,
-            "m_owner": "254f4429-8dd2-47aa-8115-61100be9837b"
+            "m_owner": "20e42512-2c4c-41c9-8034-8d6cb319ee9f"
         }
     ],
     "maskSpriteId": "00000000-0000-0000-0000-000000000000",
     "overriddenProperties": [
         {
-            "id": "5e6bcf19-c437-4493-96ed-2d3e9512bae2",
+            "id": "644751ea-3c87-4494-a2f9-1ad7f243e15c",
             "modelName": "GMOverriddenProperty",
             "mvc": "1.0",
             "objectId": "05f92ec3-120c-4570-a05d-ff81220fde81",

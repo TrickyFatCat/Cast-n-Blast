@@ -7,7 +7,7 @@ if (spreadIsDynamic)
 	var _spreadIncrStep = spreadAngleMax * spreadAngleIncrFactor;
 	var _spreadDecrStep = spreadAngleMax * spreadAngleDecrFactor;
 	
-	if ((isShooting) && (checkShootPause))
+	if ((isShooting) && (shootPauseIsOver))
 	{
 		if (spreadAngleCurrent != spreadAngleMax)
 		{

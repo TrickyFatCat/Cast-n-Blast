@@ -54,7 +54,7 @@ rateOfFireMax = 0;
 rateOfFireIncrStep = 0;
 rateOfFireDecrStep = 0;
 shootPauseTimer = 0;
-checkShootPause = false;
+shootPauseIsOver = false;
 #endregion
 
 #region // Spawn parameters

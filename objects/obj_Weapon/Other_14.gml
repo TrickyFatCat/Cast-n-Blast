@@ -2,7 +2,7 @@
 
 var _bulletNumber = floor(bulletNumber * chargeBulletNumberFactor);
 
-if (isShooting) && (checkShootPause)
+if (isShooting) && (shootPauseIsOver)
 {
 	for (var i = 0; i < _bulletNumber; i++)
 	{

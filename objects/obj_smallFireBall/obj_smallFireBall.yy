@@ -2,7 +2,7 @@
     "id": "254f4429-8dd2-47aa-8115-61100be9837b",
     "modelName": "GMObject",
     "mvc": "1.0",
-    "name": "obj_FighterProjectile",
+    "name": "obj_smallFireBall",
     "eventList": [
         {
             "id": "aef09e66-8187-497c-80b9-50d4cfa34667",

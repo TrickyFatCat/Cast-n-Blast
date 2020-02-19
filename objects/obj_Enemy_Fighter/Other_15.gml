@@ -1,27 +1,50 @@
-/// @description Insert description here
-
 // Inherit the parent event
 event_inherited();
 
-var _waitTime = SetTime(1);
+var _waitTime = SetTime(3);
 
-
-if (mainWeapon.shotCount == 6)
+switch (mainWeapon.currentCastState)
 {
-	isShooting = false;
+	case CastState.Idle:
+		var _timeIsOver = CheckTimer(waitTimer, _waitTime)
+		
+		if (mainWeapon.shotCount == mainWeapon.castExecuteCount)
+		{
+			waitTimer += global.TimeFactor;
 	
-	waitTimer += global.TimeFactor;
+			if (_timeIsOver)
+			{
+				waitTimer = 0;
+				mainWeapon.shotCount = 0;
+			}
+		}
+		else
+		{
+			isShooting = true;
+			sprite_index = spr_fighter_startAttack;
+			previousScaleX = sign(drawScaleX);
+		}
+	break;
 	
-	var _timeIsOver = CheckTimer(waitTimer, _waitTime)
+	case CastState.Process:
+		drawScaleY = LerpTimeFactor(1, 1.5, mainWeapon.castProgress);
+		drawScaleX = drawScaleY * previousScaleX;
+		sprite_index = spr_fighter_startAttack;
+		mainWeapon.directionCurrent = CalculateDirectionToPlayer();
+	break;
 	
-	if (_timeIsOver)
-	{
-		waitTimer = 0;
-		mainWeapon.shotCount = 0;
-		currentState = EnemyState.TargetSearch;
-	}
-}
-else
-{
-	isShooting = true;
+	case CastState.Execute:
+		var _lerpAlpha = mainWeapon.shotCount / mainWeapon.castExecuteCount;
+		drawScaleY = LerpTimeFactor(1.5, 1, _lerpAlpha);
+		drawScaleX = drawScaleY * previousScaleX;
+		
+		if (mainWeapon.shotCount == mainWeapon.castExecuteCount)
+		{
+			isShooting = false;
+			drawScaleX = 1;
+			drawScaleY = 1;
+			currentState = EnemyState.TargetSearch;
+			sprite_index = spriteIdle;
+		}
+	break;
 }

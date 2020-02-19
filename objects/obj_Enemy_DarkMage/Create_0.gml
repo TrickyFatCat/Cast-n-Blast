@@ -18,3 +18,5 @@ targetingTimer = 0;
 aimIsLocked = false;
 aimLockTime = SetTime(0.5);
 aimLockTimer = 0;
+
+drawColour = c_fuchsia;

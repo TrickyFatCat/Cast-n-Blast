@@ -134,6 +134,14 @@
             "objectId": "afff8e58-95bc-4515-9151-ed5722abe174",
             "propertyId": "7d56f573-3466-48b3-8bfa-eff41ec6884e",
             "value": "EnemyWeapon.BeamerGun"
+        },
+        {
+            "id": "ed9786f3-5298-420c-af7e-c4f8773b5911",
+            "modelName": "GMOverriddenProperty",
+            "mvc": "1.0",
+            "objectId": "1e80bb98-5aea-467b-b065-8a432456cd14",
+            "propertyId": "998d663c-2b00-4fcb-951f-4199a3694a45",
+            "value": "True"
         }
     ],
     "parentObjectId": "afff8e58-95bc-4515-9151-ed5722abe174",

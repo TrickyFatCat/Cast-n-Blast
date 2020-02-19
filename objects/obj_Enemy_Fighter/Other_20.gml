@@ -1,4 +1,6 @@
-/// @description Insert description here
-// You can write your code in this editor
+/// @description ControlWeapon
 
-event_inherited();
+if (mainWeapon != noone)
+{
+	mainWeapon.isShooting = isShooting;
+}

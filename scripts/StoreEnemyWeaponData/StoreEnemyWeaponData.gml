@@ -22,11 +22,11 @@ ds_map_add(EnemyFighterGunData, "weaponSprite",					noone);
 ds_map_add(EnemyFighterGunData, "offsetY",						6);
 ds_map_add(EnemyFighterGunData, "laserSightEnabled",			false);
 ds_map_add(EnemyFighterGunData, "isAuto",						true);
-ds_map_add(EnemyFighterGunData, "currentShootMode",				ShootMode.Normal);
+ds_map_add(EnemyFighterGunData, "currentShootMode",				ShootMode.Cast);
 //-----------------------------------------------------------------------------
-ds_map_add(EnemyFighterGunData, "bulletObject",					obj_FighterProjectile);
+ds_map_add(EnemyFighterGunData, "bulletObject",					obj_smallFireBall);
 ds_map_add(EnemyFighterGunData, "bulletNumber",					1);
-ds_map_add(EnemyFighterGunData, "bulletSpawnPointOffset",		19);
+ds_map_add(EnemyFighterGunData, "bulletSpawnPointOffset",		0);
 //-----------------------------------------------------------------------------
 ds_map_add(EnemyFighterGunData, "damage",						5);
 ds_map_add(EnemyFighterGunData, "heal",							0);
@@ -40,8 +40,8 @@ ds_map_add(EnemyFighterGunData, "rateOfFireMax",				0);
 ds_map_add(EnemyFighterGunData, "burstRate",					0);
 ds_map_add(EnemyFighterGunData, "burstShotsNumber",				0);
 //-----------------------------------------------------------------------------
-ds_map_add(EnemyFighterGunData, "castExecuteCount",				0);
-ds_map_add(EnemyFighterGunData, "castTime",						0);
+ds_map_add(EnemyFighterGunData, "castExecuteCount",				3);
+ds_map_add(EnemyFighterGunData, "castTime",						1);
 //-----------------------------------------------------------------------------
 ds_map_add(EnemyFighterGunData, "chargeExecuteCountMin",		1);
 ds_map_add(EnemyFighterGunData, "chargeExecuteCountMax",		0);
@@ -91,11 +91,11 @@ ds_map_add(TrooperGunData, "laserSightEnabled",				false);
 ds_map_add(TrooperGunData, "isAuto",						true);
 ds_map_add(TrooperGunData, "currentShootMode",				ShootMode.Normal);
 //-----------------------------------------------------------------------------
-ds_map_add(TrooperGunData, "bulletObject",					obj_FighterProjectile);
+ds_map_add(TrooperGunData, "bulletObject",					obj_bigFireBall);
 ds_map_add(TrooperGunData, "bulletNumber",					5);
 ds_map_add(TrooperGunData, "bulletSpawnPointOffset",		19);
 //-----------------------------------------------------------------------------
-ds_map_add(TrooperGunData, "damage",						5);
+ds_map_add(TrooperGunData, "damage",						8);
 ds_map_add(TrooperGunData, "heal",							0);
 //-----------------------------------------------------------------------------
 ds_map_add(TrooperGunData, "rateOfFireAccelerated",			false);

@@ -207,6 +207,14 @@
             }
         },
         {
+            "Key": "13cbf813-538c-46fd-9d1a-9e623814c39b",
+            "Value": {
+                "id": "4bce336d-1059-40c7-92c8-fecef6c1b758",
+                "resourcePath": "views\\13cbf813-538c-46fd-9d1a-9e623814c39b.yy",
+                "resourceType": "GMFolder"
+            }
+        },
+        {
             "Key": "147ac7ec-9800-40a4-80bb-23b5a76afd1a",
             "Value": {
                 "id": "9589e5de-7e8e-41cf-b12b-9b4e8a3e63d9",
@@ -383,6 +391,14 @@
             }
         },
         {
+            "Key": "20e42512-2c4c-41c9-8034-8d6cb319ee9f",
+            "Value": {
+                "id": "74077397-b8c5-49b5-9ce1-343bfe8975c9",
+                "resourcePath": "objects\\obj_bigFireBall\\obj_bigFireBall.yy",
+                "resourceType": "GMObject"
+            }
+        },
+        {
             "Key": "2111a09f-07c4-4867-95c3-395a7038d3f3",
             "Value": {
                 "id": "fc9b70b9-cbd8-4633-a395-7c4cf4376536",
@@ -450,7 +466,7 @@
             "Key": "254f4429-8dd2-47aa-8115-61100be9837b",
             "Value": {
                 "id": "78ea728a-c11b-4485-87c1-4e1e06870e2b",
-                "resourcePath": "objects\\obj_FighterProjectile\\obj_FighterProjectile.yy",
+                "resourcePath": "objects\\obj_smallFireBall\\obj_smallFireBall.yy",
                 "resourceType": "GMObject"
             }
         },
@@ -620,6 +636,14 @@
                 "id": "ef5abc1e-e2ef-425b-b99a-222783a8d7a2",
                 "resourcePath": "scripts\\SetGameState\\SetGameState.yy",
                 "resourceType": "GMScript"
+            }
+        },
+        {
+            "Key": "37b4482b-46a7-442d-a1dd-1693e747b335",
+            "Value": {
+                "id": "c0d891a8-d646-4f54-84d2-896737c6fe94",
+                "resourcePath": "sprites\\spr_magicProjectile_core\\spr_magicProjectile_core.yy",
+                "resourceType": "GMSprite"
             }
         },
         {
@@ -868,6 +892,14 @@
                 "id": "6346d012-9a1c-40dd-be2a-429da7b1c2a8",
                 "resourcePath": "views\\47417847-f4bd-4d0b-8b84-de10272aad70.yy",
                 "resourceType": "GMFolder"
+            }
+        },
+        {
+            "Key": "474b1d78-db38-4229-8e0d-136fa5889552",
+            "Value": {
+                "id": "0e7e6e1a-9d95-4abc-ae44-12f35b3260f4",
+                "resourcePath": "sprites\\spr_fighter_startAttack\\spr_fighter_startAttack.yy",
+                "resourceType": "GMSprite"
             }
         },
         {
@@ -1711,6 +1743,14 @@
             }
         },
         {
+            "Key": "857a6cde-3190-4d1b-8aaf-526e1fc916fc",
+            "Value": {
+                "id": "476e78d9-f0b2-456d-8c7d-9235acb0ace1",
+                "resourcePath": "sprites\\spr_magicProjectileS_core\\spr_magicProjectileS_core.yy",
+                "resourceType": "GMSprite"
+            }
+        },
+        {
             "Key": "85a16344-ceec-45ed-b5cc-a786e31abd04",
             "Value": {
                 "id": "4377cf16-c546-482c-a691-51ceffd631ac",
@@ -2202,7 +2242,7 @@
             "Key": "abf62d29-8b2c-4a96-afbd-cb7809e887a2",
             "Value": {
                 "id": "2e720308-be64-4ae2-a182-f7d198473bcc",
-                "resourcePath": "sprites\\spr_fighterProjectile\\spr_fighterProjectile.yy",
+                "resourcePath": "sprites\\spr_magicProjectile\\spr_magicProjectile.yy",
                 "resourceType": "GMSprite"
             }
         },
@@ -2228,6 +2268,14 @@
                 "id": "828c9fef-564f-404a-9bcb-af785aad4b96",
                 "resourcePath": "scripts\\UpdateMainWeapon\\UpdateMainWeapon.yy",
                 "resourceType": "GMScript"
+            }
+        },
+        {
+            "Key": "aed39244-609c-48a0-905d-8721f0dee0f6",
+            "Value": {
+                "id": "c253e601-a620-4dab-9480-4e5a3285b72c",
+                "resourcePath": "sprites\\spr_magikProjectileS_base\\spr_magikProjectileS_base.yy",
+                "resourceType": "GMSprite"
             }
         },
         {

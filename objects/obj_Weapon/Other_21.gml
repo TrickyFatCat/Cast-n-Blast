@@ -3,7 +3,7 @@
 switch (bulletObjectParent)
 {
 	case obj_Projectile:
-		if (isShooting) && (checkShootPause)
+		if (isShooting) && (shootPauseIsOver)
 		{
 			SpawnProjectile;
 			ExecuteAdditionalMechanics;
@@ -12,7 +12,7 @@ switch (bulletObjectParent)
 
 	case obj_Hitscan:
 		SetBulletTransform(hitscanObjects);
-		if (isShooting) && (checkShootPause)
+		if (isShooting) && (shootPauseIsOver)
 		{
 			EnableHitscan;
 			ExecuteAdditionalMechanics;

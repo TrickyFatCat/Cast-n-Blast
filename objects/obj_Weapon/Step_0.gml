@@ -4,7 +4,7 @@
 event_inherited();
 
 var _shootPauseTime = CalculateShootPause(rateOfFireCurrent * chargeRateFactor);
-checkShootPause = CheckTimer(shootPauseTimer, _shootPauseTime);
+shootPauseIsOver = CheckTimer(shootPauseTimer, _shootPauseTime);
 
 CalculateSpread;
 
