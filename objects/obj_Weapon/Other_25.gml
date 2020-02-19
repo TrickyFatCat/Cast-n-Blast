@@ -13,8 +13,8 @@ var _laserSightY = y - z - offsetY + _deltaY;
 if (laserSightEnabled)
 {
 	var _scaleX = SortHitscanCollisions(directionCurrent, collisionTargets);
-	var _impactX = _laserSightX - lengthdir_x(_scaleX, drawAngle);
-	var _impactY = _laserSightY + lengthdir_y(_scaleX, drawAngle);
+	var _impactX = _laserSightX - lengthdir_x(_scaleX, bulletSpawnDirection);
+	var _impactY = _laserSightY + lengthdir_y(_scaleX, bulletSpawnDirection);
 	draw_sprite_ext(spr_1pix, image_index, _laserSightX, _laserSightY, _scaleX - _laserSightOffset, 1, drawAngle, laserSightColour, lasersightAlpha);
 	draw_sprite_ext(spr_laserImpact, image_index, _impactX, _impactY, 0.5, 0.5, drawAngle, laserSightColour, lasersightAlpha);
 }

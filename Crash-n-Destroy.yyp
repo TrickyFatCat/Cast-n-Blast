@@ -631,6 +631,14 @@
             }
         },
         {
+            "Key": "359a4064-717b-49d4-9f01-4c74cd991d6a",
+            "Value": {
+                "id": "c1dbfe9d-b7b5-4d69-b120-8f1fa1906dc2",
+                "resourcePath": "views\\359a4064-717b-49d4-9f01-4c74cd991d6a.yy",
+                "resourceType": "GMFolder"
+            }
+        },
+        {
             "Key": "37225428-7b50-45be-860f-8acb30c7aae3",
             "Value": {
                 "id": "ef5abc1e-e2ef-425b-b99a-222783a8d7a2",
@@ -2274,7 +2282,7 @@
             "Key": "aed39244-609c-48a0-905d-8721f0dee0f6",
             "Value": {
                 "id": "c253e601-a620-4dab-9480-4e5a3285b72c",
-                "resourcePath": "sprites\\spr_magikProjectileS_base\\spr_magikProjectileS_base.yy",
+                "resourcePath": "sprites\\spr_magicProjectileS_base\\spr_magicProjectileS_base.yy",
                 "resourceType": "GMSprite"
             }
         },
@@ -2852,6 +2860,14 @@
                 "id": "e870f486-cf2d-49d4-a605-bbc40d663070",
                 "resourcePath": "scripts\\IncreasePlayerAmmo\\IncreasePlayerAmmo.yy",
                 "resourceType": "GMScript"
+            }
+        },
+        {
+            "Key": "dacebd19-16ce-4333-b4c4-5a58fc7a93eb",
+            "Value": {
+                "id": "36594ef7-63ce-48c5-8856-98ad7ccc56cc",
+                "resourcePath": "sprites\\spr_trooper_startAttack\\spr_trooper_startAttack.yy",
+                "resourceType": "GMSprite"
             }
         },
         {
