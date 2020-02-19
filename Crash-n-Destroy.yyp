@@ -519,6 +519,14 @@
             }
         },
         {
+            "Key": "2c48c42c-9e81-4ec5-aa6a-abb32755111b",
+            "Value": {
+                "id": "cbded367-2f09-491f-a990-dadc39bbe644",
+                "resourcePath": "scripts\\DrawRegularSprite\\DrawRegularSprite.yy",
+                "resourceType": "GMScript"
+            }
+        },
+        {
             "Key": "2c7565ba-2ffe-46c7-b668-d0c21e324d64",
             "Value": {
                 "id": "bacd53ee-f423-4bf7-b4bc-ac86b4946b0a",
@@ -3111,6 +3119,14 @@
             }
         },
         {
+            "Key": "ef7732c5-c70c-457f-8e02-3e784dd28205",
+            "Value": {
+                "id": "b04062ac-c098-47df-a302-89cfde321076",
+                "resourcePath": "scripts\\DashTrail\\DashTrail.yy",
+                "resourceType": "GMScript"
+            }
+        },
+        {
             "Key": "ef7c7f9e-e0ea-4c5c-a776-8addb9316c92",
             "Value": {
                 "id": "d2492a77-80a8-427c-81f2-8fb433bbe1bf",
@@ -3347,6 +3363,7 @@
         "860a5173-5f75-4c0b-9279-f836c0b72fa2",
         "8baa5666-d421-4750-932f-1725ba02a06d",
         "7dd91c35-391c-42c1-bdbf-9ab34881d79e",
+        "2c48c42c-9e81-4ec5-aa6a-abb32755111b",
         "49d8e80a-b553-4a27-b541-c7b1e854b618",
         "ad0c12c3-ecf6-4b86-ac1a-42679239a929",
         "aaee7287-e585-4c66-920d-a403e91db5bd",
@@ -3452,6 +3469,7 @@
         "cc6b3936-bc5c-4a9e-8cb7-ea244a0830b7",
         "a425260a-f0d1-47b3-ac19-802e4214e6a1",
         "49bf0704-d92b-4de3-abbc-ddd15a611398",
+        "ef7732c5-c70c-457f-8e02-3e784dd28205",
         "8b6c5121-4244-4f17-8831-ad31141c5049",
         "c697a9df-adc3-4c02-a7b2-ca6552b40584",
         "6f871991-7b40-45c7-87e7-0140d3d36f9e",

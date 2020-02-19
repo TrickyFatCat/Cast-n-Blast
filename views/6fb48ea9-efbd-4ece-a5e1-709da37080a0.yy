@@ -5,7 +5,8 @@
     "name": "6fb48ea9-efbd-4ece-a5e1-709da37080a0",
     "children": [
         "a425260a-f0d1-47b3-ac19-802e4214e6a1",
-        "49bf0704-d92b-4de3-abbc-ddd15a611398"
+        "49bf0704-d92b-4de3-abbc-ddd15a611398",
+        "ef7732c5-c70c-457f-8e02-3e784dd28205"
     ],
     "filterType": "GMScript",
     "folderName": "VFX",
