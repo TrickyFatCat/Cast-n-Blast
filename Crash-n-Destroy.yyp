@@ -935,6 +935,22 @@
             }
         },
         {
+            "Key": "47ac007c-12eb-4257-aa98-0f6c361a7ce9",
+            "Value": {
+                "id": "b7a7f31a-46d3-4f40-b864-f9a5cc6d1833",
+                "resourcePath": "scripts\\SpawnTrailEffect\\SpawnTrailEffect.yy",
+                "resourceType": "GMScript"
+            }
+        },
+        {
+            "Key": "48b1f0cf-3dab-4723-8a1a-080d355b283c",
+            "Value": {
+                "id": "b52e5437-a882-46c6-a568-306b0ace35a8",
+                "resourcePath": "objects\\vfx_SkullTrail\\vfx_SkullTrail.yy",
+                "resourceType": "GMObject"
+            }
+        },
+        {
             "Key": "49aab4a6-b4ff-4863-8d4c-feb67c15eb3c",
             "Value": {
                 "id": "9016008d-0f7e-412b-8d84-561f7c6c737b",
@@ -1452,6 +1468,14 @@
                 "id": "cbb8bdfa-6a82-49cc-b64a-ce07a25d79ed",
                 "resourcePath": "objects\\obj_UltimateLaser\\obj_UltimateLaser.yy",
                 "resourceType": "GMObject"
+            }
+        },
+        {
+            "Key": "71a7c8df-89d4-4406-bdc6-ec7ca0e5c41b",
+            "Value": {
+                "id": "e71526d5-b599-41b8-b47b-d1b6c4e07e29",
+                "resourcePath": "views\\71a7c8df-89d4-4406-bdc6-ec7ca0e5c41b.yy",
+                "resourceType": "GMFolder"
             }
         },
         {
@@ -2551,6 +2575,14 @@
             }
         },
         {
+            "Key": "c12a3dfd-5193-4278-860e-2f7c6462f9ec",
+            "Value": {
+                "id": "f584b891-a544-4ffa-bf9f-4a3c86b4f187",
+                "resourcePath": "objects\\vfx_Trail\\vfx_Trail.yy",
+                "resourceType": "GMObject"
+            }
+        },
+        {
             "Key": "c195d599-7ba5-41be-9f70-fee5daa9a780",
             "Value": {
                 "id": "740fc045-e422-4b26-b8b9-22c4fa9ae7fb",
@@ -3470,6 +3502,7 @@
         "a425260a-f0d1-47b3-ac19-802e4214e6a1",
         "49bf0704-d92b-4de3-abbc-ddd15a611398",
         "ef7732c5-c70c-457f-8e02-3e784dd28205",
+        "47ac007c-12eb-4257-aa98-0f6c361a7ce9",
         "8b6c5121-4244-4f17-8831-ad31141c5049",
         "c697a9df-adc3-4c02-a7b2-ca6552b40584",
         "6f871991-7b40-45c7-87e7-0140d3d36f9e",

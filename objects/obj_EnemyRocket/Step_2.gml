@@ -1,4 +1,4 @@
 // Inherit the parent event
 event_inherited();
 
-drawAngle = directionCurrent;
+drawAngle = 0;
