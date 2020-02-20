@@ -1,5 +1,3 @@
-// Inherit the parent event
-event_inherited();
 
 /// Parameters
 var _speed = CalculateStep(0.25);
@@ -32,11 +30,14 @@ switch hudCurrentState
 	break;
 	
 	case HUDState.Pause:
-		CheckButtonActions;
-	
-		if (sys_GameManager.keyPause)
+		if (global.GameState == GameState.Paused)
 		{
-			hudCurrentState = HUDState.PauseOut;
+			CheckButtonActions;
+	
+			if (sys_GameManager.keyPause)
+			{
+				hudCurrentState = HUDState.PauseOut;
+			}
 		}
 	break;
 	
