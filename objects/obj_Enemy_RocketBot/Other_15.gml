@@ -5,23 +5,40 @@ event_inherited();
 
 var _waitTime = SetTime(4);
 
-
-if (mainWeapon.shotCount == 1)
+switch (mainWeapon.currentCastState)
 {
-	isShooting = false;
+	case CastState.Idle:
+		var _timeIsOver = CheckTimer(waitTimer, _waitTime)
+		
+		if (mainWeapon.shotCount == mainWeapon.castExecuteCount)
+		{
+			waitTimer += global.TimeFactor;
 	
-	waitTimer += global.TimeFactor;
+			if (_timeIsOver)
+			{
+				waitTimer = 0;
+				mainWeapon.shotCount = 0;
+			}
+		}
+		else
+		{
+			isShooting = true;
+			previousScaleX = sign(drawScaleX);
+		}
+	break;
 	
-	var _timeIsOver = CheckTimer(waitTimer, _waitTime)
+	case CastState.Process:
+	break;
 	
-	if (_timeIsOver)
-	{
-		waitTimer = 0;
-		mainWeapon.shotCount = 0;
-		currentState = EnemyState.TargetSearch;
-	}
-}
-else
-{
-	isShooting = true;
+	case CastState.Execute:
+		var _lerpAlpha = mainWeapon.shotCount / mainWeapon.castExecuteCount;
+		drawScaleY = LerpTimeFactor(1.5, 1, _lerpAlpha);
+		drawScaleX = drawScaleY * previousScaleX;
+		
+		if (mainWeapon.shotCount == mainWeapon.castExecuteCount)
+		{
+			isShooting = false;
+			currentState = EnemyState.TargetSearch;
+		}
+	break;
 }

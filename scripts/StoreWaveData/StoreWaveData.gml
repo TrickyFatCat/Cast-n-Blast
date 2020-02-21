@@ -41,7 +41,7 @@ SetObjectData(_wave[2], obj_Enemy_DarkMage,		0,	0);
 SetObjectData(_wave[3], obj_Enemy_Trooper,		0,	0);
 SetObjectData(_wave[4], obj_Enemy_Ninja,		0,	0);
 SetObjectData(_wave[5], obj_Enemy_Turret,		0,	0);
-SetObjectData(_wave[6], obj_Enemy_RocketBot,	0,	0);
+SetObjectData(_wave[6], obj_Enemy_RocketBot,	1,	10);
 SetWaveData(_waveIndex, _wave, _waveWeight);
 
 // Wave 02
@@ -56,7 +56,7 @@ SetObjectData(_wave[2], obj_Enemy_DarkMage,		1,	5);
 SetObjectData(_wave[3], obj_Enemy_Trooper,		0,	0);
 SetObjectData(_wave[4], obj_Enemy_Ninja,		0,	0);
 SetObjectData(_wave[5], obj_Enemy_Turret,		0,	0);
-SetObjectData(_wave[6], obj_Enemy_RocketBot,	0,	0);
+SetObjectData(_wave[6], obj_Enemy_RocketBot,	1,	10);
 SetWaveData(_waveIndex, _wave, _waveWeight);
 
 // Wave 03
@@ -71,7 +71,7 @@ SetObjectData(_wave[2], obj_Enemy_DarkMage,		0,	0);
 SetObjectData(_wave[3], obj_Enemy_Trooper,		5,	5);
 SetObjectData(_wave[4], obj_Enemy_Ninja,		0,	0);
 SetObjectData(_wave[5], obj_Enemy_Turret,		0,	0);
-SetObjectData(_wave[6], obj_Enemy_RocketBot,	0,	0);
+SetObjectData(_wave[6], obj_Enemy_RocketBot,	1,	10);
 SetWaveData(_waveIndex, _wave, _waveWeight);
 #endregion
 
