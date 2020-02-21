@@ -59,6 +59,7 @@ switch (currentState)
 		{
 			occupiedTimer = 0;
 			currentState = SpawnPointState.Active;
+			instance_deactivate_object(id);
 		}
 	break;
 }

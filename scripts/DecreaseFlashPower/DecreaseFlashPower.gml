@@ -1,10 +1,7 @@
 /// @description FlashPowerController
 
-// Parameters
-var _flashPowerDrop = 0.05;
-
-// Decrese flash
-if flashPower > 0
+if (flashPower > 0 && !GameIsPaused())
 {
+	var _flashPowerDrop = 0.05;
 	flashPower = ApproachTimeFactor(flashPower, 0, _flashPowerDrop);
 }

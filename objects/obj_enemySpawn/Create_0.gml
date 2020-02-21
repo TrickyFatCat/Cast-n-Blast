@@ -26,3 +26,11 @@ owner = noone;
 enemyToSpawn = noone;
 drawAngle = 90;
 drawScaleY = 1.5;
+
+if (!ds_exists(global.EnemySpawns, ds_type_list))
+{
+	global.EnemySpawns = ds_list_create();
+}
+
+ds_list_add(global.EnemySpawns, id);
+instance_deactivate_object(id);

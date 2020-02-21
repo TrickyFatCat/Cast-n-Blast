@@ -14,7 +14,7 @@ enum GameState
 {
 	Transition,
 	Active,
-	Paused
+	Pause
 }
 
 global.GameState = GameState.Transition;

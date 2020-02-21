@@ -113,8 +113,8 @@ if (instance_exists(sys_GameManager))
 				_state = "Active";
 			break;
 			
-			case GameState.Paused:
-				_state = "Paused";
+			case GameState.Pause:
+				_state = "Pause";
 			break;
 		}
 		draw_text(5, 340, "Current State: " + _state);

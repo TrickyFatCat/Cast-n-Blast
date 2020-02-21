@@ -4,7 +4,7 @@ pcVersion = true;
 
 global.TimeFactor = 1;
 global.InteractiveObjects = noone;
-global.PartsData = [];
+global.EnemySpawns = ds_list_create();
 
 randomize();
 

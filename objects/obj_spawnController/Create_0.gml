@@ -11,15 +11,9 @@ spawnPauseTimer = spawnPauseTime;
 /// Enemies spawn limits
 spawnNumber = 1;
 
-/// Spawn list
-spawnList = ds_list_create();
-var _spawnPointsCount = instance_number(obj_EnemySpawn);
-
-for (var i = 0; i < _spawnPointsCount; i++)
+if (!ds_exists(global.EnemySpawns, ds_type_list))
 {
-	var _spawnPoint = instance_find(obj_EnemySpawn, i);
-	
-	ds_list_add(spawnList, _spawnPoint); 
+	global.EnemySpawns = ds_list_create();
 }
 
 /// Wave data

@@ -19,15 +19,13 @@ if (collision_circle(x, y, pullDistance, obj_Pickup, true, true)) //Check if the
 				if (isPullable)
 				{
 					MoveObject(false);
-					var _playerDirection = point_direction(x, y, playerX, playerY);
+					var _playerDirection = CalculateDirectionToPlayer();
 					pullVelocityCurrent = CalculateAcceleratedVelocity(_playerDirection, pullVelocityCurrent, obj_Player.pullVelocityMax, obj_Player.pullAcceleration);
 				}
 			}
 		}
 		#endregion
 	}
-	else
-	{
-		ds_list_destroy(pickupList);
-	}
+	
+	ds_list_destroy(pickupList);
 }

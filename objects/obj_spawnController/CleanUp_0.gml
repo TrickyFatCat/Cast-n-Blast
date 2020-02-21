@@ -1,1 +1,1 @@
-ds_list_destroy(spawnList);
+ds_list_destroy(global.EnemySpawns);

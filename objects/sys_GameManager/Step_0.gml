@@ -8,7 +8,7 @@ switch (global.GameState)
 	
 	case GameState.Active:
 		CheckPlayerControls;
-		if (object_exists(gui_MainMenu) || object_exists(gui_FinishMenu))
+		if (instance_exists(gui_MainMenu) || instance_exists(gui_FinishMenu))
 		{
 			CheckMenuControls;
 		}
@@ -18,7 +18,7 @@ switch (global.GameState)
 		}
 	break;
 	
-	case GameState.Paused:
+	case GameState.Pause:
 		CheckMenuControls;
 	break;
 }

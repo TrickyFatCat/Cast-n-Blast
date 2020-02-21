@@ -1,6 +1,6 @@
 /// @description ProcessExplosion
 
-if (dealingDamage)
+if (dealingDamage && !GameIsPaused())
 {
 	//Create and fill pickups
 	var _targetsList = ds_list_create();

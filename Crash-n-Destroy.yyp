@@ -535,6 +535,14 @@
             }
         },
         {
+            "Key": "2c825ac8-5d3d-4d45-bc92-d36d1b80006e",
+            "Value": {
+                "id": "e471e02a-580e-4a62-ae68-68fc027453a3",
+                "resourcePath": "scripts\\GameIsPaused\\GameIsPaused.yy",
+                "resourceType": "GMScript"
+            }
+        },
+        {
             "Key": "2db62542-d884-408b-b99d-f9dfb69f5c9c",
             "Value": {
                 "id": "840f6ba8-d978-4127-9049-6334540bcd28",
@@ -1004,6 +1012,14 @@
                 "id": "04317e4e-8efb-4013-81e2-f659d7e8f059",
                 "resourcePath": "objects\\obj_Enemy_Kamikaze\\obj_Enemy_Kamikaze.yy",
                 "resourceType": "GMObject"
+            }
+        },
+        {
+            "Key": "4cb1a38d-16b6-40c5-bb8b-4f8c1e8dd1bf",
+            "Value": {
+                "id": "127c0f5c-04a8-446b-b9dd-34ecd405d4aa",
+                "resourcePath": "scripts\\ProcessGravity\\ProcessGravity.yy",
+                "resourceType": "GMScript"
             }
         },
         {
@@ -1959,6 +1975,14 @@
             }
         },
         {
+            "Key": "922b3617-75c3-48c5-af02-105e77b77b27",
+            "Value": {
+                "id": "62e779ad-d7a0-4865-a2d8-8081fbe50ac5",
+                "resourcePath": "tilesets\\tileset1\\tileset1.yy",
+                "resourceType": "GMTileSet"
+            }
+        },
+        {
             "Key": "927e5731-70ca-47f5-a623-f50f09fa89af",
             "Value": {
                 "id": "d12113cc-5d11-40b1-a9b3-75dea3915ba5",
@@ -2199,6 +2223,14 @@
             }
         },
         {
+            "Key": "a483ae5e-3a30-4876-8875-8b7a2ee75695",
+            "Value": {
+                "id": "67e01eaa-fb3d-4462-ae65-0c8bef94e2a0",
+                "resourcePath": "sprites\\spr_runeTiles\\spr_runeTiles.yy",
+                "resourceType": "GMSprite"
+            }
+        },
+        {
             "Key": "a575316e-edc8-4a8f-a991-e0a7bc2d0007",
             "Value": {
                 "id": "a8d5f2e4-3511-46ca-9878-a9735608fe39",
@@ -2228,6 +2260,14 @@
                 "id": "b1a575b5-bc11-430d-b166-72f14584d114",
                 "resourcePath": "scripts\\ActivateRandomTiles\\ActivateRandomTiles.yy",
                 "resourceType": "GMScript"
+            }
+        },
+        {
+            "Key": "a737581c-47e3-41cf-b186-c90fb4d6af1c",
+            "Value": {
+                "id": "d4a1b541-bc42-4718-adcd-c2a6296984bf",
+                "resourcePath": "views\\a737581c-47e3-41cf-b186-c90fb4d6af1c.yy",
+                "resourceType": "GMFolder"
             }
         },
         {
@@ -3404,6 +3444,8 @@
         "fc7489bf-ce1c-4074-a48a-99f42eb951f2",
         "37225428-7b50-45be-860f-8acb30c7aae3",
         "ff97f038-12de-48e0-bba1-099865ea3d4a",
+        "2c825ac8-5d3d-4d45-bc92-d36d1b80006e",
+        "4cb1a38d-16b6-40c5-bb8b-4f8c1e8dd1bf",
         "9ef30917-7a71-41ba-b0e0-f268aaccd126",
         "f880aa16-ac9e-40d8-bcbb-c47218fde082",
         "b9f03d06-805d-4f20-8c40-3b427af39fc2",

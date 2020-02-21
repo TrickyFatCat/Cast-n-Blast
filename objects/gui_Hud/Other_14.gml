@@ -1,4 +1,3 @@
-
 /// Parameters
 var _speed = CalculateStep(0.25);
 
@@ -13,7 +12,7 @@ switch hudCurrentState
 	break;
 	
 	case HUDState.PauseIn:
-		SetGameState(GameState.Paused);
+		SetGameState(GameState.Pause);
 		
 		menuIsActive = true;
 		menuTargetX = guiMarginX;
@@ -30,7 +29,7 @@ switch hudCurrentState
 	break;
 	
 	case HUDState.Pause:
-		if (global.GameState == GameState.Paused)
+		if (global.GameState == GameState.Pause)
 		{
 			CheckButtonActions;
 	

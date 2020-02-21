@@ -1,12 +1,13 @@
 /// @description EnemySpawner
 
-var _listSize = ds_list_size(spawnList);
+
+var _listSize = ds_list_size(global.EnemySpawns);
 var _activeSpawnPoints = ds_list_create();
 		
 // Create a list of active spawn points
 for (var i = 0; i < _listSize; i++)
 {
-	var _spawn = spawnList[| i];
+	var _spawn = global.EnemySpawns[| i];
 	var _spawnState = _spawn.currentState;
 			
 	if (_spawnState == SpawnPointState.Active)
@@ -36,11 +37,16 @@ if (_activeListSize >= spawnNumber)
 	
 	if (_spawnNumber = 0)
 	{
+		ds_list_destroy(_activeSpawnPoints);
 		return;
 	}
 		
 	for (var i = 0; i < _spawnNumber; i++)
 	{
+		if (GameIsPaused())
+		{
+			break;
+		}
 		// Choose a random spawn point
 		var _spawnID = irandom(_activeListSize - 1);
 		var _pointForSpawn = _activeSpawnPoints[| _spawnID];
@@ -65,6 +71,7 @@ if (_activeListSize >= spawnNumber)
 		// Spawn the enemy
 		_pointForSpawn.enemyToSpawn = _enemyId;
 		_pointForSpawn.currentState = SpawnPointState.Reveal;
+		instance_activate_object(_pointForSpawn);
 		_enemySpawned++;
 		SetEnemyCount(_enemyId, _enemySpawned);
 		IncreaseTotalEnemies();
