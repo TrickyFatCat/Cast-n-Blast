@@ -30,7 +30,7 @@ switch global.CurrentInput
 		keySecondaryShootSemiAuto = mouse_check_button(_secondaryShoot);
 		keyInteract = keyboard_check_pressed(ord("E"));
 		keyDash = keyboard_check_pressed(vk_space);
-		keyUltimateActivation = keyboard_check_pressed(ord("Q"));
+		keyUltimateActivation = keyboard_check_pressed(ord("Q")) || keyboard_check_pressed(ord("Z"));
 		keyReload = keyboard_check_pressed(ord("R"));
 		keyWeapon01 = keyboard_check_pressed(ord("1"));
 		keyWeapon02 = keyboard_check_pressed(ord("2"));

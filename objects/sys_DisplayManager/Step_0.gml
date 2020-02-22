@@ -1,6 +1,6 @@
 /// @description ResolutionDebugController
 
-if (keyboard_check_pressed(ord("Z")) || gamepad_button_check_pressed(global.ActiveGamepad, gp_stickl))
+if (keyboard_check_pressed(ord("V")) || gamepad_button_check_pressed(global.ActiveGamepad, gp_stickl))
 {
 	resolutionZoom++;
 	if (resolutionZoom > resolutionZoomMax)
