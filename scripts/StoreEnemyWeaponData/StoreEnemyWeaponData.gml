@@ -288,13 +288,13 @@ ds_map_add(NinjaGunData, "shotShakeFactor",					0.05);
 TurretGunData = ds_map_create();
 ds_map_add(TurretGunData, "weaponSprite",					noone);
 ds_map_add(TurretGunData, "offsetY",						18);
-ds_map_add(TurretGunData, "laserSightEnabled",				false);
+ds_map_add(TurretGunData, "laserSightEnabled",				true);
 ds_map_add(TurretGunData, "isAuto",							true);
 ds_map_add(TurretGunData, "currentShootMode",				ShootMode.Cast);
 //-----------------------------------------------------------------------------
-ds_map_add(TurretGunData, "bulletObject",					obj_BeamerLaser);
-ds_map_add(TurretGunData, "bulletNumber",					4);
-ds_map_add(TurretGunData, "bulletSpawnPointOffset",			0);
+ds_map_add(TurretGunData, "bulletObject",					obj_TurretLaser);
+ds_map_add(TurretGunData, "bulletNumber",					1);
+ds_map_add(TurretGunData, "bulletSpawnPointOffset",			10);
 //-----------------------------------------------------------------------------
 ds_map_add(TurretGunData, "damage",							2);
 ds_map_add(TurretGunData, "heal",							0);

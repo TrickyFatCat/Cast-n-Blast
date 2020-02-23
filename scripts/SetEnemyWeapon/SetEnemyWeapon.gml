@@ -1,8 +1,9 @@
 /// @param weaponID
 
 var _weaponID = argument0;
+var _weaponObject = argument1;
 
-with (mainWeapon)
+with (_weaponObject)
 {
 	SetWeaponParameters(other.id, _weaponID, global.EnemyWeaponData);
 }

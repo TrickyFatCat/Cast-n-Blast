@@ -1,6 +1,28 @@
 // Inherit the parent event
 event_inherited();
 
+if (obj_Player.currentState == PlayerState.Dash && !aimIsLocked)
+{
+	aimIsLocked = true;
+}
+		
+if (!aimIsLocked)
+{
+	var _deltaDirection = CalculateDeltaDirection(global.Player, mainWeapon.directionCurrent, rotationSpeed);
+	mainWeapon.directionCurrent -= _deltaDirection;
+}
+else
+{
+	aimLockTimer += global.TimeFactor;
+	var _timeIsOver = CheckTimer(aimLockTimer, aimLockTime);
+			
+	if (_timeIsOver)
+	{
+		aimIsLocked = false;
+		aimLockTimer = 0;
+	}
+}
+
 switch (mainWeapon.currentCastState)
 {
 	case CastState.Idle:
@@ -33,28 +55,6 @@ switch (mainWeapon.currentCastState)
 	case CastState.Execute:
 		mainWeapon.lasersightAlpha = 0;
 		shootTimer += global.TimeFactor;
-		
-		if (obj_Player.currentState == PlayerState.Dash && !aimIsLocked)
-		{
-			aimIsLocked = true;
-		}
-		
-		if (!aimIsLocked)
-		{
-			var _deltaDirection = CalculateDeltaDirection(global.Player, mainWeapon.directionCurrent, rotationSpeed);
-			mainWeapon.directionCurrent -= _deltaDirection;
-		}
-		else
-		{
-			aimLockTimer += global.TimeFactor;
-			var _timeIsOver = CheckTimer(aimLockTimer, aimLockTime);
-			
-			if (_timeIsOver)
-			{
-				aimIsLocked = false;
-				aimLockTimer = 0;
-			}
-		}
 		
 		var _timeIsOver = CheckTimer(shootTimer, shootTime);
 		if (_timeIsOver)

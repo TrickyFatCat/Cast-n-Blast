@@ -35,7 +35,7 @@ if (weaponId == noone)
 }
 else
 {
-	SetEnemyWeapon(weaponId);
+	SetEnemyWeapon(weaponId, mainWeapon);
 }
 //mainWeapon.visible = false;
 

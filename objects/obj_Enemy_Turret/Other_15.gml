@@ -19,32 +19,35 @@ switch (mainWeapon.currentCastState)
 				
 			if (_counter == _listSize)
 			{
-				mainWeapon.directionCurrent = point_direction(x, y, playerX, playerY);
+				mainWeapon.directionCurrent = CalculateDirectionToPlayer();
+				for (var i = 0; i < 3; i++)
+				{
+					secondaryWeapon[i].directionCurrent = mainWeapon.directionCurrent + 90 * (i + 1);
+				}
 				isShooting = true;
 			}
 		}
 	break;
 	
 	case CastState.Process:
-		
 		with (mainWeapon)
 		{
 			lasersightAlpha = LerpTimeFactor(0, 1, castProgress);
 		}
+		
+		for (var i = 0; i < 3; i++)
+		{
+			secondaryWeapon[i].lasersightAlpha = mainWeapon.lasersightAlpha;
+		}
 	break;
 	
 	case CastState.Execute:
+		mainWeapon.lasersightAlpha = 0;
 		mainWeapon.directionCurrent += rotationSpeed * rotationDirection * global.TimeFactor;
-		//shootTimer += global.TimeFactor;
-		//var _deltaDirection = CalculateDeltaDirection(global.Player, mainWeapon.directionCurrent, rotationSpeed);
-		//mainWeapon.directionCurrent -= _deltaDirection;
-		
-		//var _timeIsOver = CheckTimer(shootTimer, shootTime);
-		//if (_timeIsOver)
-		//{
-		//	shootTimer = 0;
-		//	isShooting = false;
-		//	currentState = EnemyState.TargetSearch;
-		//}
+		for (var i = 0; i < 3; i ++)
+		{
+			secondaryWeapon[i].directionCurrent = mainWeapon.directionCurrent + 90 * (i + 1);
+			secondaryWeapon[i].lasersightAlpha = 0;
+		}
 	break;
 }

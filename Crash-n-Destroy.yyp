@@ -3063,6 +3063,14 @@
             }
         },
         {
+            "Key": "e3d8e1fc-1f80-4968-941d-81558a3880f4",
+            "Value": {
+                "id": "8290e4fb-49bb-43a4-8a5e-d6f539c65bbf",
+                "resourcePath": "objects\\obj_TurretLaser\\obj_TurretLaser.yy",
+                "resourceType": "GMObject"
+            }
+        },
+        {
             "Key": "e4c1bae7-b0c6-4675-a417-8667459194fd",
             "Value": {
                 "id": "2e7d0078-f30d-4c5a-8141-b02a72533a6e",
