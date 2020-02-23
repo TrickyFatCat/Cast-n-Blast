@@ -7,5 +7,8 @@ if (collisionEnable)
 		DecreaseHitPoints(other.damage);
 	}
 
-	instance_destroy(other);
+	if (!other.isPenentrating)
+	{
+		instance_destroy(other);
+	}
 }

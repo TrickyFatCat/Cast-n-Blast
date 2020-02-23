@@ -20,12 +20,12 @@ global.LastWeapon = PlayerWeapon.ArcaneSpear;
 #region // Fireball
 FireBallData = ds_map_create();
 ds_map_add(FireBallData, "weaponSprite",					spr_playerWeapon);
-ds_map_add(FireBallData, "offsetY",						4);
+ds_map_add(FireBallData, "offsetY",							4);
 ds_map_add(FireBallData, "laserSightEnabled",				false);
 ds_map_add(FireBallData, "isAuto",							true);
 ds_map_add(FireBallData, "currentShootMode",				ShootMode.Normal);
 //-----------------------------------------------------------------------------
-ds_map_add(FireBallData, "bulletObject",					obj_PProjectile_Normal);
+ds_map_add(FireBallData, "bulletObject",					obj_PlayerFireBall);
 ds_map_add(FireBallData, "bulletNumber",					1);
 ds_map_add(FireBallData, "bulletSpawnPointOffset",			32);
 //-----------------------------------------------------------------------------
@@ -95,7 +95,7 @@ ds_map_add(IciclesData, "laserSightEnabled",				false);
 ds_map_add(IciclesData, "isAuto",							true);
 ds_map_add(IciclesData, "currentShootMode",					ShootMode.Normal);
 //-----------------------------------------------------------------------------
-ds_map_add(IciclesData, "bulletObject",						obj_PProjectile_Normal);
+ds_map_add(IciclesData, "bulletObject",						obj_PlayerIcicle);
 ds_map_add(IciclesData, "bulletNumber",						10);
 ds_map_add(IciclesData, "bulletSpawnPointOffset",			32);
 //-----------------------------------------------------------------------------
@@ -163,11 +163,11 @@ ds_map_add(MeteorData, "laserSightEnabled",					false);
 ds_map_add(MeteorData, "isAuto",							true);
 ds_map_add(MeteorData, "currentShootMode",					ShootMode.Cast);
 //-----------------------------------------------------------------------------
-ds_map_add(MeteorData, "bulletObject",						obj_PProjectile_Normal);
+ds_map_add(MeteorData, "bulletObject",						obj_PlayerMeteor);
 ds_map_add(MeteorData, "bulletNumber",						1);
 ds_map_add(MeteorData, "bulletSpawnPointOffset",			32);
 //-----------------------------------------------------------------------------
-ds_map_add(MeteorData, "damage",							8);
+ds_map_add(MeteorData, "damage",							110);
 ds_map_add(MeteorData, "heal",								0);
 //-----------------------------------------------------------------------------
 ds_map_add(MeteorData, "rateOfFireAccelerated",				false);
@@ -209,12 +209,12 @@ ds_map_add(MeteorData, "recoilPower",						10);
 ds_map_add(MeteorData, "recoilFactor",						0.3);
 //-----------------------------------------------------------------------------
 ds_map_add(MeteorData, "hitscanScaleY",						0);
-ds_map_add(MeteorData, "projectileVelocityNoiseFactor",		0.1);
-ds_map_add(MeteorData, "projectileVelocityCurrent",			10);
-ds_map_add(MeteorData, "projectileVelocityMax",				0);
-ds_map_add(MeteorData, "projectileAcceleration",			0);
-ds_map_add(MeteorData, "projectileFriction",				0.25);
-ds_map_add(MeteorData, "projectileBounceEnable",			true);
+ds_map_add(MeteorData, "projectileVelocityNoiseFactor",		0);
+ds_map_add(MeteorData, "projectileVelocityCurrent",			0);
+ds_map_add(MeteorData, "projectileVelocityMax",				8);
+ds_map_add(MeteorData, "projectileAcceleration",			0.1);
+ds_map_add(MeteorData, "projectileFriction",				0);
+ds_map_add(MeteorData, "projectileBounceEnable",			false);
 ds_map_add(MeteorData, "projectileBounceFriction",			1);
 //-----------------------------------------------------------------------------
 ds_map_add(MeteorData, "isShackingCamera",					true);
@@ -227,15 +227,15 @@ ds_map_add(MeteorData, "shotShakeFactor",					1);
 ArcaneSpearData = ds_map_create();
 ds_map_add(ArcaneSpearData, "weaponSprite",						spr_playerWeapon);
 ds_map_add(ArcaneSpearData, "offsetY",							4);
-ds_map_add(ArcaneSpearData, "laserSightEnabled",					false);
+ds_map_add(ArcaneSpearData, "laserSightEnabled",				false);
 ds_map_add(ArcaneSpearData, "isAuto",							true);
 ds_map_add(ArcaneSpearData, "currentShootMode",					ShootMode.Charge);
 //-----------------------------------------------------------------------------
-ds_map_add(ArcaneSpearData, "bulletObject",						obj_PProjectile_Normal);
+ds_map_add(ArcaneSpearData, "bulletObject",						obj_PlayerArcaneSpear);
 ds_map_add(ArcaneSpearData, "bulletNumber",						1);
 ds_map_add(ArcaneSpearData, "bulletSpawnPointOffset",			32);
 //-----------------------------------------------------------------------------
-ds_map_add(ArcaneSpearData, "damage",							8);
+ds_map_add(ArcaneSpearData, "damage",							1);
 ds_map_add(ArcaneSpearData, "heal",								0);
 //-----------------------------------------------------------------------------
 ds_map_add(ArcaneSpearData, "rateOfFireAccelerated",			false);
@@ -254,11 +254,11 @@ ds_map_add(ArcaneSpearData, "chargeExecuteCountMin",			1);
 ds_map_add(ArcaneSpearData, "chargeExecuteCountMax",			0);
 ds_map_add(ArcaneSpearData, "chargeTime",						1);
 ds_map_add(ArcaneSpearData, "chargeWaitTime",					0);
-ds_map_add(ArcaneSpearData, "chargeCostFactorMax",				25);
-ds_map_add(ArcaneSpearData, "chargeDamageFactorMax",			4);
+ds_map_add(ArcaneSpearData, "chargeCostFactorMax",				50);
+ds_map_add(ArcaneSpearData, "chargeDamageFactorMax",			200);
 ds_map_add(ArcaneSpearData, "chargeHealFactorMax",				0);
 ds_map_add(ArcaneSpearData, "chargeRateFactorMax",				0);
-ds_map_add(ArcaneSpearData, "chargeBulletNumberFactorMax",		3);
+ds_map_add(ArcaneSpearData, "chargeBulletNumberFactorMax",		1);
 ds_map_add(ArcaneSpearData, "chargeVelocityFactorMax",			0);
 ds_map_add(ArcaneSpearData, "chargeShakeFactorMax",				1.25);
 //-----------------------------------------------------------------------------
@@ -266,7 +266,7 @@ ds_map_add(ArcaneSpearData, "spreadIsDynamic",					false);
 ds_map_add(ArcaneSpearData, "spreadIsUniform",					false);
 ds_map_add(ArcaneSpearData, "spreadAngleIncrFactor",			0.2);
 ds_map_add(ArcaneSpearData, "spreadAngleDecrFactor",			0.0075);
-ds_map_add(ArcaneSpearData, "spreadAngleMin",					30);
+ds_map_add(ArcaneSpearData, "spreadAngleMin",					0);
 ds_map_add(ArcaneSpearData, "spreadAngleMax",					0);
 //-----------------------------------------------------------------------------
 ds_map_add(ArcaneSpearData, "ammoID",							PlayerAmmo.ArcaneSpear);
@@ -277,12 +277,12 @@ ds_map_add(ArcaneSpearData, "recoilPower",						10);
 ds_map_add(ArcaneSpearData, "recoilFactor",						0.3);
 //-----------------------------------------------------------------------------
 ds_map_add(ArcaneSpearData, "hitscanScaleY",					0);
-ds_map_add(ArcaneSpearData, "projectileVelocityNoiseFactor",	0.1);
-ds_map_add(ArcaneSpearData, "projectileVelocityCurrent",		10);
+ds_map_add(ArcaneSpearData, "projectileVelocityNoiseFactor",	0);
+ds_map_add(ArcaneSpearData, "projectileVelocityCurrent",		20);
 ds_map_add(ArcaneSpearData, "projectileVelocityMax",			0);
 ds_map_add(ArcaneSpearData, "projectileAcceleration",			0);
-ds_map_add(ArcaneSpearData, "projectileFriction",				0.25);
-ds_map_add(ArcaneSpearData, "projectileBounceEnable",			true);
+ds_map_add(ArcaneSpearData, "projectileFriction",				0);
+ds_map_add(ArcaneSpearData, "projectileBounceEnable",			false);
 ds_map_add(ArcaneSpearData, "projectileBounceFriction",			1);
 //-----------------------------------------------------------------------------
 ds_map_add(ArcaneSpearData, "isShackingCamera",					true);

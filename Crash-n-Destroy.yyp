@@ -71,6 +71,14 @@
             }
         },
         {
+            "Key": "02f7f3c5-0b49-4069-81eb-705e14ce4fff",
+            "Value": {
+                "id": "e88fc07b-4ea7-4f17-8d74-7710951e6fc0",
+                "resourcePath": "objects\\obj_PlayerMeteorExplosion\\obj_PlayerMeteorExplosion.yy",
+                "resourceType": "GMObject"
+            }
+        },
+        {
             "Key": "05f92ec3-120c-4570-a05d-ff81220fde81",
             "Value": {
                 "id": "c5e4abd5-959f-45d2-8dc5-35dd064acdbb",
@@ -303,6 +311,14 @@
             }
         },
         {
+            "Key": "1b10cc78-93fa-4f3d-b9a4-0681502bd349",
+            "Value": {
+                "id": "1897aa39-71b6-4a74-9410-4b86e115a2f6",
+                "resourcePath": "objects\\obj_PlayerArcaneSpear\\obj_PlayerArcaneSpear.yy",
+                "resourceType": "GMObject"
+            }
+        },
+        {
             "Key": "1c29d1eb-4e84-4da5-9b48-7d4fb901008e",
             "Value": {
                 "id": "857be31b-1cd5-4572-afb7-3e671603c437",
@@ -330,7 +346,7 @@
             "Key": "1da54990-d36b-4547-8a9f-43a9fa089155",
             "Value": {
                 "id": "973f4492-ca30-4dbe-9d24-51ab6f98364b",
-                "resourcePath": "objects\\obj_PProjectile_Normal\\obj_PProjectile_Normal.yy",
+                "resourcePath": "objects\\obj_PlayerFireBall\\obj_PlayerFireBall.yy",
                 "resourceType": "GMObject"
             }
         },
@@ -1260,6 +1276,14 @@
                 "id": "149b8b0c-8fc8-4906-9765-06c14dff33fa",
                 "resourcePath": "scripts\\SetMaxWeight\\SetMaxWeight.yy",
                 "resourceType": "GMScript"
+            }
+        },
+        {
+            "Key": "5cb837dd-43dd-4ea6-865f-3fc310d3a198",
+            "Value": {
+                "id": "1caa697d-68f4-4dd8-b164-22b978f9c715",
+                "resourcePath": "objects\\obj_PlayerMeteor\\obj_PlayerMeteor.yy",
+                "resourceType": "GMObject"
             }
         },
         {
@@ -2383,6 +2407,14 @@
             }
         },
         {
+            "Key": "b06d5556-998b-4463-855e-54427ff1c7b1",
+            "Value": {
+                "id": "aafc1676-312b-4cff-b326-ff283dd6048e",
+                "resourcePath": "objects\\obj_PlayerIcicle\\obj_PlayerIcicle.yy",
+                "resourceType": "GMObject"
+            }
+        },
+        {
             "Key": "b0fb7ce0-fcf0-46c1-934c-943346fb3cfb",
             "Value": {
                 "id": "efe44125-2531-4f74-a762-b1b7c80de012",
@@ -2644,6 +2676,14 @@
                 "id": "2e745b45-3aa8-445f-9396-c838cf5f1588",
                 "resourcePath": "objects\\obj_Floor\\obj_Floor.yy",
                 "resourceType": "GMObject"
+            }
+        },
+        {
+            "Key": "c54def07-8a7c-4d8e-8843-8640293035d1",
+            "Value": {
+                "id": "a026b302-7431-4d61-b417-bab259d7ae61",
+                "resourcePath": "sprites\\spr_projectile_arcane\\spr_projectile_arcane.yy",
+                "resourceType": "GMSprite"
             }
         },
         {

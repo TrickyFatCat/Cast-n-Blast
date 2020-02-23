@@ -12,5 +12,8 @@ isBounced = false;
 bounceFriction = 0;
 bouncedDirectionDelta = 20;
 
+// Penentration
+isPenentrating = false;
+
 // Parameters
 velocityNoiseFactor = 0;
