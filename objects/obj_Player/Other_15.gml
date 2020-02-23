@@ -27,6 +27,12 @@ if (global.TimeFactor > 0)
 		isReloading = true;
 	}
 	
+	if (ammo < mainWeapon.shootAmmoCost && mainWeapon.currentShootMode = ShootMode.Charge && mainWeapon.currentChargeState == ChargeState.Charging)
+	{
+		mainWeapon.isShooting = false;
+		mainWeapon.currentChargeState = ChargeState.Wait;
+	}
+	
 	//var _secondaryShootKey;
 	
 	//if (secondaryWeapon.isAuto == true)

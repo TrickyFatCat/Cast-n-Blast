@@ -2,12 +2,12 @@
 
 if (sys_GameManager.keyWeapon01)
 {
-	SwitchWeaponTo(PlayerWeapon.PlasmaGun);
+	SwitchWeaponTo(PlayerWeapon.FireBall);
 }
 
 if (sys_GameManager.keyWeapon02)
 {
-	SwitchWeaponTo(PlayerWeapon.Shotgun);
+	SwitchWeaponTo(PlayerWeapon.Icicles);
 }
 		
 if (sys_GameManager.keyNextWeapon)

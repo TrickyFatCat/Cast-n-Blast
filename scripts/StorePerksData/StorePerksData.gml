@@ -14,16 +14,16 @@ enum Perk
 	MaxUltimate,
 	UltimateGain,
 	UltimateDamage,
-	PlasmaDamage,
-	PlasmaRate,
-	PlasmaSpread,
-	PlasmaReload,
-	PlasmaMaxAmmo,
-	ShotgunBullets,
-	ShotgunRate,
-	ShotgunSpread,
-	ShotgunReload,
-	ShotgunMaxAmmo
+	FireballDamage,
+	FireballRate,
+	FireballSpread,
+	FireballReload,
+	FireballMaxAmmo,
+	IciclesBullets,
+	IciclesRate,
+	IciclesSpread,
+	IciclesReload,
+	IciclesMaxAmmo
 }
 
 SetPerkData(Perk.RunSpeed,			2,	0.25,	true,	false,	"Run speed");
@@ -36,13 +36,13 @@ SetPerkData(Perk.MaxShieldPoints,	4,	25,		true,	true,	"Max shield points");
 SetPerkData(Perk.MaxUltimate,		2,	0.25,	true,	false,	"Ultimate duration");
 SetPerkData(Perk.UltimateGain,		2,	0.25,	true,	false,	"Ultimate income");
 SetPerkData(Perk.UltimateDamage,	2,	0.25,	true,	false,	"Ultimate damage");
-SetPerkData(Perk.PlasmaDamage,		2,	0.25,	true,	false,	"Plasma damage");
-SetPerkData(Perk.PlasmaRate,		2,	0.25,	true,	false,	"Plasma rate");
-SetPerkData(Perk.PlasmaSpread,		2,	0.5,	false,	false,	"Plasma spread");
-SetPerkData(Perk.PlasmaReload,		2,	0.25,	false,	false,	"Plasma reload time");
-SetPerkData(Perk.PlasmaMaxAmmo,		2,	25,		true,	true,	"Plasma ammo");
-SetPerkData(Perk.ShotgunBullets,	2,	5.0,	true,	true,	"Shotgun bullets");
-SetPerkData(Perk.ShotgunRate,		2,	0.25,	true,	false,	"Shotgun rate");
-SetPerkData(Perk.ShotgunSpread,		2,	0.25,	false,	false,	"Shotgun spread");
-SetPerkData(Perk.ShotgunReload,		2,	0.25,	false,	false,	"Shotgun reload time");
-SetPerkData(Perk.ShotgunMaxAmmo,	2,	5,		true,	true,	"Shotgun ammo");
+SetPerkData(Perk.FireballDamage,		2,	0.25,	true,	false,	"Fireball damage");
+SetPerkData(Perk.FireballRate,		2,	0.25,	true,	false,	"Fireball rate");
+SetPerkData(Perk.FireballSpread,		2,	0.5,	false,	false,	"Fireball spread");
+SetPerkData(Perk.FireballReload,		2,	0.25,	false,	false,	"Fireball reload time");
+SetPerkData(Perk.FireballMaxAmmo,		2,	25,		true,	true,	"Fireball ammo");
+SetPerkData(Perk.IciclesBullets,	2,	5.0,	true,	true,	"Icicles bullets");
+SetPerkData(Perk.IciclesRate,		2,	0.25,	true,	false,	"Icicles rate");
+SetPerkData(Perk.IciclesSpread,		2,	0.25,	false,	false,	"Icicles spread");
+SetPerkData(Perk.IciclesReload,		2,	0.25,	false,	false,	"Icicles reload time");
+SetPerkData(Perk.IciclesMaxAmmo,	2,	5,		true,	true,	"Icicles ammo");

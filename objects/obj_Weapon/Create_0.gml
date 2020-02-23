@@ -117,6 +117,7 @@ chargeProgress = 0;
 chargeExecuteCountMin = 0;
 chargeWaitTime = 0;
 chargeWaitProgress = 0;
+chargeCostFactor = 1;
 chargeDamageFactor = 1;
 chargeHealFactor = 1;
 chargeRateFactor = 1;

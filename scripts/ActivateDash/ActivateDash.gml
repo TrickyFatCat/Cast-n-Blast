@@ -9,6 +9,7 @@ if (sys_GameManager.keyDash && dashCharge > 0)
 	
 	currentState = PlayerState.Dash;
 	isInvulnerable = true;
+	collisionEnable = false;
 	velocity = dashVelocity;
 	DecreaseDashCharge();
 }

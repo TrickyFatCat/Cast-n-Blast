@@ -34,22 +34,27 @@ switch (currentCastState)
 	case CastState.Execute: 
 		if (castExecuteCount > 0)
 		{
-			isShooting = true;
-			if (shotCount == castExecuteCount)
+			if (shotCount >= castExecuteCount)
 			{
 				isShooting = false;
 				shotCount = 0;
 				currentCastState = CastState.Idle;
 			}
+			else
+			{
+				isShooting = true;
+			}
+			
+			ExecuteShootModeNormal;
 		}
-		else if (castExecuteCount <= 0)
+		else if (castExecuteCount == 0)
 		{
 			if (!isShooting)
 			{
 				currentCastState = CastState.Idle;
 			}
+			
+			ExecuteShootModeNormal;
 		}
-		
-		ExecuteShootModeNormal;
 	break;
 }

@@ -40,6 +40,7 @@ chargeExecuteCount =			_weapon[? "chargeExecuteCountMin"];
 chargeExecuteCountMax =			_weapon[? "chargeExecuteCountMax"];
 chargeTime =					_weapon[? "chargeTime"];
 chargeWaitTime =				_weapon[? "chargeWaitTime"];
+chargeCostFactorMax =			_weapon[? "chargeCostFactorMax"];
 chargeDamageFactorMax =			_weapon[? "chargeDamageFactorMax"];
 chargeHealFactorMax =			_weapon[? "chargeHealFactorMax"];
 chargeRateFactorMax =			_weapon[? "chargeRateFactorMax"];
@@ -109,6 +110,11 @@ else
 if (chargeBulletNumberFactorMax < 1)
 {
 	chargeBulletNumberFactorMax = 1;
+}
+
+if (chargeCostFactorMax < 1)
+{
+	chargeCostFactorMax = 1;
 }
 
 // Spawn bullet objects

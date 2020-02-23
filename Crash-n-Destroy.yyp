@@ -426,7 +426,7 @@
             "Key": "236249b0-8a55-4f08-8459-1b5d25365ca3",
             "Value": {
                 "id": "73172679-17f4-4943-8cd6-6172dc5353c2",
-                "resourcePath": "scripts\\ShotgunPerks\\ShotgunPerks.yy",
+                "resourcePath": "scripts\\IciclesPerks\\IciclesPerks.yy",
                 "resourceType": "GMScript"
             }
         },
@@ -2490,7 +2490,7 @@
             "Key": "b790f692-6569-47a8-8390-49c046d7e3bf",
             "Value": {
                 "id": "b0c6b106-a9d3-4bef-9ba9-6273a586cdb2",
-                "resourcePath": "scripts\\PlasmaPerks\\PlasmaPerks.yy",
+                "resourcePath": "scripts\\FireballPerks\\FireballPerks.yy",
                 "resourceType": "GMScript"
             }
         },

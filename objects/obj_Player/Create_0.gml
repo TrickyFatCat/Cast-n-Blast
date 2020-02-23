@@ -82,7 +82,7 @@ for (var i = 0; i < _arrayLength; i++)
 }
 
 // MainWeapon
-weaponID = PlayerWeapon.PlasmaGun;
+weaponID = PlayerWeapon.FireBall;
 mainWeapon = instance_create_layer(x, y, layer, obj_PlayerWeapon);
 SetPlayerWeapon(mainWeapon, weaponID);
 mainWeapon.drawAlpha = 0;
@@ -92,7 +92,7 @@ isReloading = false;
 reloadTimer = 0;
 
 // SecondaryWeapon
-//secondaryWeaponID = PlayerWeapon.Shotgun;
+//secondaryWeaponID = PlayerWeapon.Icicles;
 //secondaryWeapon = instance_create_layer(x, y, layer, obj_PlayerWeapon);
 //SetPlayerWeapon(secondaryWeapon, secondaryWeaponID);
 

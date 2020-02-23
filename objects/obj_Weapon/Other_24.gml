@@ -34,6 +34,7 @@ switch (currentChargeState)
 					chargeExecuteCount = round(_count);
 				}
 				
+				chargeCostFactor = SetChargeFactor(chargeCostFactor, chargeCostFactorMax);
 				chargeDamageFactor = SetChargeFactor(chargeDamageFactor, chargeDamageFactorMax);
 				chargeHealFactor = SetChargeFactor(chargeHealFactor, chargeHealFactorMax);
 				chargeRateFactor = SetChargeFactor(chargeRateFactor, chargeRateFactorMax);
@@ -89,6 +90,8 @@ switch (currentChargeState)
 		}
 		else if (chargeExecuteCount <= 0)
 		{
+			isShooting = false;
+			
 			if (!isShooting)
 			{
 				currentChargeState = ChargeState.Idle;

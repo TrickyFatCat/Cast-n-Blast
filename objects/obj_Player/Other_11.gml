@@ -36,6 +36,7 @@ switch currentState
 		{
 			currentState = PlayerState.Idle;
 			isInvulnerable = false;
+			collisionEnable = true;
 		}
 	break;
 }

@@ -2,27 +2,27 @@
 
 var _perkId = argument0;
 
-var _weaponId = PlayerWeapon.Shotgun;
+var _weaponId = PlayerWeapon.Icicles;
 
 switch (_perkId)
 {
-	case Perk.ShotgunBullets:
+	case Perk.IciclesBullets:
 		IncreaseBullets(_perkId, _weaponId);
 	break;
 	
-	case Perk.ShotgunRate:
+	case Perk.IciclesRate:
 		IncreaseRateOfFire(_perkId, _weaponId);
 	break;
 	
-	case Perk.ShotgunSpread:
+	case Perk.IciclesSpread:
 		DecreaseSpread(_perkId, _weaponId);
 	break;
 	
-	case Perk.ShotgunReload:
+	case Perk.IciclesReload:
 		DecreaseReloadTime(_perkId, _weaponId);
 	break;
 	
-	case Perk.ShotgunMaxAmmo:
+	case Perk.IciclesMaxAmmo:
 		IncreaseMaxAmmo(_perkId, _weaponId);
 	break;
 }

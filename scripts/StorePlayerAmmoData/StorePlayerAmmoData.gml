@@ -2,9 +2,13 @@ global.PlayerAmmoData = [];
 
 enum PlayerAmmo
 {
-	PlasmaGun,
-	Shotgun
+	FireBall,
+	Icicles,
+	Meteor,
+	ArcaneSpear
 }
 
-SetAmmoData(PlayerAmmo.PlasmaGun, 40);
-SetAmmoData(PlayerAmmo.Shotgun, 10);
+SetAmmoData(PlayerAmmo.FireBall, 40);
+SetAmmoData(PlayerAmmo.Icicles, 10);
+SetAmmoData(PlayerAmmo.Meteor, 2);
+SetAmmoData(PlayerAmmo.ArcaneSpear, 100);

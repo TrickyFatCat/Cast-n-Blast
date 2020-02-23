@@ -14,7 +14,7 @@ if (laserSightEnabled)
 	var _scaleX = SortHitscanCollisions(directionCurrent, collisionTargets);
 	var _impactX = _laserSightX + lengthdir_x(_scaleX, drawAngle);
 	var _impactY = _laserSightY + lengthdir_y(_scaleX, drawAngle);
-	draw_sprite_ext(spr_1pix, image_index, _laserSightX, _laserSightY, _scaleX - lasersightOffset, 1, drawAngle, laserSightColour, lasersightAlpha);
+	draw_sprite_ext(spr_1pix, image_index, _laserSightX, _laserSightY, _scaleX - _deltaX, 1, drawAngle, laserSightColour, lasersightAlpha);
 	draw_sprite_ext(spr_laserImpact, image_index, _impactX, _impactY, 0.4, 0.4, random(360), laserSightColour, lasersightAlpha);
 }
 

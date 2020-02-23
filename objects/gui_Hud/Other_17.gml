@@ -130,12 +130,20 @@ _scaleX = _originScaleX;
 
 switch (global.Player.weaponID)
 {
-	case PlayerWeapon.PlasmaGun:
-		var _name = "Plasma";
+	case PlayerWeapon.FireBall:
+		var _name = "Fireball";
 	break;
 	
-	case PlayerWeapon.Shotgun:
-		var _name = "Shotgun";
+	case PlayerWeapon.Icicles:
+		var _name = "Icicles";
+	break;
+	
+	case PlayerWeapon.Meteor:
+		var _name = "Meteor";
+	break;
+	
+	case PlayerWeapon.ArcaneSpear:
+		var _name = "Arcane spear";
 	break;
 }
 

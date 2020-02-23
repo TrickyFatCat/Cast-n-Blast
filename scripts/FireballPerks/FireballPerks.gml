@@ -2,27 +2,27 @@
 
 var _perkId = argument0;
 
-var _weaponId = PlayerWeapon.PlasmaGun;
+var _weaponId = PlayerWeapon.FireBall;
 
 switch (_perkId)
 {
-	case Perk.PlasmaDamage:
+	case Perk.FireballDamage:
 		IncreaseDamage(_perkId, _weaponId);
 	break;
 	
-	case Perk.PlasmaRate:
+	case Perk.FireballRate:
 		IncreaseRateOfFire(_perkId, _weaponId);
 	break;
 
-	case Perk.PlasmaSpread:
+	case Perk.FireballSpread:
 		DecreaseSpread(_perkId, _weaponId);
 	break;
 	
-	case Perk.PlasmaReload:
+	case Perk.FireballReload:
 		DecreaseReloadTime(_perkId, _weaponId);
 	break;
 	
-	case Perk.PlasmaMaxAmmo:
+	case Perk.FireballMaxAmmo:
 		IncreaseMaxAmmo(_perkId, _weaponId);
 	break;
 }
