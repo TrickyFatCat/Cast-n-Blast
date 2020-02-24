@@ -311,14 +311,6 @@
             }
         },
         {
-            "Key": "1b10cc78-93fa-4f3d-b9a4-0681502bd349",
-            "Value": {
-                "id": "1897aa39-71b6-4a74-9410-4b86e115a2f6",
-                "resourcePath": "objects\\obj_PlayerArcaneSpear\\obj_PlayerArcaneSpear.yy",
-                "resourceType": "GMObject"
-            }
-        },
-        {
             "Key": "1c29d1eb-4e84-4da5-9b48-7d4fb901008e",
             "Value": {
                 "id": "857be31b-1cd5-4572-afb7-3e671603c437",
@@ -676,6 +668,14 @@
                 "id": "c1dbfe9d-b7b5-4d69-b120-8f1fa1906dc2",
                 "resourcePath": "views\\359a4064-717b-49d4-9f01-4c74cd991d6a.yy",
                 "resourceType": "GMFolder"
+            }
+        },
+        {
+            "Key": "359ed760-445e-43c1-8dbd-f54a7414e587",
+            "Value": {
+                "id": "d4ad9263-660e-46e8-b303-653b40a51a84",
+                "resourcePath": "objects\\vfx_MeteorTrail\\vfx_MeteorTrail.yy",
+                "resourceType": "GMObject"
             }
         },
         {
@@ -2695,14 +2695,6 @@
             }
         },
         {
-            "Key": "c54def07-8a7c-4d8e-8843-8640293035d1",
-            "Value": {
-                "id": "a026b302-7431-4d61-b417-bab259d7ae61",
-                "resourcePath": "sprites\\spr_projectile_arcane\\spr_projectile_arcane.yy",
-                "resourceType": "GMSprite"
-            }
-        },
-        {
             "Key": "c58faaa1-3540-4c2d-9d74-15cd6108389c",
             "Value": {
                 "id": "c481f72b-3437-4f36-ae8b-e387d0d91435",
@@ -3068,6 +3060,14 @@
                 "id": "a38160a3-957b-4bbb-9a78-eab7c1a4e025",
                 "resourcePath": "views\\e01668b2-e3c0-4511-bb8a-ed0a1ae29dba.yy",
                 "resourceType": "GMFolder"
+            }
+        },
+        {
+            "Key": "e1ade201-6f07-47b6-b674-f9991dedd3db",
+            "Value": {
+                "id": "47e3c5c8-bba4-4294-b3e1-29d55db2698e",
+                "resourcePath": "sprites\\spr_meteor\\spr_meteor.yy",
+                "resourceType": "GMSprite"
             }
         },
         {

@@ -29,7 +29,7 @@ ds_map_add(FireBallData, "bulletObject",					obj_PlayerFireBall);
 ds_map_add(FireBallData, "bulletNumber",					1);
 ds_map_add(FireBallData, "bulletSpawnPointOffset",			32);
 //-----------------------------------------------------------------------------
-ds_map_add(FireBallData, "damage",							20);
+ds_map_add(FireBallData, "damage",							10);
 ds_map_add(FireBallData, "heal",							0);
 //-----------------------------------------------------------------------------
 ds_map_add(FireBallData, "rateOfFireAccelerated",			false);
@@ -160,8 +160,8 @@ MeteorData = ds_map_create();
 ds_map_add(MeteorData, "weaponSprite",						spr_playerWeapon);
 ds_map_add(MeteorData, "offsetY",							4);
 ds_map_add(MeteorData, "laserSightEnabled",					false);
-ds_map_add(MeteorData, "isAuto",							true);
-ds_map_add(MeteorData, "currentShootMode",					ShootMode.Cast);
+ds_map_add(MeteorData, "isAuto",							false);
+ds_map_add(MeteorData, "currentShootMode",					ShootMode.Normal);
 //-----------------------------------------------------------------------------
 ds_map_add(MeteorData, "bulletObject",						obj_PlayerMeteor);
 ds_map_add(MeteorData, "bulletNumber",						1);
@@ -198,7 +198,7 @@ ds_map_add(MeteorData, "spreadIsDynamic",					false);
 ds_map_add(MeteorData, "spreadIsUniform",					false);
 ds_map_add(MeteorData, "spreadAngleIncrFactor",				0.2);
 ds_map_add(MeteorData, "spreadAngleDecrFactor",				0.0075);
-ds_map_add(MeteorData, "spreadAngleMin",					30);
+ds_map_add(MeteorData, "spreadAngleMin",					0);
 ds_map_add(MeteorData, "spreadAngleMax",					0);
 //-----------------------------------------------------------------------------
 ds_map_add(MeteorData, "ammoID",							PlayerAmmo.Meteor);
@@ -228,7 +228,7 @@ ArcaneSpearData = ds_map_create();
 ds_map_add(ArcaneSpearData, "weaponSprite",						spr_playerWeapon);
 ds_map_add(ArcaneSpearData, "offsetY",							4);
 ds_map_add(ArcaneSpearData, "laserSightEnabled",				false);
-ds_map_add(ArcaneSpearData, "isAuto",							true);
+ds_map_add(ArcaneSpearData, "isAuto",							false);
 ds_map_add(ArcaneSpearData, "currentShootMode",					ShootMode.Charge);
 //-----------------------------------------------------------------------------
 ds_map_add(ArcaneSpearData, "bulletObject",						obj_ArcaneSpear);

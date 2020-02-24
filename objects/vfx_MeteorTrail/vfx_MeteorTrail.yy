@@ -1,32 +1,33 @@
 {
-    "id": "1b10cc78-93fa-4f3d-b9a4-0681502bd349",
+    "id": "359ed760-445e-43c1-8dbd-f54a7414e587",
     "modelName": "GMObject",
     "mvc": "1.0",
-    "name": "obj_PlayerArcaneSpear",
+    "name": "vfx_MeteorTrail",
     "eventList": [
         {
-            "id": "1229f262-9242-4f33-bde7-8124d8050141",
+            "id": "67be4fd5-f60e-498d-828a-297568738d29",
             "modelName": "GMEvent",
             "mvc": "1.0",
             "IsDnD": false,
             "collisionObjectId": "00000000-0000-0000-0000-000000000000",
             "enumb": 0,
             "eventtype": 0,
-            "m_owner": "1b10cc78-93fa-4f3d-b9a4-0681502bd349"
+            "m_owner": "359ed760-445e-43c1-8dbd-f54a7414e587"
+        },
+        {
+            "id": "b5caa612-5966-4810-ae6b-7680bb76f654",
+            "modelName": "GMEvent",
+            "mvc": "1.0",
+            "IsDnD": false,
+            "collisionObjectId": "00000000-0000-0000-0000-000000000000",
+            "enumb": 0,
+            "eventtype": 3,
+            "m_owner": "359ed760-445e-43c1-8dbd-f54a7414e587"
         }
     ],
     "maskSpriteId": "00000000-0000-0000-0000-000000000000",
-    "overriddenProperties": [
-        {
-            "id": "b02172eb-f0f8-42ad-b706-c400938ffa8a",
-            "modelName": "GMOverriddenProperty",
-            "mvc": "1.0",
-            "objectId": "1e80bb98-5aea-467b-b065-8a432456cd14",
-            "propertyId": "998d663c-2b00-4fcb-951f-4199a3694a45",
-            "value": "True"
-        }
-    ],
-    "parentObjectId": "cad41c02-488e-4fc1-8592-10db5ff6d160",
+    "overriddenProperties": null,
+    "parentObjectId": "11876f57-a814-41cc-8ce2-4791a7622828",
     "persistent": false,
     "physicsAngularDamping": 0.1,
     "physicsDensity": 0.5,
@@ -42,6 +43,6 @@
     "physicsStartAwake": true,
     "properties": null,
     "solid": false,
-    "spriteId": "c54def07-8a7c-4d8e-8843-8640293035d1",
+    "spriteId": "abf62d29-8b2c-4a96-afbd-cb7809e887a2",
     "visible": true
 }

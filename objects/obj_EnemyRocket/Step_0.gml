@@ -51,4 +51,4 @@ switch (currentState)
 	break;
 }
 
-SpawnTrailEffect(vfx_SkullTrail, 0.2, 1, true, true, true);
+SpawnTrailEffect(vfx_SkullTrail, 0.2, 1, true, true, true, true);
