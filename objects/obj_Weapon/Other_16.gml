@@ -2,13 +2,20 @@
 
 if (ammoID != noone)
 {	
-	var _shootCost = min(ceil(shootAmmoCost * chargeCostFactor), shootAmmoCost * chargeCostFactorMax);
+	chargeCostThreshold = 0;
+	
+	switch (currentShootMode)
+	{
+		case ShootMode.Charge:
+			chargeCostThreshold = max(initialAmmo - min(ceil(shootAmmoCost * chargeCostFactor), shootAmmoCost * chargeCostFactorMax), 0);
+		break;
+	}
 	
 	with (owner)
 	{
-		if (ammo != 0)
+		if (ammo != other.chargeCostThreshold)
 		{
-			DecreasePlayerAmmo(_shootCost);
+			DecreasePlayerAmmo(other.shootAmmoCost);
 		}
 	}
 }

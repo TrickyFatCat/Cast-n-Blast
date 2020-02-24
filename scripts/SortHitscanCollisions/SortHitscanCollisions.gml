@@ -4,8 +4,8 @@
 var _direction = argument0;
 var _targetsArray = argument1;
 
-var _collisionPoints;
-var _nearestPoint;
+var _collisionPoints = [];
+var _nearestPoint = 0;
 
 for (var i = 0; i < array_length_1d(_targetsArray); i++)
 {

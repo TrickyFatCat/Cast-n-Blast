@@ -1,7 +1,7 @@
 /// @description ProcessHitscan
 
 // Parameters
-var _alphaChangeTimer = 0.1;
+var _alphaChangeTimer = 0.15;
 var _alphaStepFactor = CalculateStep(_alphaChangeTimer);
 
 // Sequence

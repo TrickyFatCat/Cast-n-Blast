@@ -21,6 +21,9 @@ switch currentState
 	break;
 }
 
-drawScaleX = SortHitscanCollisions(directionCurrent, collisionTargets);
-
-SetCollisionSize();
+if (!GameIsPaused())
+{
+	drawScaleX = SortHitscanCollisions(directionCurrent, targets);
+	drawAngle = directionCurrent;
+	SetCollisionSize();
+}

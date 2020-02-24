@@ -231,9 +231,9 @@ ds_map_add(ArcaneSpearData, "laserSightEnabled",				false);
 ds_map_add(ArcaneSpearData, "isAuto",							true);
 ds_map_add(ArcaneSpearData, "currentShootMode",					ShootMode.Charge);
 //-----------------------------------------------------------------------------
-ds_map_add(ArcaneSpearData, "bulletObject",						obj_PlayerArcaneSpear);
+ds_map_add(ArcaneSpearData, "bulletObject",						obj_ArcaneSpear);
 ds_map_add(ArcaneSpearData, "bulletNumber",						1);
-ds_map_add(ArcaneSpearData, "bulletSpawnPointOffset",			32);
+ds_map_add(ArcaneSpearData, "bulletSpawnPointOffset",			18);
 //-----------------------------------------------------------------------------
 ds_map_add(ArcaneSpearData, "damage",							1);
 ds_map_add(ArcaneSpearData, "heal",								0);
@@ -253,7 +253,7 @@ ds_map_add(ArcaneSpearData, "castTime",							1);
 ds_map_add(ArcaneSpearData, "chargeExecuteCountMin",			1);
 ds_map_add(ArcaneSpearData, "chargeExecuteCountMax",			0);
 ds_map_add(ArcaneSpearData, "chargeTime",						1);
-ds_map_add(ArcaneSpearData, "chargeWaitTime",					0);
+ds_map_add(ArcaneSpearData, "chargeWaitTime",					1);
 ds_map_add(ArcaneSpearData, "chargeCostFactorMax",				50);
 ds_map_add(ArcaneSpearData, "chargeDamageFactorMax",			200);
 ds_map_add(ArcaneSpearData, "chargeHealFactorMax",				0);
@@ -276,7 +276,7 @@ ds_map_add(ArcaneSpearData, "reloadTime",						2.5);
 ds_map_add(ArcaneSpearData, "recoilPower",						10);
 ds_map_add(ArcaneSpearData, "recoilFactor",						0.3);
 //-----------------------------------------------------------------------------
-ds_map_add(ArcaneSpearData, "hitscanScaleY",					0);
+ds_map_add(ArcaneSpearData, "hitscanScaleY",					3);
 ds_map_add(ArcaneSpearData, "projectileVelocityNoiseFactor",	0);
 ds_map_add(ArcaneSpearData, "projectileVelocityCurrent",		20);
 ds_map_add(ArcaneSpearData, "projectileVelocityMax",			0);

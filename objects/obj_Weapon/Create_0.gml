@@ -124,6 +124,8 @@ chargeRateFactor = 1;
 chargeBulletNumberFactor = 1;
 chargeVelocityFactor = 1;
 chargeShakeFactor = 1;
+chargeCostThreshold = 0;
+initialAmmo = 0;
 #endregion
 
 #region // Visual parameters

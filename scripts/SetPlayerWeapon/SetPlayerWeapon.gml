@@ -15,3 +15,13 @@ with (_weapon)
 
 SetPlayerAmmo(mainWeapon.ammoID);
 reloadTime = SetTime(mainWeapon.reloadTime);
+
+with (_weapon)
+{
+	switch (currentShootMode)
+	{
+		case ShootMode.Charge:
+			chargeCostThreshold = max(owner.ammo - min(ceil(shootAmmoCost * chargeCostFactor), shootAmmoCost * chargeCostFactorMax), 0);
+		break;
+	}
+}

@@ -18,6 +18,7 @@ for (var i = 0; i < _bulletNumber; i++)
 	{
 		directionCurrent = _directon;
 		drawAngle = directionCurrent;
+		drawScaleY = other.hitscanScaleY;
 		damage = _damage;
 		heal = _heal;
 		currentState = HitscanState.Active;

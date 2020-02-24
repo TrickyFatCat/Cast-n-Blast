@@ -24,3 +24,7 @@ endPointY = y;
 // Damage parameters
 damage = 0;
 dealingDamage = false;
+directionCurrent = 0;
+
+targets = [];
+targets[0] = obj_Wall;

@@ -527,6 +527,14 @@
             }
         },
         {
+            "Key": "2b1d3c5c-65fa-4cf3-b5d4-eb963391bd4d",
+            "Value": {
+                "id": "abda91a4-e5d2-44ae-82a6-6c957a30cb98",
+                "resourcePath": "views\\2b1d3c5c-65fa-4cf3-b5d4-eb963391bd4d.yy",
+                "resourceType": "GMFolder"
+            }
+        },
+        {
             "Key": "2b463946-37b5-4444-ba9f-8af2b1767b2b",
             "Value": {
                 "id": "3c92cd6f-d155-47ec-a84c-b1700d36a5e4",
@@ -2220,6 +2228,14 @@
                 "id": "20868bfe-8131-4f95-a60d-38178d9a4d59",
                 "resourcePath": "sprites\\spr_interfaceOverheatFill\\spr_interfaceOverheatFill.yy",
                 "resourceType": "GMSprite"
+            }
+        },
+        {
+            "Key": "a40f8800-36fa-4e45-be7a-08b60278761a",
+            "Value": {
+                "id": "21ca6707-c6fc-4783-9d15-357173af039a",
+                "resourcePath": "objects\\obj_ArcaneSpear\\obj_ArcaneSpear.yy",
+                "resourceType": "GMObject"
             }
         },
         {

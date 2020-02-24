@@ -5,16 +5,15 @@ switch (currentChargeState)
 	case ChargeState.Idle:
 		if (isShooting)
 		{
-			currentChargeState = ChargeState.Charging;
-		}
-		else
-		{
+			chargeCostFactor = 1;
 			chargeDamageFactor = 1;
 			chargeHealFactor = 1;
 			chargeRateFactor = 1;
 			chargeBulletNumberFactor = 1;
 			chargeVelocityFactor = 1;
-			chargeShakeFactor = 1;
+			chageShakeFactor = 1;
+			initialAmmo = owner.ammo;
+			currentChargeState = ChargeState.Charging;
 		}
 	break;
 	
@@ -23,7 +22,7 @@ switch (currentChargeState)
 		{
 			var _chargeStep = CalculateStep(chargeTime);
 			
-			if (chargeProgress <= 1)
+			if (chargeProgress < 1)
 			{
 				chargeProgress = ApproachTimeFactor(chargeProgress, 1, _chargeStep);
 				
@@ -41,17 +40,16 @@ switch (currentChargeState)
 				chargeBulletNumberFactor = SetChargeFactor(chargeBulletNumberFactor, chargeBulletNumberFactorMax);
 				chargeVelocityFactor = SetChargeFactor(chargeVelocityFactor, chargeVelocityFactorMax);
 				chargeShakeFactor = SetChargeFactor(chargeShakeFactor, chargeShakeFactorMax);
+				RecalculateAmmo;
 			}
-			else
+			else if (chargeWaitTime > 0)
 			{
 				currentChargeState = ChargeState.Wait;
-				chargeProgress = 0;
 			}
 		}
 		else
 		{
-			currentChargeState = ChargeState.Execute;
-			chargeProgress = 0;
+			currentChargeState = ChargeState.Wait;
 		}
 	break;
 	
@@ -70,7 +68,7 @@ switch (currentChargeState)
 				chargeWaitProgress = 0;
 			}
 		}
-		else if (!isShooting)
+		else
 		{
 			currentChargeState = ChargeState.Execute;
 			chargeWaitProgress = 0;
@@ -85,19 +83,30 @@ switch (currentChargeState)
 			{
 				isShooting = false;
 				shotCount = 0;
+				chargeProgress = 0;
 				currentChargeState = ChargeState.Idle;
 			}
 		}
-		else if (chargeExecuteCount <= 0)
+		else if (chargeExecuteCount == 0)
 		{
 			isShooting = false;
 			
 			if (!isShooting)
 			{
+				chargeProgress = 0;
 				currentChargeState = ChargeState.Idle;
 			}
 		}
 		
-		ExecuteShootModeNormal;
+		
+		SetBulletTransform(hitscanObjects);
+		if (isShooting) && (shootPauseIsOver)
+		{
+			EnableHitscan;
+			ApplyCameraShake;
+			recoilPowerCurrent = recoilPower;
+			shotCount++;
+			shootPauseTimer = 0;
+		}
 	break;
 }

@@ -13,24 +13,41 @@ if (global.TimeFactor > 0)
 		_shootKey = sys_GameManager.keyShootSemiAuto;
 	}
 	
-	if (_shootKey && ultimateState == UltimateState.Idle && ammo > 0 && !isReloading)
+	switch (mainWeapon.currentShootMode)
 	{
-		mainWeapon.isShooting = true;
-	}
-	else
-	{
-		mainWeapon.isShooting = false;
+		case ShootMode.Normal:
+		case ShootMode.Burst:
+		case ShootMode.Cast:
+			if (_shootKey && ultimateState == UltimateState.Idle && ammo > 0 && !isReloading)
+			{
+				mainWeapon.isShooting = true;
+			}
+			else
+			{
+				mainWeapon.isShooting = false;
+			}
+		break;
+		
+		case ShootMode.Charge:
+			if (_shootKey && ultimateState == UltimateState.Idle && ammo > 0 && !isReloading)
+			{
+				mainWeapon.isShooting = true;
+			}
+			else if (!_shootKey)
+			{
+				mainWeapon.isShooting = false;
+			}
+			
+			if (ammo == 0 && ultimateState == UltimateState.Idle && mainWeapon.currentChargeState == ChargeState.Charging)
+			{
+				mainWeapon.currentChargeState = ChargeState.Wait;
+			}
+		break;
 	}
 	
 	if (_shootKey && ultimateState == UltimateState.Idle && ammo == 0 && !isReloading)
 	{
 		isReloading = true;
-	}
-	
-	if (ammo < mainWeapon.shootAmmoCost && mainWeapon.currentShootMode = ShootMode.Charge && mainWeapon.currentChargeState == ChargeState.Charging)
-	{
-		mainWeapon.isShooting = false;
-		mainWeapon.currentChargeState = ChargeState.Wait;
 	}
 	
 	//var _secondaryShootKey;

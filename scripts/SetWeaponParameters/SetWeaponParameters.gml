@@ -130,6 +130,11 @@ switch (bulletObjectParent)
 	break;
 	
 	case obj_Hitscan:
+		if (!ds_exists(hitscanObjects, ds_type_list))
+		{
+			hitscanObjects = ds_list_create();
+		}
+		
 		var _listSize = ds_list_size(hitscanObjects);
 		
 		if (_listSize != _bullets)
