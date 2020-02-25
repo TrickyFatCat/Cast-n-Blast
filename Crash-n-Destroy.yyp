@@ -2111,6 +2111,14 @@
             }
         },
         {
+            "Key": "9b617b0a-1733-43f5-8682-9f3c3a8d375d",
+            "Value": {
+                "id": "fab99234-a651-4d13-ab15-3047b4a2aa49",
+                "resourcePath": "sprites\\spr_meteorExplosion\\spr_meteorExplosion.yy",
+                "resourceType": "GMSprite"
+            }
+        },
+        {
             "Key": "9bec10ce-a924-4c54-b267-488bad00ec9a",
             "Value": {
                 "id": "0e07059d-0a1e-4a15-a50b-048c6ad3a306",
