@@ -1,6 +1,11 @@
 // Inherit the parent event
 event_inherited();
 
+if (GameIsPaused())
+{
+	return;
+}
+
 CheckPlayerHP;
 
 if (global.CurrentInput == InputMethod.Gamepad)
@@ -20,4 +25,4 @@ if (currentState == PlayerState.Idle || currentState == PlayerState.Run || curre
 	ProcessWeaponChange;
 }
 
-event_user(14);
+ProcessAmmoRecovery;

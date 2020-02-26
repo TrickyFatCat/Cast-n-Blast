@@ -18,9 +18,10 @@ enum EnemyWeapon
 
 #region FighterGun
 FighterGunData = ds_map_create();
+ds_map_add(FighterGunData, "name",							noone);
 ds_map_add(FighterGunData, "weaponSprite",					noone);
 ds_map_add(FighterGunData, "offsetY",						8);
-ds_map_add(FighterGunData, "laserSightEnabled",			false);
+ds_map_add(FighterGunData, "laserSightEnabled",				false);
 ds_map_add(FighterGunData, "isAuto",						true);
 ds_map_add(FighterGunData, "currentShootMode",				ShootMode.Cast);
 //-----------------------------------------------------------------------------
@@ -31,24 +32,24 @@ ds_map_add(FighterGunData, "bulletSpawnPointOffset",		0);
 ds_map_add(FighterGunData, "damage",						5);
 ds_map_add(FighterGunData, "heal",							0);
 //-----------------------------------------------------------------------------
-ds_map_add(FighterGunData, "rateOfFireAccelerated",		false);
+ds_map_add(FighterGunData, "rateOfFireAccelerated",			false);
 ds_map_add(FighterGunData, "rateOfFireIncrStep",			0);
 ds_map_add(FighterGunData, "rateOfFireDecrStep",			0);
-ds_map_add(FighterGunData, "rateOfFireMin",				3);
-ds_map_add(FighterGunData, "rateOfFireMax",				0);
+ds_map_add(FighterGunData, "rateOfFireMin",					3);
+ds_map_add(FighterGunData, "rateOfFireMax",					0);
 //-----------------------------------------------------------------------------
-ds_map_add(FighterGunData, "burstRate",					0);
+ds_map_add(FighterGunData, "burstRate",						0);
 ds_map_add(FighterGunData, "burstShotsNumber",				0);
 //-----------------------------------------------------------------------------
 ds_map_add(FighterGunData, "castExecuteCount",				1);
 ds_map_add(FighterGunData, "castTime",						0.75);
 //-----------------------------------------------------------------------------
-ds_map_add(FighterGunData, "chargeExecuteCountMin",		1);
-ds_map_add(FighterGunData, "chargeExecuteCountMax",		0);
+ds_map_add(FighterGunData, "chargeExecuteCountMin",			1);
+ds_map_add(FighterGunData, "chargeExecuteCountMax",			0);
 ds_map_add(FighterGunData, "chargeTime",					1);
 ds_map_add(FighterGunData, "chargeWaitTime",				0);
 ds_map_add(FighterGunData, "chargeCostFactorMax",			1);
-ds_map_add(FighterGunData, "chargeDamageFactorMax",		4);
+ds_map_add(FighterGunData, "chargeDamageFactorMax",			4);
 ds_map_add(FighterGunData, "chargeHealFactorMax",			0);
 ds_map_add(FighterGunData, "chargeRateFactorMax",			0);
 ds_map_add(FighterGunData, "chargeBulletNumberFactorMax",	0);
@@ -57,22 +58,22 @@ ds_map_add(FighterGunData, "chargeShakeFactorMax",			1.25);
 //-----------------------------------------------------------------------------
 ds_map_add(FighterGunData, "spreadIsDynamic",				false);
 ds_map_add(FighterGunData, "spreadIsUniform",				false);
-ds_map_add(FighterGunData, "spreadAngleIncrFactor",		0.2);
-ds_map_add(FighterGunData, "spreadAngleDecrFactor",		0.0075);
+ds_map_add(FighterGunData, "spreadAngleIncrFactor",			0.2);
+ds_map_add(FighterGunData, "spreadAngleDecrFactor",			0.0075);
 ds_map_add(FighterGunData, "spreadAngleMin",				0);
 ds_map_add(FighterGunData, "spreadAngleMax",				0);
 //-----------------------------------------------------------------------------
 ds_map_add(FighterGunData, "ammoID",						noone);
-ds_map_add(FighterGunData, "shootAmmoCost",				0);
+ds_map_add(FighterGunData, "shootAmmoCost",					0);
 ds_map_add(FighterGunData, "reloadTime",					0);
 //-----------------------------------------------------------------------------
 ds_map_add(FighterGunData, "recoilPower",					0);
 ds_map_add(FighterGunData, "recoilFactor",					0);
 //-----------------------------------------------------------------------------
-ds_map_add(FighterGunData, "hitscanScaleY",				0);
-ds_map_add(FighterGunData, "projectileVelocityNoiseFactor",0);
-ds_map_add(FighterGunData, "projectileVelocityCurrent",	3.5);
-ds_map_add(FighterGunData, "projectileVelocityMax",		0);
+ds_map_add(FighterGunData, "hitscanScaleY",					0);
+ds_map_add(FighterGunData, "projectileVelocityNoiseFactor",	0);
+ds_map_add(FighterGunData, "projectileVelocityCurrent",		3.5);
+ds_map_add(FighterGunData, "projectileVelocityMax",			0);
 ds_map_add(FighterGunData, "projectileAcceleration",		0);
 ds_map_add(FighterGunData, "projectileFriction",			0);
 ds_map_add(FighterGunData, "projectileBounceEnable",		false);
@@ -86,6 +87,7 @@ ds_map_add(FighterGunData, "shotShakeFactor",				0.05);
 
 #region TrooperGun
 TrooperGunData = ds_map_create();
+ds_map_add(TrooperGunData, "name",							noone);
 ds_map_add(TrooperGunData, "weaponSprite",					noone);
 ds_map_add(TrooperGunData, "offsetY",						16);
 ds_map_add(TrooperGunData, "laserSightEnabled",				false);
@@ -154,6 +156,7 @@ ds_map_add(TrooperGunData, "shotShakeFactor",				0.05);
 
 #region BeamerGun
 BeamerGunData = ds_map_create();
+ds_map_add(BeamerGunData, "name",							noone);
 ds_map_add(BeamerGunData, "weaponSprite",					spr_darkMageWeapon);
 ds_map_add(BeamerGunData, "offsetY",						4);
 ds_map_add(BeamerGunData, "laserSightEnabled",				true);
@@ -222,6 +225,7 @@ ds_map_add(BeamerGunData, "shotShakeFactor",				0.05);
 
 #region NinjaGun
 NinjaGunData = ds_map_create();
+ds_map_add(NinjaGunData, "name",							noone);
 ds_map_add(NinjaGunData, "weaponSprite",					noone);
 ds_map_add(NinjaGunData, "offsetY",							6);
 ds_map_add(NinjaGunData, "laserSightEnabled",				false);
@@ -290,6 +294,7 @@ ds_map_add(NinjaGunData, "shotShakeFactor",					0.05);
 
 #region TurretGun
 TurretGunData = ds_map_create();
+ds_map_add(TurretGunData, "name",							noone);
 ds_map_add(TurretGunData, "weaponSprite",					noone);
 ds_map_add(TurretGunData, "offsetY",						18);
 ds_map_add(TurretGunData, "laserSightEnabled",				true);
@@ -358,6 +363,7 @@ ds_map_add(TurretGunData, "shotShakeFactor",				0.05);
 
 #region RocketGun
 RocketGunData = ds_map_create();
+ds_map_add(RocketGunData, "name",							noone);
 ds_map_add(RocketGunData, "weaponSprite",					noone);
 ds_map_add(RocketGunData, "offsetY",						6);
 ds_map_add(RocketGunData, "laserSightEnabled",				false);

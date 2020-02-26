@@ -1,12 +1,13 @@
 var _nextWeapon = weaponID;
+var _lastId = array_length_1d(global.ActiveWeapons) - 1
 			
-if (_nextWeapon != global.LastWeapon)
+if (_nextWeapon != _lastId)
 {
-	_nextWeapon = Approach(weaponID, global.LastWeapon, 1);
+	_nextWeapon = Approach(weaponID, global.ActiveWeapons[_lastId], 1);
 }
 else
 {
-	_nextWeapon = global.FirstWeapon;
+	_nextWeapon = global.ActiveWeapons[0];
 }
 			
 SwitchWeaponTo(_nextWeapon);

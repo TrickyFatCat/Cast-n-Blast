@@ -127,45 +127,27 @@ for (var i = 0; i < _maxDashCharge; i++)
 _x = _originX;
 _y = _y - _scaleY + 4;
 _scaleX = _originScaleX;
-
-switch (global.Player.weaponID)
-{
-	case PlayerWeapon.FireBall:
-		var _name = "Fireball";
-	break;
-	
-	case PlayerWeapon.Icicles:
-		var _name = "Icicles";
-	break;
-	
-	case PlayerWeapon.Meteor:
-		var _name = "Meteor";
-	break;
-	
-	case PlayerWeapon.ArcaneSpear:
-		var _name = "Arcane spear";
-	break;
-}
+var _name = global.Player.mainWeapon.name;
 
 DrawTextOutline(_x + _scaleX / 4, _y + _scaleY / 2, c_black, c_white, _name);
 
-if (!global.Player.isReloading)
-{
-	if (global.Player.ammo != 0)
-	{
-		var _text = string(global.Player.ammo) + " / " + string(global.Player.maxAmmo);
-	}
-	else
-	{
-		var _text = "Press R to reload";
-	}
+//if (!global.Player.isReloading)
+//{
+//	if (global.Player.ammo != 0)
+//	{
+//		var _text = string(global.Player.ammo) + " / " + string(global.Player.maxAmmo);
+//	}
+//	else
+//	{
+//		var _text = "Press R to reload";
+//	}
 	
-	DrawTextOutline(_x + (_scaleX / 4) * 3, _y + _scaleY / 2, c_black, c_white, _text);
-}
-else
-{
-	_value = global.Player.reloadTimer;
-	_maxValue = global.Player.reloadTime;
-	DrawProgressBar(_x + _scaleX / 2, _y, _scaleX / 2, _scaleY, hudAlpha, c_black, c_orange, _value, _maxValue, true);
-	DrawTextOutline(_x + (_scaleX / 4) * 3, _y + _scaleY / 2, c_black, c_white, "RELOADING");
-}
+//	DrawTextOutline(_x + (_scaleX / 4) * 3, _y + _scaleY / 2, c_black, c_white, _text);
+//}
+//else
+//{
+//	_value = global.Player.reloadTimer;
+//	_maxValue = global.Player.reloadTime;
+//	DrawProgressBar(_x + _scaleX / 2, _y, _scaleX / 2, _scaleY, hudAlpha, c_black, c_orange, _value, _maxValue, true);
+//	DrawTextOutline(_x + (_scaleX / 4) * 3, _y + _scaleY / 2, c_black, c_white, "RELOADING");
+//}

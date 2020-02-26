@@ -8,7 +8,8 @@ var _weaponData = argument2;
 
 var _weapon = _weaponData[_weaponID];
 
-owner =					_owner;
+owner =							_owner;
+name =							_weapon[? "name"];
 weaponSprite =					_weapon[? "weaponSprite"];
 offsetY =						_weapon[? "offsetY"];
 laserSightEnabled =				_weapon[? "laserSightEnabled"];

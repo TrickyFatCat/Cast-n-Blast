@@ -8,8 +8,11 @@ enum PlayerWeapon
 	UltimateGun
 }
 
-global.FirstWeapon = PlayerWeapon.FireBall;
-global.LastWeapon = PlayerWeapon.ArcaneSpear;
+global.ActiveWeapons = [];
+global.ActiveWeapons[0] = PlayerWeapon.FireBall;
+global.ActiveWeapons[1] = PlayerWeapon.Icicles;
+global.ActiveWeapons[2] = PlayerWeapon.Meteor;
+global.ActiveWeapons[3] = PlayerWeapon.ArcaneSpear;
 
 #macro FireBallData global.PlayerWeaponData[PlayerWeapon.FireBall]
 #macro IciclesData global.PlayerWeaponData[PlayerWeapon.Icicles]
@@ -19,6 +22,7 @@ global.LastWeapon = PlayerWeapon.ArcaneSpear;
 
 #region // Fireball
 FireBallData = ds_map_create();
+ds_map_add(FireBallData, "name",							"Fire ball");
 ds_map_add(FireBallData, "weaponSprite",					spr_playerWeapon);
 ds_map_add(FireBallData, "offsetY",							4);
 ds_map_add(FireBallData, "laserSightEnabled",				false);
@@ -89,6 +93,7 @@ ds_map_add(FireBallData, "shotShakeFactor",					0.05);
 
 #region // Icicles
 IciclesData = ds_map_create();
+ds_map_add(IciclesData, "name",								"Icicles");
 ds_map_add(IciclesData, "weaponSprite",						spr_playerWeapon);
 ds_map_add(IciclesData, "offsetY",							4);
 ds_map_add(IciclesData, "laserSightEnabled",				false);
@@ -157,6 +162,7 @@ ds_map_add(IciclesData, "shotShakeFactor",					1);
 
 #region // Meteor
 MeteorData = ds_map_create();
+ds_map_add(MeteorData, "name",								"Meteor");
 ds_map_add(MeteorData, "weaponSprite",						spr_playerWeapon);
 ds_map_add(MeteorData, "offsetY",							4);
 ds_map_add(MeteorData, "laserSightEnabled",					false);
@@ -225,6 +231,7 @@ ds_map_add(MeteorData, "shotShakeFactor",					1);
 
 #region // ArcaneSpear
 ArcaneSpearData = ds_map_create();
+ds_map_add(ArcaneSpearData, "name",								"Arcane srear");
 ds_map_add(ArcaneSpearData, "weaponSprite",						spr_playerWeapon);
 ds_map_add(ArcaneSpearData, "offsetY",							4);
 ds_map_add(ArcaneSpearData, "laserSightEnabled",				false);
@@ -293,6 +300,7 @@ ds_map_add(ArcaneSpearData, "shotShakeFactor",					1);
 
 #region // Ultimate
 UltimateGunData = ds_map_create();
+ds_map_add(UltimateGunData, "name",								"Ultimate");
 ds_map_add(UltimateGunData, "weaponSprite",						noone);
 ds_map_add(UltimateGunData, "offsetY",							4);
 ds_map_add(UltimateGunData, "laserSightEnabled",				false);

@@ -31,9 +31,10 @@ switch global.CurrentInput
 		keyInteract = keyboard_check_pressed(ord("E"));
 		keyDash = keyboard_check_pressed(vk_space);
 		keyUltimateActivation = keyboard_check_pressed(ord("Q")) || keyboard_check_pressed(ord("Z"));
-		keyReload = keyboard_check_pressed(ord("R"));
 		keyWeapon01 = keyboard_check_pressed(ord("1"));
 		keyWeapon02 = keyboard_check_pressed(ord("2"));
+		keyWeapon03 = keyboard_check_pressed(ord("3"));
+		keyWeapon04 = keyboard_check_pressed(ord("4"));
 		keyNextWeapon = mouse_wheel_up();
 		keyPreviousWeapon = mouse_wheel_down();
 	break;

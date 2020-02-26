@@ -21,6 +21,7 @@ SetActivePerks();
 #macro ProcessDashRecovery	event_user(11)
 #macro ProcessWeaponChange	event_user(12)
 #macro ProcessWeaponReload	event_user(13)
+#macro ProcessAmmoRecovery	event_user(14)
 
 //Set shadow
 SetShadowParameters(true, 1.25);

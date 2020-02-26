@@ -1,5 +1,10 @@
 /// @description Camera logic
 
+if (GameIsPaused())
+{
+	return;
+}
+
 cameraOriginX = cameraWidth * 0.5;
 cameraOriginY = cameraHeight * 0.5;
 

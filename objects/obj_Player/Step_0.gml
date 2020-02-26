@@ -3,6 +3,11 @@
 //Inherit the parent event
 event_inherited();
 
+if (GameIsPaused())
+{
+	return;
+}
+
 switch (currentState)
 {	
 	case PlayerState.Inactive:
