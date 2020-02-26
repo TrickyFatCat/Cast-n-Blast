@@ -45,29 +45,9 @@ if (global.TimeFactor > 0)
 		break;
 	}
 	
-	if (_shootKey && ultimateState == UltimateState.Idle && ammo == 0 && !isReloading)
-	{
-		isReloading = true;
-	}
-	
-	//var _secondaryShootKey;
-	
-	//if (secondaryWeapon.isAuto == true)
+	//if (_shootKey && ultimateState == UltimateState.Idle && ammo == 0 && !isReloading)
 	//{
-	//	_secondaryShootKey = sys_GameManager.keySecondaryShootAuto;
-	//}
-	//else
-	//{
-	//	_secondaryShootKey = sys_GameManager.keySecondaryShootSemiAuto;
-	//}
-	
-	//if (_secondaryShootKey && ultimateState == UltimateState.Idle)
-	//{
-	//	secondaryWeapon.isShooting = true;
-	//}
-	//else
-	//{
-	//	secondaryWeapon.isShooting = false;
+	//	isReloading = true;
 	//}
 	
 	if (sys_GameManager.keyUltimateActivation && ultimatePoints == maxUltimatePoints && ultimateState == UltimateState.Idle)

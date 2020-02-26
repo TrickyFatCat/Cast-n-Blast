@@ -1,4 +1,4 @@
-/// @param amount
+ /// @param amount
 
 var _amount = argument0;
 

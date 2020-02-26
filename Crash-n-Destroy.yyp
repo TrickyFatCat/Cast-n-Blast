@@ -295,6 +295,14 @@
             }
         },
         {
+            "Key": "1a40753a-7b36-4282-8562-d46ee1d21348",
+            "Value": {
+                "id": "4867c31f-55d0-48e1-bd0c-3b978bc8bdcc",
+                "resourcePath": "scripts\\RecoverAmmo\\RecoverAmmo.yy",
+                "resourceType": "GMScript"
+            }
+        },
+        {
             "Key": "1afe7523-71ef-48e7-aa4d-335caab2dc4f",
             "Value": {
                 "id": "74b4709c-38f9-49ef-ab9e-ae77d742c984",
@@ -503,6 +511,14 @@
             }
         },
         {
+            "Key": "29296086-f83d-44e0-9767-ebe1fc8fc3ca",
+            "Value": {
+                "id": "2efefa8b-0159-4735-b6ee-d3668934090c",
+                "resourcePath": "views\\29296086-f83d-44e0-9767-ebe1fc8fc3ca.yy",
+                "resourceType": "GMFolder"
+            }
+        },
+        {
             "Key": "2adbde4e-1a5a-4b04-a158-3b38b561c92d",
             "Value": {
                 "id": "2be99d48-fbdd-4e11-9e70-fa4d711a3671",
@@ -619,6 +635,14 @@
             "Value": {
                 "id": "a2122b50-ae14-4ffb-a5c9-626c197765ce",
                 "resourcePath": "scripts\\ClearWaveData\\ClearWaveData.yy",
+                "resourceType": "GMScript"
+            }
+        },
+        {
+            "Key": "32446f23-aa2f-419d-bac5-5212fa62c9df",
+            "Value": {
+                "id": "e948aaa6-9264-4835-bb63-6bb418686387",
+                "resourcePath": "scripts\\GetCurrentAmmo\\GetCurrentAmmo.yy",
                 "resourceType": "GMScript"
             }
         },
@@ -1775,6 +1799,14 @@
             }
         },
         {
+            "Key": "81f491fb-6e35-4528-b5b7-65c8f5716f73",
+            "Value": {
+                "id": "aa515c5e-070c-4a34-b97a-aefb5853aad0",
+                "resourcePath": "scripts\\GetRecoveryRate\\GetRecoveryRate.yy",
+                "resourceType": "GMScript"
+            }
+        },
+        {
             "Key": "8200e58b-06d1-4b25-8ca9-037f0cc11151",
             "Value": {
                 "id": "a7202b3c-91fa-48a4-b4f4-98a92eab14fc",
@@ -1996,6 +2028,14 @@
                 "id": "7f35b638-5533-4181-98bb-265bc2d18a93",
                 "resourcePath": "objects\\obj_PlayerHitscan\\obj_PlayerHitscan.yy",
                 "resourceType": "GMObject"
+            }
+        },
+        {
+            "Key": "913dd781-d551-402b-b4c4-58b45b1cef07",
+            "Value": {
+                "id": "6a51245b-fcc2-46b5-924f-ca752048587c",
+                "resourcePath": "scripts\\GetMaxAmmo\\GetMaxAmmo.yy",
+                "resourceType": "GMScript"
             }
         },
         {
@@ -2228,6 +2268,14 @@
                 "id": "f44618c8-4982-4057-a496-41afcad69fba",
                 "resourcePath": "objects\\obj_EnemyProjectile\\obj_EnemyProjectile.yy",
                 "resourceType": "GMObject"
+            }
+        },
+        {
+            "Key": "a31a0958-57a5-4424-935d-09d870510efb",
+            "Value": {
+                "id": "8565ace6-a3be-4354-857d-dff827517121",
+                "resourcePath": "scripts\\SetRecoveryTimer\\SetRecoveryTimer.yy",
+                "resourceType": "GMScript"
             }
         },
         {
@@ -2951,6 +2999,14 @@
             }
         },
         {
+            "Key": "d5ef4f27-c93d-4a5a-9909-87082d9e7a97",
+            "Value": {
+                "id": "17a2e8ca-2d3e-475b-b48a-89630ab03595",
+                "resourcePath": "scripts\\GetRecoveryTimer\\GetRecoveryTimer.yy",
+                "resourceType": "GMScript"
+            }
+        },
+        {
             "Key": "d67cb006-c144-4593-9579-4457245617ef",
             "Value": {
                 "id": "2ffe4a5f-0d15-483c-a2e7-9a5ec829a454",
@@ -3558,6 +3614,12 @@
         "fc25fcea-a609-4b2c-82ab-8711ff8fc0d2",
         "da79c651-b444-442d-9028-1c08f38437e2",
         "e57dc67a-4422-45b9-8abc-bfdf4a09d2e0",
+        "d5ef4f27-c93d-4a5a-9909-87082d9e7a97",
+        "81f491fb-6e35-4528-b5b7-65c8f5716f73",
+        "32446f23-aa2f-419d-bac5-5212fa62c9df",
+        "913dd781-d551-402b-b4c4-58b45b1cef07",
+        "a31a0958-57a5-4424-935d-09d870510efb",
+        "1a40753a-7b36-4282-8562-d46ee1d21348",
         "7710b5ef-dfe0-4802-920e-a963c50b6d98",
         "be1a499b-d1ee-486e-8bbd-bb9b836ef2f6",
         "eff89f1c-8e1d-40cf-b41d-5478ca0db11b",

@@ -86,6 +86,7 @@ weaponID = PlayerWeapon.FireBall;
 mainWeapon = instance_create_layer(x, y, layer, obj_PlayerWeapon);
 SetPlayerWeapon(mainWeapon, weaponID);
 mainWeapon.drawAlpha = 0;
+ammoArrayLength = array_length_1d(sessionAmmoData);
 
 // Reload time
 isReloading = false;
