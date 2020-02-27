@@ -5,3 +5,5 @@ StorePlayerAmmoData();
 StorePerksData();
 StoreEnemyWeaponData();
 StoreWaveData();
+sessionAmmoData = [];
+sessionWeaponData = [];

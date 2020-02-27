@@ -92,7 +92,7 @@ _y = _y - _scaleY + 4;
 var _dashCharge = global.Player.dashCharge;
 var _maxDashCharge = global.Player.maxDashCharge;
 _scaleX *= 2;
-var _x = (guiWidth * 0.5) - (_scaleX / 2);
+_x = _originX;
 _scaleX /= _maxDashCharge;
 _value = 1;
 var _maxValue = 1;
@@ -126,10 +126,42 @@ for (var i = 0; i < _maxDashCharge; i++)
 // Weapon
 _x = _originX;
 _y = _y - _scaleY + 4;
+var _yy = _y - _scaleY + 4;
 _scaleX = _originScaleX;
-var _name = global.Player.mainWeapon.name;
+var _colour = c_white;
+var _name = global.Player.mainWeapon;
+//SetAlign(fa_left, fa_center);
 
-DrawTextOutline(_x + _scaleX / 4, _y + _scaleY / 2, c_black, c_white, _name);
+//if (array_length_1d(global.Player.sessionWeaponData) == 0 && array_length_1d(global.Player.sessionAmmoData) == 0)
+//{
+//	return;
+//}
+
+for (var i = 0; i < 4; i++)
+{
+	var _weaponId = global.ActiveWeapons[i];
+	
+	var _name = GetWeaponName(_weaponId);
+	var _ammo = GetWeaponAmmo(_weaponId);
+	var _maxAmmo = GetWeaponMaxAmmo(_weaponId);
+	
+	if (i > 0)
+	{
+		_x += _scaleX / 4;
+	}
+	
+	if (i = global.Player.weaponID)
+	{
+		_colour = c_orange;
+	}
+	else
+	{
+		_colour = c_gray;
+	}
+	
+	DrawTextOutline(_x, _y + _scaleY / 2, c_black, _colour, string(_ammo) + "/" + string(_maxAmmo));
+	DrawTextOutline(_x, _yy + _scaleY / 2, c_black, _colour, _name);
+}
 
 //if (!global.Player.isReloading)
 //{

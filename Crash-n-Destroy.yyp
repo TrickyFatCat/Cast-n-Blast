@@ -431,6 +431,14 @@
             }
         },
         {
+            "Key": "22d64a61-f985-4b44-92d9-09ced69cf487",
+            "Value": {
+                "id": "4f771b62-3b68-4e15-9d6d-2e20945537e0",
+                "resourcePath": "scripts\\GetWeaponName\\GetWeaponName.yy",
+                "resourceType": "GMScript"
+            }
+        },
+        {
             "Key": "22fcb603-abc2-400c-a648-0c7c0dea25ee",
             "Value": {
                 "id": "8324d08e-925d-45bf-867a-99e51a06ca20",
@@ -756,6 +764,14 @@
                 "id": "7c85349b-a2e9-459f-9f93-febd8d71e6eb",
                 "resourcePath": "views\\3938a813-b96f-4bec-8f3d-baf0008747fc.yy",
                 "resourceType": "GMFolder"
+            }
+        },
+        {
+            "Key": "39d344e2-5262-4877-a73e-6a8118f073c2",
+            "Value": {
+                "id": "3abe9b10-3523-4e10-9f2e-5a7ed73c14b5",
+                "resourcePath": "scripts\\GetWeaponAmmo\\GetWeaponAmmo.yy",
+                "resourceType": "GMScript"
             }
         },
         {
@@ -1700,6 +1716,14 @@
                 "id": "444afe5a-6547-44d4-acc5-eb79c8c489a4",
                 "resourcePath": "shaders\\shd_Outline\\shd_Outline.yy",
                 "resourceType": "GMShader"
+            }
+        },
+        {
+            "Key": "7ab010ef-339d-4f61-a1b3-0e8e942a2908",
+            "Value": {
+                "id": "26f7bc6c-4222-4fb0-83df-573ab1197b54",
+                "resourcePath": "scripts\\GetWeaponMaxAmmo\\GetWeaponMaxAmmo.yy",
+                "resourceType": "GMScript"
             }
         },
         {
@@ -3608,6 +3632,9 @@
         "4049e4fd-1d04-4e2f-81de-6da12f8b2655",
         "3c884466-e1db-4224-b662-2086df475b8c",
         "879d220b-05c5-456e-b9ab-cfbc7fdeac61",
+        "22d64a61-f985-4b44-92d9-09ced69cf487",
+        "39d344e2-5262-4877-a73e-6a8118f073c2",
+        "7ab010ef-339d-4f61-a1b3-0e8e942a2908",
         "52e25e36-b2d5-45bc-9808-cf34f3a729b1",
         "81c10704-245f-4585-99d7-f89e0e242b36",
         "751e3ea9-81ab-4781-9f81-a22ad5d2cd2f",
