@@ -39,23 +39,36 @@ if (showRandomPerk)
 	DrawTiltedText(fnt_medium, _x, 0, _y, 2, c_maroon, c_red, "Perk '" + _perkName + "' was chosen");
 }
 
-// HUD origin values
-var _borderColour = c_black;
-var _originScaleX = 300;
-var _originScaleY = 28;
-var _originX = (guiWidth * 0.5) - (_originScaleX / 2);
-var _originY = guiHeight * 0.95;
-
-// Ultimate
-var _x = _originX;
-var _y = _originY;
-var _scaleX = _originScaleX;
-var _scaleY = _originScaleY;
+// HitPoints
 draw_set_font(fnt_small);
-SetAlign(fa_center, fa_center);
+var _borderColour = c_black;
+var _x = 4;
+var _y = guiHeight - 32;
+var _scaleX = 200;
+var _scaleY = 24;
+var _value = round(global.Player.hitPoints);
+var _maxValue = global.Player.maxHitPoints;
+
+DrawProgressBar(_x, _y, _scaleX, _scaleY, hudAlpha, c_black, hitPointsColour, _value, _maxValue, false);
+DrawTextOutline(_x + _scaleX / 2, _y + _scaleY / 2, c_black, c_white, string(_value));
+
+// ShieldPoints
+_y -= (_scaleY + 4);
+_scaleX /= 2;
+_value = global.Player.shieldPoints;
+_maxValue = global.Player.maxShieldPoints;
+
+DrawProgressBar(_x, _y, _scaleX, _scaleY, hudAlpha, c_black, shieldPointsColour, _value, _maxValue, false);
+DrawTextOutline(_x + _scaleX / 2, _y + _scaleY / 2, c_black, c_white, string(_value));
+
+// UltimatePoints
+_scaleX = 200;
+_scaleY = 24;
+_x = guiWidth / 2 - _scaleX / 2;
+_y = guiHeight - 32;
 var _value = global.Player.ultimatePoints;
 var _maxValue = global.Player.maxUltimatePoints;
-var _percent = floor(100 * (_value / _maxValue));
+var _percent = CalculatePercent(_value, _maxValue, RoundType.Floor);
 var _text;
 
 if (_value < _maxValue)
@@ -70,32 +83,11 @@ else
 DrawProgressBar(_x, _y, _scaleX, _scaleY, hudAlpha, c_black, ultimatePointsColour, _value, _maxValue, false);
 DrawTextOutline(_x + _scaleX / 2, _y + _scaleY / 2, c_black, c_white, _text);
 
-// HitPoints
-_y = _y - _scaleY + 4;
-_scaleX /= 2;
-_value = round(global.Player.hitPoints);
-var _maxValue = global.Player.maxHitPoints;
-var _percent = round(100 * (_value / _maxValue));
-
-DrawProgressBar(_x, _y, _scaleX, _scaleY, hudAlpha, c_black, hitPointsColour, _value, _maxValue, false);
-DrawTextOutline(_x + _scaleX / 2, _y + _scaleY / 2, c_black, c_white, string(_value));
-
-// Energy
-_x += _scaleX;
-_value = global.Player.shieldPoints;
-
-DrawProgressBar(_x, _y, _scaleX, _scaleY, hudAlpha, c_black, shieldPointsColour, _value, global.Player.maxShieldPoints, false);
-DrawTextOutline(_x + _scaleX / 2, _y + _scaleY / 2, c_black, c_white, string(_value));
-
 // Dash
-_y = _y - _scaleY + 4;
+_y -= _scaleY + 4;
 var _dashCharge = global.Player.dashCharge;
 var _maxDashCharge = global.Player.maxDashCharge;
-_scaleX *= 2;
-_x = _originX;
 _scaleX /= _maxDashCharge;
-_value = 1;
-var _maxValue = 1;
 
 for (var i = 0; i < _maxDashCharge; i++)
 {
@@ -124,12 +116,93 @@ for (var i = 0; i < _maxDashCharge; i++)
 }
 
 // Weapon
-_scaleX = _originScaleX;
-_x = _originX + _scaleX / 8;
-_y = _y - _scaleY + 4;
-var _yy = _y - _scaleY + 4;
+_scaleX = 200;
+_x = guiWidth - _scaleX - 4;
+_y = guiHeight - 32;
+var _weaponId = global.Player.weaponID;
+var _name = GetWeaponName(_weaponId);
+var _nameColour = c_yellow;
+
+switch (_weaponId)
+{
+	case PlayerWeapon.FireBall:
+		_nameColour = c_yellow;
+	break;
+	
+	case PlayerWeapon.Icicles:
+		_nameColour = c_aqua;
+	break;
+	
+	case PlayerWeapon.Meteor:
+		_nameColour = c_maroon;
+	break;
+	
+	case PlayerWeapon.ArcaneSpear:
+		_nameColour = c_fuchsia;
+	break;
+}
+
+_value = GetWeaponAmmo(_weaponId);
+_maxValue = GetWeaponMaxAmmo(_weaponId);
+
 var _colour = c_white;
-var _name = global.Player.mainWeapon;
+var _percent = CalculatePercent(_value, _maxValue, RoundType.Standard);
+
+if (_percent <= 50 && _percent > 10)
+{
+	_colour = c_orange;
+}
+else if (_percent <= 10)
+{
+	_colour = c_red;
+}
+
+DrawProgressBar(_x, _y, _scaleX, _scaleY, hudAlpha, c_black, c_gray, _value, _maxValue, false);
+SetAlign(fa_left, fa_center);
+DrawTextOutline(_x + 6, _y + _scaleY / 2, c_black, _colour, string(_value) + "/" + string(_maxValue));
+SetAlign(fa_right, fa_center);
+DrawTextOutline(_x + _scaleX - 6, _y + _scaleY / 2, c_black, _nameColour, string(_name));
+
+// Draw Weapon Numbers
+_y -= _scaleY + 4;
+_scaleX /= array_length_1d(global.ActiveWeapons);
+SetAlign(fa_left, fa_center);
+
+for (var i = 0; i < 4; i++)
+{
+	var _weaponId = global.ActiveWeapons[i];
+	var _ammo = GetWeaponAmmo(_weaponId);
+	var _maxAmmo = GetWeaponMaxAmmo(_weaponId);
+	_x += _scaleX;
+	
+	if (i = global.Player.weaponID)
+	{
+		_colour = _nameColour;
+	}
+	else
+	{
+		_colour = c_gray;
+	}
+
+	DrawTextOutline(_x - _scaleX / 2, _y + _scaleY / 2, c_black, _colour, i + 1);
+}
+
+// Draw lowammo text
+_x = device_mouse_x_to_gui(0)
+_y = device_mouse_y_to_gui(0)
+
+if (_percent <= 25)
+{
+	SetAlign(fa_center, fa_top);
+	DrawTextOutline(_x, _y + 24, c_black, _nameColour, "Low " + string(_name) + " mana");
+}
+
+// Draw crosshair
+if (global.CurrentInput == InputMethod.KeyboardMouse)
+{
+	draw_sprite_ext(spr_crosshair, image_index, device_mouse_x_to_gui(0), device_mouse_y_to_gui(0), 2, 2, 0, image_blend, hudAlpha)
+}
+
 //SetAlign(fa_left, fa_center);
 
 //if (array_length_1d(global.Player.sessionWeaponData) == 0 && array_length_1d(global.Player.sessionAmmoData) == 0)
@@ -137,31 +210,32 @@ var _name = global.Player.mainWeapon;
 //	return;
 //}
 
-for (var i = 0; i < 4; i++)
-{
-	var _weaponId = global.ActiveWeapons[i];
+//for (var i = 0; i < 4; i++)
+//{
+//	var _weaponId = global.ActiveWeapons[i];
 	
-	var _name = GetWeaponName(_weaponId);
-	var _ammo = GetWeaponAmmo(_weaponId);
-	var _maxAmmo = GetWeaponMaxAmmo(_weaponId);
+//	var _name = GetWeaponName(_weaponId);
+//	var _ammo = GetWeaponAmmo(_weaponId);
+//	var _maxAmmo = GetWeaponMaxAmmo(_weaponId);
 	
-	if (i > 0)
-	{
-		_x += _scaleX / 4;
-	}
+//	if (i > 0)
+//	{
+//		_x += _scaleX / 4;
+//	}
 	
-	if (i = global.Player.weaponID)
-	{
-		_colour = c_orange;
-	}
-	else
-	{
-		_colour = c_gray;
-	}
+//	if (i = global.Player.weaponID)
+//	{
+//		_colour = c_orange;
+//	}
+//	else
+//	{
+//		_colour = c_gray;
+//	}
 	
-	DrawTextOutline(_x, _y + _scaleY / 2, c_black, _colour, string(_ammo) + "/" + string(_maxAmmo));
-	DrawTextOutline(_x, _yy + _scaleY / 2, c_black, _colour, _name);
-}
+	
+//	DrawTextOutline(_x, _y + _scaleY / 2, c_black, _colour, string(_ammo) + "/" + string(_maxAmmo));
+//	DrawTextOutline(_x, _yy + _scaleY / 2, c_black, _colour, _name);
+//}
 
 //if (!global.Player.isReloading)
 //{

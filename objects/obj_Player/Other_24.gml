@@ -53,6 +53,8 @@ for (var i = 0; i < ammoArrayLength; i++)
 			{
 				RecoverAmmo(i);
 			}
+			
+			show_debug_message(recoveryDelayTimer);
 		}
 		else
 		{
