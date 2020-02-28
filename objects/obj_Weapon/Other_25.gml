@@ -30,7 +30,7 @@ if ((visible) && weaponSprite != noone)
 			var _recoilDeltaX = lengthdir_x(recoilPowerCurrent, directionCurrent);
 			var _recoilDeltaY = lengthdir_y(recoilPowerCurrent, directionCurrent);
 
-			draw_sprite_ext(weaponSprite, image_index, x - _recoilDeltaX, _y - _recoilDeltaY, drawScaleX, drawScaleY, drawAngle, image_blend, drawAlpha);
+			draw_sprite_ext(weaponSprite, image_index, x - _recoilDeltaX, _y - _recoilDeltaY, drawScaleX, drawScaleY, drawAngle, drawColour, drawAlpha);
 		break;
 	}
 }
