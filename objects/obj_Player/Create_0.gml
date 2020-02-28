@@ -92,6 +92,8 @@ ammoArrayLength = array_length_1d(sessionAmmoData);
 // Reload time
 isReloading = false;
 reloadTimer = 0;
+recoveryDelayTimer = 0;
+recoveryDelayTime = SetTime(1);
 
 // SecondaryWeapon
 //secondaryWeaponID = PlayerWeapon.Icicles;

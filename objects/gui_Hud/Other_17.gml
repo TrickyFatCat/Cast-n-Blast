@@ -124,10 +124,10 @@ for (var i = 0; i < _maxDashCharge; i++)
 }
 
 // Weapon
-_x = _originX;
+_scaleX = _originScaleX;
+_x = _originX + _scaleX / 8;
 _y = _y - _scaleY + 4;
 var _yy = _y - _scaleY + 4;
-_scaleX = _originScaleX;
 var _colour = c_white;
 var _name = global.Player.mainWeapon;
 //SetAlign(fa_left, fa_center);

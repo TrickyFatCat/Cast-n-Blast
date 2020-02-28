@@ -21,6 +21,7 @@ if (global.TimeFactor > 0)
 			if (_shootKey && ultimateState == UltimateState.Idle && ammo > 0 && !isReloading)
 			{
 				mainWeapon.isShooting = true;
+				recoveryDelayTimer = 0;
 			}
 			else
 			{
@@ -32,6 +33,7 @@ if (global.TimeFactor > 0)
 			if (_shootKey && ultimateState == UltimateState.Idle && ammo > 0 && !isReloading)
 			{
 				mainWeapon.isShooting = true;
+				recoveryDelayTimer = 0;
 			}
 			else if (!_shootKey)
 			{

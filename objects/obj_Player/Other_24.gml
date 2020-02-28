@@ -21,13 +21,33 @@ for (var i = 0; i < ammoArrayLength; i++)
 		_timer = GetRecoveryTimer(i);
 		var _timeIsOver = CheckTimer(_timer, _time);
 		
+		if (i == mainWeapon.ammoID && !mainWeapon.isShooting)
+		{
+			var _delayIsOver = CheckTimer(recoveryDelayTimer, recoveryDelayTime);
+				
+			if (!_delayIsOver)
+			{
+				recoveryDelayTimer += global.TimeFactor;
+			}
+		}
+		
 		if (_timeIsOver)
 		{
 			SetRecoveryTimer(i, 0);
 			
-			if (i == mainWeapon.ammoID && !mainWeapon.isShooting)
+			if (i == mainWeapon.ammoID)
 			{
-				ammo = RecoverAmmo(i);;
+				if (!mainWeapon.isShooting)
+				{
+					if (_delayIsOver)
+					{
+						ammo = RecoverAmmo(i);
+					}
+				}
+				else
+				{
+					recoveryDelayTimer = 0;
+				}
 			}
 			else
 			{
