@@ -82,7 +82,7 @@ else
 	_text = "Press 'Q' to unleash power";
 }
 
-DrawProgressBar(_x, _y, _scaleX, _scaleY, hudAlpha, c_black, global.WeaponColours[PlayerWeapon.UltimateGun], _value, _maxValue, false);
+DrawProgressBar(_x, _y, _scaleX, _scaleY, hudAlpha, _borderColour, global.WeaponColours[PlayerWeapon.UltimateGun], _value, _maxValue, false);
 DrawTextOutline(_x + _scaleX / 2, _y + _scaleY / 2, c_black, c_white, _text);
 
 // Dash
@@ -90,12 +90,21 @@ _y -= _scaleY + 4;
 var _dashCharge = global.Player.dashCharge;
 var _maxDashCharge = global.Player.maxDashCharge;
 _scaleX /= _maxDashCharge;
+_scaleX -= 4;
 
 for (var i = 0; i < _maxDashCharge; i++)
 {
 	if (i > 0)
 	{
-		_x += _scaleX;
+		if (_maxDashCharge == 2)
+		{
+			var _offset = 8;
+		}
+		else if (_maxDashCharge == 3)
+		{
+			var _offset = 6;
+		}
+		_x += _scaleX + _offset;
 	}
 	
 	if (i < _dashCharge)
@@ -114,12 +123,12 @@ for (var i = 0; i < _maxDashCharge; i++)
 		_maxValue = global.Player.dashCooldownTime;
 	}
 	
-	DrawProgressBar(_x, _y, _scaleX, _scaleY, hudAlpha, c_black, global.ResourceColours[ResourceType.Dash], _value, _maxValue, false);
+	DrawProgressBar(_x, _y, _scaleX, _scaleY, hudAlpha, _borderColour, global.ResourceColours[ResourceType.Dash], _value, _maxValue, false);
 }
 
 // Weapon
 _scaleX = 200;
-_x = guiWidth - _scaleX - 4;
+_x = guiWidth - _scaleX - 2;
 _y = guiHeight - 32;
 var _weaponId = global.Player.weaponID;
 var _name = GetWeaponName(_weaponId);
@@ -140,7 +149,7 @@ else if (_percent <= 10)
 	_colour = c_red;
 }
 
-DrawProgressBar(_x, _y, _scaleX, _scaleY, hudAlpha, c_black, global.ResourceColours[ResourceType.ManaPoints], _value, _maxValue, false);
+DrawProgressBar(_x, _y, _scaleX, _scaleY, hudAlpha, _borderColour, global.ResourceColours[ResourceType.ManaPoints], _value, _maxValue, false);
 SetAlign(fa_left, fa_center);
 DrawTextOutline(_x + 6, _y + _scaleY / 2, c_black, _colour, string(_value) + "/" + string(_maxValue));
 SetAlign(fa_right, fa_center);
@@ -149,24 +158,35 @@ DrawTextOutline(_x + _scaleX - 6, _y + _scaleY / 2, c_black, _nameColour, string
 // Draw Weapon Numbers
 _y -= _scaleY + 4;
 _scaleX /= array_length_1d(global.ActiveWeapons);
-SetAlign(fa_left, fa_center);
+_scaleX = 32;
+_x += _scaleX;
+SetAlign(fa_center, fa_center);
 
 for (var i = 0; i < 4; i++)
 {
 	var _weaponId = global.ActiveWeapons[i];
 	var _ammo = GetWeaponAmmo(_weaponId);
 	var _maxAmmo = GetWeaponMaxAmmo(_weaponId);
-	_x += _scaleX;
+	
+	if (i > 0)
+	{
+		_x += _scaleX + 24;
+	}
 	
 	if (i = global.Player.weaponID)
 	{
 		_colour = _nameColour;
+		_borderColour = c_gray;
 	}
 	else
 	{
-		_colour = c_gray;
+		_colour = c_ltgray;
+		_borderColour = c_black;
 	}
-
+	
+	
+	var _scale = 32;
+	DrawProgressBar(_x - _scaleX, _y, _scaleX, _scaleY, hudAlpha, _borderColour, c_dkgray, _ammo, _maxAmmo, false);
 	DrawTextOutline(_x - _scaleX / 2, _y + _scaleY / 2, c_black, _colour, i + 1);
 }
 
