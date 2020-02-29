@@ -2,5 +2,5 @@
 
 var _amount = argument0;
 
+_amount = round(_amount);
 hitPoints = ApproachTimeFactor(hitPoints, 0, _amount);
-show_debug_message(_amount);

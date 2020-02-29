@@ -8,14 +8,14 @@ switch (ultimateState)
 		currentScaleX = 1.25;
 		drawScaleX = currentScaleX;
 		drawScaleY = currentScaleX;
-		drawColour = make_color_rgb(65, 65, 255);
+		drawColour = global.WeaponColours[PlayerWeapon.UltimateGun];
 	break;
 	
 	case UltimateState.Process:
 		if (ultimatePoints > 0)
 		{
 			ultimateWeapon.isShooting = true;
-			EnableFlash(c_aqua, 1);
+			EnableFlash(c_yellow , 1);
 			IncreaseHitPoints(1);
 		}
 		else

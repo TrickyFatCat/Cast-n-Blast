@@ -50,7 +50,3 @@ showFightTextTimer = 0;
 showRandomPerkTime = SetTime(2);
 showRandomPerkTimer = 0;
 showRandomPerk = false;
-
-hitPointsColour = make_color_rgb(71, 111, 0);
-shieldPointsColour = make_color_rgb(2, 79, 97);
-ultimatePointsColour = make_color_rgb(156, 11, 0);

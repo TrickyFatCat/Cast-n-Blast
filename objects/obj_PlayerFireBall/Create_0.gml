@@ -1,4 +1,4 @@
 // Inherit the parent event
 event_inherited();
 
-drawColour = c_yellow;
+drawColour = global.WeaponColours[PlayerWeapon.FireBall];

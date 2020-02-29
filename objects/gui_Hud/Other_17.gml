@@ -49,7 +49,7 @@ var _scaleY = 24;
 var _value = round(global.Player.hitPoints);
 var _maxValue = global.Player.maxHitPoints;
 
-DrawProgressBar(_x, _y, _scaleX, _scaleY, hudAlpha, c_black, hitPointsColour, _value, _maxValue, false);
+DrawProgressBar(_x, _y, _scaleX, _scaleY, hudAlpha, c_black, global.ResourceColours[ResourceType.HitPoints], _value, _maxValue, false);
 draw_sprite_ext(spr_hitPoints, 0, _x + 12, _y + _scaleY / 2, 1, 1, 0, c_white, hudAlpha);
 DrawTextOutline(_x + _scaleX / 2, _y + _scaleY / 2, c_black, c_white, string(_value));
 
@@ -59,7 +59,7 @@ _scaleX /= 2;
 _value = global.Player.shieldPoints;
 _maxValue = global.Player.maxShieldPoints;
 
-DrawProgressBar(_x, _y, _scaleX, _scaleY, hudAlpha, c_black, shieldPointsColour, _value, _maxValue, false);
+DrawProgressBar(_x, _y, _scaleX, _scaleY, hudAlpha, c_black, global.ResourceColours[ResourceType.ShieldPoints], _value, _maxValue, false);
 draw_sprite_ext(spr_shieldPoints, 0, _x + 12, _y + _scaleY / 2, 1, 1, 0, c_white, hudAlpha);
 DrawTextOutline(_x + _scaleX / 2, _y + _scaleY / 2, c_black, c_white, string(_value));
 
@@ -82,7 +82,7 @@ else
 	_text = "Press 'Q' to unleash power";
 }
 
-DrawProgressBar(_x, _y, _scaleX, _scaleY, hudAlpha, c_black, ultimatePointsColour, _value, _maxValue, false);
+DrawProgressBar(_x, _y, _scaleX, _scaleY, hudAlpha, c_black, global.WeaponColours[PlayerWeapon.UltimateGun], _value, _maxValue, false);
 DrawTextOutline(_x + _scaleX / 2, _y + _scaleY / 2, c_black, c_white, _text);
 
 // Dash
@@ -114,7 +114,7 @@ for (var i = 0; i < _maxDashCharge; i++)
 		_maxValue = global.Player.dashCooldownTime;
 	}
 	
-	DrawProgressBar(_x, _y, _scaleX, _scaleY, hudAlpha, c_black, c_teal, _value, _maxValue, false);
+	DrawProgressBar(_x, _y, _scaleX, _scaleY, hudAlpha, c_black, global.ResourceColours[ResourceType.Dash], _value, _maxValue, false);
 }
 
 // Weapon
@@ -123,26 +123,7 @@ _x = guiWidth - _scaleX - 4;
 _y = guiHeight - 32;
 var _weaponId = global.Player.weaponID;
 var _name = GetWeaponName(_weaponId);
-var _nameColour = c_yellow;
-
-switch (_weaponId)
-{
-	case PlayerWeapon.FireBall:
-		_nameColour = c_yellow;
-	break;
-	
-	case PlayerWeapon.Icicles:
-		_nameColour = c_aqua;
-	break;
-	
-	case PlayerWeapon.Meteor:
-		_nameColour = c_maroon;
-	break;
-	
-	case PlayerWeapon.ArcaneSpear:
-		_nameColour = c_fuchsia;
-	break;
-}
+var _nameColour = global.WeaponColours[_weaponId];
 
 _value = GetWeaponAmmo(_weaponId);
 _maxValue = GetWeaponMaxAmmo(_weaponId);
@@ -159,7 +140,7 @@ else if (_percent <= 10)
 	_colour = c_red;
 }
 
-DrawProgressBar(_x, _y, _scaleX, _scaleY, hudAlpha, c_black, c_gray, _value, _maxValue, false);
+DrawProgressBar(_x, _y, _scaleX, _scaleY, hudAlpha, c_black, global.ResourceColours[ResourceType.ManaPoints], _value, _maxValue, false);
 SetAlign(fa_left, fa_center);
 DrawTextOutline(_x + 6, _y + _scaleY / 2, c_black, _colour, string(_value) + "/" + string(_maxValue));
 SetAlign(fa_right, fa_center);
