@@ -84,6 +84,13 @@ switch (currentChargeState)
 				isShooting = false;
 				shotCount = 0;
 				chargeProgress = 0;
+				chargeCostFactor = 1;
+				chargeDamageFactor = 1;
+				chargeHealFactor = 1;
+				chargeRateFactor = 1;
+				chargeBulletNumberFactor = 1;
+				chargeVelocityFactor = 1;
+				chageShakeFactor = 1;
 				currentChargeState = ChargeState.Idle;
 			}
 		}
@@ -93,6 +100,13 @@ switch (currentChargeState)
 			
 			if (!isShooting)
 			{
+				chargeCostFactor = 1;
+				chargeDamageFactor = 1;
+				chargeHealFactor = 1;
+				chargeRateFactor = 1;
+				chargeBulletNumberFactor = 1;
+				chargeVelocityFactor = 1;
+				chageShakeFactor = 1;
 				chargeProgress = 0;
 				currentChargeState = ChargeState.Idle;
 			}

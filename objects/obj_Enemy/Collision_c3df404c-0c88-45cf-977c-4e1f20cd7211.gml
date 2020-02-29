@@ -1,5 +1,3 @@
-/// @description Insert description here
-
 if (collisionEnable)
 {
 	if (!isInvulnerable)

@@ -50,6 +50,7 @@ var _value = round(global.Player.hitPoints);
 var _maxValue = global.Player.maxHitPoints;
 
 DrawProgressBar(_x, _y, _scaleX, _scaleY, hudAlpha, c_black, hitPointsColour, _value, _maxValue, false);
+draw_sprite_ext(spr_hitPoints, 0, _x + 12, _y + _scaleY / 2, 1, 1, 0, c_white, hudAlpha);
 DrawTextOutline(_x + _scaleX / 2, _y + _scaleY / 2, c_black, c_white, string(_value));
 
 // ShieldPoints
@@ -59,6 +60,7 @@ _value = global.Player.shieldPoints;
 _maxValue = global.Player.maxShieldPoints;
 
 DrawProgressBar(_x, _y, _scaleX, _scaleY, hudAlpha, c_black, shieldPointsColour, _value, _maxValue, false);
+draw_sprite_ext(spr_shieldPoints, 0, _x + 12, _y + _scaleY / 2, 1, 1, 0, c_white, hudAlpha);
 DrawTextOutline(_x + _scaleX / 2, _y + _scaleY / 2, c_black, c_white, string(_value));
 
 // UltimatePoints
@@ -201,59 +203,4 @@ if (_percent <= 25)
 if (global.CurrentInput == InputMethod.KeyboardMouse)
 {
 	draw_sprite_ext(spr_crosshair, image_index, device_mouse_x_to_gui(0), device_mouse_y_to_gui(0), 2, 2, 0, image_blend, hudAlpha)
-}
-
-//SetAlign(fa_left, fa_center);
-
-//if (array_length_1d(global.Player.sessionWeaponData) == 0 && array_length_1d(global.Player.sessionAmmoData) == 0)
-//{
-//	return;
-//}
-
-//for (var i = 0; i < 4; i++)
-//{
-//	var _weaponId = global.ActiveWeapons[i];
-	
-//	var _name = GetWeaponName(_weaponId);
-//	var _ammo = GetWeaponAmmo(_weaponId);
-//	var _maxAmmo = GetWeaponMaxAmmo(_weaponId);
-	
-//	if (i > 0)
-//	{
-//		_x += _scaleX / 4;
-//	}
-	
-//	if (i = global.Player.weaponID)
-//	{
-//		_colour = c_orange;
-//	}
-//	else
-//	{
-//		_colour = c_gray;
-//	}
-	
-	
-//	DrawTextOutline(_x, _y + _scaleY / 2, c_black, _colour, string(_ammo) + "/" + string(_maxAmmo));
-//	DrawTextOutline(_x, _yy + _scaleY / 2, c_black, _colour, _name);
-//}
-
-//if (!global.Player.isReloading)
-//{
-//	if (global.Player.ammo != 0)
-//	{
-//		var _text = string(global.Player.ammo) + " / " + string(global.Player.maxAmmo);
-//	}
-//	else
-//	{
-//		var _text = "Press R to reload";
-//	}
-	
-//	DrawTextOutline(_x + (_scaleX / 4) * 3, _y + _scaleY / 2, c_black, c_white, _text);
-//}
-//else
-//{
-//	_value = global.Player.reloadTimer;
-//	_maxValue = global.Player.reloadTime;
-//	DrawProgressBar(_x + _scaleX / 2, _y, _scaleX / 2, _scaleY, hudAlpha, c_black, c_orange, _value, _maxValue, true);
-//	DrawTextOutline(_x + (_scaleX / 4) * 3, _y + _scaleY / 2, c_black, c_white, "RELOADING");
-//}
+}  

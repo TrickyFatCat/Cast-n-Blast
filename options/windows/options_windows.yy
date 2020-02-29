@@ -11,7 +11,7 @@
     "option_windows_description_info": "A GameMaker Studio 2 Game",
     "option_windows_disable_sandbox": false,
     "option_windows_display_cursor": false,
-    "option_windows_display_name": "Crash-n-Destroy",
+    "option_windows_display_name": "Cast-n-Blast",
     "option_windows_enable_steam": false,
     "option_windows_executable_name": "${project_name}",
     "option_windows_icon": "${base_options_dir}\\windows\\icons\\icon.ico",
@@ -31,7 +31,7 @@
     "option_windows_texture_page": "2048x2048",
     "option_windows_use_splash": false,
     "option_windows_version": {
-        "build": 3,
+        "build": 4,
         "major": 0,
         "minor": 5,
         "revision": 0

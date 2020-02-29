@@ -7,12 +7,9 @@
         "5a675f00-bbb3-4bf2-84cd-7f94ca83e059",
         "3c6771c7-64fc-4a69-839d-fbfb70cfc285",
         "67202a29-72aa-42a4-b73e-5ac0f890c709",
-        "66543fd9-b595-43f4-ba79-3ee9bd89125b",
-        "c62138c4-41ca-4503-b768-9f09e528de3b",
-        "a34e2fc9-ebc9-425f-8e11-d698bb09ee5a",
-        "ca04b068-7a2b-4586-92a7-413fae95e7d7",
-        "8cb03f72-bb50-4429-b885-5b4bde907954",
-        "d0c77698-2736-4057-a7dc-8e1abca6921a"
+        "d0c77698-2736-4057-a7dc-8e1abca6921a",
+        "3d052213-7522-41d5-9dd3-2c88e81a61ef",
+        "0817a5bb-adf4-47ca-aebf-067f6e75b890"
     ],
     "filterType": "GMSprite",
     "folderName": "UserInterface",
