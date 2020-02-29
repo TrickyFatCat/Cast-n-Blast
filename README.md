@@ -1,1 +1,1 @@
-Crash'n'Repair
+Cast-n-Blast is a 2D top-down arena shooter where you play as a mage who has to survive as many rounds as can.
