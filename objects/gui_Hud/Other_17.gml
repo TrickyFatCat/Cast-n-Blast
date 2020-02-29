@@ -184,7 +184,6 @@ for (var i = 0; i < 4; i++)
 		_borderColour = c_black;
 	}
 	
-	
 	var _scale = 32;
 	DrawProgressBar(_x - _scaleX, _y, _scaleX, _scaleY, hudAlpha, _borderColour, c_dkgray, _ammo, _maxAmmo, false);
 	DrawTextOutline(_x - _scaleX / 2, _y + _scaleY / 2, c_black, _colour, i + 1);

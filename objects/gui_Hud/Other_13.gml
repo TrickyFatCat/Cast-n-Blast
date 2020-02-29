@@ -17,7 +17,7 @@ switch (global.BattleState)
 
 		if (_timeLeft > 0)
 		{
-			DrawTiltedText(fnt_large, guiWidth / 2, 0, guiHeight * 0.4, 2, c_maroon, c_red, "ROUND STARTS IN");
+			DrawTiltedText(fnt_large, guiWidth / 2, 0, guiHeight * 0.4, 2, c_maroon, c_red, "ROUND " + string(global.Round) + " STARTS IN");
 			DrawTiltedText(fnt_large, guiWidth / 2, 0, guiHeight * 0.6, 2, c_maroon, c_red, string(_timeLeft));
 		}
 		else 
@@ -77,7 +77,7 @@ switch (global.BattleState)
 	
 			if (!_timeIsOver)
 			{
-				DrawTiltedText(fnt_large, guiWidth / 2, 0, guiHeight / 2, 2, c_maroon, c_red, "CRASH!");
+				DrawTiltedText(fnt_large, guiWidth / 2, 0, guiHeight / 2, 2, c_maroon, c_red, "BLAST THEM ALL!");
 			}
 			else 
 			{

@@ -10,7 +10,8 @@ enum PlayerWeapon
 
 global.WeaponColours = [];
 global.WeaponColours[PlayerWeapon.FireBall]		= make_color_rgb(235, 211, 32);
-global.WeaponColours[PlayerWeapon.Icicles]		= make_color_rgb(40, 0, 186);
+global.WeaponColours[PlayerWeapon.Icicles]		= make_color_rgb(48, 81, 130);
+//global.WeaponColours[PlayerWeapon.Icicles]		= make_color_rgb(40, 0, 186);
 global.WeaponColours[PlayerWeapon.Meteor]		= make_color_rgb(162, 48, 0);
 global.WeaponColours[PlayerWeapon.ArcaneSpear]	= make_color_rgb(219, 65, 195);
 global.WeaponColours[PlayerWeapon.UltimateGun]	= make_color_rgb(255, 121, 48);
