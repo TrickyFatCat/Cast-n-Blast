@@ -775,6 +775,14 @@
             }
         },
         {
+            "Key": "39a279c0-edbc-44d7-a4bd-2f8e58f3cf00",
+            "Value": {
+                "id": "0e860cdf-f491-4b29-871f-392e7b079a2a",
+                "resourcePath": "objects\\vfx_FireBallImpact\\vfx_FireBallImpact.yy",
+                "resourceType": "GMObject"
+            }
+        },
+        {
             "Key": "39d344e2-5262-4877-a73e-6a8118f073c2",
             "Value": {
                 "id": "3abe9b10-3523-4e10-9f2e-5a7ed73c14b5",
@@ -1114,7 +1122,7 @@
             "Key": "4d2e50be-b1e4-41af-a99f-6aa1c6ad686a",
             "Value": {
                 "id": "7cc3ea3c-6814-4b61-b5e8-0bdcd9d9f8a4",
-                "resourcePath": "sprites\\spr_playerProjectileImpact\\spr_playerProjectileImpact.yy",
+                "resourcePath": "sprites\\spr_icicleImpact\\spr_icicleImpact.yy",
                 "resourceType": "GMSprite"
             }
         },
@@ -1415,6 +1423,14 @@
             }
         },
         {
+            "Key": "63197f1f-be06-42fa-9283-2c2c0f3eacc4",
+            "Value": {
+                "id": "63eec37e-f9ab-44c9-8a70-a56f4baf16e8",
+                "resourcePath": "sprites\\spr_fireBallImpact\\spr_fireBallImpact.yy",
+                "resourceType": "GMSprite"
+            }
+        },
+        {
             "Key": "63339610-5eb6-4bff-ada1-eb90c64f2da6",
             "Value": {
                 "id": "11380897-509e-41c7-a396-a620bb3799be",
@@ -1618,7 +1634,7 @@
             "Key": "73a05411-8021-4872-9092-a5969c8a3508",
             "Value": {
                 "id": "6e674d27-c4e1-471a-bf39-6b43395bbc5f",
-                "resourcePath": "objects\\vfx_PlayerImpact\\vfx_PlayerImpact.yy",
+                "resourcePath": "objects\\vfx_IcicleImpact\\vfx_IcicleImpact.yy",
                 "resourceType": "GMObject"
             }
         },

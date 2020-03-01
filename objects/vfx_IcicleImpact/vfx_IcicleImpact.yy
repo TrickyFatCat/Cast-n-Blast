@@ -1,23 +1,14 @@
 {
-    "id": "b06d5556-998b-4463-855e-54427ff1c7b1",
+    "id": "73a05411-8021-4872-9092-a5969c8a3508",
     "modelName": "GMObject",
     "mvc": "1.0",
-    "name": "obj_PlayerIcicle",
+    "name": "vfx_IcicleImpact",
     "eventList": [
         
     ],
     "maskSpriteId": "00000000-0000-0000-0000-000000000000",
-    "overriddenProperties": [
-        {
-            "id": "7354c26b-c655-44b6-93f5-f94fddaa45a7",
-            "modelName": "GMOverriddenProperty",
-            "mvc": "1.0",
-            "objectId": "05f92ec3-120c-4570-a05d-ff81220fde81",
-            "propertyId": "3439b292-c5a0-42d6-93fb-66845621e9c6",
-            "value": "vfx_IcicleImpact"
-        }
-    ],
-    "parentObjectId": "cad41c02-488e-4fc1-8592-10db5ff6d160",
+    "overriddenProperties": null,
+    "parentObjectId": "d5d48b7b-7659-41a1-9a4d-eaa0838793e1",
     "persistent": false,
     "physicsAngularDamping": 0.1,
     "physicsDensity": 0.5,
@@ -33,6 +24,6 @@
     "physicsStartAwake": true,
     "properties": null,
     "solid": false,
-    "spriteId": "54725922-c665-40cc-ba12-243811461698",
+    "spriteId": "4d2e50be-b1e4-41af-a99f-6aa1c6ad686a",
     "visible": true
 }

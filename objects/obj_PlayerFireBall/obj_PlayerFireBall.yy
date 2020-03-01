@@ -33,7 +33,7 @@
             "mvc": "1.0",
             "objectId": "05f92ec3-120c-4570-a05d-ff81220fde81",
             "propertyId": "3439b292-c5a0-42d6-93fb-66845621e9c6",
-            "value": "vfx_PlayerImpact"
+            "value": "vfx_FireBallImpact"
         }
     ],
     "parentObjectId": "cad41c02-488e-4fc1-8592-10db5ff6d160",
