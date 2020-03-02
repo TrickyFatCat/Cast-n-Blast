@@ -1719,6 +1719,14 @@
             }
         },
         {
+            "Key": "778047b3-7820-4c03-a062-80c3ce3ca6c7",
+            "Value": {
+                "id": "0c53ad13-f865-4cb2-9f97-92bb30d94166",
+                "resourcePath": "objects\\obj_Enemy_Bomber\\obj_Enemy_Bomber.yy",
+                "resourceType": "GMObject"
+            }
+        },
+        {
             "Key": "77bc5f25-18c1-4077-89af-7a49272d7fda",
             "Value": {
                 "id": "4397dae1-f808-48d0-a329-23ce39c2b5ff",

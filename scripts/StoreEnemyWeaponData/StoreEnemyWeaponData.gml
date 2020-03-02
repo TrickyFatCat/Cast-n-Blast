@@ -6,7 +6,8 @@ enum EnemyWeapon
 	BeamerGun,
 	NinjaGun,
 	TurretGun,
-	RocketGun
+	RocketGun,
+	BomberGun
 }
 
 #macro FighterGunData		global.EnemyWeaponData[EnemyWeapon.FighterGun]
@@ -15,6 +16,7 @@ enum EnemyWeapon
 #macro NinjaGunData			global.EnemyWeaponData[EnemyWeapon.NinjaGun]
 #macro TurretGunData		global.EnemyWeaponData[EnemyWeapon.TurretGun]
 #macro RocketGunData		global.EnemyWeaponData[EnemyWeapon.RocketGun]
+#macro BomberGunData		global.EnemyWeaponData[EnemyWeapon.BomberGun]
 
 #region FighterGun
 FighterGunData = ds_map_create();
@@ -428,4 +430,73 @@ ds_map_add(RocketGunData, "isShackingCamera",				false);
 ds_map_add(RocketGunData, "angularShakeEnabled",			false);
 ds_map_add(RocketGunData, "shakeValue",						0.75);
 ds_map_add(RocketGunData, "shotShakeFactor",				0.05);
+#endregion
+
+#region BomberGun
+BomberGunData = ds_map_create();
+ds_map_add(BomberGunData, "name",							noone);
+ds_map_add(BomberGunData, "weaponSprite",					noone);
+ds_map_add(BomberGunData, "offsetY",						6);
+ds_map_add(BomberGunData, "laserSightEnabled",				false);
+ds_map_add(BomberGunData, "isAuto",							true);
+ds_map_add(BomberGunData, "currentShootMode",				ShootMode.Cast);
+//-----------------------------------------------------------------------------
+ds_map_add(BomberGunData, "bulletObject",					obj_EnemyRocket);
+ds_map_add(BomberGunData, "bulletNumber",					1);
+ds_map_add(BomberGunData, "bulletSpawnPointOffset",			19);
+//-----------------------------------------------------------------------------
+ds_map_add(BomberGunData, "damage",							5);
+ds_map_add(BomberGunData, "heal",							0);
+//-----------------------------------------------------------------------------
+ds_map_add(BomberGunData, "rateOfFireAccelerated",			false);
+ds_map_add(BomberGunData, "rateOfFireIncrStep",				0);
+ds_map_add(BomberGunData, "rateOfFireDecrStep",				0);
+ds_map_add(BomberGunData, "rateOfFireMin",					1);
+ds_map_add(BomberGunData, "rateOfFireMax",					0);
+//-----------------------------------------------------------------------------
+ds_map_add(BomberGunData, "burstRate",						0);
+ds_map_add(BomberGunData, "burstShotsNumber",				0);
+//-----------------------------------------------------------------------------
+ds_map_add(BomberGunData, "castExecuteCount",				1);
+ds_map_add(BomberGunData, "castTime",						1);
+//-----------------------------------------------------------------------------
+ds_map_add(BomberGunData, "chargeExecuteCountMin",			1);
+ds_map_add(BomberGunData, "chargeExecuteCountMax",			0);
+ds_map_add(BomberGunData, "chargeTime",						1);
+ds_map_add(BomberGunData, "chargeWaitTime",					0);
+ds_map_add(BomberGunData, "chargeCostFactorMax",			1);
+ds_map_add(BomberGunData, "chargeDamageFactorMax",			4);
+ds_map_add(BomberGunData, "chargeHealFactorMax",			0);
+ds_map_add(BomberGunData, "chargeRateFactorMax",			0);
+ds_map_add(BomberGunData, "chargeBulletNumberFactorMax",	0);
+ds_map_add(BomberGunData, "chargeVelocityFactorMax",		20);
+ds_map_add(BomberGunData, "chargeShakeFactorMax",			1.25);
+//-----------------------------------------------------------------------------
+ds_map_add(BomberGunData, "spreadIsDynamic",				false);
+ds_map_add(BomberGunData, "spreadIsUniform",				true);
+ds_map_add(BomberGunData, "spreadAngleIncrFactor",			0.2);
+ds_map_add(BomberGunData, "spreadAngleDecrFactor",			0.0075);
+ds_map_add(BomberGunData, "spreadAngleMin",					1);
+ds_map_add(BomberGunData, "spreadAngleMax",					0);
+//-----------------------------------------------------------------------------
+ds_map_add(BomberGunData, "ammoID",							noone);
+ds_map_add(BomberGunData, "shootAmmoCost",					0);
+ds_map_add(BomberGunData, "reloadTime",						0);
+//-----------------------------------------------------------------------------
+ds_map_add(BomberGunData, "recoilPower",					0);
+ds_map_add(BomberGunData, "recoilFactor",					0);
+//-----------------------------------------------------------------------------
+ds_map_add(BomberGunData, "hitscanScaleY",					0);
+ds_map_add(BomberGunData, "projectileVelocityNoiseFactor",	0);
+ds_map_add(BomberGunData, "projectileVelocityCurrent",		3);
+ds_map_add(BomberGunData, "projectileVelocityMax",			3);
+ds_map_add(BomberGunData, "projectileAcceleration",			0);
+ds_map_add(BomberGunData, "projectileFriction",				0.05);
+ds_map_add(BomberGunData, "projectileBounceEnable",			false);
+ds_map_add(BomberGunData, "projectileBounceFriction",		2);
+//-----------------------------------------------------------------------------
+ds_map_add(BomberGunData, "isShackingCamera",				false);
+ds_map_add(BomberGunData, "angularShakeEnabled",			false);
+ds_map_add(BomberGunData, "shakeValue",						0.75);
+ds_map_add(BomberGunData, "shotShakeFactor",				0.05);
 #endregion
