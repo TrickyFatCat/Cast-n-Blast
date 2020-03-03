@@ -17,6 +17,7 @@ if (dealingDamage && !GameIsPaused())
 	
 	collision_circle_list(x, y, explosionRadius, obj_Barrel, true, true, _targetsList, true);
 	collision_circle_list(x, y, explosionRadius, obj_Mine, true, true, _targetsList, true);
+	collision_circle_list(x, y, explosionRadius, obj_Bomb, true, true, _targetsList, true);
 	
 	if (!ds_list_empty(_targetsList))
 	{
@@ -53,6 +54,10 @@ if (dealingDamage && !GameIsPaused())
 							
 						case obj_Mine:
 							DestroyMine(_target);
+						break;
+						
+						case obj_Bomb:
+							DestroyBomb(_target);
 						break;
 					}
 				}

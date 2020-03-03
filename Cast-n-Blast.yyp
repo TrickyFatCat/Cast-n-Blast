@@ -2919,6 +2919,14 @@
             }
         },
         {
+            "Key": "cee33327-ed76-4568-b1ac-9f784b4efeff",
+            "Value": {
+                "id": "7069604f-8044-4f53-98e8-56e1dc2d7ab9",
+                "resourcePath": "scripts\\DestroyBomb\\DestroyBomb.yy",
+                "resourceType": "GMScript"
+            }
+        },
+        {
             "Key": "cf61d2b7-350d-49f1-9ace-dbcbdaa87ce0",
             "Value": {
                 "id": "8bd25081-19ae-4714-9088-ca0094ecd908",
@@ -3740,6 +3748,7 @@
         "ef7732c5-c70c-457f-8e02-3e784dd28205",
         "47ac007c-12eb-4257-aa98-0f6c361a7ce9",
         "8b6c5121-4244-4f17-8831-ad31141c5049",
+        "cee33327-ed76-4568-b1ac-9f784b4efeff",
         "c697a9df-adc3-4c02-a7b2-ca6552b40584",
         "6f871991-7b40-45c7-87e7-0140d3d36f9e",
         "6c7b9f3c-0cdc-4b43-a73b-e0d88cefd918",

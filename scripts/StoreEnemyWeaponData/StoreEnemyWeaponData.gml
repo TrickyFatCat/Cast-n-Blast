@@ -476,7 +476,7 @@ ds_map_add(BomberGunData, "spreadIsDynamic",				false);
 ds_map_add(BomberGunData, "spreadIsUniform",				false);
 ds_map_add(BomberGunData, "spreadAngleIncrFactor",			0.2);
 ds_map_add(BomberGunData, "spreadAngleDecrFactor",			0.0075);
-ds_map_add(BomberGunData, "spreadAngleMin",					15);
+ds_map_add(BomberGunData, "spreadAngleMin",					45);
 ds_map_add(BomberGunData, "spreadAngleMax",					0);
 //-----------------------------------------------------------------------------
 ds_map_add(BomberGunData, "ammoID",							noone);
