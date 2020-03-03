@@ -21,7 +21,6 @@ switch (mainWeapon.currentCastState)
 		else
 		{
 			isShooting = true;
-			sprite_index = spr_fighter_startAttack;
 			previousScaleX = sign(drawScaleX);
 		}
 	break;
@@ -29,7 +28,7 @@ switch (mainWeapon.currentCastState)
 	case CastState.Process:
 		drawScaleY = LerpTimeFactor(1, 1.5, mainWeapon.castProgress);
 		drawScaleX = drawScaleY * previousScaleX;
-		sprite_index = spr_fighter_startAttack;
+		//sprite_index = spr_fighter_startAttack;
 		mainWeapon.directionCurrent = CalculateDirectionToPlayer();
 	break;
 	

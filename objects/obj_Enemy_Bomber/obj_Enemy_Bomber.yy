@@ -71,7 +71,7 @@
             "mvc": "1.0",
             "objectId": "c0b37de0-4e9d-4cb9-81f9-922df5f3bea7",
             "propertyId": "e991cfc4-f911-4ac0-a882-dc6126b5da6f",
-            "value": "spr_fighter_idle"
+            "value": "spr_bomber"
         },
         {
             "id": "bfc66a4e-4bcb-40f3-942d-047e1fb857e7",
@@ -79,7 +79,7 @@
             "mvc": "1.0",
             "objectId": "c0b37de0-4e9d-4cb9-81f9-922df5f3bea7",
             "propertyId": "ba50de28-c2d6-4ef9-8e2e-9f6e82e05142",
-            "value": "spr_fighter_walk"
+            "value": "spr_bomber"
         },
         {
             "id": "bb5da737-3353-4444-be7a-3f8ac76aad07",
@@ -143,7 +143,7 @@
             "mvc": "1.0",
             "objectId": "afff8e58-95bc-4515-9151-ed5722abe174",
             "propertyId": "7d56f573-3466-48b3-8bfa-eff41ec6884e",
-            "value": "EnemyWeapon.FighterGun"
+            "value": "EnemyWeapon.BomberGun"
         }
     ],
     "parentObjectId": "afff8e58-95bc-4515-9151-ed5722abe174",
@@ -162,6 +162,6 @@
     "physicsStartAwake": true,
     "properties": null,
     "solid": false,
-    "spriteId": "a6e1cc32-b868-4247-bca3-8d245a32d733",
+    "spriteId": "50f1a4f7-bc76-431c-9fc5-c4c78d40e13a",
     "visible": true
 }

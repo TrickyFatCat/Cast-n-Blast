@@ -441,7 +441,7 @@ ds_map_add(BomberGunData, "laserSightEnabled",				false);
 ds_map_add(BomberGunData, "isAuto",							true);
 ds_map_add(BomberGunData, "currentShootMode",				ShootMode.Cast);
 //-----------------------------------------------------------------------------
-ds_map_add(BomberGunData, "bulletObject",					obj_EnemyRocket);
+ds_map_add(BomberGunData, "bulletObject",					obj_Bomb);
 ds_map_add(BomberGunData, "bulletNumber",					1);
 ds_map_add(BomberGunData, "bulletSpawnPointOffset",			19);
 //-----------------------------------------------------------------------------
@@ -457,7 +457,7 @@ ds_map_add(BomberGunData, "rateOfFireMax",					0);
 ds_map_add(BomberGunData, "burstRate",						0);
 ds_map_add(BomberGunData, "burstShotsNumber",				0);
 //-----------------------------------------------------------------------------
-ds_map_add(BomberGunData, "castExecuteCount",				1);
+ds_map_add(BomberGunData, "castExecuteCount",				3);
 ds_map_add(BomberGunData, "castTime",						1);
 //-----------------------------------------------------------------------------
 ds_map_add(BomberGunData, "chargeExecuteCountMin",			1);
@@ -473,10 +473,10 @@ ds_map_add(BomberGunData, "chargeVelocityFactorMax",		20);
 ds_map_add(BomberGunData, "chargeShakeFactorMax",			1.25);
 //-----------------------------------------------------------------------------
 ds_map_add(BomberGunData, "spreadIsDynamic",				false);
-ds_map_add(BomberGunData, "spreadIsUniform",				true);
+ds_map_add(BomberGunData, "spreadIsUniform",				false);
 ds_map_add(BomberGunData, "spreadAngleIncrFactor",			0.2);
 ds_map_add(BomberGunData, "spreadAngleDecrFactor",			0.0075);
-ds_map_add(BomberGunData, "spreadAngleMin",					1);
+ds_map_add(BomberGunData, "spreadAngleMin",					15);
 ds_map_add(BomberGunData, "spreadAngleMax",					0);
 //-----------------------------------------------------------------------------
 ds_map_add(BomberGunData, "ammoID",							noone);
@@ -489,11 +489,11 @@ ds_map_add(BomberGunData, "recoilFactor",					0);
 ds_map_add(BomberGunData, "hitscanScaleY",					0);
 ds_map_add(BomberGunData, "projectileVelocityNoiseFactor",	0);
 ds_map_add(BomberGunData, "projectileVelocityCurrent",		3);
-ds_map_add(BomberGunData, "projectileVelocityMax",			3);
+ds_map_add(BomberGunData, "projectileVelocityMax",			0);
 ds_map_add(BomberGunData, "projectileAcceleration",			0);
-ds_map_add(BomberGunData, "projectileFriction",				0.05);
+ds_map_add(BomberGunData, "projectileFriction",				0);
 ds_map_add(BomberGunData, "projectileBounceEnable",			false);
-ds_map_add(BomberGunData, "projectileBounceFriction",		2);
+ds_map_add(BomberGunData, "projectileBounceFriction",		0);
 //-----------------------------------------------------------------------------
 ds_map_add(BomberGunData, "isShackingCamera",				false);
 ds_map_add(BomberGunData, "angularShakeEnabled",			false);
