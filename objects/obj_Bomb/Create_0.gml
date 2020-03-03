@@ -5,6 +5,8 @@ event_inherited();
 #macro ExecuteIdle event_user(2);
 #macro ExecuteDestruction event_user(3);
 
+SetShadowParameters(true, 1);
+
 //States
 enum BombState
 {
@@ -18,18 +20,16 @@ currentState = BombState.Drop;
 
 //Drop parameters
 isBounced = false;
-dropDistance = 64;
-initialPosition = [];
-initialPosition[0] = x;
-initialPosition[1] = y;
-targetX = noone;
-targetY = noone;
+dropDistance = 96;
+initialX = x;
+initialY = y;
+dropProgress = 0;
 
 //Life span time
-lifespanTime = SetTime(5);
+lifespanTime = SetTime(2.5);
 lifespanTimer = 0;
 
-activationTime = SetTime(0.75);
+activationTime = SetTime(0.5);
 activationTimer = 0;
 
 destructionDelayTime = SetTime(0.15);

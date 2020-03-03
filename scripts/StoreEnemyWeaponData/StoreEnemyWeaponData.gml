@@ -451,7 +451,7 @@ ds_map_add(BomberGunData, "heal",							0);
 ds_map_add(BomberGunData, "rateOfFireAccelerated",			false);
 ds_map_add(BomberGunData, "rateOfFireIncrStep",				0);
 ds_map_add(BomberGunData, "rateOfFireDecrStep",				0);
-ds_map_add(BomberGunData, "rateOfFireMin",					1);
+ds_map_add(BomberGunData, "rateOfFireMin",					4);
 ds_map_add(BomberGunData, "rateOfFireMax",					0);
 //-----------------------------------------------------------------------------
 ds_map_add(BomberGunData, "burstRate",						0);

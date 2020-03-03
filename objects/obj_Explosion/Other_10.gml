@@ -42,6 +42,10 @@ if (dealingDamage && !GameIsPaused())
 								directionCurrent = point_direction(x, y, other.x, other.y) - 180;
 							}
 						break;
+						
+						case obj_Bomb:
+							DestroyBomb(_target);
+						break;
 					}
 						
 					var _parent = object_get_parent(object_index);
@@ -54,10 +58,6 @@ if (dealingDamage && !GameIsPaused())
 							
 						case obj_Mine:
 							DestroyMine(_target);
-						break;
-						
-						case obj_Bomb:
-							DestroyBomb(_target);
 						break;
 					}
 				}

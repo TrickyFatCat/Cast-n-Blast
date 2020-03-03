@@ -17,5 +17,4 @@ switch currentState
 }
 
 draw_set_alpha(1);
-
 event_inherited();

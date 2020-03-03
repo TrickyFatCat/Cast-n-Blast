@@ -39,7 +39,7 @@ ds_map_add(FireBallData, "currentShootMode",				ShootMode.Normal);
 //-----------------------------------------------------------------------------
 ds_map_add(FireBallData, "bulletObject",					obj_PlayerFireBall);
 ds_map_add(FireBallData, "bulletNumber",					1);
-ds_map_add(FireBallData, "bulletSpawnPointOffset",			32);
+ds_map_add(FireBallData, "bulletSpawnPointOffset",			28);
 //-----------------------------------------------------------------------------
 ds_map_add(FireBallData, "damage",							10);
 ds_map_add(FireBallData, "heal",							0);

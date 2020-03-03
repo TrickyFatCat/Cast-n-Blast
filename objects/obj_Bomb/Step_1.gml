@@ -2,18 +2,14 @@
 switch currentState
 {
 	case BombState.Drop:
-		if (targetX == noone && targetY == noone)
-		{
-			targetX = initialPosition[0] + lengthdir_x(dropDistance, directionCurrent);
-			targetY = initialPosition[1] + lengthdir_y(dropDistance, directionCurrent);
-			drawAngle = 0;
-		}
+		drawAngle = 0;
+		var _coveredDistance = point_distance(x, y, initialX, initialY);
 		
-		var _distanceToTarget = point_distance(x, y, targetX, targetY);
-		
-		if (_distanceToTarget > 3)
+		if (dropProgress < 1)
 		{
 			event_inherited();
+			z = LerpTimeFactor(0, 64, sin(pi * dropProgress));
+			dropProgress = _coveredDistance / dropDistance;
 		}
 		else
 		{
