@@ -443,7 +443,7 @@ ds_map_add(BomberGunData, "currentShootMode",				ShootMode.Cast);
 //-----------------------------------------------------------------------------
 ds_map_add(BomberGunData, "bulletObject",					obj_Bomb);
 ds_map_add(BomberGunData, "bulletNumber",					1);
-ds_map_add(BomberGunData, "bulletSpawnPointOffset",			19);
+ds_map_add(BomberGunData, "bulletSpawnPointOffset",			0);
 //-----------------------------------------------------------------------------
 ds_map_add(BomberGunData, "damage",							5);
 ds_map_add(BomberGunData, "heal",							0);

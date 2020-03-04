@@ -77,3 +77,4 @@ moveSoundTimer = 0
 previousScaleX = 1;
 
 isShooting = false;
+isWaiting = false;

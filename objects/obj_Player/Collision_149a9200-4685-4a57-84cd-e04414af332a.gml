@@ -6,7 +6,7 @@ if (!isInvulnerable && other.collisionEnable)
 	CheckPlayerHP;
 }
 
-if (collisionEnable)
+if (collisionEnable && other.collisionEnable)
 {
 	instance_destroy(other);
 }

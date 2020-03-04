@@ -1,5 +1,7 @@
 event_inherited();
 
+draw_text(x, y, currentState);
+
 //if (mainWeapon.currentCastState == CastState.Process)
 //{
 //	var _scaleX = LerpTimeFactor(0, 1, mainWeapon.castProgress);
