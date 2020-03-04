@@ -124,6 +124,14 @@
             "objectId": "afff8e58-95bc-4515-9151-ed5722abe174",
             "propertyId": "7d56f573-3466-48b3-8bfa-eff41ec6884e",
             "value": "EnemyWeapon.TrooperGun"
+        },
+        {
+            "id": "24aec32b-e516-4ec0-bbf6-cc99e1c4cb8e",
+            "modelName": "GMOverriddenProperty",
+            "mvc": "1.0",
+            "objectId": "afff8e58-95bc-4515-9151-ed5722abe174",
+            "propertyId": "3bbe149d-c474-40a3-b50d-be2b280ad9c3",
+            "value": "2"
         }
     ],
     "parentObjectId": "afff8e58-95bc-4515-9151-ed5722abe174",

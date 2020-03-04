@@ -144,6 +144,14 @@
             "objectId": "afff8e58-95bc-4515-9151-ed5722abe174",
             "propertyId": "7d56f573-3466-48b3-8bfa-eff41ec6884e",
             "value": "EnemyWeapon.RocketGun"
+        },
+        {
+            "id": "37a78845-e6f2-42f9-89b4-8547de55efdd",
+            "modelName": "GMOverriddenProperty",
+            "mvc": "1.0",
+            "objectId": "afff8e58-95bc-4515-9151-ed5722abe174",
+            "propertyId": "3bbe149d-c474-40a3-b50d-be2b280ad9c3",
+            "value": "2"
         }
     ],
     "parentObjectId": "afff8e58-95bc-4515-9151-ed5722abe174",

@@ -350,6 +350,20 @@
             "value": "0",
             "varName": "ultimatePointsDropFactor",
             "varType": 0
+        },
+        {
+            "id": "3bbe149d-c474-40a3-b50d-be2b280ad9c3",
+            "modelName": "GMObjectProperty",
+            "mvc": "1.0",
+            "listItems": null,
+            "multiselect": false,
+            "rangeEnabled": false,
+            "rangeMax": 10,
+            "rangeMin": 0,
+            "resourceFilter": 1023,
+            "value": "0",
+            "varName": "waitingTime",
+            "varType": 0
         }
     ],
     "solid": false,

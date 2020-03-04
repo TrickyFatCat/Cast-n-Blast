@@ -78,3 +78,6 @@ previousScaleX = 1;
 
 isShooting = false;
 isWaiting = false;
+waitTime = SetTime(waitingTime);
+stayTimer = 0;
+stayTime = SetTime(0.75);

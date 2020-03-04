@@ -10,7 +10,7 @@ if (_distanceToPlayer > attackRadiusMax)
 {
 	currentTarget = TargetToSearch.Player;
 }
-else
+else if (_distanceToPlayer < attackRadiusMax || isWaiting)
 {
 	currentTarget = TargetToSearch.Self;
 }
@@ -18,9 +18,9 @@ else
 switch (currentTarget)
 {
 	case TargetToSearch.Self:
-		var _targetDirection = irandom_range(0.0, 359.0);
-		_pointX = x + lengthdir_x(changePositionRadius, _targetDirection);
-		_pointY = y + lengthdir_y(changePositionRadius, _targetDirection);
+		var _targetDirection = CalculateDirectionToPlayer() + choose(-90, 90);
+		_pointX = playerX + lengthdir_x(changePositionRadius, _targetDirection);
+		_pointY = playerY + lengthdir_y(changePositionRadius, _targetDirection);
 	break;
 	
 	case TargetToSearch.Player:

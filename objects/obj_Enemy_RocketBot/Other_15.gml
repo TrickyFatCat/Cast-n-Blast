@@ -1,5 +1,3 @@
-/// @description Insert description here
-
 // Inherit the parent event
 event_inherited();
 
@@ -8,23 +6,6 @@ var _waitTime = SetTime(4);
 switch (mainWeapon.currentCastState)
 {
 	case CastState.Idle:
-		var _timeIsOver = CheckTimer(waitTimer, _waitTime)
-		
-		if (mainWeapon.shotCount == mainWeapon.castExecuteCount)
-		{
-			waitTimer += global.TimeFactor;
-	
-			if (_timeIsOver)
-			{
-				waitTimer = 0;
-				mainWeapon.shotCount = 0;
-			}
-		}
-		else
-		{
-			isShooting = true;
-			previousScaleX = sign(drawScaleX);
-		}
 	break;
 	
 	case CastState.Process:
@@ -38,6 +19,7 @@ switch (mainWeapon.currentCastState)
 		if (mainWeapon.shotCount == mainWeapon.castExecuteCount)
 		{
 			isShooting = false;
+			isWaiting = true;
 			currentState = EnemyState.TargetSearch;
 		}
 	break;
