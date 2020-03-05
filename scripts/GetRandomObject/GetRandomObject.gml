@@ -11,27 +11,36 @@ var _maxWeight = SetMaxWeight(_dataTable);
 
 var _diceRoll = irandom_range(1, _maxWeight);
 
-for (var i = 0; i < _arrayLength; i++)
+var _currentNumber = 0;
+var _maxNumber = 0;
+
+while (_diceRoll > _currentWeight)
 {
-	_objectData = _dataTable[i];
-	
-	var _object = GetObjectID(_objectData);
-	var _weight = GetObjectWeight(_objectData);
-	
-	_currentWeight += _weight;
-	
-	if (_diceRoll <= _currentWeight)
+	for (var i = 0; i < _arrayLength; i++)
 	{
-		if (is_array(_object))
+		_objectData = _dataTable[i];
+	
+		var _object = GetObjectID(_objectData);
+		var _weight = GetObjectWeight(_objectData);
+		var _maxNumber = GetObjectNumber(_objectData);
+		var _currentNumber = GetEnemyCount(_object);
+		
+		if (_currentNumber < _maxNumber)
 		{
-			return _object;
-		}
-		else
-		{
-			break;
+			_currentWeight += _weight;
+			
+			if (_diceRoll <= _currentWeight)
+			{
+				break;
+			}
 		}
 	}
 }
+
+	if (is_array(_object))
+	{
+		return _object;
+	}
 
 _result = ds_map_create();
 ds_map_copy(_result, _objectData);

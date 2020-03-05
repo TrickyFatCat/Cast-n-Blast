@@ -30,7 +30,7 @@ velocityY = 0.0;
 // Gravity immitation parameters
 isJumping = false;
 z = 0.0;
-shadowMaxZ = 16;
+shadowMaxZ = 32;
 velocityZ = 0.4;
 offsetY = 0.0;
 jumpInitialState = noone;

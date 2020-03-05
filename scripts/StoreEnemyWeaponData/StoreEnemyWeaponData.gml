@@ -488,7 +488,7 @@ ds_map_add(BomberGunData, "recoilFactor",					0);
 //-----------------------------------------------------------------------------
 ds_map_add(BomberGunData, "hitscanScaleY",					0);
 ds_map_add(BomberGunData, "projectileVelocityNoiseFactor",	0);
-ds_map_add(BomberGunData, "projectileVelocityCurrent",		3);
+ds_map_add(BomberGunData, "projectileVelocityCurrent",		6);
 ds_map_add(BomberGunData, "projectileVelocityMax",			0);
 ds_map_add(BomberGunData, "projectileAcceleration",			0);
 ds_map_add(BomberGunData, "projectileFriction",				0);

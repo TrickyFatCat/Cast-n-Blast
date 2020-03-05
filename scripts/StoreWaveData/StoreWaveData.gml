@@ -37,7 +37,7 @@ var _enemyNumber = 8;
 
 var _wave = CreateDataMap(_enemyNumber);
 SetObjectData(_wave[0], obj_Enemy_Kamikaze,		0,	0);
-SetObjectData(_wave[1], obj_Enemy_Fighter,		0,	0);
+SetObjectData(_wave[1], obj_Enemy_Fighter,		1,	11111111);
 SetObjectData(_wave[2], obj_Enemy_DarkMage,		0,	0);
 SetObjectData(_wave[3], obj_Enemy_Trooper,		0,	0);
 SetObjectData(_wave[4], obj_Enemy_Ninja,		0,	0);
@@ -53,7 +53,7 @@ var _enemyNumber = 8;
 
 var _wave = CreateDataMap(_enemyNumber);
 SetObjectData(_wave[0], obj_Enemy_Kamikaze,		0,	0);
-SetObjectData(_wave[1], obj_Enemy_Fighter,		0,	0);
+SetObjectData(_wave[1], obj_Enemy_Fighter,		1,	111111111);
 SetObjectData(_wave[2], obj_Enemy_DarkMage,		0,	0);
 SetObjectData(_wave[3], obj_Enemy_Trooper,		0,	0);
 SetObjectData(_wave[4], obj_Enemy_Ninja,		0,	0);
@@ -69,7 +69,7 @@ var _enemyNumber = 8;
 
 var _wave = CreateDataMap(_enemyNumber);
 SetObjectData(_wave[0], obj_Enemy_Kamikaze,		0,	0);
-SetObjectData(_wave[1], obj_Enemy_Fighter,		0,	0);
+SetObjectData(_wave[1], obj_Enemy_Fighter,		1,	111111111);
 SetObjectData(_wave[2], obj_Enemy_DarkMage,		0,	0);
 SetObjectData(_wave[3], obj_Enemy_Trooper,		0,	0);
 SetObjectData(_wave[4], obj_Enemy_Ninja,		0,	0);
