@@ -20,7 +20,7 @@ currentState = BombState.Drop;
 
 //Drop parameters
 isBounced = false;
-dropDistance = 96;
+dropDistance = CalculateDistanceToPlayer();
 initialX = x;
 initialY = y;
 dropProgress = 0;

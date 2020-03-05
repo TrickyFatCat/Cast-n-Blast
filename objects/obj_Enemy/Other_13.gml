@@ -1,5 +1,10 @@
 /// @description StateTargetSearchController
 
+if (isStaying)
+{
+	return;
+}
+
 var _cellSize = global.PathCellWidth;
 var _pointX;
 var _pointY;

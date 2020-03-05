@@ -14,7 +14,6 @@ switch (mainWeapon.currentCastState)
 	case CastState.Process:
 		drawScaleY = LerpTimeFactor(1, 1.5, mainWeapon.castProgress);
 		drawScaleX = drawScaleY * previousScaleX;
-		//sprite_index = spr_fighter_startAttack;
 		mainWeapon.directionCurrent = CalculateDirectionToPlayer();
 	break;
 	

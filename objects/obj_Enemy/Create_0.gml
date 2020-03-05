@@ -80,4 +80,5 @@ isShooting = false;
 isWaiting = false;
 waitTime = SetTime(waitingTime);
 stayTimer = 0;
-stayTime = SetTime(0.75);
+stayTime = SetTime(1);
+isStaying = false;

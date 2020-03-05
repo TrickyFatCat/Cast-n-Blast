@@ -28,5 +28,9 @@ else
 {
 	pathSpeed = 0;
 	velocity = 0;
+	if (isWaiting)
+	{
+		isStaying = true;
+	}
 	currentState = EnemyState.Action;
 }

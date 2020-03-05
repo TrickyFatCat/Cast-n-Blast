@@ -27,3 +27,15 @@ else if (isShooting == false && waitTime > 0)
 	isShooting = true;
 	previousScaleX = sign(drawScaleX);
 }
+
+if (isStaying)
+{
+	stayTimer += global.TimeFactor;
+	var _timeIsOver = CheckTimer(stayTimer, stayTime);
+	
+	if (_timeIsOver)
+	{
+		stayTimer = 0;
+		isStaying = false;
+	}
+}
