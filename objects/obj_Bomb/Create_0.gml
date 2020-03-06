@@ -40,4 +40,4 @@ drawColour = c_gray;
 drawOutline = false;
 
 explosionRadius = 32;
-collisionEnable = false;
+currentVelocityZ = 6;

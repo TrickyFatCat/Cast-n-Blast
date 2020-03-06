@@ -1,18 +1,21 @@
 //State machine
+
+event_inherited();
+var _gravity = 0.4;
+
 switch currentState
 {
-	case BombState.Drop:
-		drawAngle = 0;
-		var _coveredDistance = point_distance(x, y, initialX, initialY);
-		
-		if (dropProgress < 1)
+	case BombState.Drop:	
+		if (z + currentVelocityZ >= 0)
 		{
-			event_inherited();
-			z = LerpTimeFactor(0, 64, sin(pi * dropProgress));
-			dropProgress = _coveredDistance / dropDistance;
+			z += currentVelocityZ;
+			currentVelocityZ -= _gravity;
+			SetJumpShadowAlpha();
 		}
 		else
 		{
+			z = 0;
+			velocityZ = 0;
 			currentState = BombState.Activation;
 		}
 	break;
