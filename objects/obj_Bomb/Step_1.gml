@@ -6,10 +6,10 @@ var _gravity = 0.4;
 switch currentState
 {
 	case BombState.Drop:	
-		if (z + currentVelocityZ >= 0)
+		if (z + velocityZ >= 0)
 		{
-			z += currentVelocityZ;
-			currentVelocityZ -= _gravity;
+			z += velocityZ;
+			velocityZ -= _gravity * global.TimeFactor;
 			SetJumpShadowAlpha();
 		}
 		else

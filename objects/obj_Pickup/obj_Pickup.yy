@@ -23,6 +23,16 @@
             "enumb": 0,
             "eventtype": 3,
             "m_owner": "63339610-5eb6-4bff-ada1-eb90c64f2da6"
+        },
+        {
+            "id": "fb3de3a1-019a-455b-a704-b2f7c37ad1d4",
+            "modelName": "GMEvent",
+            "mvc": "1.0",
+            "IsDnD": false,
+            "collisionObjectId": "00000000-0000-0000-0000-000000000000",
+            "enumb": 10,
+            "eventtype": 7,
+            "m_owner": "63339610-5eb6-4bff-ada1-eb90c64f2da6"
         }
     ],
     "maskSpriteId": "00000000-0000-0000-0000-000000000000",
@@ -61,7 +71,7 @@
             "rangeMax": 10,
             "rangeMin": 0,
             "resourceFilter": 1023,
-            "value": "0.5",
+            "value": "0.1",
             "varName": "groundFriction",
             "varType": 0
         },
@@ -75,7 +85,7 @@
             "rangeMax": 10,
             "rangeMin": 0,
             "resourceFilter": 1023,
-            "value": "6",
+            "value": "3",
             "varName": "velocity",
             "varType": 0
         }

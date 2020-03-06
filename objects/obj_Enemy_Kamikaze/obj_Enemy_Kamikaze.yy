@@ -128,6 +128,14 @@
             "objectId": "afff8e58-95bc-4515-9151-ed5722abe174",
             "propertyId": "0aff4bff-4b6c-4771-addc-24096d57d6b5",
             "value": "EnemyIndex.Kamikaze"
+        },
+        {
+            "id": "2e96ed8b-254c-4042-a51f-d86410acdcae",
+            "modelName": "GMOverriddenProperty",
+            "mvc": "1.0",
+            "objectId": "c0b37de0-4e9d-4cb9-81f9-922df5f3bea7",
+            "propertyId": "a1b60e3e-d1b6-4fc9-8bf2-10d2b12eb093",
+            "value": "1"
         }
     ],
     "parentObjectId": "afff8e58-95bc-4515-9151-ed5722abe174",

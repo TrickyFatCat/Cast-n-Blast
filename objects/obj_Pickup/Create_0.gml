@@ -3,6 +3,8 @@
 // Inherit the parent event
 event_inherited();
 
+#macro MovePickup event_user(0)
+
 //States
 enum PickupState
 {
@@ -12,7 +14,7 @@ enum PickupState
 	Destroy
 }
 
-SetShadowParameters(true,0.5);
+SetShadowParameters(true, 1);
 
 currentState = PickupState.Drop;
 
@@ -28,3 +30,4 @@ pullVelocityCurrent = 0;
 //Life span time
 lifespanTime = SetTime(7);
 lifespanTimer = 0;
+velocityZ = 4;

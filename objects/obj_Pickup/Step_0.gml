@@ -1,25 +1,23 @@
 // Inherit the parent event
 event_inherited();
+MovePickup;
+var _gravity = 0.4;
 
 //State machine
 switch currentState
 {
 	case PickupState.Drop:
-		MoveObject(false);
-
-		velocity = CalculateDeceleratedVelocity(directionCurrent, velocity, groundFriction);
-		
-		if (velocity <= 0)
+		if (z + velocityZ >= 0)
 		{
-			currentState = PickupState.Idle;
+			z += velocityZ;
+			velocityZ -= _gravity * global.TimeFactor;
+			SetJumpShadowAlpha();
 		}
-
-		CheckBouncingCollision(obj_Wall);
-
-		if (isBounced)
+		else
 		{
-			directionCurrent = point_direction(0, 0, velocityX, velocityY);
-			isBounced = !isBounced;
+			z = 0;
+			velocityZ = 0;
+			currentState = PickupState.Idle;
 		}
 	break;
 	
