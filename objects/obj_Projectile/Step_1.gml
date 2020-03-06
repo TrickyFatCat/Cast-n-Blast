@@ -12,7 +12,7 @@ if (acceleration > 0)
 else if (groundFriction > 0)
 {
 	velocity = CalculateDeceleratedVelocity(directionCurrent, velocity, groundFriction);
-	if (velocity == 0)
+	if (velocity == 0 && destroyOnZeroVelocity)
 	{
 		instance_destroy(id);
 	}

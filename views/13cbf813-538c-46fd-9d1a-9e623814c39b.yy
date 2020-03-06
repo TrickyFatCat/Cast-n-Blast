@@ -9,7 +9,7 @@
         "f99509f9-87d6-47c6-8ca5-0217216f4708"
     ],
     "filterType": "GMSprite",
-    "folderName": "SmallDemon",
+    "folderName": "Imp",
     "isDefaultView": false,
     "localisedFolderName": ""
 }

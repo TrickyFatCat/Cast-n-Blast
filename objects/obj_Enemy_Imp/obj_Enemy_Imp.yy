@@ -90,14 +90,6 @@
             "value": "1.5"
         },
         {
-            "id": "1fa435f3-5732-4070-bf66-de24a97e6894",
-            "modelName": "GMOverriddenProperty",
-            "mvc": "1.0",
-            "objectId": "afff8e58-95bc-4515-9151-ed5722abe174",
-            "propertyId": "1ca7224f-7c34-4831-9429-9b546a05328a",
-            "value": "32"
-        },
-        {
             "id": "1b432516-c0fc-44ad-ad9d-ddb50828605b",
             "modelName": "GMOverriddenProperty",
             "mvc": "1.0",
@@ -114,28 +106,12 @@
             "value": "48"
         },
         {
-            "id": "b644016f-a35f-4ea8-9a7c-3df9272214f5",
-            "modelName": "GMOverriddenProperty",
-            "mvc": "1.0",
-            "objectId": "afff8e58-95bc-4515-9151-ed5722abe174",
-            "propertyId": "39caf948-0964-476e-b013-d3d0de30877d",
-            "value": "32"
-        },
-        {
             "id": "3b4a0317-2f53-4d0c-899b-713fb50ffd98",
             "modelName": "GMOverriddenProperty",
             "mvc": "1.0",
             "objectId": "afff8e58-95bc-4515-9151-ed5722abe174",
             "propertyId": "7d56f573-3466-48b3-8bfa-eff41ec6884e",
             "value": "EnemyWeapon.FighterGun"
-        },
-        {
-            "id": "0b201c74-d175-4162-b05a-8a0c91e79c54",
-            "modelName": "GMOverriddenProperty",
-            "mvc": "1.0",
-            "objectId": "afff8e58-95bc-4515-9151-ed5722abe174",
-            "propertyId": "3bbe149d-c474-40a3-b50d-be2b280ad9c3",
-            "value": "4"
         },
         {
             "id": "d4a94278-1078-4c28-9679-b3e2057fc966",

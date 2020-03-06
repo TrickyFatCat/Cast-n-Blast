@@ -2,6 +2,7 @@
 
 // Inherit the parent event
 event_inherited();
+SetEnemyData(enemyIndex);
 
 // User Events
 #macro CheckEntityHP			event_user(0)
@@ -82,5 +83,3 @@ waitTime = SetTime(waitingTime);
 stayTimer = 0;
 stayTime = SetTime(1);
 isStaying = false;
-
-SetEnemyData(enemyIndex);

@@ -115,6 +115,20 @@
             "varType": 0
         },
         {
+            "id": "8280bee1-3153-4a95-ac86-801da5e6382f",
+            "modelName": "GMObjectProperty",
+            "mvc": "1.0",
+            "listItems": null,
+            "multiselect": false,
+            "rangeEnabled": false,
+            "rangeMax": 10,
+            "rangeMin": 0,
+            "resourceFilter": 1023,
+            "value": "True",
+            "varName": "destroyOnZeroVelocity",
+            "varType": 3
+        },
+        {
             "id": "cead8487-9702-4ce1-b6b4-a2ef52495f8d",
             "modelName": "GMObjectProperty",
             "mvc": "1.0",

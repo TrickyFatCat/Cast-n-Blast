@@ -98,14 +98,6 @@
             "value": "spr_kamikaze_walk"
         },
         {
-            "id": "27868a64-5279-4cee-8be9-1aa4bc6ac035",
-            "modelName": "GMOverriddenProperty",
-            "mvc": "1.0",
-            "objectId": "afff8e58-95bc-4515-9151-ed5722abe174",
-            "propertyId": "1ca7224f-7c34-4831-9429-9b546a05328a",
-            "value": "128"
-        },
-        {
             "id": "b46449cf-20b7-4afc-832f-5a006ca929fc",
             "modelName": "GMOverriddenProperty",
             "mvc": "1.0",

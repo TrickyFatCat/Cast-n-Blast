@@ -135,6 +135,14 @@
             }
         },
         {
+            "Key": "0cc40996-78d6-4b29-b750-808c1e4ce95d",
+            "Value": {
+                "id": "3e007e7f-eeb1-4904-82c8-b70ca023bc0f",
+                "resourcePath": "views\\0cc40996-78d6-4b29-b750-808c1e4ce95d.yy",
+                "resourceType": "GMFolder"
+            }
+        },
+        {
             "Key": "0d2b8dbc-0be6-4ae8-b554-65cce50bdcd0",
             "Value": {
                 "id": "bbd2eb4c-a300-4874-9940-9d56a8fae59d",
@@ -975,6 +983,14 @@
             }
         },
         {
+            "Key": "4462090a-f97b-4b1f-ae5e-4f551e6a17c7",
+            "Value": {
+                "id": "ddf5c226-c375-416f-83e9-0dd58ce6c803",
+                "resourcePath": "sprites\\spr_enemy_bomber_run\\spr_enemy_bomber_run.yy",
+                "resourceType": "GMSprite"
+            }
+        },
+        {
             "Key": "44a6d039-4112-46e3-9798-c50d872ae7dc",
             "Value": {
                 "id": "9099c3c8-c738-4c73-bbca-318c6e816758",
@@ -1204,14 +1220,6 @@
                 "id": "c10747e5-a8a8-488d-ac0d-e748bc715b15",
                 "resourcePath": "views\\50d8e77c-9a6f-4c9e-bced-800f0cb4cc66.yy",
                 "resourceType": "GMFolder"
-            }
-        },
-        {
-            "Key": "50f1a4f7-bc76-431c-9fc5-c4c78d40e13a",
-            "Value": {
-                "id": "c0becade-5956-4a39-bb80-6eac10f8891e",
-                "resourcePath": "sprites\\spr_bomber\\spr_bomber.yy",
-                "resourceType": "GMSprite"
             }
         },
         {
@@ -2044,6 +2052,14 @@
                 "id": "4b66a702-331f-4713-8d84-27cef9cf5047",
                 "resourcePath": "scripts\\SetSpawnPause\\SetSpawnPause.yy",
                 "resourceType": "GMScript"
+            }
+        },
+        {
+            "Key": "8b03c758-7d9f-4e89-9b41-d25260a9ef68",
+            "Value": {
+                "id": "284748db-7340-485c-af2a-3cf95012efc7",
+                "resourcePath": "sprites\\spr_enemy_bomber_idle\\spr_enemy_bomber_idle.yy",
+                "resourceType": "GMSprite"
             }
         },
         {

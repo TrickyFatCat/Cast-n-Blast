@@ -10,11 +10,11 @@ if (mainWeapon != noone)
 	instance_destroy(mainWeapon);
 }
 
-var _number = irandom_range(1, 5);
+var _number = ultimatePointsDrop * 100;
 for (var i = 0; i < _number; i++)
 {
 	var _pickup = instance_create_layer(x, y, layer, obj_UltimatePointsPickup);
-	_pickup.ultimatePointsNumber = round((global.Player.maxUltimatePoints * ultimatePointsDropFactor) / _number);
+	_pickup.ultimatePointsNumber = round((global.Player.maxUltimatePoints * ultimatePointsDrop) / _number);
 }
 
 for (var i = 0; i < shieldPointsDrop; i++)

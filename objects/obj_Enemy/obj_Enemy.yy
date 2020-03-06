@@ -240,20 +240,6 @@
             "varType": 4
         },
         {
-            "id": "1ca7224f-7c34-4831-9429-9b546a05328a",
-            "modelName": "GMObjectProperty",
-            "mvc": "1.0",
-            "listItems": null,
-            "multiselect": false,
-            "rangeEnabled": false,
-            "rangeMax": 10,
-            "rangeMin": 0,
-            "resourceFilter": 1023,
-            "value": "0",
-            "varName": "aggroRadius",
-            "varType": 0
-        },
-        {
             "id": "398cee17-fe6c-4d39-aa01-00c4aaa8f7bc",
             "modelName": "GMObjectProperty",
             "mvc": "1.0",
@@ -291,7 +277,7 @@
             "rangeMax": 10,
             "rangeMin": 0,
             "resourceFilter": 1023,
-            "value": "0",
+            "value": "64",
             "varName": "changePositionRadius",
             "varType": 0
         },
@@ -347,7 +333,7 @@
             "rangeMax": 10,
             "rangeMin": 0,
             "resourceFilter": 1023,
-            "value": "0",
+            "value": "1.5",
             "varName": "waitingTime",
             "varType": 0
         }

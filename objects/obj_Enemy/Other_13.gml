@@ -24,8 +24,8 @@ switch (currentTarget)
 {
 	case TargetToSearch.Self:
 		var _targetDirection = CalculateDirectionToPlayer() + choose(-90, 90);
-		_pointX = playerX + lengthdir_x(changePositionRadius, _targetDirection);
-		_pointY = playerY + lengthdir_y(changePositionRadius, _targetDirection);
+		_pointX = x + lengthdir_x(changePositionRadius, _targetDirection);
+		_pointY = y + lengthdir_y(changePositionRadius, _targetDirection);
 	break;
 	
 	case TargetToSearch.Player:

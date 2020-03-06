@@ -12,7 +12,7 @@ if (collisionEnable && other.collisionEnable && other.object_index != obj_Bomb)
 }
 else if (other.object_index == obj_Bomb)
 {
-	if (other.currentState == BombState.Idle)
+	if (other.currentState > BombState.Drop)
 	{
 		instance_destroy(other);
 	}

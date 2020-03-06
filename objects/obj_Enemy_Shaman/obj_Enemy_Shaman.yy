@@ -90,14 +90,6 @@
             "value": "1.25"
         },
         {
-            "id": "61919621-d494-4c1e-8283-4cfac203dccb",
-            "modelName": "GMOverriddenProperty",
-            "mvc": "1.0",
-            "objectId": "afff8e58-95bc-4515-9151-ed5722abe174",
-            "propertyId": "1ca7224f-7c34-4831-9429-9b546a05328a",
-            "value": "32"
-        },
-        {
             "id": "7a1641a6-26fb-477c-9c9b-21a6abbc6ca5",
             "modelName": "GMOverriddenProperty",
             "mvc": "1.0",
@@ -114,28 +106,12 @@
             "value": "80"
         },
         {
-            "id": "1191e4b6-9375-4451-9fc9-235c7eac0da7",
-            "modelName": "GMOverriddenProperty",
-            "mvc": "1.0",
-            "objectId": "afff8e58-95bc-4515-9151-ed5722abe174",
-            "propertyId": "39caf948-0964-476e-b013-d3d0de30877d",
-            "value": "32"
-        },
-        {
             "id": "0bcf54a0-2c79-4eaf-a8cd-a60f3800533d",
             "modelName": "GMOverriddenProperty",
             "mvc": "1.0",
             "objectId": "afff8e58-95bc-4515-9151-ed5722abe174",
             "propertyId": "7d56f573-3466-48b3-8bfa-eff41ec6884e",
             "value": "EnemyWeapon.RocketGun"
-        },
-        {
-            "id": "37a78845-e6f2-42f9-89b4-8547de55efdd",
-            "modelName": "GMOverriddenProperty",
-            "mvc": "1.0",
-            "objectId": "afff8e58-95bc-4515-9151-ed5722abe174",
-            "propertyId": "3bbe149d-c474-40a3-b50d-be2b280ad9c3",
-            "value": "4"
         },
         {
             "id": "b20a9a5f-0877-446d-a9d7-9b3c284bd68b",

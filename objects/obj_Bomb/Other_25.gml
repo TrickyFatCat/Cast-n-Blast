@@ -3,7 +3,7 @@ if visible
 	switch currentState
 	{
 		case BombState.Activation:
-			draw_set_color(c_red);
+			draw_set_color(c_gray);
 			var _timeFactor = (activationTimer / activationTime);
 			draw_circle(x, y, explosionRadius * _timeFactor, true);
 		break;

@@ -61,7 +61,7 @@
             "mvc": "1.0",
             "objectId": "c0b37de0-4e9d-4cb9-81f9-922df5f3bea7",
             "propertyId": "e991cfc4-f911-4ac0-a882-dc6126b5da6f",
-            "value": "spr_bomber"
+            "value": "spr_enemy_bomber_idle"
         },
         {
             "id": "bfc66a4e-4bcb-40f3-942d-047e1fb857e7",
@@ -69,7 +69,7 @@
             "mvc": "1.0",
             "objectId": "c0b37de0-4e9d-4cb9-81f9-922df5f3bea7",
             "propertyId": "ba50de28-c2d6-4ef9-8e2e-9f6e82e05142",
-            "value": "spr_bomber"
+            "value": "spr_enemy_bomber_run"
         },
         {
             "id": "bb5da737-3353-4444-be7a-3f8ac76aad07",
@@ -80,20 +80,12 @@
             "value": "1.25"
         },
         {
-            "id": "53e4a75d-7f19-458e-be56-fedd5a0e08d1",
-            "modelName": "GMOverriddenProperty",
-            "mvc": "1.0",
-            "objectId": "afff8e58-95bc-4515-9151-ed5722abe174",
-            "propertyId": "1ca7224f-7c34-4831-9429-9b546a05328a",
-            "value": "32"
-        },
-        {
             "id": "4f18c571-3e11-4725-98ba-144739c76f7e",
             "modelName": "GMOverriddenProperty",
             "mvc": "1.0",
             "objectId": "afff8e58-95bc-4515-9151-ed5722abe174",
             "propertyId": "398cee17-fe6c-4d39-aa01-00c4aaa8f7bc",
-            "value": "96"
+            "value": "128"
         },
         {
             "id": "4bb1bc90-a48d-4bde-a977-12b5a0a870d3",
@@ -101,15 +93,7 @@
             "mvc": "1.0",
             "objectId": "afff8e58-95bc-4515-9151-ed5722abe174",
             "propertyId": "1591e771-5a78-4b8c-8b12-11acf2ccefad",
-            "value": "96"
-        },
-        {
-            "id": "2a78fb93-c639-4184-801e-61623781323c",
-            "modelName": "GMOverriddenProperty",
-            "mvc": "1.0",
-            "objectId": "afff8e58-95bc-4515-9151-ed5722abe174",
-            "propertyId": "39caf948-0964-476e-b013-d3d0de30877d",
-            "value": "96"
+            "value": "128"
         },
         {
             "id": "a84a4d6c-9f55-419a-87fa-45bbae8de8be",
@@ -118,14 +102,6 @@
             "objectId": "afff8e58-95bc-4515-9151-ed5722abe174",
             "propertyId": "7d56f573-3466-48b3-8bfa-eff41ec6884e",
             "value": "EnemyWeapon.BomberGun"
-        },
-        {
-            "id": "41ee6426-9241-43eb-ad33-9440923db90a",
-            "modelName": "GMOverriddenProperty",
-            "mvc": "1.0",
-            "objectId": "afff8e58-95bc-4515-9151-ed5722abe174",
-            "propertyId": "3bbe149d-c474-40a3-b50d-be2b280ad9c3",
-            "value": "5"
         },
         {
             "id": "ff59943f-c4f6-4eb1-bd48-ba97fbd80d54",
@@ -152,6 +128,6 @@
     "physicsStartAwake": true,
     "properties": null,
     "solid": false,
-    "spriteId": "50f1a4f7-bc76-431c-9fc5-c4c78d40e13a",
+    "spriteId": "4462090a-f97b-4b1f-ae5e-4f551e6a17c7",
     "visible": true
 }

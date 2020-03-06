@@ -6,10 +6,11 @@
     "children": [
         "ef178e33-3c29-4a8f-baf7-2c51f2bf4041",
         "dacebd19-16ce-4333-b4c4-5a58fc7a93eb",
-        "691fe493-bf01-4d58-af42-d68f8d23f420"
+        "691fe493-bf01-4d58-af42-d68f8d23f420",
+        "0cc40996-78d6-4b29-b750-808c1e4ce95d"
     ],
     "filterType": "GMSprite",
-    "folderName": "LargeDemon",
+    "folderName": "Demon",
     "isDefaultView": false,
     "localisedFolderName": ""
 }
