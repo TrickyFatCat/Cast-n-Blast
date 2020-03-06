@@ -65,6 +65,13 @@ if (_activeListSize >= spawnNumber)
 			_enemyNumber = GetObjectNumber(_enemyData);
 			_enemySpawned = GetEnemyCount(_enemyId);
 			_whileCounter++;
+			if (_whileCounter > 50)
+			{
+				show_message("Infinite loop in obj_SpawnController occures, the spawn process was interrupted.");
+				ds_map_destroy(_enemyData);
+				ds_list_destroy(_activeSpawnPoints);
+				return;
+			}
 			show_debug_message(_whileCounter);
 		}
 		
