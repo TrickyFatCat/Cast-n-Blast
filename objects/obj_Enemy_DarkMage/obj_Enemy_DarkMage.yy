@@ -112,22 +112,6 @@
             "value": "64"
         },
         {
-            "id": "d8dfa0c8-cbd4-4f47-b653-6f689802bed9",
-            "modelName": "GMOverriddenProperty",
-            "mvc": "1.0",
-            "objectId": "afff8e58-95bc-4515-9151-ed5722abe174",
-            "propertyId": "f045a8da-d67e-4f73-a41e-47abd1af8330",
-            "value": "8"
-        },
-        {
-            "id": "53ecf7c0-2b39-4a24-94b7-1e87d6ea133e",
-            "modelName": "GMOverriddenProperty",
-            "mvc": "1.0",
-            "objectId": "afff8e58-95bc-4515-9151-ed5722abe174",
-            "propertyId": "08ce2491-9137-4b33-8019-1ffc1a85747d",
-            "value": "0.05"
-        },
-        {
             "id": "069b5846-9d2e-45c9-a5ce-4294fd79743d",
             "modelName": "GMOverriddenProperty",
             "mvc": "1.0",
@@ -142,6 +126,14 @@
             "objectId": "1e80bb98-5aea-467b-b065-8a432456cd14",
             "propertyId": "998d663c-2b00-4fcb-951f-4199a3694a45",
             "value": "True"
+        },
+        {
+            "id": "7cba27a7-0813-410c-b467-dbf3117e42ca",
+            "modelName": "GMOverriddenProperty",
+            "mvc": "1.0",
+            "objectId": "afff8e58-95bc-4515-9151-ed5722abe174",
+            "propertyId": "0aff4bff-4b6c-4771-addc-24096d57d6b5",
+            "value": "EnemyIndex.Mage"
         }
     ],
     "parentObjectId": "afff8e58-95bc-4515-9151-ed5722abe174",

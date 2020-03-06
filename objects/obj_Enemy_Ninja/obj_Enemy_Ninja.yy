@@ -58,22 +58,6 @@
     "maskSpriteId": "00000000-0000-0000-0000-000000000000",
     "overriddenProperties": [
         {
-            "id": "a369308b-377f-4d5b-bf49-6b4e8042444f",
-            "modelName": "GMOverriddenProperty",
-            "mvc": "1.0",
-            "objectId": "afff8e58-95bc-4515-9151-ed5722abe174",
-            "propertyId": "f045a8da-d67e-4f73-a41e-47abd1af8330",
-            "value": "5"
-        },
-        {
-            "id": "76c64ed6-3fa6-4a9c-805d-b0f2d4ddf914",
-            "modelName": "GMOverriddenProperty",
-            "mvc": "1.0",
-            "objectId": "afff8e58-95bc-4515-9151-ed5722abe174",
-            "propertyId": "08ce2491-9137-4b33-8019-1ffc1a85747d",
-            "value": "0.05"
-        },
-        {
             "id": "5ff5311f-238e-4a3d-a094-02daccd957d5",
             "modelName": "GMOverriddenProperty",
             "mvc": "1.0",
@@ -112,6 +96,14 @@
             "objectId": "afff8e58-95bc-4515-9151-ed5722abe174",
             "propertyId": "7d56f573-3466-48b3-8bfa-eff41ec6884e",
             "value": "EnemyWeapon.NinjaGun"
+        },
+        {
+            "id": "395908c6-43f7-4283-a585-8b34a20fc356",
+            "modelName": "GMOverriddenProperty",
+            "mvc": "1.0",
+            "objectId": "afff8e58-95bc-4515-9151-ed5722abe174",
+            "propertyId": "0aff4bff-4b6c-4771-addc-24096d57d6b5",
+            "value": "EnemyIndex.Ninja"
         }
     ],
     "parentObjectId": "afff8e58-95bc-4515-9151-ed5722abe174",

@@ -5,6 +5,7 @@ StorePlayerAmmoData();
 StorePerksData();
 StoreEnemyWeaponData();
 StoreWaveData();
+StoreEnemyData();
 
 enum ResourceType
 {
@@ -19,4 +20,3 @@ global.ResourceColours[ResourceType.HitPoints]		= make_color_rgb(73, 170, 16);
 global.ResourceColours[ResourceType.ShieldPoints]	= make_color_rgb(65, 97, 251);
 global.ResourceColours[ResourceType.Dash]			= make_color_rgb(146, 211, 255); 
 global.ResourceColours[ResourceType.ManaPoints]		= make_color_rgb(40, 0, 186);
-//global.ResourceColours[ResourceType.ManaPoints]		= make_color_rgb(48, 81, 130);

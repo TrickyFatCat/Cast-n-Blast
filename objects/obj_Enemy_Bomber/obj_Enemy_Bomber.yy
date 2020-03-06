@@ -112,22 +112,6 @@
             "value": "96"
         },
         {
-            "id": "4d0c1862-10a1-4460-9f95-9c94155e16ea",
-            "modelName": "GMOverriddenProperty",
-            "mvc": "1.0",
-            "objectId": "afff8e58-95bc-4515-9151-ed5722abe174",
-            "propertyId": "f045a8da-d67e-4f73-a41e-47abd1af8330",
-            "value": "4"
-        },
-        {
-            "id": "e6e2b613-48cf-4dc2-8bba-4f012da335c5",
-            "modelName": "GMOverriddenProperty",
-            "mvc": "1.0",
-            "objectId": "afff8e58-95bc-4515-9151-ed5722abe174",
-            "propertyId": "08ce2491-9137-4b33-8019-1ffc1a85747d",
-            "value": "0.02"
-        },
-        {
             "id": "a84a4d6c-9f55-419a-87fa-45bbae8de8be",
             "modelName": "GMOverriddenProperty",
             "mvc": "1.0",
@@ -142,6 +126,14 @@
             "objectId": "afff8e58-95bc-4515-9151-ed5722abe174",
             "propertyId": "3bbe149d-c474-40a3-b50d-be2b280ad9c3",
             "value": "5"
+        },
+        {
+            "id": "ff59943f-c4f6-4eb1-bd48-ba97fbd80d54",
+            "modelName": "GMOverriddenProperty",
+            "mvc": "1.0",
+            "objectId": "afff8e58-95bc-4515-9151-ed5722abe174",
+            "propertyId": "0aff4bff-4b6c-4771-addc-24096d57d6b5",
+            "value": "EnemyIndex.Bomber"
         }
     ],
     "parentObjectId": "afff8e58-95bc-4515-9151-ed5722abe174",

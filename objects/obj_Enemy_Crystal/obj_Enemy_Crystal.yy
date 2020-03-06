@@ -2,7 +2,7 @@
     "id": "31cb8079-acb6-4388-873d-0a8bc8aed6d3",
     "modelName": "GMObject",
     "mvc": "1.0",
-    "name": "obj_Enemy_Turret",
+    "name": "obj_Enemy_Crystal",
     "eventList": [
         {
             "id": "d9ba4458-8c99-4eb7-b94a-64eb59cd813a",
@@ -102,20 +102,20 @@
             "value": "100"
         },
         {
-            "id": "51d1de3c-117b-4b6d-bd71-f82ab82b04cd",
-            "modelName": "GMOverriddenProperty",
-            "mvc": "1.0",
-            "objectId": "afff8e58-95bc-4515-9151-ed5722abe174",
-            "propertyId": "08ce2491-9137-4b33-8019-1ffc1a85747d",
-            "value": "0.01"
-        },
-        {
             "id": "5c07b5f3-1fee-460e-87a4-576d404de180",
             "modelName": "GMOverriddenProperty",
             "mvc": "1.0",
             "objectId": "afff8e58-95bc-4515-9151-ed5722abe174",
             "propertyId": "7d56f573-3466-48b3-8bfa-eff41ec6884e",
             "value": "EnemyWeapon.TurretGun"
+        },
+        {
+            "id": "acfd50fc-df1a-47b1-b097-62522b263012",
+            "modelName": "GMOverriddenProperty",
+            "mvc": "1.0",
+            "objectId": "afff8e58-95bc-4515-9151-ed5722abe174",
+            "propertyId": "0aff4bff-4b6c-4771-addc-24096d57d6b5",
+            "value": "EnemyIndex.Crystal"
         }
     ],
     "parentObjectId": "afff8e58-95bc-4515-9151-ed5722abe174",

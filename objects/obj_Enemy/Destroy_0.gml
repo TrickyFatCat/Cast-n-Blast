@@ -17,14 +17,12 @@ for (var i = 0; i < _number; i++)
 	_pickup.ultimatePointsNumber = round((global.Player.maxUltimatePoints * ultimatePointsDropFactor) / _number);
 }
 
-var _number = irandom(5);
-for (var i = 0; i < _number; i++)
+for (var i = 0; i < shieldPointsDrop; i++)
 {
 	instance_create_layer(x, y, layer, obj_ShieldPointsPickup);
 }
 
-var _number = irandom(5);
-for (var i = 0; i < _number; i++)
+for (var i = 0; i < hitPointsDrop; i++)
 {
 	instance_create_layer(x, y, layer, obj_HitPointsPickup);
 }

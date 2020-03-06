@@ -212,6 +212,20 @@
     "physicsStartAwake": true,
     "properties": [
         {
+            "id": "0aff4bff-4b6c-4771-addc-24096d57d6b5",
+            "modelName": "GMObjectProperty",
+            "mvc": "1.0",
+            "listItems": null,
+            "multiselect": false,
+            "rangeEnabled": false,
+            "rangeMax": 10,
+            "rangeMin": 0,
+            "resourceFilter": 1023,
+            "value": "noone",
+            "varName": "enemyIndex",
+            "varType": 4
+        },
+        {
             "id": "7d56f573-3466-48b3-8bfa-eff41ec6884e",
             "modelName": "GMObjectProperty",
             "mvc": "1.0",
@@ -282,20 +296,6 @@
             "varType": 0
         },
         {
-            "id": "f045a8da-d67e-4f73-a41e-47abd1af8330",
-            "modelName": "GMObjectProperty",
-            "mvc": "1.0",
-            "listItems": null,
-            "multiselect": false,
-            "rangeEnabled": false,
-            "rangeMax": 10,
-            "rangeMin": 0,
-            "resourceFilter": 1023,
-            "value": "0",
-            "varName": "scoreAdd",
-            "varType": 0
-        },
-        {
             "id": "aaee2d72-a993-4e05-97bf-6e547be41ad6",
             "modelName": "GMObjectProperty",
             "mvc": "1.0",
@@ -335,20 +335,6 @@
             "resourceFilter": 1023,
             "value": "0",
             "varName": "explosionDamage",
-            "varType": 0
-        },
-        {
-            "id": "08ce2491-9137-4b33-8019-1ffc1a85747d",
-            "modelName": "GMObjectProperty",
-            "mvc": "1.0",
-            "listItems": null,
-            "multiselect": false,
-            "rangeEnabled": false,
-            "rangeMax": 10,
-            "rangeMin": 0,
-            "resourceFilter": 1023,
-            "value": "0",
-            "varName": "ultimatePointsDropFactor",
             "varType": 0
         },
         {

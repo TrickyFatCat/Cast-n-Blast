@@ -98,22 +98,6 @@
             "value": "spr_kamikaze_walk"
         },
         {
-            "id": "e90abe12-3eb4-4e6a-9902-5f7ec71ff2d4",
-            "modelName": "GMOverriddenProperty",
-            "mvc": "1.0",
-            "objectId": "c0b37de0-4e9d-4cb9-81f9-922df5f3bea7",
-            "propertyId": "a1b60e3e-d1b6-4fc9-8bf2-10d2b12eb093",
-            "value": "20"
-        },
-        {
-            "id": "0a49c07f-fd90-4de5-9b5d-4fe8ee410a9e",
-            "modelName": "GMOverriddenProperty",
-            "mvc": "1.0",
-            "objectId": "c0b37de0-4e9d-4cb9-81f9-922df5f3bea7",
-            "propertyId": "61bc5419-ee0f-4313-a09d-2a3cea31bac2",
-            "value": "3"
-        },
-        {
             "id": "27868a64-5279-4cee-8be9-1aa4bc6ac035",
             "modelName": "GMOverriddenProperty",
             "mvc": "1.0",
@@ -138,20 +122,12 @@
             "value": "32"
         },
         {
-            "id": "90f22507-74d8-477e-8d02-f8b9dbdc1560",
+            "id": "4336999d-5f7d-4f6b-a8ea-d0c1a13b2f02",
             "modelName": "GMOverriddenProperty",
             "mvc": "1.0",
             "objectId": "afff8e58-95bc-4515-9151-ed5722abe174",
-            "propertyId": "f045a8da-d67e-4f73-a41e-47abd1af8330",
-            "value": "2"
-        },
-        {
-            "id": "986cfdf3-5490-4bd6-88d8-579a1c608b20",
-            "modelName": "GMOverriddenProperty",
-            "mvc": "1.0",
-            "objectId": "afff8e58-95bc-4515-9151-ed5722abe174",
-            "propertyId": "08ce2491-9137-4b33-8019-1ffc1a85747d",
-            "value": "0.01"
+            "propertyId": "0aff4bff-4b6c-4771-addc-24096d57d6b5",
+            "value": "EnemyIndex.Kamikaze"
         }
     ],
     "parentObjectId": "afff8e58-95bc-4515-9151-ed5722abe174",
