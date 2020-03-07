@@ -6,3 +6,4 @@ event_inherited();
 
 rotationSpeed = 3;
 rotationDirection = choose(-1, 1);
+explosionRadius = 44;

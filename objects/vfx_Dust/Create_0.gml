@@ -5,7 +5,7 @@ isMoving = false;
 delayTime = SetTime(0.1);
 delayTimer = 0;
 image_speed = 0;
-drawScaleX = random_range(0.25, 0.65);
+drawScaleX = random_range(0.5, 0.75);
 drawScaleY = drawScaleX;
 image_index = random_range(0, image_number);
 

@@ -31,7 +31,7 @@ switch currentState
 		}
 		
 		velocity = CalculateDeceleratedVelocity(directionCurrent, velocity, groundFriction);
-		for (var i = 0; i < 1; i++)
+		for (var i = 0; i < 3; i++)
 		{
 			var _direction = point_direction(0, 0, directionX, directionY) - 180 + random_range(-30, 30);
 			SpawnDust(x, y - 1, true, _direction);

@@ -1,2 +1,2 @@
 event_inherited();
-SpawnExplosion(x, y, obj_PlayerMeteorExplosion, damage, 32);
+SpawnExplosion(x, y, obj_PlayerMeteorExplosion, damage, explosionRadius);
