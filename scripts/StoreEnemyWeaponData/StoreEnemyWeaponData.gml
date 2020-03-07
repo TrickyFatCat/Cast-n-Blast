@@ -31,7 +31,7 @@ ds_map_add(FighterGunData, "bulletObject",					obj_smallFireBall);
 ds_map_add(FighterGunData, "bulletNumber",					1);
 ds_map_add(FighterGunData, "bulletSpawnPointOffset",		0);
 //-----------------------------------------------------------------------------
-ds_map_add(FighterGunData, "damage",						5);
+ds_map_add(FighterGunData, "damage",						8);
 ds_map_add(FighterGunData, "heal",							0);
 //-----------------------------------------------------------------------------
 ds_map_add(FighterGunData, "rateOfFireAccelerated",			false);
@@ -100,7 +100,7 @@ ds_map_add(TrooperGunData, "bulletObject",					obj_bigFireBall);
 ds_map_add(TrooperGunData, "bulletNumber",					5);
 ds_map_add(TrooperGunData, "bulletSpawnPointOffset",		0);
 //-----------------------------------------------------------------------------
-ds_map_add(TrooperGunData, "damage",						8);
+ds_map_add(TrooperGunData, "damage",						10);
 ds_map_add(TrooperGunData, "heal",							0);
 //-----------------------------------------------------------------------------
 ds_map_add(TrooperGunData, "rateOfFireAccelerated",			false);
@@ -169,13 +169,13 @@ ds_map_add(BeamerGunData, "bulletObject",					obj_BeamerLaser);
 ds_map_add(BeamerGunData, "bulletNumber",					1);
 ds_map_add(BeamerGunData, "bulletSpawnPointOffset",			24);
 //-----------------------------------------------------------------------------
-ds_map_add(BeamerGunData, "damage",							2);
+ds_map_add(BeamerGunData, "damage",							3);
 ds_map_add(BeamerGunData, "heal",							0);
 //-----------------------------------------------------------------------------
 ds_map_add(BeamerGunData, "rateOfFireAccelerated",			false);
 ds_map_add(BeamerGunData, "rateOfFireIncrStep",				0);
 ds_map_add(BeamerGunData, "rateOfFireDecrStep",				0);
-ds_map_add(BeamerGunData, "rateOfFireMin",					20);
+ds_map_add(BeamerGunData, "rateOfFireMin",					25);
 ds_map_add(BeamerGunData, "rateOfFireMax",					0);
 //-----------------------------------------------------------------------------
 ds_map_add(BeamerGunData, "burstRate",						0);
@@ -238,7 +238,7 @@ ds_map_add(NinjaGunData, "bulletObject",					obj_NinjasKnife);
 ds_map_add(NinjaGunData, "bulletNumber",					30);
 ds_map_add(NinjaGunData, "bulletSpawnPointOffset",			0);
 //-----------------------------------------------------------------------------
-ds_map_add(NinjaGunData, "damage",							5);
+ds_map_add(NinjaGunData, "damage",							10);
 ds_map_add(NinjaGunData, "heal",							0);
 //-----------------------------------------------------------------------------
 ds_map_add(NinjaGunData, "rateOfFireAccelerated",			false);
@@ -307,13 +307,13 @@ ds_map_add(TurretGunData, "bulletObject",					obj_TurretLaser);
 ds_map_add(TurretGunData, "bulletNumber",					1);
 ds_map_add(TurretGunData, "bulletSpawnPointOffset",			10);
 //-----------------------------------------------------------------------------
-ds_map_add(TurretGunData, "damage",							2);
+ds_map_add(TurretGunData, "damage",							3);
 ds_map_add(TurretGunData, "heal",							0);
 //-----------------------------------------------------------------------------
 ds_map_add(TurretGunData, "rateOfFireAccelerated",			false);
 ds_map_add(TurretGunData, "rateOfFireIncrStep",				0);
 ds_map_add(TurretGunData, "rateOfFireDecrStep",				0);
-ds_map_add(TurretGunData, "rateOfFireMin",					25);
+ds_map_add(TurretGunData, "rateOfFireMin",					30);
 ds_map_add(TurretGunData, "rateOfFireMax",					0);
 //-----------------------------------------------------------------------------
 ds_map_add(TurretGunData, "burstRate",						0);
@@ -376,7 +376,7 @@ ds_map_add(RocketGunData, "bulletObject",					obj_EnemyRocket);
 ds_map_add(RocketGunData, "bulletNumber",					1);
 ds_map_add(RocketGunData, "bulletSpawnPointOffset",			19);
 //-----------------------------------------------------------------------------
-ds_map_add(RocketGunData, "damage",							5);
+ds_map_add(RocketGunData, "damage",							10);
 ds_map_add(RocketGunData, "heal",							0);
 //-----------------------------------------------------------------------------
 ds_map_add(RocketGunData, "rateOfFireAccelerated",			false);
@@ -445,7 +445,7 @@ ds_map_add(BomberGunData, "bulletObject",					obj_Bomb);
 ds_map_add(BomberGunData, "bulletNumber",					1);
 ds_map_add(BomberGunData, "bulletSpawnPointOffset",			0);
 //-----------------------------------------------------------------------------
-ds_map_add(BomberGunData, "damage",							5);
+ds_map_add(BomberGunData, "damage",							15);
 ds_map_add(BomberGunData, "heal",							0);
 //-----------------------------------------------------------------------------
 ds_map_add(BomberGunData, "rateOfFireAccelerated",			false);

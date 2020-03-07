@@ -111,7 +111,7 @@ ds_map_add(IciclesData, "bulletObject",						obj_PlayerIcicle);
 ds_map_add(IciclesData, "bulletNumber",						10);
 ds_map_add(IciclesData, "bulletSpawnPointOffset",			32);
 //-----------------------------------------------------------------------------
-ds_map_add(IciclesData, "damage",							8);
+ds_map_add(IciclesData, "damage",							10);
 ds_map_add(IciclesData, "heal",								0);
 //-----------------------------------------------------------------------------
 ds_map_add(IciclesData, "rateOfFireAccelerated",			false);
@@ -180,7 +180,7 @@ ds_map_add(MeteorData, "bulletObject",						obj_PlayerMeteor);
 ds_map_add(MeteorData, "bulletNumber",						1);
 ds_map_add(MeteorData, "bulletSpawnPointOffset",			32);
 //-----------------------------------------------------------------------------
-ds_map_add(MeteorData, "damage",							110);
+ds_map_add(MeteorData, "damage",							150);
 ds_map_add(MeteorData, "heal",								0);
 //-----------------------------------------------------------------------------
 ds_map_add(MeteorData, "rateOfFireAccelerated",				false);
@@ -223,7 +223,7 @@ ds_map_add(MeteorData, "recoilFactor",						0.3);
 //-----------------------------------------------------------------------------
 ds_map_add(MeteorData, "hitscanScaleY",						0);
 ds_map_add(MeteorData, "projectileVelocityNoiseFactor",		0);
-ds_map_add(MeteorData, "projectileVelocityCurrent",			0);
+ds_map_add(MeteorData, "projectileVelocityCurrent",			1);
 ds_map_add(MeteorData, "projectileVelocityMax",				8);
 ds_map_add(MeteorData, "projectileAcceleration",			0.1);
 ds_map_add(MeteorData, "projectileFriction",				0);
@@ -266,10 +266,10 @@ ds_map_add(ArcaneSpearData, "castTime",							1);
 //-----------------------------------------------------------------------------
 ds_map_add(ArcaneSpearData, "chargeExecuteCountMin",			1);
 ds_map_add(ArcaneSpearData, "chargeExecuteCountMax",			0);
-ds_map_add(ArcaneSpearData, "chargeTime",						1);
+ds_map_add(ArcaneSpearData, "chargeTime",						1.5);
 ds_map_add(ArcaneSpearData, "chargeWaitTime",					1);
 ds_map_add(ArcaneSpearData, "chargeCostFactorMax",				50);
-ds_map_add(ArcaneSpearData, "chargeDamageFactorMax",			200);
+ds_map_add(ArcaneSpearData, "chargeDamageFactorMax",			300);
 ds_map_add(ArcaneSpearData, "chargeHealFactorMax",				0);
 ds_map_add(ArcaneSpearData, "chargeRateFactorMax",				0);
 ds_map_add(ArcaneSpearData, "chargeBulletNumberFactorMax",		1);
@@ -318,7 +318,7 @@ ds_map_add(UltimateGunData, "bulletObject",						obj_UltimateLaser);
 ds_map_add(UltimateGunData, "bulletNumber",						1);
 ds_map_add(UltimateGunData, "bulletSpawnPointOffset",			24);
 //-----------------------------------------------------------------------------
-ds_map_add(UltimateGunData, "damage",							10);
+ds_map_add(UltimateGunData, "damage",							15);
 ds_map_add(UltimateGunData, "heal",								0);
 //-----------------------------------------------------------------------------
 ds_map_add(UltimateGunData, "rateOfFireAccelerated",			false);

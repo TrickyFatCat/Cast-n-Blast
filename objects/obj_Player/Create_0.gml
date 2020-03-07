@@ -62,9 +62,8 @@ defaultMaxHitPoints = maxHitPoints;
 // PickUp magnet paramentrs
 pullDistance = 64;
 pullVelocityMax = 10;
-pullAcceleration = 0.3;
+pullAcceleration = 0.4;
 pickupList = ds_list_create();
-
 sessionWeaponData = [];
 var _arrayLength = array_length_1d(global.PlayerWeaponData);
 for (var i = 0; i < _arrayLength; i++)
