@@ -1,8 +1,5 @@
 /// @description LaserController
 
-// Inherit the parent event
-event_inherited();
-
 switch currentState
 {
 	case LaserState.Idle:
@@ -21,7 +18,7 @@ switch currentState
 	break;
 }
 
-if (!GameIsPaused())
+if (!GameIsPaused() && currentState > LaserState.Idle)
 {
 	drawAngle = directionCurrent;
 	drawScaleX = SortHitscanCollisions(directionCurrent, collisionTargets);

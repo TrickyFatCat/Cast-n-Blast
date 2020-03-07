@@ -21,6 +21,8 @@ _array[7] = sys_BattleController;
 _array[8] = sys_VfxController;
 _array[9] = sys_GifRecorder;
 _array[10] = sys_PickupsController;
+_array[11] = sys_AiController;
+_array[12] = sys_ProjectileController;
 
 var _length = array_length_1d(_array);
 

@@ -74,6 +74,14 @@
             "objectId": "11876f57-a814-41cc-8ce2-4791a7622828",
             "propertyId": "610d76a8-ac9c-4d28-99e1-a26bef32b446",
             "value": "SortingType.UnsortableAir"
+        },
+        {
+            "id": "24f7a45f-5b09-4e51-8420-9b5fad32442f",
+            "modelName": "GMOverriddenProperty",
+            "mvc": "1.0",
+            "objectId": "1e80bb98-5aea-467b-b065-8a432456cd14",
+            "propertyId": "175e2b31-4f05-4bfd-a5d1-71c555358c0c",
+            "value": "0"
         }
     ],
     "parentObjectId": "11876f57-a814-41cc-8ce2-4791a7622828",

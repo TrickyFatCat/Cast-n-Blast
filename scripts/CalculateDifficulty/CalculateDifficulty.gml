@@ -7,7 +7,7 @@ switch (global.Round)
 	break;
 	
 	case 4:
-		SetRoundTime(40);
+		SetRoundTime(30);
 	break;
 	
 	case 6:
@@ -22,7 +22,7 @@ switch (global.Round)
 	break;
 	
 	case 10:
-		SetRoundTime(50)
+		SetRoundTime(40)
 		SetTilesNumber(20, 15);
 	break;
 	
@@ -37,7 +37,7 @@ switch (global.Round)
 	
 	case 16:
 		SetSpawnNumber(3);
-		SetRoundTime(60);
+		SetRoundTime(50);
 		SetTilesNumber(25, 25);
 	break;
 	
@@ -46,7 +46,7 @@ switch (global.Round)
 	break;
 	
 	case 20:
-		SetRoundTime(90);
+		SetRoundTime(60);
 		SetActiveWaves(WaveData.R20W01, WaveData.R20W02, WaveData.R20W03);
 	break;
 }

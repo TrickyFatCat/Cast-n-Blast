@@ -5,16 +5,6 @@
     "name": "obj_EnemyRocket",
     "eventList": [
         {
-            "id": "23c7fec3-5de0-4b7d-983b-ae0144d3168d",
-            "modelName": "GMEvent",
-            "mvc": "1.0",
-            "IsDnD": false,
-            "collisionObjectId": "00000000-0000-0000-0000-000000000000",
-            "enumb": 0,
-            "eventtype": 3,
-            "m_owner": "ebdfb1ec-c581-4c38-a0b7-25286a6431d2"
-        },
-        {
             "id": "4309b6ee-1977-4efa-b070-ab4563083076",
             "modelName": "GMEvent",
             "mvc": "1.0",

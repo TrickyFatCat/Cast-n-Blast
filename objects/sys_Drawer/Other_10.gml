@@ -2,7 +2,7 @@
 
 with(obj_FloorTile)
 {
-	ProcessDrawSprite();
+	DrawSprite;
 }
 
 with (obj_Floor)
@@ -11,11 +11,11 @@ with (obj_Floor)
 	{
 		shader_set(outlineShader);
 		shader_set_uniform_f(u_texel_size, texel_w, texel_h);
-		ProcessDrawSprite();
+		DrawSprite;
 		shader_reset()
 	}
 	else
 	{
-		ProcessDrawSprite();
+		DrawSprite;
 	}
 }

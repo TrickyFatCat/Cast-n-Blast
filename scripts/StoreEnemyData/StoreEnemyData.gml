@@ -55,7 +55,7 @@ ds_map_add(ImpData, EnemyParameter.UltimatePointsDrop,	2);
 
 #region Demon
 DemonData = ds_map_create();
-ds_map_add(DemonData, EnemyParameter.MaxHitPoints,			300);
+ds_map_add(DemonData, EnemyParameter.MaxHitPoints,			250);
 ds_map_add(DemonData, EnemyParameter.MaxVelocity,			1);
 ds_map_add(DemonData, EnemyParameter.Scores,				64);
 ds_map_add(DemonData, EnemyParameter.HitPointsDrop,			5);
@@ -85,11 +85,11 @@ ds_map_add(NinjaData, EnemyParameter.UltimatePointsDrop,	5);
 
 #region Crystal
 CrystalData = ds_map_create();
-ds_map_add(CrystalData, EnemyParameter.MaxHitPoints,		150);
+ds_map_add(CrystalData, EnemyParameter.MaxHitPoints,		100);
 ds_map_add(CrystalData, EnemyParameter.MaxVelocity,			0);
 ds_map_add(CrystalData, EnemyParameter.Scores,				5);
 ds_map_add(CrystalData, EnemyParameter.HitPointsDrop,		1);
-ds_map_add(CrystalData, EnemyParameter.ShieldPointsDrop,	1);
+ds_map_add(CrystalData, EnemyParameter.ShieldPointsDrop,	5);
 ds_map_add(CrystalData, EnemyParameter.UltimatePointsDrop,	1);
 #endregion
 
@@ -105,7 +105,7 @@ ds_map_add(ShamanData, EnemyParameter.UltimatePointsDrop,	3);
 
 #region Bomber
 BomberData = ds_map_create();
-ds_map_add(BomberData, EnemyParameter.MaxHitPoints,			300);
+ds_map_add(BomberData, EnemyParameter.MaxHitPoints,			250);
 ds_map_add(BomberData, EnemyParameter.MaxVelocity,			1);
 ds_map_add(BomberData, EnemyParameter.Scores,				64);
 ds_map_add(BomberData, EnemyParameter.HitPointsDrop,		5);

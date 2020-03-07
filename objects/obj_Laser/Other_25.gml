@@ -1,5 +1,6 @@
 if visible
 {
+	drawAlngle = directionCurrent;
 	var _coreScale = drawScaleY * 0.45;
 	var _startScale = drawScaleY * 0.14;
 	var _startCoreScale = drawScaleY * 0.05;

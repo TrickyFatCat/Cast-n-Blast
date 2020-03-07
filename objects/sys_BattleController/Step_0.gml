@@ -1,5 +1,7 @@
 /// @description BattleStateSwitcher
 
+show_debug_message(instance_count);
+
 switch (global.BattleState)
 {
 	case BattleState.Inactive:
