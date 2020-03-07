@@ -12,4 +12,11 @@ if (sys_GameManager.keyDash && dashCharge > 0)
 	collisionEnable = false;
 	velocity = dashVelocity;
 	DecreaseDashCharge();
+	
+	for (var i = 0; i < 25; i++)
+	{
+		var _dustObject = instance_create_layer(x, y, layer, vfx_Dust);
+		_dustObject.direction = point_direction(0, 0, directionX, directionY) - 180 + random_range(-45, 45);
+		_dustObject.isMoving = true;
+	}
 }

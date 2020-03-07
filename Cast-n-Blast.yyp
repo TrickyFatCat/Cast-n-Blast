@@ -287,6 +287,14 @@
             }
         },
         {
+            "Key": "18c08973-2d40-49e3-90f2-46a4afd4a290",
+            "Value": {
+                "id": "834b8dea-a214-43c8-9e4d-320b09728105",
+                "resourcePath": "scripts\\SpawnDust\\SpawnDust.yy",
+                "resourceType": "GMScript"
+            }
+        },
+        {
             "Key": "194be890-e962-42da-a92c-92b0a1ffa684",
             "Value": {
                 "id": "6622dfb9-c48f-4f5d-aea4-8ed642afcb26",
@@ -1012,6 +1020,14 @@
                 "id": "9164fedc-dbb2-4d54-a186-5c30f475e21d",
                 "resourcePath": "views\\45e09a08-bf24-4f41-8b8f-66bdc6de3ac4.yy",
                 "resourceType": "GMFolder"
+            }
+        },
+        {
+            "Key": "45e93e54-46f4-460c-afe6-1bd2ec34b7e4",
+            "Value": {
+                "id": "729ac832-4070-4b4e-a1e6-c6b97715b1ec",
+                "resourcePath": "objects\\vfx_Dust\\vfx_Dust.yy",
+                "resourceType": "GMObject"
             }
         },
         {
@@ -3367,6 +3383,14 @@
             }
         },
         {
+            "Key": "ead68ff8-81c8-4ed9-a084-3e8e5ff55f58",
+            "Value": {
+                "id": "e44d5df7-49f8-4bf9-aa0b-d2385cd5bb90",
+                "resourcePath": "sprites\\spr_dust\\spr_dust.yy",
+                "resourceType": "GMSprite"
+            }
+        },
+        {
             "Key": "ebdfb1ec-c581-4c38-a0b7-25286a6431d2",
             "Value": {
                 "id": "723eeb76-cbfb-41b2-940c-426470a47b39",
@@ -3795,6 +3819,7 @@
         "49bf0704-d92b-4de3-abbc-ddd15a611398",
         "ef7732c5-c70c-457f-8e02-3e784dd28205",
         "47ac007c-12eb-4257-aa98-0f6c361a7ce9",
+        "18c08973-2d40-49e3-90f2-46a4afd4a290",
         "8b6c5121-4244-4f17-8831-ad31141c5049",
         "cee33327-ed76-4568-b1ac-9f784b4efeff",
         "c697a9df-adc3-4c02-a7b2-ca6552b40584",

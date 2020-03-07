@@ -131,6 +131,20 @@
             "value": "True",
             "varName": "isDamagingEnemies",
             "varType": 3
+        },
+        {
+            "id": "8b19765e-9b7c-4e7a-bcd2-0147974d2135",
+            "modelName": "GMObjectProperty",
+            "mvc": "1.0",
+            "listItems": null,
+            "multiselect": false,
+            "rangeEnabled": false,
+            "rangeMax": 10,
+            "rangeMin": 0,
+            "resourceFilter": 1023,
+            "value": "True",
+            "varName": "isSpawningDust",
+            "varType": 3
         }
     ],
     "solid": false,

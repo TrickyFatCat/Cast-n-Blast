@@ -9,7 +9,8 @@
         "4d2e50be-b1e4-41af-a99f-6aa1c6ad686a",
         "63197f1f-be06-42fa-9283-2c2c0f3eacc4",
         "8d0beae8-26f8-424d-93ba-8dc2ba6bac35",
-        "22fcb603-abc2-400c-a648-0c7c0dea25ee"
+        "22fcb603-abc2-400c-a648-0c7c0dea25ee",
+        "ead68ff8-81c8-4ed9-a084-3e8e5ff55f58"
     ],
     "filterType": "GMSprite",
     "folderName": "VFX",
