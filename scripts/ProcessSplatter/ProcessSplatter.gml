@@ -2,9 +2,17 @@ MoveObject(false);
 
 velocity = CalculateDeceleratedVelocity(direction, velocity, groundFriction);
 
+CheckBouncingCollision(obj_Wall);
+
+if (isBounced)
+{
+	directionCurrent = point_direction(0, 0, velocityX, velocityY);
+	isBounced = !isBounced;
+}
+
 if (velocity <= 0)
 {
-	instance_destroy()
+	instance_destroy();
 }
 
 smearTimer += global.TimeFactor;

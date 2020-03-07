@@ -14,6 +14,8 @@ velocity = random_range(0.4, maxVelocity);
 groundFriction = random_range(0.2, 0.3)
 velocityX = 0;
 velocityY = 0;
+isBounceable = true;
+isBounced = false;
 
 // Smear parameters
 isSmearing = true;

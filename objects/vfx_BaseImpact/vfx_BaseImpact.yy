@@ -2,7 +2,7 @@
     "id": "d5d48b7b-7659-41a1-9a4d-eaa0838793e1",
     "modelName": "GMObject",
     "mvc": "1.0",
-    "name": "vfx_BaseEffect",
+    "name": "vfx_BaseImpact",
     "eventList": [
         {
             "id": "7e805c26-77c9-4dd9-8d91-6f06a1d36d8a",

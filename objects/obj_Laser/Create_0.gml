@@ -6,6 +6,7 @@ event_inherited();
 //User events
 #macro ExecuteStartSequence event_user(0)
 #macro ExecuteEndSequence event_user(1)
+#macro SetLaserSize event_user(1)
 
 //General parameters
 enum LaserState

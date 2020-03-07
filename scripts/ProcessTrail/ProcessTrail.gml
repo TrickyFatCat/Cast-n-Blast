@@ -13,5 +13,5 @@ if (lifeProgress != 1)
 }
 else
 {
-	instance_destroy()
+	instance_destroy();
 }

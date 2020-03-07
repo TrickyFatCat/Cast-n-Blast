@@ -16,7 +16,7 @@ if (_timeIsOver)
 
 		if (velocity <= 0)
 		{
-			instance_destroy()
+			instance_destroy();
 		}
 	}
 	else if (drawScaleX == 0)

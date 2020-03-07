@@ -110,6 +110,14 @@
             "objectId": "afff8e58-95bc-4515-9151-ed5722abe174",
             "propertyId": "0aff4bff-4b6c-4771-addc-24096d57d6b5",
             "value": "EnemyIndex.Bomber"
+        },
+        {
+            "id": "942e78e2-4602-41b4-b797-a0e41b14e766",
+            "modelName": "GMOverriddenProperty",
+            "mvc": "1.0",
+            "objectId": "1e80bb98-5aea-467b-b065-8a432456cd14",
+            "propertyId": "175e2b31-4f05-4bfd-a5d1-71c555358c0c",
+            "value": "True"
         }
     ],
     "parentObjectId": "afff8e58-95bc-4515-9151-ed5722abe174",

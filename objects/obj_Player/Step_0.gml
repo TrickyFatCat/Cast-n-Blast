@@ -46,7 +46,7 @@ switch (currentState)
 		MovePlayer;
 		PullPickups;
 		ProcessUltimate;
-		SpawnTrailEffect(vfx_Trail, 0.15, 1, true, false, true, false);
+		//SpawnTrailEffect(vfx_Trail, 0.15, 1, true, false, true, false);
 	break;
 	
 	case PlayerState.Transcendence:

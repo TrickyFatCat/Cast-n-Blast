@@ -1,3 +1,6 @@
 drawAngle += rotationSpeed * rotationDirection;
+var _direction = directionCurrent - 180;
+var _x = x + lengthdir_x(16, _direction);
+var _y = y + lengthdir_y(16, _direction);
 
-SpawnTrailEffect(vfx_MeteorTrail, 0.15, 0, false, true, false, true);
+SpawnDust(_x, _y, true, _direction);

@@ -126,6 +126,14 @@
             "objectId": "afff8e58-95bc-4515-9151-ed5722abe174",
             "propertyId": "0aff4bff-4b6c-4771-addc-24096d57d6b5",
             "value": "EnemyIndex.Mage"
+        },
+        {
+            "id": "9b102bb1-eff7-49a4-ac20-e358ece7112b",
+            "modelName": "GMOverriddenProperty",
+            "mvc": "1.0",
+            "objectId": "1e80bb98-5aea-467b-b065-8a432456cd14",
+            "propertyId": "175e2b31-4f05-4bfd-a5d1-71c555358c0c",
+            "value": "True"
         }
     ],
     "parentObjectId": "afff8e58-95bc-4515-9151-ed5722abe174",
