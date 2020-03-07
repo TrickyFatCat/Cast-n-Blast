@@ -8,7 +8,7 @@ enum PlayerAmmo
 	ArcaneSpear
 }
 
-SetAmmoData(PlayerAmmo.FireBall,	40,		2);
-SetAmmoData(PlayerAmmo.Icicles,		10,		0.3);
-SetAmmoData(PlayerAmmo.Meteor,		4,		0.15);
+SetAmmoData(PlayerAmmo.FireBall,	60,		2);
+SetAmmoData(PlayerAmmo.Icicles,		20,		0.3);
+SetAmmoData(PlayerAmmo.Meteor,		10,		0.15);
 SetAmmoData(PlayerAmmo.ArcaneSpear, 100,	1.5);

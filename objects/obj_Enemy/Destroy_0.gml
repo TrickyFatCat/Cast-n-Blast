@@ -33,6 +33,12 @@ if (explosionObject != noone)
 	SpawnSplatterEffect(x, y, vfx_Splatter, 40, 5);
 }
 
+for (var i = 0; i < 5; i++)
+{
+	var _limb = instance_create_layer(x, y, layer, vfx_Limbs);
+	_limb.directionCurrent = random(360);
+}
+
 global.Score += scoreAdd;
 
 //for (var i = 0; i < 3; i++)

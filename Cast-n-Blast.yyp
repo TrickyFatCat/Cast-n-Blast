@@ -655,6 +655,14 @@
             }
         },
         {
+            "Key": "2ff2245a-07a5-4f78-82b9-a81048aede95",
+            "Value": {
+                "id": "38a8c542-d410-43ce-aafc-3dbcaa1c7c9e",
+                "resourcePath": "scripts\\ProcessLimbs\\ProcessLimbs.yy",
+                "resourceType": "GMScript"
+            }
+        },
+        {
             "Key": "301e64b6-ff9f-4559-817c-7b5e1c76f97a",
             "Value": {
                 "id": "13364ef7-0bb5-4bce-b65f-d8972e170c44",
@@ -756,6 +764,14 @@
                 "id": "c1dbfe9d-b7b5-4d69-b120-8f1fa1906dc2",
                 "resourcePath": "views\\359a4064-717b-49d4-9f01-4c74cd991d6a.yy",
                 "resourceType": "GMFolder"
+            }
+        },
+        {
+            "Key": "36685f0e-a05a-44b4-8a8c-0dfff11371e7",
+            "Value": {
+                "id": "c0ae458c-9933-4c32-8f5e-189656c4425f",
+                "resourcePath": "sprites\\spr_limbs\\spr_limbs.yy",
+                "resourceType": "GMSprite"
             }
         },
         {
@@ -1707,6 +1723,14 @@
             "Value": {
                 "id": "cbb8bdfa-6a82-49cc-b64a-ce07a25d79ed",
                 "resourcePath": "objects\\obj_UltimateLaser\\obj_UltimateLaser.yy",
+                "resourceType": "GMObject"
+            }
+        },
+        {
+            "Key": "71457a90-7108-48ce-8168-a788f0398c23",
+            "Value": {
+                "id": "fdabe63c-0d34-43a7-b5f0-c1301f4f82bc",
+                "resourcePath": "objects\\vfx_Limbs\\vfx_Limbs.yy",
                 "resourceType": "GMObject"
             }
         },
@@ -3835,6 +3859,7 @@
         "301e64b6-ff9f-4559-817c-7b5e1c76f97a",
         "12dfc90c-9393-4fe7-a8c9-47629aaca62d",
         "fe47f7f6-68d6-42f7-b70d-6cc335550a90",
+        "2ff2245a-07a5-4f78-82b9-a81048aede95",
         "3c0aa69d-446c-4e98-a979-56698816eb2c",
         "4ff72b4c-7966-43a3-bd02-da80295fdc30",
         "58b118a7-bea2-4f7a-a380-0177b85fcc24",

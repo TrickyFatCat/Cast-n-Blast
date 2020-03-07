@@ -43,3 +43,15 @@ if (_number > 0)
 		}
 	}
 }
+_number = instance_number(vfx_Limbs);
+if (_number > 0)
+{
+	for (var i = 0; i < _number; i++)
+	{
+		var _effect = instance_find(vfx_Limbs, i);
+		with (_effect)
+		{
+			ProcessLimbs();
+		}
+	}
+}

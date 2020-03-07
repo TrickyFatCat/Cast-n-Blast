@@ -269,7 +269,7 @@ ds_map_add(ArcaneSpearData, "chargeExecuteCountMax",			0);
 ds_map_add(ArcaneSpearData, "chargeTime",						1.5);
 ds_map_add(ArcaneSpearData, "chargeWaitTime",					1);
 ds_map_add(ArcaneSpearData, "chargeCostFactorMax",				50);
-ds_map_add(ArcaneSpearData, "chargeDamageFactorMax",			300);
+ds_map_add(ArcaneSpearData, "chargeDamageFactorMax",			400);
 ds_map_add(ArcaneSpearData, "chargeHealFactorMax",				0);
 ds_map_add(ArcaneSpearData, "chargeRateFactorMax",				0);
 ds_map_add(ArcaneSpearData, "chargeBulletNumberFactorMax",		1);
@@ -318,7 +318,7 @@ ds_map_add(UltimateGunData, "bulletObject",						obj_UltimateLaser);
 ds_map_add(UltimateGunData, "bulletNumber",						1);
 ds_map_add(UltimateGunData, "bulletSpawnPointOffset",			24);
 //-----------------------------------------------------------------------------
-ds_map_add(UltimateGunData, "damage",							15);
+ds_map_add(UltimateGunData, "damage",							20);
 ds_map_add(UltimateGunData, "heal",								0);
 //-----------------------------------------------------------------------------
 ds_map_add(UltimateGunData, "rateOfFireAccelerated",			false);

@@ -12,7 +12,8 @@
         "503b5848-c85d-43e0-be3d-ff55364cf4b1",
         "8200e58b-06d1-4b25-8ca9-037f0cc11151",
         "53d2eb7c-680c-4e15-8e69-f02879e0f3c5",
-        "45e93e54-46f4-460c-afe6-1bd2ec34b7e4"
+        "45e93e54-46f4-460c-afe6-1bd2ec34b7e4",
+        "71457a90-7108-48ce-8168-a788f0398c23"
     ],
     "filterType": "GMObject",
     "folderName": "Effects",
