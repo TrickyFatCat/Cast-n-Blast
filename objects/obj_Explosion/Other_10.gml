@@ -75,8 +75,10 @@ if (dealingDamage && !GameIsPaused())
 			var _direction = random(360);
 			var _x = x + random_range(-explosionRadius, explosionRadius)
 			var _y = y + random_range(-explosionRadius, explosionRadius);
-			var _dust = SpawnDust(_x, _y - 1, false, _direction);
+			var _dust = SpawnDust(vfx_Dust, _x, _y - 1, false, _direction);
 			_dust.drawColour = c_red;
 		}
 	}
+	
+	SpawnSplatterEffect(x, y, spr_sootParticles, spr_sootParticles, 50, 4);
 }

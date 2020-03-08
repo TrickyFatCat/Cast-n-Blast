@@ -120,6 +120,14 @@
             "objectId": "afff8e58-95bc-4515-9151-ed5722abe174",
             "propertyId": "0aff4bff-4b6c-4771-addc-24096d57d6b5",
             "value": "EnemyIndex.Shaman"
+        },
+        {
+            "id": "97b125da-095d-4e9d-b708-502594188b7e",
+            "modelName": "GMOverriddenProperty",
+            "mvc": "1.0",
+            "objectId": "afff8e58-95bc-4515-9151-ed5722abe174",
+            "propertyId": "3bbe149d-c474-40a3-b50d-be2b280ad9c3",
+            "value": "4"
         }
     ],
     "parentObjectId": "afff8e58-95bc-4515-9151-ed5722abe174",

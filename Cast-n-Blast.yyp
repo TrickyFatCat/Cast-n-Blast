@@ -743,6 +743,14 @@
             }
         },
         {
+            "Key": "354d62d9-63d1-40ac-9f75-d565260dabc7",
+            "Value": {
+                "id": "637366a9-b393-4c9b-a7ea-3179ced50c9e",
+                "resourcePath": "objects\\vfx_AirDust\\vfx_AirDust.yy",
+                "resourceType": "GMObject"
+            }
+        },
+        {
             "Key": "357bf162-59e4-4822-b93f-e515468f5fb2",
             "Value": {
                 "id": "9ad1c5c9-5d0c-4de7-a745-7e5ea3723d47",
@@ -2354,7 +2362,7 @@
             "Key": "9995ad7a-172c-4d44-bdee-a23427b79c40",
             "Value": {
                 "id": "163f56d2-d8f7-49ed-a954-7e68070b1e32",
-                "resourcePath": "sprites\\spr_smear\\spr_smear.yy",
+                "resourcePath": "sprites\\spr_sootParticles\\spr_sootParticles.yy",
                 "resourceType": "GMSprite"
             }
         },
@@ -2938,7 +2946,7 @@
             "Key": "c02f27aa-046f-47ad-a240-83b7481d3b88",
             "Value": {
                 "id": "ddd528e3-78c9-433b-8e72-2abba86ef150",
-                "resourcePath": "sprites\\spr_splatter\\spr_splatter.yy",
+                "resourcePath": "sprites\\spr_bloodParticles\\spr_bloodParticles.yy",
                 "resourceType": "GMSprite"
             }
         },
@@ -3251,6 +3259,22 @@
             "Value": {
                 "id": "2ffe4a5f-0d15-483c-a2e7-9a5ec829a454",
                 "resourcePath": "scripts\\GetObjectWeight\\GetObjectWeight.yy",
+                "resourceType": "GMScript"
+            }
+        },
+        {
+            "Key": "d6cf268f-9b18-481c-bea4-cf9584eb24c0",
+            "Value": {
+                "id": "ec5ef550-d720-4f3e-a0fc-9926d123afb4",
+                "resourcePath": "scripts\\ProcessSmear\\ProcessSmear.yy",
+                "resourceType": "GMScript"
+            }
+        },
+        {
+            "Key": "d7bc3ecf-032a-4884-9f0b-263b381890c1",
+            "Value": {
+                "id": "c0712543-ea4a-47ac-a2fc-c7ba143da3ec",
+                "resourcePath": "scripts\\ProcessObject\\ProcessObject.yy",
                 "resourceType": "GMScript"
             }
         },
@@ -3799,14 +3823,6 @@
             }
         },
         {
-            "Key": "fe47f7f6-68d6-42f7-b70d-6cc335550a90",
-            "Value": {
-                "id": "b40da1d4-0099-464b-8da1-beb76946a4ae",
-                "resourcePath": "scripts\\ClearVfxList\\ClearVfxList.yy",
-                "resourceType": "GMScript"
-            }
-        },
-        {
             "Key": "fecbded1-2b5a-4ae6-b04b-ceafd52f643b",
             "Value": {
                 "id": "53969e06-d54a-41c2-b957-62cb8ceeda18",
@@ -3857,8 +3873,8 @@
         "4cb1a38d-16b6-40c5-bb8b-4f8c1e8dd1bf",
         "32c13a98-e5cf-4289-81c8-327bf2288c0f",
         "301e64b6-ff9f-4559-817c-7b5e1c76f97a",
+        "d6cf268f-9b18-481c-bea4-cf9584eb24c0",
         "12dfc90c-9393-4fe7-a8c9-47629aaca62d",
-        "fe47f7f6-68d6-42f7-b70d-6cc335550a90",
         "2ff2245a-07a5-4f78-82b9-a81048aede95",
         "3c0aa69d-446c-4e98-a979-56698816eb2c",
         "4ff72b4c-7966-43a3-bd02-da80295fdc30",
@@ -3866,6 +3882,7 @@
         "8f231529-6b5e-40b7-8bfb-35ebfbd9fc62",
         "1a098203-4844-4433-885a-7ed9368db800",
         "9318e542-2bd7-40b4-a25d-c803b60ebf08",
+        "d7bc3ecf-032a-4884-9f0b-263b381890c1",
         "9ef30917-7a71-41ba-b0e0-f268aaccd126",
         "f880aa16-ac9e-40d8-bcbb-c47218fde082",
         "b9f03d06-805d-4f20-8c40-3b427af39fc2",

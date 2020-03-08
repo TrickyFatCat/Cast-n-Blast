@@ -99,7 +99,7 @@
             "mvc": "1.0",
             "objectId": "afff8e58-95bc-4515-9151-ed5722abe174",
             "propertyId": "3bbe149d-c474-40a3-b50d-be2b280ad9c3",
-            "value": "4"
+            "value": "5"
         },
         {
             "id": "9e19f174-5512-4895-b987-5a1f15e1307a",
@@ -108,6 +108,14 @@
             "objectId": "afff8e58-95bc-4515-9151-ed5722abe174",
             "propertyId": "0aff4bff-4b6c-4771-addc-24096d57d6b5",
             "value": "EnemyIndex.Demon"
+        },
+        {
+            "id": "0a72992c-7a2f-4f81-89fa-f03a30f4534c",
+            "modelName": "GMOverriddenProperty",
+            "mvc": "1.0",
+            "objectId": "afff8e58-95bc-4515-9151-ed5722abe174",
+            "propertyId": "80b80647-c9da-4df6-8b78-5ceaf8fc8d5f",
+            "value": "12"
         }
     ],
     "parentObjectId": "afff8e58-95bc-4515-9151-ed5722abe174",

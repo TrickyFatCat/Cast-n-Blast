@@ -20,5 +20,6 @@ isBounced = false;
 // Smear parameters
 isSmearing = true;
 smearObject = vfx_Smear;
+smearSprite = sprite_index;
 smearTime = 3;
 smearTimer = 0;

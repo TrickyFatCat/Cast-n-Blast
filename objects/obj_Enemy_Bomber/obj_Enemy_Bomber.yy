@@ -112,12 +112,28 @@
             "value": "EnemyIndex.Bomber"
         },
         {
-            "id": "942e78e2-4602-41b4-b797-a0e41b14e766",
+            "id": "d30405f4-35b1-4327-a394-f476f1765cba",
             "modelName": "GMOverriddenProperty",
             "mvc": "1.0",
-            "objectId": "1e80bb98-5aea-467b-b065-8a432456cd14",
-            "propertyId": "175e2b31-4f05-4bfd-a5d1-71c555358c0c",
-            "value": "True"
+            "objectId": "afff8e58-95bc-4515-9151-ed5722abe174",
+            "propertyId": "80b80647-c9da-4df6-8b78-5ceaf8fc8d5f",
+            "value": "12"
+        },
+        {
+            "id": "debd384b-47fa-40cd-8ecb-1583c62573e2",
+            "modelName": "GMOverriddenProperty",
+            "mvc": "1.0",
+            "objectId": "afff8e58-95bc-4515-9151-ed5722abe174",
+            "propertyId": "3bbe149d-c474-40a3-b50d-be2b280ad9c3",
+            "value": "3"
+        },
+        {
+            "id": "438b8748-ca49-4357-95b4-70519206a44f",
+            "modelName": "GMOverriddenProperty",
+            "mvc": "1.0",
+            "objectId": "afff8e58-95bc-4515-9151-ed5722abe174",
+            "propertyId": "39caf948-0964-476e-b013-d3d0de30877d",
+            "value": "70"
         }
     ],
     "parentObjectId": "afff8e58-95bc-4515-9151-ed5722abe174",

@@ -12,7 +12,7 @@ groundFriction = 0.065;
 velocityX = 0;
 velocityY = 0;
 
-velocityZ = random_range(4, 5);
+velocityZ = random_range(0.5, 5);
 
 gravityZ = 0.2;
 

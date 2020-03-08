@@ -2,7 +2,7 @@
     "id": "9995ad7a-172c-4d44-bdee-a23427b79c40",
     "modelName": "GMSprite",
     "mvc": "1.12",
-    "name": "spr_smear",
+    "name": "spr_sootParticles",
     "For3D": false,
     "HTile": false,
     "VTile": false,

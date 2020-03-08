@@ -1,4 +1,4 @@
 event_inherited();
 
 SpawnExplosion(x, y, explosionObject, damage, effectRadius);
-SpawnSplatterEffect(x, y, vfx_Splatter, 40, 5);
+SpawnSplatterEffect(x, y, spr_sootParticles, spr_sootParticles, 40, 5);

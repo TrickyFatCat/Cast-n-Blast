@@ -1,8 +1,8 @@
 {
-    "id": "fe47f7f6-68d6-42f7-b70d-6cc335550a90",
+    "id": "d7bc3ecf-032a-4884-9f0b-263b381890c1",
     "modelName": "GMScript",
     "mvc": "1.0",
-    "name": "ClearVfxList",
+    "name": "ProcessObject",
     "IsCompatibility": false,
     "IsDnD": false
 }

@@ -336,6 +336,20 @@
             "value": "1.5",
             "varName": "waitingTime",
             "varType": 0
+        },
+        {
+            "id": "80b80647-c9da-4df6-8b78-5ceaf8fc8d5f",
+            "modelName": "GMObjectProperty",
+            "mvc": "1.0",
+            "listItems": null,
+            "multiselect": false,
+            "rangeEnabled": false,
+            "rangeMax": 10,
+            "rangeMin": 0,
+            "resourceFilter": 1023,
+            "value": "8",
+            "varName": "limbsCount",
+            "varType": 0
         }
     ],
     "solid": false,

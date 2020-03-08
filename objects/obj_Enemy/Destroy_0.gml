@@ -30,16 +30,25 @@ for (var i = 0; i < hitPointsDrop; i++)
 if (explosionObject != noone)
 {
 	SpawnExplosion(x, y, explosionObject, explosionDamage, explosionRadius);
-	SpawnSplatterEffect(x, y, vfx_Splatter, 40, 5);
+	SpawnSplatterEffect(x, y, spr_bloodParticles, spr_bloodParticles, 50, 5);
 }
 
-for (var i = 0; i < 5; i++)
+var _reapingChance = 0.25;
+var _diceRoll = random_range(0, 1);
+
+if (_diceRoll <= _reapingChance)
 {
-	var _limb = instance_create_layer(x, y, layer, vfx_Limbs);
-	_limb.directionCurrent = random(360);
+	var _limbsNumber = irandom_range(5, limbsCount);
+	for (var i = 0; i < 10; i++)
+	{
+		var _limb = instance_create_layer(x, y, layer, vfx_Limbs);
+		_limb.directionCurrent = random(360);
+	}
 }
 
 global.Score += scoreAdd;
+
+path_delete(path);
 
 //for (var i = 0; i < 3; i++)
 //{

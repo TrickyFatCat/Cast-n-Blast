@@ -22,6 +22,6 @@ var _checkTimer = CheckTimer(smearTimer, smearTime);
 if (_checkTimer)
 {
 	smearTimer = 0;
-	
-	instance_create_layer(x, y, layer, smearObject);
+	var _smear = instance_create_layer(x, y, layer, vfx_Smear);
+	_smear.sprite_index = smearSprite;
 }

@@ -34,7 +34,7 @@ switch currentState
 		for (var i = 0; i < 3; i++)
 		{
 			var _direction = point_direction(0, 0, directionX, directionY) - 180 + random_range(-30, 30);
-			SpawnDust(x, y - 1, true, _direction);
+			SpawnDust(vfx_Dust ,x, y - 1, true, _direction);
 		}
 		
 		if (velocity <= maxVelocity)
