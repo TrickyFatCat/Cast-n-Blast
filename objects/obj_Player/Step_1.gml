@@ -26,3 +26,52 @@ if (currentState == PlayerState.Idle || currentState == PlayerState.Run || curre
 }
 
 ProcessAmmoRecovery;
+
+if (mainWeapon.isShooting)
+{
+	switch(weaponID)
+	{
+		case PlayerWeapon.FireBall:
+			if (mainWeapon.shootPauseIsOver)
+			{
+				PlaySound(sfx_fireballShot);
+			}
+		break;
+		
+		case PlayerWeapon.Icicles:
+			if (mainWeapon.shootPauseIsOver)
+			{
+				PlaySound(sfx_iciclesShot);
+			}
+		break;
+		
+		case PlayerWeapon.Meteor:
+			if (mainWeapon.shootPauseIsOver)
+			{
+				PlaySound(sfx_meteorShot);
+			}
+		break;
+		
+		case PlayerWeapon.ArcaneSpear:
+			switch(mainWeapon.currentChargeState)
+			{
+				case ChargeState.Charging:
+					PlaySound(sfx_arcaneSpearCharge);
+				break;
+			
+				case (ChargeState.Wait):
+					PlaySound(sfx_arcaneSpearChargeEnd);
+				break;
+				
+				case (ChargeState.Execute):
+					PlaySound(sfx_arcaneSpearShot);
+				break;
+			}
+		break;
+	}
+}
+
+if (ultimateWeapon.isShooting)
+{
+	PlaySound(sfx_ultimateShot);
+}

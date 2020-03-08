@@ -1,10 +1,9 @@
 /// @description CreateNecessaryObjects
 
-pcVersion = true;
-
 global.TimeFactor = 1;
 global.InteractiveObjects = noone;
 global.EnemySpawns = ds_list_create();
+global.Music = noone;
 
 randomize();
 

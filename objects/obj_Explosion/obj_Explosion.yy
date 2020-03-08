@@ -145,6 +145,20 @@
             "value": "True",
             "varName": "isSpawningDust",
             "varType": 3
+        },
+        {
+            "id": "5793f320-5ff3-4bed-9df1-a21e727c5e39",
+            "modelName": "GMObjectProperty",
+            "mvc": "1.0",
+            "listItems": null,
+            "multiselect": false,
+            "rangeEnabled": false,
+            "rangeMax": 10,
+            "rangeMin": 0,
+            "resourceFilter": 1023,
+            "value": "sfx_genericExplosion",
+            "varName": "explosionSound",
+            "varType": 4
         }
     ],
     "solid": false,

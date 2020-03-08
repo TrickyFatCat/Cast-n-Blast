@@ -8,3 +8,5 @@ with (explosion)
 	currentState = RocketExplosionState.Active;
 	isDisplayingRadius = false;
 }
+
+PlaySoundAt(sfx_genericExplosion, 256, false);

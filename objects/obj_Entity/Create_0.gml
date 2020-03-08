@@ -24,3 +24,4 @@ trancendenceProgress = 0;
 
 // Collision
 collisionEnable = true;
+moveSoundTimer = 0;

@@ -11,12 +11,12 @@ velocity = CalculateDeceleratedVelocity(directionCurrent, velocity, groundFricti
 
 var _step = CalculateStep(0.25);
 
-//audio_stop_sound(global.Music);
+audio_stop_sound(global.Music);
 
-//if (!audio_is_playing(sfx_deathtimer))
-//{
-//	audio_play_sound(sfx_deathtimer, 1000, true);
-//}
+if (!audio_is_playing(sfx_deathtimer))
+{
+	audio_play_sound(sfx_deathtimer, 1000, true);
+}
 
 trancendenceProgress = ApproachTimeFactor(trancendenceProgress, 1, _step);
 drawScaleY = ApproachTimeFactor(drawScaleY, targetScale, trancendenceProgress);

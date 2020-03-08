@@ -50,6 +50,8 @@ global.Score += scoreAdd;
 
 path_delete(path);
 
+PlaySoundAt(sfx_enemyDeath, 128, false);
+
 //for (var i = 0; i < 3; i++)
 //{
 //	instance_create_layer(x , y, layer, obj_MineStandard);

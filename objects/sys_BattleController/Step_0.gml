@@ -14,11 +14,11 @@ switch (global.BattleState)
 		var _checkStartTimer = CheckTimer(battleStartTimer, battleStartTime);
 		var _playSound = CheckTimer(soundTimer, _soundTime)
 	
-		//if (_playSound)
-		//{
-		//	PlaySound(sfx_timer);
-		//	soundTimer = 0;
-		//}
+		if (_playSound)
+		{
+			PlaySound(sfx_timer);
+			soundTimer = 0;
+		}
 				
 		if (_checkStartTimer)
 		{
@@ -27,21 +27,20 @@ switch (global.BattleState)
 			randomPerk = noone;
 			obj_SpawnController.isActive = true;
 			ActivateTiles;
-			//PlaySound(sfx_start);
+			PlaySound(sfx_start);
 		}
 	break;
 			
 	case BattleState.Active:
-		//if (!audio_is_playing(global.Music)) && (!audio_is_playing(sfx_start)) && global.Player.currentState < PlayerState.Transcendence
-		//{
-		//	global.Music = choose(bgm_battle00, bgm_battle01, bgm_battle02, bgm_battle03);
-		//	audio_sound_gain(global.Music, 0, 0);
-		//	audio_play_sound(global.Music, 1000, true);
-		//	audio_sound_gain(global.Music, 0.5, 1500);
-		//}
+		if (!audio_is_playing(global.Music)) && !audio_is_playing(sfx_start) && global.Player.currentState < PlayerState.Transcendence
+		{
+			global.Music = choose(bgm_battleground, bgm_lightsOut, bgm_likeTotallyRad);
+			audio_sound_gain(global.Music, 0, 0);
+			audio_play_sound(global.Music, 1000, true);
+			audio_sound_gain(global.Music, 0.5, 1500);
+		}
 		
 		global.PlayTime += global.TimeFactor;
-		
 		var _waveTimeIsOver = CheckTimer(global.PlayTime, roundTime);
 		
 		if (_waveTimeIsOver)

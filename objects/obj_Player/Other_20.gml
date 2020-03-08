@@ -9,6 +9,7 @@ switch (ultimateState)
 		drawScaleX = currentScaleX;
 		drawScaleY = currentScaleX;
 		drawColour = global.WeaponColours[PlayerWeapon.UltimateGun];
+		PlaySound(sfx_ultimateActivation);
 	break;
 	
 	case UltimateState.Process:

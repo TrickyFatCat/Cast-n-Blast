@@ -62,7 +62,15 @@
             "value": "False"
         },
         {
-            "id": "1059d9df-5c91-4f7c-946a-f620afa9e318",
+            "id": "834c9146-0ffc-4115-842b-b89432c9563f",
+            "modelName": "GMOverriddenProperty",
+            "mvc": "1.0",
+            "objectId": "c0e41cf2-9178-4539-bc34-9d5ed353453b",
+            "propertyId": "5793f320-5ff3-4bed-9df1-a21e727c5e39",
+            "value": "sfx_deathExplosion"
+        },
+        {
+            "id": "26b04f4b-825a-4b80-91fd-df09899a2e7b",
             "modelName": "GMOverriddenProperty",
             "mvc": "1.0",
             "objectId": "c0e41cf2-9178-4539-bc34-9d5ed353453b",

@@ -8,3 +8,4 @@ var _flashPower = 2;
 EnableFlash(_flashColour, _flashPower);
 IncreaseUltimatePoints(other.ultimatePointsNumber + ultimateGainFactor);
 instance_destroy(other);
+PlaySound(sfx_pickup);

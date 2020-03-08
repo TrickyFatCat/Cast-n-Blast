@@ -49,12 +49,12 @@ switch (currentChargeState)
 		}
 		else
 		{
-			currentChargeState = ChargeState.Wait;
+			currentChargeState = ChargeState.Execute;
 		}
 	break;
 	
 	case ChargeState.Wait:
-		if (chargeWaitTime > 0 && (isShooting))
+		if (chargeWaitTime > 0 && isShooting)
 		{
 			var _chargeWaitStep = CalculateStep(chargeWaitTime);
 			

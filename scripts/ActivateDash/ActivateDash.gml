@@ -12,6 +12,7 @@ if (sys_GameManager.keyDash && dashCharge > 0)
 	collisionEnable = false;
 	velocity = dashVelocity;
 	DecreaseDashCharge();
+	audio_play_sound(sfx_dash, 0, false);
 	
 	for (var i = 0; i < 25; i++)
 	{

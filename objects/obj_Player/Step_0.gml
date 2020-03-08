@@ -39,6 +39,17 @@ switch (currentState)
 		ShootWeapon;
 		PullPickups;
 		ProcessUltimate;
+		moveSoundTimer += global.TimeFactor;
+		
+		var _stepTime = SetTime(0.25);
+		
+		var _timeIsOver = CheckTimer(moveSoundTimer, _stepTime)
+		
+		if (_timeIsOver)
+		{
+			moveSoundTimer = 0;
+			PlaySound(sfx_playerStep);
+		}
 	break;
 	
 	case PlayerState.Dash:
@@ -46,7 +57,6 @@ switch (currentState)
 		MovePlayer;
 		PullPickups;
 		ProcessUltimate;
-		//SpawnTrailEffect(vfx_Trail, 0.15, 1, true, false, true, false);
 	break;
 	
 	case PlayerState.Transcendence:
@@ -54,6 +64,7 @@ switch (currentState)
 	break;
 	
 	case PlayerState.Death:
+		StopPlayingSound(sfx_deathTimer);
 	break;
 }
 

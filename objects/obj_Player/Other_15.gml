@@ -13,6 +13,11 @@ if (global.TimeFactor > 0)
 		_shootKey = sys_GameManager.keyShootSemiAuto;
 	}
 	
+	if (_shootKey && ammo == 0)
+	{
+		PlaySound(sfx_noMana);
+	}
+	
 	switch (mainWeapon.currentShootMode)
 	{
 		case ShootMode.Normal:
