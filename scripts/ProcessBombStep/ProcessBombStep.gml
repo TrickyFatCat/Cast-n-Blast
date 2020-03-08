@@ -20,7 +20,7 @@ switch currentState
 				var _direction = random(360);
 				var _x = x + random_range(-10, 10);
 				var _y = y + random_range(-5, 10);
-				SpawnDust(vfx_Dust, _x, _y, true, _direction);
+				SpawnDust(vfx_Dust, _x, _y, c_white, true, _direction);
 			}
 		}
 	break;
@@ -32,7 +32,7 @@ switch currentState
 			for (var i = 0; i < 1; i++)
 			{
 				var _direction = directionCurrent - 180 + random_range(-30, 30);
-				SpawnDust(vfx_Dust, x, y - 1, true, _direction);
+				SpawnDust(vfx_Dust, x, y - 1, c_white, true, _direction);
 			}
 		}
 	break;

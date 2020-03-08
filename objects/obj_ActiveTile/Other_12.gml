@@ -1,24 +1,24 @@
 /// @description ProcessTileActiveState
 
-if (tileType == TileType.DamageDealer)
-{
-	actionDelayTimer += global.TimeFactor;
-	var _timeIsOver = CheckTimer(actionDelayTimer, actionDelayTime)
+//if (tileType == TileType.DamageDealer)
+//{
+//	actionDelayTimer += global.TimeFactor;
+//	var _timeIsOver = CheckTimer(actionDelayTimer, actionDelayTime)
 
-	if (!_timeIsOver)
-	{
-		isActive = false;
-	}
-	else
-	{
-		isActive = true;
-		actionDelayTimer = 0;
-	}
-}
-else
-{
-	isActive = true;
-}
+//	if (!_timeIsOver)
+//	{
+//		isActive = false;
+//	}
+//	else
+//	{
+//		isActive = true;
+//		actionDelayTimer = 0;
+//	}
+//}
+//else
+//{
+//	isActive = true;
+//}
 
 if (isTemporary)
 {

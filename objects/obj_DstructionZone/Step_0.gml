@@ -20,19 +20,19 @@ switch (currentState)
 	break;
 	
 	case TileState.Active:
-		actionDelayTimer += global.TimeFactor;
-		var _timeIsOver = CheckTimer(actionDelayTimer, actionDelayTime)
+		//actionDelayTimer += global.TimeFactor;
+		//var _timeIsOver = CheckTimer(actionDelayTimer, actionDelayTime)
 
-		if (!_timeIsOver)
-		{
-			isActive = false;
-		}
-		else
-		{
-			isActive = true;
-			actionDelayTimer = 0;
-			EnableFlash(c_yellow, 0.25);
-		}
+		//if (!_timeIsOver)
+		//{
+		//	isActive = false;
+		//}
+		//else
+		//{
+		//	isActive = true;
+		//	actionDelayTimer = 0;
+		//	EnableFlash(c_yellow, 0.25);
+		//}
 		
 		activeTimer += global.TimeFactor;
 		_timeIsOver = CheckTimer(activeTimer, activeTime);

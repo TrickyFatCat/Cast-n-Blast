@@ -37,10 +37,10 @@ while (_diceRoll > _currentWeight)
 	}
 }
 
-	if (is_array(_object))
-	{
-		return _object;
-	}
+//if (is_array(_object))
+//{
+//	return _object;
+//}
 
 _result = ds_map_create();
 ds_map_copy(_result, _objectData);
