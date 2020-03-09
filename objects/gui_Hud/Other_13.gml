@@ -59,7 +59,7 @@ switch (global.BattleState)
 	
 			if (!_timerIsOver) 
 			{
-				DrawTiltedText(fnt_small, guiWidth / 2, 0, guiHeight / 2, 2, c_maroon, c_red, "ROUND " + string(global.Round), 3, 3);
+				DrawTiltedText(fnt_small, guiWidth / 2, 0, guiHeight / 2, 2, c_maroon, c_red, "ROUND " + string(global.Round), 4, 4);
 			}
 			else 
 			{

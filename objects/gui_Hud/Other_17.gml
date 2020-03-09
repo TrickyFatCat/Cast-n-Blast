@@ -3,16 +3,16 @@ var _timeLeft = (sys_BattleController.roundTime - global.PlayTime) / 60;
 // Draw timer
 draw_set_font(fnt_small);
 SetAlign(fa_center, fa_center);
-DrawTextOutline(guiWidth * 0.65, 20, c_black, c_white, "TIME LEFT");
+DrawTextOutline(guiWidth * 0.65, 20, c_black, c_white, "TIME LEFT", 2, 2);
 SetAlign(fa_center, fa_center);
-DrawTextOutline(guiWidth * 0.65, 40, c_black, c_white, string(_timeLeft));
+DrawTextOutline(guiWidth * 0.65, 60, c_black, c_white, string(_timeLeft), 2, 2);
 
 // Draw score
 draw_set_font(fnt_small);
 SetAlign(fa_center, fa_center);
-DrawTextOutline(guiWidth * 0.35, 20, c_black, c_white, "SCORE");
+DrawTextOutline(guiWidth * 0.35, 20, c_black, c_white, "SCORE", 2, 2);
 SetAlign(fa_center, fa_center);
-DrawTextOutline(guiWidth * 0.35, 40, c_black, c_white, string(global.Score));
+DrawTextOutline(guiWidth * 0.35, 60, c_black, c_white, string(global.Score), 2, 2);
 
 // Show info texts
 var _x = guiWidth / 2;
@@ -48,10 +48,11 @@ var _scaleX = 200;
 var _scaleY = 24;
 var _value = round(global.Player.hitPoints);
 var _maxValue = global.Player.maxHitPoints;
+var _textScale = 1;
 
 DrawProgressBar(_x, _y, _scaleX, _scaleY, hudAlpha, c_black, global.ResourceColours[ResourceType.HitPoints], _value, _maxValue, false);
 draw_sprite_ext(spr_hitPoints, 0, _x + 12, _y + _scaleY / 2, 1, 1, 0, c_white, hudAlpha);
-DrawTextOutline(_x + _scaleX / 2, _y + _scaleY / 2, c_black, c_white, string(_value));
+DrawTextOutline(_x + _scaleX / 2, _y + _scaleY / 2, c_black, c_white, string(_value), _textScale, _textScale);
 
 // ShieldPoints
 _y -= (_scaleY + 4);
@@ -61,7 +62,7 @@ _maxValue = global.Player.maxShieldPoints;
 
 DrawProgressBar(_x, _y, _scaleX, _scaleY, hudAlpha, c_black, global.ResourceColours[ResourceType.ShieldPoints], _value, _maxValue, false);
 draw_sprite_ext(spr_shieldPoints, 0, _x + 12, _y + _scaleY / 2, 1, 1, 0, c_white, hudAlpha);
-DrawTextOutline(_x + _scaleX / 2, _y + _scaleY / 2, c_black, c_white, string(_value));
+DrawTextOutline(_x + _scaleX / 2, _y + _scaleY / 2, c_black, c_white, string(_value), _textScale, _textScale);
 
 // UltimatePoints
 _scaleX = 200;
@@ -83,7 +84,7 @@ else
 }
 
 DrawProgressBar(_x, _y, _scaleX, _scaleY, hudAlpha, _borderColour, global.WeaponColours[PlayerWeapon.UltimateGun], _value, _maxValue, false);
-DrawTextOutline(_x + _scaleX / 2, _y + _scaleY / 2, c_black, c_white, _text);
+DrawTextOutline(_x + _scaleX / 2, _y + _scaleY / 2, c_black, c_white, _text, _textScale, _textScale);
 
 // Dash
 _y -= _scaleY + 4;
@@ -151,9 +152,9 @@ else if (_percent <= 10)
 
 DrawProgressBar(_x, _y, _scaleX, _scaleY, hudAlpha, _borderColour, global.ResourceColours[ResourceType.ManaPoints], _value, _maxValue, false);
 SetAlign(fa_left, fa_center);
-DrawTextOutline(_x + 6, _y + _scaleY / 2, c_black, _colour, string(_value) + "/" + string(_maxValue));
+DrawTextOutline(_x + 6, _y + _scaleY / 2, c_black, _colour, string(_value) + "/" + string(_maxValue), _textScale, _textScale);
 SetAlign(fa_right, fa_center);
-DrawTextOutline(_x + _scaleX - 6, _y + _scaleY / 2, c_black, _nameColour, string(_name));
+DrawTextOutline(_x + _scaleX - 6, _y + _scaleY / 2, c_black, _nameColour, string(_name), _textScale, _textScale);
 
 // Draw Weapon Numbers
 _y -= _scaleY + 4;
@@ -186,7 +187,7 @@ for (var i = 0; i < 4; i++)
 	
 	var _scale = 32;
 	DrawProgressBar(_x - _scaleX, _y, _scaleX, _scaleY, hudAlpha, _borderColour, c_dkgray, _ammo, _maxAmmo, false);
-	DrawTextOutline(_x - _scaleX / 2, _y + _scaleY / 2, c_black, _colour, i + 1);
+	DrawTextOutline(_x - _scaleX / 2, _y + _scaleY / 2, c_black, _colour, i + 1, _textScale, _textScale);
 }
 
 // Draw lowammo text
@@ -196,7 +197,7 @@ _y = device_mouse_y_to_gui(0)
 if (_percent <= 25)
 {
 	SetAlign(fa_center, fa_top);
-	DrawTextOutline(_x, _y + 24, c_black, _nameColour, "Low " + string(_name) + " mana");
+	DrawTextOutline(_x, _y + 24, c_black, _nameColour, "Low " + string(_name) + " mana", _textScale, _textScale);
 }
 
 // Draw crosshair

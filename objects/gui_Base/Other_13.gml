@@ -38,8 +38,8 @@ if (menuIsActive)
 		}
 	
 		var _x = menuX;
-		var _y = menuY - (menuItemHeight * (i * 1.5));
+		var _y = menuY - (menuItemHeight * (i * 4));
 	
-		DrawTextOutline(_x, _y, c_black, _itemColour, _itemText);
+		DrawTextOutline(_x, _y, c_black, _itemColour, _itemText, 2, 2);
 	}
 }
