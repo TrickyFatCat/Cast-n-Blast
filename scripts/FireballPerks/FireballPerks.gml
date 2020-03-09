@@ -10,19 +10,11 @@ switch (_perkId)
 		IncreaseDamage(_perkId, _weaponId);
 	break;
 	
-	case Perk.FireballRate:
-		IncreaseRateOfFire(_perkId, _weaponId);
-	break;
-
-	case Perk.FireballSpread:
-		DecreaseSpread(_perkId, _weaponId);
-	break;
-	
-	case Perk.FireballReload:
-		DecreaseReloadTime(_perkId, _weaponId);
-	break;
-	
 	case Perk.FireballMaxAmmo:
 		IncreaseMaxAmmo(_perkId, _weaponId);
+	break;
+	
+	case Perk.FireballRecoveryRate:
+		IncreaseRecoveryRate(_perkId, _weaponId);
 	break;
 }

@@ -2,19 +2,19 @@
 
 var _perkId = argument0;
 
-var _weaponId = PlayerWeapon.Icicles;
+var _weaponId = PlayerWeapon.Meteor;
 
 switch (_perkId)
 {
-	case Perk.IciclesBullets:
-		IncreaseBullets(_perkId, _weaponId);
+	case Perk.MeteorDamage:
+		IncreaseDamage(_perkId, _weaponId);
 	break;
 	
-	case Perk.IciclesMaxAmmo:
+	case Perk.MeteorMaxAmmo:
 		IncreaseMaxAmmo(_perkId, _weaponId);
 	break;
 	
-	case Perk.IciclesRecoveryRate:
+	case Perk.MeteorRecoveryRate:
 		IncreaseRecoveryRate(_perkId, _weaponId);
 	break;
 }

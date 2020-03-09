@@ -34,6 +34,10 @@ switch (_perkId)
 		global.Player.shieldPoints = global.Player.maxShieldPoints;
 	break;
 	
+	case Perk.PickupRadius:
+		global.Player.pullDistance = IncreaseParameterPercent(_perkId, global.Player.defaultPullDistance);
+	break;
+	
 	case Perk.MaxUltimate:
 		global.Player.maxUltimatePoints = IncreaseParameterPercent(_perkId, global.Player.defaultMaxUltimatePoints);
 		global.Player.ultimatePoints = global.Player.maxUltimatePoints;

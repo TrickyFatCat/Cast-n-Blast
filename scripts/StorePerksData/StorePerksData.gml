@@ -11,38 +11,46 @@ enum Perk
 	MaxHitPoints,
 	ShieldFactor,
 	MaxShieldPoints,
+	PickupRadius,
 	MaxUltimate,
 	UltimateGain,
 	UltimateDamage,
 	FireballDamage,
-	FireballRate,
-	FireballSpread,
-	FireballReload,
 	FireballMaxAmmo,
+	FireballRecoveryRate,
 	IciclesBullets,
-	IciclesRate,
-	IciclesSpread,
-	IciclesReload,
-	IciclesMaxAmmo
+	IciclesMaxAmmo,
+	IciclesRecoveryRate,
+	MeteorDamage,
+	MeteorMaxAmmo,
+	MeteorRecoveryRate,
+	ArcaneDamage,
+	ArcaneMaxAmmo,
+	ArcaneChargeSpeed,
+	ArcaneRecoveryRate
 }
 
-SetPerkData(Perk.RunSpeed,			2,	0.25,	true,	false,	"Run speed");
-SetPerkData(Perk.DashSpeed,			2,	0.2,	true,	false,	"Dash distance");
-SetPerkData(Perk.DashCharge,		1,	1.0,	true,	true,	"Dash charge");
-SetPerkData(Perk.DashCoolDown,		2,	0.25,	true,	false,	"Dash cooldown");
-SetPerkData(Perk.MaxHitPoints,		4,	0.25,	true,	false,	"Max HP");
-SetPerkData(Perk.ShieldFactor,		2,	0.25,	true,	false,	"Shield power");
-SetPerkData(Perk.MaxShieldPoints,	4,	25,		true,	true,	"Max shield points");
-SetPerkData(Perk.MaxUltimate,		2,	0.25,	true,	false,	"Ultimate duration");
-SetPerkData(Perk.UltimateGain,		2,	0.25,	true,	false,	"Ultimate income");
-SetPerkData(Perk.UltimateDamage,	2,	0.25,	true,	false,	"Ultimate damage");
+SetPerkData(Perk.RunSpeed,				2,	0.25,	true,	false,	"Run speed");
+SetPerkData(Perk.DashSpeed,				2,	0.2,	true,	false,	"Dash distance");
+SetPerkData(Perk.DashCharge,			1,	1.0,	true,	true,	"Dash charge");
+SetPerkData(Perk.DashCoolDown,			2,	0.25,	true,	false,	"Dash cooldown");
+SetPerkData(Perk.MaxHitPoints,			4,	0.25,	true,	false,	"Max HP");
+SetPerkData(Perk.ShieldFactor,			2,	0.25,	true,	false,	"Shield power");
+SetPerkData(Perk.MaxShieldPoints,		4,	25,		true,	true,	"Max shield points");
+SetPerkData(Perk.PickupRadius,			1,	0.5,	true,	false,	"Pickup radius");
+SetPerkData(Perk.MaxUltimate,			2,	0.25,	true,	false,	"Ultimate duration");
+SetPerkData(Perk.UltimateGain,			2,	0.25,	true,	false,	"Ultimate income");
+SetPerkData(Perk.UltimateDamage,		2,	0.25,	true,	false,	"Ultimate damage");
 SetPerkData(Perk.FireballDamage,		2,	0.25,	true,	false,	"Fireball damage");
-SetPerkData(Perk.FireballRate,		2,	0.25,	true,	false,	"Fireball rate");
-SetPerkData(Perk.FireballSpread,		2,	0.5,	false,	false,	"Fireball spread");
-SetPerkData(Perk.FireballReload,		2,	0.25,	false,	false,	"Fireball reload time");
-SetPerkData(Perk.FireballMaxAmmo,		2,	25,		true,	true,	"Fireball ammo");
-SetPerkData(Perk.IciclesBullets,	2,	5.0,	true,	true,	"Icicles bullets");
-SetPerkData(Perk.IciclesRate,		2,	0.25,	true,	false,	"Icicles rate");
-SetPerkData(Perk.IciclesSpread,		2,	0.25,	false,	false,	"Icicles spread");
-SetPerkData(Perk.IciclesReload,		2,	0.25,	false,	false,	"Icicles reload time");
-SetPerkData(Perk.IciclesMaxAmmo,	2,	5,		true,	true,	"Icicles ammo");
+SetPerkData(Perk.FireballMaxAmmo,		2,	30,		true,	true,	"Fireball mana");
+SetPerkData(Perk.FireballRecoveryRate,	2,	0.25,	true,	false,	"Fireball mana recovery");
+SetPerkData(Perk.IciclesBullets,		2,	5.0,	true,	true,	"Icicles bullets");
+SetPerkData(Perk.IciclesMaxAmmo,		2,	5,		true,	true,	"Icicles mana");
+SetPerkData(Perk.IciclesRecoveryRate,	2,	0.25,	true,	false,	"Icicles mana recovery");
+SetPerkData(Perk.MeteorDamage,			2,	0.25,	true,	false,	"Meteor damage");
+SetPerkData(Perk.MeteorMaxAmmo,			2,	2,		true,	true,	"Meteor mana");
+SetPerkData(Perk.MeteorRecoveryRate,	2,	0.25,	true,	false,	"Meteor mana recovery");
+SetPerkData(Perk.ArcaneDamage,			2,	0.25,	true,	false,	"Arcane spear damage");
+SetPerkData(Perk.ArcaneMaxAmmo,			2,	50,		true,	true,	"Arcane spear mana");
+SetPerkData(Perk.ArcaneChargeSpeed,		2,	0.25,	false,	false,	"Arcane spear charge speed");
+SetPerkData(Perk.ArcaneRecoveryRate,	2,	0.25,	true,	false,	"Arcane spear mana recovery");

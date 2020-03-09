@@ -7,3 +7,5 @@ PlayerParametersPerks(_perkId);
 UltimatePerks(_perkId);
 FireballPerks(_perkId);
 IciclesPerks(_perkId);
+MeteorPerks(_perkId);
+ArcaneSpearPerks(_perkId);

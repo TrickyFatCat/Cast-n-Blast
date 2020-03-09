@@ -655,6 +655,14 @@
             }
         },
         {
+            "Key": "2c465625-a95a-43e2-9368-80fe2c6b8c2d",
+            "Value": {
+                "id": "0f002a83-51b4-4e12-9b64-4dba82fe06e2",
+                "resourcePath": "scripts\\MeteorPerks\\MeteorPerks.yy",
+                "resourceType": "GMScript"
+            }
+        },
+        {
             "Key": "2c48c42c-9e81-4ec5-aa6a-abb32755111b",
             "Value": {
                 "id": "cbded367-2f09-491f-a990-dadc39bbe644",
@@ -2375,6 +2383,14 @@
             }
         },
         {
+            "Key": "8faaa6ad-1380-47a4-9c6c-e23efa70ddee",
+            "Value": {
+                "id": "b33300e0-815a-4345-ade1-2a4daeb8210b",
+                "resourcePath": "scripts\\IncreaseRecoveryRate\\IncreaseRecoveryRate.yy",
+                "resourceType": "GMScript"
+            }
+        },
+        {
             "Key": "9011710b-2336-4c27-9016-87d0065e81f0",
             "Value": {
                 "id": "7f35b638-5533-4181-98bb-265bc2d18a93",
@@ -2643,6 +2659,14 @@
             "Value": {
                 "id": "8565ace6-a3be-4354-857d-dff827517121",
                 "resourcePath": "scripts\\SetRecoveryTimer\\SetRecoveryTimer.yy",
+                "resourceType": "GMScript"
+            }
+        },
+        {
+            "Key": "a3c8bc3b-c7ed-407e-bfd3-76286e0eae2e",
+            "Value": {
+                "id": "426c41a6-a5fc-4354-91b2-ac3563d869f5",
+                "resourcePath": "scripts\\IncreaseChargeDamage\\IncreaseChargeDamage.yy",
                 "resourceType": "GMScript"
             }
         },
@@ -3311,6 +3335,14 @@
             }
         },
         {
+            "Key": "d079af72-9023-4eef-807a-e92e1800e8a5",
+            "Value": {
+                "id": "79192366-4ee0-4d1a-a11f-c8f4ecb78ab1",
+                "resourcePath": "scripts\\ArcaneSpearPerks\\ArcaneSpearPerks.yy",
+                "resourceType": "GMScript"
+            }
+        },
+        {
             "Key": "d0c77698-2736-4057-a7dc-8e1abca6921a",
             "Value": {
                 "id": "cbf00481-ede4-40b4-b769-fe1dfa0506e4",
@@ -3644,6 +3676,14 @@
                 "id": "93e76b77-fa64-4121-a35c-c0faf94feaa6",
                 "resourcePath": "fonts\\fnt_debug\\fnt_debug.yy",
                 "resourceType": "GMFont"
+            }
+        },
+        {
+            "Key": "e30879c9-6a54-43ee-b910-8b90fb123a23",
+            "Value": {
+                "id": "6f280673-f6ac-4316-8d12-06571c751872",
+                "resourcePath": "scripts\\DecreaseChargeTime\\DecreaseChargeTime.yy",
+                "resourceType": "GMScript"
             }
         },
         {
@@ -4249,12 +4289,17 @@
         "b790f692-6569-47a8-8390-49c046d7e3bf",
         "236249b0-8a55-4f08-8459-1b5d25365ca3",
         "39233fe7-5420-4104-a4be-cb72e9221578",
+        "2c465625-a95a-43e2-9368-80fe2c6b8c2d",
+        "d079af72-9023-4eef-807a-e92e1800e8a5",
         "1d082d65-dec9-42e1-8c6f-3f7d2477ed95",
+        "a3c8bc3b-c7ed-407e-bfd3-76286e0eae2e",
+        "e30879c9-6a54-43ee-b910-8b90fb123a23",
         "4d3bb398-9ca5-40e6-b9b1-00f21f69c2af",
         "3ce3bf8f-3063-472b-b111-129c33e603de",
         "965e7fe8-39de-4b24-bbe5-f64de85eb5be",
         "8811d9c6-2f06-4d56-8667-7f26e4d03975",
         "ad0e63ff-d036-4963-b815-1c2280a0c418",
+        "8faaa6ad-1380-47a4-9c6c-e23efa70ddee",
         "cff7cb59-a0aa-446d-a644-c3cb0ba7a714",
         "a6e421fa-8abb-4f64-83c2-27e1c150f24e",
         "1e524765-6693-42b8-8da9-7a26140c56cf",
