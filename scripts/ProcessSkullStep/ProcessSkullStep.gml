@@ -51,10 +51,18 @@ switch (currentState)
 	break;
 }
 
-var _direction = directionCurrent - 180;
-var _x = x + lengthdir_x(8, _direction);
-var _y = y + lengthdir_y(8, _direction);
-var _dust = SpawnDust(vfx_AirDust, _x, _y, drawColour, true, _direction);
-_dust.velocityZ = 0;
-
+dustSpawnTimer += global.TimeFactor;
+var _timeIsOver = CheckTimer(dustSpawnTimer, dustSpawnPause);
+			
+if (_timeIsOver)
+{
+	for (var i = 0; i < 1; i++)
+	{
+		var _direction = directionCurrent - 180;
+		var _x = x + lengthdir_x(8, _direction);
+		var _y = y + lengthdir_y(8, _direction);
+		var _dust = SpawnDust(vfx_AirDust, _x, _y, drawColour, true, _direction);
+		_dust.velocityZ = 0;
+	}
+}
 //SpawnTrailEffect(vfx_SkullTrail, 0.1, 1, true, true, true, true);

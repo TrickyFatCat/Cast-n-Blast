@@ -3,7 +3,6 @@
 
 var _target = argument0;
 var _script = argument1;
-
 var _number = instance_number(_target);
 
 if (_number > 0)

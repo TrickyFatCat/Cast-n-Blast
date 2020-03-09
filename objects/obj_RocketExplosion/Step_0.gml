@@ -5,6 +5,6 @@ switch (currentState)
 	break;
 	
 	case RocketExplosionState.Active:
-		ProcessExplosion;
+		ExecuteExplosion;
 	break;
 }

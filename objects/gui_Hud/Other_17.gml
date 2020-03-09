@@ -22,13 +22,13 @@ var _enemyNumber = global.TotalEnemies;
 
 if (global.BattleState == BattleState.RoundEnd)
 {
-	DrawTiltedText(fnt_medium, _x, 0, _y, 2, c_maroon, c_red, "Kill remaining enemies");
+	DrawTiltedText(fnt_small, _x, 0, _y, 2, c_maroon, c_red, "Kill remaining enemies", 2, 2);
 }
 
 if (global.BattleState = BattleState.Intermission)
 {
 	var _timeLeft = round((sys_BattleController.battlePauseTime - sys_BattleController.battlePauseTimer) / 60);
-	DrawTiltedText(fnt_medium, _x, 0, _y, 2, c_maroon, c_red, "Intermission ends in " + string(_timeLeft));
+	DrawTiltedText(fnt_small, _x, 0, _y, 2, c_maroon, c_red, "Intermission ends in " + string(_timeLeft), 2, 2);
 }
 
 // Show random perk
@@ -36,7 +36,7 @@ if (showRandomPerk)
 {
 	var _perkId = sys_BattleController.randomPerk;
 	var _perkName = GenerateName(_perkId, false);
-	DrawTiltedText(fnt_medium, _x, 0, _y, 2, c_maroon, c_red, "Perk '" + _perkName + "' was chosen");
+	DrawTiltedText(fnt_small, _x, 0, _y, 2, c_maroon, c_red, "Perk '" + _perkName + "' was chosen", 2, 2);
 }
 
 // HitPoints

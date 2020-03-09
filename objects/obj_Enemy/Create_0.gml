@@ -83,3 +83,26 @@ waitTime = SetTime(waitingTime);
 stayTimer = 0;
 stayTime = SetTime(1);
 isStaying = false;
+
+shieldPickups = [];
+shieldPickups = PreinstantiateObject(obj_ShieldPointsPickup, shieldPointsDrop);
+
+hitPointsPickups = [];
+hitPointsPickups = PreinstantiateObject(obj_HitPointsPickup, hitPointsDrop);
+
+ultimatePickups = [];
+ultimatePickups = PreinstantiateObject(obj_UltimatePointsPickup, ultimatePointsDrop * 100);
+
+limbs = [];
+var _reapingChance = 0.2;
+var _diceRoll = random_range(0, 1);
+
+if (_diceRoll <= _reapingChance)
+{
+	var _limbsNumber = irandom_range(5, limbsCount);
+	limbs = PreinstantiateObject(vfx_Limbs, _limbsNumber);
+	for (var i = 0; i < _limbsNumber; i++)
+	{
+		limbs[i].directionCurrent = random(360);
+	}
+}

@@ -1,6 +1,6 @@
 /// @description Insert description here
 
-draw_set_font(fnt_debug);
+draw_set_font(fnt_small);
 
 draw_set_color(c_black);
 draw_set_alpha(0.75);

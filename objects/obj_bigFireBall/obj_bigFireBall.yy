@@ -34,6 +34,14 @@
             "objectId": "05f92ec3-120c-4570-a05d-ff81220fde81",
             "propertyId": "3439b292-c5a0-42d6-93fb-66845621e9c6",
             "value": "vfx_EnemyImpact"
+        },
+        {
+            "id": "0ff0c24f-a5a7-45f2-86db-9b818664f38b",
+            "modelName": "GMOverriddenProperty",
+            "mvc": "1.0",
+            "objectId": "1e80bb98-5aea-467b-b065-8a432456cd14",
+            "propertyId": "91368bad-67f2-4139-a390-a0edfafeb884",
+            "value": "True"
         }
     ],
     "parentObjectId": "a2c41477-8789-4c57-a289-80958b95a050",

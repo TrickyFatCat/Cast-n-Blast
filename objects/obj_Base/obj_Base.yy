@@ -117,6 +117,20 @@
             "value": "False",
             "varName": "drawOutline",
             "varType": 3
+        },
+        {
+            "id": "91368bad-67f2-4139-a390-a0edfafeb884",
+            "modelName": "GMObjectProperty",
+            "mvc": "1.0",
+            "listItems": null,
+            "multiselect": false,
+            "rangeEnabled": false,
+            "rangeMax": 10,
+            "rangeMin": 0,
+            "resourceFilter": 1023,
+            "value": "0",
+            "varName": "blendEnabled",
+            "varType": 3
         }
     ],
     "solid": false,

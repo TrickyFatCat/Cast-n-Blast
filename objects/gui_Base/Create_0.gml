@@ -27,7 +27,7 @@ guiWidth = display_get_gui_width();
 guiHeight = display_get_gui_height();
 guiMarginX = 32;
 guiMarginY = 32;
-guiFont = fnt_debug;
+guiFont = fnt_small;
 
 menuFoldedX = -200;
 menuX = menuFoldedX;

@@ -70,7 +70,7 @@ if (dealingDamage && !GameIsPaused())
 	dealingDamage = false;
 	if (isSpawningDust)
 	{
-		for (var i = 0; i < 40; i++)
+		for (var i = 0; i < 30; i++)
 		{
 			var _direction = random(360);
 			var _x = x + random_range(-explosionRadius, explosionRadius)

@@ -1,6 +1,6 @@
 //State machine
 var _gravity = 0.4;
-
+drawAlngle = 0;
 switch currentState
 {
 	case BombState.Drop:	
@@ -27,12 +27,19 @@ switch currentState
 	
 	case BombState.Activation:
 		ExecuteActivation;
+		
 		if (velocity > 0)
 		{
-			for (var i = 0; i < 1; i++)
+			dustSpawnTimer += global.TimeFactor;
+			var _timeIsOver = CheckTimer(dustSpawnTimer, dustSpawnPause);
+			
+			if (_timeIsOver)
 			{
-				var _direction = directionCurrent - 180 + random_range(-30, 30);
-				SpawnDust(vfx_Dust, x, y - 1, c_white, true, _direction);
+				for (var i = 0; i < 1; i++)
+				{
+					var _direction = directionCurrent - 180 + random_range(-30, 30);
+					SpawnDust(vfx_Dust, x, y - 1, c_white, true, _direction);
+				}
 			}
 		}
 	break;

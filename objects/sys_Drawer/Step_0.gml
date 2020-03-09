@@ -1,10 +1,17 @@
 /// @description DrawListController
 
-if (instance_exists(obj_Base))
+sortingUpdateTimer += global.TimeFactor;
+var _timeIsOver = CheckTimer(sortingUpdateTimer, sortingUpdateTime)
+
+if (_timeIsOver)
 {
-	DrawListHandler(drawListSortable);
-	DrawListHandler(drawListUnsortable);
+	if (instance_exists(obj_Base))
+	{
+		DrawListHandler(drawListSortable);
+		DrawListHandler(drawListUnsortable);	
+	}
 	
+	sortingUpdateTimer = 0;
 }
 
 if (surface_exists(surfaceShadows))

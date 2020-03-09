@@ -34,6 +34,14 @@
             "objectId": "05f92ec3-120c-4570-a05d-ff81220fde81",
             "propertyId": "3439b292-c5a0-42d6-93fb-66845621e9c6",
             "value": "vfx_FireBallImpact"
+        },
+        {
+            "id": "574ad535-aa07-46a9-9a01-351c035a2e17",
+            "modelName": "GMOverriddenProperty",
+            "mvc": "1.0",
+            "objectId": "1e80bb98-5aea-467b-b065-8a432456cd14",
+            "propertyId": "91368bad-67f2-4139-a390-a0edfafeb884",
+            "value": "True"
         }
     ],
     "parentObjectId": "cad41c02-488e-4fc1-8592-10db5ff6d160",

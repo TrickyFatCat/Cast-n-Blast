@@ -1,6 +1,6 @@
 /// @description PlayerHealthPointsReader
 
-if (hitPoints <= 0)
+if (hitPoints <= 0 && !godMode)
 {
 	switch (currentState)
 	{

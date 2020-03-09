@@ -3,7 +3,7 @@
 event_inherited();
 
 draw_set_alpha(hudAlpha);
-draw_set_font(fnt_large);
+draw_set_font(fnt_small);
 SetAlign(fa_center, fa_center);
 
 
@@ -17,8 +17,8 @@ switch (global.BattleState)
 
 		if (_timeLeft > 0)
 		{
-			DrawTiltedText(fnt_large, guiWidth / 2, 0, guiHeight * 0.4, 2, c_maroon, c_red, "ROUND " + string(global.Round) + " STARTS IN");
-			DrawTiltedText(fnt_large, guiWidth / 2, 0, guiHeight * 0.6, 2, c_maroon, c_red, string(_timeLeft));
+			DrawTiltedText(fnt_small, guiWidth / 2, 0, guiHeight * 0.4, 2, c_maroon, c_red, "ROUND " + string(global.Round) + " STARTS IN", 5, 5);
+			DrawTiltedText(fnt_small, guiWidth / 2, 0, guiHeight * 0.6, 2, c_maroon, c_red, string(_timeLeft), 5, 5 );
 		}
 		else 
 		{
@@ -59,7 +59,7 @@ switch (global.BattleState)
 	
 			if (!_timerIsOver) 
 			{
-				DrawTiltedText(fnt_large, guiWidth / 2, 0, guiHeight / 2, 2, c_maroon, c_red, "ROUND " + string(global.Round));
+				DrawTiltedText(fnt_small, guiWidth / 2, 0, guiHeight / 2, 2, c_maroon, c_red, "ROUND " + string(global.Round), 3, 3);
 			}
 			else 
 			{
@@ -77,7 +77,7 @@ switch (global.BattleState)
 	
 			if (!_timeIsOver)
 			{
-				DrawTiltedText(fnt_large, guiWidth / 2, 0, guiHeight / 2, 2, c_maroon, c_red, "BLAST THEM ALL!");
+				DrawTiltedText(fnt_small, guiWidth / 2, 0, guiHeight / 2, 2, c_maroon, c_red, "BLAST THEM ALL!", 4, 4);
 			}
 			else 
 			{

@@ -53,3 +53,6 @@ if (drawOutline)
 
 	u_texel_size = shader_get_uniform(outlineShader, "u_texel_size");
 }
+
+dustSpawnTimer = SetTime(100);
+dustSpawnPause = SetTime((1 / room_speed) * 5);

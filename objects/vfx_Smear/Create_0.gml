@@ -5,5 +5,5 @@ image_xscale = random_range(0.05, 0.5);
 image_yscale = random_range(0.05, 0.5);
 image_angle = irandom_range(0, 359);
 
-lifeSpanTime = SetTime(0.05);
+lifeSpanTime = 1;
 lifeSpanTimer = 0;

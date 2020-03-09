@@ -334,14 +334,6 @@
             "objectId": "c0b37de0-4e9d-4cb9-81f9-922df5f3bea7",
             "propertyId": "ec39c69b-f087-4f15-b683-1659b31535a4",
             "value": "0.3"
-        },
-        {
-            "id": "3ccaaddf-453a-45e4-8b0a-07fd93e7e15c",
-            "modelName": "GMOverriddenProperty",
-            "mvc": "1.0",
-            "objectId": "1e80bb98-5aea-467b-b065-8a432456cd14",
-            "propertyId": "175e2b31-4f05-4bfd-a5d1-71c555358c0c",
-            "value": "True"
         }
     ],
     "parentObjectId": "c0b37de0-4e9d-4cb9-81f9-922df5f3bea7",
@@ -372,6 +364,20 @@
             "value": "7",
             "varName": "dashVelocity",
             "varType": 0
+        },
+        {
+            "id": "e0477d91-26ef-4897-a804-1d3958ea0a42",
+            "modelName": "GMObjectProperty",
+            "mvc": "1.0",
+            "listItems": null,
+            "multiselect": false,
+            "rangeEnabled": false,
+            "rangeMax": 10,
+            "rangeMin": 0,
+            "resourceFilter": 1023,
+            "value": "True",
+            "varName": "godMode",
+            "varType": 3
         }
     ],
     "solid": false,

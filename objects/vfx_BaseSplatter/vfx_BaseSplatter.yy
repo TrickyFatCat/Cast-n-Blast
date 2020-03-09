@@ -4,16 +4,7 @@
     "mvc": "1.0",
     "name": "vfx_BaseSplatter",
     "eventList": [
-        {
-            "id": "b5fde3b9-eef8-4eda-aa0d-87c819f9295a",
-            "modelName": "GMEvent",
-            "mvc": "1.0",
-            "IsDnD": false,
-            "collisionObjectId": "00000000-0000-0000-0000-000000000000",
-            "enumb": 0,
-            "eventtype": 1,
-            "m_owner": "e56a69e5-9798-45be-8853-ef66ee1ba7ec"
-        }
+        
     ],
     "maskSpriteId": "00000000-0000-0000-0000-000000000000",
     "overriddenProperties": null,

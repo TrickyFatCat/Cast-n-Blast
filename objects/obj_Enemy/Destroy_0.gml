@@ -10,22 +10,22 @@ if (mainWeapon != noone)
 	instance_destroy(mainWeapon);
 }
 
-var _number = ultimatePointsDrop * 100;
+//var _number = ultimatePointsDrop * 100;
+//for (var i = 0; i < _number; i++)
+//{
+//	var _pickup = instance_create_layer(x, y, layer, obj_UltimatePointsPickup);
+//	_pickup.ultimatePointsNumber = round((global.Player.maxUltimatePoints * ultimatePointsDrop) / _number);
+//}
+
+var _number = array_length_1d(ultimatePickups);
 for (var i = 0; i < _number; i++)
 {
-	var _pickup = instance_create_layer(x, y, layer, obj_UltimatePointsPickup);
-	_pickup.ultimatePointsNumber = round((global.Player.maxUltimatePoints * ultimatePointsDrop) / _number);
+	ultimatePickups[i].ultimatePointsNumber = round((global.Player.maxUltimatePoints * ultimatePointsDrop) / _number);
 }
 
-for (var i = 0; i < shieldPointsDrop; i++)
-{
-	instance_create_layer(x, y, layer, obj_ShieldPointsPickup);
-}
-
-for (var i = 0; i < hitPointsDrop; i++)
-{
-	instance_create_layer(x, y, layer, obj_HitPointsPickup);
-}
+ActivateObject(ultimatePickups);
+ActivateObject(shieldPickups);
+ActivateObject(hitPointsPickups)
 
 if (explosionObject != noone)
 {
@@ -33,18 +33,7 @@ if (explosionObject != noone)
 	SpawnSplatterEffect(x, y, spr_bloodParticles, spr_bloodParticles, 50, 5);
 }
 
-var _reapingChance = 1;
-var _diceRoll = random_range(0, 1);
-
-if (_diceRoll <= _reapingChance)
-{
-	var _limbsNumber = irandom_range(5, limbsCount);
-	for (var i = 0; i < 10; i++)
-	{
-		var _limb = instance_create_layer(x, y, layer, vfx_Limbs);
-		_limb.directionCurrent = random(360);
-	}
-}
+ActivateObject(limbs);
 
 global.Score += scoreAdd;
 

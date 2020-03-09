@@ -103,6 +103,14 @@
             }
         },
         {
+            "Key": "08e667a4-e01b-48e9-91cb-98cf5badc9cb",
+            "Value": {
+                "id": "e8151394-5c76-4d36-9709-bdfcbb3dda84",
+                "resourcePath": "scripts\\PreinstantiateObject\\PreinstantiateObject.yy",
+                "resourceType": "GMScript"
+            }
+        },
+        {
             "Key": "09f477ad-d1e9-4be2-8be7-bf2d2a2b133e",
             "Value": {
                 "id": "a974768e-35f5-49c2-bf8d-da21c21fbc1a",
@@ -812,14 +820,6 @@
                 "id": "637366a9-b393-4c9b-a7ea-3179ced50c9e",
                 "resourcePath": "objects\\vfx_AirDust\\vfx_AirDust.yy",
                 "resourceType": "GMObject"
-            }
-        },
-        {
-            "Key": "357bf162-59e4-4822-b93f-e515468f5fb2",
-            "Value": {
-                "id": "9ad1c5c9-5d0c-4de7-a745-7e5ea3723d47",
-                "resourcePath": "fonts\\fnt_medium\\fnt_medium.yy",
-                "resourceType": "GMFont"
             }
         },
         {
@@ -2095,6 +2095,14 @@
             }
         },
         {
+            "Key": "7e93991d-9fed-4e3b-8ebe-07f766ca437a",
+            "Value": {
+                "id": "8bf874e3-0e31-4cfa-9aca-0282f0d8679c",
+                "resourcePath": "views\\7e93991d-9fed-4e3b-8ebe-07f766ca437a.yy",
+                "resourceType": "GMFolder"
+            }
+        },
+        {
             "Key": "7efd5862-270f-47e3-b1d1-038cde0e555d",
             "Value": {
                 "id": "42b8b442-b28b-4e92-8abf-1c6bb709bcf9",
@@ -2479,19 +2487,19 @@
             }
         },
         {
+            "Key": "96e93b04-1af7-41a0-aee2-0ca144166abc",
+            "Value": {
+                "id": "c8fc655f-b4dd-4c04-abd2-ee04b8a722c4",
+                "resourcePath": "scripts\\ActivateObject\\ActivateObject.yy",
+                "resourceType": "GMScript"
+            }
+        },
+        {
             "Key": "975fcde3-e2df-427b-83b9-3f6a73854791",
             "Value": {
                 "id": "c4c92756-fdba-4a32-8e19-d922b434f99f",
                 "resourcePath": "scripts\\CalculateConstantVelocity\\CalculateConstantVelocity.yy",
                 "resourceType": "GMScript"
-            }
-        },
-        {
-            "Key": "977e1656-0a29-4ed6-b71c-3ad4466f3df4",
-            "Value": {
-                "id": "bc939cd0-12de-4c1d-9124-58123949d899",
-                "resourcePath": "fonts\\fnt_large\\fnt_large.yy",
-                "resourceType": "GMFont"
             }
         },
         {
@@ -3567,6 +3575,14 @@
             }
         },
         {
+            "Key": "dc5eb85d-e545-4cac-bfbb-f643d0d08426",
+            "Value": {
+                "id": "738576c6-ac4b-48d1-be6a-698222b4ed7c",
+                "resourcePath": "scripts\\ProcessLaserStep\\ProcessLaserStep.yy",
+                "resourceType": "GMScript"
+            }
+        },
+        {
             "Key": "dcf1fc98-e96f-4d2d-8662-87f0c375007d",
             "Value": {
                 "id": "f5c1f9fd-46e1-4fff-8c77-9ef68f3991b7",
@@ -3668,14 +3684,6 @@
                 "id": "d52ea292-0b2e-4811-b31a-697cba14c1d7",
                 "resourcePath": "scripts\\GetPerkDescription\\GetPerkDescription.yy",
                 "resourceType": "GMScript"
-            }
-        },
-        {
-            "Key": "e25f879f-1976-48b0-ba6d-9e4e13cbc019",
-            "Value": {
-                "id": "93e76b77-fa64-4121-a35c-c0faf94feaa6",
-                "resourcePath": "fonts\\fnt_debug\\fnt_debug.yy",
-                "resourceType": "GMFont"
             }
         },
         {
@@ -3911,14 +3919,6 @@
             }
         },
         {
-            "Key": "f0edd48e-c79a-4f8d-968f-f28bd9803dbc",
-            "Value": {
-                "id": "0b2e5155-72c6-405d-b427-87e3f3b71f51",
-                "resourcePath": "fonts\\fnt_verySmall\\fnt_verySmall.yy",
-                "resourceType": "GMFont"
-            }
-        },
-        {
             "Key": "f119195c-3a0c-4263-917a-29cf14e83f97",
             "Value": {
                 "id": "f45caf49-a32c-49eb-9317-d3d944a9cd8c",
@@ -4087,6 +4087,14 @@
             }
         },
         {
+            "Key": "ff1e64b0-b65f-4893-ae1b-a668644bd4b3",
+            "Value": {
+                "id": "1c72e5c7-9d4a-4f40-acce-d9bb21148e52",
+                "resourcePath": "scripts\\ProcessWeaponStep\\ProcessWeaponStep.yy",
+                "resourceType": "GMScript"
+            }
+        },
+        {
             "Key": "ff2c3fc4-85ab-42c8-99d4-7f9d8e8255e3",
             "Value": {
                 "id": "2bbd879e-98b6-4660-ba1d-2ec6315b9361",
@@ -4150,6 +4158,10 @@
         "e82e5cac-ba46-4486-a0af-37052ce9f9d2",
         "bfd16ec4-e8f9-4920-90e3-ec0b61a49903",
         "72cbdc33-4af4-4079-bdc4-c2e1a95a142f",
+        "08e667a4-e01b-48e9-91cb-98cf5badc9cb",
+        "96e93b04-1af7-41a0-aee2-0ca144166abc",
+        "ff1e64b0-b65f-4893-ae1b-a668644bd4b3",
+        "dc5eb85d-e545-4cac-bfbb-f643d0d08426",
         "9ef30917-7a71-41ba-b0e0-f268aaccd126",
         "f880aa16-ac9e-40d8-bcbb-c47218fde082",
         "b9f03d06-805d-4f20-8c40-3b427af39fc2",

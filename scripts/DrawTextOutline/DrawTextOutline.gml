@@ -23,5 +23,5 @@ draw_text(_x - 1, _y + 1, _text);
 draw_text(_x + 1, _y - 1, _text);  
   
 //Text  
-draw_set_color(_colourString);  
+draw_set_color(_colourString);
 draw_text(_x, _y, _text); 

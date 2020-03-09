@@ -10,7 +10,8 @@ if (_timeIsOver)
 	
 	if (isMoving)
 	{
-		MoveObject(false);
+		x += velocityX;
+		y += velocityY;
 		
 		velocity = CalculateDeceleratedVelocity(direction, velocity, groundFriction);
 

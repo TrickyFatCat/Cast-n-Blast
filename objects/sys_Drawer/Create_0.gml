@@ -18,6 +18,9 @@ surfaceShadows = surface_create(surfaceShadowsWidth, surfaceShadowsHeight);
 // Create blood surface
 surfaceFloorEffects= surface_create(room_width, room_height);
 
+sortingUpdateTimer = 0;
+sortingUpdateTime = SetTime(0.2);
+
 enum SortingType
 {
 	Sortable,
