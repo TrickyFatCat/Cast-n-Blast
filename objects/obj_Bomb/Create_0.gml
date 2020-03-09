@@ -38,5 +38,5 @@ destructionDelayTimer = 0;
 isInvulnerable = true;
 drawColour = c_gray;
 
-explosionRadius = 32;
+explosionRadius = 48;
 velocityZ = 6;

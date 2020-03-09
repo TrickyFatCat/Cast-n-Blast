@@ -25,3 +25,5 @@ with (triggerVisualiser)
 	triggerColour = other.triggerColour;
 }
 instance_deactivate_object(triggerVisualiser);
+
+image_speed = 0;

@@ -6,4 +6,7 @@ if (explosionSound != noone)
 	PlaySoundAt(explosionSound, 256, false);
 }
 
-SpawnSplatterEffect(x, y, spr_sootParticles, spr_sootParticles, 50, 4);
+if (spawnSplatter)
+{
+	SpawnSplatterEffect(x, y, spr_sootParticles, spr_sootParticles, 50, 4);
+}

@@ -1,18 +1,33 @@
-var _timeLeft = (sys_BattleController.roundTime - global.PlayTime) / 60;
+if (global.BattleState == BattleState.Intermission || global.BattleState == BattleState.RoundEnd)
+{
+	var _timeLeft = 0;
+}
+else
+{
+	var _timeLeft = (sys_BattleController.roundTime - global.PlayTime) / 60;
+}
+
+var _textScale = 1.5;
+// Draw timer
+draw_set_font(fnt_small);
+SetAlign(fa_center, fa_center);
+DrawTextOutline(guiWidth * 0.65, 20, c_black, c_white, "TIME LEFT", _textScale, _textScale);
+SetAlign(fa_center, fa_center);
+DrawTextOutline(guiWidth * 0.65, 40, c_black, c_white, string(_timeLeft), _textScale, _textScale);
 
 // Draw timer
 draw_set_font(fnt_small);
 SetAlign(fa_center, fa_center);
-DrawTextOutline(guiWidth * 0.65, 20, c_black, c_white, "TIME LEFT", 2, 2);
+DrawTextOutline(guiWidth * 0.5, 20, c_black, c_white, "ROUND", _textScale, _textScale);
 SetAlign(fa_center, fa_center);
-DrawTextOutline(guiWidth * 0.65, 60, c_black, c_white, string(_timeLeft), 2, 2);
+DrawTextOutline(guiWidth * 0.5, 40, c_black, c_white, string(global.Round), _textScale, _textScale);
 
 // Draw score
 draw_set_font(fnt_small);
 SetAlign(fa_center, fa_center);
-DrawTextOutline(guiWidth * 0.35, 20, c_black, c_white, "SCORE", 2, 2);
+DrawTextOutline(guiWidth * 0.35, 20, c_black, c_white, "SCORE", _textScale, _textScale);
 SetAlign(fa_center, fa_center);
-DrawTextOutline(guiWidth * 0.35, 60, c_black, c_white, string(global.Score), 2, 2);
+DrawTextOutline(guiWidth * 0.35, 40, c_black, c_white, string(global.Score), _textScale, _textScale);
 
 // Show info texts
 var _x = guiWidth / 2;

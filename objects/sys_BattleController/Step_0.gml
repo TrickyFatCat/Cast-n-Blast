@@ -71,6 +71,23 @@ switch (global.BattleState)
 		{
 			IncreaseHitPoints(1);
 			IncreaseShieldPoints(1);
+			for (var i = 0; i < ammoArrayLength; i++)
+			{
+				var _ammo = GetCurrentAmmo(i);
+				var _maxAmmo = GetMaxAmmo(i);
+	
+				if (_ammo < _maxAmmo)
+				{
+					if (i == mainWeapon.ammoID)
+					{
+						ammo = RecoverAmmo(i);
+					}
+					else
+					{
+						RecoverAmmo(i);
+					}
+				}
+			}
 		}
 			
 		if (_timeIsOver)
