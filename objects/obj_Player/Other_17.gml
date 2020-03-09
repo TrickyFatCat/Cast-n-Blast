@@ -13,9 +13,9 @@ var _step = CalculateStep(0.25);
 
 audio_stop_sound(global.Music);
 
-if (!audio_is_playing(sfx_deathtimer))
+if (!audio_is_playing(sfx_deathTimer))
 {
-	audio_play_sound(sfx_deathtimer, 1000, true);
+	audio_play_sound(sfx_deathTimer, 1000, true);
 }
 
 trancendenceProgress = ApproachTimeFactor(trancendenceProgress, 1, _step);
