@@ -5,14 +5,14 @@ if (surface_exists(surfaceShadows)) {
 	
 	draw_clear_alpha(c_black, 0.0)
 	
-	var _surfaceX;
-	var _surfaceY;
+	var _surfaceX = 0;
+	var _surfaceY = 0;
 	
-	with (obj_Camera)
-	{
-		_surfaceX = playerX - cameraOriginX;
-		_surfaceY = playerY - cameraOriginY;
-	}
+	//with (obj_Camera)
+	//{
+	//	_surfaceX = playerX - cameraOriginX;
+	//	_surfaceY = playerY - cameraOriginY;
+	//}
 	
 	with obj_Base
 	{
