@@ -78,6 +78,4 @@ if (dealingDamage && !GameIsPaused())
 			var _dust = SpawnDust(vfx_Dust, _x, _y - 1, c_red, false, _direction);
 		}
 	}
-	
-	SpawnSplatterEffect(x, y, spr_sootParticles, spr_sootParticles, 50, 4);
 }

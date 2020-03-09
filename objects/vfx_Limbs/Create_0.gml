@@ -12,14 +12,24 @@ groundFriction = 0.065;
 velocityX = 0;
 velocityY = 0;
 
-velocityZ = random_range(0.5, 5);
 
 gravityZ = 0.2;
+isBounceableZ = choose(false, true);
+
+if (isBounceableZ)
+{
+	velocityZ = random_range(2, 3);
+	rotationSpeed = choose(random_range(-20, -15), random_range(20, 15));
+}
+else
+{
+	velocityZ = random_range(0.5, 5);
+	rotationSpeed = choose(random_range(-30, -25), random_range(30, 25));
+}
+
 
 isBounceable = true;
 isBounced = false;
 
 lifeSpanTime = 2;
-lifeProgress = 0;
-
-rotationSpeed = choose(random_range(-30, -25), random_range(30, 25)); 
+lifeProgress = 0; 

@@ -33,7 +33,7 @@ if (explosionObject != noone)
 	SpawnSplatterEffect(x, y, spr_bloodParticles, spr_bloodParticles, 50, 5);
 }
 
-var _reapingChance = 0.25;
+var _reapingChance = 1;
 var _diceRoll = random_range(0, 1);
 
 if (_diceRoll <= _reapingChance)
