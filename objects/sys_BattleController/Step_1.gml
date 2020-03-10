@@ -1,0 +1,1 @@
+global.TotalEnemies = instance_number(obj_Enemy);

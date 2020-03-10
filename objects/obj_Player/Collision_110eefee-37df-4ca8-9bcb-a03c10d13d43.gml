@@ -1,6 +1,8 @@
 with (other)
 {
-	actionDelayTimer += global.TimeFactor;
+	if (isActive)
+	{
+		actionDelayTimer += global.TimeFactor;
 		var _timeIsOver = CheckTimer(actionDelayTimer, actionDelayTime)
 
 		if (!_timeIsOver)
@@ -13,6 +15,7 @@ with (other)
 			actionDelayTimer = 0;
 			EnableFlash(c_yellow, 0.25);
 		}
+	}
 }
 
 if (!isInvulnerable && other.isActive)

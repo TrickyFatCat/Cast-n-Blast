@@ -1,5 +1,9 @@
 /// @description EnemySpawner
 
+if (GameIsPaused())
+{
+	return;
+}
 
 var _listSize = ds_list_size(global.EnemySpawns);
 var _activeSpawnPoints = ds_list_create();
@@ -26,8 +30,7 @@ if (_activeListSize >= spawnNumber)
 	var _enemyId;
 	var _enemyNumber;
 	var _enemySpawned;
-	
-	var _enemiesDifference = enemiesMaxNumber - global.TotalEnemies;
+	var _enemiesDifference = enemiesLimit - global.TotalEnemies;
 	var _spawnNumber = spawnNumber;
 	
 	if (_spawnNumber > _enemiesDifference)
@@ -43,10 +46,6 @@ if (_activeListSize >= spawnNumber)
 		
 	for (var i = 0; i < _spawnNumber; i++)
 	{
-		if (GameIsPaused())
-		{
-			break;
-		}
 		// Choose a random spawn point
 		var _spawnID = irandom(_activeListSize - 1);
 		var _pointForSpawn = _activeSpawnPoints[| _spawnID];
@@ -72,7 +71,6 @@ if (_activeListSize >= spawnNumber)
 				ds_list_destroy(_activeSpawnPoints);
 				return;
 			}
-			show_debug_message(_whileCounter);
 		}
 		
 		// Spawn the enemy
@@ -81,7 +79,6 @@ if (_activeListSize >= spawnNumber)
 		instance_activate_object(_pointForSpawn);
 		_enemySpawned++;
 		SetEnemyCount(_enemyId, _enemySpawned);
-		IncreaseTotalEnemies();
 		ds_map_destroy(_enemyData);
 	}
 }

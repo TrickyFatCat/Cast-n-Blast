@@ -1,8 +1,8 @@
 {
-    "id": "17c65153-af25-464f-b3de-96fc90780eb4",
+    "id": "c392caa1-6721-4e1f-a317-cbf0c6fd58a7",
     "modelName": "GMScript",
     "mvc": "1.0",
-    "name": "DecreaseTotalEnemies",
+    "name": "CalculateTotalEnemies",
     "IsCompatibility": false,
     "IsDnD": false
 }

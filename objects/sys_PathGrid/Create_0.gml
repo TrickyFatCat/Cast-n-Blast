@@ -6,8 +6,8 @@ global.PathCellWidth = _cell;
 global.PathCellHeight = _cell;
 
 //Cells number calculatuons
-var _cellsNumberHorizontal = 87;
-var _cellsNumberVertical = 87;
+var _cellsNumberHorizontal = 86;
+var _cellsNumberVertical = 86;
 
 //Create grid
 global.PathGrid = mp_grid_create(24, 40, _cellsNumberHorizontal, _cellsNumberVertical, _cell, _cell);

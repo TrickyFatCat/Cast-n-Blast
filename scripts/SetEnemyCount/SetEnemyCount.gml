@@ -4,4 +4,12 @@
 var _enemy = argument0;
 var _count = argument1;
 
-ds_map_replace(global.EnemyCountData, _enemy, _count)
+
+for (var i = 0; i < array_height_2d(global.EnemyCountData); i++)
+{
+	if (_enemy == global.EnemyCountData[i, 0])
+	{
+		global.EnemyCountData[i, 1] = _count;
+		break;
+	}
+}

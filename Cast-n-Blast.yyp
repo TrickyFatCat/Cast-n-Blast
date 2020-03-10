@@ -311,14 +311,6 @@
             }
         },
         {
-            "Key": "17c65153-af25-464f-b3de-96fc90780eb4",
-            "Value": {
-                "id": "03a76c48-e69c-4766-9ed7-a226213579bb",
-                "resourcePath": "scripts\\DecreaseTotalEnemies\\DecreaseTotalEnemies.yy",
-                "resourceType": "GMScript"
-            }
-        },
-        {
             "Key": "1876203d-9493-45e0-b6bd-67f0737483c3",
             "Value": {
                 "id": "be1121e0-c4cc-4c7b-abd4-382dd6a5ada2",
@@ -1619,14 +1611,6 @@
             "Value": {
                 "id": "915a428f-ed83-4b75-a64c-9109de17f85e",
                 "resourcePath": "scripts\\SetSpawnNumber\\SetSpawnNumber.yy",
-                "resourceType": "GMScript"
-            }
-        },
-        {
-            "Key": "5f275b2b-9a54-4fdf-8b5d-fd68bb42217c",
-            "Value": {
-                "id": "96cc0c7d-8da1-4d55-bcc2-90ade483a7db",
-                "resourcePath": "scripts\\IncreaseTotalEnemies\\IncreaseTotalEnemies.yy",
                 "resourceType": "GMScript"
             }
         },
@@ -2983,14 +2967,6 @@
             }
         },
         {
-            "Key": "b138a7c6-936c-488f-bf05-245c518d987e",
-            "Value": {
-                "id": "662b3605-915d-46d5-9f4a-b251ba9b0851",
-                "resourcePath": "scripts\\AddEnemyToCounter\\AddEnemyToCounter.yy",
-                "resourceType": "GMScript"
-            }
-        },
-        {
             "Key": "b146b5b5-e457-49df-a26e-c6805aeb35e2",
             "Value": {
                 "id": "c9b40a1d-41a4-4f62-bf31-d73b63a876da",
@@ -3260,6 +3236,14 @@
                 "id": "a439b317-c93c-48b1-9a29-c620fdf339f1",
                 "resourcePath": "views\\c1f47849-56aa-4f5f-a2bf-9c4a81298b64.yy",
                 "resourceType": "GMFolder"
+            }
+        },
+        {
+            "Key": "c392caa1-6721-4e1f-a317-cbf0c6fd58a7",
+            "Value": {
+                "id": "880498ac-9c17-4e4e-9348-1230744ff892",
+                "resourcePath": "scripts\\CalculateTotalEnemies\\CalculateTotalEnemies.yy",
+                "resourceType": "GMScript"
             }
         },
         {
@@ -4324,11 +4308,9 @@
         "9ae9c1f2-153c-4968-af37-090851973c5e",
         "7e40b2b2-83d7-46a5-967a-04f1958660da",
         "52d1d8cb-c66d-4c8b-9872-dc58ccceb0a0",
-        "b138a7c6-936c-488f-bf05-245c518d987e",
         "7c57d3af-5ade-4c22-bec4-9857a34327b1",
         "c77c319f-b1ee-4fd8-8318-d7c5e83a23f7",
-        "5f275b2b-9a54-4fdf-8b5d-fd68bb42217c",
-        "17c65153-af25-464f-b3de-96fc90780eb4",
+        "c392caa1-6721-4e1f-a317-cbf0c6fd58a7",
         "60c1984b-644f-4bae-9886-9b6b0427a288",
         "a46fde5d-6f74-4dcf-a9c9-68e9e9e0b9d1",
         "c195d599-7ba5-41be-9f70-fee5daa9a780",

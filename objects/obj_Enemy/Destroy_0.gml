@@ -3,7 +3,7 @@ event_inherited()
 var _currentCount = GetEnemyCount(object_index);
 _currentCount--;
 SetEnemyCount(object_index, _currentCount);
-DecreaseTotalEnemies();
+//DecreaseTotalEnemies();
 
 if (mainWeapon != noone)
 {

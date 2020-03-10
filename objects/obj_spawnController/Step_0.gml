@@ -1,6 +1,6 @@
-show_debug_message(global.TotalEnemies);
+CalculateTotalEnemies();
 
-if (isActive && global.TotalEnemies < 25 && !GameIsPaused())
+if (isActive && global.TotalEnemies <= enemiesLimit && !GameIsPaused())
 {
 	//SelectWave;
 	
