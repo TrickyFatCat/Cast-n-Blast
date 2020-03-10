@@ -524,7 +524,7 @@ ds_map_add(EvolvedImpGunData, "heal",							0);
 ds_map_add(EvolvedImpGunData, "rateOfFireAccelerated",			false);
 ds_map_add(EvolvedImpGunData, "rateOfFireIncrStep",				0);
 ds_map_add(EvolvedImpGunData, "rateOfFireDecrStep",				0);
-ds_map_add(EvolvedImpGunData, "rateOfFireMin",					3);
+ds_map_add(EvolvedImpGunData, "rateOfFireMin",					6);
 ds_map_add(EvolvedImpGunData, "rateOfFireMax",					0);
 //-----------------------------------------------------------------------------
 ds_map_add(EvolvedImpGunData, "burstRate",						0);
@@ -561,7 +561,7 @@ ds_map_add(EvolvedImpGunData, "recoilFactor",					0);
 //-----------------------------------------------------------------------------
 ds_map_add(EvolvedImpGunData, "hitscanScaleY",					0);
 ds_map_add(EvolvedImpGunData, "projectileVelocityNoiseFactor",	0);
-ds_map_add(EvolvedImpGunData, "projectileVelocityCurrent",		3.5);
+ds_map_add(EvolvedImpGunData, "projectileVelocityCurrent",		5);
 ds_map_add(EvolvedImpGunData, "projectileVelocityMax",			0);
 ds_map_add(EvolvedImpGunData, "projectileAcceleration",			0);
 ds_map_add(EvolvedImpGunData, "projectileFriction",				0);

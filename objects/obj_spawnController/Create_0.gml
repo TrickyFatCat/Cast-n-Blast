@@ -9,7 +9,7 @@ spawnPauseTime = SetTime(1);
 spawnPauseTimer = spawnPauseTime;
 
 /// Enemies spawn limits
-spawnNumber = 5;
+spawnNumber = 1;
 
 if (!ds_exists(global.EnemySpawns, ds_type_list))
 {
@@ -21,7 +21,6 @@ currentWaveIndex = choose(WaveData.R01W01, WaveData.R01W02, WaveData.R01W03);
 waveData = GetWaveData(currentWaveIndex);
 waveSwitchTime = SetTime(10);
 waveSwitchTimer = 0;
-
 global.TotalEnemies = 0;
-
+enemiesMaxNumber = 25;
 CalculateEnemiesMaxNumber();

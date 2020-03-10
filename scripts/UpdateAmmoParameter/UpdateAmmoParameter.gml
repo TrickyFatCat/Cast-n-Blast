@@ -19,8 +19,6 @@ var _defaultAmmoData = global.PlayerAmmoData[_ammoId];
 var _defaultValue = _defaultAmmoData[? _parameter];
 var _newValue;
 
-show_debug_message("Default value == " + string(_defaultValue))
-
 switch (_absolute)
 {
 	case true:
@@ -46,6 +44,5 @@ switch (_absolute)
 	break;
 }
 
-show_debug_message("New value == " + string(_newValue));
 ds_map_replace(_ammoData, _parameter, _newValue);
 UpdateMainWeapon();

@@ -14,6 +14,7 @@ switch (mainWeapon.currentCastState)
 	break;
 	
 	case CastState.Execute:
+		mainWeapon.directionCurrent = CalculateDirectionToPlayer();
 		var _lerpAlpha = mainWeapon.shotCount / mainWeapon.castExecuteCount;
 		drawScaleY = LerpTimeFactor(1.5, 1, _lerpAlpha);
 		drawScaleX = drawScaleY * previousScaleX;
