@@ -7,16 +7,20 @@ enum EnemyWeapon
 	NinjaGun,
 	TurretGun,
 	RocketGun,
-	BomberGun
+	BomberGun,
+	EvolvedImpGun,
+	EvolvedDemonGun
 }
 
-#macro FighterGunData		global.EnemyWeaponData[EnemyWeapon.FighterGun]
-#macro TrooperGunData		global.EnemyWeaponData[EnemyWeapon.TrooperGun]
-#macro BeamerGunData		global.EnemyWeaponData[EnemyWeapon.BeamerGun]
-#macro NinjaGunData			global.EnemyWeaponData[EnemyWeapon.NinjaGun]
-#macro TurretGunData		global.EnemyWeaponData[EnemyWeapon.TurretGun]
-#macro RocketGunData		global.EnemyWeaponData[EnemyWeapon.RocketGun]
-#macro BomberGunData		global.EnemyWeaponData[EnemyWeapon.BomberGun]
+#macro FighterGunData			global.EnemyWeaponData[EnemyWeapon.FighterGun]
+#macro TrooperGunData			global.EnemyWeaponData[EnemyWeapon.TrooperGun]
+#macro BeamerGunData			global.EnemyWeaponData[EnemyWeapon.BeamerGun]
+#macro NinjaGunData				global.EnemyWeaponData[EnemyWeapon.NinjaGun]
+#macro TurretGunData			global.EnemyWeaponData[EnemyWeapon.TurretGun]
+#macro RocketGunData			global.EnemyWeaponData[EnemyWeapon.RocketGun]
+#macro BomberGunData			global.EnemyWeaponData[EnemyWeapon.BomberGun]
+#macro EvolvedImpGunData		global.EnemyWeaponData[EnemyWeapon.EvolvedImpGun]
+#macro EvolvedDemonGunData		global.EnemyWeaponData[EnemyWeapon.EvolvedDemonGun]
 
 #region FighterGun
 FighterGunData = ds_map_create();
@@ -97,7 +101,7 @@ ds_map_add(TrooperGunData, "isAuto",						true);
 ds_map_add(TrooperGunData, "currentShootMode",				ShootMode.Cast);
 //-----------------------------------------------------------------------------
 ds_map_add(TrooperGunData, "bulletObject",					obj_bigFireBall);
-ds_map_add(TrooperGunData, "bulletNumber",					5);
+ds_map_add(TrooperGunData, "bulletNumber",					4);
 ds_map_add(TrooperGunData, "bulletSpawnPointOffset",		0);
 //-----------------------------------------------------------------------------
 ds_map_add(TrooperGunData, "damage",						10);
@@ -124,7 +128,7 @@ ds_map_add(TrooperGunData, "chargeDamageFactorMax",			4);
 ds_map_add(TrooperGunData, "chargeHealFactorMax",			0);
 ds_map_add(TrooperGunData, "chargeRateFactorMax",			0);
 ds_map_add(TrooperGunData, "chargeBulletNumberFactorMax",	0);
-ds_map_add(TrooperGunData, "chargeVelocityFactorMax",		20);
+ds_map_add(TrooperGunData, "chargeVelocityFactorMax",		10);
 ds_map_add(TrooperGunData, "chargeShakeFactorMax",			1.25);
 //-----------------------------------------------------------------------------
 ds_map_add(TrooperGunData, "spreadIsDynamic",				false);
@@ -389,7 +393,7 @@ ds_map_add(RocketGunData, "burstRate",						0);
 ds_map_add(RocketGunData, "burstShotsNumber",				0);
 //-----------------------------------------------------------------------------
 ds_map_add(RocketGunData, "castExecuteCount",				1);
-ds_map_add(RocketGunData, "castTime",						1);
+ds_map_add(RocketGunData, "castTime",						2);
 //-----------------------------------------------------------------------------
 ds_map_add(RocketGunData, "chargeExecuteCountMin",			1);
 ds_map_add(RocketGunData, "chargeExecuteCountMax",			0);
@@ -458,7 +462,7 @@ ds_map_add(BomberGunData, "burstRate",						0);
 ds_map_add(BomberGunData, "burstShotsNumber",				0);
 //-----------------------------------------------------------------------------
 ds_map_add(BomberGunData, "castExecuteCount",				3);
-ds_map_add(BomberGunData, "castTime",						1);
+ds_map_add(BomberGunData, "castTime",						2);
 //-----------------------------------------------------------------------------
 ds_map_add(BomberGunData, "chargeExecuteCountMin",			1);
 ds_map_add(BomberGunData, "chargeExecuteCountMax",			0);
@@ -499,4 +503,142 @@ ds_map_add(BomberGunData, "isShackingCamera",				false);
 ds_map_add(BomberGunData, "angularShakeEnabled",			false);
 ds_map_add(BomberGunData, "shakeValue",						0.75);
 ds_map_add(BomberGunData, "shotShakeFactor",				0.05);
+#endregion
+
+#region Evolved Imp Gun
+EvolvedImpGunData = ds_map_create();
+ds_map_add(EvolvedImpGunData, "name",							noone);
+ds_map_add(EvolvedImpGunData, "weaponSprite",					noone);
+ds_map_add(EvolvedImpGunData, "offsetY",						8);
+ds_map_add(EvolvedImpGunData, "laserSightEnabled",				false);
+ds_map_add(EvolvedImpGunData, "isAuto",							true);
+ds_map_add(EvolvedImpGunData, "currentShootMode",				ShootMode.Cast);
+//-----------------------------------------------------------------------------
+ds_map_add(EvolvedImpGunData, "bulletObject",					obj_smallFireBall);
+ds_map_add(EvolvedImpGunData, "bulletNumber",					1);
+ds_map_add(EvolvedImpGunData, "bulletSpawnPointOffset",			0);
+//-----------------------------------------------------------------------------
+ds_map_add(EvolvedImpGunData, "damage",							8);
+ds_map_add(EvolvedImpGunData, "heal",							0);
+//-----------------------------------------------------------------------------
+ds_map_add(EvolvedImpGunData, "rateOfFireAccelerated",			false);
+ds_map_add(EvolvedImpGunData, "rateOfFireIncrStep",				0);
+ds_map_add(EvolvedImpGunData, "rateOfFireDecrStep",				0);
+ds_map_add(EvolvedImpGunData, "rateOfFireMin",					3);
+ds_map_add(EvolvedImpGunData, "rateOfFireMax",					0);
+//-----------------------------------------------------------------------------
+ds_map_add(EvolvedImpGunData, "burstRate",						0);
+ds_map_add(EvolvedImpGunData, "burstShotsNumber",				0);
+//-----------------------------------------------------------------------------
+ds_map_add(EvolvedImpGunData, "castExecuteCount",				6);
+ds_map_add(EvolvedImpGunData, "castTime",						1);
+//-----------------------------------------------------------------------------
+ds_map_add(EvolvedImpGunData, "chargeExecuteCountMin",			1);
+ds_map_add(EvolvedImpGunData, "chargeExecuteCountMax",			0);
+ds_map_add(EvolvedImpGunData, "chargeTime",						1);
+ds_map_add(EvolvedImpGunData, "chargeWaitTime",					0);
+ds_map_add(EvolvedImpGunData, "chargeCostFactorMax",			1);
+ds_map_add(EvolvedImpGunData, "chargeDamageFactorMax",			4);
+ds_map_add(EvolvedImpGunData, "chargeHealFactorMax",			0);
+ds_map_add(EvolvedImpGunData, "chargeRateFactorMax",			0);
+ds_map_add(EvolvedImpGunData, "chargeBulletNumberFactorMax",	0);
+ds_map_add(EvolvedImpGunData, "chargeVelocityFactorMax",		20);
+ds_map_add(EvolvedImpGunData, "chargeShakeFactorMax",			1.25);
+//-----------------------------------------------------------------------------
+ds_map_add(EvolvedImpGunData, "spreadIsDynamic",				false);
+ds_map_add(EvolvedImpGunData, "spreadIsUniform",				false);
+ds_map_add(EvolvedImpGunData, "spreadAngleIncrFactor",			0.2);
+ds_map_add(EvolvedImpGunData, "spreadAngleDecrFactor",			0.0075);
+ds_map_add(EvolvedImpGunData, "spreadAngleMin",					0);
+ds_map_add(EvolvedImpGunData, "spreadAngleMax",					0);
+//-----------------------------------------------------------------------------
+ds_map_add(EvolvedImpGunData, "ammoID",							noone);
+ds_map_add(EvolvedImpGunData, "shootAmmoCost",					0);
+ds_map_add(EvolvedImpGunData, "reloadTime",						0);
+//-----------------------------------------------------------------------------
+ds_map_add(EvolvedImpGunData, "recoilPower",					0);
+ds_map_add(EvolvedImpGunData, "recoilFactor",					0);
+//-----------------------------------------------------------------------------
+ds_map_add(EvolvedImpGunData, "hitscanScaleY",					0);
+ds_map_add(EvolvedImpGunData, "projectileVelocityNoiseFactor",	0);
+ds_map_add(EvolvedImpGunData, "projectileVelocityCurrent",		3.5);
+ds_map_add(EvolvedImpGunData, "projectileVelocityMax",			0);
+ds_map_add(EvolvedImpGunData, "projectileAcceleration",			0);
+ds_map_add(EvolvedImpGunData, "projectileFriction",				0);
+ds_map_add(EvolvedImpGunData, "projectileBounceEnable",			false);
+ds_map_add(EvolvedImpGunData, "projectileBounceFriction",		2);
+//-----------------------------------------------------------------------------
+ds_map_add(EvolvedImpGunData, "isShackingCamera",				true);
+ds_map_add(EvolvedImpGunData, "angularShakeEnabled",			false);
+ds_map_add(EvolvedImpGunData, "shakeValue",						0.75);
+ds_map_add(EvolvedImpGunData, "shotShakeFactor",				0.05);
+#endregion
+
+#region Evolved Demon Gun
+EvolvedDemonGunData = ds_map_create();
+ds_map_add(EvolvedDemonGunData, "name",							noone);
+ds_map_add(EvolvedDemonGunData, "weaponSprite",					noone);
+ds_map_add(EvolvedDemonGunData, "offsetY",						16);
+ds_map_add(EvolvedDemonGunData, "laserSightEnabled",			false);
+ds_map_add(EvolvedDemonGunData, "isAuto",						true);
+ds_map_add(EvolvedDemonGunData, "currentShootMode",				ShootMode.Cast);
+//-----------------------------------------------------------------------------
+ds_map_add(EvolvedDemonGunData, "bulletObject",					obj_bigFireBall);
+ds_map_add(EvolvedDemonGunData, "bulletNumber",					8);
+ds_map_add(EvolvedDemonGunData, "bulletSpawnPointOffset",		0);
+//-----------------------------------------------------------------------------
+ds_map_add(EvolvedDemonGunData, "damage",						10);
+ds_map_add(EvolvedDemonGunData, "heal",							0);
+//-----------------------------------------------------------------------------
+ds_map_add(EvolvedDemonGunData, "rateOfFireAccelerated",		false);
+ds_map_add(EvolvedDemonGunData, "rateOfFireIncrStep",			0);
+ds_map_add(EvolvedDemonGunData, "rateOfFireDecrStep",			0);
+ds_map_add(EvolvedDemonGunData, "rateOfFireMin",				1);
+ds_map_add(EvolvedDemonGunData, "rateOfFireMax",				0);
+//-----------------------------------------------------------------------------
+ds_map_add(EvolvedDemonGunData, "burstRate",					0);
+ds_map_add(EvolvedDemonGunData, "burstShotsNumber",				0);
+//-----------------------------------------------------------------------------
+ds_map_add(EvolvedDemonGunData, "castExecuteCount",				1);
+ds_map_add(EvolvedDemonGunData, "castTime",						1);
+//-----------------------------------------------------------------------------
+ds_map_add(EvolvedDemonGunData, "chargeExecuteCountMin",		1);
+ds_map_add(EvolvedDemonGunData, "chargeExecuteCountMax",		0);
+ds_map_add(EvolvedDemonGunData, "chargeTime",					1);
+ds_map_add(EvolvedDemonGunData, "chargeWaitTime",				0);
+ds_map_add(EvolvedDemonGunData, "chargeCostFactorMax",			1);
+ds_map_add(EvolvedDemonGunData, "chargeDamageFactorMax",		4);
+ds_map_add(EvolvedDemonGunData, "chargeHealFactorMax",			0);
+ds_map_add(EvolvedDemonGunData, "chargeRateFactorMax",			0);
+ds_map_add(EvolvedDemonGunData, "chargeBulletNumberFactorMax",	0);
+ds_map_add(EvolvedDemonGunData, "chargeVelocityFactorMax",		20);
+ds_map_add(EvolvedDemonGunData, "chargeShakeFactorMax",			1.25);
+//-----------------------------------------------------------------------------
+ds_map_add(EvolvedDemonGunData, "spreadIsDynamic",				false);
+ds_map_add(EvolvedDemonGunData, "spreadIsUniform",				true);
+ds_map_add(EvolvedDemonGunData, "spreadAngleIncrFactor",		0.2);
+ds_map_add(EvolvedDemonGunData, "spreadAngleDecrFactor",		0.0075);
+ds_map_add(EvolvedDemonGunData, "spreadAngleMin",				30);
+ds_map_add(EvolvedDemonGunData, "spreadAngleMax",				0);
+//-----------------------------------------------------------------------------
+ds_map_add(EvolvedDemonGunData, "ammoID",						noone);
+ds_map_add(EvolvedDemonGunData, "shootAmmoCost",				0);
+//-----------------------------------------------------------------------------
+ds_map_add(EvolvedDemonGunData, "recoilPower",					0);
+ds_map_add(EvolvedDemonGunData, "recoilFactor",					0);
+ds_map_add(EvolvedDemonGunData, "reloadTime",					0);
+//-----------------------------------------------------------------------------
+ds_map_add(EvolvedDemonGunData, "hitscanScaleY",				0);
+ds_map_add(EvolvedDemonGunData, "projectileVelocityNoiseFactor",0);
+ds_map_add(EvolvedDemonGunData, "projectileVelocityCurrent",	3.5);
+ds_map_add(EvolvedDemonGunData, "projectileVelocityMax",		0);
+ds_map_add(EvolvedDemonGunData, "projectileAcceleration",		0);
+ds_map_add(EvolvedDemonGunData, "projectileFriction",			0);
+ds_map_add(EvolvedDemonGunData, "projectileBounceEnable",		false);
+ds_map_add(EvolvedDemonGunData, "projectileBounceFriction",		2);
+//-----------------------------------------------------------------------------
+ds_map_add(EvolvedDemonGunData, "isShackingCamera",				false);
+ds_map_add(EvolvedDemonGunData, "angularShakeEnabled",			false);
+ds_map_add(EvolvedDemonGunData, "shakeValue",					0.75);
+ds_map_add(EvolvedDemonGunData, "shotShakeFactor",				0.05);
 #endregion

@@ -120,14 +120,6 @@
             "value": "12"
         },
         {
-            "id": "debd384b-47fa-40cd-8ecb-1583c62573e2",
-            "modelName": "GMOverriddenProperty",
-            "mvc": "1.0",
-            "objectId": "afff8e58-95bc-4515-9151-ed5722abe174",
-            "propertyId": "3bbe149d-c474-40a3-b50d-be2b280ad9c3",
-            "value": "3"
-        },
-        {
             "id": "438b8748-ca49-4357-95b4-70519206a44f",
             "modelName": "GMOverriddenProperty",
             "mvc": "1.0",

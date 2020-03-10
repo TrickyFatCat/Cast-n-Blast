@@ -10,7 +10,9 @@ enum EnemyIndex
 	Ninja,
 	Crystal,
 	Shaman,
-	Bomber
+	Bomber,
+	EvolvedImp,
+	EvolvedDemon
 }
 
 enum EnemyParameter
@@ -32,6 +34,8 @@ enum EnemyParameter
 #macro CrystalData global.EnemyData[EnemyIndex.Crystal]
 #macro ShamanData global.EnemyData[EnemyIndex.Shaman]
 #macro BomberData global.EnemyData[EnemyIndex.Bomber]
+#macro EvolvedImpData global.EnemyData[EnemyIndex.EvolvedImp]
+#macro EvolvedDemonData global.EnemyData[EnemyIndex.EvolvedDemon]
 
 #region Kamikaze
 KamikazeData = ds_map_create();
@@ -111,4 +115,24 @@ ds_map_add(BomberData, EnemyParameter.Scores,				64);
 ds_map_add(BomberData, EnemyParameter.HitPointsDrop,		5);
 ds_map_add(BomberData, EnemyParameter.ShieldPointsDrop,		1);
 ds_map_add(BomberData, EnemyParameter.UltimatePointsDrop,	5);
+#endregion
+
+#region Evolved Imp
+EvolvedImpData = ds_map_create();
+ds_map_add(EvolvedImpData, EnemyParameter.MaxHitPoints,			100);
+ds_map_add(EvolvedImpData, EnemyParameter.MaxVelocity,			1);
+ds_map_add(EvolvedImpData, EnemyParameter.Scores,				32);
+ds_map_add(EvolvedImpData, EnemyParameter.HitPointsDrop,		5);
+ds_map_add(EvolvedImpData, EnemyParameter.ShieldPointsDrop,		1);
+ds_map_add(EvolvedImpData, EnemyParameter.UltimatePointsDrop,	5);
+#endregion
+
+#region Bomber
+EvolvedDemonData = ds_map_create();
+ds_map_add(EvolvedDemonData, EnemyParameter.MaxHitPoints,			250);
+ds_map_add(EvolvedDemonData, EnemyParameter.MaxVelocity,			1);
+ds_map_add(EvolvedDemonData, EnemyParameter.Scores,					64);
+ds_map_add(EvolvedDemonData, EnemyParameter.HitPointsDrop,			5);
+ds_map_add(EvolvedDemonData, EnemyParameter.ShieldPointsDrop,		1);
+ds_map_add(EvolvedDemonData, EnemyParameter.UltimatePointsDrop,		5);
 #endregion

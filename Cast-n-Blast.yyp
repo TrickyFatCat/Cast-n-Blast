@@ -159,14 +159,6 @@
             }
         },
         {
-            "Key": "0cc40996-78d6-4b29-b750-808c1e4ce95d",
-            "Value": {
-                "id": "3e007e7f-eeb1-4904-82c8-b70ca023bc0f",
-                "resourcePath": "views\\0cc40996-78d6-4b29-b750-808c1e4ce95d.yy",
-                "resourceType": "GMFolder"
-            }
-        },
-        {
             "Key": "0d2b8dbc-0be6-4ae8-b554-65cce50bdcd0",
             "Value": {
                 "id": "bbd2eb4c-a300-4874-9940-9d56a8fae59d",
@@ -575,6 +567,14 @@
             }
         },
         {
+            "Key": "24974ddb-d11a-458d-9467-efede85fbb6c",
+            "Value": {
+                "id": "3424160a-a9f1-44a5-a041-ce3962b10708",
+                "resourcePath": "sprites\\spr_evolvedDemon_startAttack\\spr_evolvedDemon_startAttack.yy",
+                "resourceType": "GMSprite"
+            }
+        },
+        {
             "Key": "24a5b57b-f302-4969-a8f0-80896b6797aa",
             "Value": {
                 "id": "b2ed199f-0c0c-4387-87b4-29bbf6730ec1",
@@ -604,6 +604,14 @@
                 "id": "30155f84-1710-4348-9124-e03ee073be4d",
                 "resourcePath": "sprites\\spr_rocketBot_walk\\spr_rocketBot_walk.yy",
                 "resourceType": "GMSprite"
+            }
+        },
+        {
+            "Key": "27944eb5-163a-49b4-a16d-cb3fbcad8bd8",
+            "Value": {
+                "id": "f9938ba0-5534-4e8b-8b75-4bc0d794b35b",
+                "resourcePath": "objects\\obj_Enemy_EvolvedDemon\\obj_Enemy_EvolvedDemon.yy",
+                "resourceType": "GMObject"
             }
         },
         {
@@ -812,6 +820,14 @@
                 "id": "85227044-82c2-463c-8940-64625c0083bb",
                 "resourcePath": "views\\32fede4a-29af-42fa-9d85-edb6b2a4f8ee.yy",
                 "resourceType": "GMFolder"
+            }
+        },
+        {
+            "Key": "354a82b9-70ca-49f7-b525-c9506af0aa0e",
+            "Value": {
+                "id": "d163278e-c47d-4a42-bd2e-0493367bb7cc",
+                "resourcePath": "sprites\\spr_evolvedDemon_run\\spr_evolvedDemon_run.yy",
+                "resourceType": "GMSprite"
             }
         },
         {
@@ -1372,6 +1388,14 @@
                 "id": "523f16a3-6642-4579-9650-dbc1a9cc2484",
                 "resourcePath": "scripts\\SetCameraMode\\SetCameraMode.yy",
                 "resourceType": "GMScript"
+            }
+        },
+        {
+            "Key": "50cd7b10-c185-4273-b586-49d84d2af49b",
+            "Value": {
+                "id": "fcf642f7-b02e-4d4a-8cf3-98e583f5d629",
+                "resourcePath": "sprites\\spr_evolvedImp_startAttack\\spr_evolvedImp_startAttack.yy",
+                "resourceType": "GMSprite"
             }
         },
         {
@@ -1943,6 +1967,14 @@
             }
         },
         {
+            "Key": "754fffd6-35b3-4e71-828c-46339ee0c442",
+            "Value": {
+                "id": "8c08802f-b0d6-4d3c-9fbd-deb94f8a9e24",
+                "resourcePath": "views\\754fffd6-35b3-4e71-828c-46339ee0c442.yy",
+                "resourceType": "GMFolder"
+            }
+        },
+        {
             "Key": "75ac291e-7061-4bcb-8e8a-3b3545332d41",
             "Value": {
                 "id": "42d24788-838f-4ee4-b721-223b55d61d51",
@@ -2063,6 +2095,14 @@
             }
         },
         {
+            "Key": "7cbcb818-24de-4603-bead-6a7db7f1a1c1",
+            "Value": {
+                "id": "75e54310-8f25-4020-a28c-4f33ad8f7d00",
+                "resourcePath": "views\\7cbcb818-24de-4603-bead-6a7db7f1a1c1.yy",
+                "resourceType": "GMFolder"
+            }
+        },
+        {
             "Key": "7d666b79-0fff-401a-98cd-db28d2fd6b57",
             "Value": {
                 "id": "d224cddb-a05c-41b1-80c9-cdd136f02518",
@@ -2092,6 +2132,14 @@
                 "id": "d37489e0-7764-4af5-9959-394797333aab",
                 "resourcePath": "scripts\\ChooseRandomObject\\ChooseRandomObject.yy",
                 "resourceType": "GMScript"
+            }
+        },
+        {
+            "Key": "7e7a0fbc-ef05-47fa-a95a-e2c2bdd536fc",
+            "Value": {
+                "id": "a6e680e8-0c68-424e-9711-43bf240f9259",
+                "resourcePath": "sprites\\spr_evolvedImp_idle\\spr_evolvedImp_idle.yy",
+                "resourceType": "GMSprite"
             }
         },
         {
@@ -2943,6 +2991,14 @@
             }
         },
         {
+            "Key": "b146b5b5-e457-49df-a26e-c6805aeb35e2",
+            "Value": {
+                "id": "c9b40a1d-41a4-4f62-bf31-d73b63a876da",
+                "resourcePath": "sprites\\spr_evolvedImp_run\\spr_evolvedImp_run.yy",
+                "resourceType": "GMSprite"
+            }
+        },
+        {
             "Key": "b23577ef-eb96-4307-9e45-6c3c4bce99a4",
             "Value": {
                 "id": "3f575765-3da7-486c-b8cf-e48621e5a0d6",
@@ -3316,6 +3372,14 @@
                 "id": "7069604f-8044-4f53-98e8-56e1dc2d7ab9",
                 "resourcePath": "scripts\\DestroyBomb\\DestroyBomb.yy",
                 "resourceType": "GMScript"
+            }
+        },
+        {
+            "Key": "cef1e76b-f7db-41bd-ad57-95b4f4782a3b",
+            "Value": {
+                "id": "f8252eac-9404-427f-843e-fc6f2c494032",
+                "resourcePath": "objects\\obj_Enemy_EvolvedImp\\obj_Enemy_EvolvedImp.yy",
+                "resourceType": "GMObject"
             }
         },
         {
@@ -3988,6 +4052,14 @@
                 "id": "0d0ac878-8b83-4059-ae0d-9e24c9531463",
                 "resourcePath": "scripts\\GetPerkMaxLevel\\GetPerkMaxLevel.yy",
                 "resourceType": "GMScript"
+            }
+        },
+        {
+            "Key": "f5c41fa7-9c1e-4dc5-b4e8-243f200f5e13",
+            "Value": {
+                "id": "dae4d07a-67fc-4bb3-9dd2-e36a2e18e115",
+                "resourcePath": "sprites\\spr_evolvedDemon_idle\\spr_evolvedDemon_idle.yy",
+                "resourceType": "GMSprite"
             }
         },
         {
