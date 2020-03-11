@@ -34,7 +34,7 @@ SetPerkData(Perk.RunSpeed,				2,	0.25,	true,	false,	"Run speed");
 SetPerkData(Perk.DashSpeed,				2,	0.2,	true,	false,	"Dash distance");
 SetPerkData(Perk.DashCharge,			1,	1.0,	true,	true,	"Dash charge");
 SetPerkData(Perk.DashCoolDown,			2,	0.25,	true,	false,	"Dash cooldown");
-SetPerkData(Perk.MaxHitPoints,			4,	0.25,	true,	false,	"Max HP");
+SetPerkData(Perk.MaxHitPoints,			4,	25,		true,	true,	"Max HP");
 SetPerkData(Perk.ShieldFactor,			2,	0.25,	true,	false,	"Shield power");
 SetPerkData(Perk.MaxShieldPoints,		4,	25,		true,	true,	"Max shield points");
 SetPerkData(Perk.PickupRadius,			1,	0.5,	true,	false,	"Pickup radius");

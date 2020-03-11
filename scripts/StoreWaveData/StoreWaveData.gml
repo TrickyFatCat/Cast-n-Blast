@@ -26,16 +26,16 @@ var _waveWeight = 5;
 var _enemyNumber = 10;
 
 var _wave = CreateDataMap(_enemyNumber);
-SetObjectData(_wave[0], obj_Enemy_Kamikaze,		0,	5);
-SetObjectData(_wave[1], obj_Enemy_Imp,			50,	5);
-SetObjectData(_wave[2], obj_Enemy_DarkMage,		0,	5);
-SetObjectData(_wave[3], obj_Enemy_Demon,		0,	5);
-SetObjectData(_wave[4], obj_Enemy_Ninja,		0,	5);
-SetObjectData(_wave[5], obj_Enemy_Crystal,		0,	5);
-SetObjectData(_wave[6], obj_Enemy_Shaman,		0,	5);
-SetObjectData(_wave[7], obj_Enemy_Bomber,		0,	5);
-SetObjectData(_wave[8], obj_Enemy_EvolvedImp,	0,	5);
-SetObjectData(_wave[9], obj_Enemy_EvolvedDemon,	0,	5);
+SetObjectData(_wave[0], obj_Enemy_Kamikaze,		3,	5);
+SetObjectData(_wave[1], obj_Enemy_Imp,			50,	1);
+SetObjectData(_wave[2], obj_Enemy_DarkMage,		0,	0);
+SetObjectData(_wave[3], obj_Enemy_Demon,		0,	0);
+SetObjectData(_wave[4], obj_Enemy_Ninja,		0,	0);
+SetObjectData(_wave[5], obj_Enemy_Crystal,		0,	0);
+SetObjectData(_wave[6], obj_Enemy_Shaman,		0,	0);
+SetObjectData(_wave[7], obj_Enemy_Bomber,		0,	0);
+SetObjectData(_wave[8], obj_Enemy_EvolvedImp,	0,	0);
+SetObjectData(_wave[9], obj_Enemy_EvolvedDemon,	0,	0);
 SetWaveData(_waveIndex, _wave, _waveWeight);
 
 // Wave 02
@@ -44,16 +44,16 @@ var _waveWeight = 5;
 var _enemyNumber = 10;
 
 var _wave = CreateDataMap(_enemyNumber);
-SetObjectData(_wave[0], obj_Enemy_Kamikaze,		0,	5);
-SetObjectData(_wave[1], obj_Enemy_Imp,			0,	5);
-SetObjectData(_wave[2], obj_Enemy_DarkMage,		0,	5);
-SetObjectData(_wave[3], obj_Enemy_Demon,		0,	5);
-SetObjectData(_wave[4], obj_Enemy_Ninja,		0,	5);
-SetObjectData(_wave[5], obj_Enemy_Crystal,		0,	5);
-SetObjectData(_wave[6], obj_Enemy_Shaman,		0,	5);
-SetObjectData(_wave[7], obj_Enemy_Bomber,		0,	5);
-SetObjectData(_wave[8], obj_Enemy_EvolvedImp,	50,	5);
-SetObjectData(_wave[9], obj_Enemy_EvolvedDemon,	5,	5);
+SetObjectData(_wave[0], obj_Enemy_Kamikaze,		0,	0);
+SetObjectData(_wave[1], obj_Enemy_Imp,			50,	1);
+SetObjectData(_wave[2], obj_Enemy_DarkMage,		0,	0);
+SetObjectData(_wave[3], obj_Enemy_Demon,		4,	5);
+SetObjectData(_wave[4], obj_Enemy_Ninja,		0,	0);
+SetObjectData(_wave[5], obj_Enemy_Crystal,		0,	0);
+SetObjectData(_wave[6], obj_Enemy_Shaman,		0,	0);
+SetObjectData(_wave[7], obj_Enemy_Bomber,		0,	0);
+SetObjectData(_wave[8], obj_Enemy_EvolvedImp,	0,	0);
+SetObjectData(_wave[9], obj_Enemy_EvolvedDemon,	0,	0);
 SetWaveData(_waveIndex, _wave, _waveWeight);
 
 // Wave 03
@@ -62,16 +62,16 @@ var _waveWeight = 5;
 var _enemyNumber = 10;
 
 var _wave = CreateDataMap(_enemyNumber);
-SetObjectData(_wave[0], obj_Enemy_Kamikaze,		0,	5);
-SetObjectData(_wave[1], obj_Enemy_Imp,			0,	5);
-SetObjectData(_wave[2], obj_Enemy_DarkMage,		0,	5);
-SetObjectData(_wave[3], obj_Enemy_Demon,		0,	5);
-SetObjectData(_wave[4], obj_Enemy_Ninja,		0,	5);
-SetObjectData(_wave[5], obj_Enemy_Crystal,		0,	5);
-SetObjectData(_wave[6], obj_Enemy_Shaman,		0,	5);
-SetObjectData(_wave[7], obj_Enemy_Bomber,		0,	5);
-SetObjectData(_wave[8], obj_Enemy_EvolvedImp,	50,	5);
-SetObjectData(_wave[9], obj_Enemy_EvolvedDemon,	5,	5);
+SetObjectData(_wave[0], obj_Enemy_Kamikaze,		0,	0);
+SetObjectData(_wave[1], obj_Enemy_Imp,			50,	5);
+SetObjectData(_wave[2], obj_Enemy_DarkMage,		0,	0);
+SetObjectData(_wave[3], obj_Enemy_Demon,		0,	0);
+SetObjectData(_wave[4], obj_Enemy_Ninja,		0,	0);
+SetObjectData(_wave[5], obj_Enemy_Crystal,		0,	0);
+SetObjectData(_wave[6], obj_Enemy_Shaman,		0,	0);
+SetObjectData(_wave[7], obj_Enemy_Bomber,		0,	0);
+SetObjectData(_wave[8], obj_Enemy_EvolvedImp,	0,	0);
+SetObjectData(_wave[9], obj_Enemy_EvolvedDemon,	0,	0);
 SetWaveData(_waveIndex, _wave, _waveWeight);
 #endregion
 

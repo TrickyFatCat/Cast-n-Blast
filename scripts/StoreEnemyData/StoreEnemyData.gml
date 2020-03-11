@@ -16,17 +16,6 @@ enum EnemyIndex
 	EvolvedDemon
 }
 
-//AddEnemyToCounter(obj_Enemy_Kamikaze);
-//AddEnemyToCounter(obj_Enemy_Imp);
-//AddEnemyToCounter(obj_Enemy_DarkMage);
-//AddEnemyToCounter(obj_Enemy_Demon);
-//AddEnemyToCounter(obj_Enemy_Ninja);
-//AddEnemyToCounter(obj_Enemy_Crystal);
-//AddEnemyToCounter(obj_Enemy_Shaman);
-//AddEnemyToCounter(obj_Enemy_Bomber);
-//AddEnemyToCounter(obj_Enemy_EvolvedImp);
-//AddEnemyToCounter(obj_Enemy_EvolvedDemon);
-
 enum EnemyParameter
 {
 	MaxHitPoints,
@@ -148,7 +137,7 @@ ds_map_add(EvolvedImpData, EnemyParameter.UltimatePointsDrop,	5);
 ds_map_add(EvolvedImpData, "object", obj_Enemy_EvolvedImp);
 #endregion
 
-#region Bomber
+#region Evolved Demon
 EvolvedDemonData = ds_map_create();
 ds_map_add(EvolvedDemonData, EnemyParameter.MaxHitPoints,			250);
 ds_map_add(EvolvedDemonData, EnemyParameter.MaxVelocity,			1);

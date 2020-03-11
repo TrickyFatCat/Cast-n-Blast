@@ -5,11 +5,11 @@
 isActive = false;
 
 /// Spawn pause timer
-spawnPauseTime = SetTime(1);
+spawnPauseTime = SetTime(2);
 spawnPauseTimer = spawnPauseTime;
 
 /// Enemies spawn limits
-spawnNumber = 5;
+spawnNumber = 1;
 
 if (!ds_exists(global.EnemySpawns, ds_type_list))
 {
