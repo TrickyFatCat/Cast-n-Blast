@@ -132,10 +132,12 @@ enum UltimateState
 }
 
 ultimateState = UltimateState.Idle;
-ultimatePoints = 0;
-maxUltimatePoints = 1000;
+ultimatePoints = 300;
+maxUltimatePoints = 300;
 defaultMaxUltimatePoints = maxUltimatePoints;
 ultimateDeactivaitionTime = 0.75;
 ultimateDeactivationProgress = 0;
 ultimateGainFactor = 1;
 defaultUltimateGainFactor = ultimateGainFactor;
+
+ultimateTimer = 0;

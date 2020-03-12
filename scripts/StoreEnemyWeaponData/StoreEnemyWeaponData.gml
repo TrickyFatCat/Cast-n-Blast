@@ -35,7 +35,7 @@ ds_map_add(FighterGunData, "bulletObject",					obj_smallFireBall);
 ds_map_add(FighterGunData, "bulletNumber",					1);
 ds_map_add(FighterGunData, "bulletSpawnPointOffset",		0);
 //-----------------------------------------------------------------------------
-ds_map_add(FighterGunData, "damage",						8);
+ds_map_add(FighterGunData, "damage",						10);
 ds_map_add(FighterGunData, "heal",							0);
 //-----------------------------------------------------------------------------
 ds_map_add(FighterGunData, "rateOfFireAccelerated",			false);
@@ -48,7 +48,7 @@ ds_map_add(FighterGunData, "burstRate",						0);
 ds_map_add(FighterGunData, "burstShotsNumber",				0);
 //-----------------------------------------------------------------------------
 ds_map_add(FighterGunData, "castExecuteCount",				1);
-ds_map_add(FighterGunData, "castTime",						0.75);
+ds_map_add(FighterGunData, "castTime",						0.65);
 //-----------------------------------------------------------------------------
 ds_map_add(FighterGunData, "chargeExecuteCountMin",			1);
 ds_map_add(FighterGunData, "chargeExecuteCountMax",			0);
@@ -104,7 +104,7 @@ ds_map_add(TrooperGunData, "bulletObject",					obj_bigFireBall);
 ds_map_add(TrooperGunData, "bulletNumber",					4);
 ds_map_add(TrooperGunData, "bulletSpawnPointOffset",		0);
 //-----------------------------------------------------------------------------
-ds_map_add(TrooperGunData, "damage",						10);
+ds_map_add(TrooperGunData, "damage",						12);
 ds_map_add(TrooperGunData, "heal",							0);
 //-----------------------------------------------------------------------------
 ds_map_add(TrooperGunData, "rateOfFireAccelerated",			false);
@@ -117,7 +117,7 @@ ds_map_add(TrooperGunData, "burstRate",						0);
 ds_map_add(TrooperGunData, "burstShotsNumber",				0);
 //-----------------------------------------------------------------------------
 ds_map_add(TrooperGunData, "castExecuteCount",				1);
-ds_map_add(TrooperGunData, "castTime",						1.5);
+ds_map_add(TrooperGunData, "castTime",						2);
 //-----------------------------------------------------------------------------
 ds_map_add(TrooperGunData, "chargeExecuteCountMin",			1);
 ds_map_add(TrooperGunData, "chargeExecuteCountMax",			0);
@@ -129,13 +129,13 @@ ds_map_add(TrooperGunData, "chargeHealFactorMax",			0);
 ds_map_add(TrooperGunData, "chargeRateFactorMax",			0);
 ds_map_add(TrooperGunData, "chargeBulletNumberFactorMax",	0);
 ds_map_add(TrooperGunData, "chargeVelocityFactorMax",		10);
-ds_map_add(TrooperGunData, "chargeShakeFactorMax",			1.25);
+ds_map_add(TrooperGunData, "chargeShakeFactorMax",			1.5);
 //-----------------------------------------------------------------------------
 ds_map_add(TrooperGunData, "spreadIsDynamic",				false);
 ds_map_add(TrooperGunData, "spreadIsUniform",				true);
 ds_map_add(TrooperGunData, "spreadAngleIncrFactor",			0.2);
 ds_map_add(TrooperGunData, "spreadAngleDecrFactor",			0.0075);
-ds_map_add(TrooperGunData, "spreadAngleMin",				20);
+ds_map_add(TrooperGunData, "spreadAngleMin",				15);
 ds_map_add(TrooperGunData, "spreadAngleMax",				0);
 //-----------------------------------------------------------------------------
 ds_map_add(TrooperGunData, "ammoID",						noone);
@@ -173,20 +173,20 @@ ds_map_add(BeamerGunData, "bulletObject",					obj_BeamerLaser);
 ds_map_add(BeamerGunData, "bulletNumber",					1);
 ds_map_add(BeamerGunData, "bulletSpawnPointOffset",			24);
 //-----------------------------------------------------------------------------
-ds_map_add(BeamerGunData, "damage",							3);
+ds_map_add(BeamerGunData, "damage",							2);
 ds_map_add(BeamerGunData, "heal",							0);
 //-----------------------------------------------------------------------------
 ds_map_add(BeamerGunData, "rateOfFireAccelerated",			false);
 ds_map_add(BeamerGunData, "rateOfFireIncrStep",				0);
 ds_map_add(BeamerGunData, "rateOfFireDecrStep",				0);
-ds_map_add(BeamerGunData, "rateOfFireMin",					25);
+ds_map_add(BeamerGunData, "rateOfFireMin",					20);
 ds_map_add(BeamerGunData, "rateOfFireMax",					0);
 //-----------------------------------------------------------------------------
 ds_map_add(BeamerGunData, "burstRate",						0);
 ds_map_add(BeamerGunData, "burstShotsNumber",				0);
 //-----------------------------------------------------------------------------
 ds_map_add(BeamerGunData, "castExecuteCount",				0);
-ds_map_add(BeamerGunData, "castTime",						2);
+ds_map_add(BeamerGunData, "castTime",						1.5);
 //-----------------------------------------------------------------------------
 ds_map_add(BeamerGunData, "chargeExecuteCountMin",			1);
 ds_map_add(BeamerGunData, "chargeExecuteCountMax",			0);
@@ -239,10 +239,10 @@ ds_map_add(NinjaGunData, "isAuto",							true);
 ds_map_add(NinjaGunData, "currentShootMode",				ShootMode.Normal);
 //-----------------------------------------------------------------------------
 ds_map_add(NinjaGunData, "bulletObject",					obj_NinjasKnife);
-ds_map_add(NinjaGunData, "bulletNumber",					30);
+ds_map_add(NinjaGunData, "bulletNumber",					25);
 ds_map_add(NinjaGunData, "bulletSpawnPointOffset",			0);
 //-----------------------------------------------------------------------------
-ds_map_add(NinjaGunData, "damage",							10);
+ds_map_add(NinjaGunData, "damage",							15);
 ds_map_add(NinjaGunData, "heal",							0);
 //-----------------------------------------------------------------------------
 ds_map_add(NinjaGunData, "rateOfFireAccelerated",			false);
@@ -311,20 +311,20 @@ ds_map_add(TurretGunData, "bulletObject",					obj_TurretLaser);
 ds_map_add(TurretGunData, "bulletNumber",					1);
 ds_map_add(TurretGunData, "bulletSpawnPointOffset",			10);
 //-----------------------------------------------------------------------------
-ds_map_add(TurretGunData, "damage",							3);
+ds_map_add(TurretGunData, "damage",							2);
 ds_map_add(TurretGunData, "heal",							0);
 //-----------------------------------------------------------------------------
 ds_map_add(TurretGunData, "rateOfFireAccelerated",			false);
 ds_map_add(TurretGunData, "rateOfFireIncrStep",				0);
 ds_map_add(TurretGunData, "rateOfFireDecrStep",				0);
-ds_map_add(TurretGunData, "rateOfFireMin",					30);
+ds_map_add(TurretGunData, "rateOfFireMin",					12);
 ds_map_add(TurretGunData, "rateOfFireMax",					0);
 //-----------------------------------------------------------------------------
 ds_map_add(TurretGunData, "burstRate",						0);
 ds_map_add(TurretGunData, "burstShotsNumber",				0);
 //-----------------------------------------------------------------------------
 ds_map_add(TurretGunData, "castExecuteCount",				0);
-ds_map_add(TurretGunData, "castTime",						1.25);
+ds_map_add(TurretGunData, "castTime",						1);
 //-----------------------------------------------------------------------------
 ds_map_add(TurretGunData, "chargeExecuteCountMin",			1);
 ds_map_add(TurretGunData, "chargeExecuteCountMax",			0);
@@ -380,7 +380,7 @@ ds_map_add(RocketGunData, "bulletObject",					obj_EnemyRocket);
 ds_map_add(RocketGunData, "bulletNumber",					1);
 ds_map_add(RocketGunData, "bulletSpawnPointOffset",			19);
 //-----------------------------------------------------------------------------
-ds_map_add(RocketGunData, "damage",							10);
+ds_map_add(RocketGunData, "damage",							20);
 ds_map_add(RocketGunData, "heal",							0);
 //-----------------------------------------------------------------------------
 ds_map_add(RocketGunData, "rateOfFireAccelerated",			false);
@@ -393,7 +393,7 @@ ds_map_add(RocketGunData, "burstRate",						0);
 ds_map_add(RocketGunData, "burstShotsNumber",				0);
 //-----------------------------------------------------------------------------
 ds_map_add(RocketGunData, "castExecuteCount",				1);
-ds_map_add(RocketGunData, "castTime",						2);
+ds_map_add(RocketGunData, "castTime",						4);
 //-----------------------------------------------------------------------------
 ds_map_add(RocketGunData, "chargeExecuteCountMin",			1);
 ds_map_add(RocketGunData, "chargeExecuteCountMax",			0);
@@ -455,7 +455,7 @@ ds_map_add(BomberGunData, "heal",							0);
 ds_map_add(BomberGunData, "rateOfFireAccelerated",			false);
 ds_map_add(BomberGunData, "rateOfFireIncrStep",				0);
 ds_map_add(BomberGunData, "rateOfFireDecrStep",				0);
-ds_map_add(BomberGunData, "rateOfFireMin",					4);
+ds_map_add(BomberGunData, "rateOfFireMin",					2);
 ds_map_add(BomberGunData, "rateOfFireMax",					0);
 //-----------------------------------------------------------------------------
 ds_map_add(BomberGunData, "burstRate",						0);
@@ -518,7 +518,7 @@ ds_map_add(EvolvedImpGunData, "bulletObject",					obj_smallFireBall);
 ds_map_add(EvolvedImpGunData, "bulletNumber",					1);
 ds_map_add(EvolvedImpGunData, "bulletSpawnPointOffset",			0);
 //-----------------------------------------------------------------------------
-ds_map_add(EvolvedImpGunData, "damage",							8);
+ds_map_add(EvolvedImpGunData, "damage",							20);
 ds_map_add(EvolvedImpGunData, "heal",							0);
 //-----------------------------------------------------------------------------
 ds_map_add(EvolvedImpGunData, "rateOfFireAccelerated",			false);
@@ -530,8 +530,8 @@ ds_map_add(EvolvedImpGunData, "rateOfFireMax",					0);
 ds_map_add(EvolvedImpGunData, "burstRate",						0);
 ds_map_add(EvolvedImpGunData, "burstShotsNumber",				0);
 //-----------------------------------------------------------------------------
-ds_map_add(EvolvedImpGunData, "castExecuteCount",				6);
-ds_map_add(EvolvedImpGunData, "castTime",						1);
+ds_map_add(EvolvedImpGunData, "castExecuteCount",				4);
+ds_map_add(EvolvedImpGunData, "castTime",						1.5);
 //-----------------------------------------------------------------------------
 ds_map_add(EvolvedImpGunData, "chargeExecuteCountMin",			1);
 ds_map_add(EvolvedImpGunData, "chargeExecuteCountMax",			0);
@@ -587,7 +587,7 @@ ds_map_add(EvolvedDemonGunData, "bulletObject",					obj_bigFireBall);
 ds_map_add(EvolvedDemonGunData, "bulletNumber",					8);
 ds_map_add(EvolvedDemonGunData, "bulletSpawnPointOffset",		0);
 //-----------------------------------------------------------------------------
-ds_map_add(EvolvedDemonGunData, "damage",						10);
+ds_map_add(EvolvedDemonGunData, "damage",						15);
 ds_map_add(EvolvedDemonGunData, "heal",							0);
 //-----------------------------------------------------------------------------
 ds_map_add(EvolvedDemonGunData, "rateOfFireAccelerated",		false);
@@ -600,7 +600,7 @@ ds_map_add(EvolvedDemonGunData, "burstRate",					0);
 ds_map_add(EvolvedDemonGunData, "burstShotsNumber",				0);
 //-----------------------------------------------------------------------------
 ds_map_add(EvolvedDemonGunData, "castExecuteCount",				1);
-ds_map_add(EvolvedDemonGunData, "castTime",						1);
+ds_map_add(EvolvedDemonGunData, "castTime",						3);
 //-----------------------------------------------------------------------------
 ds_map_add(EvolvedDemonGunData, "chargeExecuteCountMin",		1);
 ds_map_add(EvolvedDemonGunData, "chargeExecuteCountMax",		0);

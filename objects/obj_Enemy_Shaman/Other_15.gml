@@ -1,8 +1,6 @@
 // Inherit the parent event
 event_inherited();
 
-var _waitTime = SetTime(4);
-
 switch (mainWeapon.currentCastState)
 {
 	case CastState.Idle:
