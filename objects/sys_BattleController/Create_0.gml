@@ -30,4 +30,4 @@ destructionTile = noone;
 permanentTilesEnabled = false;
 temporaryTilesEnabled = false;
 activeWaves = ds_list_create();
-SetActiveWaves(WaveData.R01W01, WaveData.R01W02, WaveData.R01W03);
+SetActiveWaves(WaveData.S01_W01, WaveData.S01_W02, WaveData.S01_W03);

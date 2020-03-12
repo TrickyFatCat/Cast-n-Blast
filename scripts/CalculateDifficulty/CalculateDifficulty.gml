@@ -3,7 +3,7 @@ global.Round++;
 switch (global.Round)
 {
 	case 2:
-		SetActiveWaves(WaveData.R02W01, WaveData.R02W02, WaveData.R02W03);
+		SetActiveWaves(WaveData.S02_W01, WaveData.S02_W02, WaveData.S02_W03);
 	break;
 	
 	case 4:
@@ -12,7 +12,7 @@ switch (global.Round)
 	
 	case 6:
 		permanentTilesEnabled = true;
-		SetActiveWaves(WaveData.R06W01, WaveData.R06W02, WaveData.R06W03);
+		SetActiveWaves(WaveData.S03_W01, WaveData.S03_W02, WaveData.S03_W03);
 	break;
 	
 	case 8:
@@ -28,7 +28,7 @@ switch (global.Round)
 	
 	case 12:
 		temporaryTilesEnabled = true;
-		SetActiveWaves(WaveData.R12W01, WaveData.R12W02, WaveData.R12W03);
+		SetActiveWaves(WaveData.S03_W04, WaveData.S03_W05, WaveData.S03_W06);
 	break;
 	
 	case 14:
@@ -47,7 +47,7 @@ switch (global.Round)
 	
 	case 20:
 		SetRoundTime(60);
-		SetActiveWaves(WaveData.R20W01, WaveData.R20W02, WaveData.R20W03);
+		SetActiveWaves(WaveData.S04_W01, WaveData.S04_W02, WaveData.S04_W03);
 	break;
 }
 

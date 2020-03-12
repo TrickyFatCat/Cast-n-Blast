@@ -2,26 +2,74 @@ global.WaveData = [];
 
 enum WaveData
 {
-	R01W01,
-	R01W02,
-	R01W03,
-	R02W01,
-	R02W02,
-	R02W03,
-	R06W01,
-	R06W02,
-	R06W03,
-	R12W01,
-	R12W02,
-	R12W03,
-	R20W01,
-	R20W02,
-	R20W03
+	S01_W01,
+	S01_W02,
+	S01_W03,
+	//------//
+	S02_W01,
+	S02_W02,
+	S02_W03,
+	//------//
+	S03_W01,
+	S03_W02,
+	S03_W03,
+	S03_W04,
+	S03_W05,
+	S03_W06,
+	//------//
+	S04_W01,
+	S04_W02,
+	S04_W03,
+	S04_W04,
+	S04_W05,
+	S04_W06,
+	//------//
+	S05_W01,
+	S05_W02,
+	S05_W03,
+	S05_W04,
+	S05_W05,
+	S05_W06,
+	//------//
+	S06_W01,
+	S06_W02,
+	S06_W03,
+	S06_W04,
+	S06_W05,
+	S06_W06,
+	//------//
+	S07_W01,
+	S07_W02,
+	S07_W03,
+	S07_W04,
+	S07_W05,
+	S07_W06,
+	//------//
+	S08_W01,
+	S08_W02,
+	S08_W03,
+	S08_W04,
+	S08_W05,
+	S08_W06,
+	//------//
+	S09_W01,
+	S09_W02,
+	S09_W03,
+	S09_W04,
+	S09_W05,
+	S09_W06,
+	//------//
+	S10_W01,
+	S10_W02,
+	S10_W03,
+	S10_W04,
+	S10_W05,
+	S10_W06
 }
 
-#region Round01
-// Wave 01
-var _waveIndex = WaveData.R01W01;
+#region Wave Set 01
+// S01_W01
+var _waveIndex = WaveData.S01_W01;
 var _waveWeight = 5;
 var _enemyNumber = 10;
 
@@ -39,7 +87,7 @@ SetObjectData(_wave[9], obj_Enemy_EvolvedDemon,	0,	0);
 SetWaveData(_waveIndex, _wave, _waveWeight);
 
 // Wave 02
-var _waveIndex = WaveData.R01W02;
+var _waveIndex = WaveData.S01_W02;
 var _waveWeight = 5;
 var _enemyNumber = 10;
 
@@ -57,7 +105,7 @@ SetObjectData(_wave[9], obj_Enemy_EvolvedDemon,	0,	0);
 SetWaveData(_waveIndex, _wave, _waveWeight);
 
 // Wave 03
-var _waveIndex = WaveData.R01W03;
+var _waveIndex = WaveData.S01_W03;
 var _waveWeight = 5;
 var _enemyNumber = 10;
 
@@ -77,7 +125,7 @@ SetWaveData(_waveIndex, _wave, _waveWeight);
 
 #region Round02
 // Wave 01
-var _waveIndex = WaveData.R02W01;
+var _waveIndex = WaveData.S02_W01;
 var _waveWeight = 5;
 var _enemyNumber = 10;
 
@@ -95,7 +143,7 @@ SetObjectData(_wave[9], obj_Enemy_EvolvedDemon,	0,	0);
 SetWaveData(_waveIndex, _wave, _waveWeight);
 
 // Wave 02
-var _waveIndex = WaveData.R02W02;
+var _waveIndex = WaveData.S02_W02;
 var _waveWeight = 5;
 var _enemyNumber = 10;
 
@@ -113,7 +161,7 @@ SetObjectData(_wave[9], obj_Enemy_EvolvedDemon,	0,	0);
 SetWaveData(_waveIndex, _wave, _waveWeight);
 
 // Wave 03
-var _waveIndex = WaveData.R02W03;
+var _waveIndex = WaveData.S02_W03;
 var _waveWeight = 5;
 var _enemyNumber = 10;
 
@@ -133,7 +181,7 @@ SetWaveData(_waveIndex, _wave, _waveWeight);
 
 #region Round06
 // Wave 01
-var _waveIndex = WaveData.R06W01;
+var _waveIndex = WaveData.S03_W01;
 var _waveWeight = 5;
 var _enemyNumber = 10;
 
@@ -151,7 +199,7 @@ SetObjectData(_wave[9], obj_Enemy_EvolvedDemon,	0,	0);
 SetWaveData(_waveIndex, _wave, _waveWeight);
 
 // Wave 02
-var _waveIndex = WaveData.R06W02;
+var _waveIndex = WaveData.S03_W02;
 var _waveWeight = 5;
 var _enemyNumber = 10;
 
@@ -169,7 +217,7 @@ SetObjectData(_wave[9], obj_Enemy_EvolvedDemon,	0,	0);
 SetWaveData(_waveIndex, _wave, _waveWeight);
 
 // Wave 03
-var _waveIndex = WaveData.R06W03;
+var _waveIndex = WaveData.S03_W03;
 var _waveWeight = 5;
 var _enemyNumber = 10;
 
@@ -189,7 +237,7 @@ SetWaveData(_waveIndex, _wave, _waveWeight);
 
 #region Round12
 // Wave 01
-var _waveIndex = WaveData.R12W01;
+var _waveIndex = WaveData.S03_W04;
 var _waveWeight = 5;
 var _enemyNumber = 10;
 
@@ -207,7 +255,7 @@ SetObjectData(_wave[9], obj_Enemy_EvolvedDemon,	0,	0);
 SetWaveData(_waveIndex, _wave, _waveWeight);
 
 // Wave 02
-var _waveIndex = WaveData.R12W02;
+var _waveIndex = WaveData.S03_W05;
 var _waveWeight = 5;
 var _enemyNumber = 10;
 
@@ -225,7 +273,7 @@ SetObjectData(_wave[9], obj_Enemy_EvolvedDemon,	0,	0);
 SetWaveData(_waveIndex, _wave, _waveWeight);
 
 // Wave 03
-var _waveIndex = WaveData.R12W03;
+var _waveIndex = WaveData.S03_W06;
 var _waveWeight = 5;
 var _enemyNumber = 10;
 
@@ -245,7 +293,7 @@ SetWaveData(_waveIndex, _wave, _waveWeight);
 
 #region Round20
 // Wave 01
-var _waveIndex = WaveData.R20W01;
+var _waveIndex = WaveData.S04_W01;
 var _waveWeight = 5;
 var _enemyNumber = 10;
 
@@ -263,7 +311,7 @@ SetObjectData(_wave[9], obj_Enemy_EvolvedDemon,	0,	0);
 SetWaveData(_waveIndex, _wave, _waveWeight);
 
 // Wave 02
-var _waveIndex = WaveData.R20W02;
+var _waveIndex = WaveData.S04_W02;
 var _waveWeight = 5;
 var _enemyNumber = 10;
 
@@ -281,7 +329,7 @@ SetObjectData(_wave[9], obj_Enemy_EvolvedDemon,	0,	0);
 SetWaveData(_waveIndex, _wave, _waveWeight);
 
 // Wave 03
-var _waveIndex = WaveData.R20W03;
+var _waveIndex = WaveData.S04_W03;
 var _waveWeight = 5;
 var _enemyNumber = 10;
 

@@ -17,7 +17,7 @@ if (!ds_exists(global.EnemySpawns, ds_type_list))
 }
 
 /// Wave data
-currentWaveIndex = choose(WaveData.R01W01, WaveData.R01W02, WaveData.R01W03);
+currentWaveIndex = choose(WaveData.S01_W01, WaveData.S01_W02, WaveData.S01_W03);
 waveData = GetWaveData(currentWaveIndex);
 waveSwitchTime = SetTime(10);
 waveSwitchTimer = 0;
