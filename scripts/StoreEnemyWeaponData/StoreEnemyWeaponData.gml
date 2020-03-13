@@ -117,7 +117,7 @@ ds_map_add(TrooperGunData, "burstRate",						0);
 ds_map_add(TrooperGunData, "burstShotsNumber",				0);
 //-----------------------------------------------------------------------------
 ds_map_add(TrooperGunData, "castExecuteCount",				1);
-ds_map_add(TrooperGunData, "castTime",						2);
+ds_map_add(TrooperGunData, "castTime",						1.5);
 //-----------------------------------------------------------------------------
 ds_map_add(TrooperGunData, "chargeExecuteCountMin",			1);
 ds_map_add(TrooperGunData, "chargeExecuteCountMax",			0);
@@ -455,14 +455,14 @@ ds_map_add(BomberGunData, "heal",							0);
 ds_map_add(BomberGunData, "rateOfFireAccelerated",			false);
 ds_map_add(BomberGunData, "rateOfFireIncrStep",				0);
 ds_map_add(BomberGunData, "rateOfFireDecrStep",				0);
-ds_map_add(BomberGunData, "rateOfFireMin",					2);
+ds_map_add(BomberGunData, "rateOfFireMin",					3);
 ds_map_add(BomberGunData, "rateOfFireMax",					0);
 //-----------------------------------------------------------------------------
 ds_map_add(BomberGunData, "burstRate",						0);
 ds_map_add(BomberGunData, "burstShotsNumber",				0);
 //-----------------------------------------------------------------------------
 ds_map_add(BomberGunData, "castExecuteCount",				3);
-ds_map_add(BomberGunData, "castTime",						2);
+ds_map_add(BomberGunData, "castTime",						1.5);
 //-----------------------------------------------------------------------------
 ds_map_add(BomberGunData, "chargeExecuteCountMin",			1);
 ds_map_add(BomberGunData, "chargeExecuteCountMax",			0);

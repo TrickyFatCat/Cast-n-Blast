@@ -21,7 +21,7 @@ switch (_perkId)
 	break;
 	
 	case Perk.MaxHitPoints:
-		global.Player.maxHitPoints = IncreaseParameterPercent(_perkId, global.Player.defaultMaxHitPoints);
+		global.Player.maxHitPoints = IncreaseParameterAbsolute(_perkId, global.Player.defaultMaxHitPoints);
 		global.Player.hitPoints = global.Player.maxHitPoints;
 	break;
 	

@@ -46,7 +46,7 @@ ds_map_add(FireBallData, "heal",							0);
 ds_map_add(FireBallData, "rateOfFireAccelerated",			false);
 ds_map_add(FireBallData, "rateOfFireIncrStep",				0);
 ds_map_add(FireBallData, "rateOfFireDecrStep",				0);
-ds_map_add(FireBallData, "rateOfFireMin",					10);
+ds_map_add(FireBallData, "rateOfFireMin",					8);
 ds_map_add(FireBallData, "rateOfFireMax",					0);
 //-----------------------------------------------------------------------------
 ds_map_add(FireBallData, "burstRate",						0);

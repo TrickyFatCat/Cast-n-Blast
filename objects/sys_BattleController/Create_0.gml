@@ -8,7 +8,7 @@ global.PlayTime = 0;
 battlePauseTime = SetTime(20);
 battlePauseTimer = 0;
 
-SetRoundTime(20);
+SetRoundTime(30);
 
 enum BattleState
 {
@@ -29,5 +29,6 @@ randomPerk = noone;
 destructionTile = noone;
 permanentTilesEnabled = false;
 temporaryTilesEnabled = false;
+randomiseTiles = false;
 activeWaves = ds_list_create();
 SetActiveWaves(WaveData.S01_W01, WaveData.S01_W02, WaveData.S01_W03);

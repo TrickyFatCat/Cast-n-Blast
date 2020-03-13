@@ -21,7 +21,8 @@
         "9ae9c1f2-153c-4968-af37-090851973c5e",
         "7e40b2b2-83d7-46a5-967a-04f1958660da",
         "52d1d8cb-c66d-4c8b-9872-dc58ccceb0a0",
-        "3e469cc2-abd1-4963-87c7-d18db8c9ef21"
+        "3e469cc2-abd1-4963-87c7-d18db8c9ef21",
+        "01cb5857-3420-4f20-a2fa-98d2b2aaf6b6"
     ],
     "filterType": "GMScript",
     "folderName": "Spawns",

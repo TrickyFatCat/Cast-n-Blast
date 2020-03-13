@@ -55,6 +55,14 @@
             }
         },
         {
+            "Key": "01cb5857-3420-4f20-a2fa-98d2b2aaf6b6",
+            "Value": {
+                "id": "7645a03d-6b70-4f80-806d-8b164f764896",
+                "resourcePath": "views\\01cb5857-3420-4f20-a2fa-98d2b2aaf6b6.yy",
+                "resourceType": "GMFolder"
+            }
+        },
+        {
             "Key": "0203e6ac-f75a-4247-8f59-2a380e1549f3",
             "Value": {
                 "id": "c0c6a9c2-37af-4511-9ade-0ab70ab1d11d",
@@ -691,6 +699,14 @@
             "Value": {
                 "id": "e471e02a-580e-4a62-ae68-68fc027453a3",
                 "resourcePath": "scripts\\GameIsPaused\\GameIsPaused.yy",
+                "resourceType": "GMScript"
+            }
+        },
+        {
+            "Key": "2daedd54-d252-4023-83e3-3dcc9aef7549",
+            "Value": {
+                "id": "669c25e0-4b6b-455e-96ef-386c88a15130",
+                "resourcePath": "scripts\\SetWaveDataShaman\\SetWaveDataShaman.yy",
                 "resourceType": "GMScript"
             }
         },
@@ -1383,6 +1399,14 @@
             }
         },
         {
+            "Key": "50c38003-5cd1-4e91-ae92-ecae43da6e68",
+            "Value": {
+                "id": "01637df9-d9cd-40fb-8d2c-6e8486e91647",
+                "resourcePath": "scripts\\SetWaveDataImp\\SetWaveDataImp.yy",
+                "resourceType": "GMScript"
+            }
+        },
+        {
             "Key": "50cd7b10-c185-4273-b586-49d84d2af49b",
             "Value": {
                 "id": "fcf642f7-b02e-4d4a-8cf3-98e583f5d629",
@@ -1476,6 +1500,14 @@
                 "id": "69aaad60-c747-462e-a9db-71b08fc2afb9",
                 "resourcePath": "sprites\\spr_playerProjectile\\spr_playerProjectile.yy",
                 "resourceType": "GMSprite"
+            }
+        },
+        {
+            "Key": "55be4754-dc5d-4b5e-8306-00345a9e5585",
+            "Value": {
+                "id": "16f99535-279e-482c-95f9-24dac4cb623f",
+                "resourcePath": "scripts\\SetWaveDataKamikaze\\SetWaveDataKamikaze.yy",
+                "resourceType": "GMScript"
             }
         },
         {
@@ -1895,6 +1927,14 @@
             }
         },
         {
+            "Key": "7328efe4-54a2-4f48-b890-05863f7d6987",
+            "Value": {
+                "id": "650ea730-dc5d-449d-8999-629dd278bbcd",
+                "resourcePath": "scripts\\SetWaveDataBomber\\SetWaveDataBomber.yy",
+                "resourceType": "GMScript"
+            }
+        },
+        {
             "Key": "73320f89-5487-4c82-b6fb-ba35af7900e9",
             "Value": {
                 "id": "bc9ddd42-0223-4c6e-93ba-a1418a4f7a9f",
@@ -2159,6 +2199,14 @@
             }
         },
         {
+            "Key": "8101fa26-19e7-4277-9c69-9d1d728c49e9",
+            "Value": {
+                "id": "e0130864-3af1-4ba5-9be4-b12abe18fc5d",
+                "resourcePath": "scripts\\SetWaveDataMage\\SetWaveDataMage.yy",
+                "resourceType": "GMScript"
+            }
+        },
+        {
             "Key": "813d3e13-ed17-4e96-be59-fb68f87272f7",
             "Value": {
                 "id": "5135f19f-561c-4bfd-97e0-245a1d516ba5",
@@ -2279,6 +2327,14 @@
             }
         },
         {
+            "Key": "85bf2d10-5bd4-4a1d-9770-69a952143910",
+            "Value": {
+                "id": "16ca3ab7-e783-4414-a86a-2f42e1c1f14f",
+                "resourcePath": "scripts\\SetWaveDataDemon\\SetWaveDataDemon.yy",
+                "resourceType": "GMScript"
+            }
+        },
+        {
             "Key": "85ef18b9-94bc-4334-a537-9b1d12185f08",
             "Value": {
                 "id": "47475744-ce2a-4642-b6d9-3835beb89373",
@@ -2331,6 +2387,14 @@
             "Value": {
                 "id": "22d9b21f-14fe-47d4-bf32-cf62fab8182f",
                 "resourcePath": "scripts\\CheckHitscanCollision\\CheckHitscanCollision.yy",
+                "resourceType": "GMScript"
+            }
+        },
+        {
+            "Key": "8a878cf1-33c7-4425-8cb0-724bf9c45f53",
+            "Value": {
+                "id": "7308fddd-db1b-4d69-9293-71fc517a7364",
+                "resourcePath": "scripts\\SetWaveDataCrystal\\SetWaveDataCrystal.yy",
                 "resourceType": "GMScript"
             }
         },
@@ -2619,6 +2683,14 @@
             "Value": {
                 "id": "a4d7cbfc-105e-42d6-8238-17e9edac620e",
                 "resourcePath": "scripts\\CalculateCameraDelayMovement\\CalculateCameraDelayMovement.yy",
+                "resourceType": "GMScript"
+            }
+        },
+        {
+            "Key": "9f0ce253-f964-4977-a702-de8675465fa3",
+            "Value": {
+                "id": "1b5a5668-4b3c-49bb-8f7f-332c2cf92e7d",
+                "resourcePath": "scripts\\SetEnemyWaveData\\SetEnemyWaveData.yy",
                 "resourceType": "GMScript"
             }
         },
@@ -3311,6 +3383,14 @@
             }
         },
         {
+            "Key": "cbfcdcbf-8d4e-4a65-bf74-8f2ec7c7e511",
+            "Value": {
+                "id": "5138d599-6c7f-41ba-bfcb-1a2074bf88c2",
+                "resourcePath": "scripts\\SetWaveDataEvolvedDemon\\SetWaveDataEvolvedDemon.yy",
+                "resourceType": "GMScript"
+            }
+        },
+        {
             "Key": "cc6b3936-bc5c-4a9e-8cb7-ea244a0830b7",
             "Value": {
                 "id": "bc5b3bf1-c8c5-4e50-99a5-6c7ea2ef5c59",
@@ -3340,6 +3420,14 @@
                 "id": "cd40e3b4-58b4-4a28-9e24-e545b148d4c0",
                 "resourcePath": "views\\ce345eee-c9ca-4e35-a51e-93555528db66.yy",
                 "resourceType": "GMFolder"
+            }
+        },
+        {
+            "Key": "ce9e937b-daa6-4c68-bb09-886b710191cb",
+            "Value": {
+                "id": "fad28e0e-9731-4ce5-a1be-819c4415b96f",
+                "resourcePath": "scripts\\SetWaveDataNinja\\SetWaveDataNinja.yy",
+                "resourceType": "GMScript"
             }
         },
         {
@@ -3676,6 +3764,14 @@
                 "id": "61440dfa-60c3-439f-b45d-403bff531fbf",
                 "resourcePath": "sprites\\spr_interactivePoint\\spr_interactivePoint.yy",
                 "resourceType": "GMSprite"
+            }
+        },
+        {
+            "Key": "df08c69c-8468-4dd9-bd3a-5062c46cf1b3",
+            "Value": {
+                "id": "bd1c30e4-e661-458d-bc06-5fce237d601a",
+                "resourcePath": "scripts\\SetWaveDataEvolvedImp\\SetWaveDataEvolvedImp.yy",
+                "resourceType": "GMScript"
             }
         },
         {
@@ -4311,6 +4407,17 @@
         "7c57d3af-5ade-4c22-bec4-9857a34327b1",
         "c77c319f-b1ee-4fd8-8318-d7c5e83a23f7",
         "c392caa1-6721-4e1f-a317-cbf0c6fd58a7",
+        "9f0ce253-f964-4977-a702-de8675465fa3",
+        "55be4754-dc5d-4b5e-8306-00345a9e5585",
+        "50c38003-5cd1-4e91-ae92-ecae43da6e68",
+        "85bf2d10-5bd4-4a1d-9770-69a952143910",
+        "8a878cf1-33c7-4425-8cb0-724bf9c45f53",
+        "7328efe4-54a2-4f48-b890-05863f7d6987",
+        "8101fa26-19e7-4277-9c69-9d1d728c49e9",
+        "df08c69c-8468-4dd9-bd3a-5062c46cf1b3",
+        "2daedd54-d252-4023-83e3-3dcc9aef7549",
+        "cbfcdcbf-8d4e-4a65-bf74-8f2ec7c7e511",
+        "ce9e937b-daa6-4c68-bb09-886b710191cb",
         "60c1984b-644f-4bae-9886-9b6b0427a288",
         "a46fde5d-6f74-4dcf-a9c9-68e9e9e0b9d1",
         "c195d599-7ba5-41be-9f70-fee5daa9a780",
