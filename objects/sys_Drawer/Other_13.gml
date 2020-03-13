@@ -7,8 +7,8 @@ for (var i = 0; i < _listSize; i++)
 	var _object = drawListSortable[| i];
 	with (_object)
 	{
-		if ( (x > (cameraPositionX - sprite_width / 2)) && (y > (cameraPositionY - sprite_height / 2)) && (x < (cameraPositionX + global.CurrentHeight + sprite_width / 2)) && (y < (cameraPositionY + global.CurrentHeight + sprite_height / 2)))
-		{
+		//if ( (x > (cameraPositionX - sprite_width / 2)) && (y > (cameraPositionY - sprite_height / 2)) && (x < (cameraPositionX + global.CurrentHeight + sprite_width / 2)) && (y < (cameraPositionY + global.CurrentHeight + sprite_height / 2)))
+		//{
 			if (drawOutline)
 			{
 				shader_set(outlineShader);
@@ -30,6 +30,6 @@ for (var i = 0; i < _listSize; i++)
 					DrawSprite;
 				}
 			}
-		}
+		//}
 	}
 }
