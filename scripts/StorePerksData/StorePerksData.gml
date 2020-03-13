@@ -44,7 +44,7 @@ SetPerkData(Perk.UltimateDamage,		2,	0.25,	true,	false,	"Ultimate damage");
 SetPerkData(Perk.FireballDamage,		2,	0.25,	true,	false,	"Fireball damage");
 SetPerkData(Perk.FireballMaxAmmo,		2,	30,		true,	true,	"Fireball mana");
 SetPerkData(Perk.FireballRecoveryRate,	2,	0.25,	true,	false,	"Fireball mana recovery");
-SetPerkData(Perk.IciclesBullets,		2,	5.0,	true,	true,	"Icicles bullets");
+SetPerkData(Perk.IciclesBullets,		2,	4.0,	true,	true,	"Icicles bullets");
 SetPerkData(Perk.IciclesMaxAmmo,		2,	5,		true,	true,	"Icicles mana");
 SetPerkData(Perk.IciclesRecoveryRate,	2,	0.25,	true,	false,	"Icicles mana recovery");
 SetPerkData(Perk.MeteorDamage,			2,	0.25,	true,	false,	"Meteor damage");

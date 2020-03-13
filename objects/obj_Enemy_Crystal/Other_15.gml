@@ -43,11 +43,31 @@ switch (mainWeapon.currentCastState)
 	
 	case CastState.Execute:
 		mainWeapon.lasersightAlpha = 0;
-		mainWeapon.directionCurrent += rotationSpeed * rotationDirection * global.TimeFactor;
-		for (var i = 0; i < 3; i ++)
+		
+		if (obj_Player.currentState == PlayerState.Dash && !rotationIsLocked)
 		{
-			secondaryWeapon[i].directionCurrent = mainWeapon.directionCurrent + 90 * (i + 1);
-			secondaryWeapon[i].lasersightAlpha = 0;
+			rotationIsLocked = true;
+		}
+		
+		if (!rotationIsLocked)
+		{
+			mainWeapon.directionCurrent += rotationSpeed * rotationDirection * global.TimeFactor;
+			for (var i = 0; i < 3; i ++)
+			{
+				secondaryWeapon[i].directionCurrent = mainWeapon.directionCurrent + 90 * (i + 1);
+				secondaryWeapon[i].lasersightAlpha = 0;
+			}
+		}
+		else
+		{
+			rotationLockTimer += global.TimeFactor;
+			var _timeIsOver = CheckTimer(rotationLockTimer, rotationLockTime);
+			
+			if (_timeIsOver)
+			{
+				rotationIsLocked = false;
+				rotationLockTimer = 0;
+			}
 		}
 	break;
 }

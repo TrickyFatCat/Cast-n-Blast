@@ -14,8 +14,7 @@ var _acceleration = projectileAcceleration * chargeVelocityFactor;
 
 with (_target)
 {
-	drawAngle = directionCurrent;
-	image_angle = drawAngle;
+	//drawAngle = directionCurrent;
 	damage = _damage;
 	heal = _heal;
 	isBounceable = other.projectileBounceEnable;

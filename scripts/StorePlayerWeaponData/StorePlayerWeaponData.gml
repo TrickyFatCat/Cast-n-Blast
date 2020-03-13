@@ -108,7 +108,7 @@ ds_map_add(IciclesData, "isAuto",							true);
 ds_map_add(IciclesData, "currentShootMode",					ShootMode.Normal);
 //-----------------------------------------------------------------------------
 ds_map_add(IciclesData, "bulletObject",						obj_PlayerIcicle);
-ds_map_add(IciclesData, "bulletNumber",						10);
+ds_map_add(IciclesData, "bulletNumber",						12);
 ds_map_add(IciclesData, "bulletSpawnPointOffset",			32);
 //-----------------------------------------------------------------------------
 ds_map_add(IciclesData, "damage",							5);
@@ -117,7 +117,7 @@ ds_map_add(IciclesData, "heal",								0);
 ds_map_add(IciclesData, "rateOfFireAccelerated",			false);
 ds_map_add(IciclesData, "rateOfFireIncrStep",				0);
 ds_map_add(IciclesData, "rateOfFireDecrStep",				0);
-ds_map_add(IciclesData, "rateOfFireMin",					2);
+ds_map_add(IciclesData, "rateOfFireMin",					1.5);
 ds_map_add(IciclesData, "rateOfFireMax",					0);
 //-----------------------------------------------------------------------------
 ds_map_add(IciclesData, "burstRate",						0);

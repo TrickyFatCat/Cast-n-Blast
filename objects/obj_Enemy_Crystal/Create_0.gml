@@ -21,8 +21,12 @@ shootTimer = 0;
 aimTime = SetTime(2);
 aimTimer = 0;
 
-rotationSpeed = 0.1;
+rotationSpeed = 0.2;
 rotationDirection = choose(-1, 1);
 
 targetingTime = SetTime(3);
 targetingTimer = 0;
+
+rotationIsLocked = false;
+rotationLockTimer = 0;
+rotationLockTime = SetTime(0.5);

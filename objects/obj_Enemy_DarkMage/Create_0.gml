@@ -4,7 +4,7 @@ mainWeapon.directionCurrent = point_direction(x, y, playerX, playerY);
 mainWeapon.lasersightAlpha = 0;
 //mainWeapon.shotSound = sfx_impshot;
 
-shootTime = SetTime(5);
+shootTime = SetTime(3);
 shootTimer = 0;
 
 aimTime = SetTime(2);

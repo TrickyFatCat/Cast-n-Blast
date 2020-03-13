@@ -17,8 +17,6 @@ switch (ultimateState)
 		{
 			ultimateWeapon.isShooting = true;
 			EnableFlash(c_yellow , 1);
-			IncreaseHitPoints(1);
-
 		}
 		else
 		{

@@ -118,7 +118,7 @@ deafaultDashVelocity = dashVelocity;
 maxDashCharge = 2;
 defaultMaxDashCharge = maxDashCharge;
 dashCharge = maxDashCharge;
-dashCooldownTime = SetTime(3);
+dashCooldownTime = SetTime(2.5);
 dashCooldownTimer = 0;
 defaultDashCooldownTime = dashCooldownTime;
 

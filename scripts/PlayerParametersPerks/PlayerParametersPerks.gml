@@ -39,8 +39,15 @@ switch (_perkId)
 	break;
 	
 	case Perk.MaxUltimate:
-		global.Player.maxUltimatePoints = IncreaseParameterPercent(_perkId, global.Player.defaultMaxUltimatePoints);
-		global.Player.ultimatePoints = global.Player.maxUltimatePoints;
+		if (global.Player.ultimatePoints == global.Player.maxUltimatePoints)
+		{
+			global.Player.maxUltimatePoints = IncreaseParameterPercent(_perkId, global.Player.defaultMaxUltimatePoints);
+			global.Player.ultimatePoints = global.Player.maxUltimatePoints;
+		}
+		else
+		{
+			global.Player.maxUltimatePoints = IncreaseParameterPercent(_perkId, global.Player.defaultMaxUltimatePoints);
+		}
 	break;
 	
 	case Perk.UltimateGain:

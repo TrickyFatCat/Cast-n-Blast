@@ -93,7 +93,7 @@
             "mvc": "1.0",
             "objectId": "afff8e58-95bc-4515-9151-ed5722abe174",
             "propertyId": "1591e771-5a78-4b8c-8b12-11acf2ccefad",
-            "value": "128"
+            "value": "256"
         },
         {
             "id": "3a5f4a44-4664-421c-aabd-f9d7dd0429ea",
@@ -126,14 +126,6 @@
             "objectId": "afff8e58-95bc-4515-9151-ed5722abe174",
             "propertyId": "0aff4bff-4b6c-4771-addc-24096d57d6b5",
             "value": "EnemyIndex.Mage"
-        },
-        {
-            "id": "9b102bb1-eff7-49a4-ac20-e358ece7112b",
-            "modelName": "GMOverriddenProperty",
-            "mvc": "1.0",
-            "objectId": "1e80bb98-5aea-467b-b065-8a432456cd14",
-            "propertyId": "175e2b31-4f05-4bfd-a5d1-71c555358c0c",
-            "value": "True"
         }
     ],
     "parentObjectId": "afff8e58-95bc-4515-9151-ed5722abe174",
