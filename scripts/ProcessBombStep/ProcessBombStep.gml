@@ -1,6 +1,6 @@
 //State machine
 var _gravity = 0.4;
-drawAlngle = 0;
+drawAngle = 0;
 switch currentState
 {
 	case BombState.Drop:	

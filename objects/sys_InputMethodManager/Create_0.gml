@@ -1,8 +1,16 @@
 // Create a list of gamepad slots
 connectedGamepads = ds_list_create();
 
+enum KeyboardLayout
+{
+	QWERTY,
+	AZERTY,
+	DVORAK
+}
+
 // Set active gamepad
 global.ActiveGamepad = noone;
+global.KeyboardLayout = KeyboardLayout.QWERTY;
 
 // Setup input methods
 enum InputMethod
@@ -10,7 +18,6 @@ enum InputMethod
 	Gamepad,
 	KeyboardMouse
 }
-
 // Set current input
 global.CurrentInput = InputMethod.KeyboardMouse;
 

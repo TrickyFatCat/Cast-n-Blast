@@ -36,6 +36,26 @@ if (menuIsActive)
 		{
 			_itemText = string_insert(_fullScreenText, _itemText, 14);
 		}
+		
+		if (i == layoutItemIndex)
+		{
+			var _layoutText;
+			switch (global.KeyboardLayout)
+			{
+				case KeyboardLayout.QWERTY:
+					_layoutText = " QWERTY";
+				break;
+		
+				case KeyboardLayout.AZERTY:
+					_layoutText = " AZERTY";
+				break;
+		
+				case KeyboardLayout.DVORAK:
+					_layoutText = " DVORAK";
+				break;
+			}
+			_itemText = string_insert(_layoutText, _itemText, 14);
+		}
 	
 		var _x = menuX;
 		var _y = menuY - (menuItemHeight * (i * 4));

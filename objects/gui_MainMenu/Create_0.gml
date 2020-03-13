@@ -8,15 +8,18 @@ menuTargetX = guiMarginX;
 enum MainMenuItem
 {
 	Quit,
+	Layout,
 	Fullscreen,
 	Play
 }
 
 menuItem[MainMenuItem.Play] = "Play";
 menuItem[MainMenuItem.Fullscreen] = "Fullscreen";
+menuItem[MainMenuItem.Layout] = "Layout";
 menuItem[MainMenuItem.Quit] = "Quit";
 
 menuItemsCount = array_length_1d(menuItem);
 
-menuActiveItem = 2;
+menuActiveItem = 3;
 fullScreenItemIndex = MainMenuItem.Fullscreen;
+layoutItemIndex = MainMenuItem.Layout;

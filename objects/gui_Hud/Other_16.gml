@@ -33,6 +33,25 @@ switch (menuCurrentAction)
 		menuCurrentAction = noone;
 	break;
 	
+	case PauseMenuItem.Layout:
+		switch (global.KeyboardLayout)
+		{
+			case KeyboardLayout.QWERTY:
+				global.KeyboardLayout = KeyboardLayout.AZERTY;
+			break;
+		
+			case KeyboardLayout.AZERTY:
+				global.KeyboardLayout = KeyboardLayout.DVORAK;
+			break;
+		
+			case KeyboardLayout.DVORAK:
+				global.KeyboardLayout = KeyboardLayout.QWERTY;
+			break;
+		}
+		
+		menuCurrentAction = noone;
+	break;
+	
 	case PauseMenuItem.Quit:
 		game_end();
 	break;

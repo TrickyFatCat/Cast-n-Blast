@@ -5,7 +5,7 @@ global.InteractiveObjects = noone;
 global.EnemySpawns = ds_list_create();
 global.Music = noone;
 
-show_debug_overlay(true);
+show_debug_overlay(false);
 
 randomize();
 

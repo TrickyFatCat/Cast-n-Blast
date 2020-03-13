@@ -26,18 +26,21 @@ menuIsActive = false;
 enum PauseMenuItem
 {
 	Quit,
+	Layout,
 	Fullscreen,
 	Return
 }
 
 menuItem[PauseMenuItem.Return] = "Return";
 menuItem[PauseMenuItem.Fullscreen] = "Fullscreen";
+menuItem[PauseMenuItem.Layout] = "Layout";
 menuItem[PauseMenuItem.Quit] = "Quit";
 
 menuItemsCount = array_length_1d(menuItem);
 
-menuActiveItem = 2;
+menuActiveItem = 3;
 fullScreenItemIndex = PauseMenuItem.Fullscreen;
+layoutItemIndex = PauseMenuItem.Layout;
 
 hudAlpha = 1;
 

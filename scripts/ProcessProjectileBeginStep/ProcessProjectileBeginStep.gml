@@ -1,6 +1,6 @@
 /// @description MovementSequence
 
-drawAlngle = directionCurrent;
+drawAngle = directionCurrent;
 var _isConstant = (acceleration <= 0 || groundFriction <= 0)
 
 MoveObject(_isConstant);
