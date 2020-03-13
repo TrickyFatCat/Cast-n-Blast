@@ -1,6 +1,6 @@
 with (other)
 {
-	if (isActive)
+	if (currentState == TileState.Active)
 	{
 		actionDelayTimer += global.TimeFactor;
 		var _timeIsOver = CheckTimer(actionDelayTimer, actionDelayTime)

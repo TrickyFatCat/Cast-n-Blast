@@ -26,7 +26,7 @@ initialY = y;
 dropProgress = 0;
 
 //Life span time
-lifespanTime = SetTime(4);
+lifespanTime = SetTime(3);
 lifespanTimer = 0;
 
 activationTime = SetTime(0.5);

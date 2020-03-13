@@ -11,11 +11,11 @@ drawAlpha = 0;
 drawColour = c_gray;
 borderScaleX = drawScaleY;
 
-actionRate = 20;
+actionRate = 15;
 actionDelayTime = SetTime(1/actionRate);
 actionDelayTimer = actionDelayTime;
 isActive = false;
-damage = 2;
+damage = 1;
 
 stateSwitchTime = 0.75;
 stateSwitchProgress = 0;

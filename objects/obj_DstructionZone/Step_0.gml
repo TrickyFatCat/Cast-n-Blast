@@ -35,7 +35,7 @@ switch (currentState)
 		//}
 		
 		activeTimer += global.TimeFactor;
-		_timeIsOver = CheckTimer(activeTimer, activeTime);
+		var _timeIsOver = CheckTimer(activeTimer, activeTime);
 		
 		if (!_timeIsOver)
 		{
