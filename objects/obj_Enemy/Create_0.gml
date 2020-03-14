@@ -94,7 +94,7 @@ ultimatePickups = [];
 ultimatePickups = PreinstantiateObject(obj_UltimatePointsPickup, ultimatePointsDrop * 100);
 
 limbs = [];
-var _reapingChance = 0.2;
+var _reapingChance = 0.3;
 var _diceRoll = random_range(0, 1);
 
 if (_diceRoll <= _reapingChance)

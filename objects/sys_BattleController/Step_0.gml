@@ -104,7 +104,7 @@ switch (global.BattleState)
 		//{
 		//	audio_play_sound(bgm_defeat, 0, false);
 		//}
-		global.Round = 1;
+		//global.Round = 1;
 		permanentTilesEnabled = false;
 		temporaryTilesEnabled = false;
 		gui_Base.currentState = InterfaceState.TransitionOut;

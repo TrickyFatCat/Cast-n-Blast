@@ -58,7 +58,7 @@ if (menuIsActive)
 		}
 	
 		var _x = menuX;
-		var _y = menuY - (menuItemHeight * (i * 4));
+		var _y = menuY - (menuItemHeight * (i * 2.5));
 	
 		DrawTextOutline(_x, _y, c_black, _itemColour, _itemText, 2, 2);
 	}

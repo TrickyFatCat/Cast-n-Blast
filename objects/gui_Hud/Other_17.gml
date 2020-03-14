@@ -12,21 +12,14 @@ var _textScale = 1.5;
 draw_set_font(fnt_small);
 SetAlign(fa_center, fa_center);
 DrawTextOutline(guiWidth * 0.65, 20, c_black, c_white, "TIME LEFT", _textScale, _textScale);
-SetAlign(fa_center, fa_center);
 DrawTextOutline(guiWidth * 0.65, 40, c_black, c_white, string(_timeLeft), _textScale, _textScale);
 
 // Draw timer
-draw_set_font(fnt_small);
-SetAlign(fa_center, fa_center);
 DrawTextOutline(guiWidth * 0.5, 20, c_black, c_white, "ROUND", _textScale, _textScale);
-SetAlign(fa_center, fa_center);
 DrawTextOutline(guiWidth * 0.5, 40, c_black, c_white, string(global.Round), _textScale, _textScale);
 
 // Draw score
-draw_set_font(fnt_small);
-SetAlign(fa_center, fa_center);
 DrawTextOutline(guiWidth * 0.35, 20, c_black, c_white, "SCORE", _textScale, _textScale);
-SetAlign(fa_center, fa_center);
 DrawTextOutline(guiWidth * 0.35, 40, c_black, c_white, string(global.Score), _textScale, _textScale);
 
 // Show info texts

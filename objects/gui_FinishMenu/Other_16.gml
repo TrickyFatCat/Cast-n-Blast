@@ -11,7 +11,8 @@ switch (menuCurrentAction)
 		}
 		
 		global.PlayTime = 0;
-		global.Score = 0;
+		//global.Score = 0;
+		//global.Round = 0;
 		ResetPerksLevels();
 		//audio_stop_sound(bgm_menu);
 	break;
