@@ -319,6 +319,14 @@
             }
         },
         {
+            "Key": "167a2d4c-8460-4da9-aa3a-c097012fe8ae",
+            "Value": {
+                "id": "5c9cc362-2f35-4490-90fd-10f027e8b489",
+                "resourcePath": "sprites\\spr_bombflame\\spr_bombflame.yy",
+                "resourceType": "GMSprite"
+            }
+        },
+        {
             "Key": "1876203d-9493-45e0-b6bd-67f0737483c3",
             "Value": {
                 "id": "be1121e0-c4cc-4c7b-abd4-382dd6a5ada2",

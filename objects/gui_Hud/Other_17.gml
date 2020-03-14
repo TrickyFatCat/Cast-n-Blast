@@ -208,11 +208,15 @@ for (var i = 0; i < 4; i++)
 // Draw lowammo text
 _x = device_mouse_x_to_gui(0)
 _y = device_mouse_y_to_gui(0)
+SetAlign(fa_center, fa_top);
 
-if (_percent <= 25)
+if (_percent <= 25 && _percent > 0)
 {
-	SetAlign(fa_center, fa_top);
 	DrawTextOutline(_x, _y + 24, c_black, _nameColour, "Low " + string(_name) + " mana", _textScale, _textScale);
+}
+else if (_percent <= 0)
+{
+	DrawTextOutline(_x, _y + 24, c_black, c_red, "No " + string(_name) + " mana", _textScale, _textScale);
 }
 
 // Draw crosshair

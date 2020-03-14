@@ -45,4 +45,5 @@ switch (_absolute)
 }
 
 ds_map_replace(_ammoData, _parameter, _newValue);
+ds_map_replace(_ammoData, "ammo", _newValue);
 UpdateMainWeapon();
