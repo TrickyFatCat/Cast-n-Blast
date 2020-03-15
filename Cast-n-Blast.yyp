@@ -2479,6 +2479,14 @@
             }
         },
         {
+            "Key": "8c674f9c-7f16-4558-b325-6c2f33f1b887",
+            "Value": {
+                "id": "29c8a1fd-5c1b-4f85-af3b-71b6c1438015",
+                "resourcePath": "sounds\\sfx_upgrade\\sfx_upgrade.yy",
+                "resourceType": "GMSound"
+            }
+        },
+        {
             "Key": "8cefa555-5c0c-4bf2-bfba-5667b66d9a2d",
             "Value": {
                 "id": "c1b54b4a-73d3-4bf4-a2fe-070fc857ebc6",
