@@ -32,4 +32,6 @@ for (var i = 0; i < _length; i++)
 	instance_create_layer(0, 0, layer, _array[i]);
 }
 
+audio_play_sound(bgm_menu, 1, true);
+
 room_goto(rm_mainMenu);

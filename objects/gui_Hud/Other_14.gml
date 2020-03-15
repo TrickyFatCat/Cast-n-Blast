@@ -1,3 +1,5 @@
+event_inherited()
+
 /// Parameters
 var _speed = CalculateStep(0.25);
 

@@ -56,6 +56,11 @@ switch (mainWeapon.currentCastState)
 		mainWeapon.lasersightAlpha = 0;
 		shootTimer += global.TimeFactor;
 		
+		if (!audio_is_playing(sfx_laser_shoot))
+		{
+			PlaySoundAt(sfx_laser_shoot, 128, false)
+		}
+		
 		var _timeIsOver = CheckTimer(shootTimer, shootTime);
 		if (_timeIsOver)
 		{

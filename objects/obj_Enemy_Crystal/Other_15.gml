@@ -49,6 +49,11 @@ switch (mainWeapon.currentCastState)
 			rotationIsLocked = true;
 		}
 		
+		if (!audio_is_playing(sfx_laser_shoot))
+		{
+			PlaySoundAt(sfx_laser_shoot, 128, false)
+		}
+		
 		if (!rotationIsLocked)
 		{
 			mainWeapon.directionCurrent += rotationSpeed * rotationDirection * global.TimeFactor;

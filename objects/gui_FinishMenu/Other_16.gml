@@ -14,7 +14,7 @@ switch (menuCurrentAction)
 		//global.Score = 0;
 		//global.Round = 0;
 		ResetPerksLevels();
-		//audio_stop_sound(bgm_menu);
+		audio_stop_sound(bgm_menu);
 	break;
 	
 	case FinishMenuItem.Fullscreen:

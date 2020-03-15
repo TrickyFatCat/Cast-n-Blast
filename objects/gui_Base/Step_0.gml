@@ -23,6 +23,11 @@ switch currentState
 				{
 					menuActiveItem = 0;
 				}
+				
+				if (playUiSound)
+				{
+					PlaySound(sfx_ui_changeposition);
+				}
 			}
 	
 			if (sys_GameManager.keyMenuDown)
@@ -33,11 +38,21 @@ switch currentState
 				{
 					menuActiveItem = menuItemsCount - 1;
 				}
+				
+				if (playUiSound)
+				{
+					PlaySound(sfx_ui_changeposition);
+				}
 			}
 	
 			if (sys_GameManager.keyMenuAccept)
 			{
 				menuCurrentAction = menuActiveItem;
+				
+				if (playUiSound)
+				{
+					PlaySound(sfx_ui_action);
+				}
 			}
 		}
 		ExecuteGUIStateLogic;

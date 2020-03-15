@@ -1,5 +1,5 @@
 {
-    "id": "aa0035d1-37e0-472d-a06f-4a32a0d46f88",
+    "id": "40f15008-4db6-4e06-8304-8270141b6cde",
     "modelName": "GMSound",
     "mvc": "1.0",
     "name": "sfx_start",

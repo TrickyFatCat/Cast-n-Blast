@@ -77,6 +77,11 @@ switch (currentActionState)
 		if (mainWeapon.shotCount != shotNumber)
 		{
 			isShooting = true;
+			
+			if (!audio_is_playing(sfx_enemy_shot))
+			{
+				PlaySoundAt(sfx_enemy_shot, 256, false);
+			}
 		}
 		else
 		{

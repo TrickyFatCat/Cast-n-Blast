@@ -53,3 +53,8 @@ showFightTextTimer = 0;
 showRandomPerkTime = SetTime(2);
 showRandomPerkTimer = 0;
 showRandomPerk = false;
+
+if (audio_is_playing(bgm_menu))
+{
+	audio_stop_sound(bgm_menu);
+}

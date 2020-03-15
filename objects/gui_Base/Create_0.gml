@@ -25,7 +25,7 @@ transitionInTime = SetTime(1);
 // Transform parameters
 guiWidth = display_get_gui_width();
 guiHeight = display_get_gui_height();
-guiMarginX = 32;
+guiMarginX = guiWidth / 2;
 guiMarginY = 32;
 guiFont = fnt_small;
 
@@ -34,9 +34,9 @@ menuX = menuFoldedX;
 menuY = guiHeight - guiMarginY;
 menuTargetX = 0;
 
-
 menuAppearTime = SetTime(0.10);
 menuItemHeight = font_get_size(guiFont);
 menuCurrentAction = noone;
 menuIsActive = true;
 menuBackGroundAlpha = 0;
+playUiSound = true;

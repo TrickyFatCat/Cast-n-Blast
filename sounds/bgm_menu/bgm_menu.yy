@@ -1,8 +1,8 @@
 {
-    "id": "b9b33697-c4e8-4bd8-b604-fc9720b85e36",
+    "id": "4d1bc39d-0d6b-4ab2-a9df-b28d7db23893",
     "modelName": "GMSound",
     "mvc": "1.0",
-    "name": "sfx_dash",
+    "name": "bgm_menu",
     "audioGroupGuid": "7b2c4976-1e09-44e5-8256-c527145e03bb",
     "bitDepth": 1,
     "bitRate": 128,
@@ -10,5 +10,5 @@
     "preload": false,
     "sampleRate": 44100,
     "type": 0,
-    "volume": 0.81
+    "volume": 1
 }

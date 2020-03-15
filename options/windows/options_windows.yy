@@ -25,13 +25,13 @@
     "option_windows_save_location": 0,
     "option_windows_scale": 0,
     "option_windows_sleep_margin": 10,
-    "option_windows_splash_screen": "${base_options_dir}\\windows\\splash\\splash.png",
+    "option_windows_splash_screen": "${options_dir}\\windows\\splash\\splash.png",
     "option_windows_start_fullscreen": false,
     "option_windows_steam_use_alternative_launcher": true,
     "option_windows_texture_page": "2048x2048",
-    "option_windows_use_splash": false,
+    "option_windows_use_splash": true,
     "option_windows_version": {
-        "build": 1,
+        "build": 3,
         "major": 0,
         "minor": 7,
         "revision": 0

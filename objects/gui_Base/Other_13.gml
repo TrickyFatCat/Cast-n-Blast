@@ -3,8 +3,8 @@
 if (menuIsActive)
 {
 	draw_set_font(fnt_small);
-	draw_set_valign(fa_bottom);
-	draw_set_halign(fa_left);
+	draw_set_valign(fa_center);
+	draw_set_halign(fa_center);
 
 	var _fullScreenText;
 	var _fullScreen = window_get_fullscreen();
@@ -24,7 +24,7 @@ if (menuIsActive)
 	
 		if (menuActiveItem == i)
 		{
-			_itemText = string_insert("> ", _itemText, 0);
+			//_itemText = string_insert("> ", _itemText, 0);
 			var _itemColour = c_white;
 		}
 		else
