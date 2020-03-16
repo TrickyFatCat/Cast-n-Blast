@@ -40,7 +40,7 @@ var _enemyNumber = 10;
 var _wave = CreateDataMap(_enemyNumber);
 
 SetWaveDataKamikaze(_wave,		4, 2);
-SetWaveDataImp(_wave,			25, 1);
+SetWaveDataImp(_wave,			40, 1);
 SetWaveDataDemon(_wave,			0, 0);
 SetWaveDataCrystal(_wave,		3, 1);
 SetWaveDataBomber(_wave,		0, 0);
@@ -60,7 +60,7 @@ var _enemyNumber = 10;
 var _wave = CreateDataMap(_enemyNumber);
 
 SetWaveDataKamikaze(_wave,		0, 0);
-SetWaveDataImp(_wave,			25, 1);
+SetWaveDataImp(_wave,			40, 1);
 SetWaveDataDemon(_wave,			3, 1);
 SetWaveDataCrystal(_wave,		2, 2);
 SetWaveDataBomber(_wave,		0, 0);
@@ -80,7 +80,7 @@ var _enemyNumber = 10;
 var _wave = CreateDataMap(_enemyNumber);
 
 SetWaveDataKamikaze(_wave,		3, 2);
-SetWaveDataImp(_wave,			25, 1);
+SetWaveDataImp(_wave,			40, 1);
 SetWaveDataDemon(_wave,			3, 1);
 SetWaveDataCrystal(_wave,		0, 3);
 SetWaveDataBomber(_wave,		0, 0);
@@ -104,7 +104,7 @@ var _enemyNumber = 10;
 var _wave = CreateDataMap(_enemyNumber);
 
 SetWaveDataKamikaze(_wave,		3, 1);
-SetWaveDataImp(_wave,			25, 1);
+SetWaveDataImp(_wave,			40, 1);
 SetWaveDataDemon(_wave,			0, 0);
 SetWaveDataCrystal(_wave,		2, 1);
 SetWaveDataBomber(_wave,		3, 1);
@@ -124,7 +124,7 @@ var _enemyNumber = 10;
 var _wave = CreateDataMap(_enemyNumber);
 
 SetWaveDataKamikaze(_wave,		0, 0);
-SetWaveDataImp(_wave,			25, 1);
+SetWaveDataImp(_wave,			40, 1);
 SetWaveDataDemon(_wave,			8, 1);
 SetWaveDataCrystal(_wave,		2, 1);
 SetWaveDataBomber(_wave,		3, 1);
@@ -144,7 +144,7 @@ var _enemyNumber = 10;
 var _wave = CreateDataMap(_enemyNumber);
 
 SetWaveDataKamikaze(_wave,		3, 2);
-SetWaveDataImp(_wave,			25, 1);
+SetWaveDataImp(_wave,			40, 1);
 SetWaveDataDemon(_wave,			5, 1);
 SetWaveDataCrystal(_wave,		0, 0);
 SetWaveDataBomber(_wave,		3, 1);
@@ -168,7 +168,7 @@ var _enemyNumber = 10;
 var _wave = CreateDataMap(_enemyNumber);
 
 SetWaveDataKamikaze(_wave,		3, 1);
-SetWaveDataImp(_wave,			25, 1);
+SetWaveDataImp(_wave,			40, 1);
 SetWaveDataDemon(_wave,			0, 0);
 SetWaveDataCrystal(_wave,		0, 0);
 SetWaveDataBomber(_wave,		5, 1);
@@ -188,7 +188,7 @@ var _enemyNumber = 10;
 var _wave = CreateDataMap(_enemyNumber);
 
 SetWaveDataKamikaze(_wave,		0, 0);
-SetWaveDataImp(_wave,			25, 1);
+SetWaveDataImp(_wave,			40, 1);
 SetWaveDataDemon(_wave,			10, 1);
 SetWaveDataCrystal(_wave,		0, 0);
 SetWaveDataBomber(_wave,		5, 1);
@@ -208,7 +208,7 @@ var _enemyNumber = 10;
 var _wave = CreateDataMap(_enemyNumber);
 
 SetWaveDataKamikaze(_wave,		4, 2);
-SetWaveDataImp(_wave,			25, 1);
+SetWaveDataImp(_wave,			40, 1);
 SetWaveDataDemon(_wave,			10, 1);
 SetWaveDataCrystal(_wave,		0, 0);
 SetWaveDataBomber(_wave,		0, 0);
@@ -232,7 +232,7 @@ var _enemyNumber = 10;
 var _wave = CreateDataMap(_enemyNumber);
 
 SetWaveDataKamikaze(_wave,		0, 0);
-SetWaveDataImp(_wave,			25, 1);
+SetWaveDataImp(_wave,			40, 1);
 SetWaveDataDemon(_wave,			5, 1);
 SetWaveDataCrystal(_wave,		0, 0);
 SetWaveDataBomber(_wave,		5, 1);
@@ -252,7 +252,7 @@ var _enemyNumber = 10;
 var _wave = CreateDataMap(_enemyNumber);
 
 SetWaveDataKamikaze(_wave,		0, 0);
-SetWaveDataImp(_wave,			25, 1);
+SetWaveDataImp(_wave,			40, 1);
 SetWaveDataDemon(_wave,			5, 1);
 SetWaveDataCrystal(_wave,		0, 0);
 SetWaveDataBomber(_wave,		5, 1);
@@ -272,7 +272,7 @@ var _enemyNumber = 10;
 var _wave = CreateDataMap(_enemyNumber);
 
 SetWaveDataKamikaze(_wave,		1, 1);
-SetWaveDataImp(_wave,			25, 1);
+SetWaveDataImp(_wave,			40, 1);
 SetWaveDataDemon(_wave,			5, 1);
 SetWaveDataCrystal(_wave,		0, 0);
 SetWaveDataBomber(_wave,		0, 0);
@@ -296,7 +296,7 @@ var _enemyNumber = 10;
 var _wave = CreateDataMap(_enemyNumber);
 
 SetWaveDataKamikaze(_wave,		0, 0);
-SetWaveDataImp(_wave,			25, 1);
+SetWaveDataImp(_wave,			40, 1);
 SetWaveDataDemon(_wave,			10, 1);
 SetWaveDataCrystal(_wave,		0, 0);
 SetWaveDataBomber(_wave,		5, 1);
@@ -316,7 +316,7 @@ var _enemyNumber = 10;
 var _wave = CreateDataMap(_enemyNumber);
 
 SetWaveDataKamikaze(_wave,		0, 0);
-SetWaveDataImp(_wave,			25, 1);
+SetWaveDataImp(_wave,			40, 1);
 SetWaveDataDemon(_wave,			10, 1);
 SetWaveDataCrystal(_wave,		0, 0);
 SetWaveDataBomber(_wave,		3, 1);
@@ -336,7 +336,7 @@ var _enemyNumber = 10;
 var _wave = CreateDataMap(_enemyNumber);
 
 SetWaveDataKamikaze(_wave,		3, 1);
-SetWaveDataImp(_wave,			25, 1);
+SetWaveDataImp(_wave,			40, 1);
 SetWaveDataDemon(_wave,			0, 1);
 SetWaveDataCrystal(_wave,		3, 1);
 SetWaveDataBomber(_wave,		0, 0);
@@ -360,7 +360,7 @@ var _enemyNumber = 10;
 var _wave = CreateDataMap(_enemyNumber);
 
 SetWaveDataKamikaze(_wave,		0, 0);
-SetWaveDataImp(_wave,			25, 1);
+SetWaveDataImp(_wave,			40, 1);
 SetWaveDataDemon(_wave,			10, 1);
 SetWaveDataCrystal(_wave,		3, 0);
 SetWaveDataBomber(_wave,		5, 1);
@@ -380,7 +380,7 @@ var _enemyNumber = 10;
 var _wave = CreateDataMap(_enemyNumber);
 
 SetWaveDataKamikaze(_wave,		3, 1);
-SetWaveDataImp(_wave,			25, 1);
+SetWaveDataImp(_wave,			40, 1);
 SetWaveDataDemon(_wave,			10, 1);
 SetWaveDataCrystal(_wave,		0, 0);
 SetWaveDataBomber(_wave,		5, 1);
@@ -400,7 +400,7 @@ var _enemyNumber = 10;
 var _wave = CreateDataMap(_enemyNumber);
 
 SetWaveDataKamikaze(_wave,		3, 1);
-SetWaveDataImp(_wave,			25, 1);
+SetWaveDataImp(_wave,			40, 1);
 SetWaveDataDemon(_wave,			0, 0);
 SetWaveDataCrystal(_wave,		0, 0);
 SetWaveDataBomber(_wave,		0, 0);
@@ -424,7 +424,7 @@ var _enemyNumber = 10;
 var _wave = CreateDataMap(_enemyNumber);
 
 SetWaveDataKamikaze(_wave,		0, 0);
-SetWaveDataImp(_wave,			25, 1);
+SetWaveDataImp(_wave,			40, 1);
 SetWaveDataDemon(_wave,			10, 1);
 SetWaveDataCrystal(_wave,		3, 0);
 SetWaveDataBomber(_wave,		5, 1);
@@ -444,7 +444,7 @@ var _enemyNumber = 10;
 var _wave = CreateDataMap(_enemyNumber);
 
 SetWaveDataKamikaze(_wave,		3, 1);
-SetWaveDataImp(_wave,			25, 1);
+SetWaveDataImp(_wave,			40, 1);
 SetWaveDataDemon(_wave,			10, 1);
 SetWaveDataCrystal(_wave,		0, 0);
 SetWaveDataBomber(_wave,		5, 1);
@@ -464,7 +464,7 @@ var _enemyNumber = 10;
 var _wave = CreateDataMap(_enemyNumber);
 
 SetWaveDataKamikaze(_wave,		3, 1);
-SetWaveDataImp(_wave,			25, 1);
+SetWaveDataImp(_wave,			40, 1);
 SetWaveDataDemon(_wave,			10, 1);
 SetWaveDataCrystal(_wave,		0, 0);
 SetWaveDataBomber(_wave,		0, 0);
