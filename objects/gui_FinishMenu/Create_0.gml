@@ -25,7 +25,7 @@ menuItemsCount = array_length_1d(menuItem);
 menuActiveItem = 3;
 fullScreenItemIndex = FinishMenuItem.Fullscreen;
 layoutItemIndex = FinishMenuItem.Layout;
-logoAlpha = 1;
+logoAlpha = 0;
 
 global.DifficultyLevel = 0;
 
