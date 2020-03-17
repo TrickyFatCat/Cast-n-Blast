@@ -518,7 +518,7 @@ ds_map_add(EvolvedImpGunData, "bulletObject",					obj_smallFireBall);
 ds_map_add(EvolvedImpGunData, "bulletNumber",					1);
 ds_map_add(EvolvedImpGunData, "bulletSpawnPointOffset",			0);
 //-----------------------------------------------------------------------------
-ds_map_add(EvolvedImpGunData, "damage",							20);
+ds_map_add(EvolvedImpGunData, "damage",							15);
 ds_map_add(EvolvedImpGunData, "heal",							0);
 //-----------------------------------------------------------------------------
 ds_map_add(EvolvedImpGunData, "rateOfFireAccelerated",			false);
@@ -530,8 +530,8 @@ ds_map_add(EvolvedImpGunData, "rateOfFireMax",					0);
 ds_map_add(EvolvedImpGunData, "burstRate",						0);
 ds_map_add(EvolvedImpGunData, "burstShotsNumber",				0);
 //-----------------------------------------------------------------------------
-ds_map_add(EvolvedImpGunData, "castExecuteCount",				4);
-ds_map_add(EvolvedImpGunData, "castTime",						1.5);
+ds_map_add(EvolvedImpGunData, "castExecuteCount",				5);
+ds_map_add(EvolvedImpGunData, "castTime",						1.25);
 //-----------------------------------------------------------------------------
 ds_map_add(EvolvedImpGunData, "chargeExecuteCountMin",			1);
 ds_map_add(EvolvedImpGunData, "chargeExecuteCountMax",			0);
@@ -561,7 +561,7 @@ ds_map_add(EvolvedImpGunData, "recoilFactor",					0);
 //-----------------------------------------------------------------------------
 ds_map_add(EvolvedImpGunData, "hitscanScaleY",					0);
 ds_map_add(EvolvedImpGunData, "projectileVelocityNoiseFactor",	0);
-ds_map_add(EvolvedImpGunData, "projectileVelocityCurrent",		5);
+ds_map_add(EvolvedImpGunData, "projectileVelocityCurrent",		4);
 ds_map_add(EvolvedImpGunData, "projectileVelocityMax",			0);
 ds_map_add(EvolvedImpGunData, "projectileAcceleration",			0);
 ds_map_add(EvolvedImpGunData, "projectileFriction",				0);
@@ -587,7 +587,7 @@ ds_map_add(EvolvedDemonGunData, "bulletObject",					obj_bigFireBall);
 ds_map_add(EvolvedDemonGunData, "bulletNumber",					8);
 ds_map_add(EvolvedDemonGunData, "bulletSpawnPointOffset",		0);
 //-----------------------------------------------------------------------------
-ds_map_add(EvolvedDemonGunData, "damage",						15);
+ds_map_add(EvolvedDemonGunData, "damage",						12);
 ds_map_add(EvolvedDemonGunData, "heal",							0);
 //-----------------------------------------------------------------------------
 ds_map_add(EvolvedDemonGunData, "rateOfFireAccelerated",		false);

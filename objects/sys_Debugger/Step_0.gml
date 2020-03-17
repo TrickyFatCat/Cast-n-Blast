@@ -18,7 +18,7 @@
 //viewZoom -= _zoomOut * _zoomSpeed;
 //SetCameraZoom(viewZoom)
 
-if (keyboard_check_pressed(vk_tab))
-{
-	visible = !visible;
-}
+//if (keyboard_check_pressed(vk_tab))
+//{
+//	visible = !visible;
+//}

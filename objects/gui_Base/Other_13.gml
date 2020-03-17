@@ -5,6 +5,8 @@ if (menuIsActive)
 	draw_set_font(fnt_small);
 	draw_set_valign(fa_center);
 	draw_set_halign(fa_center);
+	
+	draw_sprite_ext(spr_logo, image_index, guiWidth * 0.5, guiHeight * 0.5, 1, 1, 0, image_blend, logoAlpha);
 
 	var _fullScreenText;
 	var _fullScreen = window_get_fullscreen();

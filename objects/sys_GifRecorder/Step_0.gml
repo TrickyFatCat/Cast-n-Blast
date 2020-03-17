@@ -1,4 +1,5 @@
 var _recordPressed = keyboard_check_pressed(vk_f1);
+var _takeScreenShot = keyboard_check_pressed(vk_f2);
 
 if (_recordPressed)
 {
@@ -24,4 +25,14 @@ if (_recordPressed)
 if (isRecording)
 {
 	gif_add_surface(gifImage, application_surface, 2);
+}
+
+if (_takeScreenShot)
+{
+	var _screenShotPath = get_save_filename("ScreenShot|*.gif", "");
+		
+	if (_screenShotPath != "")
+	{
+		screen_save(_screenShotPath);
+	}
 }

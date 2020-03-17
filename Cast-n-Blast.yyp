@@ -2967,6 +2967,14 @@
             }
         },
         {
+            "Key": "aa2027e1-d24e-490e-bf58-a558bd8384ff",
+            "Value": {
+                "id": "d82f8450-fcf8-46a9-b6b9-876648569867",
+                "resourcePath": "sprites\\spr_logo\\spr_logo.yy",
+                "resourceType": "GMSprite"
+            }
+        },
+        {
             "Key": "aaee7287-e585-4c66-920d-a403e91db5bd",
             "Value": {
                 "id": "53df2039-687c-44ba-9768-d5f82decd585",

@@ -5,7 +5,7 @@ switch (global.Round)
 	case 3:
 		SetActiveWaves(WaveData.S02_W01, WaveData.S02_W02, WaveData.S02_W03);
 		SetSpawnNumber(2);
-		SetSpawnPause(3);
+		SetSpawnPause(3.5);
 		SetRoundTime(40);
 	break;
 	
@@ -17,7 +17,6 @@ switch (global.Round)
 	
 	case 9:
 		SetActiveWaves(WaveData.S04_W01, WaveData.S04_W02, WaveData.S04_W03);
-		SetRoundTime(50)
 		SetTilesNumber(15, 0);
 	break;
 	 
@@ -26,11 +25,11 @@ switch (global.Round)
 		permanentTilesEnabled = false;
 		temporaryTilesEnabled = true;
 		SetTilesNumber(15, 5);
+		SetRoundTime(50)
 	break;
 	
 	case 15:
 		SetActiveWaves(WaveData.S05_W01, WaveData.S05_W02, WaveData.S05_W03);
-		SetRoundTime(60);
 		SetTilesNumber(15, 10);
 	break;
 	
@@ -44,7 +43,8 @@ switch (global.Round)
 	case 21:
 		SetActiveWaves(WaveData.S07_W01, WaveData.S07_W02, WaveData.S07_W03);
 		SetSpawnNumber(3);
-		SetSpawnPause(4);
+		SetSpawnPause(4.5);
+		SetRoundTime(60);
 	break;
 	
 	case 24:
@@ -56,7 +56,7 @@ switch (global.Round)
 	break;
 	
 	case 30:
-		SetSpawnPause(3);
+		SetSpawnPause(4);
 	break;
 	
 	case 40:
@@ -64,11 +64,11 @@ switch (global.Round)
 	break;
 	
 	case 50:
-		SetSpawnPause(2.5);
+		SetSpawnPause(3.5);
 	break;
 	
 	case 60:
-		SetSpawnPause(2);
+		SetSpawnPause(3);
 	break;
 }
 
