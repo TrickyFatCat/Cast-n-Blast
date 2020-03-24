@@ -43,7 +43,7 @@ switch (global.Round)
 	case 21:
 		SetActiveWaves(WaveData.S07_W01, WaveData.S07_W02, WaveData.S07_W03);
 		SetSpawnNumber(3);
-		SetSpawnPause(4.5);
+		SetSpawnPause(4);
 		SetRoundTime(60);
 	break;
 	
@@ -52,11 +52,11 @@ switch (global.Round)
 	break;
 	
 	case 27:
-		SetActiveWaves(WaveData.S04_W01, WaveData.S04_W02, WaveData.S04_W03, WaveData.S05_W01, WaveData.S05_W02, WaveData.S05_W03, WaveData.S06_W01, WaveData.S06_W02, WaveData.S06_W03, WaveData.S07_W01, WaveData.S07_W02, WaveData.S07_W03);
+		SetActiveWaves(WaveData.S06_W01, WaveData.S06_W02, WaveData.S06_W03, WaveData.S07_W01, WaveData.S07_W02, WaveData.S07_W03);
 	break;
 	
 	case 30:
-		SetSpawnPause(4);
+		SetSpawnPause(3);
 	break;
 	
 	case 40:
@@ -64,11 +64,11 @@ switch (global.Round)
 	break;
 	
 	case 50:
-		SetSpawnPause(3.5);
+		SetSpawnPause(2.5);
 	break;
 	
 	case 60:
-		SetSpawnPause(3);
+		SetSpawnPause(2);
 	break;
 }
 
@@ -77,8 +77,6 @@ SetWave(_activeWave);
 
 if (randomiseTiles)
 {
-	permanentTilesEnabled = choose(true, false);
-	temporaryTilesEnabled = choose(true, false);
 	var _permanentNumber = irandom_range(5, 15);
 	var _temporaryNumber = irandom_range(5, 15);
 	SetTilesNumber(_permanentNumber, _temporaryNumber);

@@ -110,7 +110,7 @@ ultimateWeapon.isConsumingUltimate = true;
 maxShieldPoints = 25;
 defaultMaxShieldPoints = maxShieldPoints;
 shieldPoints = maxShieldPoints;
-shieldFactor = 0.8;
+shieldFactor = 0.9;
 defaultShieldFactor = shieldFactor;
 
 // Dash

@@ -393,7 +393,7 @@ ds_map_add(RocketGunData, "burstRate",						0);
 ds_map_add(RocketGunData, "burstShotsNumber",				0);
 //-----------------------------------------------------------------------------
 ds_map_add(RocketGunData, "castExecuteCount",				1);
-ds_map_add(RocketGunData, "castTime",						4);
+ds_map_add(RocketGunData, "castTime",						3);
 //-----------------------------------------------------------------------------
 ds_map_add(RocketGunData, "chargeExecuteCountMin",			1);
 ds_map_add(RocketGunData, "chargeExecuteCountMax",			0);
@@ -462,7 +462,7 @@ ds_map_add(BomberGunData, "burstRate",						0);
 ds_map_add(BomberGunData, "burstShotsNumber",				0);
 //-----------------------------------------------------------------------------
 ds_map_add(BomberGunData, "castExecuteCount",				3);
-ds_map_add(BomberGunData, "castTime",						1.5);
+ds_map_add(BomberGunData, "castTime",						1);
 //-----------------------------------------------------------------------------
 ds_map_add(BomberGunData, "chargeExecuteCountMin",			1);
 ds_map_add(BomberGunData, "chargeExecuteCountMax",			0);
@@ -600,7 +600,7 @@ ds_map_add(EvolvedDemonGunData, "burstRate",					0);
 ds_map_add(EvolvedDemonGunData, "burstShotsNumber",				0);
 //-----------------------------------------------------------------------------
 ds_map_add(EvolvedDemonGunData, "castExecuteCount",				1);
-ds_map_add(EvolvedDemonGunData, "castTime",						3);
+ds_map_add(EvolvedDemonGunData, "castTime",						1.5);
 //-----------------------------------------------------------------------------
 ds_map_add(EvolvedDemonGunData, "chargeExecuteCountMin",		1);
 ds_map_add(EvolvedDemonGunData, "chargeExecuteCountMax",		0);

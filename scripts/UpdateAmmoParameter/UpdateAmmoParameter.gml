@@ -3,12 +3,14 @@
 /// @param parameter
 /// @param increase
 /// @param absolute
+/// @param updateAmmoCount
 
 var _perkId = argument0;
 var _weaponId = argument1;
 var _parameter = argument2;
 var _increase = argument3;
 var _absolute = argument4;
+var _updateAmmoCount = argument5;
 
 var _sessionWeaponData = global.Player.sessionWeaponData;
 var _weaponData = _sessionWeaponData[_weaponId];
@@ -45,5 +47,10 @@ switch (_absolute)
 }
 
 ds_map_replace(_ammoData, _parameter, _newValue);
-ds_map_replace(_ammoData, "ammo", _newValue);
+
+if (_updateAmmoCount)
+{
+	ds_map_replace(_ammoData, "ammo", _newValue);
+}
+
 UpdateMainWeapon();
