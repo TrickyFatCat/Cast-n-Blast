@@ -248,7 +248,7 @@ ds_map_add(NinjaGunData, "heal",							0);
 ds_map_add(NinjaGunData, "rateOfFireAccelerated",			false);
 ds_map_add(NinjaGunData, "rateOfFireIncrStep",				0);
 ds_map_add(NinjaGunData, "rateOfFireDecrStep",				0);
-ds_map_add(NinjaGunData, "rateOfFireMin",					2);
+ds_map_add(NinjaGunData, "rateOfFireMin",					3);
 ds_map_add(NinjaGunData, "rateOfFireMax",					0);
 //-----------------------------------------------------------------------------
 ds_map_add(NinjaGunData, "burstRate",						0);

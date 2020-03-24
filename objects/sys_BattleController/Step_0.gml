@@ -36,7 +36,7 @@ switch (global.BattleState)
 		{
 			global.Music = choose(bgm_battleground, bgm_lightsOut, bgm_likeTotallyRad);
 			audio_sound_gain(global.Music, 0, 0);
-			audio_play_sound(global.Music, 1000, true);
+			audio_play_sound(global.Music, 1000, false);
 			audio_sound_gain(global.Music, 0.5, 1500);
 		}
 		
