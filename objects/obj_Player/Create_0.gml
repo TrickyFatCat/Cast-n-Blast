@@ -107,7 +107,7 @@ SetPlayerWeapon(ultimateWeapon, ultimateWeaponID);
 ultimateWeapon.isConsumingUltimate = true;
 
 // Shield
-maxShieldPoints = 25;
+maxShieldPoints = 20;
 defaultMaxShieldPoints = maxShieldPoints;
 shieldPoints = maxShieldPoints;
 shieldFactor = 0.9;
