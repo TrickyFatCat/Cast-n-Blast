@@ -3,8 +3,8 @@
 switch global.CurrentInput
 {
 	case InputMethod.Gamepad:
-		keyMenuUp = CheckGamepadButtonPressed(gp_axislv) < 0 || CheckGamepadButtonPressed(gp_padu);
-		keyMenuDown = CheckGamepadButtonPressed(gp_axislv) > 0 || CheckGamepadButtonPressed(gp_padd);
+		keyMenuUp = CheckGamepadButtonPressed(gp_padu);
+		keyMenuDown = CheckGamepadButtonPressed(gp_padd);
 		keyMenuLeft = CheckGamepadButtonPressed(gp_axislh) < 0 || CheckGamepadButtonPressed(gp_padl);
 		keyMenuRight = CheckGamepadButtonPressed(gp_axislh) > 0 || CheckGamepadButtonPressed(gp_padr);
 		keyMenuAccept = CheckGamepadButtonPressed(gp_face1);

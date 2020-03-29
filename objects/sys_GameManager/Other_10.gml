@@ -7,14 +7,14 @@ switch global.CurrentInput
 		var _secondaryShoot = gp_shoulderlb;
 		keyShootAuto = CheckGamepadButton(_primaryShoot);
 		keyShootSemiAuto = CheckGamepadButtonPressed(_primaryShoot);
-		keySecondaryShootAuto = CheckGamepadButton(_secondaryShoot);
-		keySecondaryShootSemiAuto = CheckGamepadButton(_secondaryShoot);
+		//keySecondaryShootAuto = CheckGamepadButton(_secondaryShoot);
+		//keySecondaryShootSemiAuto = CheckGamepadButton(_secondaryShoot);
 		keyInteract = CheckGamepadButtonPressed(gp_face1);
-		keyDash = CheckGamepadButtonPressed(gp_face1);
-		keyUltimateActivation = CheckGamepadButtonPressed(gp_face2);
+		keyDash = CheckGamepadButtonPressed(gp_shoulderlb);
+		keyUltimateActivation = CheckGamepadButtonPressed(gp_stickl);
 		keyReload = CheckGamepadButtonPressed(gp_face3);
-		keyNextWeapon = CheckGamepadButtonPressed(gp_padr);
-		keyPreviousWeapon = CheckGamepadButtonPressed(gp_padl);
+		keyNextWeapon = CheckGamepadButtonPressed(gp_shoulderr);
+		keyPreviousWeapon = CheckGamepadButtonPressed(gp_shoulderl);
 	break;
 	
 	case InputMethod.KeyboardMouse:
